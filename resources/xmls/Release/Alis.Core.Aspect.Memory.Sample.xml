@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Alis.Core.Aspect.Memory.Sample</name>
+    </assembly>
+    <members>
+        <member name="T:Alis.Core.Aspect.Memory.Sample.MyClass">
+            <summary>
+                The my class
+            </summary>
+        </member>
+        <member name="M:Alis.Core.Aspect.Memory.Sample.MyClass.MyMethod(System.String)">
+            <summary>
+                Mys the method using the specified parameter
+            </summary>
+            <param name="parameter">The parameter</param>
+        </member>
+        <member name="M:Alis.Core.Aspect.Memory.Sample.MyClass.OtherMethod(System.String)">
+            <summary>
+                Others the method using the specified parameter
+            </summary>
+            <param name="parameter">The parameter</param>
+        </member>
+        <member name="T:Alis.Core.Aspect.Memory.Sample.Program">
+            <summary>
+                The program class
+            </summary>
+        </member>
+        <member name="M:Alis.Core.Aspect.Memory.Sample.Program.Main(System.String[])">
+            <summary>
+                Main the args
+            </summary>
+            <param name="args">The args</param>
+        </member>
+    </members>
+</doc>

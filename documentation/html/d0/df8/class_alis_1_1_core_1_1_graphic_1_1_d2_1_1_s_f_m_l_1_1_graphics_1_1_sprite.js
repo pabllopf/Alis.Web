@@ -1,0 +1,26 @@
+var class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite =
+[
+    [ "Sprite", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#abaa248e1e031e58aa4a7daadc2802dd3", null ],
+    [ "Sprite", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#a0b6f513cc1c54337854126ab63d6cdd1", null ],
+    [ "Sprite", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#afb30d145db7007ddee996285e8d6efbe", null ],
+    [ "Draw", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#aabc26fcbde3be9664c53b871ccb6366d", null ],
+    [ "GetLocalBounds", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#ad5bdc7db1c1ad0a76b357ed7def29133", null ],
+    [ "GetGlobalBounds", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#ac1c3317f41908ed2c8a929be16be90a6", null ],
+    [ "ToString", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#afc3d594fa38e467f77578bbc20764014", null ],
+    [ "Destroy", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#ac4472a5671c8730bcee2ef2fb5c1cf0e", null ],
+    [ "sfSprite_create", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#a581ce9332da352ba6015972fbd9470d2", null ],
+    [ "sfSprite_copy", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#a8d53ea77aab9fb246890421cfba6d953", null ],
+    [ "sfSprite_destroy", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#a115973896481110ec298e66af480e46d", null ],
+    [ "sfSprite_setColor", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#a7cb55597643ba657091104c20fc59930", null ],
+    [ "sfSprite_getColor", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#a17642d38d815f91b9f392eb735336a86", null ],
+    [ "sfRenderWindow_drawSprite", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#acf5c630672d3dd0b1778ce6373c5cb2e", null ],
+    [ "sfRenderTexture_drawSprite", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#ac3485f170405bf79d2b329f32abec9b1", null ],
+    [ "sfSprite_setTexture", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#abfdcc2cab55d0b1ef98a1e1a57d94c93", null ],
+    [ "sfSprite_setTextureRect", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#ad72ba780f932419f4614d031a41af025", null ],
+    [ "sfSprite_getTextureRect", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#acc9cbb1a69b6891c7c8d95a0c1c3295f", null ],
+    [ "sfSprite_getLocalBounds", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#ac0dfed76f34dcd198c470e0f785576a2", null ],
+    [ "myTexture", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#ac4ac684738e40a774e100feb634911a1", null ],
+    [ "Color", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#a5981c94874388a6f4e54f5e807aa6548", null ],
+    [ "Texture", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#a5ae1d43bcf8a45150b2e29ab53f8eb0f", null ],
+    [ "TextureRect", "d0/df8/class_alis_1_1_core_1_1_graphic_1_1_d2_1_1_s_f_m_l_1_1_graphics_1_1_sprite.html#ac14020ac393e99f45df3ad96c861772e", null ]
+];

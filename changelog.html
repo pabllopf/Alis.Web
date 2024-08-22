@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<!-- language page -->
+<html lang="en">
+
+<head>
+
+	<!-- File format -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Security-->
+	<meta http-equiv="Content-Security-Policy" content="default-src  'unsafe-eval' 'unsafe-hashes' 'unsafe-inline' * ; img-src data: * ">
+	
+	<!-- SEO Meta Tags -->
+	<meta name="author" content="Pablo Perdomo Falcón">
+	<meta name="description" content="Alis Engine | Develop the videogames of your dreams.">
+
+	<!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="alisengine.com" /> <!-- website name -->
+	<meta property="og:site" content="https://www.alisengine.com/" /> <!-- website link -->
+	<meta property="og:title" content="Alis"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Alis Engine | Develop the videogames of your dreams." /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="images/alis_banner_1.jpg" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="https://www.alisengine.com/" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+	<!-- Webpage Title -->
+	<title>Alis Engine | Develop the videogames of your dreams. </title>
+
+	<!-- canonical  -->
+	<link rel=»canonical» href=»https://www.alisengine.com/changelog.html» />
+
+	<!-- Favicon  -->
+	<link rel="icon" href="images/logo_final_redondo.png">
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo_final_redondo.png" />
+
+	<!-- bootstrap.min css -->
+	<link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/style.css"> 
+
+	
+</head>
+
+<body id="body">
+	<!--Header-->
+	<header class="navigation fixed-top">
+		<div id="header"></div>
+	</header>
+	<!-- Load Header -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			fetch('header.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('header').innerHTML = data;
+				})
+				.catch(error => console.error('Error al cargar el encabezado:', error));
+		});
+	</script>
+
+
+		<div  class="custom_md" id="preview" > </div>
+		<script src="js/markdown-it.js"></script>
+		<script src="js/markdown-it-emoji.js"></script>
+		<script>
+	
+	  window.onload = function exampleFunction() {
+		//alert('The Script will load now.');
+		var $ = function (id) { return document.getElementById(id); };
+
+		var md = window.markdownit().use(window.markdownitEmoji);
+
+		var client = new XMLHttpRequest();
+		client.open('GET', 'https://raw.githubusercontent.com/pabllopf/Alis/master/changelog.md');
+		client.onreadystatechange = function() {
+			$("preview").innerHTML = md.render(client.responseText);			
+		}
+		client.send();
+      }
+
+    </script>
+
+	<!-- Set footer -->
+	<footer class="text-center text-white footer_custom">
+		<div id="footer"></div>
+	</footer>
+
+	<!-- Load footer -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			fetch('footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer').innerHTML = data;
+				})
+				.catch(error => console.error('Error al cargar el encabezado:', error));
+		});
+	</script>
+
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    
+    <!-- Bootstrap4 -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    
+    <!-- Custom js -->
+    <script src="js/script.js"></script>
+
+	
+  </body>
+  </html>

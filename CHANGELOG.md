@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.0.4] - 2024-08-24
+### :sparkles: New Features
+- [`e833c22`](https://github.com/pabllopf/Alis.Web/commit/e833c22e78c80ad2c4c890e296610c8238b3d540) - new config to create simples pages with markdown *(commit by [@pabllopf](https://github.com/pabllopf))*
+- [`2f8fd6a`](https://github.com/pabllopf/Alis.Web/commit/2f8fd6afd5b38c266304df50152d9a67dba97f64) - include new web *(commit by [@pabllopf](https://github.com/pabllopf))*
+- [`0a75466`](https://github.com/pabllopf/Alis.Web/commit/0a7546630d51802b62be6b20715ab951cbbedf6b) - new version of publish *(commit by [@pabllopf](https://github.com/pabllopf))*
+
+### :bug: Bug Fixes
+- [`8824640`](https://github.com/pabllopf/Alis.Web/commit/8824640d482cbe60470445b51ab83a906dfb8140) - delete pdf generator *(commit by [@pabllopf](https://github.com/pabllopf))*
+
+
 ## [v0.0.3] - 2024-01-02
 ### :sparkles: New Features
 - [`76d1a09`](https://github.com/pabllopf/Alis.Web/commit/76d1a09ed57f311d35461ca1bc9d73b264c73964) - refactor the index html file *(commit by [@pabllopf](https://github.com/pabllopf))*
@@ -27,3 +37,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.0.1]: https://github.com/pabllopf/Alis.Web/compare/v0.0.0...v0.0.1
 [v0.0.2]: https://github.com/pabllopf/Alis.Web/compare/v0.0.1...v0.0.2
 [v0.0.3]: https://github.com/pabllopf/Alis.Web/compare/v0.0.2...v0.0.3
+[v0.0.4]: https://github.com/pabllopf/Alis.Web/compare/v0.0.3...v0.0.4

@@ -4,7 +4,7 @@
       "src": [
         {
           "files": [
-            "**/Alis.csproj"
+            "**/olis.csproj"
           ],
           "exclude": [
            "**/*Sample*.csproj",
@@ -61,7 +61,7 @@
         ]
       }
     ],
-    "output": "docs",
+    "output": "docs/en",
     "template": ["templates/default", "templates/modern", "templates/my-template"],
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],

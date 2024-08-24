@@ -10,18 +10,12 @@ on:
 jobs:
   
   Build_And_Deploy:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: master
-
-      - name: Setup dotnet
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: |
-            6.0.x
 
       - name: Define file name to update version
         run: echo "FILENAME=$(echo './Directory.Build.props')" >> $GITHUB_ENV
@@ -79,6 +73,26 @@ jobs:
 
       - name: Print the next version
         run: echo $CURRENTVERSION
+
+      - name: setup
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            3.0.x
+            3.1.x
+            5.0.x
+            6.0.x
+            7.0.x
+            8.0.x
+          
+      - name: clone Alis
+        run: git clone https://github.com/pabllopf/Alis.git --depth=1
+
+      - run: dotnet tool update -g docfx
+      - run: docfx build docfx.json
+
+      - run: dotnet tool update -g docfx
+      - run: docfx docfx.json
     
       - name: git config user.name github-actions
         run: git config --global user.name "${{ secrets.USER_NAME }}"
@@ -143,7 +157,6 @@ jobs:
           append_body: true
           files: |
             licence.md
-            ./.publish/${{ env.VERSIONFINAL }}/*.nupkg
         
       - name: git fetch
         run: git fetch

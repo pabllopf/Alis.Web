@@ -1,0 +1,1 @@
+git clone https://github.com/pabllopf/Alis.git --depth=1

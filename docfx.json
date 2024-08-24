@@ -4,8 +4,15 @@
       "src": [
         {
           "files": [
-            "**/Alis.csproj"
-          ]
+            "**/*.csproj"
+          ],
+          "exclude": [
+           "**/*Sample*.csproj",
+           "**/*App*.csproj",
+           "**/*Test*.csproj",
+           "**/*Test.csproj",
+           "**/*Benchmark*.csproj"
+        ]
         }
       ],
       "dest": "api",

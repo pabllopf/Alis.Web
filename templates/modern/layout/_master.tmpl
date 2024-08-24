@@ -54,7 +54,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="{{_appLogoUrl}}{{^_appLogoUrl}}{{_rel}}index.html{{/_appLogoUrl}}">
-            <img id="logo" class="svg" src="{{_rel}}{{{_appLogoPath}}}{{^_appLogoPath}}logo.svg{{/_appLogoPath}}" alt="{{_appName}}" >
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="{{_rel}}{{{_appLogoPath}}}{{^_appLogoPath}}logo.svg{{/_appLogoPath}}" alt="{{_appName}}" >
             {{_appName}}
           </a>
 
@@ -72,13 +72,11 @@
               </form>
               {{/_enableSearch}}
 
-
-
-
+              
               <script>
                 document.addEventListener('DOMContentLoaded', function () {
-                  const dropdownToggle = document.querySelector('.dropdown-toggle');
-                  const dropdownMenu = document.querySelector('.dropdown-menu');
+                  const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                  const dropdownMenu = document.querySelector('.dropdown-menu-versions');
 
                   dropdownToggle.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -97,7 +95,63 @@
 
               
               <div class="dropdown" style="order: 40; position: relative;">
-                <a class="btn border-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                  v0.4.0
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="/docs" target="_self" rel="noopener noreferrer" lang="en">v0.4.0</a></li>
+                   <li><a class="dropdown-item" href="/docs" target="_self" rel="noopener noreferrer" lang="en">v0.3.0</a></li>
+                    <li><a class="dropdown-item" href="/docs" target="_self" rel="noopener noreferrer" lang="en">v0.2.0</a></li>
+                     <li><a class="dropdown-item" href="/docs" target="_self" rel="noopener noreferrer" lang="en">v0.1.0</a></li>
+                </ul>
+              </div>
+
+
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                  const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+
+                  dropdownToggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const isExpanded = dropdownMenu.style.display === 'block';
+                    dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                  });
+
+                  document.addEventListener('click', function (e) {
+                    if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                      dropdownMenu.style.display = 'none';
+                    }
+                  });
+                });
+                </script>
+
+
+              
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-lang" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
                   display: flex; 
                   align-items: center; 
                   padding: 0.5rem 0rem; 
@@ -113,7 +167,7 @@
                   </svg>
                   English
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end" style="
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lang" style="
                   display: none; 
                   position: absolute; 
                   top: 100%; 

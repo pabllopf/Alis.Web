@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.0.6] - 2024-08-24
+### :bug: Bug Fixes
+- [`15b342e`](https://github.com/pabllopf/Alis.Web/commit/15b342e64a48b119913c20426264edefa01e509f) - create new main page with languages *(commit by [@pabllopf](https://github.com/pabllopf))*
+
+
 ## [v0.0.5] - 2024-08-24
 ### :bug: Bug Fixes
 - [`9387ef1`](https://github.com/pabllopf/Alis.Web/commit/9387ef133fec4dc36e117e9e911fa2b206b9d65b) - spaces of language selector *(commit by [@pabllopf](https://github.com/pabllopf))*
@@ -44,3 +49,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.0.3]: https://github.com/pabllopf/Alis.Web/compare/v0.0.2...v0.0.3
 [v0.0.4]: https://github.com/pabllopf/Alis.Web/compare/v0.0.3...v0.0.4
 [v0.0.5]: https://github.com/pabllopf/Alis.Web/compare/v0.0.4...v0.0.5
+[v0.0.6]: https://github.com/pabllopf/Alis.Web/compare/v0.0.5...v0.0.6

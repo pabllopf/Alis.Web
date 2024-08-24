@@ -1,15 +1,25 @@
 {
-  "items": [
-    {
-      "name": "Introducción",
-      "href": "introduction.html",
-      "topicHref": "introduction.html",
-      "tocHref": null,
-      "level": 2.0,
-      "items": [],
-      "leaf": true
-    }
-  ],
+  "conceptual": "\n",
+  "type": "Conceptual",
+  "source": {
+    "remote": {
+      "path": "docs/es/learn/getting-started.md",
+      "branch": "master",
+      "repo": "https://github.com/pabllopf/Alis.Web"
+    },
+    "startLine": 0.0,
+    "endLine": 0.0
+  },
+  "path": "learn/getting-started.md",
+  "documentation": {
+    "remote": {
+      "path": "docs/es/learn/getting-started.md",
+      "branch": "master",
+      "repo": "https://github.com/pabllopf/Alis.Web"
+    },
+    "startLine": 0.0,
+    "endLine": 0.0
+  },
   "_appFaviconPath": "resources/logo.png",
   "_appFooter": "Alis - Develop the video games of your dreams 💯 free!! on Windows, MacOS, Linux, Android(soon), IOS(soon).",
   "_appLogoPath": "resources/logo_small_v2.png",
@@ -21,7 +31,7 @@
   "_disableContribution": false,
   "_disableNavbar": false,
   "_disableSideFilter": false,
-  "_disableToc": true,
+  "_disableToc": false,
   "_enableNewTab": true,
   "_enableSearch": true,
   "_gitContribute": {
@@ -36,14 +46,27 @@
   },
   "pdf": false,
   "pdfTocPage": false,
-  "_key": "community/toc.yml",
+  "_systemKeys": [
+    "conceptual",
+    "type",
+    "source",
+    "path",
+    "documentation",
+    "title",
+    "rawTitle",
+    "wordCount"
+  ],
+  "rawTitle": "<h1 id=\"getting-started\" sourcefile=\"learn/getting-started.md\" sourcestartlinenumber=\"1\">Getting Started</h1>",
+  "title": "Getting Started",
+  "wordCount": 0.0,
+  "_key": "learn/getting-started.md",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "community/toc.html",
+  "_path": "learn/getting-started.html",
   "_rel": "../",
-  "_tocKey": "~/community/toc.yml",
-  "_tocPath": "community/toc.html",
+  "_tocKey": "~/learn/toc.yml",
+  "_tocPath": "learn/toc.html",
   "_tocRel": "toc.html",
   "__global": {
     "namespacesInSubtitle": "Namespaces",
@@ -119,10 +142,5 @@
     "downloadPdf": "Download PDF",
     "_shared": {}
   },
-  "topicHref": null,
-  "tocHref": null,
-  "name": null,
-  "level": 1.0,
-  "leaf": false,
-  "title": "Table of Content"
+  "docurl": ""
 }

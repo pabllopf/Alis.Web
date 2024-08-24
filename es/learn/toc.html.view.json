@@ -4,10 +4,135 @@
       "name": "Introducción",
       "href": "introduction.html",
       "topicHref": "introduction.html",
+      "items": [
+        {
+          "name": "features",
+          "href": "features.html",
+          "topicHref": "features.html",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        }
+      ],
+      "tocHref": null,
+      "level": 2.0
+    },
+    {
+      "name": "Getting Started",
+      "href": "getting-started.html",
+      "topicHref": "getting-started.html",
       "tocHref": null,
       "level": 2.0,
       "items": [],
       "leaf": true
+    },
+    {
+      "name": "Licencia",
+      "href": "license.html",
+      "topicHref": "license.html",
+      "tocHref": null,
+      "level": 2.0,
+      "items": [],
+      "leaf": true
+    },
+    {
+      "name": "Contributing",
+      "href": "contributing.html",
+      "topicHref": "contributing.html",
+      "tocHref": null,
+      "level": 2.0,
+      "items": [],
+      "leaf": true
+    },
+    {
+      "name": "Code of Conduct",
+      "href": "code_of_conduct.html",
+      "topicHref": "code_of_conduct.html",
+      "tocHref": null,
+      "level": 2.0,
+      "items": [],
+      "leaf": true
+    },
+    {
+      "name": "Security",
+      "href": "security.html",
+      "topicHref": "security.html",
+      "tocHref": null,
+      "level": 2.0,
+      "items": [],
+      "leaf": true
+    },
+    {
+      "name": "Support",
+      "href": "support.html",
+      "topicHref": "support.html",
+      "tocHref": null,
+      "level": 2.0,
+      "items": [],
+      "leaf": true
+    },
+    {
+      "name": "Privacy Policy",
+      "href": "privacy_policy.html",
+      "topicHref": "privacy_policy.html",
+      "tocHref": null,
+      "level": 2.0,
+      "items": [],
+      "leaf": true
+    },
+    {
+      "name": "Purpose",
+      "href": "purpose.html",
+      "topicHref": "purpose.html",
+      "tocHref": null,
+      "level": 2.0,
+      "items": [],
+      "leaf": true
+    },
+    {
+      "name": "Donate",
+      "href": "donate.html",
+      "topicHref": "donate.html",
+      "tocHref": null,
+      "level": 2.0,
+      "items": [],
+      "leaf": true
+    },
+    {
+      "name": "Versiones",
+      "items": [
+        {
+          "name": "ChangeLog",
+          "href": "changelog.html",
+          "topicHref": "changelog.html",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        }
+      ],
+      "topicHref": null,
+      "tocHref": null,
+      "level": 2.0
+    },
+    {
+      "name": "Casos de exito",
+      "href": "showcases.html",
+      "topicHref": "showcases.html",
+      "items": [
+        {
+          "name": "ShowCase1",
+          "href": "sample.html",
+          "topicHref": "sample.html",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        }
+      ],
+      "tocHref": null,
+      "level": 2.0
     }
   ],
   "_appFaviconPath": "resources/logo.png",
@@ -36,14 +161,14 @@
   },
   "pdf": false,
   "pdfTocPage": false,
-  "_key": "community/toc.yml",
+  "_key": "learn/toc.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "community/toc.html",
+  "_path": "learn/toc.html",
   "_rel": "../",
-  "_tocKey": "~/community/toc.yml",
-  "_tocPath": "community/toc.html",
+  "_tocKey": "~/learn/toc.yml",
+  "_tocPath": "learn/toc.html",
   "_tocRel": "toc.html",
   "__global": {
     "namespacesInSubtitle": "Namespaces",

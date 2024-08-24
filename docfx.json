@@ -27,7 +27,14 @@
         ],
         "exclude": [
           "docs/**",
-          "Alis/**"
+          "Alis/**",
+          "templates/**",
+          "videos/**",
+          "js/**",
+          "images/**",
+          "css/**",
+          ".github/**",
+          ".git/**"
         ]
       }
     ],

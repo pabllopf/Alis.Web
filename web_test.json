@@ -1,0 +1,104 @@
+{
+    "metadata": [
+      {
+        "src": [
+          {
+            "files": [
+              "**/olis.csproj"
+            ],
+            "exclude": [
+             "**/*Sample*.csproj",
+             "**/*App*.csproj",
+             "**/*Test*.csproj",
+             "**/*Test.csproj",
+             "**/*Benchmark*.csproj"
+          ]
+          }
+        ],
+        "dest": "api",
+        "enumSortOrder": "declaringOrder",
+        "outputFormat": "apiPage",
+        "namespaceLayout": "nested",
+        "includePrivateMembers": true,
+        "disableGitFeatures": false,
+        "disableDefaultFilter": false
+      }
+    ],
+    "build": {
+      "content": [
+        {
+          "files": [
+            "**/*.{md,yml}",
+            "resources/**",
+            "resources/*.png"
+          ],
+          "exclude": [
+            "docs/**",
+            "Alis/**",
+            "templates/**",
+            "videos/**",
+            "js/**",
+            "images/**",
+            "css/**",
+            ".github/**",
+            ".git/**"
+          ]
+        }
+      ],
+      "resource": [
+        {
+          "files": [
+            "resources/**",
+            "resources/*.png",
+            "**/resources/logo.png",
+            "**/resources/*.ico",
+            "**/resources/*.png",
+            "**/resources/*.jpg"
+          ],
+          "exclude": [
+            "docs/**",
+            "Alis/**"
+          ]
+        }
+      ],
+      "output": "docs/en",
+      "template": ["templates/default", "templates/modern", "templates/my-template"],
+      "globalMetadataFiles": [],
+      "fileMetadataFiles": [],
+      "globalMetadata": {
+        "_appTitle": "Alis - Develop the video games of your dreams \uD83D\uDCAF free!!",
+        "_appName": "Alis",
+        "pdf": false,
+        "pdfTocPage": false,
+        "newFileRepository": {
+          "branch": "master"
+        },
+        "_gitContribute": {
+          "repo": "https://github.com/pabllopf/Alis",
+          "branch": "master",
+          "path": ""
+        },
+        "_gitUrlPattern": "github",
+        "_appFaviconPath": "resources/logo.png",
+        "_appLogoPath": "resources/logo_small_v2.png",
+        "_appFooter": "Alis - Develop the video games of your dreams \uD83D\uDCAF free!! on Windows, MacOS, Linux, Android(soon), IOS(soon).",
+        "_copyrightFooter":"Developed by Pablo Perdomo Falcón",
+        "_enableSearch": true,
+        "_disableSideFilter": false,
+        "_enableNewTab": true,
+        "_disableContribution": false,
+        "_disableBreadcrumb": false,
+        "_lang" : "en",
+        "_disableNavbar": false,
+        "_disableToc": false,
+        "_disableAffix": false
+      },
+      "postProcessors": [ "ExtractSearchIndex" ],
+      "noLangKeyword": false,
+      "keepFileLink": true,
+      "cleanupCacheHistory": true,
+      "disableGitFeatures": false,
+      "exportViewModel": true
+    }
+  }
+  

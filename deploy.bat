@@ -1,1 +1,2 @@
-docfx .\\docfx.json --serve
+docfx .\\web_en.json
+docfx .\\web_es.json

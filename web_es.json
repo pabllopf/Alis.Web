@@ -34,6 +34,8 @@
         ],
         "exclude": [
           "docs/**",
+          "en/**",
+          "es/**",
           "Alis/**",
           "templates/**",
           "videos/**",
@@ -57,11 +59,13 @@
         ],
         "exclude": [
           "docs/**",
+          "en/**",
+          "es/**",
           "Alis/**"
         ]
       }
     ],
-    "output": "docs/es",
+    "output": "es",
     "template": ["templates/default", "templates/modern", "templates/my-template"],
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],

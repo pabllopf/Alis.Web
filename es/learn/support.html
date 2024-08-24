@@ -1,49 +1,40 @@
-{{!Licensed to the .NET Foundation under one or more agreements. The .NET Foundation licenses this file to you under the MIT license.}}
-{{!include(/^public/.*/)}}
-{{!include(favicon.ico)}}
-{{!include(logo.svg)}}
-<!DOCTYPE html>
-<html {{#_lang}}lang="{{_lang}}"{{/_lang}}>
+﻿<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    {{#redirect_url}}
-      <meta http-equiv="refresh" content="0;URL='{{redirect_url}}'">
-    {{/redirect_url}}
-    {{^redirect_url}}
-      <title>{{#_appTitle}} {{_appTitle}} {{/_appTitle}}</title>
+      <title> Alis - Develop the video games of your dreams &#128175; free!! </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="{{#_appTitle}} {{_appTitle}} {{/_appTitle}}">
-      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!" />
-      <link rel="icon" href="{{_rel}}{{{_appFaviconPath}}}{{^_appFaviconPath}}favicon.ico{{/_appFaviconPath}}">
-      <link rel="stylesheet" href="{{_rel}}public/docfx.min.css">
-      <link rel="stylesheet" href="{{_rel}}public/main.css">
-      <meta name="docfx:navrel" content="{{_navRel}}">
-      <meta name="docfx:tocrel" content="{{_tocRel}}">
-      {{#_noindex}}<meta name="searchOption" content="noindex">{{/_noindex}}
-      {{#_enableSearch}}<meta name="docfx:rel" content="{{_rel}}">{{/_enableSearch}}
-      {{#_disableNewTab}}<meta name="docfx:disablenewtab" content="true">{{/_disableNewTab}}
-      {{#_disableTocFilter}}<meta name="docfx:disabletocfilter" content="true">{{/_disableTocFilter}}
-      {{#docurl}}<meta name="docfx:docurl" content="{{docurl}}">{{/docurl}}
-      <meta name="loc:inThisArticle" content="{{__global.inThisArticle}}">
-      <meta name="loc:searchResultsCount" content="{{__global.searchResultsCount}}">
-      <meta name="loc:searchNoResults" content="{{__global.searchNoResults}}">
-      <meta name="loc:tocFilter" content="{{__global.tocFilter}}">
-      <meta name="loc:nextArticle" content="{{__global.nextArticle}}">
-      <meta name="loc:prevArticle" content="{{__global.prevArticle}}">
-      <meta name="loc:themeLight" content="{{__global.themeLight}}">
-      <meta name="loc:themeDark" content="{{__global.themeDark}}">
-      <meta name="loc:themeAuto" content="{{__global.themeAuto}}">
-      <meta name="loc:changeTheme" content="{{__global.changeTheme}}">
-      <meta name="loc:copy" content="{{__global.copy}}">
-      <meta name="loc:downloadPdf" content="{{__global.downloadPdf}}">
+      <meta name="title" content=" Alis - Develop the video games of your dreams &#128175; free!! ">
+      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!">
+      <link rel="icon" href="../resources/logo.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./{{_rel}}public/docfx.min.js"></script>
+      <script type="module" src="./../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
         document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
       </script>
-    {{/redirect_url}}
 
     <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -78,15 +69,13 @@
 
   </head>
 
-  {{^redirect_url}}
-  <body class="tex2jax_ignore" data-layout="{{_layout}}{{layout}}" data-yaml-mime="{{yamlmime}}">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
-      {{^_disableNavbar}}
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="{{_appLogoUrl}}{{^_appLogoUrl}}{{_rel}}index.html{{/_appLogoUrl}}">
-            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="{{_rel}}{{{_appLogoPath}}}{{^_appLogoPath}}logo.svg{{/_appLogoPath}}" alt="{{_appName}}" >
-            {{_appName}}
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="../resources/logo_small_v2.png" alt="Alis">
+            Alis
           </a>
 
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,12 +85,10 @@
         
           <div class="collapse navbar-collapse" id="navpanel">
             <div id="navbar">
-              {{#_enableSearch}}
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="{{__global.search}}" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
-              {{/_enableSearch}}
 
               
               <script>
@@ -193,7 +180,7 @@
                   cursor: pointer;
                   margin-right: 10px;
                 ">
-                  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                  <svg viewbox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
                     <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
                   </svg>
                   English
@@ -219,7 +206,7 @@
 
               <a class="hover_custom" style="order: 55;margin: 0 10px;" href="https://github.com/pabllopf/Alis/releases/latest">
               <button type="button" class="btn btn-primary">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 17 17">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewbox="0 0 17 17">
                       <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
                   </svg>
                   Download
@@ -236,13 +223,11 @@
       
       
 
-      {{/_disableNavbar}}
 
 
     </header>
 
     <main class="container-xxl">
-      {{^_disableToc}}
       <div class="toc-offcanvas">
         <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
           <div class="offcanvas-header">
@@ -254,62 +239,42 @@
           </div>
         </div>
       </div>
-      {{/_disableToc}}
 
       <div class="content">
         <div class="actionbar">
-          {{^_disableToc}}
-          <button class="btn btn-lg border-0 d-md-none"
-              type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas"
-              aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
-          {{/_disableToc}}
 
-          {{^_disableBreadcrumb}}
           <nav id="breadcrumb"></nav>
-          {{/_disableBreadcrumb}}
         </div>
 
-        <article data-uid="{{uid}}">
-          {{!body}}
-        </article>
+        <article data-uid="">
+<h1 id="support">Support</h1>
 
-        {{^_disableContribution}}
+
+</article>
+
         <div class="contribution d-print-none">
-          {{#sourceurl}}
-          <a href="{{sourceurl}}" class="edit-link">{{__global.improveThisDoc}}</a>
-          {{/sourceurl}}
-          {{^sourceurl}}{{#docurl}}
-          <a href="{{docurl}}" class="edit-link">{{__global.improveThisDoc}}</a>
-          {{/docurl}}{{/sourceurl}}
         </div>
-        {{/_disableContribution}}
 
-        {{^_disableNextArticle}}
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
-        {{/_disableNextArticle}}
 
       </div>
 
-      {{^_disableAffix}}
       <div class="affix">
         <nav id="affix"></nav>
       </div>
-      {{/_disableAffix}}
     </main>
 
-    {{#_enableSearch}}
     <div class="container-xxl search-results" id="search-results"></div>
-    {{/_enableSearch}}
 
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          {{{_appFooter}}}{{^_appFooter}}<span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>{{/_appFooter}}
+          Alis - Develop the video games of your dreams 💯 free!! on Windows, MacOS, Linux, Android(soon), IOS(soon).
         </div>
       </div>
     </footer>
   </body>
-  {{/redirect_url}}
 </html>

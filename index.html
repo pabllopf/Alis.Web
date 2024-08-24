@@ -40,7 +40,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             var userLang = navigator.language || navigator.userLanguage;
             var langPrefix = userLang.startsWith('es') ? 'es' : 'en';
-            var redirectUrl = 'docs/' + langPrefix + '/index.html';
+            var redirectUrl = langPrefix + '/index.html';
             window.location.href = redirectUrl;
         });
     </script>

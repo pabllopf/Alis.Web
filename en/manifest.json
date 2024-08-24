@@ -1,0 +1,2647 @@
+{
+  "source_base_path": "C:/repositorios/Alis.Web",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "about/Purpose.md",
+      "output": {
+        ".html": {
+          "relative_path": "about/Purpose.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "about/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "about/toc.html"
+        },
+        ".json": {
+          "relative_path": "about/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "community/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "community/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "community/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "community/toc.html"
+        },
+        ".json": {
+          "relative_path": "community/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "contact/Contact.md",
+      "output": {
+        ".html": {
+          "relative_path": "contact/Contact.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "contact/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "contact/toc.html"
+        },
+        ".json": {
+          "relative_path": "contact/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/changelog.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/changelog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/code_of_conduct.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/code_of_conduct.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/contributing.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/contributing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/donate.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/donate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/features.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/features.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/license.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/license.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/privacy_policy.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/privacy_policy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/purpose.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/purpose.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/readme.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/readme.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/sample.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/sample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/security.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/security.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/showcases.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/showcases.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/support.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/support.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "learn/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "learn/toc.html"
+        },
+        ".json": {
+          "relative_path": "learn/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "readme.md",
+      "output": {
+        ".html": {
+          "relative_path": "readme.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/3djuegos.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/3djuegos.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Alis_Banner_1280×640.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Alis_Banner_1280×640.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Alis_Banner_1280×640_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Alis_Banner_1280×640_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Alis_Banner_970x250.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Alis_Banner_970x250.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Alis_Banner_970x250.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Alis_Banner_970x250.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Alis_ReadMe_970x170.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Alis_ReadMe_970x170.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Alis_ReadMe_970x170.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Alis_ReadMe_970x170.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Asset.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Asset.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Audio_Player.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Audio_Player.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Captura.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Captura.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Captura_Alis_Funcionando_Debian.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Captura_Alis_Funcionando_Debian.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Captura_Consola_Compilando_Alis.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Captura_Consola_Compilando_Alis.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Captura_Escritorio_Debian_Mint.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Captura_Escritorio_Debian_Mint.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Captura_lanzando_desde_consola_alis.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Captura_lanzando_desde_consola_alis.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Console.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Console.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Contenido_Variable_Encriptada.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Contenido_Variable_Encriptada.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Core.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Core.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Definir_Variable_Encriptada.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Definir_Variable_Encriptada.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Diagrama_Arquitectura_Alis.pptx",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Diagrama_Arquitectura_Alis.pptx"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Download_Green.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Download_Green.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Download_Green_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Download_Green_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Edit_Menu.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Edit_Menu.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Editor.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Editor.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Editor_Partes.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Editor_Partes.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Editor_Partes_Gaming.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Editor_Partes_Gaming.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Editor_city.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Editor_city.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Ejemplo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Ejemplo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Ejemplo2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Ejemplo2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Ejemplo3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Ejemplo3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Ejemplo_Como_se_ve_string_sin_encriptar.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Ejemplo_Como_se_ve_string_sin_encriptar.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Ejemplo_Zipper.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Ejemplo_Zipper.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Ejemplo_audiosource.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Ejemplo_audiosource.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/File_Menu.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/File_Menu.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Flujo.pptx",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Flujo.pptx"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Flujo_therad.pptx",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Flujo_therad.pptx"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Guardar_y_Cargar_Var_Complejas_String.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Guardar_y_Cargar_Var_Complejas_String.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Guardar_y_Cargar_Var_Simple_String.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Guardar_y_Cargar_Var_Simple_String.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Help_Menu.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Help_Menu.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Inspector.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Inspector.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Language_Example.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Language_Example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Language_Example_Console.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Language_Example_Console.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Last_version.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Last_version.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/License.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/License.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/License.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/License.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/LogoEII.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/LogoEII.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Logo_EII+ULPGC.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Logo_EII+ULPGC.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Maker.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Maker.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/NETStandarVersions.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/NETStandarVersions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/NetStandar1.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/NetStandar1.1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/NetStandar1.3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/NetStandar1.3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/NetStandar2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/NetStandar2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/NetStandar2_Config.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/NetStandar2_Config.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Openvisual.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Openvisual.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Paquete_core_instalado.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Paquete_core_instalado.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Preferences.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Preferences.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Presentacion Simple.pptx",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Presentacion Simple.pptx"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Problema_De_Guardar_Variables_En_Memoria.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Problema_De_Guardar_Variables_En_Memoria.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Project_Settings.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Project_Settings.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Propertys.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Propertys.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/ReadMore.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/ReadMore.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/ReadMore_Red.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/ReadMore_Red.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/ReadMore_Red.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/ReadMore_Red.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/SeleccionNet.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/SeleccionNet.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/SimpleEsquema.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/SimpleEsquema.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Simple_Project_Struct.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Simple_Project_Struct.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Tools_Menu.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Tools_Menu.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Usar_Variable.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Usar_Variable.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Variable_Compleja_Fichero.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Variable_Compleja_Fichero.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Variable_En_Memoria_Encriptado.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Variable_En_Memoria_Encriptado.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Variable_Encriptada_como_se_ve_memoria_ram.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Variable_Encriptada_como_se_ve_memoria_ram.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Variable_Primitiva_Fichero.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Variable_Primitiva_Fichero.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Variable_normal_sin_encriptar_como_se_ve_memoria_ram.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Variable_normal_sin_encriptar_como_se_ve_memoria_ram.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/Windows_Menu.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/Windows_Menu.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/actions.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/actions.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/alis_banner_1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/alis_banner_1.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/alis_banner_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/alis_banner_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/alis_banner_3 - copia.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/alis_banner_3 - copia.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/alis_editor_ejemplo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/alis_editor_ejemplo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/alis_editor_ejemplo_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/alis_editor_ejemplo_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/alis_editor_ejemplo_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/alis_editor_ejemplo_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/api_fluent.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/api_fluent.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/application.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/application.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/archivo_editor_zip.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/archivo_editor_zip.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/archivos_descargados.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/archivos_descargados.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/arquitectura_brain_stornming.pptx",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/arquitectura_brain_stornming.pptx"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/article-details-large.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/article-details-large.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/article-details-small.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/article-details-small.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/asset_tool.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/asset_tool.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/badge.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/badge.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/badge.svg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/badge.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/banner_youtube.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/banner_youtube.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/black_logo_alis.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/black_logo_alis.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/black_logo_alis.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/black_logo_alis.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/color.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/color.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/commingg.webp",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/commingg.webp"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/confirmar_version_openfgl.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/confirmar_version_openfgl.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/consola_dolnet_sdks.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/consola_dolnet_sdks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/console_editor.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/console_editor.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/core_listo.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/core_listo.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/descarga.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/descarga.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/details-1-background.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/details-1-background.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/details-1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/details-1.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/details-2-background.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/details-2-background.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/details-2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/details-2.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/details-lightbox.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/details-lightbox.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/directX_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/directX_12.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/down-arrow.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/down-arrow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/editor_assets.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/editor_assets.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/editor_macos.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/editor_macos.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/ejemplo_encrypt.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/ejemplo_encrypt.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/ejemplo_proyecto.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/ejemplo_proyecto.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/escenario.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/escenario.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/estraer_aqui.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/estraer_aqui.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/favicon.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/favicon.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/formulario_foro.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/formulario_foro.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/foro.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/foro.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/gadar_y_cargar_ar.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/gadar_y_cargar_ar.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/game_1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/game_1.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/game_2.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/game_2.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/game_3.gif",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/game_3.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/gameobject_vacio.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/gameobject_vacio.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/gameview.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/gameview.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/github_actions.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/github_actions.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/header-background.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/header-background.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/header-slide-1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/header-slide-1.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/header-slide-2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/header-slide-2.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/header-slide-3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/header-slide-3.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/heart2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/heart2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/heart3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/heart3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/icono_alis_editor_windows.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/icono_alis_editor_windows.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/imagen_editor_instalado.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/imagen_editor_instalado.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/inspector_Editor.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/inspector_Editor.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/issue_report_parts.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/issue_report_parts.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/issues_panel.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/issues_panel.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_normal.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_normal.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_nuevo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_nuevo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_nuevo_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_nuevo_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_nuevo_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_nuevo_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_nuevo_2.svg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_nuevo_2.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_nuevo_2.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_nuevo_2.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_nuevo_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_nuevo_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_nuevo_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_nuevo_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_nuevo_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_nuevo_5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_redondo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_redondo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_redondo.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_redondo.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_redondo_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_redondo_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_redondo_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_redondo_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_redondo_azul.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_redondo_azul.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_traslucido.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_traslucido.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_traslucido.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_traslucido.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_final_traslucido_blanco.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_final_traslucido_blanco.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/logo_small.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/logo_small.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/maker_.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/maker_.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/maker_editor.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/maker_editor.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/mediavida.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/mediavida.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/netcore.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/netcore.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/nunit.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/nunit.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/paquete_instalados.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/paquete_instalados.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/partner-logo-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/partner-logo-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/partner-logo-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/partner-logo-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/partner-logo-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/partner-logo-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/partner-logo-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/partner-logo-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/partner-logo-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/partner-logo-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/resources-1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/resources-1.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/resources-2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/resources-2.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/scene.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/scene.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/selecciona_proyecto.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/selecciona_proyecto.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/testimonial-1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/testimonial-1.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/testimonial-2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/testimonial-2.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/testimonial-3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/testimonial-3.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/testimonial-4.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/testimonial-4.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/testimonial-5.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/testimonial-5.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/testimonial-6.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/testimonial-6.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/testimonials-background.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/testimonials-background.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/tipo_issue.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/tipo_issue.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/topmenu_file.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/topmenu_file.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/traduce.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/traduce.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/up-arrow.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/up-arrow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/variables_encriptada.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/variables_encriptada.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/variables_sin_encriptada.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/variables_sin_encriptada.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/ventana_dinamico.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/ventana_dinamico.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/video-preview.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/video-preview.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/white_logo_alis.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/white_logo_alis.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/white_logo_alis.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/white_logo_alis.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/white_logo_alis_text.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/white_logo_alis_text.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/white_logo_alis_text.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/white_logo_alis_text.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/zipper.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/zipper.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/logo/logo.bmp",
+      "output": {
+        "resource": {
+          "relative_path": "resources/logo/logo.bmp"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/logo/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/logo/logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/logo/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/logo/logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/logo/logo.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/logo/logo.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/logo_small_v2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/logo_small_v2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/Discurso.docx",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/Discurso.docx"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/Presentacion.pptx",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/Presentacion.pptx"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/0_WNnOKYi4gwFNxXQp.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/0_WNnOKYi4gwFNxXQp.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/1024px-.NET_Core_Logo.svg.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/1024px-.NET_Core_Logo.svg.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/GitHub-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/GitHub-logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/GitHubActions.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/GitHubActions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/Logo2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/Logo2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/Logo3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/Logo3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/MacOS_logo.svg.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/MacOS_logo.svg.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/bc_s.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/bc_s.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/descarga (1).png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/descarga (1).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/descarga (2).png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/descarga (2).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/descarga.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/descarga.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/images.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/images.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/logo_ulpgc.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/logo_ulpgc.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/logosimbolo_esc_ing_informatica_jpg__rgb.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/logosimbolo_esc_ing_informatica_jpg__rgb.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/png-clipart-computer-icons-gear-symbol-integration-icon-investment-flower.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/png-clipart-computer-icons-gear-symbol-integration-icon-investment-flower.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/presentation/ppt/unnamed.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/presentation/ppt/unnamed.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_0.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_0.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_10.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_11.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_11.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_12.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_13.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_13.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_14.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_14.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/Alis_Banner_1280×640_9.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/youtube/miniaturas/miniatora.xcf",
+      "output": {
+        "resource": {
+          "relative_path": "resources/youtube/miniaturas/miniatora.xcf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

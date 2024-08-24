@@ -90,10 +90,10 @@ jobs:
         run: dotnet tool update -g docfx
 
       - name: create en web
-        run: docfx .\docs\en\web_en.json
+        run: docfx ./docs/en/web_en.json
 
       - name: create es web
-        run: docfx .\docs\es\web_es.json
+        run: docfx ./docs/es/web_es.json
     
       - name: git config user.name github-actions
         run: git config --global user.name "${{ secrets.USER_NAME }}"

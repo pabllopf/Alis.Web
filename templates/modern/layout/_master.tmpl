@@ -46,34 +46,55 @@
     {{/redirect_url}}
 
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
-      const dropdownMenu = document.querySelector('.dropdown-menu-lang');
-    
-      // Función para actualizar el contenido del dropdownToggle según el idioma
-      function updateLanguage() {
-        const currentLang = document.documentElement.lang;
-        const isEnglish = currentLang === 'en';
-        const isSpanish = currentLang === 'es';
-    
-        if (isEnglish) {
-          dropdownToggle.innerHTML = `
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
-              <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
-            </svg>
-            English`;
-        } else {
-          dropdownToggle.innerHTML = `
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
-              <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
-            </svg>
-            Español`;
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+        const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+      
+        // Función para actualizar el contenido del dropdownToggle según el idioma
+        function updateLanguage() {
+          const currentLang = document.documentElement.lang;
+          const isEnglish = currentLang === 'en';
+          const isSpanish = currentLang === 'es';
+      
+          if (isEnglish) {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              English`;
+          } else {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              Español`;
+          }
         }
-      }
-    
-      // Llama a la función para actualizar el idioma al cargar la página
-      updateLanguage();
-    });
+      
+        // Llama a la función para actualizar el idioma al cargar la página
+        updateLanguage();
+      });
+    </script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+
+          // Función para actualizar el texto del botón según la URL actual
+          function updateDropdownVersion() {
+              const path = window.location.pathname;
+              const versionMatch = path.match(/v\d+\.\d+\.\d+/i); // Buscar la versión en cualquier parte del path
+
+              if (versionMatch) {
+                  const currentVersion = versionMatch[0]; // Obtener la versión encontrada
+                  dropdownToggle.textContent = currentVersion;
+              }
+          }
+
+          updateDropdownVersion(); // Llamar la función al cargar la página
+      });
+
     </script>
 
   </head>
@@ -105,26 +126,52 @@
 
               
               <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                  const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
-                  const dropdownMenu = document.querySelector('.dropdown-menu-versions');
 
-                  dropdownToggle.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const isExpanded = dropdownMenu.style.display === 'block';
-                    dropdownMenu.style.display = isExpanded ? 'none' : 'block';
-                  });
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                const dropdownMenu = document.querySelector('.dropdown-menu-versions');
 
-                  document.addEventListener('click', function (e) {
-                    if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                      dropdownMenu.style.display = 'none';
-                    }
-                  });
+                dropdownToggle.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const isExpanded = dropdownMenu.style.display === 'block';
+                  dropdownMenu.style.display = isExpanded ? 'none' : 'block';
                 });
-                </script>
 
+                document.addEventListener('click', function (e) {
+                  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.style.display = 'none';
+                  }
+                });
 
-              
+                // Manejar la selección de versión y actualizar la URL
+                dropdownMenu.addEventListener('click', function (e) {
+                  if (e.target.classList.contains('dropdown-item')) {
+                    e.preventDefault();
+                    
+                    const selectedVersion = e.target.getAttribute('data-version');
+                    const lang = document.documentElement.lang; // Obtener el idioma actual del documento
+                    
+                    let basePath = '';
+                    
+                    // Comprobar si el idioma es español
+                    if (lang === 'es') {
+                      basePath += '/es';
+                    }
+
+                    if (lang === 'en') {
+                      basePath += '/en';
+                    }
+
+                    // Redirigir a la ruta de la versión seleccionada
+                    const newPath = `${basePath}/${selectedVersion}`;
+                    window.location.href = newPath;
+                  }
+                });
+              });
+ 
+
+              </script>
+
               <div class="dropdown" style="order: 40; position: relative;">
                 <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
                   display: flex; 
@@ -137,7 +184,6 @@
                   cursor: pointer;
                   margin-right: 10px;
                 ">
-                  v0.4.0
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
                   display: none; 
@@ -151,14 +197,12 @@
                   margin: 0; 
                   padding: 0;
                 ">
-                  <li><a class="dropdown-item" href="/docs" target="_self" rel="noopener noreferrer" lang="en">v0.4.0</a></li>
-                   <li><a class="dropdown-item" href="/docs" target="_self" rel="noopener noreferrer" lang="en">v0.3.0</a></li>
-                    <li><a class="dropdown-item" href="/docs" target="_self" rel="noopener noreferrer" lang="en">v0.2.0</a></li>
-                     <li><a class="dropdown-item" href="/docs" target="_self" rel="noopener noreferrer" lang="en">v0.1.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.4.0">v0.4.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.3.0">v0.3.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.2.0">v0.2.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.1.0">v0.1.0</a></li>
                 </ul>
               </div>
-
-
 
               <script>
                 document.addEventListener('DOMContentLoaded', function () {

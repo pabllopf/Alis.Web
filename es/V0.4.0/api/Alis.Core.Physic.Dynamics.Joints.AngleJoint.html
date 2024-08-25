@@ -1,0 +1,573 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <title> Alis - Develop the video games of your dreams &#128175; free </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" Alis - Develop the video games of your dreams &#128175; free ">
+      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!">
+      <link rel="icon" href="../resources/logo.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+        const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+      
+        // Función para actualizar el contenido del dropdownToggle según el idioma
+        function updateLanguage() {
+          const currentLang = document.documentElement.lang;
+          const isEnglish = currentLang === 'en';
+          const isSpanish = currentLang === 'es';
+      
+          if (isEnglish) {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              English`;
+          } else {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              Español`;
+          }
+        }
+      
+        // Llama a la función para actualizar el idioma al cargar la página
+        updateLanguage();
+      });
+    </script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+
+          // Función para actualizar el texto del botón según la URL actual
+          function updateDropdownVersion() {
+              const path = window.location.pathname;
+              const versionMatch = path.match(/v\d+\.\d+\.\d+/i); // Buscar la versión en cualquier parte del path
+
+              if (versionMatch) {
+                  const currentVersion = versionMatch[0]; // Obtener la versión encontrada
+                  dropdownToggle.textContent = currentVersion;
+              }
+          }
+
+          updateDropdownVersion(); // Llamar la función al cargar la página
+      });
+
+    </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ApiPage">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="../resources/logo_small_v2.png" alt="Alis">
+            Alis
+          </a>
+
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+
+        
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+
+              
+              <script>
+
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                const dropdownMenu = document.querySelector('.dropdown-menu-versions');
+
+                dropdownToggle.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const isExpanded = dropdownMenu.style.display === 'block';
+                  dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                });
+
+                document.addEventListener('click', function (e) {
+                  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.style.display = 'none';
+                  }
+                });
+
+                // Manejar la selección de versión y actualizar la URL
+                dropdownMenu.addEventListener('click', function (e) {
+                  if (e.target.classList.contains('dropdown-item')) {
+                    e.preventDefault();
+                    
+                    const selectedVersion = e.target.getAttribute('data-version');
+                    const lang = document.documentElement.lang; // Obtener el idioma actual del documento
+                    
+                    let basePath = '';
+                    
+                    // Comprobar si el idioma es español
+                    if (lang === 'es') {
+                      basePath += '/es';
+                    }
+
+                    if (lang === 'en') {
+                      basePath += '/en';
+                    }
+
+                    // Redirigir a la ruta de la versión seleccionada
+                    const newPath = `${basePath}/${selectedVersion}`;
+                    window.location.href = newPath;
+                  }
+                });
+              });
+ 
+
+              </script>
+
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" data-version="v0.4.0">v0.4.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.3.0">v0.3.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.2.0">v0.2.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.1.0">v0.1.0</a></li>
+                </ul>
+              </div>
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                  const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+
+                  dropdownToggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const isExpanded = dropdownMenu.style.display === 'block';
+                    dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                  });
+
+                  document.addEventListener('click', function (e) {
+                    if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                      dropdownMenu.style.display = 'none';
+                    }
+                  });
+                });
+                </script>
+
+
+              
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-lang" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                  <svg viewbox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                    <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                  </svg>
+                  English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lang" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="/en/index.html" target="_self" rel="noopener noreferrer" lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="/es/index.html" target="_self" rel="noopener noreferrer" lang="es">Español</a></li>
+                </ul>
+              </div>
+
+
+
+              <a class="hover_custom" style="order: 55;margin: 0 10px;" href="https://github.com/pabllopf/Alis/releases/latest">
+              <button type="button" class="btn btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewbox="0 0 17 17">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+                  </svg>
+                  Download
+              </button>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+      
+      
+
+
+
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint' data-commentid='T:Alis.Core.Physic.Dynamics.Joints.AngleJoint' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint'>Class AngleJoint    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L38'><i class='bi bi-code-slash'></i></a></h1>
+ <div class="facts text-secondary">
+<dl><dt>Namespace</dt><dd><a href='Alis.Core.Physic.Dynamics.Joints.html'>Alis.Core.Physic.Dynamics.Joints</a></dd></dl><dl><dt>Assembly</dt><dd>Alis.dll</dd></dl>
+</div><p>Maintains a fixed angle between two bodies</p>
+<pre><code class='lang-csharp'>public class AngleJoint : Joint</code></pre><h4 class='section'>Inheritance</h4><dl class="typelist inheritance"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html'>Joint</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.AngleJoint.html'>AngleJoint</a>
+</div>
+
+</dd></dl><h4 class='section'>Inherited Members</h4><dl class="typelist"><dd>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__jointType'>Joint._jointType</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeA'>Joint.EdgeA</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeB'>Joint.EdgeB</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IslandFlag'>Joint.IslandFlag</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_JointType'>Joint.JointType</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Enabled'>Joint.Enabled</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyA'>Joint.BodyA</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyB'>Joint.BodyB</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorA'>Joint.WorldAnchorA</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorB'>Joint.WorldAnchorB</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_UserData'>Joint.UserData</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_CollideConnected'>Joint.CollideConnected</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Breakpoint'>Joint.Breakpoint</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Broke'>Joint.Broke</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionForce_System_Single_'>Joint.GetReactionForce(float)</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionTorque_System_Single_'>Joint.GetReactionTorque(float)</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_ShiftOrigin_Alis_Core_Aspect_Math_Vector_Vector2__'>Joint.ShiftOrigin(ref Vector2)</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WakeBodies'>Joint.WakeBodies()</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IsFixedType'>Joint.IsFixedType()</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__'>Joint.InitVelocityConstraints(ref SolverData)</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Validate_System_Single_'>Joint.Validate(float)</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__'>Joint.SolveVelocityConstraints(ref SolverData)</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__'>Joint.SolvePositionConstraints(ref SolverData)</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_DisableIslandFlag'>Joint.DisableIslandFlag()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)'>object.Equals(object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)'>object.Equals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gethashcode'>object.GetHashCode()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gettype'>object.GetType()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone'>object.MemberwiseClone()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.referenceequals'>object.ReferenceEquals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
+</div>
+
+</dd></dl><h2 class='section'>Constructors</h2><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body)' data-commentid='M:Alis.Core.Physic.Dynamics.Joints.AngleJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body)' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_'>AngleJoint(Body, Body)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L65'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Initializes a new instance of the <span class="xref">Alis.Core.Physic.Dynamics.Joints.AngleJoint</span> class</p>
+<pre><code class='lang-csharp'>public AngleJoint(Body bodyA, Body bodyB)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>bodyA</code> <a href='Alis.Core.Physic.Dynamics.Body.html'>Body</a>  </dt>
+<dd>
+
+
+<p>The body</p>
+
+</dd><dt><code>bodyB</code> <a href='Alis.Core.Physic.Dynamics.Body.html'>Body</a>  </dt>
+<dd>
+
+
+<p>The body</p>
+
+</dd></dl><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.bias' data-commentid='F:Alis.Core.Physic.Dynamics.Joints.AngleJoint.bias' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_bias'>bias    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L43'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The bias</p>
+<pre><code class='lang-csharp'>private float bias</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.jointError' data-commentid='F:Alis.Core.Physic.Dynamics.Joints.AngleJoint.jointError' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_jointError'>jointError    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L48'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The joint error</p>
+<pre><code class='lang-csharp'>private float jointError</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.massFactor' data-commentid='F:Alis.Core.Physic.Dynamics.Joints.AngleJoint.massFactor' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_massFactor'>massFactor    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L53'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The mass factor</p>
+<pre><code class='lang-csharp'>private float massFactor</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.targetAngle' data-commentid='F:Alis.Core.Physic.Dynamics.Joints.AngleJoint.targetAngle' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_targetAngle'>targetAngle    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L58'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The target angle</p>
+<pre><code class='lang-csharp'>private float targetAngle</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.BiasFactor' data-commentid='P:Alis.Core.Physic.Dynamics.Joints.AngleJoint.BiasFactor' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_BiasFactor'>BiasFactor    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L105'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the bias factor. Defaults to 0.2</p>
+<pre><code class='lang-csharp'>private float BiasFactor { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.Impulse' data-commentid='P:Alis.Core.Physic.Dynamics.Joints.AngleJoint.Impulse' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_Impulse'>Impulse    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L108'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the maximum impulse. Defaults to float.MaxValue</p>
+<pre><code class='lang-csharp'>private float Impulse { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.Softness' data-commentid='P:Alis.Core.Physic.Dynamics.Joints.AngleJoint.Softness' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_Softness'>Softness    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L111'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the softness of the joint. Defaults to 0</p>
+<pre><code class='lang-csharp'>private float Softness { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.TargetAngle' data-commentid='P:Alis.Core.Physic.Dynamics.Joints.AngleJoint.TargetAngle' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_TargetAngle'>TargetAngle    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L91'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The desired angle between BodyA and BodyB</p>
+<pre><code class='lang-csharp'>public float TargetAngle { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.WorldAnchorA' data-commentid='P:Alis.Core.Physic.Dynamics.Joints.AngleJoint.WorldAnchorA' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_WorldAnchorA'>WorldAnchorA    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L75'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the value of the world anchor a</p>
+<pre><code class='lang-csharp'>public override Vector2 WorldAnchorA { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.WorldAnchorB' data-commentid='P:Alis.Core.Physic.Dynamics.Joints.AngleJoint.WorldAnchorB' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_WorldAnchorB'>WorldAnchorB    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L84'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the value of the world anchor b</p>
+<pre><code class='lang-csharp'>public override Vector2 WorldAnchorB { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.GetReactionForce(System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Joints.AngleJoint.GetReactionForce(System.Single)' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_GetReactionForce_System_Single_'>GetReactionForce(float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L118'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the reaction force using the specified inv dt</p>
+<pre><code class='lang-csharp'>protected override Vector2 GetReactionForce(float invDt)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>invDt</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The inv dt</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+<dd>
+
+
+<p>The vector</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.GetReactionTorque(System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Joints.AngleJoint.GetReactionTorque(System.Single)' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_GetReactionTorque_System_Single_'>GetReactionTorque(float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L125'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the reaction torque using the specified inv dt</p>
+<pre><code class='lang-csharp'>public override float GetReactionTorque(float invDt)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>invDt</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The inv dt</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The float</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)' data-commentid='M:Alis.Core.Physic.Dynamics.Joints.AngleJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__'>InitVelocityConstraints(ref SolverData)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L131'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Inits the velocity constraints using the specified data</p>
+<pre><code class='lang-csharp'>internal override void InitVelocityConstraints(ref SolverData data)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>data</code> <a href='Alis.Core.Physic.Dynamics.Solver.SolverData.html'>SolverData</a>  </dt>
+<dd>
+
+
+<p>The data</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)' data-commentid='M:Alis.Core.Physic.Dynamics.Joints.AngleJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__'>SolvePositionConstraints(ref SolverData)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L166'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Describes whether this instance solve position constraints</p>
+<pre><code class='lang-csharp'>internal override bool SolvePositionConstraints(ref SolverData data)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>data</code> <a href='Alis.Core.Physic.Dynamics.Solver.SolverData.html'>SolverData</a>  </dt>
+<dd>
+
+
+<p>The data</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The bool</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Joints.AngleJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)' data-commentid='M:Alis.Core.Physic.Dynamics.Joints.AngleJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)' id='Alis_Core_Physic_Dynamics_Joints_AngleJoint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__'>SolveVelocityConstraints(ref SolverData)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/AngleJoint.cs#L148'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Solves the velocity constraints using the specified data</p>
+<pre><code class='lang-csharp'>internal override void SolveVelocityConstraints(ref SolverData data)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>data</code> <a href='Alis.Core.Physic.Dynamics.Solver.SolverData.html'>SolverData</a>  </dt>
+<dd>
+
+
+<p>The data</p>
+
+</dd></dl>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Alis - Develop the video games of your dreams 💯 free on Windows, MacOS, Linux, Android(soon), IOS(soon).
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

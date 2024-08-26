@@ -41,7 +41,7 @@ fi
 
 # Leer el fichero template y reemplazar ${version} por la nueva versión, guardando el resultado en el fichero de salida
 while IFS= read -r line; do
-    echo "${line//\$\{version\}/$new_version}"
+    echo "${line//\$\{Version\}/$new_version}"
 done < "$input_file" > "$output_file"
 
 echo "El fichero de salida $output_file se ha actualizado con la versión $new_version."

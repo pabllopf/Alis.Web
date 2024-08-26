@@ -15,6 +15,9 @@ jobs:
         with:
           ref: master
 
+      - name: Make version_checker.sh executable
+        run: chmod +x ./version_checker.sh
+
       - name: Define file name to update version
         run: echo "FILENAME=$(echo './Directory.Build.props')" >> $GITHUB_ENV
 

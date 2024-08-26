@@ -89,10 +89,44 @@ jobs:
       - name: install tools
         run: dotnet tool update -g docfx
 
-      - name: create en web
+      - name: set version 0.1.0 EN
+        run: ./version_checker.sh v0.1.0 template_en.json ./docs/en/web_en.json
+      - name: create v0.1.0 web EN
         run: docfx ./docs/en/web_en.json
 
-      - name: create es web
+      - name: set version 0.1.0 ES
+        run: ./version_checker.sh v0.1.0 template_es.json ./docs/es/web_es.json
+      - name: create v0.1.0 web ES
+        run: docfx ./docs/es/web_es.json
+
+      - name: set version 0.2.0 EN
+        run: ./version_checker.sh v0.2.0 template_en.json ./docs/en/web_en.json
+      - name: create v0.2.0 web EN
+        run: docfx ./docs/en/web_en.json
+
+      - name: set version 0.2.0 ES
+        run: ./version_checker.sh v0.2.0 template_es.json ./docs/es/web_es.json
+      - name: create v0.2.0 web ES
+        run: docfx ./docs/es/web_es.json
+
+      - name: set version 0.3.0 EN
+        run: ./version_checker.sh v0.3.0 template_en.json ./docs/en/web_en.json
+      - name: create v0.3.0 web EN
+        run: docfx ./docs/en/web_en.json
+
+      - name: set version 0.3.0 ES
+        run: ./version_checker.sh v0.3.0 template_es.json ./docs/es/web_es.json
+      - name: create v0.3.0 web ES
+        run: docfx ./docs/es/web_es.json
+
+      - name: set version 0.4.0 EN
+        run: ./version_checker.sh v0.4.0 template_en.json ./docs/en/web_en.json
+      - name: create v0.4.0 web EN
+        run: docfx ./docs/en/web_en.json
+
+      - name: set version 0.4.0 ES
+        run: ./version_checker.sh v0.4.0 template_es.json ./docs/es/web_es.json
+      - name: create v0.4.0 web ES
         run: docfx ./docs/es/web_es.json
     
       - name: git config user.name github-actions

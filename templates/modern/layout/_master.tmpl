@@ -206,22 +206,43 @@
 
               <script>
                 document.addEventListener('DOMContentLoaded', function () {
-                  const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
-                  const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+                    const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                    const dropdownMenu = document.querySelector('.dropdown-menu-lang');
 
-                  dropdownToggle.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const isExpanded = dropdownMenu.style.display === 'block';
-                    dropdownMenu.style.display = isExpanded ? 'none' : 'block';
-                  });
+                    dropdownToggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const isExpanded = dropdownMenu.style.display === 'block';
+                        dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                    });
 
-                  document.addEventListener('click', function (e) {
-                    if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                      dropdownMenu.style.display = 'none';
-                    }
-                  });
+                    document.addEventListener('click', function (e) {
+                        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    });
+
+                    // Manejar la selección de idioma y actualizar la URL
+                    dropdownMenu.addEventListener('click', function (e) {
+                        if (e.target.classList.contains('dropdown-item')) {
+                            e.preventDefault();
+                            
+                            const selectedLang = e.target.getAttribute('lang');
+                            const currentPath = window.location.pathname;
+                            const pathParts = currentPath.split('/');
+
+                            // Verificar si la URL sigue el formato esperado y reemplazar el idioma
+                            if (pathParts.length >= 3) {
+                                pathParts[1] = selectedLang;  // Reemplaza el idioma en la URL
+                            }
+
+                            // Reconstruir la URL y redirigir
+                            const newPath = pathParts.join('/');
+                            window.location.href = newPath;
+                        }
+                    });
                 });
                 </script>
+
 
 
               
@@ -254,10 +275,11 @@
                   margin: 0; 
                   padding: 0;
                 ">
-                  <li><a class="dropdown-item" href="/en/v0.4.0/index.html" target="_self" rel="noopener noreferrer" lang="en">English</a></li>
-                  <li><a class="dropdown-item" href="/es/v0.4.0/index.html" target="_self" rel="noopener noreferrer" lang="es">Español</a></li>
+                  <li><a class="dropdown-item" href="#" lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" lang="es">Español</a></li>
                 </ul>
-              </div>
+            </div>
+
 
 
 

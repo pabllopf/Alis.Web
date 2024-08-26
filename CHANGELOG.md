@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.1.2] - 2024-08-26
+### :sparkles: New Features
+- [`0682f7e`](https://github.com/pabllopf/Alis.Web/commit/0682f7ef79937881d76e592763ce11482c2d1d2e) - add selector of versions and build with semi-autmoatic *(commit by [@pabllopf](https://github.com/pabllopf))*
+- [`66f3b50`](https://github.com/pabllopf/Alis.Web/commit/66f3b504a9bf2317fdd296c51b504776c7ef5d28) - fix the change version and language selector *(commit by [@pabllopf](https://github.com/pabllopf))*
+
+### :bug: Bug Fixes
+- [`9f6d922`](https://github.com/pabllopf/Alis.Web/commit/9f6d9229cdc57257faab3b24258aa9b8d6265ebe) - the version of urls *(commit by [@pabllopf](https://github.com/pabllopf))*
+- [`8085af2`](https://github.com/pabllopf/Alis.Web/commit/8085af2be218095db99abb1b986a957fc9173b2e) - the versions names *(commit by [@pabllopf](https://github.com/pabllopf))*
+
+
 ## [v0.1.1] - 2024-08-24
 ### :bug: Bug Fixes
 - [`a396a8f`](https://github.com/pabllopf/Alis.Web/commit/a396a8fef95fecb3a2a163c12e008026c6afe2bd) - delete corrupted files *(commit by [@pabllopf](https://github.com/pabllopf))*
@@ -81,3 +91,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.0.9]: https://github.com/pabllopf/Alis.Web/compare/v0.0.8...v0.0.9
 [v0.1.0]: https://github.com/pabllopf/Alis.Web/compare/v0.0.9...v0.1.0
 [v0.1.1]: https://github.com/pabllopf/Alis.Web/compare/v0.1.0...v0.1.1
+[v0.1.2]: https://github.com/pabllopf/Alis.Web/compare/v0.1.1...v0.1.2

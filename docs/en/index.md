@@ -1,4 +1,18 @@
-[![](https://raw.githubusercontent.com/pabllopf/Alis/master/docs/banner/Alis_Banner_970x250.png)](https://pabllopf.github.io/Alis/index.html)
+![Alis Banner](https://raw.githubusercontent.com/pabllopf/Alis/master/docs/banner/Alis_Banner_970x250.png)
+
+**Alis** is a completely free cross-platform game development framework. With Alis, you can create stunning games for Windows, macOS, Linux, and soon for Android and iOS. We are committed to keeping the project accessible to everyone at no cost.
+
+## 🚀 Getting Started
+
+To start developing with Alis, follow these steps:
+
+1. **[Read the Documentation](link-to-documentation)**: Here you'll find installation guides, tutorials, and examples to help you get started.
+2. **[Explore the Examples](link-to-examples)**: Check out sample projects to see Alis in action.
+3. **[Join the Community](link-to-community)**: Engage in our forum, Discord channel, and social media to connect with other developers and get support.
+
+## 📈 Project Metrics
+
+We are proud of the quality and progress of Alis! Here are some recent project statistics:
 
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=pabllopf_Alis&metric=coverage)](https://sonarcloud.io/summary/new_code?id=pabllopf_Alis)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=pabllopf_Alis&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=pabllopf_Alis)
@@ -10,47 +24,34 @@
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=pabllopf_Alis&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=pabllopf_Alis)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=pabllopf_Alis&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=pabllopf_Alis)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=pabllopf_Alis&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=pabllopf_Alis)
-![GitHub issues](https://img.shields.io/github/issues/pabllopf/alis?label=Open%20Tickets&color=green)
-[![Release](https://img.shields.io/github/release/pabllopf/alis.svg)](https://github.com/pabllopf/alis/releases/latest)
-[![License](https://img.shields.io/badge/license-GPL%20v3.0-blue)](https://github.com/pabllopf/Alis/blob/main/LICENSE)
-![GitHub all releases](https://img.shields.io/github/downloads/pabllopf/alis/total?label=github%20downloads&color=blue)
-[![Web](https://img.shields.io/website?down_color=red&down_message=failed&up_color=blue&up_message=active&url=https%3A%2F%2Fpabllopf.github.io%2FAlis.Web%2F)](https://pabllopf.github.io/Alis.Web/index.html)
-![Nuget](https://img.shields.io/nuget/v/alis?label=nuget%20version&color=green)
-![Nuget](https://img.shields.io/nuget/dt/alis?label=nuget%20downloads)
-![GitHub contributors](https://img.shields.io/github/contributors/pabllopf/alis)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/pabllopf)
 
+## 📜 General Public License v3.0
 
-> Develop the video games of your dreams 💯 free!! on Windows, MacOS, Linux, Android(soon), IOS(soon).
+**Alis** is available under the General Public License v3.0, which ensures that the project and any modifications remain free and accessible to everyone. You can read more about this license [here](https://github.com/pabllopf/Alis/blob/master/LICENSE).
 
-## General Public License v3.0
-
-> Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works
-> and modifications, which include larger works using a licensed work, under the same license. Copyright and license
-> notices must be preserved. Contributors provide an express grant of patent rights.
-
-[![License](https://raw.githubusercontent.com/pabllopf/Alis/master/docs/licence/License.png)](https://github.com/pabllopf/Alis/blob/master/LICENSE)
+![License](https://raw.githubusercontent.com/pabllopf/Alis/master/docs/licence/License.png)
 
 [![](https://img.shields.io/badge/Read%20More--blue)](https://github.com/pabllopf/Alis/blob/master/licence.md)
 
-## Contributor Guide
+## 🤝 Contribution Guide
 
-Thank you for investing your time in contributing to our project! Any contribution you make will be reflected.
-Read our Code of Conduct to keep our community approachable and respectable.
-
-[![](https://img.shields.io/badge/Read%20More--blue)](https://github.com/pabllopf/Alis/blob/main/code_of_conduct.md)
-
-## Contributor Covenant Code of Conduct
-
-In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making
-participation in our project and our community a harassment-free experience for everyone, regardless of age, body size,
-disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education,
-socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+Thank you for your interest in contributing to our project! Your participation is valuable and appreciated. Please review our [Code of Conduct](https://github.com/pabllopf/Alis/blob/main/code_of_conduct.md) to ensure that our working environment remains respectful and welcoming.
 
 [![](https://img.shields.io/badge/Read%20More--blue)](https://github.com/pabllopf/Alis/blob/main/code_of_conduct.md)
 
+## 🛡️ Code of Conduct
 
+At Alis, we are committed to maintaining an open and welcoming environment for everyone. Please read our [Code of Conduct](https://github.com/pabllopf/Alis/blob/main/code_of_conduct.md) to ensure a harassment-free experience for all participants.
 
+[![](https://img.shields.io/badge/Read%20More--blue)](https://github.com/pabllopf/Alis/blob/main/code_of_conduct.md)
 
+## 💬 Contact
 
+For any inquiries, comments, or support requests, feel free to reach out to us through the following channels:
 
+- **Email**: [support@alis.org](mailto:support@alis.org)
+- **Community Forum**: [Participate here](link-to-forum)
+- **Discord Channel**: [Join the chat](link-to-discord)
+- **Social Media**: Follow us on [Twitter](link-to-twitter), [Facebook](link-to-facebook), and [LinkedIn](link-to-linkedin)
+
+Thank you for visiting the Alis documentation! We hope you enjoy working with our framework and find the information you need for your projects.

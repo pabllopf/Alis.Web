@@ -1,225 +1,50 @@
-# Contacta
+# Contáctanos
 
-Template defines the appearance of the website.
+En **Alis**, valoramos tu participación y estamos aquí para ayudarte. Si tienes preguntas, sugerencias, comentarios o necesitas soporte, no dudes en ponerte en contacto con nosotros a través de cualquiera de los siguientes medios. Estamos comprometidos a ofrecerte la mejor experiencia posible y a responder a tus necesidades de manera oportuna.
 
-Docfx ships several built-in templates. We recommend using the modern template that matches the look and feel of this site. It supports dark mode, more features, rich customization options and.
+## 📨 Correo Electrónico
 
-Use the modern template by setting the `template` property to `["default", "modern"]`:
+Para consultas generales, soporte técnico, o temas relacionados con el proyecto, puedes enviarnos un correo electrónico a:
 
-```json
-{
-  "build": {
-    "template": [
-      "default",
-      "modern"
-    ]
-  }
-}
-```
+- **soporte@alis.org**: Para soporte técnico y preguntas generales sobre el framework.
 
-Additional templates are available at the [Template Gallery](../extensions/templates.yml).
+## 💬 Foros y Comunidad
 
+Únete a las discusiones y busca respuestas en nuestro foro comunitario. Aquí puedes interactuar con otros miembros de la comunidad y obtener ayuda de los desarrolladores y usuarios experimentados.
 
-## Template Metadata
+- **[Foro de la Comunidad](link-al-foro)**
 
-The easiest way of customizing the the appearance of pages is using [metadata](./config.md#metadata). Here is a list of predefined metadata:
+## 💬 Canal de Discord
 
-# [Modern Template](#tab/modern)
+Para conversaciones en tiempo real y soporte inmediato, únete a nuestro servidor de Discord. Aquí puedes chatear con otros desarrolladores, compartir tus ideas y obtener respuestas rápidas a tus preguntas.
 
-Name         | Type    | Description
-----------------------|---------|---------------------------
-`_appTitle`             | string  | A string append to every page title.
-`_appName`              | string  | The name of the site displayed after logo.
-`_appFooter`            | string  | The footer HTML.
-`_appLogoPath`          | string  | Path to the app logo.
-`_appLogoUrl`           | string  | URL for the app logo.
-`_appFaviconPath`       | string  | Favicon URL path.
-`_enableSearch`         | bool    | Whether to show the search box.
-`_noindex`              | bool    | Whether to include in search results
-`_disableContribution`  | bool    | Whether to show the _"Edit this page"_ button.
-`_gitContribute`        | object  | Defines the `repo` and `branch` property of git links.
-`_gitUrlPattern`        | string  | URL pattern of git links.
-`_disableNewTab`        | bool    | Whether to render external link indicator icons and open external links in a new tab.
-`_disableNavbar`        | bool    | Whether to show the navigation bar.
-`_disableBreadcrumb`    | bool    | Whether to show the breadcrumb.
-`_disableToc`           | bool    | Whether to show the TOC.
-`_disableAffix`         | bool    | Whether to show the right rail.
-`_disableNextArticle`   | bool    | Whether to show the previous and next article link.
-`_disableTocFilter`     | bool    | Whether to show the table of content filter box.
-`_googleAnalyticsTagId` | string  | Enables Google Analytics web traffic analysis.
-`_lang`                  | string  | Primary language of the page. If unset, the `<html>` tag will not have `lang` property.
-`_layout`                | string  | Determines the layout of the page. Supported values are `landing` and `chromeless`.
+- **[Unirse al Canal de Discord](link-a-discord)**
 
-# [Default Template](#tab/default)
+## 📱 Redes Sociales
 
-Name         | Type    | Description
-----------------------|---------|---------------------------
-`_appTitle`             | string  | A string append to every page title.
-`_appName`              | string  | The name of the site displayed after logo.
-`_appFooter`            | string  | The footer HTML.
-`_appLogoPath`          | string  | Path to the app logo.
-`_appLogoUrl`           | string  | URL for the app logo.
-`_appFaviconPath`       | string  | Favicon URL path.
-`_enableSearch`         | bool    | Whether to show the search box.
-`_enableNewTab`         | bool    | Whether to open external links in a new tab.
-`_noindex`              | bool  | Whether to include in search results
-`_disableContribution`  | bool    | Whether to show the _"Improve this Doc"_ and _"View Source"_ buttons.
-`_gitContribute`        | object  | Defines the `repo` and `branch` property of git links.
-`_gitUrlPattern`        | string  | URL pattern of git links.
-`_disableNavbar`        | bool    | Whether to show the navigation bar.
-`_disableBreadcrumb`    | bool    | Whether to show the breadcrumb.
-`_disableToc`           | bool    | Whether to show the TOC.
-`_disableAffix`         | bool    | Whether to show the right rail.
-`_googleAnalyticsTagId` | string  | Enables Google Analytics web traffic analysis.
-`_lang`                 | string | Primary language of the page. If unset, the `<html>` tag will not have `lang` property.
+Síguenos en nuestras redes sociales para estar al tanto de las últimas noticias, actualizaciones y eventos relacionados con el proyecto Alis:
 
----
+- **Twitter**: [@AlisFramework](link-a-twitter)
+- **Facebook**: [Alis Framework](link-a-facebook)
+- **LinkedIn**: [Alis en LinkedIn](link-a-linkedin)
 
-> [!TIP]
-> Docfx produces the right git links for major CI pipelines including [GitHub](https://github.com/features/actions), [GitLab](https://about.gitlab.com/gitlab-ci/), [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/), [AppVeyor](https://www.appveyor.com/), [TeamCity](https://www.jetbrains.com/teamcity/), [Jenkins](https://jenkins.io/). `_gitContribute` and `_gitUrlPattern` are optional on these platforms.
+## 📜 Documentación
 
+Para información detallada y guías sobre cómo utilizar Alis, consulta nuestra documentación oficial. Si encuentras algún problema o tienes sugerencias para mejorarla, no dudes en hacérnoslo saber.
 
-## Custom Template
+- **[Documentación Oficial](link-a-documentacion)**
 
-To build your own template, create a new folder and add it to `template` config in `docfx.json`:
+## 🛠️ Reportes de Problemas
 
-# [Modern Template](#tab/modern)
+Si encuentras un error o tienes una sugerencia para mejorar el framework, por favor, repórtalo en nuestro sistema de issues en GitHub:
 
-```json
-{
-  "build": {
-    "template": [
-      "default",
-      "modern",
-      "my-template" // <-- Path to custom template
-    ]
-  }
-}
-```
+- **[Sistema de Issues en GitHub](link-a-issues)**
 
-Add your custom CSS file to `my-template/public/main.css` to customize colors, show and hide elements, etc. This is an example stylesheet that adjust the font size of article headers.
+## 🤝 Colabora con Nosotros
 
-```css
-/* file: my-template/public/main.css */
-article h1 {
-  font-size: 40px;
-}
-```
+Si estás interesado en contribuir al desarrollo de Alis, ya sea a través de código, documentación o cualquier otra forma, consulta nuestra [página de contribuciones](link-a-contribuciones) para obtener más detalles sobre cómo puedes involucrarte.
 
-You can also use [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to adjust the templates. There are many predefined CSS variables in [Bootstrap](https://getbootstrap.com/docs/5.3/customize/color/#colors) that can be used to customize the site:
+No importa cómo prefieras contactarnos, estamos aquí para escuchar y ayudarte. Tu participación y tus comentarios son esenciales para el éxito y la evolución continua de Alis.
 
-```css
-/* file: my-template/public/main.css */
-body {
-  --bs-link-color-rgb: 66, 184, 131 !important;
-  --bs-link-hover-color-rgb: 64, 180, 128 !important;
-}
-```
+¡Gracias por ser parte de nuestra comunidad!
 
-The `my-template/public/main.js` file is the entry JavaScript file to customize docfx site behaviors. This is a basic setup that changes the default color mode to dark and adds some icon links in the header:
-
-```js
-/* file: my-template/public/main.js */
-export default {
-  defaultTheme: 'dark',
-  iconLinks: [
-    {
-      icon: 'github',
-      href: 'https://github.com/pabllopf/Alis',
-      title: 'GitHub'
-    },
-    {
-      icon: 'twitter',
-      href: 'https://twitter.com',
-      title: 'Twitter'
-    }
-  ]
-}
-```
-
-You can add custom startup scripts in `main.js` using the `start` option:
-
-```js
-export default {
-  start: () => {
-    // Startup script goes here
-  },
-}
-```
-
-You can also configure syntax highlighting options using the `configureHljs` option:
-
-```js
-export default {
-  configureHljs: (hljs) => {
-    // Customize hightlight.js here
-  },
-}
-```
-
-See [this example](https://github.com/pabllopf/Alis/blob/main/samples/seed/template/public/main.js) on how to enable `bicep` syntax highlighting.
-
-More customization options are available in the [docfx options object](https://github.com/pabllopf/Alis/blob/main/templates/modern/src/options.d.ts).
-
-
-# [Default Template](#tab/default)
-
-
-```json
-{
-  "build": {
-    "templates": [
-      "default",
-      "my-template" // <-- Path to custom template
-    ]
-  }
-}
-```
-
-Add your custom CSS file to `styles/main.css` and JavaScript file to `styles/main.js`. Docfx loads these 2 files and use them to style the website.
-
-This is an example stylesheet that adjust the font size of article headers:
-
-```css
-/* file: styles/main.css */
-article h1 {
-  font-size: 40px;
-}
-```
-
-In addition to CSS and JavaScript, you can customize how docfx generates HTML using [Mustache Templates](https://mustache.github.io/).
-
-Create a `partials/footer.tmpl.partial` file to replace the footer. This example update the footer to show a GitHub Follow button.
-
-```html
-<footer>
-  <a class="github-button" href="{{source.remote.repo}}" data-size="large" aria-label="Follow">Follow</a>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-</footer>
-```
-
-The list of customizable HTML components are:
-
-- `partials/logo.tmpl.partial`: The logo in the header.
-- `partials/footer.tmpl.partial`: The footer at the bottom of the page.
-- `partials/affix.tmpl.partial`: The right rail.
-- `partials/breadcrumb.tmpl.partial`: The breadcrumb bar.
-
-## Template Variables
-
-Metadata and other properties are available to the template engine. To see the template JSON input model, build with `--exportRawModel` command line option.
-
-Here are some predefined variables available to the template:
-
-Name | Description
------| ----
-`_rel` | The relative path of the root output folder from current output file. For example, if the output file is `a/b/c.html` from root output folder, then the value is `../../`.
-`_path` | The path of current output file starting from root output folder.
-`_navPath` | The relative path of the root TOC file from root output folder, if exists. The root TOC file stands for the TOC file in root output folder. For example, if the output file is html file, the value is `toc.html`.
-`_navRel` | The relative path from current output file to the root TOC file, if exists. For example, if the root TOC file is `toc.html` from root output folder, the value is empty.
-`_navKey` | The original file path of the root TOC file starting with `~/`. `~/` stands for the folder where `docfx.json` is in, for example, `~/toc.md`.
-`_tocPath` | The relative path of the TOC file that current output file belongs to from root output folder, if current output file is in that TOC file. If current output file is not defined in any TOC file, the nearest TOC file is picked.
-`_tocRel` | The relative path from current output file to its TOC file. For example, if the TOC file is `a/toc.html` from root output folder, the value is `../`.
-`_tocKey` | The original file path of the TOC file starting with `~/`. `~/` stands for the folder where `docfx.json` is in, for example, `~/a/toc.yml`.
-
----

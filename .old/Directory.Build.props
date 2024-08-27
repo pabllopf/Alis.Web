@@ -1,8 +1,0 @@
-<Project>
-    <PropertyGroup Label="BasePath">
-        <SolutionDir Condition="'$(SolutionDir)'==''">$(MSBuildThisFileDirectory)</SolutionDir>
-    </PropertyGroup>
-    <PropertyGroup>
-        <AssemblyVersion>0.0.5</AssemblyVersion>
-    </PropertyGroup>
-</Project>

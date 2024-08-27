@@ -1,51 +1,25 @@
 {
-  "items": [
-    {
-      "name": "ℹ️ Nosotros",
-      "href": "about/Origin.html",
-      "tocHref": "about/toc.html",
-      "topicHref": "about/Origin.html",
-      "level": 2.0,
-      "items": [],
-      "leaf": true
+  "conceptual": "\n",
+  "type": "Conceptual",
+  "source": {
+    "remote": {
+      "path": "docs/es/learn/getting_started.md",
+      "branch": "master",
+      "repo": "https://github.com/pabllopf/Alis.Web"
     },
-    {
-      "name": "🫱🏼‍🫲🏼 Comunidad",
-      "href": "community/introduction.html",
-      "tocHref": "community/toc.html",
-      "topicHref": "community/introduction.html",
-      "level": 2.0,
-      "items": [],
-      "leaf": true
+    "startLine": 0.0,
+    "endLine": 0.0
+  },
+  "path": "learn/getting_started.md",
+  "documentation": {
+    "remote": {
+      "path": "docs/es/learn/getting_started.md",
+      "branch": "master",
+      "repo": "https://github.com/pabllopf/Alis.Web"
     },
-    {
-      "name": "📖 Aprender",
-      "href": "learn/getting_started.html",
-      "tocHref": "learn/toc.html",
-      "topicHref": "learn/getting_started.html",
-      "level": 2.0,
-      "items": [],
-      "leaf": true
-    },
-    {
-      "name": "♾️ Api",
-      "href": "api/Alis.html",
-      "tocHref": "api/toc.html",
-      "topicHref": "api/Alis.html",
-      "level": 2.0,
-      "items": [],
-      "leaf": true
-    },
-    {
-      "name": "📢 Contacta",
-      "href": "contact/Contact.html",
-      "tocHref": "contact/toc.html",
-      "topicHref": "contact/Contact.html",
-      "level": 2.0,
-      "items": [],
-      "leaf": true
-    }
-  ],
+    "startLine": 0.0,
+    "endLine": 0.0
+  },
   "_appFaviconPath": "resources/logo.png",
   "_appFooter": "Alis - Desarrolla los videojuegos de tus sueños 💯 gratis en Windows, MacOS, Linux, Android (próximamente), iOS (próximamente).",
   "_appLogoPath": "resources/logo_small_v2.png",
@@ -57,7 +31,7 @@
   "_disableContribution": false,
   "_disableNavbar": false,
   "_disableSideFilter": false,
-  "_disableToc": true,
+  "_disableToc": false,
   "_enableNewTab": true,
   "_enableSearch": true,
   "_gitContribute": {
@@ -72,14 +46,27 @@
   },
   "pdf": false,
   "pdfTocPage": false,
-  "_key": "toc.yml",
+  "_systemKeys": [
+    "conceptual",
+    "type",
+    "source",
+    "path",
+    "documentation",
+    "title",
+    "rawTitle",
+    "wordCount"
+  ],
+  "rawTitle": "<h1 id=\"getting-started\" sourcefile=\"learn/getting_started.md\" sourcestartlinenumber=\"1\">Getting Started</h1>",
+  "title": "Getting Started",
+  "wordCount": 0.0,
+  "_key": "learn/getting_started.md",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
-  "_navRel": "toc.html",
-  "_path": "toc.html",
-  "_rel": "",
-  "_tocKey": "~/toc.yml",
-  "_tocPath": "toc.html",
+  "_navRel": "../toc.html",
+  "_path": "learn/getting_started.html",
+  "_rel": "../",
+  "_tocKey": "~/learn/toc.yml",
+  "_tocPath": "learn/toc.html",
   "_tocRel": "toc.html",
   "__global": {
     "namespacesInSubtitle": "Espacios de nombres",
@@ -155,10 +142,5 @@
     "downloadPdf": "Descargar PDF",
     "_shared": {}
   },
-  "topicHref": null,
-  "tocHref": null,
-  "name": null,
-  "level": 1.0,
-  "leaf": false,
-  "title": "Table of Content"
+  "docurl": ""
 }

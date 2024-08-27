@@ -53,3 +53,4 @@ timeout /t 1 /nobreak > nul
 
 endlocal
 exit /b 0
+

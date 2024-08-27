@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.1.4] - 2024-08-27
+### :bug: Bug Fixes
+- [`1a36992`](https://github.com/pabllopf/Alis.Web/commit/1a36992c78a8633df374aefd6e8bb320f1e98de3) - delete temp files with $version error *(commit by [@pabllopf](https://github.com/pabllopf))*
+
+### :art: Code Style Changes
+- [`f0530be`](https://github.com/pabllopf/Alis.Web/commit/f0530bed342c2d3cfbc0730002363e3fabc0ba56) - delete old web *(commit by [@pabllopf](https://github.com/pabllopf))*
+- [`2bb6886`](https://github.com/pabllopf/Alis.Web/commit/2bb68865cb3f6d6bcaa6f5d60ac6eab5f20e0ad8) - move templates to local languages files *(commit by [@pabllopf](https://github.com/pabllopf))*
+
+
 ## [v0.1.3] - 2024-08-26
 ### :bug: Bug Fixes
 - [`3a735ca`](https://github.com/pabllopf/Alis.Web/commit/3a735cacf318ddb650212ec25100b77d1ee2e4a6) - version *(commit by [@pabllopf](https://github.com/pabllopf))*
@@ -98,3 +107,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.1.1]: https://github.com/pabllopf/Alis.Web/compare/v0.1.0...v0.1.1
 [v0.1.2]: https://github.com/pabllopf/Alis.Web/compare/v0.1.1...v0.1.2
 [v0.1.3]: https://github.com/pabllopf/Alis.Web/compare/v0.1.2...v0.1.3
+[v0.1.4]: https://github.com/pabllopf/Alis.Web/compare/v0.1.3...v0.1.4

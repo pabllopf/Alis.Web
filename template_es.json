@@ -66,8 +66,8 @@
         ]
       }
     ],
-    "output": "../../es/${Version}",
-    "template": ["../../templates/default", "../../templates/modern"],
+    "output": "../../es/${version}",
+    "template": ["templates/default", "templates/modern"],
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "globalMetadata": {

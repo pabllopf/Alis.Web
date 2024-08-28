@@ -2,7 +2,6 @@
 
 Currently, there is no exact or widely accepted definition of what constitutes an indie game. However, there are several common traits that characterize these types of games:
 
-
 ## Characteristics of Indie Games
 
 1. **Independent Development**

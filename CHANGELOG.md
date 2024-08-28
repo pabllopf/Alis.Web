@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.1.9] - 2024-08-28
+### :bug: Bug Fixes
+- [`79afa6e`](https://github.com/pabllopf/Alis.Web/commit/79afa6ee557df7caa68b76ab2e0c5a22ef2cb120) - the index *(commit by [@pabllopf](https://github.com/pabllopf))*
+
+
 ## [v0.1.8] - 2024-08-27
 ### :bug: Bug Fixes
 - [`79fb350`](https://github.com/pabllopf/Alis.Web/commit/79fb350a66a497bd347138088d9090b71d7ce9dc) - names of files *(commit by [@pabllopf](https://github.com/pabllopf))*
@@ -135,3 +140,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.1.6]: https://github.com/pabllopf/Alis.Web/compare/v0.1.5...v0.1.6
 [v0.1.7]: https://github.com/pabllopf/Alis.Web/compare/v0.1.6...v0.1.7
 [v0.1.8]: https://github.com/pabllopf/Alis.Web/compare/v0.1.7...v0.1.8
+[v0.1.9]: https://github.com/pabllopf/Alis.Web/compare/v0.1.8...v0.1.9

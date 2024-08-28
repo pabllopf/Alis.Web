@@ -1,33 +1,25 @@
 {
-  "items": [
-    {
-      "name": "Inicio rápido",
-      "href": "getting_started.html",
-      "topicHref": "getting_started.html",
-      "tocHref": null,
-      "level": 2.0,
-      "items": [],
-      "leaf": true
+  "conceptual": "\n",
+  "type": "Conceptual",
+  "source": {
+    "remote": {
+      "path": "docs/es/learn/samples.md",
+      "branch": "master",
+      "repo": "https://github.com/pabllopf/Alis.Web"
     },
-    {
-      "name": "Funcionalidades",
-      "href": "features.html",
-      "topicHref": "features.html",
-      "tocHref": null,
-      "level": 2.0,
-      "items": [],
-      "leaf": true
+    "startLine": 0.0,
+    "endLine": 0.0
+  },
+  "path": "learn/samples.md",
+  "documentation": {
+    "remote": {
+      "path": "docs/es/learn/samples.md",
+      "branch": "master",
+      "repo": "https://github.com/pabllopf/Alis.Web"
     },
-    {
-      "name": "Ejemplos",
-      "href": "samples.html",
-      "topicHref": "samples.html",
-      "tocHref": null,
-      "level": 2.0,
-      "items": [],
-      "leaf": true
-    }
-  ],
+    "startLine": 0.0,
+    "endLine": 0.0
+  },
   "_appFaviconPath": "resources/logo.png",
   "_appFooter": "Alis - Desarrolla los videojuegos de tus sueños 💯 gratis en Windows, MacOS, Linux, Android (próximamente), iOS (próximamente).",
   "_appLogoPath": "resources/logo_small_v2.png",
@@ -39,7 +31,7 @@
   "_disableContribution": false,
   "_disableNavbar": false,
   "_disableSideFilter": false,
-  "_disableToc": true,
+  "_disableToc": false,
   "_enableNewTab": true,
   "_enableSearch": true,
   "_gitContribute": {
@@ -54,11 +46,24 @@
   },
   "pdf": false,
   "pdfTocPage": false,
-  "_key": "learn/toc.yml",
+  "_systemKeys": [
+    "conceptual",
+    "type",
+    "source",
+    "path",
+    "documentation",
+    "title",
+    "rawTitle",
+    "wordCount"
+  ],
+  "rawTitle": "<h1 id=\"samples\" sourcefile=\"learn/samples.md\" sourcestartlinenumber=\"1\">Samples</h1>",
+  "title": "Samples",
+  "wordCount": 0.0,
+  "_key": "learn/samples.md",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "learn/toc.html",
+  "_path": "learn/samples.html",
   "_rel": "../",
   "_tocKey": "~/learn/toc.yml",
   "_tocPath": "learn/toc.html",
@@ -137,10 +142,5 @@
     "downloadPdf": "Descargar PDF",
     "_shared": {}
   },
-  "topicHref": null,
-  "tocHref": null,
-  "name": null,
-  "level": 1.0,
-  "leaf": false,
-  "title": "Table of Content"
+  "docurl": ""
 }

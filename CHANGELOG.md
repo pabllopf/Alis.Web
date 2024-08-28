@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.0] - 2024-08-28
+### :sparkles: New Features
+- [`bcf29e5`](https://github.com/pabllopf/Alis.Web/commit/bcf29e5904b70264f71a71ed452bc13d8536711c) - add samples files *(commit by [@pabllopf](https://github.com/pabllopf))*
+- [`cdd2246`](https://github.com/pabllopf/Alis.Web/commit/cdd22466c3346e9479315e11d4eab1c5f8c07d36) - add getting start en *(commit by [@pabllopf](https://github.com/pabllopf))*
+- [`629f0be`](https://github.com/pabllopf/Alis.Web/commit/629f0be88282fdacbc0abc5ae296d8ca12449e32) - context of project *(commit by [@pabllopf](https://github.com/pabllopf))*
+- [`e6d3c3e`](https://github.com/pabllopf/Alis.Web/commit/e6d3c3e7f323654e56d5507e85d3da88d005dfda) - add basic_concepts *(commit by [@pabllopf](https://github.com/pabllopf))*
+- [`f97bfc0`](https://github.com/pabllopf/Alis.Web/commit/f97bfc04e41ae3a3113fa0fc708314fd40c1df1a) - indie games *(commit by [@pabllopf](https://github.com/pabllopf))*
+
+
 ## [v0.1.9] - 2024-08-28
 ### :bug: Bug Fixes
 - [`79afa6e`](https://github.com/pabllopf/Alis.Web/commit/79afa6ee557df7caa68b76ab2e0c5a22ef2cb120) - the index *(commit by [@pabllopf](https://github.com/pabllopf))*
@@ -141,3 +150,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.1.7]: https://github.com/pabllopf/Alis.Web/compare/v0.1.6...v0.1.7
 [v0.1.8]: https://github.com/pabllopf/Alis.Web/compare/v0.1.7...v0.1.8
 [v0.1.9]: https://github.com/pabllopf/Alis.Web/compare/v0.1.8...v0.1.9
+[v0.2.0]: https://github.com/pabllopf/Alis.Web/compare/v0.1.9...v0.2.0

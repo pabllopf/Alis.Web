@@ -314,8 +314,49 @@
         </div>
 
         <article data-uid="">
-<h1 id="getting-started">Getting Started</h1>
+<h1 id="-empezando-con-alis">🚀 Empezando con Alis</h1>
 
+<p><strong>Alis</strong> es un framework de desarrollo de videojuegos multiplataforma que puedes integrar fácilmente en tus proyectos. Sigue los pasos a continuación para comenzar a usar <strong>Alis</strong> en tu entorno de desarrollo .NET.</p>
+<h2 id="instalación">Instalación</h2>
+<h3 id="net-cli">.NET CLI</h3>
+<p>Si estás utilizando la CLI de .NET, puedes agregar el paquete <strong>Alis</strong> a tu proyecto con el siguiente comando:</p>
+<pre><code class="lang-bash">dotnet add package Alis
+</code></pre>
+<h3 id="package-manager">Package Manager</h3>
+<p>Si prefieres usar el Administrador de Paquetes, puedes ejecutar el siguiente comando en la Consola del Administrador de Paquetes:</p>
+<pre><code class="lang-bash">Install-Package Alis
+</code></pre>
+<h3 id="packagereference">PackageReference</h3>
+<p>Para incluir Alis en tu archivo de proyecto .csproj, agrega la siguiente línea dentro del nodo <itemgroup>:</itemgroup></p>
+<pre><code class="lang-xml">&lt;PackageReference Include=&quot;Alis&quot; Version=&quot;*&quot; /&gt;
+</code></pre>
+<h3 id="paket-cli">Paket CLI</h3>
+<p>Si usas Paket como gestor de paquetes, puedes añadir Alis con este comando:</p>
+<pre><code class="lang-bash">paket add Alis
+</code></pre>
+<h3 id="script--interactive">Script &amp; Interactive</h3>
+<p>En un entorno interactivo, como un script o una aplicación interactiva de C#, puedes referenciar el paquete Alis de la siguiente manera:</p>
+<pre><code>#r &quot;nuget: Alis&quot;
+</code></pre>
+<h3 id="cake">Cake</h3>
+<p>Para proyectos que usan Cake como sistema de automatización de compilaciones, puedes incluir el paquete Alis de la siguiente forma:</p>
+<pre><code>#addin nuget:?package=Alis&amp;version
+#tool nuget:?package=Alis&amp;version
+</code></pre>
+<h2 id="-plantilla-de-github-para-alis">🎨 Plantilla de GitHub para Alis</h2>
+<p>Para ayudarte a comenzar aún más rápido, ofrecemos una plantilla de GitHub específicamente diseñada para aplicaciones de escritorio utilizando Alis. Esta plantilla incluye toda la configuración necesaria, por lo que puedes comenzar a desarrollar sin preocuparte por la estructura inicial del proyecto.</p>
+<h3 id="cómo-usar-la-plantilla">Cómo Usar la Plantilla</h3>
+<ol>
+<li><p>Visita el <a href="https://github.com/pabllopf/Alis.Template.Desktop">repositorio de GitHub Alis.Template.Desktop</a>.</p>
+</li>
+<li><p>Haz clic en el botón <strong>&quot;Use this template&quot;</strong> ubicado en la parte superior derecha de la página del repositorio.</p>
+</li>
+<li><p>Sigue las indicaciones para crear un nuevo repositorio en tu cuenta de GitHub basado en esta plantilla.</p>
+</li>
+<li><p>Clona tu nuevo repositorio y comienza a desarrollar tu juego de escritorio utilizando Alis.</p>
+</li>
+</ol>
+<p>Esta plantilla proporciona una base sólida para crear juegos de escritorio multiplataforma con Alis, incluyendo archivos de proyecto preconfigurados, código de ejemplo y configuraciones básicas.</p>
 
 </article>
 

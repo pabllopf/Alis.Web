@@ -12,6 +12,7 @@ To start developing with Alis, follow these steps:
    
 3. **[Join the Community](community/introduction.md)**: Participate in our forum, Discord channel, and social media to connect with other developers and receive support.
 
+
 ## 📈 Project Metrics
 
 We are proud of the quality and progress of Alis! Here are some recent project statistics:

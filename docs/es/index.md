@@ -6,9 +6,11 @@
 
 Para comenzar a desarrollar con Alis, sigue estos pasos:
 
-1. **[Leer la Documentación](link-a-la-documentacion)**: Aquí encontrarás guías de instalación, tutoriales y ejemplos para ayudarte a comenzar.
-2. **[Explorar los Ejemplos](link-a-ejemplos)**: Examina proyectos de muestra para ver el potencial de Alis en acción.
-3. **[Unirte a la Comunidad](link-a-comunidad)**: Participa en nuestro foro, canal de Discord, y redes sociales para conectarte con otros desarrolladores y recibir apoyo.
+1. **[Leer la Documentación](learn/getting_started.md)**: Aquí encontrarás guías de instalación, tutoriales y ejemplos para ayudarte a comenzar.
+
+2. **[Explorar los Ejemplos](learn/samples.md)**: Examina proyectos de muestra para ver el potencial de Alis en acción.
+   
+3. **[Unirte a la Comunidad](community/introduction.md)**: Participa en nuestro foro, canal de Discord, y redes sociales para conectarte con otros desarrolladores y recibir apoyo.
 
 ## 📈 Métricas del Proyecto
 
@@ -31,28 +33,28 @@ Para comenzar a desarrollar con Alis, sigue estos pasos:
 
 ![Licencia](https://raw.githubusercontent.com/pabllopf/Alis/master/docs/licence/License.png)
 
-[![](https://img.shields.io/badge/Leer%20Más--blue)](https://github.com/pabllopf/Alis/blob/master/licence.md)
+[![](https://img.shields.io/badge/Leer%20Más--blue)](about/License.md)
 
 ## 🤝 Guía de Contribuciones
 
-¡Gracias por tu interés en contribuir a nuestro proyecto! Tu participación es valiosa y apreciada. Por favor, revisa nuestro [Código de Conducta](https://github.com/pabllopf/Alis/blob/main/code_of_conduct.md) para asegurarte de que nuestro entorno de trabajo se mantenga respetuoso y acogedor.
+¡Gracias por tu interés en contribuir a nuestro proyecto! Tu participación es valiosa y apreciada. Por favor, revisa nuestra [Guía de Contribuciones](community/contributing.md) para asegurarte de que nuestro entorno de trabajo se mantenga respetuoso y acogedor.
 
-[![](https://img.shields.io/badge/Leer%20Más--blue)](https://github.com/pabllopf/Alis/blob/main/code_of_conduct.md)
+[![](https://img.shields.io/badge/Leer%20Más--blue)](community/contributing.md)
 
 ## 🛡️ Código de Conducta
 
-En Alis, nos comprometemos a mantener un entorno abierto y acogedor para todos. Te pedimos que leas nuestro [Código de Conducta](https://github.com/pabllopf/Alis/blob/main/code_of_conduct.md) para garantizar una experiencia libre de acoso para todos los participantes.
+En Alis, nos comprometemos a mantener un entorno abierto y acogedor para todos. Te pedimos que leas nuestro [Código de Conducta](community/code_of_conduct.md) para garantizar una experiencia libre de acoso para todos los participantes.
 
-[![](https://img.shields.io/badge/Leer%20Más--blue)](https://github.com/pabllopf/Alis/blob/main/code_of_conduct.md)
+[![](https://img.shields.io/badge/Leer%20Más--blue)](community/code_of_conduct.md)
 
 ## 💬 Contacto
 
 Para cualquier consulta, comentario o solicitud de soporte, no dudes en ponerte en contacto con nosotros a través de los siguientes canales:
 
-- **Correo Electrónico**: [soporte@alis.org](mailto:soporte@alis.org)
-- **Foro de la Comunidad**: [Participa aquí](link-al-foro)
-- **Canal de Discord**: [Únete al chat](link-a-discord)
-- **Redes Sociales**: Síguenos en [Twitter](link-a-twitter), [Facebook](link-a-facebook) y [LinkedIn](link-a-linkedin)
+- **Correo Electrónico**: [pabloperdomofalcon@gmail.com](mailto:soporte@alis.org)
+- **Foro de la Comunidad**: [Participa aquí](https://github.com/pabllopf/Alis/discussions)
+- **Canal de Discord**: [Únete al chat (pronto disponible)](link-a-discord)
+- **Redes Sociales**: Síguenos [LinkedIn](https://www.linkedin.com/in/pabllopf/)
 
 ¡Gracias por visitar la documentación de Alis! Esperamos que disfrutes trabajando con nuestro framework y que encuentres la información que necesitas para tus proyectos.
 

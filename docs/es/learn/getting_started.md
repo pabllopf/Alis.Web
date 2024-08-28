@@ -48,3 +48,19 @@ Para proyectos que usan Cake como sistema de automatización de compilaciones, p
 #addin nuget:?package=Alis&version
 #tool nuget:?package=Alis&version
 ```
+
+## 🎨 Plantilla de GitHub para Alis
+
+Para ayudarte a comenzar aún más rápido, ofrecemos una plantilla de GitHub específicamente diseñada para aplicaciones de escritorio utilizando Alis. Esta plantilla incluye toda la configuración necesaria, por lo que puedes comenzar a desarrollar sin preocuparte por la estructura inicial del proyecto.
+
+### Cómo Usar la Plantilla
+
+1. Visita el [repositorio de GitHub Alis.Template.Desktop](https://github.com/pabllopf/Alis.Template.Desktop).
+
+2. Haz clic en el botón **"Use this template"** ubicado en la parte superior derecha de la página del repositorio.
+   
+3. Sigue las indicaciones para crear un nuevo repositorio en tu cuenta de GitHub basado en esta plantilla.
+
+4. Clona tu nuevo repositorio y comienza a desarrollar tu juego de escritorio utilizando Alis.
+
+Esta plantilla proporciona una base sólida para crear juegos de escritorio multiplataforma con Alis, incluyendo archivos de proyecto preconfigurados, código de ejemplo y configuraciones básicas.

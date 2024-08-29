@@ -37,15 +37,15 @@ body:
     uid: Alis.Core.Ecs.Entity.IGameObject`1.Components
     commentId: P:Alis.Core.Ecs.Entity.IGameObject`1.Components
 - markdown: Gets or sets the value of the components
-- code: Dictionary<Type, T> Components { get; set; }
+- code: Dictionary<string, T> Components { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: Dictionary
       url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
     - <
-    - text: Type
-      url: https://learn.microsoft.com/dotnet/api/system.type
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
     - ','
     - " "
     - T

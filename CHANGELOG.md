@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.1] - 2024-08-29
+### :sparkles: New Features
+- [`30d9f2e`](https://github.com/pabllopf/Alis.Web/commit/30d9f2e2df412a56eb197a8b00422797ed7ff719) - traduce the spanish license *(commit by [@pabllopf](https://github.com/pabllopf))*
+
+
 ## [v0.2.0] - 2024-08-28
 ### :sparkles: New Features
 - [`bcf29e5`](https://github.com/pabllopf/Alis.Web/commit/bcf29e5904b70264f71a71ed452bc13d8536711c) - add samples files *(commit by [@pabllopf](https://github.com/pabllopf))*
@@ -151,3 +156,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.1.8]: https://github.com/pabllopf/Alis.Web/compare/v0.1.7...v0.1.8
 [v0.1.9]: https://github.com/pabllopf/Alis.Web/compare/v0.1.8...v0.1.9
 [v0.2.0]: https://github.com/pabllopf/Alis.Web/compare/v0.1.9...v0.2.0
+[v0.2.1]: https://github.com/pabllopf/Alis.Web/compare/v0.2.0...v0.2.1

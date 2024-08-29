@@ -96,14 +96,14 @@ body:
     - text: Transform
       url: Alis.Core.Aspect.Math.Transform.html
     description: The transform
-- api3: GameObject(bool, string, string, string, Transform, Dictionary<Type, AComponent>)
-  id: Alis_Core_Ecs_Entity_GameObject__ctor_System_Boolean_System_String_System_String_System_String_Alis_Core_Aspect_Math_Transform_System_Collections_Generic_Dictionary_System_Type_Alis_Core_Ecs_Component_AComponent__
+- api3: GameObject(bool, string, string, string, Transform, Dictionary<string, AComponent>)
+  id: Alis_Core_Ecs_Entity_GameObject__ctor_System_Boolean_System_String_System_String_System_String_Alis_Core_Aspect_Math_Transform_System_Collections_Generic_Dictionary_System_String_Alis_Core_Ecs_Component_AComponent__
   src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L91
   metadata:
-    uid: Alis.Core.Ecs.Entity.GameObject.#ctor(System.Boolean,System.String,System.String,System.String,Alis.Core.Aspect.Math.Transform,System.Collections.Generic.Dictionary{System.Type,Alis.Core.Ecs.Component.AComponent})
-    commentId: M:Alis.Core.Ecs.Entity.GameObject.#ctor(System.Boolean,System.String,System.String,System.String,Alis.Core.Aspect.Math.Transform,System.Collections.Generic.Dictionary{System.Type,Alis.Core.Ecs.Component.AComponent})
+    uid: Alis.Core.Ecs.Entity.GameObject.#ctor(System.Boolean,System.String,System.String,System.String,Alis.Core.Aspect.Math.Transform,System.Collections.Generic.Dictionary{System.String,Alis.Core.Ecs.Component.AComponent})
+    commentId: M:Alis.Core.Ecs.Entity.GameObject.#ctor(System.Boolean,System.String,System.String,System.String,Alis.Core.Aspect.Math.Transform,System.Collections.Generic.Dictionary{System.String,Alis.Core.Ecs.Component.AComponent})
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Entity.GameObject" data-throw-if-not-resolved="false"></xref> class
-- code: public GameObject(bool isEnable, string name, string id, string tag, Transform transform, Dictionary<Type, AComponent> components)
+- code: public GameObject(bool isEnable, string name, string id, string tag, Transform transform, Dictionary<string, AComponent> components)
 - h4: Parameters
 - parameters:
   - name: isEnable
@@ -136,8 +136,8 @@ body:
     - text: Dictionary
       url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
     - <
-    - text: Type
-      url: https://learn.microsoft.com/dotnet/api/system.type
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
     - ','
     - " "
     - text: AComponent
@@ -155,15 +155,15 @@ body:
 - code: >-
     [JsonPropertyName("_Components_")]
 
-    public Dictionary<Type, AComponent> Components { get; set; }
+    public Dictionary<string, AComponent> Components { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: Dictionary
       url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
     - <
-    - text: Type
-      url: https://learn.microsoft.com/dotnet/api/system.type
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
     - ','
     - " "
     - text: AComponent
@@ -305,7 +305,7 @@ body:
 - code: public void Clear()
 - api3: Contains<T>()
   id: Alis_Core_Ecs_Entity_GameObject_Contains__1
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L200
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L201
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.Contains``1
     commentId: M:Alis.Core.Ecs.Entity.GameObject.Contains``1
@@ -337,7 +337,7 @@ body:
     description: The game object builder
 - api3: Get<T>()
   id: Alis_Core_Ecs_Entity_GameObject_Get__1
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L185
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L186
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.Get``1
     commentId: M:Alis.Core.Ecs.Entity.GameObject.Get``1
@@ -506,7 +506,7 @@ body:
 - code: public void OnUpdate()
 - api3: Remove<T>(T)
   id: Alis_Core_Ecs_Entity_GameObject_Remove__1___0_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L171
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L172
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.Remove``1(``0)
     commentId: M:Alis.Core.Ecs.Entity.GameObject.Remove``1(``0)

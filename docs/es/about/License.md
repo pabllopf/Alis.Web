@@ -4,6 +4,7 @@
 
 > 29 de junio de 2007
 
+
 ### Preámbulo
 
 La Licencia Pública General de GNU es una licencia libre, de copyleft, para

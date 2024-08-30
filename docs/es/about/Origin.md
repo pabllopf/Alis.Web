@@ -8,7 +8,6 @@ La industria del videojuego es una de las más importantes en el sector del entr
 
 Este proyecto está orientado a mejorar la productividad de los desarrolladores, minimizando sus costes de producción. En consecuencia, se ha desarrollado **Alis**, un framework multiplataforma que incluye una API intuitiva y documentación actualizada. Además, debido a su carácter open source, promueve la creación de una comunidad colaborativa que pueda contribuir a su desarrollo.
 
-
 ## Primera Versión
 
 La primera versión de Alis fue desarrollada como parte de este TFG y consistía en un framework completo para el desarrollo de videojuegos en **Windows** y **macOS**. Además del framework en sí, el proyecto incluyó una aplicación diseñada para facilitar la creación de videojuegos, actuando como un motor gráfico intuitivo y accesible. Esta herramienta permitía a los desarrolladores diseñar, construir y probar sus juegos en un entorno integrado, simplificando el proceso de desarrollo.

@@ -306,11 +306,10 @@ body:
 - code: public override void OnStart()
 - api3: Render(IntPtr, Camera)
   id: Alis_Core_Ecs_Component_Render_Sprite_Render_System_IntPtr_Alis_Core_Ecs_Component_Render_Camera_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L154
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L149
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.Render(System.IntPtr,Alis.Core.Ecs.Component.Render.Camera)
     commentId: M:Alis.Core.Ecs.Component.Render.Sprite.Render(System.IntPtr,Alis.Core.Ecs.Component.Render.Camera)
-- markdown: Renders the renderer
 - code: public void Render(IntPtr renderer, Camera camera)
 - h4: Parameters
 - parameters:
@@ -318,12 +317,10 @@ body:
     type:
     - text: IntPtr
       url: https://learn.microsoft.com/dotnet/api/system.intptr
-    description: The renderer
   - name: camera
     type:
     - text: Camera
       url: Alis.Core.Ecs.Component.Render.Camera.html
-    description: ''
 - api3: Render(IntPtr)
   id: Alis_Core_Ecs_Component_Render_Sprite_Render_System_IntPtr_
   src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L176

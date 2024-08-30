@@ -271,7 +271,7 @@ body:
 - h2: Methods
 - api3: Attach(Sprite)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Render_Sprite_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L296
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L311
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Sprite)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Sprite)
@@ -286,7 +286,7 @@ body:
     description: The sprite
 - api3: Attach(BoxCollider)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Collider_BoxCollider_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L316
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L331
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Collider.BoxCollider)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Collider.BoxCollider)
@@ -301,7 +301,7 @@ body:
     description: The collider
 - api3: Attach(Camera)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Render_Camera_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L325
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L340
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Camera)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Camera)
@@ -348,7 +348,7 @@ body:
 - code: public override void OnUpdate()
 - api3: UnAttach(Sprite)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Render_Sprite_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L306
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L321
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Sprite)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Sprite)
@@ -363,7 +363,7 @@ body:
     description: The sprite
 - api3: UnAttach(BoxCollider)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Collider_BoxCollider_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L334
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L349
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Collider.BoxCollider)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Collider.BoxCollider)
@@ -378,7 +378,7 @@ body:
     description: The collider
 - api3: UnAttach(Camera)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Render_Camera_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L343
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L358
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Camera)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Camera)

@@ -1,0 +1,96 @@
+### YamlMime:ApiPage
+title: Class GeomPolyVal
+body:
+- api1: Class GeomPolyVal
+  id: Alis_Core_Physic_Common_TextureTools_GeomPolyVal
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/GeomPolyVal.cs#L35
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.GeomPolyVal
+    commentId: T:Alis.Core.Physic.Common.TextureTools.GeomPolyVal
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.TextureTools
+      url: Alis.Core.Physic.Common.TextureTools.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The geom poly val class
+- code: internal class GeomPolyVal
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: GeomPolyVal
+    url: Alis.Core.Physic.Common.TextureTools.GeomPolyVal.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: GeomPolyVal(GeomPoly, int)
+  id: Alis_Core_Physic_Common_TextureTools_GeomPolyVal__ctor_Alis_Core_Physic_Common_TextureTools_MarchingSquares_GeomPoly_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/GeomPolyVal.cs#L51
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.GeomPolyVal.#ctor(Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.GeomPolyVal.#ctor(Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly,System.Int32)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.TextureTools.GeomPolyVal" data-throw-if-not-resolved="false"></xref> class
+- code: public GeomPolyVal(MarchingSquares.GeomPoly geomP, int K)
+- h4: Parameters
+- parameters:
+  - name: geomP
+    type:
+    - text: MarchingSquares
+      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.html
+    - .
+    - text: GeomPoly
+      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly.html
+    description: The geom
+  - name: K
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+- h2: Fields
+- api3: GeomP
+  id: Alis_Core_Physic_Common_TextureTools_GeomPolyVal_GeomP
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/GeomPolyVal.cs#L44
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.GeomPolyVal.GeomP
+    commentId: F:Alis.Core.Physic.Common.TextureTools.GeomPolyVal.GeomP
+- markdown: The geom
+- code: public MarchingSquares.GeomPoly GeomP
+- h4: Field Value
+- parameters:
+  - type:
+    - text: MarchingSquares
+      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.html
+    - .
+    - text: GeomPoly
+      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly.html
+- api3: Key
+  id: Alis_Core_Physic_Common_TextureTools_GeomPolyVal_Key
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/GeomPolyVal.cs#L39
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.GeomPolyVal.Key
+    commentId: F:Alis.Core.Physic.Common.TextureTools.GeomPolyVal.Key
+- code: public readonly int Key
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: The geom poly val class

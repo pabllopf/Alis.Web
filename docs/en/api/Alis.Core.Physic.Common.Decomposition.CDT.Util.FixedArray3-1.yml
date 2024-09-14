@@ -1,0 +1,205 @@
+### YamlMime:ApiPage
+title: Struct FixedArray3<T>
+body:
+- api1: Struct FixedArray3<T>
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L39
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.CDT.Util
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Util.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The fixed array
+- code: 'internal struct FixedArray3<T> : IEnumerable<T>, IEnumerable where T : class'
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Implements
+- list:
+  - text: IEnumerable<T>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - text: IEnumerable
+    url: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: _0
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1__0
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L44
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1._0
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1._0
+- markdown: The
+- code: public T _0
+- h4: Field Value
+- parameters:
+  - type:
+    - T
+- api3: _1
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L44
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1._1
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1._1
+- markdown: The
+- code: public T _1
+- h4: Field Value
+- parameters:
+  - type:
+    - T
+- api3: _2
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1__2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L44
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1._2
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1._2
+- markdown: The
+- code: public T _2
+- h4: Field Value
+- parameters:
+  - type:
+    - T
+- h2: Properties
+- api3: this[int]
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1_Item_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L49
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.Item(System.Int32)
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.Item(System.Int32)
+- markdown: The index out of range exception
+- code: public T this[int index] { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - T
+- h2: Methods
+- api3: Clear()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1_Clear
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L129
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.Clear
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.Clear
+- markdown: Clears this instance
+- code: public void Clear()
+- api3: Clear(T)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1_Clear__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L138
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.Clear(`0)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.Clear(`0)
+- markdown: Clears the value
+- code: public void Clear(T value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - T
+    description: The value
+- api3: Contains(T)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1_Contains__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L105
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.Contains(`0)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.Contains(`0)
+- markdown: Describes whether this instance contains
+- code: public bool Contains(T value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - T
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: Enumerate()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1_Enumerate
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L149
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.Enumerate
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.Enumerate
+- markdown: Enumerates this instance
+- code: private IEnumerable<T> Enumerate()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - T
+    - '>'
+    description: An enumerable of t
+- api3: GetEnumerator()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1_GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L90
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.GetEnumerator
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.GetEnumerator
+- markdown: Gets the enumerator
+- code: public IEnumerator<T> GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+    - <
+    - T
+    - '>'
+    description: An enumerator of t
+- api3: IndexOf(T)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1_IndexOf__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L118
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.IndexOf(`0)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.IndexOf(`0)
+- markdown: Indexes the of using the specified value
+- code: public int IndexOf(T value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - T
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: IEnumerable.GetEnumerator()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_FixedArray3_1_System_Collections_IEnumerable_GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/FixedArray3.cs#L96
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.System#Collections#IEnumerable#GetEnumerator
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Util.FixedArray3`1.System#Collections#IEnumerable#GetEnumerator
+- markdown: Gets the enumerator
+- code: IEnumerator IEnumerable.GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+    description: The enumerator
+languageId: csharp
+metadata:
+  description: The fixed array

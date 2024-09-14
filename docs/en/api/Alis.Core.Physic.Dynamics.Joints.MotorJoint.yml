@@ -1,0 +1,587 @@
+### YamlMime:ApiPage
+title: Class MotorJoint
+body:
+- api1: Class MotorJoint
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L42
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint
+    commentId: T:Alis.Core.Physic.Dynamics.Joints.MotorJoint
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Dynamics.Joints
+      url: Alis.Core.Physic.Dynamics.Joints.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    A motor joint is used to control the relative motion
+
+    between two bodies. A typical usage is to control the movement
+
+    of a dynamic body with respect to the ground.
+- code: 'public class MotorJoint : Joint'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Joint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html
+  - text: MotorJoint
+    url: Alis.Core.Physic.Dynamics.Joints.MotorJoint.html
+- h4: Inherited Members
+- list:
+  - text: Joint._breakpoint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpoint
+  - text: Joint._breakpointSquared
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpointSquared
+  - text: Joint._world
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__world
+  - text: Joint.EdgeA
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeA
+  - text: Joint.EdgeB
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeB
+  - text: Joint.Enabled
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Enabled
+  - text: Joint.IslandFlag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IslandFlag
+  - text: Joint.Tag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Tag
+  - text: Joint.World
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_World
+  - text: Joint.JointType
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_JointType
+  - text: Joint.BodyA
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyA
+  - text: Joint.BodyB
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyB
+  - text: Joint.WorldAnchorA
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorA
+  - text: Joint.WorldAnchorB
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorB
+  - text: Joint.CollideConnected
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_CollideConnected
+  - text: Joint.Breakpoint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Breakpoint
+  - text: Joint.Broke
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Broke
+  - text: Joint.GetReactionForce(float)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionForce_System_Single_
+  - text: Joint.GetReactionTorque(float)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionTorque_System_Single_
+  - text: Joint.WakeBodies()
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WakeBodies
+  - text: Joint.IsFixedType()
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IsFixedType
+  - text: Joint.InitVelocityConstraints(ref SolverData)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  - text: Joint.Validate(float)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Validate_System_Single_
+  - text: Joint.SolveVelocityConstraints(ref SolverData)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  - text: Joint.SolvePositionConstraints(ref SolverData)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: MotorJoint()
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L149
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.#ctor
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.MotorJoint.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Joints.MotorJoint" data-throw-if-not-resolved="false"></xref> class
+- code: internal MotorJoint()
+- api3: MotorJoint(Body, Body, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L157
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.MotorJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,System.Boolean)
+- markdown: Constructor for MotorJoint.
+- code: public MotorJoint(Body bodyA, Body bodyB, bool useWorldCoordinates = false)
+- h4: Parameters
+- parameters:
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The first body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The second body
+  - name: useWorldCoordinates
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: Set to true if you are using world coordinates as anchors.
+    optional: true
+- h2: Fields
+- api3: _angularError
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__angularError
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L47
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._angularError
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._angularError
+- markdown: The angular error
+- code: private float _angularError
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _angularImpulse
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__angularImpulse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L52
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._angularImpulse
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._angularImpulse
+- markdown: The angular impulse
+- code: private float _angularImpulse
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _angularMass
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__angularMass
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L57
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._angularMass
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._angularMass
+- markdown: The angular mass
+- code: private float _angularMass
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _angularOffset
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__angularOffset
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L62
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._angularOffset
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._angularOffset
+- markdown: The angular offset
+- code: private float _angularOffset
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _indexA
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__indexA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L68
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._indexA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._indexA
+- markdown: The index
+- code: private int _indexA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _indexB
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__indexB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L73
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._indexB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._indexB
+- markdown: The index
+- code: private int _indexB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _invMassA
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__invMassA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L78
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._invMassA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._invMassA
+- markdown: The inv mass
+- code: private float _invMassA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _invMassB
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__invMassB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L83
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._invMassB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._invMassB
+- markdown: The inv mass
+- code: private float _invMassB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _linearError
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__linearError
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L88
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._linearError
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._linearError
+- markdown: The linear error
+- code: private Vector2 _linearError
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _linearImpulse
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__linearImpulse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L93
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._linearImpulse
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._linearImpulse
+- markdown: The linear impulse
+- code: private Vector2 _linearImpulse
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _linearMass
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__linearMass
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L98
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._linearMass
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._linearMass
+- markdown: The linear mass
+- code: private Mat22 _linearMass
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Mat22
+      url: Alis.Core.Physic.Common.Mat22.html
+- api3: _linearOffset
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__linearOffset
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L104
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._linearOffset
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._linearOffset
+- markdown: The linear offset
+- code: private Vector2 _linearOffset
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _localCenterA
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__localCenterA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L109
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._localCenterA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._localCenterA
+- markdown: The local center
+- code: private Vector2 _localCenterA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _localCenterB
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__localCenterB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L114
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._localCenterB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._localCenterB
+- markdown: The local center
+- code: private Vector2 _localCenterB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _maxForce
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__maxForce
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L119
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._maxForce
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._maxForce
+- markdown: The max force
+- code: private float _maxForce
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _maxTorque
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__maxTorque
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L124
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._maxTorque
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._maxTorque
+- markdown: The max torque
+- code: private float _maxTorque
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _rA
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__rA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L129
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._rA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._rA
+- markdown: The
+- code: private Vector2 _rA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _rB
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint__rB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L134
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint._rB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint._rB
+- markdown: The
+- code: private Vector2 _rB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: invIa
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_invIa
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L139
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.invIa
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint.invIa
+- markdown: The inv ia
+- code: private float invIa
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: invIb
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_invIb
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L144
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.invIb
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.MotorJoint.invIb
+- markdown: The inv ib
+- code: private float invIb
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Properties
+- api3: AngularOffset
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_AngularOffset
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L246
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.AngularOffset
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.MotorJoint.AngularOffset
+- markdown: Get or set the angular offset.
+- code: public float AngularOffset { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: CorrectionFactor
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_CorrectionFactor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L263
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.CorrectionFactor
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.MotorJoint.CorrectionFactor
+- markdown: Gets or sets the value of the correction factor
+- code: internal float CorrectionFactor { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: LinearOffset
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_LinearOffset
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L230
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.LinearOffset
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.MotorJoint.LinearOffset
+- markdown: The linear (translation) offset.
+- code: public Vector2 LinearOffset { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: MaxForce
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_MaxForce
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L204
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.MaxForce
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.MotorJoint.MaxForce
+- markdown: The maximum amount of force that can be applied to BodyA
+- code: public float MaxForce { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxTorque
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_MaxTorque
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L217
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.MaxTorque
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.MotorJoint.MaxTorque
+- markdown: The maximum amount of torque that can be applied to BodyA
+- code: public float MaxTorque { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: WorldAnchorA
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_WorldAnchorA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L178
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.WorldAnchorA
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.MotorJoint.WorldAnchorA
+- markdown: Gets or sets the value of the world anchor a
+- code: public override Vector2 WorldAnchorA { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: WorldAnchorB
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_WorldAnchorB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L191
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.WorldAnchorB
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.MotorJoint.WorldAnchorB
+- markdown: Gets or sets the value of the world anchor b
+- code: public override Vector2 WorldAnchorB { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h2: Methods
+- api3: GetReactionForce(float)
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_GetReactionForce_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L270
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.GetReactionForce(System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.MotorJoint.GetReactionForce(System.Single)
+- markdown: Gets the reaction force using the specified inv dt
+- code: public override Vector2 GetReactionForce(float invDt)
+- h4: Parameters
+- parameters:
+  - name: invDt
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The inv dt
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The vector
+- api3: GetReactionTorque(float)
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_GetReactionTorque_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L277
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.GetReactionTorque(System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.MotorJoint.GetReactionTorque(System.Single)
+- markdown: Gets the reaction torque using the specified inv dt
+- code: public override float GetReactionTorque(float invDt)
+- h4: Parameters
+- parameters:
+  - name: invDt
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The inv dt
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The float
+- api3: InitVelocityConstraints(ref SolverData)
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L283
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.MotorJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+- markdown: Inits the velocity constraints using the specified data
+- code: internal override void InitVelocityConstraints(ref SolverData data)
+- h4: Parameters
+- parameters:
+  - name: data
+    type:
+    - text: SolverData
+      url: Alis.Core.Physic.Dynamics.SolverData.html
+    description: The data
+- api3: SolvePositionConstraints(ref SolverData)
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L432
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.MotorJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+- markdown: Describes whether this instance solve position constraints
+- code: internal override bool SolvePositionConstraints(ref SolverData data)
+- h4: Parameters
+- parameters:
+  - name: data
+    type:
+    - text: SolverData
+      url: Alis.Core.Physic.Dynamics.SolverData.html
+    description: The data
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: SolveVelocityConstraints(ref SolverData)
+  id: Alis_Core_Physic_Dynamics_Joints_MotorJoint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/MotorJoint.cs#L369
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.MotorJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.MotorJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+- markdown: Solves the velocity constraints using the specified data
+- code: internal override void SolveVelocityConstraints(ref SolverData data)
+- h4: Parameters
+- parameters:
+  - name: data
+    type:
+    - text: SolverData
+      url: Alis.Core.Physic.Dynamics.SolverData.html
+    description: The data
+languageId: csharp
+metadata:
+  description: >-
+    A motor joint is used to control the relative motion
+
+    between two bodies. A typical usage is to control the movement
+
+    of a dynamic body with respect to the ground.

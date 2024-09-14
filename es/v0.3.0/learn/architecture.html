@@ -1,0 +1,469 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <title> Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis ">
+      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!">
+      <link rel="icon" href="../resources/logo.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="En este art&#237;culo">
+      <meta name="loc:searchResultsCount" content="{count} resultados para &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="Sin resultados para &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filtrar por t&#237;tulo">
+      <meta name="loc:nextArticle" content="Siguiente">
+      <meta name="loc:prevArticle" content="Anterior">
+      <meta name="loc:themeLight" content="Claro">
+      <meta name="loc:themeDark" content="Oscuro">
+      <meta name="loc:themeAuto" content="Autom&#225;tico">
+      <meta name="loc:changeTheme" content="Cambiar tema">
+      <meta name="loc:copy" content="Copiar">
+      <meta name="loc:downloadPdf" content="Descargar PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+        const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+      
+        // Función para actualizar el contenido del dropdownToggle según el idioma
+        function updateLanguage() {
+          const currentLang = document.documentElement.lang;
+          const isEnglish = currentLang === 'en';
+          const isSpanish = currentLang === 'es';
+      
+          if (isEnglish) {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              English`;
+          } else {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              Español`;
+          }
+        }
+      
+        // Llama a la función para actualizar el idioma al cargar la página
+        updateLanguage();
+      });
+    </script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+
+          // Función para actualizar el texto del botón según la URL actual
+          function updateDropdownVersion() {
+              const path = window.location.pathname;
+              const versionMatch = path.match(/v\d+\.\d+\.\d+/i); // Buscar la versión en cualquier parte del path
+
+              if (versionMatch) {
+                  const currentVersion = versionMatch[0]; // Obtener la versión encontrada
+                  dropdownToggle.textContent = currentVersion;
+              }
+          }
+
+          updateDropdownVersion(); // Llamar la función al cargar la página
+      });
+
+    </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="../resources/logo_small_v2.png" alt="Alis">
+            Alis
+          </a>
+
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+
+        
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Buscar" autocomplete="off" aria-label="Search">
+              </form>
+
+              
+              <script>
+
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                const dropdownMenu = document.querySelector('.dropdown-menu-versions');
+
+                dropdownToggle.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const isExpanded = dropdownMenu.style.display === 'block';
+                  dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                });
+
+                document.addEventListener('click', function (e) {
+                  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.style.display = 'none';
+                  }
+                });
+
+                // Manejar la selección de versión y actualizar la URL
+                dropdownMenu.addEventListener('click', function (e) {
+                  if (e.target.classList.contains('dropdown-item')) {
+                    e.preventDefault();
+                    
+                    const selectedVersion = e.target.getAttribute('data-version');
+                    const lang = document.documentElement.lang; // Obtener el idioma actual del documento
+                    
+                    let basePath = '';
+                    
+                    // Comprobar si el idioma es español
+                    if (lang === 'es') {
+                      basePath += '/es';
+                    }
+
+                    if (lang === 'en') {
+                      basePath += '/en';
+                    }
+
+                    // Redirigir a la ruta de la versión seleccionada
+                    const newPath = `${basePath}/${selectedVersion}/index.html`;
+                    window.location.href = newPath;
+                  }
+                });
+              });
+ 
+
+              </script>
+
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" data-version="v0.4.0">v0.4.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.3.0">v0.3.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.2.0">v0.2.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.1.0">v0.1.0</a></li>
+                </ul>
+              </div>
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                    const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+
+                    dropdownToggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const isExpanded = dropdownMenu.style.display === 'block';
+                        dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                    });
+
+                    document.addEventListener('click', function (e) {
+                        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    });
+
+                    // Manejar la selección de idioma y actualizar la URL
+                    dropdownMenu.addEventListener('click', function (e) {
+                        if (e.target.classList.contains('dropdown-item')) {
+                            e.preventDefault();
+                            
+                            const selectedLang = e.target.getAttribute('lang');
+                            const currentPath = window.location.pathname;
+                            const pathParts = currentPath.split('/');
+
+                            // Verificar si la URL sigue el formato esperado y reemplazar el idioma
+                            if (pathParts.length >= 3) {
+                                pathParts[1] = selectedLang;  // Reemplaza el idioma en la URL
+                            }
+
+                            // Reconstruir la URL y redirigir
+                            const newPath = pathParts.join('/');
+                            window.location.href = newPath;
+                        }
+                    });
+                });
+                </script>
+
+
+
+              
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-lang" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                  <svg viewbox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                    <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                  </svg>
+                  English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lang" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" lang="es">Español</a></li>
+                </ul>
+            </div>
+
+
+              <a class="hover_custom" style="order: 55;margin: 0 10px;" href="https://github.com/pabllopf/Alis/releases/latest">
+              <button type="button" class="btn btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewbox="0 0 17 17">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+                  </svg>
+                  Descargar
+              </button>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+      
+      
+
+
+
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="arquitectura">Arquitectura</h1>
+
+<p>El framework <strong>Alis</strong> está diseñado para facilitar el desarrollo de videojuegos 2D proporcionando una arquitectura modular y escalable. A continuación, se detallan los diferentes módulos y componentes del framework, organizados en diversas capas según su propósito dentro del ciclo de desarrollo.</p>
+<h2 id="1-presentación">1. Presentación</h2>
+<h3 id="módulo-engine">Módulo: <strong>Engine</strong></h3>
+<p>El <strong>Engine</strong> proporciona los fundamentos necesarios para construir y ejecutar videojuegos, incluyendo herramientas básicas para la creación de escenas, manejo de recursos gráficos y el ciclo principal del juego. Este módulo contiene dos proyectos que ofrecen:</p>
+<ul>
+<li><strong>Gestión de escenas</strong>.</li>
+<li><strong>Control del ciclo de vida del juego</strong> (inicialización, actualización y renderización).</li>
+</ul>
+<h3 id="módulo-extension">Módulo: <strong>Extension</strong></h3>
+<p>El módulo de <strong>Extension</strong> ofrece una serie de funcionalidades adicionales para expandir las capacidades base del motor. Consta de 39 proyectos que incluyen:</p>
+<ul>
+<li><strong>Extensiones de renderizado</strong>.</li>
+<li><strong>Compatibilidad con diferentes plataformas</strong>.</li>
+<li><strong>Integración con bibliotecas externas</strong>.</li>
+</ul>
+<h3 id="módulo-installer">Módulo: <strong>Installer</strong></h3>
+<p>Este módulo permite la instalación y configuración del framework en diferentes entornos de desarrollo. Contiene dos proyectos que se encargan de la instalación automática de dependencias y configuraciones necesarias.</p>
+<h2 id="2-aplicación">2. Aplicación</h2>
+<h3 id="módulo-alis">Módulo: <strong>Alis</strong></h3>
+<p>El módulo central del framework. Está compuesto por 12 proyectos que incluyen:</p>
+<ul>
+<li><strong>Configuración y personalización</strong> del motor de juego.</li>
+<li><strong>Interfaz para desarrolladores</strong> que permite acceder a las diferentes funcionalidades del framework.</li>
+<li><strong>Gestión de proyectos</strong> y estructura de carpetas para una organización óptima de los recursos del juego.</li>
+</ul>
+<h2 id="3-estructuración">3. Estructuración</h2>
+<h3 id="módulo-core">Módulo: <strong>Core</strong></h3>
+<p>El núcleo del framework está contenido en este módulo, que abarca 3 proyectos. Aquí se encuentran las bases del sistema, donde se definen:</p>
+<ul>
+<li><strong>Patrones de diseño</strong> que estructuran la lógica del juego.</li>
+<li><strong>Sistemas de componentes reutilizables</strong>.</li>
+<li><strong>Manejo de la configuración base del motor</strong>.</li>
+</ul>
+<h2 id="4-operación">4. Operación</h2>
+<h3 id="módulo-audio">Módulo: <strong>Audio</strong></h3>
+<p>Contiene 3 proyectos destinados a la gestión de audio dentro de los videojuegos. Este módulo permite:</p>
+<ul>
+<li><strong>Carga y reproducción de efectos de sonido y música</strong>.</li>
+<li><strong>Control de volúmenes</strong> y configuración de audio 2D.</li>
+</ul>
+<h3 id="módulo-ecs-entity-component-system">Módulo: <strong>Ecs (Entity Component System)</strong></h3>
+<p>Este módulo es esencial para la arquitectura de videojuegos en el marco de un sistema <strong>ECS</strong>. Ofrece 3 proyectos que permiten:</p>
+<ul>
+<li><strong>Organización de entidades y componentes</strong>.</li>
+<li><strong>Gestión de sistemas</strong> que operan sobre entidades, mejorando la escalabilidad y la flexibilidad del juego.</li>
+</ul>
+<h3 id="módulo-graphic">Módulo: <strong>Graphic</strong></h3>
+<p>El módulo de gráficos contiene 3 proyectos enfocados en la renderización de elementos 2D, que incluye:</p>
+<ul>
+<li><strong>Cargado y manipulación de sprites</strong>.</li>
+<li><strong>Sistemas de animación</strong> para personajes y entornos.</li>
+<li><strong>Optimización del rendimiento gráfico</strong>.</li>
+</ul>
+<h3 id="módulo-network">Módulo: <strong>Network</strong></h3>
+<p>Con 3 proyectos, este módulo ofrece la infraestructura para integrar funcionalidades de red en el juego, incluyendo:</p>
+<ul>
+<li><strong>Soporte para multiplayer</strong>.</li>
+<li><strong>Sincronización de datos en tiempo real</strong>.</li>
+<li><strong>Comunicación entre cliente y servidor</strong>.</li>
+</ul>
+<h3 id="módulo-physic">Módulo: <strong>Physic</strong></h3>
+<p>El módulo de físicas proporciona las herramientas necesarias para implementar la simulación de física en 2D. Los 3 proyectos incluidos permiten:</p>
+<ul>
+<li><strong>Colisiones y detección de contactos</strong>.</li>
+<li><strong>Aplicación de fuerzas</strong>.</li>
+<li><strong>Simulación de cuerpos rígidos</strong>.</li>
+</ul>
+<h2 id="5-declaración">5. Declaración</h2>
+<h3 id="módulo-aspect">Módulo: <strong>Aspect</strong></h3>
+<p>El módulo de Aspect ofrece 3 proyectos dedicados a la creación y manejo de diferentes aspectos del desarrollo del juego, tales como:</p>
+<ul>
+<li><strong>Gestión de estados</strong> dentro del juego.</li>
+<li><strong>Modificación del comportamiento de entidades</strong> de manera modular.</li>
+</ul>
+<h2 id="6-ideación">6. Ideación</h2>
+<p>Esta capa se enfoca en la abstracción de los datos y la lógica del juego. Dentro de esta capa, se incluyen varios módulos que permiten controlar el flujo de información y lógica dentro del desarrollo.</p>
+<h3 id="módulo-data">Módulo: <strong>Data</strong></h3>
+<p>Contiene 3 proyectos dedicados a la gestión y manipulación de datos, incluyendo:</p>
+<ul>
+<li><strong>Almacenamiento</strong> de información del juego.</li>
+<li><strong>Gestión de bases de datos</strong>.</li>
+<li><strong>Optimización de recursos</strong>.</li>
+</ul>
+<h3 id="módulo-fluent">Módulo: <strong>Fluent</strong></h3>
+<p>Este módulo proporciona una API fluida que facilita la escritura y el encadenamiento de operaciones en el juego. Con 3 proyectos, se enfoca en:</p>
+<ul>
+<li><strong>Mejorar la legibilidad y mantenibilidad del código</strong>.</li>
+<li><strong>Simplificar el flujo de desarrollo</strong>.</li>
+</ul>
+<h3 id="módulo-logging">Módulo: <strong>Logging</strong></h3>
+<p>El módulo de Logging incluye 3 proyectos que proporcionan herramientas para:</p>
+<ul>
+<li><strong>Monitoreo y depuración</strong> del comportamiento del juego.</li>
+<li><strong>Registro de errores y eventos</strong> clave para su análisis.</li>
+</ul>
+<h3 id="módulo-math">Módulo: <strong>Math</strong></h3>
+<p>Contiene 3 proyectos enfocados en ofrecer soluciones matemáticas especializadas para videojuegos. Estas incluyen:</p>
+<ul>
+<li><strong>Operaciones vectoriales y matriciales</strong>.</li>
+<li><strong>Geometría para cálculo de colisiones</strong>.</li>
+</ul>
+<h3 id="módulo-memory">Módulo: <strong>Memory</strong></h3>
+<p>Este módulo se encarga de la gestión de memoria y optimización del uso de recursos, permitiendo:</p>
+<ul>
+<li><strong>Gestión eficiente de la memoria del juego</strong>.</li>
+<li><strong>Liberación automática de recursos no utilizados</strong>.</li>
+</ul>
+<h3 id="módulo-security">Módulo: <strong>Security</strong></h3>
+<p>El módulo de seguridad ofrece 3 proyectos dedicados a:</p>
+<ul>
+<li><strong>Protección de los datos del juego</strong>.</li>
+<li><strong>Encriptación de comunicaciones</strong> y recursos sensibles.</li>
+</ul>
+<h3 id="módulo-thread">Módulo: <strong>Thread</strong></h3>
+<p>Este módulo facilita la gestión de subprocesos en el juego, permitiendo la ejecución simultánea de varias tareas. Contiene 3 proyectos dedicados a:</p>
+<ul>
+<li><strong>Gestión de multithreading</strong>.</li>
+<li><strong>Optimización de tareas paralelas</strong>.</li>
+</ul>
+<h3 id="módulo-time">Módulo: <strong>Time</strong></h3>
+<p>El módulo de tiempo se encarga de la sincronización de eventos dentro del juego. Los 3 proyectos incluidos permiten:</p>
+<ul>
+<li><strong>Gestión del tiempo del juego</strong>.</li>
+<li><strong>Manejo de temporizadores</strong> para eventos específicos.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Alis - Desarrolla los videojuegos de tus sueños 💯 gratis en Windows, MacOS, Linux, Android (próximamente), iOS (próximamente).
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

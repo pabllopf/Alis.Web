@@ -1,0 +1,35 @@
+### YamlMime:ApiPage
+title: Delegate OnSeparationEventHandler
+body:
+- api1: Delegate OnSeparationEventHandler
+  id: Alis_Core_Physic_Dynamics_OnSeparationEventHandler
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/OnSeparationEventHandler.cs#L37
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.OnSeparationEventHandler
+    commentId: T:Alis.Core.Physic.Dynamics.OnSeparationEventHandler
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Dynamics
+      url: Alis.Core.Physic.Dynamics.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The on separation event handler
+- code: public delegate void OnSeparationEventHandler(Fixture sender, Fixture other, Contact contact)
+- h4: Parameters
+- parameters:
+  - name: sender
+    type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+  - name: other
+    type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+  - name: contact
+    type:
+    - text: Contact
+      url: Alis.Core.Physic.Dynamics.Contacts.Contact.html
+languageId: csharp
+metadata:
+  description: The on separation event handler

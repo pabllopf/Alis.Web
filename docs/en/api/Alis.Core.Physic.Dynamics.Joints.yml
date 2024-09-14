@@ -1,0 +1,191 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Physic.Dynamics.Joints
+body:
+- api1: Namespace Alis.Core.Physic.Dynamics.Joints
+  id: Alis_Core_Physic_Dynamics_Joints
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints
+    commentId: N:Alis.Core.Physic.Dynamics.Joints
+- h3: Classes
+- parameters:
+  - type:
+      text: AngleJoint
+      url: Alis.Core.Physic.Dynamics.Joints.AngleJoint.html
+    description: Maintains a fixed angle between two bodies
+  - type:
+      text: DistanceJoint
+      url: Alis.Core.Physic.Dynamics.Joints.DistanceJoint.html
+    description: >-
+      A distance joint rains two points on two bodies
+
+      to remain at a fixed distance from each other. You can view
+
+      this as a massless, rigid rod.
+  - type:
+      text: FixedMouseJoint
+      url: Alis.Core.Physic.Dynamics.Joints.FixedMouseJoint.html
+    description: >-
+      A mouse joint is used to make a point on a body track a
+
+      specified world point. This a soft constraint with a maximum
+
+      force. This allows the constraint to stretch and without
+
+      applying huge forces.
+
+      NOTE: this joint is not documented in the manual because it was
+
+      developed to be used in the testbed. If you want to learn how to
+
+      use the mouse joint, look at the testbed.
+  - type:
+      text: FrictionJoint
+      url: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.html
+    description: >-
+      Friction joint. This is used for top-down friction.
+
+      It provides 2D translational friction and angular friction.
+  - type:
+      text: GearJoint
+      url: Alis.Core.Physic.Dynamics.Joints.GearJoint.html
+    description: >-
+      A gear joint is used to connect two joints together.
+
+      Either joint can be a revolute or prismatic joint.
+
+      You specify a gear ratio to bind the motions together:
+
+      coordinate1 + ratio * coordinate2 = ant
+
+      The ratio can be negative or positive. If one joint is a revolute joint
+
+      and the other joint is a prismatic joint, then the ratio will have units
+
+      of length or units of 1/length.
+
+      Warning: You have to manually destroy the gear joint if jointA or jointB is destroyed.
+  - type:
+      text: Joint
+      url: Alis.Core.Physic.Dynamics.Joints.Joint.html
+    description: The joint class
+  - type:
+      text: JointEdge
+      url: Alis.Core.Physic.Dynamics.Joints.JointEdge.html
+    description: >-
+      A joint edge is used to connect bodies and joints together
+
+      in a joint graph where each body is a node and each joint
+
+      is an edge. A joint edge belongs to a doubly linked list
+
+      maintained in each attached body. Each joint has two joint
+
+      nodes, one for each attached body.
+  - type:
+      text: JointFactory
+      url: Alis.Core.Physic.Dynamics.Joints.JointFactory.html
+    description: An easy to use factory for using joints.
+  - type:
+      text: MotorJoint
+      url: Alis.Core.Physic.Dynamics.Joints.MotorJoint.html
+    description: >-
+      A motor joint is used to control the relative motion
+
+      between two bodies. A typical usage is to control the movement
+
+      of a dynamic body with respect to the ground.
+  - type:
+      text: PrismaticJoint
+      url: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.html
+    description: >-
+      A prismatic joint. This joint provides one degree of freedom: translation
+
+      along an axis fixed in bodyA. Relative rotation is prevented. You can
+
+      use a joint limit to restrict the range of motion and a joint motor to
+
+      drive the motion or to model joint friction.
+  - type:
+      text: PulleyJoint
+      url: Alis.Core.Physic.Dynamics.Joints.PulleyJoint.html
+    description: >-
+      The pulley joint is connected to two bodies and two fixed world points.
+
+      The pulley supports a ratio such that:
+
+      length1 + ratio * length2 &lt;= constant
+
+      Yes, the force transmitted is scaled by the ratio.
+
+      Warning: the pulley joint can get a bit squirrelly by itself. They often
+
+      work better when combined with prismatic joints. You should also cover the
+
+      the anchor points with static shapes to prevent one side from going to zero length.
+  - type:
+      text: RevoluteJoint
+      url: Alis.Core.Physic.Dynamics.Joints.RevoluteJoint.html
+    description: >-
+      A revolute joint constrains to bodies to share a common point while they
+
+      are free to rotate about the point. The relative rotation about the shared
+
+      point is the joint angle. You can limit the relative rotation with
+
+      a joint limit that specifies a lower and upper angle. You can use a motor
+
+      to drive the relative rotation about the shared point. A maximum motor torque
+
+      is provided so that infinite forces are not generated.
+  - type:
+      text: RopeJoint
+      url: Alis.Core.Physic.Dynamics.Joints.RopeJoint.html
+    description: >-
+      A rope joint enforces a maximum distance between two points on two bodies. It has no other effect.
+
+      It can be used on ropes that are made up of several connected bodies, and if there is a need to support a heavy
+
+      body.
+
+      This joint is used for stabiliation of heavy objects on soft constraint joints.
+
+      Warning: if you attempt to change the maximum length during the simulation you will get some non-physical behavior.
+
+      Use the DistanceJoint instead if you want to dynamically control the length.
+  - type:
+      text: WeldJoint
+      url: Alis.Core.Physic.Dynamics.Joints.WeldJoint.html
+    description: >-
+      A weld joint essentially glues two bodies together. A weld joint may
+
+      distort somewhat because the island constraint solver is approximate.
+
+      The joint is soft constraint based, which means the two bodies will move
+
+      relative to each other, when a force is applied. To combine two bodies
+
+      in a rigid fashion, combine the fixtures to a single body instead.
+  - type:
+      text: WheelJoint
+      url: Alis.Core.Physic.Dynamics.Joints.WheelJoint.html
+    description: >-
+      A wheel joint. This joint provides two degrees of freedom: translation
+
+      along an axis fixed in bodyA and rotation in the plane. You can use a
+
+      joint limit to restrict the range of motion and a joint motor to drive
+
+      the rotation or to model rotational friction.
+
+      This joint is designed for vehicle suspensions.
+- h3: Enums
+- parameters:
+  - type:
+      text: JointType
+      url: Alis.Core.Physic.Dynamics.Joints.JointType.html
+    description: The joint type enum
+  - type:
+      text: LimitState
+      url: Alis.Core.Physic.Dynamics.Joints.LimitState.html
+    description: The limit state enum
+languageId: csharp

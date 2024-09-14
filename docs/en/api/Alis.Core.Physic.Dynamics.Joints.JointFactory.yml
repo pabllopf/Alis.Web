@@ -1,0 +1,709 @@
+### YamlMime:ApiPage
+title: Class JointFactory
+body:
+- api1: Class JointFactory
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L37
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory
+    commentId: T:Alis.Core.Physic.Dynamics.Joints.JointFactory
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Dynamics.Joints
+      url: Alis.Core.Physic.Dynamics.Joints.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: An easy to use factory for using joints.
+- code: public static class JointFactory
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: JointFactory
+    url: Alis.Core.Physic.Dynamics.Joints.JointFactory.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: CreateAngleJoint(World, Body, Body)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateAngleJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L172
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateAngleJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateAngleJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body)
+- markdown: Creates the angle joint using the specified world
+- code: public static AngleJoint CreateAngleJoint(World world, Body bodyA, Body bodyB)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+- h4: Returns
+- parameters:
+  - type:
+    - text: AngleJoint
+      url: Alis.Core.Physic.Dynamics.Joints.AngleJoint.html
+    description: The angle joint
+- api3: CreateDistanceJoint(World, Body, Body, Vector2, Vector2, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateDistanceJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L189
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateDistanceJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateDistanceJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+- markdown: Creates the distance joint using the specified world
+- code: public static DistanceJoint CreateDistanceJoint(World world, Body bodyA, Body bodyB, Vector2 anchorA, Vector2 anchorB, bool useWorldCoordinates = false)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: anchorA
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: anchorB
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: useWorldCoordinates
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The use world coordinates
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: DistanceJoint
+      url: Alis.Core.Physic.Dynamics.Joints.DistanceJoint.html
+    description: The distance joint
+- api3: CreateDistanceJoint(World, Body, Body)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateDistanceJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L203
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateDistanceJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateDistanceJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body)
+- markdown: Creates the distance joint using the specified world
+- code: public static DistanceJoint CreateDistanceJoint(World world, Body bodyA, Body bodyB)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+- h4: Returns
+- parameters:
+  - type:
+    - text: DistanceJoint
+      url: Alis.Core.Physic.Dynamics.Joints.DistanceJoint.html
+    description: The distance joint
+- api3: CreateFixedMouseJoint(World, Body, Vector2)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateFixedMouseJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L274
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateFixedMouseJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateFixedMouseJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Creates the fixed mouse joint using the specified world
+- code: public static FixedMouseJoint CreateFixedMouseJoint(World world, Body body, Vector2 worldAnchor)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: body
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: worldAnchor
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The world anchor
+- h4: Returns
+- parameters:
+  - type:
+    - text: FixedMouseJoint
+      url: Alis.Core.Physic.Dynamics.Joints.FixedMouseJoint.html
+    description: The joint
+- api3: CreateFrictionJoint(World, Body, Body, Vector2, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateFrictionJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L214
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateFrictionJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateFrictionJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+- markdown: Creates the friction joint using the specified world
+- code: public static FrictionJoint CreateFrictionJoint(World world, Body bodyA, Body bodyB, Vector2 anchor, bool useWorldCoordinates = false)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: anchor
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: useWorldCoordinates
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The use world coordinates
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: FrictionJoint
+      url: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.html
+    description: The friction joint
+- api3: CreateFrictionJoint(World, Body, Body)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateFrictionJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L228
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateFrictionJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateFrictionJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body)
+- markdown: Creates the friction joint using the specified world
+- code: public static FrictionJoint CreateFrictionJoint(World world, Body bodyA, Body bodyB)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+- h4: Returns
+- parameters:
+  - type:
+    - text: FrictionJoint
+      url: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.html
+    description: The friction joint
+- api3: CreateGearJoint(World, Body, Body, Joint, Joint, float)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateGearJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Joints_Joint_Alis_Core_Physic_Dynamics_Joints_Joint_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L240
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateGearJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Joints.Joint,Alis.Core.Physic.Dynamics.Joints.Joint,System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateGearJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Joints.Joint,Alis.Core.Physic.Dynamics.Joints.Joint,System.Single)
+- markdown: Creates the gear joint using the specified world
+- code: public static GearJoint CreateGearJoint(World world, Body bodyA, Body bodyB, Joint jointA, Joint jointB, float ratio)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: jointA
+    type:
+    - text: Joint
+      url: Alis.Core.Physic.Dynamics.Joints.Joint.html
+    description: The joint
+  - name: jointB
+    type:
+    - text: Joint
+      url: Alis.Core.Physic.Dynamics.Joints.Joint.html
+    description: The joint
+  - name: ratio
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The ratio
+- h4: Returns
+- parameters:
+  - type:
+    - text: GearJoint
+      url: Alis.Core.Physic.Dynamics.Joints.GearJoint.html
+    description: The gear joint
+- api3: CreateMotorJoint(World, Body, Body, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateMotorJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L47
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateMotorJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateMotorJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,System.Boolean)
+- markdown: Creates the motor joint using the specified world
+- code: public static MotorJoint CreateMotorJoint(World world, Body bodyA, Body bodyB, bool useWorldCoordinates = false)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: useWorldCoordinates
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The use world coordinates
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: MotorJoint
+      url: Alis.Core.Physic.Dynamics.Joints.MotorJoint.html
+    description: The joint
+- api3: CreatePrismaticJoint(World, Body, Body, Vector2, Vector2, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreatePrismaticJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L131
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreatePrismaticJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreatePrismaticJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+- markdown: Creates the prismatic joint using the specified world
+- code: public static PrismaticJoint CreatePrismaticJoint(World world, Body bodyA, Body bodyB, Vector2 anchor, Vector2 axis, bool useWorldCoordinates = false)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: anchor
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: axis
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The axis
+  - name: useWorldCoordinates
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The use world coordinates
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: PrismaticJoint
+      url: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.html
+    description: The joint
+- api3: CreatePulleyJoint(World, Body, Body, Vector2, Vector2, Vector2, Vector2, float, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreatePulleyJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L260
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreatePulleyJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Single,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreatePulleyJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Single,System.Boolean)
+- markdown: Creates the pulley joint using the specified world
+- code: public static PulleyJoint CreatePulleyJoint(World world, Body bodyA, Body bodyB, Vector2 anchorA, Vector2 anchorB, Vector2 worldAnchorA, Vector2 worldAnchorB, float ratio, bool useWorldCoordinates = false)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: anchorA
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: anchorB
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: worldAnchorA
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The world anchor
+  - name: worldAnchorB
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The world anchor
+  - name: ratio
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The ratio
+  - name: useWorldCoordinates
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The use world coordinates
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: PulleyJoint
+      url: Alis.Core.Physic.Dynamics.Joints.PulleyJoint.html
+    description: The pulley joint
+- api3: CreateRevoluteJoint(World, Body, Body, Vector2, Vector2, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateRevoluteJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L64
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateRevoluteJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateRevoluteJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+- markdown: Creates the revolute joint using the specified world
+- code: public static RevoluteJoint CreateRevoluteJoint(World world, Body bodyA, Body bodyB, Vector2 anchorA, Vector2 anchorB, bool useWorldCoordinates = false)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: anchorA
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: anchorB
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: useWorldCoordinates
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The use world coordinates
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: RevoluteJoint
+      url: Alis.Core.Physic.Dynamics.Joints.RevoluteJoint.html
+    description: The joint
+- api3: CreateRevoluteJoint(World, Body, Body, Vector2)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateRevoluteJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L79
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateRevoluteJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateRevoluteJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Creates the revolute joint using the specified world
+- code: public static RevoluteJoint CreateRevoluteJoint(World world, Body bodyA, Body bodyB, Vector2 anchor)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: anchor
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+- h4: Returns
+- parameters:
+  - type:
+    - text: RevoluteJoint
+      url: Alis.Core.Physic.Dynamics.Joints.RevoluteJoint.html
+    description: The joint
+- api3: CreateRopeJoint(World, Body, Body, Vector2, Vector2, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateRopeJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L97
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateRopeJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateRopeJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+- markdown: Creates the rope joint using the specified world
+- code: public static RopeJoint CreateRopeJoint(World world, Body bodyA, Body bodyB, Vector2 anchorA, Vector2 anchorB, bool useWorldCoordinates = false)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: anchorA
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: anchorB
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: useWorldCoordinates
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The use world coordinates
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: RopeJoint
+      url: Alis.Core.Physic.Dynamics.Joints.RopeJoint.html
+    description: The rope joint
+- api3: CreateWeldJoint(World, Body, Body, Vector2, Vector2, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateWeldJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L114
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateWeldJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateWeldJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+- markdown: Creates the weld joint using the specified world
+- code: public static WeldJoint CreateWeldJoint(World world, Body bodyA, Body bodyB, Vector2 anchorA, Vector2 anchorB, bool useWorldCoordinates = false)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: anchorA
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: anchorB
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: useWorldCoordinates
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The use world coordinates
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: WeldJoint
+      url: Alis.Core.Physic.Dynamics.Joints.WeldJoint.html
+    description: The weld joint
+- api3: CreateWheelJoint(World, Body, Body, Vector2, Vector2, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateWheelJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L148
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateWheelJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateWheelJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+- markdown: Creates the wheel joint using the specified world
+- code: public static WheelJoint CreateWheelJoint(World world, Body bodyA, Body bodyB, Vector2 anchor, Vector2 axis, bool useWorldCoordinates = false)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: anchor
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The anchor
+  - name: axis
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The axis
+  - name: useWorldCoordinates
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The use world coordinates
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: WheelJoint
+      url: Alis.Core.Physic.Dynamics.Joints.WheelJoint.html
+    description: The joint
+- api3: CreateWheelJoint(World, Body, Body, Vector2)
+  id: Alis_Core_Physic_Dynamics_Joints_JointFactory_CreateWheelJoint_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/JointFactory.cs#L163
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateWheelJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.JointFactory.CreateWheelJoint(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Creates the wheel joint using the specified world
+- code: public static WheelJoint CreateWheelJoint(World world, Body bodyA, Body bodyB, Vector2 axis)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+  - name: axis
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The axis
+- h4: Returns
+- parameters:
+  - type:
+    - text: WheelJoint
+      url: Alis.Core.Physic.Dynamics.Joints.WheelJoint.html
+    description: The wheel joint
+languageId: csharp
+metadata:
+  description: An easy to use factory for using joints.

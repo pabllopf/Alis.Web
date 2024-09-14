@@ -1,0 +1,204 @@
+### YamlMime:ApiPage
+title: Class WorldXmlDeserializer
+body:
+- api1: Class WorldXmlDeserializer
+  id: Alis_Core_Physic_Common_WorldXmlDeserializer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlDeserializer.cs#L46
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlDeserializer
+    commentId: T:Alis.Core.Physic.Common.WorldXmlDeserializer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common
+      url: Alis.Core.Physic.Common.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The world xml deserializer class
+- code: internal static class WorldXmlDeserializer
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: WorldXmlDeserializer
+    url: Alis.Core.Physic.Common.WorldXmlDeserializer.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: Deserialize(Stream)
+  id: Alis_Core_Physic_Common_WorldXmlDeserializer_Deserialize_System_IO_Stream_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlDeserializer.cs#L53
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlDeserializer.Deserialize(System.IO.Stream)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlDeserializer.Deserialize(System.IO.Stream)
+- markdown: Deserializes the stream
+- code: internal static World Deserialize(Stream stream)
+- h4: Parameters
+- parameters:
+  - name: stream
+    type:
+    - text: Stream
+      url: https://learn.microsoft.com/dotnet/api/system.io.stream
+    description: The stream
+- h4: Returns
+- parameters:
+  - type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+- api3: Deserialize(World, Stream)
+  id: Alis_Core_Physic_Common_WorldXmlDeserializer_Deserialize_Alis_Core_Physic_Dynamics_World_System_IO_Stream_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlDeserializer.cs#L76
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlDeserializer.Deserialize(Alis.Core.Physic.Dynamics.World,System.IO.Stream)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlDeserializer.Deserialize(Alis.Core.Physic.Dynamics.World,System.IO.Stream)
+- markdown: Deserializes the world
+- code: private static void Deserialize(World world, Stream stream)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: stream
+    type:
+    - text: Stream
+      url: https://learn.microsoft.com/dotnet/api/system.io.stream
+    description: The stream
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: Gear joint is unsupported
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: GearJoint is not supported.
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: Invalid or unsupported joint.
+- api3: ParseFloat(string)
+  id: Alis_Core_Physic_Common_WorldXmlDeserializer_ParseFloat_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlDeserializer.cs#L783
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlDeserializer.ParseFloat(System.String)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlDeserializer.ParseFloat(System.String)
+- markdown: Parses the float using the specified value
+- code: private static float ParseFloat(string value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The float
+- api3: ReadSimpleType(XMLFragmentElement, Type, bool)
+  id: Alis_Core_Physic_Common_WorldXmlDeserializer_ReadSimpleType_Alis_Core_Physic_Common_XMLFragmentElement_System_Type_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlDeserializer.cs#L756
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlDeserializer.ReadSimpleType(Alis.Core.Physic.Common.XMLFragmentElement,System.Type,System.Boolean)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlDeserializer.ReadSimpleType(Alis.Core.Physic.Common.XMLFragmentElement,System.Type,System.Boolean)
+- markdown: Reads the simple type using the specified node
+- code: private static object ReadSimpleType(XMLFragmentElement node, Type type, bool outer)
+- h4: Parameters
+- parameters:
+  - name: node
+    type:
+    - text: XMLFragmentElement
+      url: Alis.Core.Physic.Common.XMLFragmentElement.html
+    description: The node
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type
+  - name: outer
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The outer
+- h4: Returns
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object
+- api3: ReadVector(XMLFragmentElement)
+  id: Alis_Core_Physic_Common_WorldXmlDeserializer_ReadVector_Alis_Core_Physic_Common_XMLFragmentElement_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlDeserializer.cs#L743
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlDeserializer.ReadVector(Alis.Core.Physic.Common.XMLFragmentElement)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlDeserializer.ReadVector(Alis.Core.Physic.Common.XMLFragmentElement)
+- markdown: Reads the vector using the specified node
+- code: private static Vector2 ReadVector(XMLFragmentElement node)
+- h4: Parameters
+- parameters:
+  - name: node
+    type:
+    - text: XMLFragmentElement
+      url: Alis.Core.Physic.Common.XMLFragmentElement.html
+    description: The node
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The vector
+languageId: csharp
+metadata:
+  description: The world xml deserializer class

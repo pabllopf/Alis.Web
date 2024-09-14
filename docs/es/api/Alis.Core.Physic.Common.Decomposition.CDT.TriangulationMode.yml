@@ -1,0 +1,38 @@
+### YamlMime:ApiPage
+title: Enum TriangulationMode
+body:
+- api1: Enum TriangulationMode
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationMode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationMode.cs#L35
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationMode
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationMode
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.CDT
+      url: Alis.Core.Physic.Common.Decomposition.CDT.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The triangulation mode enum
+- code: internal enum TriangulationMode
+- h2: Fields
+- parameters:
+  - name: Unconstrained
+    default: "0"
+    description: >+
+      The unconstrained triangulation mode
+
+  - name: Constrained
+    default: "1"
+    description: >+
+      The constrained triangulation mode
+
+  - name: Polygon
+    default: "2"
+    description: >+
+      The polygon triangulation mode
+
+languageId: csharp
+metadata:
+  description: The triangulation mode enum

@@ -1,0 +1,310 @@
+### YamlMime:ApiPage
+title: Class CircleShape
+body:
+- api1: Class CircleShape
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L41
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape
+    commentId: T:Alis.Core.Physic.Collision.Shapes.CircleShape
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collision.Shapes
+      url: Alis.Core.Physic.Collision.Shapes.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: A circle shape.
+- code: 'public class CircleShape : Shape'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Shape
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html
+  - text: CircleShape
+    url: Alis.Core.Physic.Collision.Shapes.CircleShape.html
+- h4: Inherited Members
+- list:
+  - text: Shape._2radius
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape__2radius
+  - text: Shape._density
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape__density
+  - text: Shape._radius
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape__radius
+  - text: Shape.MassData
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_MassData
+  - text: Shape.ShapeType
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ShapeType
+  - text: Shape.ChildCount
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ChildCount
+  - text: Shape.Density
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_Density
+  - text: Shape.Radius
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_Radius
+  - text: Shape.Clone()
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_Clone
+  - text: Shape.TestPoint(ref Transform, ref Vector2)
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_TestPoint_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__
+  - text: Shape.RayCast(out RayCastOutput, ref RayCastInput, ref Transform, int)
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_RayCast_Alis_Core_Physic_Collision_RayCastOutput__Alis_Core_Physic_Collision_RayCastInput__Alis_Core_Physic_Common_Transform__System_Int32_
+  - text: Shape.ComputeAABB(out AABB, ref Transform, int)
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ComputeAABB_Alis_Core_Physic_Collision_AABB__Alis_Core_Physic_Common_Transform__System_Int32_
+  - text: Shape.ComputeProperties()
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ComputeProperties
+  - text: Shape.ComputeSubmergedArea(ref Vector2, float, ref Transform, out Vector2)
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ComputeSubmergedArea_Alis_Core_Aspect_Math_Vector_Vector2__System_Single_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: CircleShape(float, float)
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape__ctor_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L53
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape.#ctor(System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.CircleShape.#ctor(System.Single,System.Single)
+- markdown: Create a new circle with the desired radius and density.
+- code: public CircleShape(float radius, float density)
+- h4: Parameters
+- parameters:
+  - name: radius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radius of the circle.
+  - name: density
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The density of the circle.
+- api3: CircleShape()
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L67
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape.#ctor
+    commentId: M:Alis.Core.Physic.Collision.Shapes.CircleShape.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Collision.Shapes.CircleShape" data-throw-if-not-resolved="false"></xref> class
+- code: internal CircleShape()
+- h2: Fields
+- api3: _position
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape__position
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L46
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape._position
+    commentId: F:Alis.Core.Physic.Collision.Shapes.CircleShape._position
+- markdown: The position
+- code: internal Vector2 _position
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h2: Properties
+- api3: ChildCount
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape_ChildCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L78
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape.ChildCount
+    commentId: P:Alis.Core.Physic.Collision.Shapes.CircleShape.ChildCount
+- markdown: Gets the value of the child count
+- code: public override int ChildCount { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Position
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape_Position
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L83
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape.Position
+    commentId: P:Alis.Core.Physic.Collision.Shapes.CircleShape.Position
+- markdown: Get or set the position of the circle
+- code: public Vector2 Position { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h2: Methods
+- api3: Clone()
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape_Clone
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L239
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape.Clone
+    commentId: M:Alis.Core.Physic.Collision.Shapes.CircleShape.Clone
+- markdown: Clones this instance
+- code: public override Shape Clone()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Shape
+      url: Alis.Core.Physic.Collision.Shapes.Shape.html
+    description: The clone
+- api3: CompareTo(CircleShape)
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape_CompareTo_Alis_Core_Physic_Collision_Shapes_CircleShape_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L233
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape.CompareTo(Alis.Core.Physic.Collision.Shapes.CircleShape)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.CircleShape.CompareTo(Alis.Core.Physic.Collision.Shapes.CircleShape)
+- markdown: Compare the circle to another circle
+- code: public bool CompareTo(CircleShape shape)
+- h4: Parameters
+- parameters:
+  - name: shape
+    type:
+    - text: CircleShape
+      url: Alis.Core.Physic.Collision.Shapes.CircleShape.html
+    description: The other circle
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: True if the two circles are the same size and have the same position
+- api3: ComputeAABB(out AABB, ref Transform, int)
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape_ComputeAABB_Alis_Core_Physic_Collision_AABB__Alis_Core_Physic_Common_Transform__System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L163
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape.ComputeAABB(Alis.Core.Physic.Collision.AABB@,Alis.Core.Physic.Common.Transform@,System.Int32)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.CircleShape.ComputeAABB(Alis.Core.Physic.Collision.AABB@,Alis.Core.Physic.Common.Transform@,System.Int32)
+- markdown: Computes the aabb using the specified aabb
+- code: public override void ComputeAABB(out AABB aabb, ref Transform transform, int childIndex)
+- h4: Parameters
+- parameters:
+  - name: aabb
+    type:
+    - text: AABB
+      url: Alis.Core.Physic.Collision.AABB.html
+    description: The aabb
+  - name: transform
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: The transform
+  - name: childIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The child index
+- api3: ComputeProperties()
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape_ComputeProperties
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L179
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape.ComputeProperties
+    commentId: M:Alis.Core.Physic.Collision.Shapes.CircleShape.ComputeProperties
+- markdown: Computes the properties
+- code: protected override sealed void ComputeProperties()
+- api3: ComputeSubmergedArea(ref Vector2, float, ref Transform, out Vector2)
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape_ComputeSubmergedArea_Alis_Core_Aspect_Math_Vector_Vector2__System_Single_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L198
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape.ComputeSubmergedArea(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single,Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.CircleShape.ComputeSubmergedArea(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single,Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: Computes the submerged area using the specified normal
+- code: public override float ComputeSubmergedArea(ref Vector2 normal, float offset, ref Transform xf, out Vector2 sc)
+- h4: Parameters
+- parameters:
+  - name: normal
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The normal
+  - name: offset
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The offset
+  - name: xf
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: The xf
+  - name: sc
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The sc
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The area
+- api3: RayCast(out RayCastOutput, ref RayCastInput, ref Transform, int)
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape_RayCast_Alis_Core_Physic_Collision_RayCastOutput__Alis_Core_Physic_Collision_RayCastInput__Alis_Core_Physic_Common_Transform__System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L114
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape.RayCast(Alis.Core.Physic.Collision.RayCastOutput@,Alis.Core.Physic.Collision.RayCastInput@,Alis.Core.Physic.Common.Transform@,System.Int32)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.CircleShape.RayCast(Alis.Core.Physic.Collision.RayCastOutput@,Alis.Core.Physic.Collision.RayCastInput@,Alis.Core.Physic.Common.Transform@,System.Int32)
+- markdown: Describes whether this instance ray cast
+- code: public override bool RayCast(out RayCastOutput output, ref RayCastInput input, ref Transform transform, int childIndex)
+- h4: Parameters
+- parameters:
+  - name: output
+    type:
+    - text: RayCastOutput
+      url: Alis.Core.Physic.Collision.RayCastOutput.html
+    description: The output
+  - name: input
+    type:
+    - text: RayCastInput
+      url: Alis.Core.Physic.Collision.RayCastInput.html
+    description: The input
+  - name: transform
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: The transform
+  - name: childIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The child index
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: TestPoint(ref Transform, ref Vector2)
+  id: Alis_Core_Physic_Collision_Shapes_CircleShape_TestPoint_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/CircleShape.cs#L99
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.CircleShape.TestPoint(Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.CircleShape.TestPoint(Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: Describes whether this instance test point
+- code: public override bool TestPoint(ref Transform transform, ref Vector2 point)
+- h4: Parameters
+- parameters:
+  - name: transform
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: The transform
+  - name: point
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The point
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+languageId: csharp
+metadata:
+  description: A circle shape.

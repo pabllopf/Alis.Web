@@ -1,0 +1,456 @@
+### YamlMime:ApiPage
+title: Class ChainShape
+body:
+- api1: Class ChainShape
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape
+    commentId: T:Alis.Core.Physic.Collision.Shapes.ChainShape
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collision.Shapes
+      url: Alis.Core.Physic.Collision.Shapes.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    A chain shape is a free form sequence of line segments.
+
+    The chain has two-sided collision, so you can use inside and outside collision.
+
+    Therefore, you may use any winding order.
+
+    Connectivity information is used to create smooth collisions.
+
+    WARNING: The chain will not collide properly if there are self-intersections.
+- code: 'public class ChainShape : Shape'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Shape
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html
+  - text: ChainShape
+    url: Alis.Core.Physic.Collision.Shapes.ChainShape.html
+- h4: Inherited Members
+- list:
+  - text: Shape._2radius
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape__2radius
+  - text: Shape._density
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape__density
+  - text: Shape._radius
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape__radius
+  - text: Shape.MassData
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_MassData
+  - text: Shape.ShapeType
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ShapeType
+  - text: Shape.ChildCount
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ChildCount
+  - text: Shape.Density
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_Density
+  - text: Shape.Radius
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_Radius
+  - text: Shape.Clone()
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_Clone
+  - text: Shape.TestPoint(ref Transform, ref Vector2)
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_TestPoint_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__
+  - text: Shape.RayCast(out RayCastOutput, ref RayCastInput, ref Transform, int)
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_RayCast_Alis_Core_Physic_Collision_RayCastOutput__Alis_Core_Physic_Collision_RayCastInput__Alis_Core_Physic_Common_Transform__System_Int32_
+  - text: Shape.ComputeAABB(out AABB, ref Transform, int)
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ComputeAABB_Alis_Core_Physic_Collision_AABB__Alis_Core_Physic_Common_Transform__System_Int32_
+  - text: Shape.ComputeProperties()
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ComputeProperties
+  - text: Shape.ComputeSubmergedArea(ref Vector2, float, ref Transform, out Vector2)
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ComputeSubmergedArea_Alis_Core_Aspect_Math_Vector_Vector2__System_Single_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: ChainShape()
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L68
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.#ctor
+    commentId: M:Alis.Core.Physic.Collision.Shapes.ChainShape.#ctor
+- markdown: Constructor for ChainShape. By default have 0 in density.
+- code: public ChainShape()
+- api3: ChainShape(Vertices, bool)
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape__ctor_Alis_Core_Physic_Common_Vertices_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L83
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.#ctor(Alis.Core.Physic.Common.Vertices,System.Boolean)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.ChainShape.#ctor(Alis.Core.Physic.Common.Vertices,System.Boolean)
+- markdown: Create a new chainshape from the vertices.
+- code: public ChainShape(Vertices vertices, bool createLoop = false)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices to use. Must contain 2 or more vertices.
+  - name: createLoop
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      Set to true to create a closed loop. It connects the first vertice to the last, and
+
+      automatically adjusts connectivity to create smooth collisions along the chain.
+    optional: true
+- h2: Fields
+- api3: Vertices
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_Vertices
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L63
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.Vertices
+    commentId: F:Alis.Core.Physic.Collision.Shapes.ChainShape.Vertices
+- markdown: The vertices. These are not owned/freed by the chain Shape.
+- code: public Vertices Vertices
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+- api3: _edgeShape
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape__edgeShape
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape._edgeShape
+    commentId: F:Alis.Core.Physic.Collision.Shapes.ChainShape._edgeShape
+- markdown: The edge shape
+- code: private static readonly EdgeShape _edgeShape
+- h4: Field Value
+- parameters:
+  - type:
+    - text: EdgeShape
+      url: Alis.Core.Physic.Collision.Shapes.EdgeShape.html
+- api3: _hasNextVertex
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape__hasNextVertex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L53
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape._hasNextVertex
+    commentId: F:Alis.Core.Physic.Collision.Shapes.ChainShape._hasNextVertex
+- markdown: The has next vertex
+- code: private bool _hasNextVertex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _hasPrevVertex
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape__hasPrevVertex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L53
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape._hasPrevVertex
+    commentId: F:Alis.Core.Physic.Collision.Shapes.ChainShape._hasPrevVertex
+- markdown: The has next vertex
+- code: private bool _hasPrevVertex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _nextVertex
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape__nextVertex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L58
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape._nextVertex
+    commentId: F:Alis.Core.Physic.Collision.Shapes.ChainShape._nextVertex
+- markdown: The next vertex
+- code: private Vector2 _nextVertex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _prevVertex
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape__prevVertex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L58
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape._prevVertex
+    commentId: F:Alis.Core.Physic.Collision.Shapes.ChainShape._prevVertex
+- markdown: The next vertex
+- code: private Vector2 _prevVertex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h2: Properties
+- api3: ChildCount
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_ChildCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L114
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.ChildCount
+    commentId: P:Alis.Core.Physic.Collision.Shapes.ChainShape.ChildCount
+- markdown: Gets the value of the child count
+- code: public override int ChildCount { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: NextVertex
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_NextVertex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L138
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.NextVertex
+    commentId: P:Alis.Core.Physic.Collision.Shapes.ChainShape.NextVertex
+- markdown: >-
+    Establish connectivity to a vertex that follows the last vertex.
+
+    Don't call this for loops.
+- code: public Vector2 NextVertex { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: PrevVertex
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_PrevVertex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L122
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.PrevVertex
+    commentId: P:Alis.Core.Physic.Collision.Shapes.ChainShape.PrevVertex
+- markdown: >-
+    Establish connectivity to a vertex that precedes the first vertex.
+
+    Don't call this for loops.
+- code: public Vector2 PrevVertex { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h2: Methods
+- api3: Clone()
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_Clone
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L302
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.Clone
+    commentId: M:Alis.Core.Physic.Collision.Shapes.ChainShape.Clone
+- markdown: Clones this instance
+- code: public override Shape Clone()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Shape
+      url: Alis.Core.Physic.Collision.Shapes.Shape.html
+    description: The clone
+- api3: CompareTo(ChainShape)
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_CompareTo_Alis_Core_Physic_Collision_Shapes_ChainShape_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L284
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.CompareTo(Alis.Core.Physic.Collision.Shapes.ChainShape)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.ChainShape.CompareTo(Alis.Core.Physic.Collision.Shapes.ChainShape)
+- markdown: Compare the chain to another chain
+- code: public bool CompareTo(ChainShape shape)
+- h4: Parameters
+- parameters:
+  - name: shape
+    type:
+    - text: ChainShape
+      url: Alis.Core.Physic.Collision.Shapes.ChainShape.html
+    description: The other chain
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: True if the two chain shapes are the same
+- api3: ComputeAABB(out AABB, ref Transform, int)
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_ComputeAABB_Alis_Core_Physic_Collision_AABB__Alis_Core_Physic_Common_Transform__System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L239
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.ComputeAABB(Alis.Core.Physic.Collision.AABB@,Alis.Core.Physic.Common.Transform@,System.Int32)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.ChainShape.ComputeAABB(Alis.Core.Physic.Collision.AABB@,Alis.Core.Physic.Common.Transform@,System.Int32)
+- markdown: Computes the aabb using the specified aabb
+- code: public override void ComputeAABB(out AABB aabb, ref Transform transform, int childIndex)
+- h4: Parameters
+- parameters:
+  - name: aabb
+    type:
+    - text: AABB
+      url: Alis.Core.Physic.Collision.AABB.html
+    description: The aabb
+  - name: transform
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: The transform
+  - name: childIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The child index
+- api3: ComputeProperties()
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_ComputeProperties
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L260
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.ComputeProperties
+    commentId: M:Alis.Core.Physic.Collision.Shapes.ChainShape.ComputeProperties
+- markdown: Computes the properties
+- code: protected override void ComputeProperties()
+- api3: ComputeSubmergedArea(ref Vector2, float, ref Transform, out Vector2)
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_ComputeSubmergedArea_Alis_Core_Aspect_Math_Vector_Vector2__System_Single_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L273
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.ComputeSubmergedArea(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single,Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.ChainShape.ComputeSubmergedArea(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single,Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: Computes the submerged area using the specified normal
+- code: public override float ComputeSubmergedArea(ref Vector2 normal, float offset, ref Transform xf, out Vector2 sc)
+- h4: Parameters
+- parameters:
+  - name: normal
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The normal
+  - name: offset
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The offset
+  - name: xf
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: The xf
+  - name: sc
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The sc
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The float
+- api3: GetChildEdge(EdgeShape, int)
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_GetChildEdge_Alis_Core_Physic_Collision_Shapes_EdgeShape_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L155
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.GetChildEdge(Alis.Core.Physic.Collision.Shapes.EdgeShape,System.Int32)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.ChainShape.GetChildEdge(Alis.Core.Physic.Collision.Shapes.EdgeShape,System.Int32)
+- markdown: This method has been optimized to reduce garbage.
+- code: internal void GetChildEdge(EdgeShape edge, int index)
+- h4: Parameters
+- parameters:
+  - name: edge
+    type:
+    - text: EdgeShape
+      url: Alis.Core.Physic.Collision.Shapes.EdgeShape.html
+    description: The cached edge to set properties on.
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index.
+- api3: GetChildEdge(int)
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_GetChildEdge_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L193
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.GetChildEdge(System.Int32)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.ChainShape.GetChildEdge(System.Int32)
+- markdown: Get a child edge.
+- code: public EdgeShape GetChildEdge(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index.
+- h4: Returns
+- parameters:
+  - type:
+    - text: EdgeShape
+      url: Alis.Core.Physic.Collision.Shapes.EdgeShape.html
+- api3: RayCast(out RayCastOutput, ref RayCastInput, ref Transform, int)
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_RayCast_Alis_Core_Physic_Collision_RayCastOutput__Alis_Core_Physic_Collision_RayCastInput__Alis_Core_Physic_Common_Transform__System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L216
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.RayCast(Alis.Core.Physic.Collision.RayCastOutput@,Alis.Core.Physic.Collision.RayCastInput@,Alis.Core.Physic.Common.Transform@,System.Int32)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.ChainShape.RayCast(Alis.Core.Physic.Collision.RayCastOutput@,Alis.Core.Physic.Collision.RayCastInput@,Alis.Core.Physic.Common.Transform@,System.Int32)
+- markdown: Describes whether this instance ray cast
+- code: public override bool RayCast(out RayCastOutput output, ref RayCastInput input, ref Transform transform, int childIndex)
+- h4: Parameters
+- parameters:
+  - name: output
+    type:
+    - text: RayCastOutput
+      url: Alis.Core.Physic.Collision.RayCastOutput.html
+    description: The output
+  - name: input
+    type:
+    - text: RayCastInput
+      url: Alis.Core.Physic.Collision.RayCastInput.html
+    description: The input
+  - name: transform
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: The transform
+  - name: childIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The child index
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: TestPoint(ref Transform, ref Vector2)
+  id: Alis_Core_Physic_Collision_Shapes_ChainShape_TestPoint_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/ChainShape.cs#L206
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.ChainShape.TestPoint(Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.ChainShape.TestPoint(Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: Describes whether this instance test point
+- code: public override bool TestPoint(ref Transform transform, ref Vector2 point)
+- h4: Parameters
+- parameters:
+  - name: transform
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: The transform
+  - name: point
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The point
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+languageId: csharp
+metadata:
+  description: >-
+    A chain shape is a free form sequence of line segments.
+
+    The chain has two-sided collision, so you can use inside and outside collision.
+
+    Therefore, you may use any winding order.
+
+    Connectivity information is used to create smooth collisions.
+
+    WARNING: The chain will not collide properly if there are self-intersections.

@@ -1,0 +1,372 @@
+### YamlMime:ApiPage
+title: Class PolygonTools
+body:
+- api1: Class PolygonTools
+  id: Alis_Core_Physic_Common_PolygonTools
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L40
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonTools
+    commentId: T:Alis.Core.Physic.Common.PolygonTools
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common
+      url: Alis.Core.Physic.Common.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The polygon tools class
+- code: public static class PolygonTools
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: PolygonTools
+    url: Alis.Core.Physic.Common.PolygonTools.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: CreateArc(float, int, float)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateArc_System_Single_System_Int32_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L198
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateArc(System.Single,System.Int32,System.Single)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateArc(System.Single,System.Int32,System.Single)
+- markdown: Creates the arc using the specified radians
+- code: public static Vertices CreateArc(float radians, int sides, float radius)
+- h4: Parameters
+- parameters:
+  - name: radians
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radians
+  - name: sides
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The sides
+  - name: radius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radius
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+- api3: CreateCapsule(float, float, int)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateCapsule_System_Single_System_Single_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L226
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateCapsule(System.Single,System.Single,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateCapsule(System.Single,System.Single,System.Int32)
+- markdown: >-
+    Creates an capsule with the specified height, radius and number of edges.
+
+    A capsule has the same form as a pill capsule.
+- code: public static Vertices CreateCapsule(float height, float endRadius, int edges)
+- h4: Parameters
+- parameters:
+  - name: height
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: Height (inner height + 2 * radius) of the capsule.
+  - name: endRadius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: Radius of the capsule ends.
+  - name: edges
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of edges of the capsule ends. The more edges, the more it resembles an capsule
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: ''
+- api3: CreateCapsule(float, float, int, float, int)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateCapsule_System_Single_System_Single_System_Int32_System_Single_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L246
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateCapsule(System.Single,System.Single,System.Int32,System.Single,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateCapsule(System.Single,System.Single,System.Int32,System.Single,System.Int32)
+- markdown: >-
+    Creates an capsule with the specified  height, radius and number of edges.
+
+    A capsule has the same form as a pill capsule.
+- code: public static Vertices CreateCapsule(float height, float topRadius, int topEdges, float bottomRadius, int bottomEdges)
+- h4: Parameters
+- parameters:
+  - name: height
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: Height (inner height + radii) of the capsule.
+  - name: topRadius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: Radius of the top.
+  - name: topEdges
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of edges of the top. The more edges, the more it resembles an capsule
+  - name: bottomRadius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: Radius of bottom.
+  - name: bottomEdges
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of edges of the bottom. The more edges, the more it resembles an capsule
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: ''
+- api3: CreateCircle(float, int)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateCircle_System_Single_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L168
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateCircle(System.Single,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateCircle(System.Single,System.Int32)
+- markdown: Creates a circle with the specified radius and number of edges.
+- code: public static Vertices CreateCircle(float radius, int numberOfEdges)
+- h4: Parameters
+- parameters:
+  - name: radius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radius.
+  - name: numberOfEdges
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of edges. The more edges, the more it resembles a circle
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: ''
+- api3: CreateEllipse(float, float, int)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateEllipse_System_Single_System_Single_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L177
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateEllipse(System.Single,System.Single,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateEllipse(System.Single,System.Single,System.Int32)
+- markdown: Creates a ellipse with the specified width, height and number of edges.
+- code: public static Vertices CreateEllipse(float xRadius, float yRadius, int numberOfEdges)
+- h4: Parameters
+- parameters:
+  - name: xRadius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: Width of the ellipse.
+  - name: yRadius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: Height of the ellipse.
+  - name: numberOfEdges
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of edges. The more edges, the more it resembles an ellipse
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: ''
+- api3: CreateGear(float, int, float, float)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateGear_System_Single_System_Int32_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L313
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateGear(System.Single,System.Int32,System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateGear(System.Single,System.Int32,System.Single,System.Single)
+- markdown: Creates a gear shape with the specified radius and number of teeth.
+- code: public static Vertices CreateGear(float radius, int numberOfTeeth, float tipPercentage, float toothHeight)
+- h4: Parameters
+- parameters:
+  - name: radius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radius.
+  - name: numberOfTeeth
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of teeth.
+  - name: tipPercentage
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The tip percentage.
+  - name: toothHeight
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: Height of the tooth.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: ''
+- api3: CreateLine(Vector2, Vector2)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateLine_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L153
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateLine(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateLine(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Set this as a single edge.
+- code: public static Vertices CreateLine(Vector2 start, Vector2 end)
+- h4: Parameters
+- parameters:
+  - name: start
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The first point.
+  - name: end
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The second point.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+- api3: CreateRectangle(float, float)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateRectangle_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L47
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateRectangle(System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateRectangle(System.Single,System.Single)
+- markdown: Build vertices to represent an axis-aligned box.
+- code: public static Vertices CreateRectangle(float hx, float hy)
+- h4: Parameters
+- parameters:
+  - name: hx
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: the half-width.
+  - name: hy
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: the half-height.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+- api3: CreateRectangle(float, float, Vector2, float)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateRectangle_System_Single_System_Single_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L65
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateRectangle(System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateRectangle(System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
+- markdown: Build vertices to represent an oriented box.
+- code: public static Vertices CreateRectangle(float hx, float hy, Vector2 center, float angle)
+- h4: Parameters
+- parameters:
+  - name: hx
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: the half-width.
+  - name: hy
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: the half-height.
+  - name: center
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: the center of the box in local coordinates.
+  - name: angle
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: the rotation of the box in local coordinates.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+- api3: CreateRoundedRectangle(float, float, float, float, int)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateRoundedRectangle_System_Single_System_Single_System_Single_System_Single_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L91
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Int32)
+- markdown: Creates a rounded rectangle with the specified width and height.
+- code: public static Vertices CreateRoundedRectangle(float width, float height, float xRadius, float yRadius, int segments)
+- h4: Parameters
+- parameters:
+  - name: width
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The width.
+  - name: height
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The height.
+  - name: xRadius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The rounding X radius.
+  - name: yRadius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The rounding Y radius.
+  - name: segments
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of segments to subdivide the edges.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: ''
+languageId: csharp
+metadata:
+  description: The polygon tools class

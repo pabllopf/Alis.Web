@@ -1,0 +1,90 @@
+### YamlMime:ApiPage
+title: Class ChainHull
+body:
+- api1: Class ChainHull
+  id: Alis_Core_Physic_Common_ConvexHull_ChainHull
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/ConvexHull/ChainHull.cs#L42
+  metadata:
+    uid: Alis.Core.Physic.Common.ConvexHull.ChainHull
+    commentId: T:Alis.Core.Physic.Common.ConvexHull.ChainHull
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.ConvexHull
+      url: Alis.Core.Physic.Common.ConvexHull.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Andrew's Monotone Chain Convex Hull algorithm.
+
+    Used to get the convex hull of a point cloud.
+
+    Source: http://www.softsurfer.com/Archive/algorithm_0109/algorithm_0109.htm
+- code: public static class ChainHull
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: ChainHull
+    url: Alis.Core.Physic.Common.ConvexHull.ChainHull.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: _pointComparer
+  id: Alis_Core_Physic_Common_ConvexHull_ChainHull__pointComparer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/ConvexHull/ChainHull.cs#L49
+  metadata:
+    uid: Alis.Core.Physic.Common.ConvexHull.ChainHull._pointComparer
+    commentId: F:Alis.Core.Physic.Common.ConvexHull.ChainHull._pointComparer
+- markdown: The point comparer
+- code: private static readonly ChainHull.PointComparer _pointComparer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ChainHull
+      url: Alis.Core.Physic.Common.ConvexHull.ChainHull.html
+    - .
+    - text: PointComparer
+      url: Alis.Core.Physic.Common.ConvexHull.ChainHull.PointComparer.html
+- h2: Methods
+- api3: GetConvexHull(Vertices)
+  id: Alis_Core_Physic_Common_ConvexHull_ChainHull_GetConvexHull_Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/ConvexHull/ChainHull.cs#L54
+  metadata:
+    uid: Alis.Core.Physic.Common.ConvexHull.ChainHull.GetConvexHull(Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Common.ConvexHull.ChainHull.GetConvexHull(Alis.Core.Physic.Common.Vertices)
+- markdown: Returns the convex hull from the given vertices..
+- code: public static Vertices GetConvexHull(Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+languageId: csharp
+metadata:
+  description: >-
+    Andrew's Monotone Chain Convex Hull algorithm.
+
+    Used to get the convex hull of a point cloud.
+
+    Source: http://www.softsurfer.com/Archive/algorithm_0109/algorithm_0109.htm

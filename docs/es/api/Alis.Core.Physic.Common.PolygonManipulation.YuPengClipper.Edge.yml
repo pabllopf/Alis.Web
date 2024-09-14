@@ -1,0 +1,188 @@
+### YamlMime:ApiPage
+title: Class YuPengClipper.Edge
+body:
+- api1: Class YuPengClipper.Edge
+  id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L508
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge
+    commentId: T:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.PolygonManipulation
+      url: Alis.Core.Physic.Common.PolygonManipulation.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Specifies an Edge. Edges are used to represent simplicies in simplical chains
+- code: private sealed class YuPengClipper.Edge
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: YuPengClipper.Edge
+    url: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Edge(Vector2, Vector2)
+  id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge__ctor_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L515
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge" data-throw-if-not-resolved="false"></xref> class
+- code: public Edge(Vector2 edgeStart, Vector2 edgeEnd)
+- h4: Parameters
+- parameters:
+  - name: edgeStart
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The edge start
+  - name: edgeEnd
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The edge end
+- h2: Properties
+- api3: EdgeEnd
+  id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_EdgeEnd
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L529
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.EdgeEnd
+    commentId: P:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.EdgeEnd
+- markdown: Gets the value of the edge end
+- code: public Vector2 EdgeEnd { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: EdgeStart
+  id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_EdgeStart
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L524
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.EdgeStart
+    commentId: P:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.EdgeStart
+- markdown: Gets the value of the edge start
+- code: public Vector2 EdgeStart { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h2: Methods
+- api3: Equals(object)
+  id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_Equals_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L544
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.Equals(System.Object)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.Equals(System.Object)
+- markdown: Describes whether this instance equals
+- code: public override bool Equals(object obj)
+- h4: Parameters
+- parameters:
+  - name: obj
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The obj
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: Equals(Edge)
+  id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_Equals_Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L561
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.Equals(Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.Equals(Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge)
+- markdown: Describes whether this instance equals
+- code: public bool Equals(YuPengClipper.Edge e)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: YuPengClipper
+      url: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.html
+    - .
+    - text: Edge
+      url: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: GetCenter()
+  id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_GetCenter
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L535
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.GetCenter
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.GetCenter
+- markdown: Gets the center
+- code: public Vector2 GetCenter()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The vector
+- api3: GetHashCode()
+  id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_GetHashCode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L577
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.GetHashCode
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.GetHashCode
+- markdown: Gets the hash code
+- code: public override int GetHashCode()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- h2: Operators
+- api3: operator -(Edge)
+  id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_op_UnaryNegation_Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L537
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.op_UnaryNegation(Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.op_UnaryNegation(Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge)
+- code: public static YuPengClipper.Edge operator -(YuPengClipper.Edge e)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: YuPengClipper
+      url: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.html
+    - .
+    - text: Edge
+      url: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: YuPengClipper
+      url: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.html
+    - .
+    - text: Edge
+      url: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.html
+languageId: csharp
+metadata:
+  description: Specifies an Edge. Edges are used to represent simplicies in simplical chains

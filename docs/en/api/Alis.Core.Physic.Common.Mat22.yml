@@ -1,0 +1,213 @@
+### YamlMime:ApiPage
+title: Struct Mat22
+body:
+- api1: Struct Mat22
+  id: Alis_Core_Physic_Common_Mat22
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Mat22.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Common.Mat22
+    commentId: T:Alis.Core.Physic.Common.Mat22
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common
+      url: Alis.Core.Physic.Common.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: A 2-by-2 matrix. Stored in column-major order.
+- code: public struct Mat22
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Mat22(Vector2, Vector2)
+  id: Alis_Core_Physic_Common_Mat22__ctor_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Mat22.cs#L50
+  metadata:
+    uid: Alis.Core.Physic.Common.Mat22.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.Mat22.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Construct this matrix using columns.
+- code: public Mat22(Vector2 c1, Vector2 c2)
+- h4: Parameters
+- parameters:
+  - name: c1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The c1.
+  - name: c2
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The c2.
+- api3: Mat22(float, float, float, float)
+  id: Alis_Core_Physic_Common_Mat22__ctor_System_Single_System_Single_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Mat22.cs#L63
+  metadata:
+    uid: Alis.Core.Physic.Common.Mat22.#ctor(System.Single,System.Single,System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Common.Mat22.#ctor(System.Single,System.Single,System.Single,System.Single)
+- markdown: Construct this matrix using scalars.
+- code: public Mat22(float a11, float a12, float a21, float a22)
+- h4: Parameters
+- parameters:
+  - name: a11
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The a11.
+  - name: a12
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The a12.
+  - name: a21
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The a21.
+  - name: a22
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The a22.
+- h2: Fields
+- api3: Ex
+  id: Alis_Core_Physic_Common_Mat22_Ex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Mat22.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Common.Mat22.Ex
+    commentId: F:Alis.Core.Physic.Common.Mat22.Ex
+- markdown: The ey
+- code: public Vector2 Ex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: Ey
+  id: Alis_Core_Physic_Common_Mat22_Ey
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Mat22.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Common.Mat22.Ey
+    commentId: F:Alis.Core.Physic.Common.Mat22.Ey
+- markdown: The ey
+- code: public Vector2 Ey
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h2: Properties
+- api3: Inverse
+  id: Alis_Core_Physic_Common_Mat22_Inverse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Mat22.cs#L72
+  metadata:
+    uid: Alis.Core.Physic.Common.Mat22.Inverse
+    commentId: P:Alis.Core.Physic.Common.Mat22.Inverse
+- markdown: Gets the value of the inverse
+- code: public Mat22 Inverse { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Mat22
+      url: Alis.Core.Physic.Common.Mat22.html
+- h2: Methods
+- api3: Add(ref Mat22, ref Mat22, out Mat22)
+  id: Alis_Core_Physic_Common_Mat22_Add_Alis_Core_Physic_Common_Mat22__Alis_Core_Physic_Common_Mat22__Alis_Core_Physic_Common_Mat22__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Mat22.cs#L148
+  metadata:
+    uid: Alis.Core.Physic.Common.Mat22.Add(Alis.Core.Physic.Common.Mat22@,Alis.Core.Physic.Common.Mat22@,Alis.Core.Physic.Common.Mat22@)
+    commentId: M:Alis.Core.Physic.Common.Mat22.Add(Alis.Core.Physic.Common.Mat22@,Alis.Core.Physic.Common.Mat22@,Alis.Core.Physic.Common.Mat22@)
+- markdown: Adds the a
+- code: public static void Add(ref Mat22 a, ref Mat22 b, out Mat22 r)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: Mat22
+      url: Alis.Core.Physic.Common.Mat22.html
+    description: The
+  - name: b
+    type:
+    - text: Mat22
+      url: Alis.Core.Physic.Common.Mat22.html
+    description: The
+  - name: r
+    type:
+    - text: Mat22
+      url: Alis.Core.Physic.Common.Mat22.html
+    description: The
+- api3: Set(Vector2, Vector2)
+  id: Alis_Core_Physic_Common_Mat22_Set_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Mat22.cs#L96
+  metadata:
+    uid: Alis.Core.Physic.Common.Mat22.Set(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.Mat22.Set(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Initialize this matrix using columns.
+- code: public void Set(Vector2 c1, Vector2 c2)
+- h4: Parameters
+- parameters:
+  - name: c1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The c1.
+  - name: c2
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The c2.
+- api3: SetIdentity()
+  id: Alis_Core_Physic_Common_Mat22_SetIdentity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Mat22.cs#L105
+  metadata:
+    uid: Alis.Core.Physic.Common.Mat22.SetIdentity
+    commentId: M:Alis.Core.Physic.Common.Mat22.SetIdentity
+- markdown: Set this to the identity matrix.
+- code: public void SetIdentity()
+- api3: SetZero()
+  id: Alis_Core_Physic_Common_Mat22_SetZero
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Mat22.cs#L116
+  metadata:
+    uid: Alis.Core.Physic.Common.Mat22.SetZero
+    commentId: M:Alis.Core.Physic.Common.Mat22.SetZero
+- markdown: Set this matrix to all zeros.
+- code: public void SetZero()
+- api3: Solve(Vector2)
+  id: Alis_Core_Physic_Common_Mat22_Solve_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Mat22.cs#L130
+  metadata:
+    uid: Alis.Core.Physic.Common.Mat22.Solve(Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.Mat22.Solve(Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: >-
+    Solve A * x = b, where b is a column vector. This is more efficient
+
+    than computing the inverse in one-shot cases.
+- code: public Vector2 Solve(Vector2 b)
+- h4: Parameters
+- parameters:
+  - name: b
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The b.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: ''
+languageId: csharp
+metadata:
+  description: A 2-by-2 matrix. Stored in column-major order.

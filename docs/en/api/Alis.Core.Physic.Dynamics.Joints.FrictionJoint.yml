@@ -1,0 +1,497 @@
+### YamlMime:ApiPage
+title: Class FrictionJoint
+body:
+- api1: Class FrictionJoint
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L51
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint
+    commentId: T:Alis.Core.Physic.Dynamics.Joints.FrictionJoint
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Dynamics.Joints
+      url: Alis.Core.Physic.Dynamics.Joints.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Friction joint. This is used for top-down friction.
+
+    It provides 2D translational friction and angular friction.
+- code: 'public class FrictionJoint : Joint'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Joint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html
+  - text: FrictionJoint
+    url: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.html
+- h4: Inherited Members
+- list:
+  - text: Joint._breakpoint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpoint
+  - text: Joint._breakpointSquared
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpointSquared
+  - text: Joint._world
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__world
+  - text: Joint.EdgeA
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeA
+  - text: Joint.EdgeB
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeB
+  - text: Joint.Enabled
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Enabled
+  - text: Joint.IslandFlag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IslandFlag
+  - text: Joint.Tag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Tag
+  - text: Joint.World
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_World
+  - text: Joint.JointType
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_JointType
+  - text: Joint.BodyA
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyA
+  - text: Joint.BodyB
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyB
+  - text: Joint.WorldAnchorA
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorA
+  - text: Joint.WorldAnchorB
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorB
+  - text: Joint.CollideConnected
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_CollideConnected
+  - text: Joint.Breakpoint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Breakpoint
+  - text: Joint.Broke
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Broke
+  - text: Joint.GetReactionForce(float)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionForce_System_Single_
+  - text: Joint.GetReactionTorque(float)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionTorque_System_Single_
+  - text: Joint.WakeBodies()
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WakeBodies
+  - text: Joint.IsFixedType()
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IsFixedType
+  - text: Joint.InitVelocityConstraints(ref SolverData)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  - text: Joint.Validate(float)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Validate_System_Single_
+  - text: Joint.SolveVelocityConstraints(ref SolverData)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  - text: Joint.SolvePositionConstraints(ref SolverData)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: FrictionJoint()
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L128
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.#ctor
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Joints.FrictionJoint" data-throw-if-not-resolved="false"></xref> class
+- code: internal FrictionJoint()
+- api3: FrictionJoint(Body, Body, Vector2, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L137
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+- markdown: Constructor for FrictionJoint.
+- code: public FrictionJoint(Body bodyA, Body bodyB, Vector2 anchor, bool useWorldCoordinates = false)
+- h4: Parameters
+- parameters:
+  - name: bodyA
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: ''
+  - name: bodyB
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: ''
+  - name: anchor
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: ''
+  - name: useWorldCoordinates
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: Set to true if you are using world coordinates as anchors.
+    optional: true
+- h2: Fields
+- api3: _angularImpulse
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__angularImpulse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L56
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._angularImpulse
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._angularImpulse
+- markdown: The angular impulse
+- code: private float _angularImpulse
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _angularMass
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__angularMass
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L61
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._angularMass
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._angularMass
+- markdown: The angular mass
+- code: private float _angularMass
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _indexA
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__indexA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L67
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._indexA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._indexA
+- markdown: The index
+- code: private int _indexA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _indexB
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__indexB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L72
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._indexB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._indexB
+- markdown: The index
+- code: private int _indexB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _invIA
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__invIA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L77
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._invIA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._invIA
+- markdown: The inv ia
+- code: private float _invIA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _invIB
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__invIB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L82
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._invIB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._invIB
+- markdown: The inv ib
+- code: private float _invIB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _invMassA
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__invMassA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L87
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._invMassA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._invMassA
+- markdown: The inv mass
+- code: private float _invMassA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _invMassB
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__invMassB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L92
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._invMassB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._invMassB
+- markdown: The inv mass
+- code: private float _invMassB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _linearImpulse
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__linearImpulse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L98
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._linearImpulse
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._linearImpulse
+- markdown: The linear impulse
+- code: private Vector2 _linearImpulse
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _linearMass
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__linearMass
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L103
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._linearMass
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._linearMass
+- markdown: The linear mass
+- code: private Mat22 _linearMass
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Mat22
+      url: Alis.Core.Physic.Common.Mat22.html
+- api3: _localCenterA
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__localCenterA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L108
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._localCenterA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._localCenterA
+- markdown: The local center
+- code: private Vector2 _localCenterA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _localCenterB
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__localCenterB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L113
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._localCenterB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._localCenterB
+- markdown: The local center
+- code: private Vector2 _localCenterB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _rA
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__rA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L118
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._rA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._rA
+- markdown: The
+- code: private Vector2 _rA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _rB
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint__rB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L123
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint._rB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.FrictionJoint._rB
+- markdown: The
+- code: private Vector2 _rB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h2: Properties
+- api3: LocalAnchorA
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint_LocalAnchorA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L157
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.LocalAnchorA
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.LocalAnchorA
+- markdown: The local anchor point on BodyA
+- code: public Vector2 LocalAnchorA { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: LocalAnchorB
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint_LocalAnchorB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L162
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.LocalAnchorB
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.LocalAnchorB
+- markdown: The local anchor point on BodyB
+- code: public Vector2 LocalAnchorB { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: MaxForce
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint_MaxForce
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L185
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.MaxForce
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.MaxForce
+- markdown: The maximum friction force in N.
+- code: public float MaxForce { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxTorque
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint_MaxTorque
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L190
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.MaxTorque
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.MaxTorque
+- markdown: The maximum friction torque in N-m.
+- code: public float MaxTorque { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: WorldAnchorA
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint_WorldAnchorA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L167
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.WorldAnchorA
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.WorldAnchorA
+- markdown: Gets or sets the value of the world anchor a
+- code: public override Vector2 WorldAnchorA { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: WorldAnchorB
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint_WorldAnchorB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L176
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.WorldAnchorB
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.WorldAnchorB
+- markdown: Gets or sets the value of the world anchor b
+- code: public override Vector2 WorldAnchorB { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h2: Methods
+- api3: GetReactionForce(float)
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint_GetReactionForce_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L197
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.GetReactionForce(System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.GetReactionForce(System.Single)
+- markdown: Gets the reaction force using the specified inv dt
+- code: public override Vector2 GetReactionForce(float invDt)
+- h4: Parameters
+- parameters:
+  - name: invDt
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The inv dt
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The vector
+- api3: GetReactionTorque(float)
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint_GetReactionTorque_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L204
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.GetReactionTorque(System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.GetReactionTorque(System.Single)
+- markdown: Gets the reaction torque using the specified inv dt
+- code: public override float GetReactionTorque(float invDt)
+- h4: Parameters
+- parameters:
+  - name: invDt
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The inv dt
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The float
+- api3: InitVelocityConstraints(ref SolverData)
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L210
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+- markdown: Inits the velocity constraints using the specified data
+- code: internal override void InitVelocityConstraints(ref SolverData data)
+- h4: Parameters
+- parameters:
+  - name: data
+    type:
+    - text: SolverData
+      url: Alis.Core.Physic.Dynamics.SolverData.html
+    description: The data
+- api3: SolvePositionConstraints(ref SolverData)
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L352
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+- markdown: Describes whether this instance solve position constraints
+- code: internal override bool SolvePositionConstraints(ref SolverData data)
+- h4: Parameters
+- parameters:
+  - name: data
+    type:
+    - text: SolverData
+      url: Alis.Core.Physic.Dynamics.SolverData.html
+    description: The data
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: SolveVelocityConstraints(ref SolverData)
+  id: Alis_Core_Physic_Dynamics_Joints_FrictionJoint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/FrictionJoint.cs#L290
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.FrictionJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.FrictionJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+- markdown: Solves the velocity constraints using the specified data
+- code: internal override void SolveVelocityConstraints(ref SolverData data)
+- h4: Parameters
+- parameters:
+  - name: data
+    type:
+    - text: SolverData
+      url: Alis.Core.Physic.Dynamics.SolverData.html
+    description: The data
+languageId: csharp
+metadata:
+  description: >-
+    Friction joint. This is used for top-down friction.
+
+    It provides 2D translational friction and angular friction.

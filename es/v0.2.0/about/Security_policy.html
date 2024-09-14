@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <title> Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis ">
+      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!">
+      <link rel="icon" href="../resources/logo.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="En este art&#237;culo">
+      <meta name="loc:searchResultsCount" content="{count} resultados para &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="Sin resultados para &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filtrar por t&#237;tulo">
+      <meta name="loc:nextArticle" content="Siguiente">
+      <meta name="loc:prevArticle" content="Anterior">
+      <meta name="loc:themeLight" content="Claro">
+      <meta name="loc:themeDark" content="Oscuro">
+      <meta name="loc:themeAuto" content="Autom&#225;tico">
+      <meta name="loc:changeTheme" content="Cambiar tema">
+      <meta name="loc:copy" content="Copiar">
+      <meta name="loc:downloadPdf" content="Descargar PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+        const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+      
+        // Función para actualizar el contenido del dropdownToggle según el idioma
+        function updateLanguage() {
+          const currentLang = document.documentElement.lang;
+          const isEnglish = currentLang === 'en';
+          const isSpanish = currentLang === 'es';
+      
+          if (isEnglish) {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              English`;
+          } else {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              Español`;
+          }
+        }
+      
+        // Llama a la función para actualizar el idioma al cargar la página
+        updateLanguage();
+      });
+    </script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+
+          // Función para actualizar el texto del botón según la URL actual
+          function updateDropdownVersion() {
+              const path = window.location.pathname;
+              const versionMatch = path.match(/v\d+\.\d+\.\d+/i); // Buscar la versión en cualquier parte del path
+
+              if (versionMatch) {
+                  const currentVersion = versionMatch[0]; // Obtener la versión encontrada
+                  dropdownToggle.textContent = currentVersion;
+              }
+          }
+
+          updateDropdownVersion(); // Llamar la función al cargar la página
+      });
+
+    </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="../resources/logo_small_v2.png" alt="Alis">
+            Alis
+          </a>
+
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+
+        
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Buscar" autocomplete="off" aria-label="Search">
+              </form>
+
+              
+              <script>
+
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                const dropdownMenu = document.querySelector('.dropdown-menu-versions');
+
+                dropdownToggle.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const isExpanded = dropdownMenu.style.display === 'block';
+                  dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                });
+
+                document.addEventListener('click', function (e) {
+                  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.style.display = 'none';
+                  }
+                });
+
+                // Manejar la selección de versión y actualizar la URL
+                dropdownMenu.addEventListener('click', function (e) {
+                  if (e.target.classList.contains('dropdown-item')) {
+                    e.preventDefault();
+                    
+                    const selectedVersion = e.target.getAttribute('data-version');
+                    const lang = document.documentElement.lang; // Obtener el idioma actual del documento
+                    
+                    let basePath = '';
+                    
+                    // Comprobar si el idioma es español
+                    if (lang === 'es') {
+                      basePath += '/es';
+                    }
+
+                    if (lang === 'en') {
+                      basePath += '/en';
+                    }
+
+                    // Redirigir a la ruta de la versión seleccionada
+                    const newPath = `${basePath}/${selectedVersion}/index.html`;
+                    window.location.href = newPath;
+                  }
+                });
+              });
+ 
+
+              </script>
+
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" data-version="v0.4.0">v0.4.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.3.0">v0.3.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.2.0">v0.2.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.1.0">v0.1.0</a></li>
+                </ul>
+              </div>
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                    const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+
+                    dropdownToggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const isExpanded = dropdownMenu.style.display === 'block';
+                        dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                    });
+
+                    document.addEventListener('click', function (e) {
+                        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    });
+
+                    // Manejar la selección de idioma y actualizar la URL
+                    dropdownMenu.addEventListener('click', function (e) {
+                        if (e.target.classList.contains('dropdown-item')) {
+                            e.preventDefault();
+                            
+                            const selectedLang = e.target.getAttribute('lang');
+                            const currentPath = window.location.pathname;
+                            const pathParts = currentPath.split('/');
+
+                            // Verificar si la URL sigue el formato esperado y reemplazar el idioma
+                            if (pathParts.length >= 3) {
+                                pathParts[1] = selectedLang;  // Reemplaza el idioma en la URL
+                            }
+
+                            // Reconstruir la URL y redirigir
+                            const newPath = pathParts.join('/');
+                            window.location.href = newPath;
+                        }
+                    });
+                });
+                </script>
+
+
+
+              
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-lang" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                  <svg viewbox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                    <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                  </svg>
+                  English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lang" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" lang="es">Español</a></li>
+                </ul>
+            </div>
+
+
+              <a class="hover_custom" style="order: 55;margin: 0 10px;" href="https://github.com/pabllopf/Alis/releases/latest">
+              <button type="button" class="btn btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewbox="0 0 17 17">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+                  </svg>
+                  Descargar
+              </button>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+      
+      
+
+
+
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="política-de-seguridad">Política de Seguridad</h1>
+
+<h2 id="versiones-compatibles">Versiones Compatibles</h2>
+<p>A continuación se enumeran las versiones compatibles (frameworks de destino) del proyecto que son compatibles con actualizaciones de seguridad:</p>
+<ul>
+<li><p><strong>.NET:</strong></p>
+<ul>
+<li><code>net5.0</code>, <code>net5.0-windows</code></li>
+<li><code>net6.0</code>, <code>net6.0-android</code>, <code>net6.0-ios</code>, <code>net6.0-maccatalyst</code>, <code>net6.0-macos</code>, <code>net6.0-tvos</code>, <code>net6.0-windows</code></li>
+<li><code>net7.0</code>, <code>net7.0-android</code>, <code>net7.0-ios</code>, <code>net7.0-maccatalyst</code>, <code>net7.0-macos</code>, <code>net7.0-tvos</code>, <code>net7.0-windows</code></li>
+<li><code>net8.0</code>, <code>net8.0-android</code>, <code>net8.0-browser</code>, <code>net8.0-ios</code>, <code>net8.0-maccatalyst</code>, <code>net8.0-macos</code>, <code>net8.0-tvos</code>, <code>net8.0-windows</code></li>
+</ul>
+</li>
+<li><p><strong>.NET Core:</strong></p>
+<ul>
+<li><code>netcoreapp2.0</code>, <code>netcoreapp2.1</code>, <code>netcoreapp2.2</code></li>
+<li><code>netcoreapp3.0</code>, <code>netcoreapp3.1</code></li>
+</ul>
+</li>
+<li><p><strong>.NET Standard:</strong></p>
+<ul>
+<li><code>netstandard2.0</code>, <code>netstandard2.1</code></li>
+</ul>
+</li>
+<li><p><strong>.NET Framework:</strong></p>
+<ul>
+<li><code>net461</code>, <code>net462</code>, <code>net463</code>, <code>net47</code>, <code>net471</code>, <code>net472</code>, <code>net48</code>, <code>net481</code></li>
+</ul>
+</li>
+<li><p><strong>MonoAndroid:</strong></p>
+<ul>
+<li><code>monoandroid</code></li>
+</ul>
+</li>
+<li><p><strong>MonoMac:</strong></p>
+<ul>
+<li><code>monomac</code></li>
+</ul>
+</li>
+<li><p><strong>MonoTouch:</strong></p>
+<ul>
+<li><code>monotouch</code></li>
+</ul>
+</li>
+<li><p><strong>Tizen:</strong></p>
+<ul>
+<li><code>tizen40</code>, <code>tizen60</code></li>
+</ul>
+</li>
+<li><p><strong>Xamarin.iOS:</strong></p>
+<ul>
+<li><code>xamarinios</code></li>
+</ul>
+</li>
+<li><p><strong>Xamarin.Mac:</strong></p>
+<ul>
+<li><code>xamarinmac</code></li>
+</ul>
+</li>
+<li><p><strong>Xamarin.TVOS:</strong></p>
+<ul>
+<li><code>xamarintvos</code></li>
+</ul>
+</li>
+<li><p><strong>Xamarin.WatchOS:</strong></p>
+<ul>
+<li><code>xamarinwatchos</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="reportar-una-vulnerabilidad">Reportar una Vulnerabilidad</h2>
+<p>Si descubres una vulnerabilidad de seguridad en este proyecto, por favor sigue estos pasos para reportarla:</p>
+<ol>
+<li><p><strong>Contáctanos:</strong> Envía un correo electrónico a <a href="mailto:pabloperdomofalcon@gmail.com">pabloperdomofalcon@gmail.com</a>. Incluye información detallada sobre la vulnerabilidad, incluyendo los pasos para reproducirla y cualquier posible impacto.</p>
+</li>
+<li><p><strong>Tiempo de Respuesta:</strong> Nuestro objetivo es responder a todos los informes de seguridad dentro de las 72 horas. Reconoceremos la recepción de tu informe y te proporcionaremos un cronograma estimado para la resolución.</p>
+</li>
+<li><p><strong>Evaluación:</strong> Nuestro equipo revisará el informe y evaluará la gravedad de la vulnerabilidad. Luego determinaremos si la vulnerabilidad es válida y cómo se abordará. Recibirás una actualización sobre el estado de tu informe, ya sea aceptado o rechazado.</p>
+</li>
+<li><p><strong>Divulgación:</strong> Una vez que se haya implementado y lanzado una solución, proporcionaremos una descripción detallada de la vulnerabilidad y la resolución en nuestras notas de lanzamiento y actualizaciones de seguridad. También te notificaremos directamente.</p>
+</li>
+<li><p><strong>Divulgación Responsable:</strong> Por favor, no divulges la vulnerabilidad públicamente hasta que se haya lanzado una solución. Esto nos ayuda a abordar el problema de manera efectiva y proteger a los usuarios.</p>
+</li>
+</ol>
+<h2 id="actualizaciones-de-seguridad">Actualizaciones de Seguridad</h2>
+<ul>
+<li><strong>Calendario de Lanzamientos:</strong> Las actualizaciones de seguridad se lanzan como parte de nuestro ciclo de lanzamientos regular. Las correcciones críticas pueden ser lanzadas como hotfixes fuera del calendario regular si es necesario.</li>
+<li><strong>Changelog:</strong> La información detallada sobre cada actualización de seguridad, incluyendo la naturaleza de la corrección y los componentes afectados, se documentará en nuestro changelog.</li>
+</ul>
+<h2 id="prácticas-de-seguridad">Prácticas de Seguridad</h2>
+<ul>
+<li><strong>Revisión de Código:</strong> Todos los cambios de código, especialmente aquellos que afectan la seguridad, son revisados por varios miembros del equipo para asegurar el cumplimiento de las mejores prácticas de seguridad.</li>
+<li><strong>Pruebas:</strong> Utilizamos pruebas automatizadas y manuales para identificar vulnerabilidades. Las pruebas relacionadas con la seguridad se incluyen en nuestro pipeline de integración continua.</li>
+<li><strong>Dependencias:</strong> Actualizamos y auditamos regularmente nuestras dependencias para abordar vulnerabilidades conocidas en bibliotecas de terceros.</li>
+</ul>
+<h2 id="vulnerabilidades-conocidas">Vulnerabilidades Conocidas</h2>
+<ul>
+<li><strong>Divulgación:</strong> La información sobre vulnerabilidades conocidas, incluyendo detalles sobre versiones afectadas y pasos de mitigación, se compartirá en nuestro rastreador de problemas público o en las notas de lanzamiento.</li>
+<li><strong>Actualizaciones:</strong> Proporcionaremos actualizaciones sobre el estado de las vulnerabilidades conocidas y los pasos que estamos tomando para abordarlas.</li>
+</ul>
+<h2 id="contacto">Contacto</h2>
+<p>Para cualquier pregunta o información adicional sobre nuestra política de seguridad, por favor contáctanos a <a href="mailto:pabloperdomofalcon@gmail.com">pabloperdomofalcon@gmail.com</a>.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Alis - Desarrolla los videojuegos de tus sueños 💯 gratis en Windows, MacOS, Linux, Android (próximamente), iOS (próximamente).
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

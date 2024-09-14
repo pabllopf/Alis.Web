@@ -1,0 +1,154 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Physic.Common
+body:
+- api1: Namespace Alis.Core.Physic.Common
+  id: Alis_Core_Physic_Common
+  metadata:
+    uid: Alis.Core.Physic.Common
+    commentId: N:Alis.Core.Physic.Common
+- h3: Namespaces
+- parameters:
+  - type:
+      text: Alis.Core.Physic.Common.ConvexHull
+      url: Alis.Core.Physic.Common.ConvexHull.html
+  - type:
+      text: Alis.Core.Physic.Common.Decomposition
+      url: Alis.Core.Physic.Common.Decomposition.html
+  - type:
+      text: Alis.Core.Physic.Common.PhysicsLogic
+      url: Alis.Core.Physic.Common.PhysicsLogic.html
+  - type:
+      text: Alis.Core.Physic.Common.PolygonManipulation
+      url: Alis.Core.Physic.Common.PolygonManipulation.html
+  - type:
+      text: Alis.Core.Physic.Common.TextureTools
+      url: Alis.Core.Physic.Common.TextureTools.html
+- h3: Classes
+- parameters:
+  - type:
+      text: Constant
+      url: Alis.Core.Physic.Common.Constant.html
+    description: The constant class
+  - type:
+      text: FileBuffer
+      url: Alis.Core.Physic.Common.FileBuffer.html
+    description: The file buffer class
+  - type:
+      text: LineTools
+      url: Alis.Core.Physic.Common.LineTools.html
+    description: >-
+      Collection of helper methods for misc collisions.
+
+      Does float tolerance and line collisions with lines and AABBs.
+  - type:
+      text: Path
+      url: Alis.Core.Physic.Common.Path.html
+    description: >-
+      Path:
+
+      Very similar to Vertices, but this
+
+      class contains vectors describing
+
+      control points on a Catmull-Rom
+
+      curve.
+  - type:
+      text: PathManager
+      url: Alis.Core.Physic.Common.PathManager.html
+    description: An easy to use manager for creating paths.
+  - type:
+      text: PolygonTools
+      url: Alis.Core.Physic.Common.PolygonTools.html
+    description: The polygon tools class
+  - type:
+      text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices class
+  - type:
+      text: WorldSerializer
+      url: Alis.Core.Physic.Common.WorldSerializer.html
+    description: Serialize the world into an XML file
+  - type:
+      text: WorldXmlDeserializer
+      url: Alis.Core.Physic.Common.WorldXmlDeserializer.html
+    description: The world xml deserializer class
+  - type:
+      text: WorldXmlSerializer
+      url: Alis.Core.Physic.Common.WorldXmlSerializer.html
+    description: The world xml serializer class
+  - type:
+      text: XMLFragmentAttribute
+      url: Alis.Core.Physic.Common.XMLFragmentAttribute.html
+    description: The xml fragment attribute class
+  - type:
+      text: XMLFragmentElement
+      url: Alis.Core.Physic.Common.XMLFragmentElement.html
+    description: The xml fragment element class
+  - type:
+      text: XMLFragmentException
+      url: Alis.Core.Physic.Common.XMLFragmentException.html
+    description: The xml fragment exception class
+  - type:
+      text: XMLFragmentParser
+      url: Alis.Core.Physic.Common.XMLFragmentParser.html
+    description: The xml fragment parser class
+- h3: Structs
+- parameters:
+  - type:
+      text: Complex
+      url: Alis.Core.Physic.Common.Complex.html
+    description: The complex
+  - type:
+      text: FixedArray2<T>
+      url: Alis.Core.Physic.Common.FixedArray2-1.html
+    description: The fixed array
+  - type:
+      text: FixedArray3<T>
+      url: Alis.Core.Physic.Common.FixedArray3-1.html
+    description: The fixed array
+  - type:
+      text: FixedArray4<T>
+      url: Alis.Core.Physic.Common.FixedArray4-1.html
+    description: The fixed array
+  - type:
+      text: FixedArray8<T>
+      url: Alis.Core.Physic.Common.FixedArray8-1.html
+    description: The fixed array
+  - type:
+      text: Mat22
+      url: Alis.Core.Physic.Common.Mat22.html
+    description: A 2-by-2 matrix. Stored in column-major order.
+  - type:
+      text: Mat33
+      url: Alis.Core.Physic.Common.Mat33.html
+    description: A 3-by-3 matrix. Stored in column-major order.
+  - type:
+      text: Sweep
+      url: Alis.Core.Physic.Common.Sweep.html
+    description: >-
+      This describes the motion of a body/shape for TOI computation.
+
+      Shapes are defined with respect to the body origin, which may
+
+      no coincide with the center of mass. However, to support dynamics
+
+      we must interpolate the center of mass position.
+  - type:
+      text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: >-
+      A transform contains translation and rotation. It is used to represent
+
+      the position and orientation of rigid frames.
+- h3: Enums
+- parameters:
+  - type:
+      text: PathManager.LinkType
+      url: Alis.Core.Physic.Common.PathManager.LinkType.html
+    description: The link type enum
+  - type:
+      text: PolygonError
+      url: Alis.Core.Physic.Common.PolygonError.html
+    description: The polygon error enum
+languageId: csharp

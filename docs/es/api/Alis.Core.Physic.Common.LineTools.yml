@@ -1,0 +1,496 @@
+### YamlMime:ApiPage
+title: Class LineTools
+body:
+- api1: Class LineTools
+  id: Alis_Core_Physic_Common_LineTools
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/LineTools.cs#L41
+  metadata:
+    uid: Alis.Core.Physic.Common.LineTools
+    commentId: T:Alis.Core.Physic.Common.LineTools
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common
+      url: Alis.Core.Physic.Common.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Collection of helper methods for misc collisions.
+
+    Does float tolerance and line collisions with lines and AABBs.
+- code: public static class LineTools
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: LineTools
+    url: Alis.Core.Physic.Common.LineTools.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: DistanceBetweenPointAndLineSegment(ref Vector2, ref Vector2, ref Vector2)
+  id: Alis_Core_Physic_Common_LineTools_DistanceBetweenPointAndLineSegment_Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/LineTools.cs#L50
+  metadata:
+    uid: Alis.Core.Physic.Common.LineTools.DistanceBetweenPointAndLineSegment(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Common.LineTools.DistanceBetweenPointAndLineSegment(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: Distances the between point and line segment using the specified point
+- code: public static float DistanceBetweenPointAndLineSegment(ref Vector2 point, ref Vector2 start, ref Vector2 end)
+- h4: Parameters
+- parameters:
+  - name: point
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The point
+  - name: start
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The start
+  - name: end
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The end
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The float
+- api3: LineIntersect(Vector2, Vector2, Vector2, Vector2)
+  id: Alis_Core_Physic_Common_LineTools_LineIntersect_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/LineTools.cs#L130
+  metadata:
+    uid: Alis.Core.Physic.Common.LineTools.LineIntersect(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.LineTools.LineIntersect(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Lines the intersect using the specified p 1
+- code: public static Vector2 LineIntersect(Vector2 p1, Vector2 p2, Vector2 q1, Vector2 q2)
+- h4: Parameters
+- parameters:
+  - name: p1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: p2
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: q1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: q2
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+- api3: LineIntersect(ref Vector2, ref Vector2, ref Vector2, ref Vector2, bool, bool, out Vector2)
+  id: Alis_Core_Physic_Common_LineTools_LineIntersect_Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__System_Boolean_System_Boolean_Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/LineTools.cs#L181
+  metadata:
+    uid: Alis.Core.Physic.Common.LineTools.LineIntersect(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,System.Boolean,System.Boolean,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Common.LineTools.LineIntersect(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,System.Boolean,System.Boolean,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: >-
+    This method detects if two line segments (or lines) intersect,
+
+    and, if so, the point of intersection. Use the <code class="paramref">firstIsSegment</code> and
+
+    <code class="paramref">secondIsSegment</code> parameters to set whether the intersection point
+
+    must be on the first and second line segments. Setting these
+
+    both to true means you are doing a line-segment to line-segment
+
+    intersection. Setting one of them to true means you are doing a
+
+    line to line-segment intersection test, and so on.
+
+    Note: If two line segments are coincident, then
+
+    no intersection is detected (there are actually
+
+    infinite intersection points).
+
+    Author: Jeremy Bell
+- code: public static bool LineIntersect(ref Vector2 point1, ref Vector2 point2, ref Vector2 point3, ref Vector2 point4, bool firstIsSegment, bool secondIsSegment, out Vector2 point)
+- h4: Parameters
+- parameters:
+  - name: point1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The first point of the first line segment.
+  - name: point2
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The second point of the first line segment.
+  - name: point3
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The first point of the second line segment.
+  - name: point4
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The second point of the second line segment.
+  - name: firstIsSegment
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      Set this to true to require that the
+
+      intersection point be on the first line segment.
+  - name: secondIsSegment
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      Set this to true to require that the
+
+      intersection point be on the second line segment.
+  - name: point
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: >-
+      This is set to the intersection
+
+      point if an intersection is detected.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: True if an intersection is detected, false otherwise.
+- api3: LineIntersect(Vector2, Vector2, Vector2, Vector2, bool, bool, out Vector2)
+  id: Alis_Core_Physic_Common_LineTools_LineIntersect_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_System_Boolean_Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/LineTools.cs#L264
+  metadata:
+    uid: Alis.Core.Physic.Common.LineTools.LineIntersect(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean,System.Boolean,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Common.LineTools.LineIntersect(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean,System.Boolean,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: >-
+    This method detects if two line segments (or lines) intersect,
+
+    and, if so, the point of intersection. Use the <code class="paramref">firstIsSegment</code> and
+
+    <code class="paramref">secondIsSegment</code> parameters to set whether the intersection point
+
+    must be on the first and second line segments. Setting these
+
+    both to true means you are doing a line-segment to line-segment
+
+    intersection. Setting one of them to true means you are doing a
+
+    line to line-segment intersection test, and so on.
+
+    Note: If two line segments are coincident, then
+
+    no intersection is detected (there are actually
+
+    infinite intersection points).
+
+    Author: Jeremy Bell
+- code: public static bool LineIntersect(Vector2 point1, Vector2 point2, Vector2 point3, Vector2 point4, bool firstIsSegment, bool secondIsSegment, out Vector2 intersectionPoint)
+- h4: Parameters
+- parameters:
+  - name: point1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The first point of the first line segment.
+  - name: point2
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The second point of the first line segment.
+  - name: point3
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The first point of the second line segment.
+  - name: point4
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The second point of the second line segment.
+  - name: firstIsSegment
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      Set this to true to require that the
+
+      intersection point be on the first line segment.
+  - name: secondIsSegment
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      Set this to true to require that the
+
+      intersection point be on the second line segment.
+  - name: intersectionPoint
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: >-
+      This is set to the intersection
+
+      point if an intersection is detected.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: True if an intersection is detected, false otherwise.
+- api3: LineIntersect(ref Vector2, ref Vector2, ref Vector2, ref Vector2, out Vector2)
+  id: Alis_Core_Physic_Common_LineTools_LineIntersect_Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/LineTools.cs#L282
+  metadata:
+    uid: Alis.Core.Physic.Common.LineTools.LineIntersect(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Common.LineTools.LineIntersect(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: >-
+    This method detects if two line segments intersect,
+
+    and, if so, the point of intersection.
+
+    Note: If two line segments are coincident, then
+
+    no intersection is detected (there are actually
+
+    infinite intersection points).
+- code: public static bool LineIntersect(ref Vector2 point1, ref Vector2 point2, ref Vector2 point3, ref Vector2 point4, out Vector2 intersectionPoint)
+- h4: Parameters
+- parameters:
+  - name: point1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The first point of the first line segment.
+  - name: point2
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The second point of the first line segment.
+  - name: point3
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The first point of the second line segment.
+  - name: point4
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The second point of the second line segment.
+  - name: intersectionPoint
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: >-
+      This is set to the intersection
+
+      point if an intersection is detected.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: True if an intersection is detected, false otherwise.
+- api3: LineIntersect(Vector2, Vector2, Vector2, Vector2, out Vector2)
+  id: Alis_Core_Physic_Common_LineTools_LineIntersect_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/LineTools.cs#L300
+  metadata:
+    uid: Alis.Core.Physic.Common.LineTools.LineIntersect(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Common.LineTools.LineIntersect(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: >-
+    This method detects if two line segments intersect,
+
+    and, if so, the point of intersection.
+
+    Note: If two line segments are coincident, then
+
+    no intersection is detected (there are actually
+
+    infinite intersection points).
+- code: public static bool LineIntersect(Vector2 point1, Vector2 point2, Vector2 point3, Vector2 point4, out Vector2 intersectionPoint)
+- h4: Parameters
+- parameters:
+  - name: point1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The first point of the first line segment.
+  - name: point2
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The second point of the first line segment.
+  - name: point3
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The first point of the second line segment.
+  - name: point4
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The second point of the second line segment.
+  - name: intersectionPoint
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: >-
+      This is set to the intersection
+
+      point if an intersection is detected.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: True if an intersection is detected, false otherwise.
+- api3: LineIntersect2(ref Vector2, ref Vector2, ref Vector2, ref Vector2, out Vector2)
+  id: Alis_Core_Physic_Common_LineTools_LineIntersect2_Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/LineTools.cs#L76
+  metadata:
+    uid: Alis.Core.Physic.Common.LineTools.LineIntersect2(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Common.LineTools.LineIntersect2(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: >-
+    Check if the lines a0-&gt;a1 and b0-&gt;b1 cross.
+
+    If they do, intersectionPoint will be filled
+
+    with the point of crossing.
+
+    Grazing lines should not return true.
+- code: public static bool LineIntersect2(ref Vector2 a0, ref Vector2 a1, ref Vector2 b0, ref Vector2 b1, out Vector2 intersectionPoint)
+- h4: Parameters
+- parameters:
+  - name: a0
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+  - name: a1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+  - name: b0
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+  - name: b1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+  - name: intersectionPoint
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: LineSegmentAabbIntersect(ref Vector2, ref Vector2, AABB)
+  id: Alis_Core_Physic_Common_LineTools_LineSegmentAabbIntersect_Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Physic_Collision_AABB_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/LineTools.cs#L333
+  metadata:
+    uid: Alis.Core.Physic.Common.LineTools.LineSegmentAabbIntersect(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Physic.Collision.AABB)
+    commentId: M:Alis.Core.Physic.Common.LineTools.LineSegmentAabbIntersect(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Physic.Collision.AABB)
+- markdown: Get all intersections between a line segment and an AABB.
+- code: public static Vertices LineSegmentAabbIntersect(ref Vector2 point1, ref Vector2 point2, AABB aabb)
+- h4: Parameters
+- parameters:
+  - name: point1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The first point of the line segment to test
+  - name: point2
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The second point of the line segment to test.
+  - name: aabb
+    type:
+    - text: AABB
+      url: Alis.Core.Physic.Collision.AABB.html
+    description: The AABB that is used for testing intersection.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+- api3: LineSegmentVerticesIntersect(ref Vector2, ref Vector2, Vertices)
+  id: Alis_Core_Physic_Common_LineTools_LineSegmentVerticesIntersect_Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/LineTools.cs#L312
+  metadata:
+    uid: Alis.Core.Physic.Common.LineTools.LineSegmentVerticesIntersect(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Common.LineTools.LineSegmentVerticesIntersect(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Physic.Common.Vertices)
+- markdown: >-
+    Get all intersections between a line segment and a list of vertices
+
+    representing a polygon. The vertices reuse adjacent points, so for example
+
+    edges one and two are between the first and second vertices and between the
+
+    second and third vertices. The last edge is between vertex vertices.Count - 1
+
+    and verts0. (ie, vertices from a Geometry or AABB)
+- code: public static Vertices LineSegmentVerticesIntersect(ref Vector2 point1, ref Vector2 point2, Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: point1
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The first point of the line segment to test
+  - name: point2
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The second point of the line segment to test.
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices, as described above
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+languageId: csharp
+metadata:
+  description: >-
+    Collection of helper methods for misc collisions.
+
+    Does float tolerance and line collisions with lines and AABBs.

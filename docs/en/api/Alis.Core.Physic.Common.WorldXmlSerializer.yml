@@ -1,0 +1,311 @@
+### YamlMime:ApiPage
+title: Class WorldXmlSerializer
+body:
+- api1: Class WorldXmlSerializer
+  id: Alis_Core_Physic_Common_WorldXmlSerializer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L46
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer
+    commentId: T:Alis.Core.Physic.Common.WorldXmlSerializer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common
+      url: Alis.Core.Physic.Common.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The world xml serializer class
+- code: internal static class WorldXmlSerializer
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: WorldXmlSerializer
+    url: Alis.Core.Physic.Common.WorldXmlSerializer.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: _writer
+  id: Alis_Core_Physic_Common_WorldXmlSerializer__writer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L51
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer._writer
+    commentId: F:Alis.Core.Physic.Common.WorldXmlSerializer._writer
+- markdown: The writer
+- code: private static XmlWriter _writer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: XmlWriter
+      url: https://learn.microsoft.com/dotnet/api/system.xml.xmlwriter
+- h2: Methods
+- api3: FloatToString(float)
+  id: Alis_Core_Physic_Common_WorldXmlSerializer_FloatToString_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L395
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer.FloatToString(System.Single)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlSerializer.FloatToString(System.Single)
+- markdown: Floats the to string using the specified value
+- code: private static string FloatToString(float value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+- api3: Serialize(World, Stream)
+  id: Alis_Core_Physic_Common_WorldXmlSerializer_Serialize_Alis_Core_Physic_Dynamics_World_System_IO_Stream_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L402
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer.Serialize(Alis.Core.Physic.Dynamics.World,System.IO.Stream)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlSerializer.Serialize(Alis.Core.Physic.Dynamics.World,System.IO.Stream)
+- markdown: Serializes the world
+- code: internal static void Serialize(World world, Stream stream)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+  - name: stream
+    type:
+    - text: Stream
+      url: https://learn.microsoft.com/dotnet/api/system.io.stream
+    description: The stream
+- api3: SerializeBody(List<Fixture>, List<Shape>, Body)
+  id: Alis_Core_Physic_Common_WorldXmlSerializer_SerializeBody_System_Collections_Generic_List_Alis_Core_Physic_Dynamics_Fixture__System_Collections_Generic_List_Alis_Core_Physic_Collision_Shapes_Shape__Alis_Core_Physic_Dynamics_Body_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L150
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer.SerializeBody(System.Collections.Generic.List{Alis.Core.Physic.Dynamics.Fixture},System.Collections.Generic.List{Alis.Core.Physic.Collision.Shapes.Shape},Alis.Core.Physic.Dynamics.Body)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlSerializer.SerializeBody(System.Collections.Generic.List{Alis.Core.Physic.Dynamics.Fixture},System.Collections.Generic.List{Alis.Core.Physic.Collision.Shapes.Shape},Alis.Core.Physic.Dynamics.Body)
+- markdown: Serializes the body using the specified fixtures
+- code: private static void SerializeBody(List<Fixture> fixtures, List<Shape> shapes, Body body)
+- h4: Parameters
+- parameters:
+  - name: fixtures
+    type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    - '>'
+    description: The fixtures
+  - name: shapes
+    type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Shape
+      url: Alis.Core.Physic.Collision.Shapes.Shape.html
+    - '>'
+    description: The shapes
+  - name: body
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The body
+- api3: SerializeFixture(List<Fixture>, Fixture)
+  id: Alis_Core_Physic_Common_WorldXmlSerializer_SerializeFixture_System_Collections_Generic_List_Alis_Core_Physic_Dynamics_Fixture__Alis_Core_Physic_Dynamics_Fixture_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L119
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer.SerializeFixture(System.Collections.Generic.List{Alis.Core.Physic.Dynamics.Fixture},Alis.Core.Physic.Dynamics.Fixture)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlSerializer.SerializeFixture(System.Collections.Generic.List{Alis.Core.Physic.Dynamics.Fixture},Alis.Core.Physic.Dynamics.Fixture)
+- markdown: Serializes the fixture using the specified fixtures
+- code: private static void SerializeFixture(List<Fixture> fixtures, Fixture fixture)
+- h4: Parameters
+- parameters:
+  - name: fixtures
+    type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    - '>'
+    description: The fixtures
+  - name: fixture
+    type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+- api3: SerializeJoint(List<Body>, Joint)
+  id: Alis_Core_Physic_Common_WorldXmlSerializer_SerializeJoint_System_Collections_Generic_List_Alis_Core_Physic_Dynamics_Body__Alis_Core_Physic_Dynamics_Joints_Joint_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L193
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer.SerializeJoint(System.Collections.Generic.List{Alis.Core.Physic.Dynamics.Body},Alis.Core.Physic.Dynamics.Joints.Joint)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlSerializer.SerializeJoint(System.Collections.Generic.List{Alis.Core.Physic.Dynamics.Body},Alis.Core.Physic.Dynamics.Joints.Joint)
+- markdown: Serializes the joint using the specified bodies
+- code: private static void SerializeJoint(List<Body> bodies, Joint joint)
+- h4: Parameters
+- parameters:
+  - name: bodies
+    type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    - '>'
+    description: The bodies
+  - name: joint
+    type:
+    - text: Joint
+      url: Alis.Core.Physic.Dynamics.Joints.Joint.html
+    description: The joint
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: Gear joint not supported by serialization
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: Joint not supported
+- api3: SerializeShape(Shape)
+  id: Alis_Core_Physic_Common_WorldXmlSerializer_SerializeShape_Alis_Core_Physic_Collision_Shapes_Shape_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L58
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer.SerializeShape(Alis.Core.Physic.Collision.Shapes.Shape)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlSerializer.SerializeShape(Alis.Core.Physic.Collision.Shapes.Shape)
+- markdown: Serializes the shape using the specified shape
+- code: private static void SerializeShape(Shape shape)
+- h4: Parameters
+- parameters:
+  - name: shape
+    type:
+    - text: Shape
+      url: Alis.Core.Physic.Collision.Shapes.Shape.html
+    description: The shape
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+- api3: WriteDynamicType(Type, object)
+  id: Alis_Core_Physic_Common_WorldXmlSerializer_WriteDynamicType_System_Type_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L340
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer.WriteDynamicType(System.Type,System.Object)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlSerializer.WriteDynamicType(System.Type,System.Object)
+- markdown: Writes the dynamic type using the specified type
+- code: private static void WriteDynamicType(Type type, object val)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type
+  - name: val
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The val
+- api3: WriteElement(string, Vector2)
+  id: Alis_Core_Physic_Common_WorldXmlSerializer_WriteElement_System_String_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L355
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer.WriteElement(System.String,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlSerializer.WriteElement(System.String,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Writes the element using the specified name
+- code: private static void WriteElement(string name, Vector2 vec)
+- h4: Parameters
+- parameters:
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name
+  - name: vec
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The vec
+- api3: WriteElement(string, int)
+  id: Alis_Core_Physic_Common_WorldXmlSerializer_WriteElement_System_String_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L365
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer.WriteElement(System.String,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlSerializer.WriteElement(System.String,System.Int32)
+- markdown: Writes the element using the specified name
+- code: private static void WriteElement(string name, int val)
+- h4: Parameters
+- parameters:
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name
+  - name: val
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The val
+- api3: WriteElement(string, bool)
+  id: Alis_Core_Physic_Common_WorldXmlSerializer_WriteElement_System_String_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L375
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer.WriteElement(System.String,System.Boolean)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlSerializer.WriteElement(System.String,System.Boolean)
+- markdown: Writes the element using the specified name
+- code: private static void WriteElement(string name, bool val)
+- h4: Parameters
+- parameters:
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name
+  - name: val
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The val
+- api3: WriteElement(string, float)
+  id: Alis_Core_Physic_Common_WorldXmlSerializer_WriteElement_System_String_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldXmlSerializer.cs#L385
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldXmlSerializer.WriteElement(System.String,System.Single)
+    commentId: M:Alis.Core.Physic.Common.WorldXmlSerializer.WriteElement(System.String,System.Single)
+- markdown: Writes the element using the specified name
+- code: private static void WriteElement(string name, float val)
+- h4: Parameters
+- parameters:
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name
+  - name: val
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The val
+languageId: csharp
+metadata:
+  description: The world xml serializer class

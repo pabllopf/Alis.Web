@@ -1,0 +1,358 @@
+### YamlMime:ApiPage
+title: Class DTSweepContext
+body:
+- api1: Class DTSweepContext
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L37
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The dt sweep context class
+- code: 'internal class DTSweepContext : TriangulationContext'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: TriangulationContext
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html
+  - text: DTSweepContext
+    url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html
+- h4: Inherited Members
+- list:
+  - text: TriangulationContext.Points
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html#Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Points
+  - text: TriangulationContext.Triangles
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html#Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Triangles
+  - text: TriangulationContext.TriangulationMode
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html#Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_TriangulationMode
+  - text: TriangulationContext.Triangulatable
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html#Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Triangulatable
+  - text: TriangulationContext.WaitUntilNotified
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html#Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_WaitUntilNotified
+  - text: TriangulationContext.Terminated
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html#Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Terminated
+  - text: TriangulationContext.StepCount
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html#Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_StepCount
+  - text: TriangulationContext.Done()
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html#Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Done
+  - text: TriangulationContext.PrepareTriangulation(Triangulatable)
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html#Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_PrepareTriangulation_Alis_Core_Physic_Common_Decomposition_CDT_Triangulatable_
+  - text: TriangulationContext.NewConstraint(TriangulationPoint, TriangulationPoint)
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html#Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_NewConstraint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
+  - text: TriangulationContext.Clear()
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html#Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Clear
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: DTSweepContext()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L69
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.#ctor
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext" data-throw-if-not-resolved="false"></xref> class
+- code: public DTSweepContext()
+- h2: Fields
+- api3: ALPHA
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_ALPHA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L44
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.ALPHA
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.ALPHA
+- markdown: The alpha
+- code: private const float ALPHA = 0.3
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Basin
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Basin
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L59
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.Basin
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.Basin
+- markdown: The dt sweep basin
+- code: public DTSweepContext.DTSweepBasin Basin
+- h4: Field Value
+- parameters:
+  - type:
+    - text: DTSweepContext
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html
+    - .
+    - text: DTSweepBasin
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.html
+- api3: EdgeEvent
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_EdgeEvent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L64
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.EdgeEvent
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.EdgeEvent
+- markdown: The dt sweep edge event
+- code: public DTSweepContext.DTSweepEdgeEvent EdgeEvent
+- h4: Field Value
+- parameters:
+  - type:
+    - text: DTSweepContext
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html
+    - .
+    - text: DTSweepEdgeEvent
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepEdgeEvent.html
+- api3: _comparator
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext__comparator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L49
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext._comparator
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext._comparator
+- markdown: The dt sweep point comparator
+- code: private readonly DTSweepPointComparator _comparator
+- h4: Field Value
+- parameters:
+  - type:
+    - text: DTSweepPointComparator
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepPointComparator.html
+- api3: aFront
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_aFront
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L54
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.aFront
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.aFront
+- markdown: The front
+- code: public AdvancingFront aFront
+- h4: Field Value
+- parameters:
+  - type:
+    - text: AdvancingFront
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFront.html
+- h2: Properties
+- api3: Head
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Head
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L77
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.Head
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.Head
+- markdown: Gets or sets the value of the head
+- code: public TriangulationPoint Head { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+- api3: Tail
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Tail
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L82
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.Tail
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.Tail
+- markdown: Gets or sets the value of the tail
+- code: public TriangulationPoint Tail { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+- h2: Methods
+- api3: AddNode(AdvancingFrontNode)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_AddNode_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L144
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.AddNode(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.AddNode(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)
+- markdown: Adds the node using the specified node
+- code: public void AddNode(AdvancingFrontNode node)
+- h4: Parameters
+- parameters:
+  - name: node
+    type:
+    - text: AdvancingFrontNode
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html
+    description: The node
+- api3: Clear()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Clear
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L134
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.Clear
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.Clear
+- markdown: Clears this instance
+- code: public override void Clear()
+- api3: CreateAdvancingFront()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_CreateAdvancingFront
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L172
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.CreateAdvancingFront
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.CreateAdvancingFront
+- markdown: Creates the advancing front
+- code: public void CreateAdvancingFront()
+- api3: FinalizeTriangulation()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_FinalizeTriangulation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L261
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.FinalizeTriangulation
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.FinalizeTriangulation
+- markdown: Finalizes the triangulation
+- code: public void FinalizeTriangulation()
+- api3: LocateNode(TriangulationPoint)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_LocateNode_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L167
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.LocateNode(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.LocateNode(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+- markdown: Locates the node using the specified point
+- code: public AdvancingFrontNode LocateNode(TriangulationPoint point)
+- h4: Parameters
+- parameters:
+  - name: point
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: The point
+- h4: Returns
+- parameters:
+  - type:
+    - text: AdvancingFrontNode
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html
+    description: The advancing front node
+- api3: MapTriangleToNodes(DelaunayTriangle)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_MapTriangleToNodes_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L200
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.MapTriangleToNodes(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.MapTriangleToNodes(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
+- markdown: >-
+    Try to map a node to all sides of this triangle that don't have
+
+    a neighbor.
+- code: public void MapTriangleToNodes(DelaunayTriangle t)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: DelaunayTriangle
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html
+- api3: MeshClean(DelaunayTriangle)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_MeshClean_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L106
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.MeshClean(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.MeshClean(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
+- markdown: Meshes the clean using the specified triangle
+- code: public void MeshClean(DelaunayTriangle triangle)
+- h4: Parameters
+- parameters:
+  - name: triangle
+    type:
+    - text: DelaunayTriangle
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html
+    description: The triangle
+- api3: MeshCleanReq(DelaunayTriangle)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_MeshCleanReq_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L115
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.MeshCleanReq(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.MeshCleanReq(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
+- markdown: Meshes the clean req using the specified triangle
+- code: private void MeshCleanReq(DelaunayTriangle triangle)
+- h4: Parameters
+- parameters:
+  - name: triangle
+    type:
+    - text: DelaunayTriangle
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html
+    description: The triangle
+- api3: NewConstraint(TriangulationPoint, TriangulationPoint)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_NewConstraint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L273
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.NewConstraint(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.NewConstraint(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+- markdown: News the constraint using the specified a
+- code: public override TriangulationConstraint NewConstraint(TriangulationPoint a, TriangulationPoint b)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: The
+  - name: b
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: TriangulationConstraint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationConstraint.html
+    description: The triangulation constraint
+- api3: PrepareTriangulation(Triangulatable)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_PrepareTriangulation_Alis_Core_Physic_Common_Decomposition_CDT_Triangulatable_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L220
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable)
+- markdown: Prepares the triangulation using the specified t
+- code: public override void PrepareTriangulation(Triangulatable t)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: Triangulatable
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable.html
+    description: The
+- api3: RemoveFromList(DelaunayTriangle)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_RemoveFromList_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L88
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.RemoveFromList(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.RemoveFromList(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
+- markdown: Removes the from list using the specified triangle
+- code: public void RemoveFromList(DelaunayTriangle triangle)
+- h4: Parameters
+- parameters:
+  - name: triangle
+    type:
+    - text: DelaunayTriangle
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html
+    description: The triangle
+- api3: RemoveNode(AdvancingFrontNode)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_RemoveNode_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L155
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.RemoveNode(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.RemoveNode(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)
+- markdown: Removes the node using the specified node
+- code: public void RemoveNode(AdvancingFrontNode node)
+- h4: Parameters
+- parameters:
+  - name: node
+    type:
+    - text: AdvancingFrontNode
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html
+    description: The node
+- h2: See Also
+- list:
+  - - text: TriangulationContext
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html
+languageId: csharp
+metadata:
+  description: The dt sweep context class

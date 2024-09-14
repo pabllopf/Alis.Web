@@ -1,0 +1,44 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Physic.Common.ConvexHull
+body:
+- api1: Namespace Alis.Core.Physic.Common.ConvexHull
+  id: Alis_Core_Physic_Common_ConvexHull
+  metadata:
+    uid: Alis.Core.Physic.Common.ConvexHull
+    commentId: N:Alis.Core.Physic.Common.ConvexHull
+- h3: Classes
+- parameters:
+  - type:
+      text: ChainHull
+      url: Alis.Core.Physic.Common.ConvexHull.ChainHull.html
+    description: >-
+      Andrew's Monotone Chain Convex Hull algorithm.
+
+      Used to get the convex hull of a point cloud.
+
+      Source: http://www.softsurfer.com/Archive/algorithm_0109/algorithm_0109.htm
+  - type:
+      text: GiftWrap
+      url: Alis.Core.Physic.Common.ConvexHull.GiftWrap.html
+    description: >-
+      Giftwrap convex hull algorithm.
+
+      O(nh) time complexity, where n is the number of points and h is the number of points on the convex hull.
+
+      See http://en.wikipedia.org/wiki/Gift_wrapping_algorithm for more details.
+  - type:
+      text: Melkman
+      url: Alis.Core.Physic.Common.ConvexHull.Melkman.html
+    description: >-
+      Creates a convex hull.
+
+      Note:
+
+      1. Vertices must be of a simple polygon, i.e. edges do not overlap.
+
+      2. Melkman does not work on point clouds
+  - type:
+      text: ChainHull.PointComparer
+      url: Alis.Core.Physic.Common.ConvexHull.ChainHull.PointComparer.html
+    description: The point comparer class
+languageId: csharp

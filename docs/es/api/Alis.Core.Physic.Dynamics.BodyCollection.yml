@@ -1,0 +1,387 @@
+### YamlMime:ApiPage
+title: Class BodyCollection
+body:
+- api1: Class BodyCollection
+  id: Alis_Core_Physic_Dynamics_BodyCollection
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L42
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection
+    commentId: T:Alis.Core.Physic.Dynamics.BodyCollection
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Dynamics
+      url: Alis.Core.Physic.Dynamics.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The body collection class
+- code: 'public class BodyCollection : IList<Body>, ICollection<Body>, IEnumerable<Body>, IEnumerable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: BodyCollection
+    url: Alis.Core.Physic.Dynamics.BodyCollection.html
+- h4: Implements
+- list:
+  - text: IList<Body>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - text: ICollection<Body>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - text: IEnumerable<Body>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - text: IEnumerable
+    url: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: BodyCollection(World)
+  id: Alis_Core_Physic_Dynamics_BodyCollection__ctor_Alis_Core_Physic_Dynamics_World_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L64
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.#ctor(Alis.Core.Physic.Dynamics.World)
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.#ctor(Alis.Core.Physic.Dynamics.World)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.BodyCollection" data-throw-if-not-resolved="false"></xref> class
+- code: public BodyCollection(World world)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The world
+- h2: Fields
+- api3: _generationStamp
+  id: Alis_Core_Physic_Dynamics_BodyCollection__generationStamp
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L58
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection._generationStamp
+    commentId: F:Alis.Core.Physic.Dynamics.BodyCollection._generationStamp
+- markdown: The generation stamp
+- code: internal int _generationStamp
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _list
+  id: Alis_Core_Physic_Dynamics_BodyCollection__list
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection._list
+    commentId: F:Alis.Core.Physic.Dynamics.BodyCollection._list
+- markdown: The body
+- code: internal readonly List<Body> _list
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    - '>'
+- api3: _world
+  id: Alis_Core_Physic_Dynamics_BodyCollection__world
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L53
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection._world
+    commentId: F:Alis.Core.Physic.Dynamics.BodyCollection._world
+- markdown: The world
+- code: private readonly World _world
+- h4: Field Value
+- parameters:
+  - type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+- h2: Properties
+- api3: Count
+  id: Alis_Core_Physic_Dynamics_BodyCollection_Count
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L266
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.Count
+    commentId: P:Alis.Core.Physic.Dynamics.BodyCollection.Count
+- markdown: Gets the value of the count
+- code: public int Count { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: IsReadOnly
+  id: Alis_Core_Physic_Dynamics_BodyCollection_IsReadOnly
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L261
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.IsReadOnly
+    commentId: P:Alis.Core.Physic.Dynamics.BodyCollection.IsReadOnly
+- markdown: Gets the value of the is read only
+- code: public bool IsReadOnly { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: this[int]
+  id: Alis_Core_Physic_Dynamics_BodyCollection_Item_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L219
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.Item(System.Int32)
+    commentId: P:Alis.Core.Physic.Dynamics.BodyCollection.Item(System.Int32)
+- markdown: The not supported exception
+- code: public Body this[int index] { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+- h2: Methods
+- api3: Contains(Body)
+  id: Alis_Core_Physic_Dynamics_BodyCollection_Contains_Alis_Core_Physic_Dynamics_Body_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L299
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.Contains(Alis.Core.Physic.Dynamics.Body)
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.Contains(Alis.Core.Physic.Dynamics.Body)
+- markdown: Describes whether this instance contains
+- code: public bool Contains(Body item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The item
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: CopyTo(Body[], int)
+  id: Alis_Core_Physic_Dynamics_BodyCollection_CopyTo_Alis_Core_Physic_Dynamics_Body___System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L306
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.CopyTo(Alis.Core.Physic.Dynamics.Body[],System.Int32)
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.CopyTo(Alis.Core.Physic.Dynamics.Body[],System.Int32)
+- markdown: Copies the to using the specified array
+- code: public void CopyTo(Body[] array, int arrayIndex)
+- h4: Parameters
+- parameters:
+  - name: array
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    - '['
+    - ']'
+    description: The array
+  - name: arrayIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The array index
+- api3: GetEnumerator()
+  id: Alis_Core_Physic_Dynamics_BodyCollection_GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L92
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.GetEnumerator
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.GetEnumerator
+- markdown: Gets the enumerator
+- code: public BodyCollection.BodyEnumerator GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: BodyCollection
+      url: Alis.Core.Physic.Dynamics.BodyCollection.html
+    - .
+    - text: BodyEnumerator
+      url: Alis.Core.Physic.Dynamics.BodyCollection.BodyEnumerator.html
+    description: The body enumerator
+- api3: IndexOf(Body)
+  id: Alis_Core_Physic_Dynamics_BodyCollection_IndexOf_Alis_Core_Physic_Dynamics_Body_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L230
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.IndexOf(Alis.Core.Physic.Dynamics.Body)
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.IndexOf(Alis.Core.Physic.Dynamics.Body)
+- markdown: Indexes the of using the specified item
+- code: public int IndexOf(Body item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The item
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: ICollection<Body>.Add(Body)
+  id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_ICollection_Alis_Core_Physic_Dynamics_Body__Add_Alis_Core_Physic_Dynamics_Body_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L273
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Add(Alis.Core.Physic.Dynamics.Body)
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Add(Alis.Core.Physic.Dynamics.Body)
+- markdown: Adds the item
+- code: void ICollection<Body>.Add(Body item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The item
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: NotSupportedException
+      url: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+    description: ''
+- api3: ICollection<Body>.Clear()
+  id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_ICollection_Alis_Core_Physic_Dynamics_Body__Clear
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L289
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Clear
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Clear
+- markdown: Clears this instance
+- code: void ICollection<Body>.Clear()
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: NotSupportedException
+      url: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+    description: ''
+- api3: ICollection<Body>.Remove(Body)
+  id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_ICollection_Alis_Core_Physic_Dynamics_Body__Remove_Alis_Core_Physic_Dynamics_Body_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L283
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Remove(Alis.Core.Physic.Dynamics.Body)
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Remove(Alis.Core.Physic.Dynamics.Body)
+- markdown: Describes whether this instance remove
+- code: bool ICollection<Body>.Remove(Body item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The item
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: IEnumerable<Body>.GetEnumerator()
+  id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_IEnumerable_Alis_Core_Physic_Dynamics_Body__GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L73
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IEnumerable{Alis#Core#Physic#Dynamics#Body}#GetEnumerator
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IEnumerable{Alis#Core#Physic#Dynamics#Body}#GetEnumerator
+- markdown: Gets the enumerator
+- code: IEnumerator<Body> IEnumerable<Body>.GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+    - <
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    - '>'
+    description: An enumerator of body
+- api3: IList<Body>.Insert(int, Body)
+  id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_IList_Alis_Core_Physic_Dynamics_Body__Insert_System_Int32_Alis_Core_Physic_Dynamics_Body_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L238
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Body}#Insert(System.Int32,Alis.Core.Physic.Dynamics.Body)
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Body}#Insert(System.Int32,Alis.Core.Physic.Dynamics.Body)
+- markdown: Inserts the index
+- code: void IList<Body>.Insert(int index, Body item)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+  - name: item
+    type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: The item
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: NotSupportedException
+      url: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+    description: ''
+- api3: IList<Body>.RemoveAt(int)
+  id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_IList_Alis_Core_Physic_Dynamics_Body__RemoveAt_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L248
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Body}#RemoveAt(System.Int32)
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Body}#RemoveAt(System.Int32)
+- markdown: Removes the at using the specified index
+- code: void IList<Body>.RemoveAt(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: NotSupportedException
+      url: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+    description: ''
+- api3: IEnumerable.GetEnumerator()
+  id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_IEnumerable_GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L84
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#IEnumerable#GetEnumerator
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#IEnumerable#GetEnumerator
+- markdown: Gets the enumerator
+- code: IEnumerator IEnumerable.GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+    description: The enumerator
+- h2: See Also
+- list:
+  - - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - T
+    - '>'
+  - - text: ICollection
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+    - <
+    - T
+    - '>'
+  - - text: IList
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+    - <
+    - T
+    - '>'
+languageId: csharp
+metadata:
+  description: The body collection class

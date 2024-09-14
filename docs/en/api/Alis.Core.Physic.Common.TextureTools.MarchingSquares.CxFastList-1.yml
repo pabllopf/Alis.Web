@@ -1,0 +1,340 @@
+### YamlMime:ApiPage
+title: Class MarchingSquares.CxFastList<T>
+body:
+- api1: Class MarchingSquares.CxFastList<T>
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L532
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1
+    commentId: T:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.TextureTools
+      url: Alis.Core.Physic.Common.TextureTools.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Designed as a complete port of CxFastList from CxStd.
+- code: internal class MarchingSquares.CxFastList<T>
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: MarchingSquares.CxFastList<T>
+    url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: _count
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1__count
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L537
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1._count
+    commentId: F:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1._count
+- markdown: The count
+- code: private int _count
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _head
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1__head
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L543
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1._head
+    commentId: F:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1._head
+- markdown: The head
+- code: private CxFastListNode<T> _head
+- h4: Field Value
+- parameters:
+  - type:
+    - text: CxFastListNode
+      url: Alis.Core.Physic.Common.TextureTools.CxFastListNode-1.html
+    - <
+    - T
+    - '>'
+- h2: Methods
+- api3: Add(T)
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Add__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L563
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Add(`0)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Add(`0)
+- markdown: add object to list (O(1))
+- code: public CxFastListNode<T> Add(T value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - T
+- h4: Returns
+- parameters:
+  - type:
+    - text: CxFastListNode
+      url: Alis.Core.Physic.Common.TextureTools.CxFastListNode-1.html
+    - <
+    - T
+    - '>'
+- api3: Begin()
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Begin
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L548
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Begin
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Begin
+- markdown: Iterator to start of list (O(1))
+- code: public CxFastListNode<T> Begin()
+- h4: Returns
+- parameters:
+  - type:
+    - text: CxFastListNode
+      url: Alis.Core.Physic.Common.TextureTools.CxFastListNode-1.html
+    - <
+    - T
+    - '>'
+- api3: Clear()
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Clear
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L703
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Clear
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Clear
+- markdown: empty the list (O(1) if CxMixList, O(n) otherwise)
+- code: public void Clear()
+- api3: Empty()
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Empty
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L677
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Empty
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Empty
+- markdown: whether the list is empty (O(1))
+- code: public bool Empty()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: End()
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_End
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L553
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.End
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.End
+- markdown: Iterator to end of list (O(1))
+- code: public CxFastListNode<T> End()
+- h4: Returns
+- parameters:
+  - type:
+    - text: CxFastListNode
+      url: Alis.Core.Physic.Common.TextureTools.CxFastListNode-1.html
+    - <
+    - T
+    - '>'
+- api3: Erase(CxFastListNode<T>, CxFastListNode<T>)
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Erase_Alis_Core_Physic_Common_TextureTools_CxFastListNode__0__Alis_Core_Physic_Common_TextureTools_CxFastListNode__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L659
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Erase(Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0},Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0})
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Erase(Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0},Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0})
+- markdown: >-
+    removes the element pointed to by 'node' with 'prev' being the previous iterator,
+
+    returning an iterator to the element following that of 'node' (O(1))
+- code: public CxFastListNode<T> Erase(CxFastListNode<T> prev, CxFastListNode<T> node)
+- h4: Parameters
+- parameters:
+  - name: prev
+    type:
+    - text: CxFastListNode
+      url: Alis.Core.Physic.Common.TextureTools.CxFastListNode-1.html
+    - <
+    - T
+    - '>'
+  - name: node
+    type:
+    - text: CxFastListNode
+      url: Alis.Core.Physic.Common.TextureTools.CxFastListNode-1.html
+    - <
+    - T
+    - '>'
+- h4: Returns
+- parameters:
+  - type:
+    - text: CxFastListNode
+      url: Alis.Core.Physic.Common.TextureTools.CxFastListNode-1.html
+    - <
+    - T
+    - '>'
+- api3: Find(T)
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Find__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L728
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Find(`0)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Find(`0)
+- markdown: Finds the value
+- code: public CxFastListNode<T> Find(T value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - T
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: CxFastListNode
+      url: Alis.Core.Physic.Common.TextureTools.CxFastListNode-1.html
+    - <
+    - T
+    - '>'
+    description: A cx fast list node of t
+- api3: Front()
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Front
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L558
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Front
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Front
+- markdown: Returns first element of list (O(1))
+- code: public T Front()
+- h4: Returns
+- parameters:
+  - type:
+    - T
+- api3: GetListOfElements()
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_GetListOfElements
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L768
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.GetListOfElements
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.GetListOfElements
+- markdown: Gets the list of elements
+- code: public List<T> GetListOfElements()
+- h4: Returns
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - T
+    - '>'
+    description: The list
+- api3: Has(T)
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Has__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L720
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Has(`0)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Has(`0)
+- markdown: returns true if 'value' is an element of the list (O(n))
+- code: public bool Has(T value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - T
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Insert(CxFastListNode<T>, T)
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Insert_Alis_Core_Physic_Common_TextureTools_CxFastListNode__0___0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L638
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Insert(Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0},`0)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Insert(Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0},`0)
+- markdown: insert object after 'node' returning an iterator to the inserted object.
+- code: public CxFastListNode<T> Insert(CxFastListNode<T> node, T value)
+- h4: Parameters
+- parameters:
+  - name: node
+    type:
+    - text: CxFastListNode
+      url: Alis.Core.Physic.Common.TextureTools.CxFastListNode-1.html
+    - <
+    - T
+    - '>'
+  - name: value
+    type:
+    - T
+- h4: Returns
+- parameters:
+  - type:
+    - text: CxFastListNode
+      url: Alis.Core.Physic.Common.TextureTools.CxFastListNode-1.html
+    - <
+    - T
+    - '>'
+- api3: Pop()
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Pop
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L633
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Pop
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Pop
+- markdown: >-
+    pop element from head of list (O(1)) Note: this does not return the object popped!
+
+    There is good reason to this, and it regards the Alloc list variants which guarantee
+
+    objects are released to the object pool. You do not want to retrieve an element
+
+    through pop or else that object may suddenly be used by another piece of code which
+
+    retrieves it from the object pool.
+- code: public CxFastListNode<T> Pop()
+- h4: Returns
+- parameters:
+  - type:
+    - text: CxFastListNode
+      url: Alis.Core.Physic.Common.TextureTools.CxFastListNode-1.html
+    - <
+    - T
+    - '>'
+- api3: Remove(T)
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Remove__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L585
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Remove(`0)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Remove(`0)
+- markdown: remove object from list, returns true if an element was removed (O(n))
+- code: public bool Remove(T value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - T
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Size()
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Size
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L687
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Size
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Size
+- markdown: computes size of list (O(n))
+- code: public int Size()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: Designed as a complete port of CxFastList from CxStd.

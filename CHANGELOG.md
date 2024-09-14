@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.5] - 2024-09-14
+### :memo: Documentation Changes
+- [`0865268`](https://github.com/pabllopf/Alis.Web/commit/0865268e516000930ccecf156e3df8c5fb015ce0) - include new version of samples *(commit by [@pabllopf](https://github.com/pabllopf))*
+- [`68092db`](https://github.com/pabllopf/Alis.Web/commit/68092dba11f9b897bb08303f8155383551fe0e90) - add new docs of arquitecture *(commit by [@pabllopf](https://github.com/pabllopf))*
+
+
 ## [v0.2.4] - 2024-09-14
 ### :bug: Bug Fixes
 - [`f67e2fe`](https://github.com/pabllopf/Alis.Web/commit/f67e2fe24c051a4a73ae070e6228ac25bb1b9664) - tom *(commit by [@pabllopf](https://github.com/pabllopf))*
@@ -178,3 +184,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.2.2]: https://github.com/pabllopf/Alis.Web/compare/v0.2.1...v0.2.2
 [v0.2.3]: https://github.com/pabllopf/Alis.Web/compare/v0.2.2...v0.2.3
 [v0.2.4]: https://github.com/pabllopf/Alis.Web/compare/v0.2.3...v0.2.4
+[v0.2.5]: https://github.com/pabllopf/Alis.Web/compare/v0.2.4...v0.2.5

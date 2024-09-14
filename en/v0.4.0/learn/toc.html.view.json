@@ -28,13 +28,31 @@
       "leaf": true
     },
     {
-      "name": "Samples",
-      "href": "samples.html",
-      "topicHref": "samples.html",
+      "name": "Architecture",
+      "href": "architecture.html",
+      "topicHref": "architecture.html",
       "tocHref": null,
       "level": 2.0,
       "items": [],
       "leaf": true
+    },
+    {
+      "name": "Samples",
+      "href": "samples.html",
+      "topicHref": "samples.html",
+      "items": [
+        {
+          "name": "FlappyBird",
+          "href": "samples/flappy_bird.html",
+          "topicHref": "samples/flappy_bird.html",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        }
+      ],
+      "tocHref": null,
+      "level": 2.0
     }
   ],
   "_appFaviconPath": "resources/logo.png",

@@ -3,7 +3,7 @@ title: Class Body
 body:
 - api1: Class Body
   id: Alis_Core_Physic_Dynamics_Body
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L47
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L43
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body
     commentId: T:Alis.Core.Physic.Dynamics.Body
@@ -22,10 +22,6 @@ body:
     url: https://learn.microsoft.com/dotnet/api/system.object
   - text: Body
     url: Alis.Core.Physic.Dynamics.Body.html
-- h4: Derived
-- list:
-  - text: Rectangle
-    url: Alis.Core.Physic.Figure.Rectangle.html
 - h4: Inherited Members
 - list:
   - text: object.Equals(object?)
@@ -43,188 +39,375 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Constructors
-- api3: Body(Vector2, Vector2, BodyType, float, float, float, float, bool, bool, bool, bool, bool, float)
-  id: Alis_Core_Physic_Dynamics_Body__ctor_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Physic_Dynamics_BodyType_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L95
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Physic.Dynamics.BodyType,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Single)
-    commentId: M:Alis.Core.Physic.Dynamics.Body.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Physic.Dynamics.BodyType,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Single)
-- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Body" data-throw-if-not-resolved="false"></xref> class
-- code: public Body(Vector2 position, Vector2 linearVelocity, BodyType bodyType = BodyType.Static, float angle = 0, float angularVelocity = 0, float linearDamping = 0, float angularDamping = 0, bool allowSleep = true, bool awake = true, bool fixedRotation = false, bool isBullet = false, bool enabled = true, float gravityScale = 1)
-- h4: Parameters
-- parameters:
-  - name: position
-    type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The position
-  - name: linearVelocity
-    type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The linear velocity
-  - name: bodyType
-    type:
-    - text: BodyType
-      url: Alis.Core.Physic.Dynamics.BodyType.html
-    description: The body type
-    optional: true
-  - name: angle
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The angle
-    optional: true
-  - name: angularVelocity
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The angular velocity
-    optional: true
-  - name: linearDamping
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The linear damping
-    optional: true
-  - name: angularDamping
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The angular damping
-    optional: true
-  - name: allowSleep
-    type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The allow sleep
-    optional: true
-  - name: awake
-    type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The awake
-    optional: true
-  - name: fixedRotation
-    type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The fixed rotation
-    optional: true
-  - name: isBullet
-    type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The is bullet
-    optional: true
-  - name: enabled
-    type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The enabled
-    optional: true
-  - name: gravityScale
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The gravity scale
-    optional: true
 - api3: Body()
   id: Alis_Core_Physic_Dynamics_Body__ctor
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L162
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L187
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.#ctor
     commentId: M:Alis.Core.Physic.Dynamics.Body.#ctor
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Body" data-throw-if-not-resolved="false"></xref> class
 - code: public Body()
 - h2: Fields
-- api3: Type
-  id: Alis_Core_Physic_Dynamics_Body_Type
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L72
+- api3: ControllerFilter
+  id: Alis_Core_Physic_Dynamics_Body_ControllerFilter
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L166
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.Type
-    commentId: F:Alis.Core.Physic.Dynamics.Body.Type
-- markdown: The type
-- code: internal BodyType Type
+    uid: Alis.Core.Physic.Dynamics.Body.ControllerFilter
+    commentId: F:Alis.Core.Physic.Dynamics.Body.ControllerFilter
+- markdown: The all
+- code: public ControllerFilter ControllerFilter
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ControllerFilter
+      url: Alis.Core.Physic.Common.PhysicsLogic.ControllerFilter.html
+- api3: FixtureList
+  id: Alis_Core_Physic_Dynamics_Body_FixtureList
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L51
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.FixtureList
+    commentId: F:Alis.Core.Physic.Dynamics.Body.FixtureList
+- markdown: Gets all the fixtures attached to this body.
+- code: internal readonly FixtureCollection FixtureList
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FixtureCollection
+      url: Alis.Core.Physic.Dynamics.FixtureCollection.html
+- api3: Tag
+  id: Alis_Core_Physic_Dynamics_Body_Tag
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L182
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.Tag
+    commentId: F:Alis.Core.Physic.Dynamics.Body.Tag
+- markdown: Set the user data. Use this to store your application specific data.
+- code: public object Tag
+- h4: Field Value
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+- api3: _angularDamping
+  id: Alis_Core_Physic_Dynamics_Body__angularDamping
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L56
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._angularDamping
+    commentId: F:Alis.Core.Physic.Dynamics.Body._angularDamping
+- markdown: The angular damping
+- code: private float _angularDamping
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _angularVelocity
+  id: Alis_Core_Physic_Dynamics_Body__angularVelocity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L61
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._angularVelocity
+    commentId: F:Alis.Core.Physic.Dynamics.Body._angularVelocity
+- markdown: The angular velocity
+- code: internal float _angularVelocity
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _awake
+  id: Alis_Core_Physic_Dynamics_Body__awake
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L66
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._awake
+    commentId: F:Alis.Core.Physic.Dynamics.Body._awake
+- markdown: The awake
+- code: private bool _awake
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _bodyType
+  id: Alis_Core_Physic_Dynamics_Body__bodyType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L71
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._bodyType
+    commentId: F:Alis.Core.Physic.Dynamics.Body._bodyType
+- markdown: The body type
+- code: private BodyType _bodyType
 - h4: Field Value
 - parameters:
   - type:
     - text: BodyType
       url: Alis.Core.Physic.Dynamics.BodyType.html
-- api3: Xf
-  id: Alis_Core_Physic_Dynamics_Body_Xf
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L77
+- api3: _enabled
+  id: Alis_Core_Physic_Dynamics_Body__enabled
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L76
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.Xf
-    commentId: F:Alis.Core.Physic.Dynamics.Body.Xf
-- markdown: The xf
-- code: internal Transform Xf
+    uid: Alis.Core.Physic.Dynamics.Body._enabled
+    commentId: F:Alis.Core.Physic.Dynamics.Body._enabled
+- markdown: The enabled
+- code: internal bool _enabled
 - h4: Field Value
 - parameters:
   - type:
-    - text: Transform
-      url: Alis.Core.Aspect.Math.Transform.html
-- api3: angularVelocity
-  id: Alis_Core_Physic_Dynamics_Body_angularVelocity
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L52
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _fixedRotation
+  id: Alis_Core_Physic_Dynamics_Body__fixedRotation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L81
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.angularVelocity
-    commentId: F:Alis.Core.Physic.Dynamics.Body.angularVelocity
-- markdown: The angular velocity
-- code: private float angularVelocity
+    uid: Alis.Core.Physic.Dynamics.Body._fixedRotation
+    commentId: F:Alis.Core.Physic.Dynamics.Body._fixedRotation
+- markdown: The fixed rotation
+- code: private bool _fixedRotation
 - h4: Field Value
 - parameters:
   - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: inertia
-  id: Alis_Core_Physic_Dynamics_Body_inertia
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L57
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _force
+  id: Alis_Core_Physic_Dynamics_Body__force
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L86
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.inertia
-    commentId: F:Alis.Core.Physic.Dynamics.Body.inertia
-- markdown: The inertia
-- code: private float inertia
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: linearVelc
-  id: Alis_Core_Physic_Dynamics_Body_linearVelc
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L62
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.linearVelc
-    commentId: F:Alis.Core.Physic.Dynamics.Body.linearVelc
-- markdown: The linear velocity
-- code: private Vector2 linearVelc
+    uid: Alis.Core.Physic.Dynamics.Body._force
+    commentId: F:Alis.Core.Physic.Dynamics.Body._force
+- markdown: The force
+- code: internal Vector2 _force
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: mass
-  id: Alis_Core_Physic_Dynamics_Body_mass
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L67
+- api3: _inertia
+  id: Alis_Core_Physic_Dynamics_Body__inertia
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L91
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.mass
-    commentId: F:Alis.Core.Physic.Dynamics.Body.mass
-- markdown: The mass
-- code: private float mass
+    uid: Alis.Core.Physic.Dynamics.Body._inertia
+    commentId: F:Alis.Core.Physic.Dynamics.Body._inertia
+- markdown: The inertia
+- code: private float _inertia
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _invI
+  id: Alis_Core_Physic_Dynamics_Body__invI
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L96
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._invI
+    commentId: F:Alis.Core.Physic.Dynamics.Body._invI
+- markdown: The inv
+- code: internal float _invI
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _invMass
+  id: Alis_Core_Physic_Dynamics_Body__invMass
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L101
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._invMass
+    commentId: F:Alis.Core.Physic.Dynamics.Body._invMass
+- markdown: The inv mass
+- code: internal float _invMass
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _island
+  id: Alis_Core_Physic_Dynamics_Body__island
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L106
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._island
+    commentId: F:Alis.Core.Physic.Dynamics.Body._island
+- markdown: The island
+- code: internal bool _island
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _linearDamping
+  id: Alis_Core_Physic_Dynamics_Body__linearDamping
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L111
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._linearDamping
+    commentId: F:Alis.Core.Physic.Dynamics.Body._linearDamping
+- markdown: The linear damping
+- code: private float _linearDamping
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _linearVelocity
+  id: Alis_Core_Physic_Dynamics_Body__linearVelocity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L116
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._linearVelocity
+    commentId: F:Alis.Core.Physic.Dynamics.Body._linearVelocity
+- markdown: The linear velocity
+- code: internal Vector2 _linearVelocity
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _lock
+  id: Alis_Core_Physic_Dynamics_Body__lock
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L121
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._lock
+    commentId: F:Alis.Core.Physic.Dynamics.Body._lock
+- markdown: The lock
+- code: internal int _lock
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _lockOrder
+  id: Alis_Core_Physic_Dynamics_Body__lockOrder
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L126
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._lockOrder
+    commentId: F:Alis.Core.Physic.Dynamics.Body._lockOrder
+- markdown: The lock order
+- code: internal int _lockOrder
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _mass
+  id: Alis_Core_Physic_Dynamics_Body__mass
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L131
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._mass
+    commentId: F:Alis.Core.Physic.Dynamics.Body._mass
+- markdown: The mass
+- code: private float _mass
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _sleepTime
+  id: Alis_Core_Physic_Dynamics_Body__sleepTime
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L141
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._sleepTime
+    commentId: F:Alis.Core.Physic.Dynamics.Body._sleepTime
+- markdown: The sleep time
+- code: internal float _sleepTime
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _sleepingAllowed
+  id: Alis_Core_Physic_Dynamics_Body__sleepingAllowed
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L136
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._sleepingAllowed
+    commentId: F:Alis.Core.Physic.Dynamics.Body._sleepingAllowed
+- markdown: The sleeping allowed
+- code: private bool _sleepingAllowed
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _sweep
+  id: Alis_Core_Physic_Dynamics_Body__sweep
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L146
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._sweep
+    commentId: F:Alis.Core.Physic.Dynamics.Body._sweep
+- markdown: The sweep
+- code: internal Sweep _sweep
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Sweep
+      url: Alis.Core.Physic.Common.Sweep.html
+- api3: _torque
+  id: Alis_Core_Physic_Dynamics_Body__torque
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L151
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._torque
+    commentId: F:Alis.Core.Physic.Dynamics.Body._torque
+- markdown: The torque
+- code: internal float _torque
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _world
+  id: Alis_Core_Physic_Dynamics_Body__world
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L156
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._world
+    commentId: F:Alis.Core.Physic.Dynamics.Body._world
+- markdown: The world
+- code: internal World _world
+- h4: Field Value
+- parameters:
+  - type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+- api3: _xf
+  id: Alis_Core_Physic_Dynamics_Body__xf
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L161
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body._xf
+    commentId: F:Alis.Core.Physic.Dynamics.Body._xf
+- markdown: The xf
+- code: internal Transform _xf
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+- api3: onCollisionEventHandler
+  id: Alis_Core_Physic_Dynamics_Body_onCollisionEventHandler
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L171
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.onCollisionEventHandler
+    commentId: F:Alis.Core.Physic.Dynamics.Body.onCollisionEventHandler
+- markdown: The on collision event handler
+- code: internal OnCollisionEventHandler onCollisionEventHandler
+- h4: Field Value
+- parameters:
+  - type:
+    - text: OnCollisionEventHandler
+      url: Alis.Core.Physic.Dynamics.OnCollisionEventHandler.html
+- api3: onSeparationEventHandler
+  id: Alis_Core_Physic_Dynamics_Body_onSeparationEventHandler
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L176
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.onSeparationEventHandler
+    commentId: F:Alis.Core.Physic.Dynamics.Body.onSeparationEventHandler
+- markdown: The on separation event handler
+- code: internal OnSeparationEventHandler onSeparationEventHandler
+- h4: Field Value
+- parameters:
+  - type:
+    - text: OnSeparationEventHandler
+      url: Alis.Core.Physic.Dynamics.OnSeparationEventHandler.html
 - h2: Properties
 - api3: AngularDamping
   id: Alis_Core_Physic_Dynamics_Body_AngularDamping
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L380
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L332
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.AngularDamping
     commentId: P:Alis.Core.Physic.Dynamics.Body.AngularDamping
 - markdown: Gets or sets the angular damping.
-- code: public float AngularDamping { get; }
+- code: public float AngularDamping { get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -232,7 +415,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: AngularVelocity
   id: Alis_Core_Physic_Dynamics_Body_AngularVelocity
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L355
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L296
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.AngularVelocity
     commentId: P:Alis.Core.Physic.Dynamics.Body.AngularVelocity
@@ -245,11 +428,14 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Awake
   id: Alis_Core_Physic_Dynamics_Body_Awake
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L424
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L371
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.Awake
     commentId: P:Alis.Core.Physic.Dynamics.Body.Awake
-- markdown: Set the sleep state of the body. A sleeping body has very low CPU cost.
+- markdown: >-
+    Set the sleep state of the body. A sleeping body has very
+
+    low CPU cost.
 - code: public bool Awake { get; set; }
 - h4: Property Value
 - parameters:
@@ -258,275 +444,157 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: BodyType
   id: Alis_Core_Physic_Dynamics_Body_BodyType
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L279
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L220
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.BodyType
     commentId: P:Alis.Core.Physic.Dynamics.Body.BodyType
-- markdown: 'Gets or sets the body type. Warning: Calling this mid-update might cause a crash.'
+- markdown: >-
+    Gets or sets the body type.
+
+    Warning: This property is readonly during callbacks.
 - code: public BodyType BodyType { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: BodyType
       url: Alis.Core.Physic.Dynamics.BodyType.html
-- api3: CollidesWith
-  id: Alis_Core_Physic_Dynamics_Body_CollidesWith
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L719
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.CollidesWith
-    commentId: P:Alis.Core.Physic.Dynamics.Body.CollidesWith
-- markdown: Sets the value of the collides with
-- code: public Category CollidesWith { set; }
-- h4: Property Value
+- h4: Exceptions
 - parameters:
   - type:
-    - text: Category
-      url: Alis.Core.Physic.Collision.Filtering.Category.html
-- api3: CollisionCategories
-  id: Alis_Core_Physic_Dynamics_Body_CollisionCategories
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L704
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.CollisionCategories
-    commentId: P:Alis.Core.Physic.Dynamics.Body.CollisionCategories
-- markdown: Sets the value of the collision categories
-- code: public Category CollisionCategories { set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: Category
-      url: Alis.Core.Physic.Collision.Filtering.Category.html
-- api3: CollisionGroup
-  id: Alis_Core_Physic_Dynamics_Body_CollisionGroup
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L752
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.CollisionGroup
-    commentId: P:Alis.Core.Physic.Dynamics.Body.CollisionGroup
-- markdown: Sets the value of the collision group
-- code: public short CollisionGroup { set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: short
-      url: https://learn.microsoft.com/dotnet/api/system.int16
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Thrown when the world is Locked/Stepping.
 - api3: ContactList
   id: Alis_Core_Physic_Dynamics_Body_ContactList
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L551
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L494
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ContactList
     commentId: P:Alis.Core.Physic.Dynamics.Body.ContactList
 - markdown: >-
-    Get the list of all contacts attached to this body. Warning: this list changes during the time step and you
+    Get the list of all contacts attached to this body.
 
-    may miss some collisions if you don't use ContactListener.
-- code: public ContactEdge ContactList { get; set; }
+    Warning: this list changes during the time step and you may
+
+    miss some collisions if you don't use callback events.
+- code: public ContactEdge ContactList { get; internal set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: ContactEdge
-      url: Alis.Core.Physic.Collision.ContactSystem.ContactEdge.html
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactEdge.html
 - api3: Enabled
   id: Alis_Core_Physic_Dynamics_Body_Enabled
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L461
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L430
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.Enabled
     commentId: P:Alis.Core.Physic.Dynamics.Body.Enabled
 - markdown: >-
-    Set the active state of the body. An inactive body is not simulated and cannot be collided with or woken up.
+    Set the active state of the body. An inactive body is not
 
-    If you pass a flag of true, all fixtures will be added to the broad-phase. If you pass a flag of false, all
+    simulated and cannot be collided with or woken up.
 
-    fixtures
+    If you pass a flag of true, all fixtures will be added to the
 
-    will be removed from the broad-phase and all contacts will be destroyed. Fixtures and joints are otherwise
+    broad-phase.
 
-    unaffected.
+    If you pass a flag of false, all fixtures will be removed from
 
-    You may continue to create/destroy fixtures and joints on inactive bodies. Fixtures on an inactive body are
+    the broad-phase and all contacts will be destroyed.
 
-    implicitly
+    Fixtures and joints are otherwise unaffected. You may continue
 
-    inactive and will not participate in collisions, ray-casts, or queries. Joints connected to an inactive body are
+    to create/destroy fixtures and joints on inactive bodies.
 
-    implicitly inactive. An inactive body is still owned by a b2World object and remains in the body list.
+    Fixtures on an inactive body are implicitly inactive and will
+
+    not participate in collisions, ray-casts, or queries.
+
+    Joints connected to an inactive body are implicitly inactive.
+
+    An inactive body is still owned by a b2World object and remains
+
+    in the body list.
+
+    Warning: This property is readonly during callbacks.
 - code: public bool Enabled { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Thrown when the world is Locked/Stepping.
 - api3: FixedRotation
   id: Alis_Core_Physic_Dynamics_Body_FixedRotation
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L512
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L467
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.FixedRotation
     commentId: P:Alis.Core.Physic.Dynamics.Body.FixedRotation
-- markdown: Set this body to have fixed rotation. This causes the mass to be reset.
+- markdown: >-
+    Set this body to have fixed rotation. This causes the mass
+
+    to be reset.
 - code: public bool FixedRotation { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: FixtureList
-  id: Alis_Core_Physic_Dynamics_Body_FixtureList
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L538
+- api3: IgnoreCCD
+  id: Alis_Core_Physic_Dynamics_Body_IgnoreCCD
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L631
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.FixtureList
-    commentId: P:Alis.Core.Physic.Dynamics.Body.FixtureList
-- markdown: Gets all the fixtures attached to this body.
-- code: public List<Fixture> FixtureList { get; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: List
-      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-    - <
-    - text: Fixture
-      url: Alis.Core.Physic.Dynamics.Fixture.html
-    - '>'
-- api3: Flags
-  id: Alis_Core_Physic_Dynamics_Body_Flags
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L225
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.Flags
-    commentId: P:Alis.Core.Physic.Dynamics.Body.Flags
-- markdown: The flags
-- code: internal BodySettings Flags { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: BodySettings
-      url: Alis.Core.Physic.Dynamics.BodySettings.html
-- api3: Force
-  id: Alis_Core_Physic_Dynamics_Body_Force
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L230
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.Force
-    commentId: P:Alis.Core.Physic.Dynamics.Body.Force
-- markdown: The force
-- code: public Vector2 Force { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: Friction
-  id: Alis_Core_Physic_Dynamics_Body_Friction
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L689
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.Friction
-    commentId: P:Alis.Core.Physic.Dynamics.Body.Friction
-- markdown: Sets the value of the friction
-- code: public float Friction { set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: GameObject
-  id: Alis_Core_Physic_Dynamics_Body_GameObject
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L206
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.GameObject
-    commentId: P:Alis.Core.Physic.Dynamics.Body.GameObject
-- markdown: The game object
-- code: public object GameObject { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: object
-      url: https://learn.microsoft.com/dotnet/api/system.object
-- api3: GravityScale
-  id: Alis_Core_Physic_Dynamics_Body_GravityScale
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L269
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.GravityScale
-    commentId: P:Alis.Core.Physic.Dynamics.Body.GravityScale
-- markdown: >-
-    Scale the gravity applied to this body. Defaults to 1. A value of 2 means double the gravity is applied to
-
-    this body.
-- code: public float GravityScale { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: IgnoreCcd
-  id: Alis_Core_Physic_Dynamics_Body_IgnoreCcd
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L782
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.IgnoreCcd
-    commentId: P:Alis.Core.Physic.Dynamics.Body.IgnoreCcd
+    uid: Alis.Core.Physic.Dynamics.Body.IgnoreCCD
+    commentId: P:Alis.Core.Physic.Dynamics.Body.IgnoreCCD
 - markdown: Gets or sets the value of the ignore ccd
-- code: public bool IgnoreCcd { get; set; }
+- code: public bool IgnoreCCD { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: IgnoreCcdWith
-  id: Alis_Core_Physic_Dynamics_Body_IgnoreCcdWith
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L737
+- api3: IgnoreGravity
+  id: Alis_Core_Physic_Dynamics_Body_IgnoreGravity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L536
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.IgnoreCcdWith
-    commentId: P:Alis.Core.Physic.Dynamics.Body.IgnoreCcdWith
-- markdown: >-
-    Body objects can define which categories of bodies they wish to ignore CCD with. This allows certain bodies to
-
-    be configured to ignore CCD with objects that aren't a penetration problem due to the way content has been
-
-    prepared.
-
-    This is compared against the other Body's fixture CollisionCategories within World.SolveTOI().
-- code: public Category IgnoreCcdWith { set; }
+    uid: Alis.Core.Physic.Dynamics.Body.IgnoreGravity
+    commentId: P:Alis.Core.Physic.Dynamics.Body.IgnoreGravity
+- markdown: Gets or sets a value indicating whether this body ignores gravity.
+- code: public bool IgnoreGravity { get; set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Category
-      url: Alis.Core.Physic.Collision.Filtering.Category.html
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: Inertia
   id: Alis_Core_Physic_Dynamics_Body_Inertia
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L650
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L606
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.Inertia
     commentId: P:Alis.Core.Physic.Dynamics.Body.Inertia
-- markdown: Get or set the rotational inertia of the body about the local origin. usually in kg-m^2.
+- markdown: >-
+    Get or set the rotational inertia of the body about the local origin. usually in kg-m^2.
+
+    Warning: This property is readonly during callbacks.
 - code: public float Inertia { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: InvI
-  id: Alis_Core_Physic_Dynamics_Body_InvI
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L235
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.InvI
-    commentId: P:Alis.Core.Physic.Dynamics.Body.InvI
-- markdown: The inv
-- code: internal float InvI { get; set; }
-- h4: Property Value
+- h4: Exceptions
 - parameters:
   - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: InvMass
-  id: Alis_Core_Physic_Dynamics_Body_InvMass
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L240
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.InvMass
-    commentId: P:Alis.Core.Physic.Dynamics.Body.InvMass
-- markdown: The inv mass
-- code: internal float InvMass { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Thrown when the world is Locked/Stepping.
 - api3: IsBullet
   id: Alis_Core_Physic_Dynamics_Body_IsBullet
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L385
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L347
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.IsBullet
     commentId: P:Alis.Core.Physic.Dynamics.Body.IsBullet
@@ -537,92 +605,28 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: IsDynamic
-  id: Alis_Core_Physic_Dynamics_Body_IsDynamic
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L591
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.IsDynamic
-    commentId: P:Alis.Core.Physic.Dynamics.Body.IsDynamic
-- markdown: Gets the value of the is dynamic
-- code: public bool IsDynamic { get; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: IsIsland
-  id: Alis_Core_Physic_Dynamics_Body_IsIsland
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L576
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.IsIsland
-    commentId: P:Alis.Core.Physic.Dynamics.Body.IsIsland
-- markdown: Gets the value of the is island
-- code: internal bool IsIsland { get; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: IsKinematic
-  id: Alis_Core_Physic_Dynamics_Body_IsKinematic
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L586
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.IsKinematic
-    commentId: P:Alis.Core.Physic.Dynamics.Body.IsKinematic
-- markdown: Gets the value of the is kinematic
-- code: public bool IsKinematic { get; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: IsSensor
-  id: Alis_Core_Physic_Dynamics_Body_IsSensor
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L767
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.IsSensor
-    commentId: P:Alis.Core.Physic.Dynamics.Body.IsSensor
-- markdown: Sets the value of the is sensor
-- code: public bool IsSensor { set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: IsStatic
-  id: Alis_Core_Physic_Dynamics_Body_IsStatic
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L581
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.IsStatic
-    commentId: P:Alis.Core.Physic.Dynamics.Body.IsStatic
-- markdown: Gets the value of the is static
-- code: public bool IsStatic { get; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: IslandIndex
   id: Alis_Core_Physic_Dynamics_Body_IslandIndex
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L263
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L206
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.IslandIndex
     commentId: P:Alis.Core.Physic.Dynamics.Body.IslandIndex
-- markdown: Gets or sets the value of the island index
-- code: public int IslandIndex { get; set; }
+- code: public int IslandIndex { get; internal set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
+- h4: Remarks
+- markdown: Deprecated in version 1.6
 - api3: JointList
   id: Alis_Core_Physic_Dynamics_Body_JointList
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L543
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L486
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.JointList
     commentId: P:Alis.Core.Physic.Dynamics.Body.JointList
 - markdown: Get the list of all joints attached to this body.
-- code: public JointEdge JointList { get; }
+- code: public JointEdge JointList { get; internal set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -630,12 +634,12 @@ body:
       url: Alis.Core.Physic.Dynamics.Joints.JointEdge.html
 - api3: LinearDamping
   id: Alis_Core_Physic_Dynamics_Body_LinearDamping
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L376
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L317
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.LinearDamping
     commentId: P:Alis.Core.Physic.Dynamics.Body.LinearDamping
 - markdown: Gets or sets the linear damping.
-- code: public float LinearDamping { get; }
+- code: public float LinearDamping { get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -643,11 +647,14 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: LinearVelocity
   id: Alis_Core_Physic_Dynamics_Body_LinearVelocity
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L333
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L275
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.LinearVelocity
     commentId: P:Alis.Core.Physic.Dynamics.Body.LinearVelocity
-- markdown: Get or sets the linear velocity of the center of mass.
+- markdown: >-
+    Get or sets the linear velocity of the center of mass. Property has no effect on <xref href="Alis.Core.Physic.Dynamics.BodyType.Static" data-throw-if-not-resolved="false"></xref>
+
+    bodies.
 - code: public Vector2 LinearVelocity { get; set; }
 - h4: Property Value
 - parameters:
@@ -656,69 +663,51 @@ body:
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: LocalCenter
   id: Alis_Core_Physic_Dynamics_Body_LocalCenter
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L604
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L550
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.LocalCenter
     commentId: P:Alis.Core.Physic.Dynamics.Body.LocalCenter
-- markdown: Get the local position of the center of mass.
+- markdown: >-
+    Get the local position of the center of mass.
+
+    Warning: This property is readonly during callbacks.
 - code: public Vector2 LocalCenter { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Thrown when the world is Locked/Stepping.
 - api3: Mass
   id: Alis_Core_Physic_Dynamics_Body_Mass
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L626
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L578
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.Mass
     commentId: P:Alis.Core.Physic.Dynamics.Body.Mass
-- markdown: Gets or sets the mass. Usually in kilograms (kg).
+- markdown: >-
+    Gets or sets the mass. Usually in kilograms (kg).
+
+    Warning: This property is readonly during callbacks.
 - code: public float Mass { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: OnCollision
-  id: Alis_Core_Physic_Dynamics_Body_OnCollision
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L212
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.OnCollision
-    commentId: P:Alis.Core.Physic.Dynamics.Body.OnCollision
-- markdown: >-
-    Fires when two shapes collide and a contact is created between them. Note that the first fixture argument is
-
-    always the fixture that the delegate is subscribed to.
-- code: public OnCollisionHandler OnCollision { get; set; }
-- h4: Property Value
+- h4: Exceptions
 - parameters:
   - type:
-    - text: OnCollisionHandler
-      url: Alis.Core.Physic.Collision.Handlers.OnCollisionHandler.html
-- api3: OnSeparation
-  id: Alis_Core_Physic_Dynamics_Body_OnSeparation
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L220
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.OnSeparation
-    commentId: P:Alis.Core.Physic.Dynamics.Body.OnSeparation
-- markdown: >-
-    Fires when two shapes separate and a contact is removed between them. Note: This can in some cases be called
-
-    multiple times, as a fixture can have multiple contacts. Note The first fixture argument is always the fixture that
-
-    the
-
-    delegate is subscribed to.
-- code: public OnSeparationHandler OnSeparation { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: OnSeparationHandler
-      url: Alis.Core.Physic.Collision.Handlers.OnSeparationHandler.html
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Thrown when the world is Locked/Stepping.
 - api3: Position
   id: Alis_Core_Physic_Dynamics_Body_Position
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L556
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L500
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.Position
     commentId: P:Alis.Core.Physic.Dynamics.Body.Position
@@ -729,22 +718,9 @@ body:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: Restitution
-  id: Alis_Core_Physic_Dynamics_Body_Restitution
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L674
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.Restitution
-    commentId: P:Alis.Core.Physic.Dynamics.Body.Restitution
-- markdown: Sets the value of the restitution
-- code: public float Restitution { set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Revolutions
   id: Alis_Core_Physic_Dynamics_Body_Revolutions
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L274
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L212
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.Revolutions
     commentId: P:Alis.Core.Physic.Dynamics.Body.Revolutions
@@ -757,7 +733,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Rotation
   id: Alis_Core_Physic_Dynamics_Body_Rotation
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L566
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L518
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.Rotation
     commentId: P:Alis.Core.Physic.Dynamics.Body.Rotation
@@ -768,123 +744,72 @@ body:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: SleepTime
-  id: Alis_Core_Physic_Dynamics_Body_SleepTime
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L257
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.SleepTime
-    commentId: P:Alis.Core.Physic.Dynamics.Body.SleepTime
-- markdown: Gets or sets the value of the sleep time
-- code: public float SleepTime { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: SleepingAllowed
   id: Alis_Core_Physic_Dynamics_Body_SleepingAllowed
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L404
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L354
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.SleepingAllowed
     commentId: P:Alis.Core.Physic.Dynamics.Body.SleepingAllowed
-- markdown: You can disable sleeping on this body. If you disable sleeping, the body will be woken.
+- markdown: >-
+    You can disable sleeping on this body. If you disable sleeping, the
+
+    body will be woken.
 - code: public bool SleepingAllowed { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: Sweep
-  id: Alis_Core_Physic_Dynamics_Body_Sweep
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L246
+- api3: World
+  id: Alis_Core_Physic_Dynamics_Body_World
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L202
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.Sweep
-    commentId: P:Alis.Core.Physic.Dynamics.Body.Sweep
-- markdown: The sweep
-- code: internal Sweep Sweep { get; set; }
+    uid: Alis.Core.Physic.Dynamics.Body.World
+    commentId: P:Alis.Core.Physic.Dynamics.Body.World
+- markdown: Get the parent World of this body. This is null if the body is not attached.
+- code: public World World { get; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Sweep
-      url: Alis.Core.Physic.Collision.TOI.Sweep.html
-- api3: Torque
-  id: Alis_Core_Physic_Dynamics_Body_Torque
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L251
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.Torque
-    commentId: P:Alis.Core.Physic.Dynamics.Body.Torque
-- markdown: The torque
-- code: public float Torque { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
 - api3: WorldCenter
   id: Alis_Core_Physic_Dynamics_Body_WorldCenter
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L595
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L542
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.WorldCenter
     commentId: P:Alis.Core.Physic.Dynamics.Body.WorldCenter
 - markdown: Get the world position of the center of mass.
-- code: public Vector2 WorldCenter { get; set; }
+- code: public Vector2 WorldCenter { get; }
 - h4: Property Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - h2: Methods
-- api3: AddFixture(Fixture)
-  id: Alis_Core_Physic_Dynamics_Body_AddFixture_Alis_Core_Physic_Dynamics_Fixture_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L826
+- api3: Add(Fixture)
+  id: Alis_Core_Physic_Dynamics_Body_Add_Alis_Core_Physic_Dynamics_Fixture_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L686
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.AddFixture(Alis.Core.Physic.Dynamics.Fixture)
-    commentId: M:Alis.Core.Physic.Dynamics.Body.AddFixture(Alis.Core.Physic.Dynamics.Fixture)
-- markdown: >-
-    Creates a fixture and attach it to this body. If the density is non-zero, this function automatically updates
-
-    the mass of the body. Contacts are not created until the next time step. Warning: This function is locked during
-
-    callbacks.
-- code: public Fixture AddFixture(Fixture fixture)
+    uid: Alis.Core.Physic.Dynamics.Body.Add(Alis.Core.Physic.Dynamics.Fixture)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.Add(Alis.Core.Physic.Dynamics.Fixture)
+- markdown: 'Warning: This method is locked during callbacks.'
+- code: public void Add(Fixture fixture)
 - h4: Parameters
 - parameters:
   - name: fixture
     type:
     - text: Fixture
       url: Alis.Core.Physic.Dynamics.Fixture.html
-- h4: Returns
+- h4: Exceptions
 - parameters:
   - type:
-    - text: Fixture
-      url: Alis.Core.Physic.Dynamics.Fixture.html
-- api3: AddFixture(AShape)
-  id: Alis_Core_Physic_Dynamics_Body_AddFixture_Alis_Core_Physic_Collision_Shapes_AShape_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L855
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.AddFixture(Alis.Core.Physic.Collision.Shapes.AShape)
-    commentId: M:Alis.Core.Physic.Dynamics.Body.AddFixture(Alis.Core.Physic.Collision.Shapes.AShape)
-- markdown: >-
-    Creates a fixture and attach it to this body. If the density is non-zero, this function automatically updates
-
-    the mass of the body. Contacts are not created until the next time step. Warning: This function is locked during
-
-    callbacks.
-- code: public Fixture AddFixture(AShape shape)
-- h4: Parameters
-- parameters:
-  - name: shape
-    type:
-    - text: AShape
-      url: Alis.Core.Physic.Collision.Shapes.AShape.html
-- h4: Returns
-- parameters:
-  - type:
-    - text: Fixture
-      url: Alis.Core.Physic.Dynamics.Fixture.html
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Thrown when the world is Locked/Stepping.
 - api3: Advance(float)
   id: Alis_Core_Physic_Dynamics_Body_Advance_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1295
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1245
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.Advance(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Body.Advance(System.Single)
@@ -899,7 +824,7 @@ body:
     description: The alpha
 - api3: ApplyAngularImpulse(float)
   id: Alis_Core_Physic_Dynamics_Body_ApplyAngularImpulse_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1066
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L999
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ApplyAngularImpulse(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Body.ApplyAngularImpulse(System.Single)
@@ -914,14 +839,16 @@ body:
     description: The angular impulse in units of kg*m*m/s.
 - api3: ApplyForce(Vector2, Vector2)
   id: Alis_Core_Physic_Dynamics_Body_ApplyForce_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L949
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L866
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
     commentId: M:Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
 - markdown: >-
-    Apply a force at a world point. If the force is not applied at the center of mass, it will generate a torque
+    Apply a force at a world point. If the force is not
 
-    and affect the angular velocity. This wakes up the body.
+    applied at the center of mass, it will generate a torque and
+
+    affect the angular velocity. This wakes up the body.
 - code: public void ApplyForce(Vector2 force, Vector2 point)
 - h4: Parameters
 - parameters:
@@ -937,7 +864,7 @@ body:
     description: The world position of the point of application.
 - api3: ApplyForce(ref Vector2)
   id: Alis_Core_Physic_Dynamics_Body_ApplyForce_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L956
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L875
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2@)
     commentId: M:Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2@)
@@ -952,7 +879,7 @@ body:
     description: The force.
 - api3: ApplyForce(Vector2)
   id: Alis_Core_Physic_Dynamics_Body_ApplyForce_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L963
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L884
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2)
     commentId: M:Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2)
@@ -967,14 +894,16 @@ body:
     description: The force.
 - api3: ApplyForce(ref Vector2, ref Vector2)
   id: Alis_Core_Physic_Dynamics_Body_ApplyForce_Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L974
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L896
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
     commentId: M:Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
 - markdown: >-
-    Apply a force at a world point. If the force is not applied at the center of mass, it will generate a torque
+    Apply a force at a world point. If the force is not
 
-    and affect the angular velocity. This wakes up the body.
+    applied at the center of mass, it will generate a torque and
+
+    affect the angular velocity. This wakes up the body.
 - code: public void ApplyForce(ref Vector2 force, ref Vector2 point)
 - h4: Parameters
 - parameters:
@@ -990,11 +919,14 @@ body:
     description: The world position of the point of application.
 - api3: ApplyLinearImpulse(Vector2)
   id: Alis_Core_Physic_Dynamics_Body_ApplyLinearImpulse_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1009
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L937
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2)
     commentId: M:Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2)
-- markdown: Apply an impulse at a point. This immediately modifies the velocity. This wakes up the body.
+- markdown: >-
+    Apply an impulse at a point. This immediately modifies the velocity.
+
+    This wakes up the body.
 - code: public void ApplyLinearImpulse(Vector2 impulse)
 - h4: Parameters
 - parameters:
@@ -1005,14 +937,18 @@ body:
     description: The world impulse vector, usually in N-seconds or kg-m/s.
 - api3: ApplyLinearImpulse(Vector2, Vector2)
   id: Alis_Core_Physic_Dynamics_Body_ApplyLinearImpulse_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1020
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L950
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
     commentId: M:Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
 - markdown: >-
-    Apply an impulse at a point. This immediately modifies the velocity. It also modifies the angular velocity if
+    Apply an impulse at a point. This immediately modifies the velocity.
 
-    the point of application is not at the center of mass. This wakes up the body.
+    It also modifies the angular velocity if the point of application
+
+    is not at the center of mass.
+
+    This wakes up the body.
 - code: public void ApplyLinearImpulse(Vector2 impulse, Vector2 point)
 - h4: Parameters
 - parameters:
@@ -1028,11 +964,14 @@ body:
     description: The world position of the point of application.
 - api3: ApplyLinearImpulse(ref Vector2)
   id: Alis_Core_Physic_Dynamics_Body_ApplyLinearImpulse_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1027
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L960
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2@)
     commentId: M:Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2@)
-- markdown: Apply an impulse at a point. This immediately modifies the velocity. This wakes up the body.
+- markdown: >-
+    Apply an impulse at a point. This immediately modifies the velocity.
+
+    This wakes up the body.
 - code: public void ApplyLinearImpulse(ref Vector2 impulse)
 - h4: Parameters
 - parameters:
@@ -1043,14 +982,18 @@ body:
     description: The world impulse vector, usually in N-seconds or kg-m/s.
 - api3: ApplyLinearImpulse(ref Vector2, ref Vector2)
   id: Alis_Core_Physic_Dynamics_Body_ApplyLinearImpulse_Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1048
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L983
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
     commentId: M:Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
 - markdown: >-
-    Apply an impulse at a point. This immediately modifies the velocity. It also modifies the angular velocity if
+    Apply an impulse at a point. This immediately modifies the velocity.
 
-    the point of application is not at the center of mass. This wakes up the body.
+    It also modifies the angular velocity if the point of application
+
+    is not at the center of mass.
+
+    This wakes up the body.
 - code: public void ApplyLinearImpulse(ref Vector2 impulse, ref Vector2 point)
 - h4: Parameters
 - parameters:
@@ -1066,11 +1009,16 @@ body:
     description: The world position of the point of application.
 - api3: ApplyTorque(float)
   id: Alis_Core_Physic_Dynamics_Body_ApplyTorque_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L992
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L919
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ApplyTorque(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Body.ApplyTorque(System.Single)
-- markdown: Apply a torque. This affects the angular velocity without affecting the linear velocity of the center of mass.
+- markdown: >-
+    Apply a torque. This affects the angular velocity
+
+    without affecting the linear velocity of the center of mass.
+
+    This wakes up the body.
 - code: public void ApplyTorque(float torque)
 - h4: Parameters
 - parameters:
@@ -1079,33 +1027,469 @@ body:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
     description: The torque about the z-axis (out of the screen), usually in N-m.
-- api3: CheckOutRange()
-  id: Alis_Core_Physic_Dynamics_Body_CheckOutRange
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1316
+- api3: Clone(World)
+  id: Alis_Core_Physic_Dynamics_Body_Clone_Alis_Core_Physic_Dynamics_World_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1344
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.CheckOutRange
-    commentId: M:Alis.Core.Physic.Dynamics.Body.CheckOutRange
-- markdown: Checks the out range
-- code: public void CheckOutRange()
-- api3: ClearFlags()
-  id: Alis_Core_Physic_Dynamics_Body_ClearFlags
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1289
+    uid: Alis.Core.Physic.Dynamics.Body.Clone(Alis.Core.Physic.Dynamics.World)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.Clone(Alis.Core.Physic.Dynamics.World)
+- markdown: >-
+    Makes a clone of the body. Fixtures and therefore shapes are not included.
+
+    Use DeepClone() to clone the body, as well as fixtures and shapes.
+- code: public Body Clone(World world = null)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: ''
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: ''
+- api3: CreateChainShape(Vertices)
+  id: Alis_Core_Physic_Dynamics_Body_CreateChainShape_Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L78
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.ClearFlags
-    commentId: M:Alis.Core.Physic.Dynamics.Body.ClearFlags
-- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Body.ClearFlags" data-throw-if-not-resolved="false"></xref> class
-- code: internal void ClearFlags()
-- api3: ClearForces()
-  id: Alis_Core_Physic_Dynamics_Body_ClearForces
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1307
+    uid: Alis.Core.Physic.Dynamics.Body.CreateChainShape(Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateChainShape(Alis.Core.Physic.Common.Vertices)
+- markdown: Creates the chain shape using the specified vertices
+- code: public Fixture CreateChainShape(Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+- h4: Returns
+- parameters:
+  - type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+- api3: CreateCircle(float, float)
+  id: Alis_Core_Physic_Dynamics_Body_CreateCircle_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L118
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.ClearForces
-    commentId: M:Alis.Core.Physic.Dynamics.Body.ClearForces
-- markdown: Clears the forces
-- code: internal void ClearForces()
+    uid: Alis.Core.Physic.Dynamics.Body.CreateCircle(System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateCircle(System.Single,System.Single)
+- markdown: Creates the circle using the specified radius
+- code: public Fixture CreateCircle(float radius, float density)
+- h4: Parameters
+- parameters:
+  - name: radius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radius
+  - name: density
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The density
+- h4: Returns
+- parameters:
+  - type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: radius Radius must be more than 0 meters
+- api3: CreateCircle(float, float, Vector2)
+  id: Alis_Core_Physic_Dynamics_Body_CreateCircle_System_Single_System_Single_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L135
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.CreateCircle(System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateCircle(System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Creates the circle using the specified radius
+- code: public Fixture CreateCircle(float radius, float density, Vector2 offset)
+- h4: Parameters
+- parameters:
+  - name: radius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radius
+  - name: density
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The density
+  - name: offset
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The offset
+- h4: Returns
+- parameters:
+  - type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: radius Radius must be more than 0 meters
+- api3: CreateCompoundPolygon(List<Vertices>, float)
+  id: Alis_Core_Physic_Dynamics_Body_CreateCompoundPolygon_System_Collections_Generic_List_Alis_Core_Physic_Common_Vertices__System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L190
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.CreateCompoundPolygon(System.Collections.Generic.List{Alis.Core.Physic.Common.Vertices},System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateCompoundPolygon(System.Collections.Generic.List{Alis.Core.Physic.Common.Vertices},System.Single)
+- markdown: Creates the compound polygon using the specified list
+- code: public List<Fixture> CreateCompoundPolygon(List<Vertices> list, float density)
+- h4: Parameters
+- parameters:
+  - name: list
+    type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    - '>'
+    description: The list
+  - name: density
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The density
+- h4: Returns
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    - '>'
+    description: The res
+- api3: CreateEdge(Vector2, Vector2)
+  id: Alis_Core_Physic_Dynamics_Body_CreateEdge_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L67
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.CreateEdge(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateEdge(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Creates the edge using the specified start
+- code: public Fixture CreateEdge(Vector2 start, Vector2 end)
+- h4: Parameters
+- parameters:
+  - name: start
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The start
+  - name: end
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The end
+- h4: Returns
+- parameters:
+  - type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+- api3: CreateEllipse(float, float, int, float)
+  id: Alis_Core_Physic_Dynamics_Body_CreateEllipse_System_Single_System_Single_System_Int32_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L171
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.CreateEllipse(System.Single,System.Single,System.Int32,System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateEllipse(System.Single,System.Single,System.Int32,System.Single)
+- markdown: Creates the ellipse using the specified x radius
+- code: public Fixture CreateEllipse(float xRadius, float yRadius, int edges, float density)
+- h4: Parameters
+- parameters:
+  - name: xRadius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radius
+  - name: yRadius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radius
+  - name: edges
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The edges
+  - name: density
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The density
+- h4: Returns
+- parameters:
+  - type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: xRadius X-radius must be more than 0
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: yRadius Y-radius must be more than 0
+- api3: CreateFixture(Shape)
+  id: Alis_Core_Physic_Dynamics_Body_CreateFixture_Alis_Core_Physic_Collision_Shapes_Shape_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L54
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.CreateFixture(Alis.Core.Physic.Collision.Shapes.Shape)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateFixture(Alis.Core.Physic.Collision.Shapes.Shape)
+- markdown: >-
+    Creates a fixture and attach it to this body.
+
+    If the density is non-zero, this function automatically updates the mass of the body.
+
+    Contacts are not created until the next time step.
+
+    Warning: This method is locked during callbacks.
+- code: public virtual Fixture CreateFixture(Shape shape)
+- h4: Parameters
+- parameters:
+  - name: shape
+    type:
+    - text: Shape
+      url: Alis.Core.Physic.Collision.Shapes.Shape.html
+    description: The shape.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: ''
+- api3: CreateLineArc(float, int, float, bool)
+  id: Alis_Core_Physic_Dynamics_Body_CreateLineArc_System_Single_System_Int32_System_Single_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L220
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.CreateLineArc(System.Single,System.Int32,System.Single,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateLineArc(System.Single,System.Int32,System.Single,System.Boolean)
+- markdown: Creates the line arc using the specified radians
+- code: public Fixture CreateLineArc(float radians, int sides, float radius, bool closed)
+- h4: Parameters
+- parameters:
+  - name: radians
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radians
+  - name: sides
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The sides
+  - name: radius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radius
+  - name: closed
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The closed
+- h4: Returns
+- parameters:
+  - type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+- api3: CreateLoopShape(Vertices)
+  id: Alis_Core_Physic_Dynamics_Body_CreateLoopShape_Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L89
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.CreateLoopShape(Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateLoopShape(Alis.Core.Physic.Common.Vertices)
+- markdown: Creates the loop shape using the specified vertices
+- code: public Fixture CreateLoopShape(Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+- h4: Returns
+- parameters:
+  - type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+- api3: CreatePolygon(Vertices, float)
+  id: Alis_Core_Physic_Dynamics_Body_CreatePolygon_Alis_Core_Physic_Common_Vertices_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L152
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.CreatePolygon(Alis.Core.Physic.Common.Vertices,System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreatePolygon(Alis.Core.Physic.Common.Vertices,System.Single)
+- markdown: Creates the polygon using the specified vertices
+- code: public Fixture CreatePolygon(Vertices vertices, float density)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+  - name: density
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The density
+- h4: Returns
+- parameters:
+  - type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: vertices Too few points to be a polygon
+- api3: CreateProxies()
+  id: Alis_Core_Physic_Dynamics_Body_CreateProxies
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L636
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.CreateProxies
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateProxies
+- markdown: Create all proxies.
+- code: internal void CreateProxies()
+- api3: CreateRectangle(float, float, float, Vector2)
+  id: Alis_Core_Physic_Dynamics_Body_CreateRectangle_System_Single_System_Single_System_Single_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L103
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.CreateRectangle(System.Single,System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateRectangle(System.Single,System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Creates the rectangle using the specified width
+- code: public Fixture CreateRectangle(float width, float height, float density, Vector2 offset)
+- h4: Parameters
+- parameters:
+  - name: width
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The width
+  - name: height
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The height
+  - name: density
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The density
+  - name: offset
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The offset
+- h4: Returns
+- parameters:
+  - type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+- api3: CreateSolidArc(float, float, int, float)
+  id: Alis_Core_Physic_Dynamics_Body_CreateSolidArc_System_Single_System_Single_System_Int32_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L235
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.CreateSolidArc(System.Single,System.Single,System.Int32,System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.CreateSolidArc(System.Single,System.Single,System.Int32,System.Single)
+- markdown: Creates the solid arc using the specified density
+- code: public List<Fixture> CreateSolidArc(float density, float radians, int sides, float radius)
+- h4: Parameters
+- parameters:
+  - name: density
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The density
+  - name: radians
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radians
+  - name: sides
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The sides
+  - name: radius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The radius
+- h4: Returns
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    - '>'
+    description: A list of fixture
+- api3: DeepClone(World)
+  id: Alis_Core_Physic_Dynamics_Body_DeepClone_Alis_Core_Physic_Dynamics_World_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1371
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.DeepClone(Alis.Core.Physic.Dynamics.World)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.DeepClone(Alis.Core.Physic.Dynamics.World)
+- markdown: Clones the body and all attached fixtures and shapes. Simply said, it makes a complete copy of the body.
+- code: public Body DeepClone(World world = null)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: ''
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    description: ''
+- api3: DestroyContacts()
+  id: Alis_Core_Physic_Dynamics_Body_DestroyContacts
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L656
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.DestroyContacts
+    commentId: M:Alis.Core.Physic.Dynamics.Body.DestroyContacts
+- markdown: Destroy the attached contacts.
+- code: private void DestroyContacts()
+- api3: DestroyProxies()
+  id: Alis_Core_Physic_Dynamics_Body_DestroyProxies
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L646
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.DestroyProxies
+    commentId: M:Alis.Core.Physic.Dynamics.Body.DestroyProxies
+- markdown: Destroy all proxies.
+- code: internal void DestroyProxies()
 - api3: GetLinearVelocityFromLocalPoint(Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetLinearVelocityFromLocalPoint_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1218
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1179
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2)
@@ -1126,7 +1510,7 @@ body:
     description: The world velocity of a point.
 - api3: GetLinearVelocityFromLocalPoint(ref Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetLinearVelocityFromLocalPoint_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1224
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1186
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2@)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2@)
@@ -1147,7 +1531,7 @@ body:
     description: The world velocity of a point.
 - api3: GetLinearVelocityFromWorldPoint(Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetLinearVelocityFromWorldPoint_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1206
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1163
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2)
@@ -1168,7 +1552,7 @@ body:
     description: The world velocity of a point.
 - api3: GetLinearVelocityFromWorldPoint(ref Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetLinearVelocityFromWorldPoint_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1212
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1170
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2@)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2@)
@@ -1189,14 +1573,14 @@ body:
     description: The world velocity of a point.
 - api3: GetLocalPoint(ref Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetLocalPoint_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1180
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1133
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2@)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2@)
 - markdown: >-
-    Gets a local point relative to the body's origin given a world point. Note that the vector only takes the
+    Gets a local point relative to the body's origin given a world point.
 
-    rotation into account, not the position.
+    Note that the vector only takes the rotation into account, not the position.
 - code: public Vector2 GetLocalPoint(ref Vector2 worldPoint)
 - h4: Parameters
 - parameters:
@@ -1213,7 +1597,7 @@ body:
     description: The corresponding local point relative to the body's origin.
 - api3: GetLocalPoint(Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetLocalPoint_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1185
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1140
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2)
@@ -1234,14 +1618,14 @@ body:
     description: The corresponding local point relative to the body's origin.
 - api3: GetLocalVector(ref Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetLocalVector_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1193
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1148
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetLocalVector(Alis.Core.Aspect.Math.Vector.Vector2@)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetLocalVector(Alis.Core.Aspect.Math.Vector.Vector2@)
 - markdown: >-
-    Gets a local vector given a world vector. Note that the vector only takes the rotation into account, not the
+    Gets a local vector given a world vector.
 
-    position.
+    Note that the vector only takes the rotation into account, not the position.
 - code: public Vector2 GetLocalVector(ref Vector2 worldVector)
 - h4: Parameters
 - parameters:
@@ -1258,14 +1642,14 @@ body:
     description: The corresponding local vector.
 - api3: GetLocalVector(Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetLocalVector_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1201
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1156
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetLocalVector(Alis.Core.Aspect.Math.Vector.Vector2)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetLocalVector(Alis.Core.Aspect.Math.Vector.Vector2)
 - markdown: >-
-    Gets a local vector given a world vector. Note that the vector only takes the rotation into account, not the
+    Gets a local vector given a world vector.
 
-    position.
+    Note that the vector only takes the rotation into account, not the position.
 - code: public Vector2 GetLocalVector(Vector2 worldVector)
 - h4: Parameters
 - parameters:
@@ -1280,27 +1664,25 @@ body:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
     description: The corresponding local vector.
-- api3: GetMassData(out MassData)
-  id: Alis_Core_Physic_Dynamics_Body_GetMassData_Alis_Core_Physic_Collision_Shapes_MassData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L802
+- api3: GetTransform()
+  id: Alis_Core_Physic_Dynamics_Body_GetTransform
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L848
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.GetMassData(Alis.Core.Physic.Collision.Shapes.MassData@)
-    commentId: M:Alis.Core.Physic.Dynamics.Body.GetMassData(Alis.Core.Physic.Collision.Shapes.MassData@)
-- markdown: Gets the mass data using the specified data
-- code: public void GetMassData(out MassData data)
-- h4: Parameters
+    uid: Alis.Core.Physic.Dynamics.Body.GetTransform
+    commentId: M:Alis.Core.Physic.Dynamics.Body.GetTransform
+- markdown: Get the body transform for the body's origin.
+- code: public Transform GetTransform()
+- h4: Returns
 - parameters:
-  - name: data
-    type:
-    - text: MassData
-      url: Alis.Core.Physic.Collision.Shapes.MassData.html
-    description: The data
+  - type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
 - api3: GetTransform(out Transform)
-  id: Alis_Core_Physic_Dynamics_Body_GetTransform_Alis_Core_Aspect_Math_Transform__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L938
+  id: Alis_Core_Physic_Dynamics_Body_GetTransform_Alis_Core_Physic_Common_Transform__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L854
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.GetTransform(Alis.Core.Aspect.Math.Transform@)
-    commentId: M:Alis.Core.Physic.Dynamics.Body.GetTransform(Alis.Core.Aspect.Math.Transform@)
+    uid: Alis.Core.Physic.Dynamics.Body.GetTransform(Alis.Core.Physic.Common.Transform@)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.GetTransform(Alis.Core.Physic.Common.Transform@)
 - markdown: Get the body transform for the body's origin.
 - code: public void GetTransform(out Transform transform)
 - h4: Parameters
@@ -1308,11 +1690,11 @@ body:
   - name: transform
     type:
     - text: Transform
-      url: Alis.Core.Aspect.Math.Transform.html
+      url: Alis.Core.Physic.Common.Transform.html
     description: The transform of the body's origin.
 - api3: GetWorldPoint(ref Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetWorldPoint_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1154
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1103
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2@)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2@)
@@ -1324,7 +1706,7 @@ body:
     type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: A point on the body measured relative the body's origin.
+    description: A point on the body measured relative the the body's origin.
 - h4: Returns
 - parameters:
   - type:
@@ -1333,7 +1715,7 @@ body:
     description: The same point expressed in world coordinates.
 - api3: GetWorldPoint(Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetWorldPoint_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1159
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1110
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2)
@@ -1345,7 +1727,7 @@ body:
     type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: A point on the body measured relative the body's origin.
+    description: A point on the body measured relative the the body's origin.
 - h4: Returns
 - parameters:
   - type:
@@ -1354,14 +1736,14 @@ body:
     description: The same point expressed in world coordinates.
 - api3: GetWorldVector(ref Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetWorldVector_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1167
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1118
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetWorldVector(Alis.Core.Aspect.Math.Vector.Vector2@)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetWorldVector(Alis.Core.Aspect.Math.Vector.Vector2@)
 - markdown: >-
-    Get the world coordinates of a vector given the local coordinates. Note that the vector only takes the
+    Get the world coordinates of a vector given the local coordinates.
 
-    rotation into account, not the position.
+    Note that the vector only takes the rotation into account, not the position.
 - code: public Vector2 GetWorldVector(ref Vector2 localVector)
 - h4: Parameters
 - parameters:
@@ -1378,7 +1760,7 @@ body:
     description: The same vector expressed in world coordinates.
 - api3: GetWorldVector(Vector2)
   id: Alis_Core_Physic_Dynamics_Body_GetWorldVector_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1172
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1125
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.GetWorldVector(Alis.Core.Aspect.Math.Vector.Vector2)
     commentId: M:Alis.Core.Physic.Dynamics.Body.GetWorldVector(Alis.Core.Aspect.Math.Vector.Vector2)
@@ -1397,25 +1779,25 @@ body:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
     description: The same vector expressed in world coordinates.
-- api3: RemoveFixture(Fixture)
-  id: Alis_Core_Physic_Dynamics_Body_RemoveFixture_Alis_Core_Physic_Dynamics_Fixture_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L866
+- api3: Remove(Fixture)
+  id: Alis_Core_Physic_Dynamics_Body_Remove_Alis_Core_Physic_Dynamics_Fixture_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L739
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.RemoveFixture(Alis.Core.Physic.Dynamics.Fixture)
-    commentId: M:Alis.Core.Physic.Dynamics.Body.RemoveFixture(Alis.Core.Physic.Dynamics.Fixture)
+    uid: Alis.Core.Physic.Dynamics.Body.Remove(Alis.Core.Physic.Dynamics.Fixture)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.Remove(Alis.Core.Physic.Dynamics.Fixture)
 - markdown: >-
-    Destroy a fixture. This removes the fixture from the broad-phase and destroys all contacts associated with
+    Destroy a fixture. This removes the fixture from the broad-phase and
 
-    this fixture. This will automatically adjust the mass of the body if the body is dynamic and the fixture has
+    destroys all contacts associated with this fixture. This will
 
-    positive
+    automatically adjust the mass of the body if the body is dynamic and the
 
-    density. All fixtures attached to a body are implicitly destroyed when the body is destroyed. Warning: This
+    fixture has positive density.
 
-    function is
+    All fixtures attached to a body are implicitly destroyed when the body is destroyed.
 
-    locked during callbacks.
-- code: public void RemoveFixture(Fixture fixture)
+    Warning: This method is locked during callbacks.
+- code: public virtual void Remove(Fixture fixture)
 - h4: Parameters
 - parameters:
   - name: fixture
@@ -1423,66 +1805,154 @@ body:
     - text: Fixture
       url: Alis.Core.Physic.Dynamics.Fixture.html
     description: The fixture to be removed.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Thrown when the world is Locked/Stepping.
 - api3: ResetDynamics()
   id: Alis_Core_Physic_Dynamics_Body_ResetDynamics
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L813
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L673
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ResetDynamics
     commentId: M:Alis.Core.Physic.Dynamics.Body.ResetDynamics
-- markdown: Resets the dynamics of this body. Sets torque, force and linear/angular velocity to 0
+- markdown: >-
+    Resets the dynamics of this body.
+
+    Sets torque, force and linear/angular velocity to 0
 - code: public void ResetDynamics()
 - api3: ResetMassData()
   id: Alis_Core_Physic_Dynamics_Body_ResetMassData
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1085
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1019
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ResetMassData
     commentId: M:Alis.Core.Physic.Dynamics.Body.ResetMassData
 - markdown: >-
-    This resets the mass properties to the sum of the mass properties of the fixtures. This normally does not need
+    This resets the mass properties to the sum of the mass properties of the fixtures.
 
-    to be called unless you called SetMassData to override the mass and you later want to reset the mass.
+    This normally does not need to be called unless you called SetMassData to override
+
+    the mass and you later want to reset the mass.
 - code: public void ResetMassData()
-- api3: SetAlphaToZero()
-  id: Alis_Core_Physic_Dynamics_Body_SetAlphaToZero
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1335
+- api3: SetCollidesWith(Category)
+  id: Alis_Core_Physic_Dynamics_Body_SetCollidesWith_Alis_Core_Physic_Dynamics_Category_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1312
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.SetAlphaToZero
-    commentId: M:Alis.Core.Physic.Dynamics.Body.SetAlphaToZero
-- markdown: Sets the alpha to zero
-- code: public void SetAlphaToZero()
-- api3: SetTransform(Vector2, float)
-  id: Alis_Core_Physic_Dynamics_Body_SetTransform_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L907
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Body.SetTransform(Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
-    commentId: M:Alis.Core.Physic.Dynamics.Body.SetTransform(Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
-- markdown: >-
-    Set the position of the body's origin and rotation. This breaks any contacts and wakes the other bodies.
-
-    Manipulating a body's transform may cause non-physical behavior.
-- code: public void SetTransform(Vector2 position, float rotation)
+    uid: Alis.Core.Physic.Dynamics.Body.SetCollidesWith(Alis.Core.Physic.Dynamics.Category)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.SetCollidesWith(Alis.Core.Physic.Dynamics.Category)
+- markdown: "Warning: This method applies the value on existing Fixtures. It's not a property of Body."
+- code: public void SetCollidesWith(Category category)
 - h4: Parameters
 - parameters:
-  - name: position
+  - name: category
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The world position of the body's local origin.
-  - name: rotation
+    - text: Category
+      url: Alis.Core.Physic.Dynamics.Category.html
+- h4: Remarks
+- markdown: Deprecated in version 1.6
+- api3: SetCollisionCategories(Category)
+  id: Alis_Core_Physic_Dynamics_Body_SetCollisionCategories_Alis_Core_Physic_Dynamics_Category_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1302
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.SetCollisionCategories(Alis.Core.Physic.Dynamics.Category)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.SetCollisionCategories(Alis.Core.Physic.Dynamics.Category)
+- markdown: "Warning: This method applies the value on existing Fixtures. It's not a property of Body."
+- code: public void SetCollisionCategories(Category category)
+- h4: Parameters
+- parameters:
+  - name: category
+    type:
+    - text: Category
+      url: Alis.Core.Physic.Dynamics.Category.html
+- h4: Remarks
+- markdown: Deprecated in version 1.6
+- api3: SetCollisionGroup(short)
+  id: Alis_Core_Physic_Dynamics_Body_SetCollisionGroup_System_Int16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1322
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.SetCollisionGroup(System.Int16)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.SetCollisionGroup(System.Int16)
+- markdown: "Warning: This method applies the value on existing Fixtures. It's not a property of Body."
+- code: public void SetCollisionGroup(short collisionGroup)
+- h4: Parameters
+- parameters:
+  - name: collisionGroup
+    type:
+    - text: short
+      url: https://learn.microsoft.com/dotnet/api/system.int16
+- h4: Remarks
+- markdown: Deprecated in version 1.6
+- api3: SetFriction(float)
+  id: Alis_Core_Physic_Dynamics_Body_SetFriction_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1292
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.SetFriction(System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.SetFriction(System.Single)
+- markdown: >-
+    Set friction on all fixtures.
+
+    Warning: This method applies the value on existing Fixtures. It's not a property of Body.
+- code: public void SetFriction(float friction)
+- h4: Parameters
+- parameters:
+  - name: friction
     type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The world rotation in radians.
+    description: ''
+- h4: Remarks
+- markdown: Deprecated in version 1.6
+- api3: SetIsSensor(bool)
+  id: Alis_Core_Physic_Dynamics_Body_SetIsSensor_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1332
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.SetIsSensor(System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.SetIsSensor(System.Boolean)
+- markdown: "Warning: This method applies the value on existing Fixtures. It's not a property of Body."
+- code: public void SetIsSensor(bool isSensor)
+- h4: Parameters
+- parameters:
+  - name: isSensor
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h4: Remarks
+- markdown: Deprecated in version 1.6
+- api3: SetRestitution(float)
+  id: Alis_Core_Physic_Dynamics_Body_SetRestitution_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1280
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.SetRestitution(System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.SetRestitution(System.Single)
+- markdown: >-
+    Set restitution on all fixtures.
+
+    Warning: This method applies the value on existing Fixtures. It's not a property of Body.
+- code: public void SetRestitution(float restitution)
+- h4: Parameters
+- parameters:
+  - name: restitution
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: ''
+- h4: Remarks
+- markdown: Deprecated in version 1.6
 - api3: SetTransform(ref Vector2, float)
   id: Alis_Core_Physic_Dynamics_Body_SetTransform_Alis_Core_Aspect_Math_Vector_Vector2__System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L918
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L796
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.SetTransform(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Body.SetTransform(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single)
 - markdown: >-
-    Set the position of the body's origin and rotation. This breaks any contacts and wakes the other bodies.
+    Set the position of the body's origin and rotation.
+
+    This breaks any contacts and wakes the other bodies.
 
     Manipulating a body's transform may cause non-physical behavior.
+
+    Warning: This method is locked during callbacks.
 - code: public void SetTransform(ref Vector2 position, float rotation)
 - h4: Parameters
 - parameters:
@@ -1496,13 +1966,84 @@ body:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
     description: The world rotation in radians.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Thrown when the world is Locked/Stepping.
+- api3: SetTransform(Vector2, float)
+  id: Alis_Core_Physic_Dynamics_Body_SetTransform_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L812
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.SetTransform(Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.SetTransform(Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
+- markdown: >-
+    Set the position of the body's origin and rotation.
+
+    This breaks any contacts and wakes the other bodies.
+
+    Manipulating a body's transform may cause non-physical behavior.
+
+    Warning: This method is locked during callbacks.
+- code: public void SetTransform(Vector2 position, float rotation)
+- h4: Parameters
+- parameters:
+  - name: position
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The world position of the body's local origin.
+  - name: rotation
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The world rotation in radians.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Thrown when the world is Locked/Stepping.
+- api3: SetTransformIgnoreContacts(ref Vector2, float)
+  id: Alis_Core_Physic_Dynamics_Body_SetTransformIgnoreContacts_Alis_Core_Aspect_Math_Vector_Vector2__System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L824
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.SetTransformIgnoreContacts(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Body.SetTransformIgnoreContacts(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single)
+- markdown: >-
+    For teleporting a body without considering new contacts immediately.
+
+    Warning: This method is locked during callbacks.
+- code: public void SetTransformIgnoreContacts(ref Vector2 position, float angle)
+- h4: Parameters
+- parameters:
+  - name: position
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The position.
+  - name: angle
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The angle.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Thrown when the world is Locked/Stepping.
 - api3: ShouldCollide(Body)
   id: Alis_Core_Physic_Dynamics_Body_ShouldCollide_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1265
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1218
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.ShouldCollide(Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Physic.Dynamics.Body.ShouldCollide(Alis.Core.Physic.Dynamics.Body)
-- markdown: This is used to prevent connected bodies from colliding. It may lie, depending on the collideConnected flag.
+- markdown: >-
+    This is used to prevent connected bodies from colliding.
+
+    It may lie, depending on the collideConnected flag.
 - code: internal bool ShouldCollide(Body other)
 - h4: Parameters
 - parameters:
@@ -1516,9 +2057,10 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
 - api3: SynchronizeFixtures()
   id: Alis_Core_Physic_Dynamics_Body_SynchronizeFixtures
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1230
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1191
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.SynchronizeFixtures
     commentId: M:Alis.Core.Physic.Dynamics.Body.SynchronizeFixtures
@@ -1526,12 +2068,38 @@ body:
 - code: internal void SynchronizeFixtures()
 - api3: SynchronizeTransform()
   id: Alis_Core_Physic_Dynamics_Body_SynchronizeTransform
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1257
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1206
   metadata:
     uid: Alis.Core.Physic.Dynamics.Body.SynchronizeTransform
     commentId: M:Alis.Core.Physic.Dynamics.Body.SynchronizeTransform
 - markdown: Synchronizes the transform
 - code: internal void SynchronizeTransform()
+- api3: OnCollision
+  id: Alis_Core_Physic_Dynamics_Body_OnCollision
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1258
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.OnCollision
+    commentId: E:Alis.Core.Physic.Dynamics.Body.OnCollision
+- markdown: The on collision
+- code: public event OnCollisionEventHandler OnCollision
+- h4: Event Type
+- parameters:
+  - type:
+    - text: OnCollisionEventHandler
+      url: Alis.Core.Physic.Dynamics.OnCollisionEventHandler.html
+- api3: OnSeparation
+  id: Alis_Core_Physic_Dynamics_Body_OnSeparation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1267
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Body.OnSeparation
+    commentId: E:Alis.Core.Physic.Dynamics.Body.OnSeparation
+- markdown: The on separation
+- code: public event OnSeparationEventHandler OnSeparation
+- h4: Event Type
+- parameters:
+  - type:
+    - text: OnSeparationEventHandler
+      url: Alis.Core.Physic.Dynamics.OnSeparationEventHandler.html
 languageId: csharp
 metadata:
   description: The body class

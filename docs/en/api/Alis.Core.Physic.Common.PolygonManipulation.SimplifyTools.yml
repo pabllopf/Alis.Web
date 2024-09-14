@@ -1,0 +1,262 @@
+### YamlMime:ApiPage
+title: Class SimplifyTools
+body:
+- api1: Class SimplifyTools
+  id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L41
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools
+    commentId: T:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.PolygonManipulation
+      url: Alis.Core.Physic.Common.PolygonManipulation.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Provides a set of tools to simplify polygons in various ways.
+- code: public static class SimplifyTools
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: SimplifyTools
+    url: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: CollinearSimplify(Vertices, float)
+  id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_CollinearSimplify_Alis_Core_Physic_Common_Vertices_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L49
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.CollinearSimplify(Alis.Core.Physic.Common.Vertices,System.Single)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.CollinearSimplify(Alis.Core.Physic.Common.Vertices,System.Single)
+- markdown: Removes all collinear points on the polygon.
+- code: public static Vertices CollinearSimplify(Vertices vertices, float collinearityTolerance = 0)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The polygon that needs simplification.
+  - name: collinearityTolerance
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The collinearity tolerance.
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: A simplified polygon.
+- api3: DouglasPeuckerSimplify(Vertices, float)
+  id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_DouglasPeuckerSimplify_Alis_Core_Physic_Common_Vertices_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L78
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.DouglasPeuckerSimplify(Alis.Core.Physic.Common.Vertices,System.Single)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.DouglasPeuckerSimplify(Alis.Core.Physic.Common.Vertices,System.Single)
+- markdown: >-
+    Ramer-Douglas-Peucker polygon simplification algorithm. This is the general recursive version that does not use the
+
+    speed-up technique by using the Melkman convex hull.
+
+    If you pass in 0, it will remove all collinear points.
+- code: public static Vertices DouglasPeuckerSimplify(Vertices vertices, float distanceTolerance)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+  - name: distanceTolerance
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The simplified polygon
+- api3: MergeIdenticalPoints(Vertices)
+  id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_MergeIdenticalPoints_Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L224
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.MergeIdenticalPoints(Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.MergeIdenticalPoints(Alis.Core.Physic.Common.Vertices)
+- markdown: Merges the identical points in the polygon.
+- code: public static Vertices MergeIdenticalPoints(Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+- api3: MergeParallelEdges(Vertices, float)
+  id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_MergeParallelEdges_Alis_Core_Physic_Common_Vertices_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L151
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.MergeParallelEdges(Alis.Core.Physic.Common.Vertices,System.Single)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.MergeParallelEdges(Alis.Core.Physic.Common.Vertices,System.Single)
+- markdown: Merges all parallel edges in the list of vertices
+- code: public static Vertices MergeParallelEdges(Vertices vertices, float tolerance)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices.
+  - name: tolerance
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The tolerance.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+- api3: ReduceByArea(Vertices, float)
+  id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_ReduceByArea_Alis_Core_Physic_Common_Vertices_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L299
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByArea(Alis.Core.Physic.Common.Vertices,System.Single)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByArea(Alis.Core.Physic.Common.Vertices,System.Single)
+- markdown: >-
+    Simplify the polygon by removing all points that in pairs of 3 have an area less than the tolerance.
+
+    Pass in 0 as tolerance, and it will only remove collinear points.
+- code: public static Vertices ReduceByArea(Vertices vertices, float areaTolerance)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: ''
+  - name: areaTolerance
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: ''
+- api3: ReduceByDistance(Vertices, float)
+  id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_ReduceByDistance_Alis_Core_Physic_Common_Vertices_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L241
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByDistance(Alis.Core.Physic.Common.Vertices,System.Single)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByDistance(Alis.Core.Physic.Common.Vertices,System.Single)
+- markdown: Reduces the polygon by distance.
+- code: public static Vertices ReduceByDistance(Vertices vertices, float distance)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices.
+  - name: distance
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The distance between points. Points closer than this will be removed.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+- api3: ReduceByNth(Vertices, int)
+  id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_ReduceByNth_Alis_Core_Physic_Common_Vertices_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L271
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByNth(Alis.Core.Physic.Common.Vertices,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByNth(Alis.Core.Physic.Common.Vertices,System.Int32)
+- markdown: Reduces the polygon by removing the Nth vertex in the vertices list.
+- code: public static Vertices ReduceByNth(Vertices vertices, int nth)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices.
+  - name: nth
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: 'The Nth point to remove. Example: 5.'
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: ''
+- api3: SimplifySection(Vertices, int, int, bool[], float)
+  id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_SimplifySection_Alis_Core_Physic_Common_Vertices_System_Int32_System_Int32_System_Boolean___System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L109
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.SimplifySection(Alis.Core.Physic.Common.Vertices,System.Int32,System.Int32,System.Boolean[],System.Single)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.SimplifySection(Alis.Core.Physic.Common.Vertices,System.Int32,System.Int32,System.Boolean[],System.Single)
+- markdown: Simplifies the section using the specified vertices
+- code: private static void SimplifySection(Vertices vertices, int i, int j, bool[] usePoint, float distanceTolerance)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+  - name: i
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: j
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: usePoint
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    - '['
+    - ']'
+    description: The use point
+  - name: distanceTolerance
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The distance tolerance
+languageId: csharp
+metadata:
+  description: Provides a set of tools to simplify polygons in various ways.

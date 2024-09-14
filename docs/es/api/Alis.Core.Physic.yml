@@ -12,21 +12,18 @@ body:
       text: Alis.Core.Physic.Collision
       url: Alis.Core.Physic.Collision.html
   - type:
-      text: Alis.Core.Physic.Config
-      url: Alis.Core.Physic.Config.html
+      text: Alis.Core.Physic.Common
+      url: Alis.Core.Physic.Common.html
+  - type:
+      text: Alis.Core.Physic.Controllers
+      url: Alis.Core.Physic.Controllers.html
   - type:
       text: Alis.Core.Physic.Dynamics
       url: Alis.Core.Physic.Dynamics.html
-  - type:
-      text: Alis.Core.Physic.Figure
-      url: Alis.Core.Physic.Figure.html
-  - type:
-      text: Alis.Core.Physic.Shared
-      url: Alis.Core.Physic.Shared.html
 - h3: Classes
 - parameters:
   - type:
-      text: World
-      url: Alis.Core.Physic.World.html
-    description: The world class manages all physics entities, dynamic simulation, and asynchronous queries.
+      text: Settings
+      url: Alis.Core.Physic.Settings.html
+    description: The settings class
 languageId: csharp

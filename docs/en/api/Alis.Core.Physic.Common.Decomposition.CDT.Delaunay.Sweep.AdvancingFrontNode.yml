@@ -1,0 +1,152 @@
+### YamlMime:ApiPage
+title: Class AdvancingFrontNode
+body:
+- api1: Class AdvancingFrontNode
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L35
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The advancing front node class
+- code: internal class AdvancingFrontNode
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: AdvancingFrontNode
+    url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: AdvancingFrontNode(TriangulationPoint)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode__ctor_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L66
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.#ctor(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.#ctor(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode" data-throw-if-not-resolved="false"></xref> class
+- code: public AdvancingFrontNode(TriangulationPoint point)
+- h4: Parameters
+- parameters:
+  - name: point
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: The point
+- h2: Fields
+- api3: Next
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_Next
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L40
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Next
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Next
+- markdown: The next
+- code: public AdvancingFrontNode Next
+- h4: Field Value
+- parameters:
+  - type:
+    - text: AdvancingFrontNode
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html
+- api3: Point
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_Point
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L45
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Point
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Point
+- markdown: The point
+- code: public TriangulationPoint Point
+- h4: Field Value
+- parameters:
+  - type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+- api3: Prev
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_Prev
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L50
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Prev
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Prev
+- markdown: The prev
+- code: public AdvancingFrontNode Prev
+- h4: Field Value
+- parameters:
+  - type:
+    - text: AdvancingFrontNode
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html
+- api3: Triangle
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_Triangle
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L55
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Triangle
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Triangle
+- markdown: The triangle
+- code: public DelaunayTriangle Triangle
+- h4: Field Value
+- parameters:
+  - type:
+    - text: DelaunayTriangle
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html
+- api3: Value
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_Value
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L60
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Value
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Value
+- markdown: The value
+- code: public double Value
+- h4: Field Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- h2: Properties
+- api3: HasNext
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_HasNext
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L75
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.HasNext
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.HasNext
+- markdown: Gets the value of the has next
+- code: public bool HasNext { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: HasPrev
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_HasPrev
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L80
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.HasPrev
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.HasPrev
+- markdown: Gets the value of the has prev
+- code: public bool HasPrev { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+languageId: csharp
+metadata:
+  description: The advancing front node class

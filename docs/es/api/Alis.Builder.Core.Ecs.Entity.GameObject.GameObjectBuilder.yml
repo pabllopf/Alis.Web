@@ -15,7 +15,7 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The game object builder class
-- code: 'public class GameObjectBuilder : IBuild<GameObject>, IName<GameObjectBuilder, string>, IAddComponent<GameObjectBuilder, AComponent>, ITransform<GameObjectBuilder, Func<TransformBuilder, Transform>>, IWithTag<GameObjectBuilder, string>'
+- code: 'public class GameObjectBuilder : IBuild<GameObject>, IName<GameObjectBuilder, string>, IIsStatic<GameObjectBuilder, bool>, IAddComponent<GameObjectBuilder, AComponent>, ITransform<GameObjectBuilder, Func<TransformBuilder, Transform>>, IWithTag<GameObjectBuilder, string>'
 - h4: Inheritance
 - inheritance:
   - text: object
@@ -28,6 +28,8 @@ body:
     url: Alis.Core.Aspect.Fluent.IBuild-1.html
   - text: IName<GameObjectBuilder, string>
     url: Alis.Core.Aspect.Fluent.Words.IName-2.html
+  - text: IIsStatic<GameObjectBuilder, bool>
+    url: Alis.Core.Aspect.Fluent.Words.IIsStatic-2.html
   - text: IAddComponent<GameObjectBuilder, AComponent>
     url: Alis.Core.Aspect.Fluent.Words.IAddComponent-2.html
   - text: ITransform<GameObjectBuilder, Func<TransformBuilder, Transform>>
@@ -53,7 +55,7 @@ body:
 - h2: Fields
 - api3: gameObject
   id: Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_gameObject
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L51
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L52
   metadata:
     uid: Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.gameObject
     commentId: F:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.gameObject
@@ -67,7 +69,7 @@ body:
 - h2: Methods
 - api3: AddComponent<T>(Func<T, AComponent>)
   id: Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_AddComponent__1_System_Func___0_Alis_Core_Ecs_Component_AComponent__
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L60
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L61
   metadata:
     uid: Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(System.Func{``0,Alis.Core.Ecs.Component.AComponent})
     commentId: M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(System.Func{``0,Alis.Core.Ecs.Component.AComponent})
@@ -99,7 +101,7 @@ body:
     description: The
 - api3: AddComponent<T>(T)
   id: Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_AddComponent__1___0_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L74
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L75
   metadata:
     uid: Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(``0)
     commentId: M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(``0)
@@ -123,7 +125,7 @@ body:
     description: The
 - api3: Build()
   id: Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_Build
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L85
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L86
   metadata:
     uid: Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Build
     commentId: M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Build
@@ -135,9 +137,44 @@ body:
     - text: GameObject
       url: Alis.Core.Ecs.Entity.GameObject.html
     description: The game object
+- api3: IsStatic()
+  id: Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_IsStatic
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L92
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.IsStatic
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.IsStatic
+- markdown: Ises the static
+- code: public GameObjectBuilder IsStatic()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.html
+    description: The game object builder
+- api3: IsStatic(bool)
+  id: Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_IsStatic_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L103
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.IsStatic(System.Boolean)
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.IsStatic(System.Boolean)
+- markdown: Ises the static using the specified value
+- code: public GameObjectBuilder IsStatic(bool value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.html
+    description: The game object builder
 - api3: Name(string)
   id: Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_Name_System_String_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L92
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L114
   metadata:
     uid: Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Name(System.String)
     commentId: M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Name(System.String)
@@ -158,7 +195,7 @@ body:
     description: The game object builder
 - api3: Transform(Func<TransformBuilder, Transform>)
   id: Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_Transform_System_Func_Alis_Builder_Core_Ecs_Entity_Transform_TransformBuilder_Alis_Core_Aspect_Math_Transform__
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L103
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L125
   metadata:
     uid: Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Transform(System.Func{Alis.Builder.Core.Ecs.Entity.Transform.TransformBuilder,Alis.Core.Aspect.Math.Transform})
     commentId: M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Transform(System.Func{Alis.Builder.Core.Ecs.Entity.Transform.TransformBuilder,Alis.Core.Aspect.Math.Transform})
@@ -187,7 +224,7 @@ body:
     description: The game object builder
 - api3: WithTag(string)
   id: Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_WithTag_System_String_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L114
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L136
   metadata:
     uid: Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.WithTag(System.String)
     commentId: M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.WithTag(System.String)

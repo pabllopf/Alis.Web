@@ -1,0 +1,119 @@
+### YamlMime:ApiPage
+title: Class DynamicTreeBroadPhase
+body:
+- api1: Class DynamicTreeBroadPhase
+  id: Alis_Core_Physic_Collision_DynamicTreeBroadPhase
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/DynamicTreeBroadPhase.cs#L41
+  metadata:
+    uid: Alis.Core.Physic.Collision.DynamicTreeBroadPhase
+    commentId: T:Alis.Core.Physic.Collision.DynamicTreeBroadPhase
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collision
+      url: Alis.Core.Physic.Collision.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    The broad-phase is used for computing pairs and performing volume queries and ray casts.
+
+    This broad-phase does not persist pairs. Instead, this reports potentially new pairs.
+
+    It is up to the client to consume the new pairs and to track subsequent overlap.
+- code: 'public class DynamicTreeBroadPhase : DynamicTreeBroadPhase<FixtureProxy>, IBroadPhase, IBroadPhase<FixtureProxy>'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: DynamicTreeBroadPhase<FixtureProxy>
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html
+  - text: DynamicTreeBroadPhase
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase.html
+- h4: Implements
+- list:
+  - text: IBroadPhase
+    url: Alis.Core.Physic.Collision.IBroadPhase.html
+  - text: IBroadPhase<FixtureProxy>
+    url: Alis.Core.Physic.Collision.IBroadPhase-1.html
+- h4: Inherited Members
+- list:
+  - text: DynamicTreeBroadPhase<FixtureProxy>.NullProxy
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_NullProxy
+  - text: DynamicTreeBroadPhase<FixtureProxy>._queryCallbackCache
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1__queryCallbackCache
+  - text: DynamicTreeBroadPhase<FixtureProxy>._tree
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1__tree
+  - text: DynamicTreeBroadPhase<FixtureProxy>._moveBuffer
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1__moveBuffer
+  - text: DynamicTreeBroadPhase<FixtureProxy>._moveCapacity
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1__moveCapacity
+  - text: DynamicTreeBroadPhase<FixtureProxy>._moveCount
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1__moveCount
+  - text: DynamicTreeBroadPhase<FixtureProxy>._pairBuffer
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1__pairBuffer
+  - text: DynamicTreeBroadPhase<FixtureProxy>._pairCapacity
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1__pairCapacity
+  - text: DynamicTreeBroadPhase<FixtureProxy>._pairCount
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1__pairCount
+  - text: DynamicTreeBroadPhase<FixtureProxy>._queryProxyId
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1__queryProxyId
+  - text: DynamicTreeBroadPhase<FixtureProxy>.TreeQuality
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_TreeQuality
+  - text: DynamicTreeBroadPhase<FixtureProxy>.TreeBalance
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_TreeBalance
+  - text: DynamicTreeBroadPhase<FixtureProxy>.TreeHeight
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_TreeHeight
+  - text: DynamicTreeBroadPhase<FixtureProxy>.ProxyCount
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_ProxyCount
+  - text: DynamicTreeBroadPhase<FixtureProxy>.AddProxy(ref AABB)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_AddProxy_Alis_Core_Physic_Collision_AABB__
+  - text: DynamicTreeBroadPhase<FixtureProxy>.RemoveProxy(int)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_RemoveProxy_System_Int32_
+  - text: DynamicTreeBroadPhase<FixtureProxy>.MoveProxy(int, ref AABB, Vector2)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_MoveProxy_System_Int32_Alis_Core_Physic_Collision_AABB__Alis_Core_Aspect_Math_Vector_Vector2_
+  - text: DynamicTreeBroadPhase<FixtureProxy>.TouchProxy(int)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_TouchProxy_System_Int32_
+  - text: DynamicTreeBroadPhase<FixtureProxy>.GetFatAABB(int, out AABB)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_GetFatAABB_System_Int32_Alis_Core_Physic_Collision_AABB__
+  - text: DynamicTreeBroadPhase<FixtureProxy>.SetProxy(int, ref FixtureProxy)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_SetProxy_System_Int32__0__
+  - text: DynamicTreeBroadPhase<FixtureProxy>.GetProxy(int)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_GetProxy_System_Int32_
+  - text: DynamicTreeBroadPhase<FixtureProxy>.TestOverlap(int, int)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_TestOverlap_System_Int32_System_Int32_
+  - text: DynamicTreeBroadPhase<FixtureProxy>.UpdatePairs(BroadphaseDelegate)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_UpdatePairs_Alis_Core_Physic_Collision_BroadphaseDelegate_
+  - text: DynamicTreeBroadPhase<FixtureProxy>.Query(BroadPhaseQueryCallback, ref AABB)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_Query_Alis_Core_Physic_Collision_BroadPhaseQueryCallback_Alis_Core_Physic_Collision_AABB__
+  - text: DynamicTreeBroadPhase<FixtureProxy>.RayCast(BroadPhaseRayCastCallback, ref RayCastInput)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_RayCast_Alis_Core_Physic_Collision_BroadPhaseRayCastCallback_Alis_Core_Physic_Collision_RayCastInput__
+  - text: DynamicTreeBroadPhase<FixtureProxy>.ShiftOrigin(Vector2)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_ShiftOrigin_Alis_Core_Aspect_Math_Vector_Vector2_
+  - text: DynamicTreeBroadPhase<FixtureProxy>.BufferMove(int)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_BufferMove_System_Int32_
+  - text: DynamicTreeBroadPhase<FixtureProxy>.UnBufferMove(int)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_UnBufferMove_System_Int32_
+  - text: DynamicTreeBroadPhase<FixtureProxy>.QueryCallback(int)
+    url: Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html#Alis_Core_Physic_Collision_DynamicTreeBroadPhase_1_QueryCallback_System_Int32_
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+languageId: csharp
+metadata:
+  description: >-
+    The broad-phase is used for computing pairs and performing volume queries and ray casts.
+
+    This broad-phase does not persist pairs. Instead, this reports potentially new pairs.
+
+    It is up to the client to consume the new pairs and to track subsequent overlap.

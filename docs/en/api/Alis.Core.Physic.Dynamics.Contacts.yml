@@ -1,0 +1,73 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Physic.Dynamics.Contacts
+body:
+- api1: Namespace Alis.Core.Physic.Dynamics.Contacts
+  id: Alis_Core_Physic_Dynamics_Contacts
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Contacts
+    commentId: N:Alis.Core.Physic.Dynamics.Contacts
+- h3: Classes
+- parameters:
+  - type:
+      text: Contact
+      url: Alis.Core.Physic.Dynamics.Contacts.Contact.html
+    description: >-
+      The class manages contact between two shapes. A contact exists for each overlapping
+
+      AABB in the broad-phase (except if filtered). Therefore a contact object may exist
+
+      that has no contact points.
+  - type:
+      text: ContactEdge
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactEdge.html
+    description: >-
+      A contact edge is used to connect bodies and contacts together
+
+      in a contact graph where each body is a node and each contact
+
+      is an edge. A contact edge belongs to a doubly linked list
+
+      maintained in each attached body. Each contact has two contact
+
+      nodes, one for each attached body.
+  - type:
+      text: ContactListHead
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactListHead.html
+    description: Head of a circular doubly linked list.
+  - type:
+      text: ContactPositionConstraint
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactPositionConstraint.html
+    description: The contact position constraint class
+  - type:
+      text: ContactSolver
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.html
+    description: The contact solver class
+  - type:
+      text: ContactVelocityConstraint
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactVelocityConstraint.html
+    description: The contact velocity constraint class
+  - type:
+      text: ContactSolver.PositionSolverManifold
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.PositionSolverManifold.html
+    description: The position solver manifold class
+  - type:
+      text: VelocityConstraintPoint
+      url: Alis.Core.Physic.Dynamics.Contacts.VelocityConstraintPoint.html
+    description: The velocity constraint point class
+  - type:
+      text: ContactSolver.WorldManifold
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.WorldManifold.html
+    description: The world manifold class
+- h3: Structs
+- parameters:
+  - type:
+      text: ContactListHead.ContactEnumerator
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactListHead.ContactEnumerator.html
+    description: The contact enumerator
+- h3: Enums
+- parameters:
+  - type:
+      text: Contact.ContactType
+      url: Alis.Core.Physic.Dynamics.Contacts.Contact.ContactType.html
+    description: The contact type enum
+languageId: csharp

@@ -1,0 +1,32 @@
+### YamlMime:ApiPage
+title: Delegate BroadPhaseQueryCallback
+body:
+- api1: Delegate BroadPhaseQueryCallback
+  id: Alis_Core_Physic_Collision_BroadPhaseQueryCallback
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/BroadPhaseQueryCallback.cs#L35
+  metadata:
+    uid: Alis.Core.Physic.Collision.BroadPhaseQueryCallback
+    commentId: T:Alis.Core.Physic.Collision.BroadPhaseQueryCallback
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collision
+      url: Alis.Core.Physic.Collision.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The broad phase query callback
+- code: public delegate bool BroadPhaseQueryCallback(int proxyId)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+languageId: csharp
+metadata:
+  description: The broad phase query callback

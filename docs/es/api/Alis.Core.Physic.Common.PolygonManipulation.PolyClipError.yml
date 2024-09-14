@@ -1,0 +1,43 @@
+### YamlMime:ApiPage
+title: Enum PolyClipError
+body:
+- api1: Enum PolyClipError
+  id: Alis_Core_Physic_Common_PolygonManipulation_PolyClipError
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/PolyClipError.cs#L35
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.PolyClipError
+    commentId: T:Alis.Core.Physic.Common.PolygonManipulation.PolyClipError
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.PolygonManipulation
+      url: Alis.Core.Physic.Common.PolygonManipulation.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The poly clip error enum
+- code: public enum PolyClipError
+- h2: Fields
+- parameters:
+  - name: None
+    default: "0"
+    description: >+
+      The none poly clip error
+
+  - name: DegeneratedOutput
+    default: "1"
+    description: >+
+      The degenerated output poly clip error
+
+  - name: NonSimpleInput
+    default: "2"
+    description: >+
+      The non simple input poly clip error
+
+  - name: BrokenResult
+    default: "3"
+    description: >+
+      The broken result poly clip error
+
+languageId: csharp
+metadata:
+  description: The poly clip error enum

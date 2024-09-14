@@ -1,0 +1,75 @@
+### YamlMime:ApiPage
+title: Struct ShapeData
+body:
+- api1: Struct ShapeData
+  id: Alis_Core_Physic_Common_PhysicsLogic_ShapeData
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PhysicsLogic/ShapeData.cs#L37
+  metadata:
+    uid: Alis.Core.Physic.Common.PhysicsLogic.ShapeData
+    commentId: T:Alis.Core.Physic.Common.PhysicsLogic.ShapeData
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.PhysicsLogic
+      url: Alis.Core.Physic.Common.PhysicsLogic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The shape data
+- code: internal struct ShapeData
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Body
+  id: Alis_Core_Physic_Common_PhysicsLogic_ShapeData_Body
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PhysicsLogic/ShapeData.cs#L42
+  metadata:
+    uid: Alis.Core.Physic.Common.PhysicsLogic.ShapeData.Body
+    commentId: F:Alis.Core.Physic.Common.PhysicsLogic.ShapeData.Body
+- markdown: The body
+- code: public Body Body
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+- api3: Max
+  id: Alis_Core_Physic_Common_PhysicsLogic_ShapeData_Max
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PhysicsLogic/ShapeData.cs#L47
+  metadata:
+    uid: Alis.Core.Physic.Common.PhysicsLogic.ShapeData.Max
+    commentId: F:Alis.Core.Physic.Common.PhysicsLogic.ShapeData.Max
+- markdown: The max
+- code: public float Max
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Min
+  id: Alis_Core_Physic_Common_PhysicsLogic_ShapeData_Min
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PhysicsLogic/ShapeData.cs#L52
+  metadata:
+    uid: Alis.Core.Physic.Common.PhysicsLogic.ShapeData.Min
+    commentId: F:Alis.Core.Physic.Common.PhysicsLogic.ShapeData.Min
+- markdown: The min
+- code: public float Min
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+languageId: csharp
+metadata:
+  description: The shape data

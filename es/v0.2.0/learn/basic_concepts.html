@@ -317,31 +317,19 @@
 <h1 id="conceptos-básicos">Conceptos Básicos</h1>
 
 <p>Antes de empezar a desarrollar un videojuego en <strong>Alis</strong>, es fundamental comprender algunos conceptos clave que forman la base de este framework. Estos conceptos te ayudarán a estructurar y desarrollar tu videojuego de manera efectiva.</p>
-<h2 id="scene-escena">Scene (Escena)</h2>
+<h2 id="scene">Scene</h2>
 <p>Un videojuego en <strong>Alis</strong> está compuesto por uno o varios escenarios denominados <strong>Scenes</strong> (Escenas). Una escena es el entorno en el que ocurren todas las acciones y eventos del videojuego. Cada <strong>Scene</strong> puede contener múltiples objetos denominados <strong>GameObjects</strong>.</p>
 <ul>
 <li><strong>Ejemplo</strong>: En un juego de plataformas, podrías tener una <strong>Scene</strong> para cada nivel del juego.</li>
 </ul>
-<h2 id="gameobject-objeto-de-juego">GameObject (Objeto de Juego)</h2>
+<h2 id="gameobject">GameObject</h2>
 <p>Un <strong>GameObject</strong> es cualquier entidad dentro de una <strong>Scene</strong>. Estos son los elementos fundamentales de tu videojuego, como personajes, enemigos, plataformas, etc. Los <strong>GameObjects</strong> no tienen un comportamiento propio hasta que les añades <strong>Componentes</strong> que les otorgan características y funcionalidades específicas.</p>
 <ul>
 <li><strong>Ejemplo</strong>: Un personaje principal, una moneda o una plataforma serían considerados <strong>GameObjects</strong>.</li>
 </ul>
-<h2 id="transform-transformación">Transform (Transformación)</h2>
-<p>El <strong>Transform</strong> es una propiedad esencial de los <strong>GameObjects</strong> que define su posición, rotación y escala dentro de la <strong>Scene</strong>. Es decir, el <strong>Transform</strong> determina dónde se encuentra un objeto, cómo está orientado y qué tamaño tiene.</p>
-<ul>
-<li><p><strong>Posición</strong>: Las coordenadas X, Y, Z donde se encuentra el <strong>GameObject</strong> en la <strong>Scene</strong>.</p>
-</li>
-<li><p><strong>Rotación</strong>: La orientación del <strong>GameObject</strong> en la <strong>Scene</strong>.</p>
-</li>
-<li><p><strong>Escala</strong>: El tamaño del <strong>GameObject</strong> en comparación con su tamaño original.</p>
-</li>
-<li><p><strong>Ejemplo</strong>: Si un personaje está ubicado en las coordenadas (5, 2, 0), esa es su posición definida por el <strong>Transform</strong>.</p>
-</li>
-</ul>
-<h2 id="component-componente">Component (Componente)</h2>
+<h2 id="component">Component</h2>
 <p>Un <strong>Component</strong> es una característica especial que se añade a un <strong>GameObject</strong> para darle funcionalidad específica. <strong>Alis</strong> incluye varios componentes predefinidos que aceleran el desarrollo, aunque también es posible crear componentes personalizados según las necesidades del proyecto.</p>
-<h3 id="componentes-predefinidos-en-alis">Componentes Predefinidos en Alis</h3>
+<h3 id="componentes-predefinidos">Componentes Predefinidos</h3>
 <ol>
 <li><p><strong>Sprite</strong>: Este componente permite asignar una imagen a un <strong>GameObject</strong>. Por ejemplo, puedes usar un <strong>Sprite</strong> para darle una apariencia visual a un personaje o a un objeto dentro del juego.</p>
 </li>
@@ -354,8 +342,6 @@
 <li><p><strong>Collision</strong>: Permite generar colisiones, lo que significa que los <strong>GameObjects</strong> pueden interactuar físicamente entre sí. Este componente es esencial para detectar cuándo un personaje choca con una pared o recoge un objeto.</p>
 </li>
 </ol>
-<h2 id="resumen">Resumen</h2>
-<p>Entender estos conceptos básicos es crucial para empezar a trabajar con <strong>Alis</strong> de manera efectiva. <strong>Scenes</strong>, <strong>GameObjects</strong>, <strong>Transforms</strong>, y <strong>Components</strong> forman la columna vertebral de cualquier proyecto en <strong>Alis</strong>. Familiarízate con ellos para aprovechar al máximo las capacidades del framework y comenzar a crear tus propios videojuegos.</p>
 
 </article>
 

@@ -1,0 +1,178 @@
+### YamlMime:ApiPage
+title: Class TriangulationUtil
+body:
+- api1: Class TriangulationUtil
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationUtil
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L36
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.CDT
+      url: Alis.Core.Physic.Common.Decomposition.CDT.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The triangulation util class
+- code: internal class TriangulationUtil
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: TriangulationUtil
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: EPSILON
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationUtil_EPSILON
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L41
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.EPSILON
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.EPSILON
+- markdown: The epsilon
+- code: public static double EPSILON
+- h4: Field Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- h2: Methods
+- api3: InScanArea(TriangulationPoint, TriangulationPoint, TriangulationPoint, TriangulationPoint)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationUtil_InScanArea_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L146
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.InScanArea(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.InScanArea(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+- markdown: Describes whether in scan area
+- code: public static bool InScanArea(TriangulationPoint pa, TriangulationPoint pb, TriangulationPoint pc, TriangulationPoint pd)
+- h4: Parameters
+- parameters:
+  - name: pa
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: The pa
+  - name: pb
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: The pb
+  - name: pc
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: The pc
+  - name: pd
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: The pd
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: Orient2d(TriangulationPoint, TriangulationPoint, TriangulationPoint)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationUtil_Orient2d_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L169
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.Orient2d(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.Orient2d(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+- code: public static Orientation Orient2d(TriangulationPoint pa, TriangulationPoint pb, TriangulationPoint pc)
+- h4: Parameters
+- parameters:
+  - name: pa
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+  - name: pb
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+  - name: pc
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: Orientation
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Orientation.html
+- api3: SmartIncircle(TriangulationPoint, TriangulationPoint, TriangulationPoint, TriangulationPoint)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationUtil_SmartIncircle_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L67
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.SmartIncircle(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.SmartIncircle(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+- markdown: >-
+    Requirements:
+
+    1. a,b and c form a triangle.
+
+    2. a and d is know to be on opposite side of bc
+
+    <pre><code class="lang-csharp">      a
+          +
+         / \
+        /   \
+      b/     \c
+      +-------+ 
+     /    B    \  
+    /           \</code></pre>
+
+    Facts:
+
+    d has to be in area B to have a chance to be inside the circle formed by a,b and c
+
+    d is outside B if orient2d(a,b,d) or orient2d(c,a,d) is CW
+
+    This preknowledge gives us a way to optimize the incircle test
+- code: public static bool SmartIncircle(TriangulationPoint pa, TriangulationPoint pb, TriangulationPoint pc, TriangulationPoint pd)
+- h4: Parameters
+- parameters:
+  - name: pa
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: triangle point, opposite d
+  - name: pb
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: triangle point
+  - name: pc
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: triangle point
+  - name: pd
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: point opposite a
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: true if d is inside circle, false if on circle edge
+languageId: csharp
+metadata:
+  description: The triangulation util class

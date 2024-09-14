@@ -1,0 +1,164 @@
+### YamlMime:ApiPage
+title: Class SeidelDecomposer
+body:
+- api1: Class SeidelDecomposer
+  id: Alis_Core_Physic_Common_Decomposition_SeidelDecomposer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/SeidelDecomposer.cs#L56
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.SeidelDecomposer
+    commentId: T:Alis.Core.Physic.Common.Decomposition.SeidelDecomposer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition
+      url: Alis.Core.Physic.Common.Decomposition.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Convex decomposition algorithm created by Raimund Seidel
+
+    Properties:
+
+    - Decompose the polygon into trapezoids, then triangulate.
+
+    - To use the trapezoid data, use ConvexPartitionTrapezoid()
+
+    - Generate a lot of garbage due to incapsulation of the Poly2Tri library.
+
+    - Running time is O(n log n), n = number of vertices.
+
+    - Running time is almost linear for most simple polygons.
+
+    - Does not care about winding order.
+
+    For more information, see Raimund Seidel's paper "A simple and fast incremental randomized
+
+    algorithm for computing trapezoidal decompositions and for triangulating polygons"
+
+    See also: "Computational Geometry", 3rd edition, by Mark de Berg et al, Chapter 6.2
+
+    "Computational Geometry in C", 2nd edition, by Joseph O'Rourke
+
+    Original code from the Poly2Tri project by Mason Green.
+
+    http://code.google.com/p/poly2tri/source/browse?repo=archive#hg/scala/src/org/poly2tri/seidel
+
+    This implementation is from Dec 14, 2010
+- code: internal static class SeidelDecomposer
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: SeidelDecomposer
+    url: Alis.Core.Physic.Common.Decomposition.SeidelDecomposer.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: ConvexPartition(Vertices, float)
+  id: Alis_Core_Physic_Common_Decomposition_SeidelDecomposer_ConvexPartition_Alis_Core_Physic_Common_Vertices_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/SeidelDecomposer.cs#L64
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.SeidelDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices,System.Single)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.SeidelDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices,System.Single)
+- markdown: Decompose the polygon into several smaller non-concave polygons.
+- code: public static List<Vertices> ConvexPartition(Vertices vertices, float sheer = 0.001)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The polygon to decompose.
+  - name: sheer
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The sheer to use if you get bad results, try using a higher value.
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    - '>'
+    description: A list of triangles
+- api3: ConvexPartitionTrapezoid(Vertices, float)
+  id: Alis_Core_Physic_Common_Decomposition_SeidelDecomposer_ConvexPartitionTrapezoid_Alis_Core_Physic_Common_Vertices_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/SeidelDecomposer.cs#L100
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.SeidelDecomposer.ConvexPartitionTrapezoid(Alis.Core.Physic.Common.Vertices,System.Single)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.SeidelDecomposer.ConvexPartitionTrapezoid(Alis.Core.Physic.Common.Vertices,System.Single)
+- markdown: Decompose the polygon into several smaller non-concave polygons.
+- code: public static List<Vertices> ConvexPartitionTrapezoid(Vertices vertices, float sheer = 0.001)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The polygon to decompose.
+  - name: sheer
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The sheer to use if you get bad results, try using a higher value.
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    - '>'
+    description: A list of trapezoids
+languageId: csharp
+metadata:
+  description: >-
+    Convex decomposition algorithm created by Raimund Seidel
+
+    Properties:
+
+    - Decompose the polygon into trapezoids, then triangulate.
+
+    - To use the trapezoid data, use ConvexPartitionTrapezoid()
+
+    - Generate a lot of garbage due to incapsulation of the Poly2Tri library.
+
+    - Running time is O(n log n), n = number of vertices.
+
+    - Running time is almost linear for most simple polygons.
+
+    - Does not care about winding order.
+
+    For more information, see Raimund Seidel's paper "A simple and fast incremental randomized
+
+    algorithm for computing trapezoidal decompositions and for triangulating polygons"
+
+    See also: "Computational Geometry", 3rd edition, by Mark de Berg et al, Chapter 6.2
+
+    "Computational Geometry in C", 2nd edition, by Joseph O'Rourke
+
+    Original code from the Poly2Tri project by Mason Green.
+
+    http://code.google.com/p/poly2tri/source/browse?repo=archive#hg/scala/src/org/poly2tri/seidel
+
+    This implementation is from Dec 14, 2010

@@ -365,6 +365,14 @@ body:
     commentId: M:Alis.Core.Ecs.System.Context.OnInit
 - markdown: Ons the init
 - code: public void OnInit()
+- api3: OnPhysicUpdate()
+  id: Alis_Core_Ecs_System_Context_OnPhysicUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Context.cs#L375
+  metadata:
+    uid: Alis.Core.Ecs.System.Context.OnPhysicUpdate
+    commentId: M:Alis.Core.Ecs.System.Context.OnPhysicUpdate
+- markdown: Ons the physic update
+- code: public void OnPhysicUpdate()
 - api3: OnStart()
   id: Alis_Core_Ecs_System_Context_OnStart
   src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Context.cs#L221

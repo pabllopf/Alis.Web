@@ -316,7 +316,7 @@
         </div>
 
         <article data-uid="">
-<h1 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager' data-commentid='T:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager'>Class GraphicManager    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L56'><i class='bi bi-code-slash'></i></a></h1>
+<h1 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager' data-commentid='T:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager'>Class GraphicManager    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L54'><i class='bi bi-code-slash'></i></a></h1>
  <div class="facts text-secondary">
 <dl><dt>Namespace</dt><dd><a href='Alis.Core.Ecs.System.Manager.Graphic.html'>Alis.Core.Ecs.System.Manager.Graphic</a></dd></dl><dl><dt>Assembly</dt><dd>Alis.dll</dd></dl>
 </div><p>The graphic manager base class</p>
@@ -419,6 +419,9 @@
 <a href='Alis.Core.Ecs.System.Manager.AManager.html#Alis_Core_Ecs_System_Manager_AManager_OnDestroy'>AManager.OnDestroy()</a>
 </div>
 <div>
+<a href='Alis.Core.Ecs.System.Manager.AManager.html#Alis_Core_Ecs_System_Manager_AManager_OnPhysicUpdate'>AManager.OnPhysicUpdate()</a>
+</div>
+<div>
 <a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)'>object.Equals(object?)</a>
 </div>
 <div>
@@ -440,9 +443,9 @@
 <a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
 </div>
 
-</dd></dl><h2 class='section'>Constructors</h2><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager__ctor'>GraphicManager()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L61'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h2 class='section'>Constructors</h2><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager__ctor'>GraphicManager()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L64'><i class='bi bi-code-slash'></i></a></h3>
  <p>Initializes a new instance of the <span class="xref">Alis.Core.Ecs.System.Manager.Graphic.GraphicManager</span> class</p>
-<pre><code class='lang-csharp'>public GraphicManager()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor(System.Collections.Generic.List{Alis.Core.Ecs.Component.Collider.BoxCollider},System.IntPtr,Alis.Core.Aspect.Math.Vector.Vector2,System.IntPtr,System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Sprite},System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Camera})' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor(System.Collections.Generic.List{Alis.Core.Ecs.Component.Collider.BoxCollider},System.IntPtr,Alis.Core.Aspect.Math.Vector.Vector2,System.IntPtr,System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Sprite},System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Camera})' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager__ctor_System_Collections_Generic_List_Alis_Core_Ecs_Component_Collider_BoxCollider__System_IntPtr_Alis_Core_Aspect_Math_Vector_Vector2_System_IntPtr_System_Collections_Generic_List_Alis_Core_Ecs_Component_Render_Sprite__System_Collections_Generic_List_Alis_Core_Ecs_Component_Render_Camera__'>GraphicManager(List&lt;BoxCollider&gt;, IntPtr, Vector2, IntPtr, List&lt;Sprite&gt;, List&lt;Camera&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L80'><i class='bi bi-code-slash'></i></a></h3>
+<pre><code class='lang-csharp'>public GraphicManager()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor(System.Collections.Generic.List{Alis.Core.Ecs.Component.Collider.BoxCollider},System.IntPtr,Alis.Core.Aspect.Math.Vector.Vector2,System.IntPtr,System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Sprite},System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Camera})' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor(System.Collections.Generic.List{Alis.Core.Ecs.Component.Collider.BoxCollider},System.IntPtr,Alis.Core.Aspect.Math.Vector.Vector2,System.IntPtr,System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Sprite},System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Camera})' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager__ctor_System_Collections_Generic_List_Alis_Core_Ecs_Component_Collider_BoxCollider__System_IntPtr_Alis_Core_Aspect_Math_Vector_Vector2_System_IntPtr_System_Collections_Generic_List_Alis_Core_Ecs_Component_Render_Sprite__System_Collections_Generic_List_Alis_Core_Ecs_Component_Render_Camera__'>GraphicManager(List&lt;BoxCollider&gt;, IntPtr, Vector2, IntPtr, List&lt;Sprite&gt;, List&lt;Camera&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L83'><i class='bi bi-code-slash'></i></a></h3>
  <p>Initializes a new instance of the <span class="xref">Alis.Core.Ecs.System.Manager.Graphic.GraphicManager</span> class</p>
 <pre><code class='lang-csharp'>public GraphicManager(List&lt;BoxCollider&gt; colliderBases, IntPtr window, Vector2 defaultSize, IntPtr renderer, List&lt;Sprite&gt; sprites, List&lt;Camera&gt; cameras)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>colliderBases</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1'>List</a>&lt;<a href='Alis.Core.Ecs.Component.Collider.BoxCollider.html'>BoxCollider</a>&gt;  </dt>
 <dd>
@@ -480,7 +483,14 @@
 
 <p>The cameras</p>
 
-</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Cameras' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Cameras' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Cameras'>Cameras    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L124'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.PixelsPerMeter' data-commentid='F:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.PixelsPerMeter' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_PixelsPerMeter'>PixelsPerMeter    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L59'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The pixels per meter</p>
+<pre><code class='lang-csharp'>private const float PixelsPerMeter = 32</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Cameras' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Cameras' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Cameras'>Cameras    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L127'><i class='bi bi-code-slash'></i></a></h3>
  <p>Gets or sets the value of the cameras</p>
 <pre><code class='lang-csharp'>[JsonPropertyName(&quot;_Cameras_&quot;)]
 public List&lt;Camera&gt; Cameras { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1'>List</a>&lt;<a href='Alis.Core.Ecs.Component.Render.Camera.html'>Camera</a>&gt;  </dt>
@@ -488,7 +498,7 @@ public List&lt;Camera&gt; Cameras { get; }</code></pre><h4 class='section'>Prope
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.ColliderBases' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.ColliderBases' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_ColliderBases'>ColliderBases    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L94'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.ColliderBases' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.ColliderBases' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_ColliderBases'>ColliderBases    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L97'><i class='bi bi-code-slash'></i></a></h3>
  <p>The box collider</p>
 <pre><code class='lang-csharp'>[JsonPropertyName(&quot;_ColliderBases_&quot;)]
 public List&lt;BoxCollider&gt; ColliderBases { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1'>List</a>&lt;<a href='Alis.Core.Ecs.Component.Collider.BoxCollider.html'>BoxCollider</a>&gt;  </dt>
@@ -496,7 +506,7 @@ public List&lt;BoxCollider&gt; ColliderBases { get; set; }</code></pre><h4 class
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.DefaultSize' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.DefaultSize' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_DefaultSize'>DefaultSize    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L106'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.DefaultSize' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.DefaultSize' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_DefaultSize'>DefaultSize    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L109'><i class='bi bi-code-slash'></i></a></h3>
  <p>The default size</p>
 <pre><code class='lang-csharp'>[JsonPropertyName(&quot;_DefaultSize_&quot;)]
 public Vector2 DefaultSize { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
@@ -504,7 +514,7 @@ public Vector2 DefaultSize { get; set; }</code></pre><h4 class='section'>Propert
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Renderer' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Renderer' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Renderer'>Renderer    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L112'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Renderer' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Renderer' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Renderer'>Renderer    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L115'><i class='bi bi-code-slash'></i></a></h3>
  <p>The renderWindow</p>
 <pre><code class='lang-csharp'>[JsonPropertyName(&quot;_Renderer_&quot;, true, true)]
 public IntPtr Renderer { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.intptr'>IntPtr</a>  </dt>
@@ -512,7 +522,7 @@ public IntPtr Renderer { get; set; }</code></pre><h4 class='section'>Property Va
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Sprites' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Sprites' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Sprites'>Sprites    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L118'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Sprites' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Sprites' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Sprites'>Sprites    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L121'><i class='bi bi-code-slash'></i></a></h3>
  <p>Gets or sets the value of the sprites</p>
 <pre><code class='lang-csharp'>[JsonPropertyName(&quot;_Sprites_&quot;)]
 public List&lt;Sprite&gt; Sprites { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1'>List</a>&lt;<a href='Alis.Core.Ecs.Component.Render.Sprite.html'>Sprite</a>&gt;  </dt>
@@ -520,7 +530,7 @@ public List&lt;Sprite&gt; Sprites { get; set; }</code></pre><h4 class='section'>
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Window' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Window' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Window'>Window    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L100'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Window' data-commentid='P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Window' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Window'>Window    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L103'><i class='bi bi-code-slash'></i></a></h3>
  <p>The window</p>
 <pre><code class='lang-csharp'>[JsonPropertyName(&quot;_Window_&quot;, true, true)]
 public IntPtr Window { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.intptr'>IntPtr</a>  </dt>
@@ -528,7 +538,7 @@ public IntPtr Window { get; set; }</code></pre><h4 class='section'>Property Valu
 
 
 
-</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Sprite)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Sprite)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Render_Sprite_'>Attach(Sprite)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L311'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Sprite)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Sprite)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Render_Sprite_'>Attach(Sprite)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L343'><i class='bi bi-code-slash'></i></a></h3>
  <p>Attaches the sprite</p>
 <pre><code class='lang-csharp'>public void Attach(Sprite sprite)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>sprite</code> <a href='Alis.Core.Ecs.Component.Render.Sprite.html'>Sprite</a>  </dt>
 <dd>
@@ -536,7 +546,7 @@ public IntPtr Window { get; set; }</code></pre><h4 class='section'>Property Valu
 
 <p>The sprite</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Collider.BoxCollider)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Collider.BoxCollider)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Collider_BoxCollider_'>Attach(BoxCollider)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L331'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Collider.BoxCollider)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Collider.BoxCollider)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Collider_BoxCollider_'>Attach(BoxCollider)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L363'><i class='bi bi-code-slash'></i></a></h3>
  <p>Attaches the collider</p>
 <pre><code class='lang-csharp'>public void Attach(BoxCollider collider)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>collider</code> <a href='Alis.Core.Ecs.Component.Collider.BoxCollider.html'>BoxCollider</a>  </dt>
 <dd>
@@ -544,7 +554,7 @@ public IntPtr Window { get; set; }</code></pre><h4 class='section'>Property Valu
 
 <p>The collider</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Camera)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Camera)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Render_Camera_'>Attach(Camera)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L340'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Camera)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Camera)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Render_Camera_'>Attach(Camera)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L372'><i class='bi bi-code-slash'></i></a></h3>
  <p>Attaches the camera</p>
 <pre><code class='lang-csharp'>public void Attach(Camera camera)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>camera</code> <a href='Alis.Core.Ecs.Component.Render.Camera.html'>Camera</a>  </dt>
 <dd>
@@ -552,15 +562,15 @@ public IntPtr Window { get; set; }</code></pre><h4 class='section'>Property Valu
 
 <p>The camera</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnEnable' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnEnable' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnEnable'>OnEnable()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L130'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnEnable' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnEnable' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnEnable'>OnEnable()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L133'><i class='bi bi-code-slash'></i></a></h3>
  <p>Ons the enable</p>
-<pre><code class='lang-csharp'>public override void OnEnable()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnInit' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnInit' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnInit'>OnInit()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L138'><i class='bi bi-code-slash'></i></a></h3>
+<pre><code class='lang-csharp'>public override void OnEnable()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnInit' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnInit' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnInit'>OnInit()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L141'><i class='bi bi-code-slash'></i></a></h3>
  <p>Ons the init</p>
-<pre><code class='lang-csharp'>public override void OnInit()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnStart' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnStart' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnStart'>OnStart()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L271'><i class='bi bi-code-slash'></i></a></h3>
+<pre><code class='lang-csharp'>public override void OnInit()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnStart' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnStart' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnStart'>OnStart()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L274'><i class='bi bi-code-slash'></i></a></h3>
  <p>Ons the start</p>
-<pre><code class='lang-csharp'>public override void OnStart()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnUpdate' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnUpdate' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnUpdate'>OnUpdate()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L280'><i class='bi bi-code-slash'></i></a></h3>
+<pre><code class='lang-csharp'>public override void OnStart()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnUpdate' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnUpdate' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnUpdate'>OnUpdate()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L283'><i class='bi bi-code-slash'></i></a></h3>
  <p>Ons the update</p>
-<pre><code class='lang-csharp'>public override void OnUpdate()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Sprite)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Sprite)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Render_Sprite_'>UnAttach(Sprite)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L321'><i class='bi bi-code-slash'></i></a></h3>
+<pre><code class='lang-csharp'>public override void OnUpdate()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Sprite)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Sprite)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Render_Sprite_'>UnAttach(Sprite)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L353'><i class='bi bi-code-slash'></i></a></h3>
  <p>Uns the attach using the specified sprite</p>
 <pre><code class='lang-csharp'>public void UnAttach(Sprite sprite)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>sprite</code> <a href='Alis.Core.Ecs.Component.Render.Sprite.html'>Sprite</a>  </dt>
 <dd>
@@ -568,7 +578,7 @@ public IntPtr Window { get; set; }</code></pre><h4 class='section'>Property Valu
 
 <p>The sprite</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Collider.BoxCollider)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Collider.BoxCollider)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Collider_BoxCollider_'>UnAttach(BoxCollider)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L349'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Collider.BoxCollider)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Collider.BoxCollider)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Collider_BoxCollider_'>UnAttach(BoxCollider)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L381'><i class='bi bi-code-slash'></i></a></h3>
  <p>Uns the attach using the specified collider</p>
 <pre><code class='lang-csharp'>public void UnAttach(BoxCollider collider)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>collider</code> <a href='Alis.Core.Ecs.Component.Collider.BoxCollider.html'>BoxCollider</a>  </dt>
 <dd>
@@ -576,7 +586,7 @@ public IntPtr Window { get; set; }</code></pre><h4 class='section'>Property Valu
 
 <p>The collider</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Camera)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Camera)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Render_Camera_'>UnAttach(Camera)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L358'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Camera)' data-commentid='M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Camera)' id='Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Render_Camera_'>UnAttach(Camera)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L390'><i class='bi bi-code-slash'></i></a></h3>
  <p>Uns the attach using the specified camera</p>
 <pre><code class='lang-csharp'>public void UnAttach(Camera camera)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>camera</code> <a href='Alis.Core.Ecs.Component.Render.Camera.html'>Camera</a>  </dt>
 <dd>

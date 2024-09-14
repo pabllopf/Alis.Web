@@ -3,7 +3,7 @@ title: Class PrismaticJoint
 body:
 - api1: Class PrismaticJoint
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L82
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L97
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint
     commentId: T:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint
@@ -15,21 +15,97 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: >-
-    A prismatic joint. This joint provides one degree of freedom: translation along an axis fixed in bodyA.
+    A prismatic joint. This joint provides one degree of freedom: translation
 
-    Relative rotation is prevented. You can use a joint limit to restrict the range of motion and a joint motor to
+    along an axis fixed in bodyA. Relative rotation is prevented. You can
 
-    drive
+    use a joint limit to restrict the range of motion and a joint motor to
 
-    the motion or to model joint friction.
-
+    drive the motion or to model joint friction.
+- code: 'public class PrismaticJoint : Joint'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Joint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html
+  - text: PrismaticJoint
+    url: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.html
+- h4: Inherited Members
+- list:
+  - text: Joint._breakpoint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpoint
+  - text: Joint._breakpointSquared
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpointSquared
+  - text: Joint._world
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__world
+  - text: Joint.EdgeA
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeA
+  - text: Joint.EdgeB
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeB
+  - text: Joint.Enabled
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Enabled
+  - text: Joint.IslandFlag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IslandFlag
+  - text: Joint.Tag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Tag
+  - text: Joint.World
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_World
+  - text: Joint.JointType
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_JointType
+  - text: Joint.BodyA
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyA
+  - text: Joint.BodyB
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyB
+  - text: Joint.WorldAnchorA
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorA
+  - text: Joint.WorldAnchorB
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorB
+  - text: Joint.CollideConnected
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_CollideConnected
+  - text: Joint.Breakpoint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Breakpoint
+  - text: Joint.Broke
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Broke
+  - text: Joint.GetReactionForce(float)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionForce_System_Single_
+  - text: Joint.GetReactionTorque(float)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionTorque_System_Single_
+  - text: Joint.WakeBodies()
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WakeBodies
+  - text: Joint.IsFixedType()
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IsFixedType
+  - text: Joint.InitVelocityConstraints(ref SolverData)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  - text: Joint.Validate(float)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Validate_System_Single_
+  - text: Joint.SolveVelocityConstraints(ref SolverData)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  - text: Joint.SolvePositionConstraints(ref SolverData)
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
     Linear constraint (point-to-line)
 
     d = p2 - p1 = x2 + r2 - x1 - r1
 
     C = dot(perp, d)
 
-    Cdo = dot(d, cross(w1, perp)) + dot(perp, v2 + cross(w2, r2) - v1 - cross(w1, r1))
+    Cdot = dot(d, cross(w1, perp)) + dot(perp, v2 + cross(w2, r2) - v1 - cross(w1, r1))
 
     = -dot(perp, v1) - dot(cross(d + r1, perp), w1) + dot(perp, v2) + dot(cross(r2, perp), v2)
 
@@ -39,7 +115,7 @@ body:
 
     C = a2 - a1 + a_initial
 
-    Cdo = w2 - w1
+    Cdot = w2 - w1
 
     J = [0 0 -1 0 0 1]
 
@@ -59,133 +135,100 @@ body:
 
     C = dot(ax1, d)
 
-    Cdo = -dot(ax1, v1) - dot(cross(d + r1, ax1), w1) + dot(ax1, v2) + dot(cross(r2, ax1), v2)
+    Cdot = = -dot(ax1, v1) - dot(cross(d + r1, ax1), w1) + dot(ax1, v2) + dot(cross(r2, ax1), v2)
 
     J = [-ax1 -cross(d+r1,ax1) ax1 cross(r2,ax1)]
 
-    Predictive limit is applied even when the limit is not active.
-
-    Prevents a constraint speed that can lead to a constraint error in one time step.
-
-    Want C2 = C1 + h * Cdo &gt;= 0
-
-    Or:
-
-    Cdo + C1/h &gt;= 0
-
-    I do not apply a negative constraint error because that is handled in position correction.
-
-    So:
-
-    Cdo + max(C1, 0)/h &gt;= 0
-
     Block Solver
 
-    We develop a block solver that includes the angular and linear constraints. This makes the limit stiffer.
+    We develop a block solver that includes the joint limit. This makes the limit stiff (inelastic) even
 
-    The Jacobin has 2 rows:
+    when the mass has poor distribution (leading to large torques about the joint anchor points).
 
-    J = [-uT -s1 uT s2] /// linear
+    The Jacobian has 3 rows:
 
-    [0   -1   0  1] /// angular
+    J = [-uT -s1 uT s2] // linear
+
+    [0   -1   0  1] // angular
+
+    [-vT -a1 vT a2] // limit
 
     u = perp
+
+    v = axis
 
     s1 = cross(d + r1, u), s2 = cross(r2, u)
 
     a1 = cross(d + r1, v), a2 = cross(r2, v)
-- code: 'public class PrismaticJoint : Joint'
-- h4: Inheritance
-- inheritance:
-  - text: object
-    url: https://learn.microsoft.com/dotnet/api/system.object
-  - text: Joint
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html
-  - text: PrismaticJoint
-    url: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.html
-- h4: Inherited Members
-- list:
-  - text: Joint._jointType
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__jointType
-  - text: Joint.EdgeA
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeA
-  - text: Joint.EdgeB
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeB
-  - text: Joint.IslandFlag
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IslandFlag
-  - text: Joint.JointType
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_JointType
-  - text: Joint.Enabled
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Enabled
-  - text: Joint.BodyA
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyA
-  - text: Joint.BodyB
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyB
-  - text: Joint.WorldAnchorA
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorA
-  - text: Joint.WorldAnchorB
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorB
-  - text: Joint.UserData
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_UserData
-  - text: Joint.CollideConnected
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_CollideConnected
-  - text: Joint.Breakpoint
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Breakpoint
-  - text: Joint.Broke
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Broke
-  - text: Joint.GetReactionForce(float)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionForce_System_Single_
-  - text: Joint.GetReactionTorque(float)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionTorque_System_Single_
-  - text: Joint.ShiftOrigin(ref Vector2)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_ShiftOrigin_Alis_Core_Aspect_Math_Vector_Vector2__
-  - text: Joint.WakeBodies()
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WakeBodies
-  - text: Joint.IsFixedType()
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IsFixedType
-  - text: Joint.InitVelocityConstraints(ref SolverData)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  - text: Joint.Validate(float)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Validate_System_Single_
-  - text: Joint.SolveVelocityConstraints(ref SolverData)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  - text: Joint.SolvePositionConstraints(ref SolverData)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  - text: Joint.DisableIslandFlag()
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_DisableIslandFlag
-  - text: object.Equals(object?)
-    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  - text: object.Equals(object?, object?)
-    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - text: object.GetHashCode()
-    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - text: object.GetType()
-    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - text: object.MemberwiseClone()
-    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - text: object.ReferenceEquals(object?, object?)
-    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - text: object.ToString()
-    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+
+    M * (v2 - v1) = JT * df
+
+    J * v2 = bias
+
+    v2 = v1 + invM * JT * df
+
+    J * (v1 + invM * JT * df) = bias
+
+    K * df = bias - J * v1 = -Cdot
+
+    K = J * invM * JT
+
+    Cdot = J * v1 - bias
+
+    Now solve for f2.
+
+    df = f2 - f1
+
+    K * (f2 - f1) = -Cdot
+
+    f2 = invK * (-Cdot) + f1
+
+    Clamp accumulated limit impulse.
+
+    lower: f2(3) = max(f2(3), 0)
+
+    upper: f2(3) = min(f2(3), 0)
+
+    Solve for correct f2(1:2)
+
+    K(1:2, 1:2) * f2(1:2) = -Cdot(1:2) - K(1:2,3) * f2(3) + K(1:2,1:3) * f1
+
+    = -Cdot(1:2) - K(1:2,3) * f2(3) + K(1:2,1:2) * f1(1:2) + K(1:2,3) * f1(3)
+
+    K(1:2, 1:2) * f2(1:2) = -Cdot(1:2) - K(1:2,3) * (f2(3) - f1(3)) + K(1:2,1:2) * f1(1:2)
+
+    f2(1:2) = invK(1:2,1:2) * (-Cdot(1:2) - K(1:2,3) * (f2(3) - f1(3))) + f1(1:2)
+
+    Now compute impulse to be applied:
+
+    df = f2 - f1
 - h2: Constructors
+- api3: PrismaticJoint()
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L223
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.#ctor
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Joints.PrismaticJoint" data-throw-if-not-resolved="false"></xref> class
+- code: internal PrismaticJoint()
 - api3: PrismaticJoint(Body, Body, Vector2, Vector2, Vector2, bool)
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L223
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L239
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
 - markdown: >-
-    This requires defining a line of motion using an axis and an anchor point. The definition uses local anchor
+    This requires defining a line of
 
-    points and a local axis so that the initial configuration can violate the constraint slightly. The joint
+    motion using an axis and an anchor point. The definition uses local
 
-    translation is
+    anchor points and a local axis so that the initial configuration
 
-    zero when the local anchor points coincide in world space. Using local anchors and a local axis helps when saving
+    can violate the constraint slightly. The joint translation is zero
 
-    and
+    when the local anchor points coincide in world space. Using local
 
-    loading a game.
+    anchors and a local axis helps when saving and loading a game.
 - code: public PrismaticJoint(Body bodyA, Body bodyB, Vector2 anchorA, Vector2 anchorB, Vector2 axis, bool useWorldCoordinates = false)
 - h4: Parameters
 - parameters:
@@ -222,7 +265,7 @@ body:
     optional: true
 - api3: PrismaticJoint(Body, Body, Vector2, Vector2, bool)
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L238
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L253
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
@@ -256,221 +299,322 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: The use world coordinates
     optional: true
-- api3: PrismaticJoint(Body, Body, JointType, bool, Vector2, Vector2, Vector2, float, bool, float, float, bool, float, float)
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Joints_JointType_System_Boolean_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_System_Boolean_System_Single_System_Single_System_Boolean_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L262
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Joints.JointType,System.Boolean,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Single,System.Boolean,System.Single,System.Single,System.Boolean,System.Single,System.Single)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Joints.JointType,System.Boolean,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Single,System.Boolean,System.Single,System.Single,System.Boolean,System.Single,System.Single)
-- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Joints.PrismaticJoint" data-throw-if-not-resolved="false"></xref> class
-- code: public PrismaticJoint(Body bodyA = null, Body bodyB = null, JointType jointType = JointType.Unknown, bool collideConnected = false, Vector2 localAnchorA = default, Vector2 localAnchorB = default, Vector2 localAxisA = default, float referenceAngle = 0, bool enableLimit = false, float lowerTranslation = 0, float upperTranslation = 0, bool enableMotor = false, float maxMotorForce = 0, float motorSpeed = 0)
-- h4: Parameters
-- parameters:
-  - name: bodyA
-    type:
-    - text: Body
-      url: Alis.Core.Physic.Dynamics.Body.html
-    description: The body
-    optional: true
-  - name: bodyB
-    type:
-    - text: Body
-      url: Alis.Core.Physic.Dynamics.Body.html
-    description: The body
-    optional: true
-  - name: jointType
-    type:
-    - text: JointType
-      url: Alis.Core.Physic.Dynamics.Joints.JointType.html
-    description: The joint type
-    optional: true
-  - name: collideConnected
-    type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The collide connected
-    optional: true
-  - name: localAnchorA
-    type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The local anchor
-    optional: true
-  - name: localAnchorB
-    type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The local anchor
-    optional: true
-  - name: localAxisA
-    type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The local axis
-    optional: true
-  - name: referenceAngle
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The reference angle
-    optional: true
-  - name: enableLimit
-    type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The enable limit
-    optional: true
-  - name: lowerTranslation
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The lower translation
-    optional: true
-  - name: upperTranslation
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The upper translation
-    optional: true
-  - name: enableMotor
-    type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The enable motor
-    optional: true
-  - name: maxMotorForce
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The max motor force
-    optional: true
-  - name: motorSpeed
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The motor speed
-    optional: true
 - h2: Fields
-- api3: a1
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_a1
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L87
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.a1
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.a1
-- markdown: The
-- code: private float a1
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: a2
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_a2
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L87
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.a2
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.a2
-- markdown: The
-- code: private float a2
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: axialMass
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_axialMass
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L92
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.axialMass
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.axialMass
-- markdown: The axial mass
-- code: private float axialMass
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: axis
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_axis
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L97
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.axis
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.axis
-- markdown: The perp
-- code: private Vector2 axis
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: enableLimit
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_enableLimit
+- api3: _a1
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__a1
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L102
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.enableLimit
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.enableLimit
-- markdown: The enable limit
-- code: private bool enableLimit
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._a1
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._a1
+- markdown: The
+- code: private float _a1
 - h4: Field Value
 - parameters:
   - type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: enableMotor
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_enableMotor
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _a2
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__a2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L102
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._a2
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._a2
+- markdown: The
+- code: private float _a2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _axis
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__axis
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L107
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.enableMotor
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.enableMotor
-- markdown: The enable motor
-- code: private bool enableMotor
-- h4: Field Value
-- parameters:
-  - type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: impulse
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_impulse
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L112
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.impulse
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.impulse
-- markdown: The impulse
-- code: private Vector2 impulse
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._axis
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._axis
+- markdown: The perp
+- code: private Vector2 _axis
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: indexA
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_indexA
+- api3: _axis1
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__axis1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L112
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._axis1
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._axis1
+- markdown: The axis
+- code: private Vector2 _axis1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _enableLimit
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__enableLimit
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L117
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.indexA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.indexA
-- markdown: The index
-- code: private int indexA
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._enableLimit
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._enableLimit
+- markdown: The enable limit
+- code: private bool _enableLimit
 - h4: Field Value
 - parameters:
   - type:
-    - text: int
-      url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: indexB
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_indexB
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _enableMotor
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__enableMotor
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L122
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.indexB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.indexB
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._enableMotor
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._enableMotor
+- markdown: The enable motor
+- code: private bool _enableMotor
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _impulse
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__impulse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L127
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._impulse
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._impulse
+- markdown: The impulse
+- code: private Vector3 _impulse
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector3
+      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+- api3: _indexA
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__indexA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L133
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._indexA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._indexA
 - markdown: The index
-- code: private int indexB
+- code: private int _indexA
 - h4: Field Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _indexB
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__indexB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L138
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._indexB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._indexB
+- markdown: The index
+- code: private int _indexB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _invMassA
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__invMassA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L143
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._invMassA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._invMassA
+- markdown: The inv mass
+- code: private float _invMassA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _invMassB
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__invMassB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L148
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._invMassB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._invMassB
+- markdown: The inv mass
+- code: private float _invMassB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _limitState
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__limitState
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L153
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._limitState
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._limitState
+- markdown: The limit state
+- code: private LimitState _limitState
+- h4: Field Value
+- parameters:
+  - type:
+    - text: LimitState
+      url: Alis.Core.Physic.Dynamics.Joints.LimitState.html
+- api3: _localCenterA
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__localCenterA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L158
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._localCenterA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._localCenterA
+- markdown: The local center
+- code: private Vector2 _localCenterA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _localCenterB
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__localCenterB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L163
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._localCenterB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._localCenterB
+- markdown: The local center
+- code: private Vector2 _localCenterB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _localXAxis
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__localXAxis
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L168
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._localXAxis
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._localXAxis
+- markdown: The local axis
+- code: private Vector2 _localXAxis
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _localYAxisA
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__localYAxisA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L173
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._localYAxisA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._localYAxisA
+- markdown: The local axis
+- code: private Vector2 _localYAxisA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _lowerTranslation
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__lowerTranslation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L178
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._lowerTranslation
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._lowerTranslation
+- markdown: The lower translation
+- code: private float _lowerTranslation
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _maxMotorForce
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__maxMotorForce
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L183
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._maxMotorForce
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._maxMotorForce
+- markdown: The max motor force
+- code: private float _maxMotorForce
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _motorMass
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__motorMass
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L188
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._motorMass
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._motorMass
+- markdown: The motor mass
+- code: private float _motorMass
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _motorSpeed
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__motorSpeed
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L193
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._motorSpeed
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._motorSpeed
+- markdown: The motor speed
+- code: private float _motorSpeed
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _perp
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__perp
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L107
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._perp
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._perp
+- markdown: The perp
+- code: private Vector2 _perp
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _s1
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__s1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L198
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._s1
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._s1
+- markdown: The
+- code: private float _s1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _s2
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__s2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L198
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._s2
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._s2
+- markdown: The
+- code: private float _s2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _upperTranslation
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint__upperTranslation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L203
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._upperTranslation
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint._upperTranslation
+- markdown: The upper translation
+- code: private float _upperTranslation
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: invIa
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_invIa
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L127
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L208
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.invIa
     commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.invIa
@@ -483,7 +627,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: invIb
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_invIb
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L132
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L213
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.invIb
     commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.invIb
@@ -494,231 +638,36 @@ body:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: invMassA
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_invMassA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L137
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.invMassA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.invMassA
-- markdown: The inv mass
-- code: private float invMassA
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: invMassB
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_invMassB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L142
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.invMassB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.invMassB
-- markdown: The inv mass
-- code: private float invMassB
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: k
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_k
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L147
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L218
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.k
     commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.k
 - markdown: The
-- code: private Matrix2X2 k
+- code: private Mat33 k
 - h4: Field Value
 - parameters:
   - type:
-    - text: Matrix2X2
-      url: Alis.Core.Aspect.Math.Matrix.Matrix2X2.html
-- api3: localCenterA
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_localCenterA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L152
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.localCenterA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.localCenterA
-- markdown: The local center
-- code: private Vector2 localCenterA
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localCenterB
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_localCenterB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L157
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.localCenterB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.localCenterB
-- markdown: The local center
-- code: private Vector2 localCenterB
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localYAxisA
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_localYAxisA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L162
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.localYAxisA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.localYAxisA
-- markdown: The local axis
-- code: private Vector2 localYAxisA
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: lowerImpulse
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_lowerImpulse
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L167
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.lowerImpulse
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.lowerImpulse
-- markdown: The lower impulse
-- code: private float lowerImpulse
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: lowerTranslation
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_lowerTranslation
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L172
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.lowerTranslation
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.lowerTranslation
-- markdown: The lower translation
-- code: private float lowerTranslation
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: maxMotorForce
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_maxMotorForce
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L177
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.maxMotorForce
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.maxMotorForce
-- markdown: The max motor force
-- code: private float maxMotorForce
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: motorImpulse
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_motorImpulse
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L182
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.motorImpulse
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.motorImpulse
-- markdown: The motor impulse
-- code: private float motorImpulse
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: motorSpeed
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_motorSpeed
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L187
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.motorSpeed
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.motorSpeed
-- markdown: The motor speed
-- code: private float motorSpeed
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: perp
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_perp
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L97
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.perp
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.perp
-- markdown: The perp
-- code: private Vector2 perp
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: s1
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_s1
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L192
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.s1
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.s1
-- markdown: The
-- code: private float s1
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: s2
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_s2
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L192
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.s2
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.s2
-- markdown: The
-- code: private float s2
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: translation
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_translation
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L197
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.translation
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.translation
-- markdown: The translation
-- code: private float translation
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: upperImpulse
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_upperImpulse
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L202
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.upperImpulse
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.upperImpulse
-- markdown: The upper impulse
-- code: private float upperImpulse
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: upperTranslation
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_upperTranslation
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L207
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.upperTranslation
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.upperTranslation
-- markdown: The upper translation
-- code: private float upperTranslation
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
+    - text: Mat33
+      url: Alis.Core.Physic.Common.Mat33.html
 - h2: Properties
+- api3: Axis1
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_Axis1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L437
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.Axis1
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.Axis1
+- markdown: The axis at which the joint moves.
+- code: public Vector2 Axis1 { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: JointSpeed
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_JointSpeed
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L343
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L306
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.JointSpeed
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.JointSpeed
@@ -731,7 +680,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: JointTranslation
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_JointTranslation
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L329
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L291
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.JointTranslation
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.JointTranslation
@@ -744,7 +693,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: LimitEnabled
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_LimitEnabled
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L370
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L334
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LimitEnabled
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LimitEnabled
@@ -757,12 +706,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: LocalAnchorA
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_LocalAnchorA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L305
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L262
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LocalAnchorA
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LocalAnchorA
 - markdown: The local anchor point on BodyA
-- code: public Vector2 LocalAnchorA { get; private set; }
+- code: public Vector2 LocalAnchorA { get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -770,38 +719,25 @@ body:
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: LocalAnchorB
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_LocalAnchorB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L308
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L267
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LocalAnchorB
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LocalAnchorB
 - markdown: The local anchor point on BodyB
-- code: public Vector2 LocalAnchorB { get; private set; }
+- code: public Vector2 LocalAnchorB { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: LocalXAxisA
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_LocalXAxisA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L461
+- api3: LocalXAxis
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_LocalXAxis
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L452
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LocalXAxisA
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LocalXAxisA
-- markdown: The local joint axis relative to bodyA.
-- code: public Vector2 LocalXAxisA { get; private set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: LocalYAxisA
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_LocalYAxisA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L466
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LocalYAxisA
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LocalYAxisA
-- markdown: Gets the value of the local y axis a
-- code: public Vector2 LocalYAxisA { get; }
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LocalXAxis
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LocalXAxis
+- markdown: The axis in local coordinates relative to BodyA
+- code: public Vector2 LocalXAxis { get; }
 - h4: Property Value
 - parameters:
   - type:
@@ -809,7 +745,7 @@ body:
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: LowerLimit
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_LowerLimit
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L386
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L354
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LowerLimit
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.LowerLimit
@@ -820,9 +756,22 @@ body:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxMotorForce
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_MaxMotorForce
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L418
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.MaxMotorForce
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.MaxMotorForce
+- markdown: Set the maximum motor force, usually in N.
+- code: public float MaxMotorForce { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: MotorEnabled
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_MotorEnabled
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L417
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L390
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.MotorEnabled
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.MotorEnabled
@@ -833,14 +782,14 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: MotorForce
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_MotorForce
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L447
+- api3: MotorImpulse
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_MotorImpulse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L432
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.MotorForce
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.MotorForce
-- markdown: Set the maximum motor force, usually in N.
-- code: public float MotorForce { get; set; }
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.MotorImpulse
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.MotorImpulse
+- markdown: Get the current motor impulse, usually in N.
+- code: public float MotorImpulse { get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -848,7 +797,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: MotorSpeed
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_MotorSpeed
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L432
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L404
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.MotorSpeed
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.MotorSpeed
@@ -861,12 +810,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: ReferenceAngle
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_ReferenceAngle
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L469
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L457
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.ReferenceAngle
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.ReferenceAngle
-- markdown: Get the reference angle.
-- code: public float ReferenceAngle { get; private set; }
+- markdown: The reference angle.
+- code: public float ReferenceAngle { get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -874,7 +823,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: UpperLimit
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_UpperLimit
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L401
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L372
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.UpperLimit
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.UpperLimit
@@ -887,7 +836,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: WorldAnchorA
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_WorldAnchorA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L313
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L272
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.WorldAnchorA
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.WorldAnchorA
@@ -900,7 +849,7 @@ body:
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: WorldAnchorB
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_WorldAnchorB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L322
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L281
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.WorldAnchorB
     commentId: P:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.WorldAnchorB
@@ -914,11 +863,11 @@ body:
 - h2: Methods
 - api3: GetMotorForce(float)
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_GetMotorForce_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L472
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L507
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.GetMotorForce(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.GetMotorForce(System.Single)
-- markdown: Get the current motor force given the inverse time step, usually in N.
+- markdown: Gets the motor force.
 - code: public float GetMotorForce(float invDt)
 - h4: Parameters
 - parameters:
@@ -926,6 +875,7 @@ body:
     type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The inverse delta time
 - h4: Returns
 - parameters:
   - type:
@@ -933,12 +883,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: GetReactionForce(float)
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_GetReactionForce_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L494
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L514
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.GetReactionForce(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.GetReactionForce(System.Single)
 - markdown: Gets the reaction force using the specified inv dt
-- code: protected override Vector2 GetReactionForce(float invDt)
+- code: public override Vector2 GetReactionForce(float invDt)
 - h4: Parameters
 - parameters:
   - name: invDt
@@ -954,7 +904,7 @@ body:
     description: The vector
 - api3: GetReactionTorque(float)
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_GetReactionTorque_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L502
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L521
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.GetReactionTorque(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.GetReactionTorque(System.Single)
@@ -974,11 +924,11 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
     description: The float
 - api3: InitVelocityConstraints(ref SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L508
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L527
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
 - markdown: Inits the velocity constraints using the specified data
 - code: internal override void InitVelocityConstraints(ref SolverData data)
 - h4: Parameters
@@ -986,29 +936,29 @@ body:
   - name: data
     type:
     - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
+      url: Alis.Core.Physic.Dynamics.SolverData.html
     description: The data
 - api3: Initialize(Vector2, Vector2, Vector2, bool)
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_Initialize_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L866
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L466
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.Initialize(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.Initialize(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
 - markdown: Initializes the local anchor a
-- code: private void Initialize(Vector2 vector2AnchorA, Vector2 vector2AnchorB, Vector2 vector2Axis, bool useWorldCoordinates)
+- code: private void Initialize(Vector2 localAnchorA, Vector2 localAnchorB, Vector2 axis, bool useWorldCoordinates)
 - h4: Parameters
 - parameters:
-  - name: vector2AnchorA
+  - name: localAnchorA
     type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
     description: The local anchor
-  - name: vector2AnchorB
+  - name: localAnchorB
     type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
     description: The local anchor
-  - name: vector2Axis
+  - name: axis
     type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
@@ -1020,7 +970,7 @@ body:
     description: The use world coordinates
 - api3: SetLimits(float, float)
   id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_SetLimits_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L477
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L492
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.SetLimits(System.Single,System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.SetLimits(System.Single,System.Single)
@@ -1039,36 +989,19 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
     description: The upper limit
 - api3: SolvePositionConstraints(ref SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L727
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L772
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-- markdown: >-
-    Describes whether this instance solve position constraints
-
-    A velocity based solver computes reaction forces(impulses) using the velocity constraint solver. Under this
-
-    context,
-
-    the position solver is not there to resolve forces. It is only there to cope with integration error.
-
-    Therefore, the pseudo impulses in the position solver do not have any physical meaning. Thus it is okay if they
-
-    suck.
-
-    We could take the active state from the velocity solver. However, the joint might push past the limit when the
-
-    velocity
-
-    solver indicates the limit is inactive.
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+- markdown: Describes whether this instance solve position constraints
 - code: internal override bool SolvePositionConstraints(ref SolverData data)
 - h4: Parameters
 - parameters:
   - name: data
     type:
     - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
+      url: Alis.Core.Physic.Dynamics.SolverData.html
     description: The data
 - h4: Returns
 - parameters:
@@ -1077,11 +1010,11 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: The bool
 - api3: SolveVelocityConstraints(ref SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L619
+  id: Alis_Core_Physic_Dynamics_Joints_PrismaticJoint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/PrismaticJoint.cs#L670
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
+    uid: Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.PrismaticJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
 - markdown: Solves the velocity constraints using the specified data
 - code: internal override void SolveVelocityConstraints(ref SolverData data)
 - h4: Parameters
@@ -1089,87 +1022,15 @@ body:
   - name: data
     type:
     - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
+      url: Alis.Core.Physic.Dynamics.SolverData.html
     description: The data
 languageId: csharp
 metadata:
   description: >-
-    A prismatic joint. This joint provides one degree of freedom: translation along an axis fixed in bodyA.
+    A prismatic joint. This joint provides one degree of freedom: translation
 
-    Relative rotation is prevented. You can use a joint limit to restrict the range of motion and a joint motor to
+    along an axis fixed in bodyA. Relative rotation is prevented. You can
 
-    drive
+    use a joint limit to restrict the range of motion and a joint motor to
 
-    the motion or to model joint friction.
-
-    Linear constraint (point-to-line)
-
-    d = p2 - p1 = x2 + r2 - x1 - r1
-
-    C = dot(perp, d)
-
-    Cdo = dot(d, cross(w1, perp)) + dot(perp, v2 + cross(w2, r2) - v1 - cross(w1, r1))
-
-    = -dot(perp, v1) - dot(cross(d + r1, perp), w1) + dot(perp, v2) + dot(cross(r2, perp), v2)
-
-    J = [-perp, -cross(d + r1, perp), perp, cross(r2,perp)]
-
-    Angular constraint
-
-    C = a2 - a1 + a_initial
-
-    Cdo = w2 - w1
-
-    J = [0 0 -1 0 0 1]
-
-    K = J * invM * JT
-
-    J = [-a -s1 a s2]
-
-    [0  -1  0  1]
-
-    a = perp
-
-    s1 = cross(d + r1, a) = cross(p2 - x1, a)
-
-    s2 = cross(r2, a) = cross(p2 - x2, a)
-
-    Motor/Limit linear constraint
-
-    C = dot(ax1, d)
-
-    Cdo = -dot(ax1, v1) - dot(cross(d + r1, ax1), w1) + dot(ax1, v2) + dot(cross(r2, ax1), v2)
-
-    J = [-ax1 -cross(d+r1,ax1) ax1 cross(r2,ax1)]
-
-    Predictive limit is applied even when the limit is not active.
-
-    Prevents a constraint speed that can lead to a constraint error in one time step.
-
-    Want C2 = C1 + h * Cdo &gt;= 0
-
-    Or:
-
-    Cdo + C1/h &gt;= 0
-
-    I do not apply a negative constraint error because that is handled in position correction.
-
-    So:
-
-    Cdo + max(C1, 0)/h &gt;= 0
-
-    Block Solver
-
-    We develop a block solver that includes the angular and linear constraints. This makes the limit stiffer.
-
-    The Jacobin has 2 rows:
-
-    J = [-uT -s1 uT s2] /// linear
-
-    [0   -1   0  1] /// angular
-
-    u = perp
-
-    s1 = cross(d + r1, u), s2 = cross(r2, u)
-
-    a1 = cross(d + r1, v), a2 = cross(r2, v)
+    drive the motion or to model joint friction.

@@ -315,68 +315,289 @@
 
         <article data-uid="">
 <h1 class='section api' data-uid='Alis.Core.Physic.Collision' data-commentid='N:Alis.Core.Physic.Collision' id='Alis_Core_Physic_Collision'>Namespace Alis.Core.Physic.Collision   </h1>
- <h3 class='section'>Namespaces</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.BroadPhase.html'>Alis.Core.Physic.Collision.BroadPhase</a>  </dt>
+ <h3 class='section'>Namespaces</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.Shapes.html'>Alis.Core.Physic.Collision.Shapes</a>  </dt>
 <dd>
 
 
 
-</dd><dt> <a href='Alis.Core.Physic.Collision.ContactSystem.html'>Alis.Core.Physic.Collision.ContactSystem</a>  </dt>
+</dd></dl><h3 class='section'>Classes</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.Collision.html'>Collision</a>  </dt>
 <dd>
 
 
+<p>Collision methods</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Collision.Distance.html'>Alis.Core.Physic.Collision.Distance</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Collision.Distance.html'>Distance</a>  </dt>
 <dd>
 
 
+<p>The Gilbert–Johnson–Keerthi distance algorithm that provides the distance between shapes.</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Collision.Filtering.html'>Alis.Core.Physic.Collision.Filtering</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Collision.DynamicTree-1.html'>DynamicTree&lt;TNode&gt;</a>  </dt>
 <dd>
 
 
+<p>A dynamic tree arranges data in a binary tree to accelerate
+queries such as volume queries and ray casts. Leafs are proxies
+with an AABB. In the tree we expand the proxy AABB by Settings.b2_fatAABBFactor
+so that the proxy AABB is bigger than the client object. This allows the client
+object to move by small amounts without triggering a tree update.
+Nodes are pooled and relocatable, so we use node indices rather than pointers.</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Collision.Handlers.html'>Alis.Core.Physic.Collision.Handlers</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Collision.DynamicTreeBroadPhase.html'>DynamicTreeBroadPhase</a>  </dt>
 <dd>
 
 
+<p>The broad-phase is used for computing pairs and performing volume queries and ray casts.
+This broad-phase does not persist pairs. Instead, this reports potentially new pairs.
+It is up to the client to consume the new pairs and to track subsequent overlap.</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Collision.NarrowPhase.html'>Alis.Core.Physic.Collision.NarrowPhase</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Collision.DynamicTreeBroadPhase-1.html'>DynamicTreeBroadPhase&lt;TNode&gt;</a>  </dt>
 <dd>
 
 
+<p>The broad-phase is used for computing pairs and performing volume queries and ray casts.
+This broad-phase does not persist pairs. Instead, this reports potentially new pairs.
+It is up to the client to consume the new pairs and to track subsequent overlap.</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Collision.RayCast.html'>Alis.Core.Physic.Collision.RayCast</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Collision.Collision.EPCollider.html'>Collision.EPCollider</a>  </dt>
 <dd>
 
 
+<p>The ep collider class</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Collision.Shapes.html'>Alis.Core.Physic.Collision.Shapes</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Collision.SeparationFunction.html'>SeparationFunction</a>  </dt>
 <dd>
 
 
+<p>The separation function class</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Collision.TOI.html'>Alis.Core.Physic.Collision.TOI</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Collision.TOIInput.html'>TOIInput</a>  </dt>
 <dd>
 
 
+<p>Input parameters for CalculateTimeOfImpact</p>
 
-</dd></dl><h3 class='section'>Classes</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.AabbHelper.html'>AabbHelper</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Collision.TimeOfImpact.html'>TimeOfImpact</a>  </dt>
 <dd>
 
 
-<p>The aabb helper class</p>
+<p>The time of impact class</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Collision.RayCastHelper.html'>RayCastHelper</a>  </dt>
+</dd></dl><h3 class='section'>Structs</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.AABB.html'>AABB</a>  </dt>
 <dd>
 
 
-<p>The ray cast helper class</p>
+<p>An axis aligned bounding box.</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Collision.TestPointHelper.html'>TestPointHelper</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Collision.ClipVertex.html'>ClipVertex</a>  </dt>
 <dd>
 
 
-<p>The test point helper class</p>
+<p>Used for computing contact manifolds.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.ContactFeature.html'>ContactFeature</a>  </dt>
+<dd>
+
+
+<p>The features that intersect to form the contact point
+This must be 4 bytes or less.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.ContactID.html'>ContactID</a>  </dt>
+<dd>
+
+
+<p>Contact ids to facilitate warm starting.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.DistanceInput.html'>DistanceInput</a>  </dt>
+<dd>
+
+
+<p>Input for Distance.ComputeDistance().
+You have to option to use the shape radii in the computation.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.DistanceOutput.html'>DistanceOutput</a>  </dt>
+<dd>
+
+
+<p>Output for Distance.ComputeDistance().</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.DistanceProxy.html'>DistanceProxy</a>  </dt>
+<dd>
+
+
+<p>A distance proxy is used by the GJK algorithm.
+It encapsulates any shape.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.EPAxis.html'>EPAxis</a>  </dt>
+<dd>
+
+
+<p>This structure is used to keep track of the best separating axis.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.Manifold.html'>Manifold</a>  </dt>
+<dd>
+
+
+<p>A manifold for two touching convex Shapes.
+Box2D supports multiple types of contact:</p>
+<ul>
+<li>Clip point versus plane with radius</li>
+<li>Point versus point with radius (circles)
+The local point usage depends on the manifold type:</li>
+<li>ShapeType.Circles: the local center of circleA</li>
+<li>SeparationFunction.FaceA: the center of faceA</li>
+<li>SeparationFunction.FaceB: the center of faceB
+Similarly the local normal usage:</li>
+<li>ShapeType.Circles: not used</li>
+<li>SeparationFunction.FaceA: the normal on polygonA</li>
+<li>SeparationFunction.FaceB: the normal on polygonB
+We store contacts in this way so that position correction can
+account for movement, which is critical for continuous physics.
+All contact scenarios must be expressed in one of these types.
+This structure is stored across time steps, so we keep it small.</li>
+</ul>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.ManifoldPoint.html'>ManifoldPoint</a>  </dt>
+<dd>
+
+
+<p>A manifold point is a contact point belonging to a contact
+manifold. It holds details related to the geometry and dynamics
+of the contact points.
+The local point usage depends on the manifold type:
+-ShapeType.Circles: the local center of circleB
+-SeparationFunction.FaceA: the local center of cirlceB or the clip point of polygonB
+-SeparationFunction.FaceB: the clip point of polygonA
+This structure is stored across time steps, so we keep it small.
+Note: the impulses are used for internal caching and may not
+provide reliable contact forces, especially for high speed collisions.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.Pair.html'>Pair</a>  </dt>
+<dd>
+
+
+<p>The pair</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.RayCastInput.html'>RayCastInput</a>  </dt>
+<dd>
+
+
+<p>Ray-cast input data.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.RayCastOutput.html'>RayCastOutput</a>  </dt>
+<dd>
+
+
+<p>Ray-cast output data.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.ReferenceFace.html'>ReferenceFace</a>  </dt>
+<dd>
+
+
+<p>Reference face used for clipping</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.Simplex.html'>Simplex</a>  </dt>
+<dd>
+
+
+<p>The simplex</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.SimplexCache.html'>SimplexCache</a>  </dt>
+<dd>
+
+
+<p>Used to warm start ComputeDistance.
+Set count to zero on first call.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.SimplexVertex.html'>SimplexVertex</a>  </dt>
+<dd>
+
+
+<p>The simplex vertex</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.TOIOutput.html'>TOIOutput</a>  </dt>
+<dd>
+
+
+<p>The toi output</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon.html'>Collision.EPCollider.TempPolygon</a>  </dt>
+<dd>
+
+
+<p>This holds polygon B expressed in frame A.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.TreeNode-1.html'>TreeNode&lt;TNode&gt;</a>  </dt>
+<dd>
+
+
+<p>A node in the dynamic tree. The client does not interact with this directly.</p>
+
+</dd></dl><h3 class='section'>Interfaces</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.IBroadPhase-1.html'>IBroadPhase&lt;TNode&gt;</a>  </dt>
+<dd>
+
+
+<p>The broad phase interface</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.IBroadPhase.html'>IBroadPhase</a>  </dt>
+<dd>
+
+
+<p>The broad phase interface</p>
+
+</dd></dl><h3 class='section'>Enums</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.ContactFeatureType.html'>ContactFeatureType</a>  </dt>
+<dd>
+
+
+<p>The contact feature type enum</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.EPAxisType.html'>EPAxisType</a>  </dt>
+<dd>
+
+
+<p>The ep axis type enum</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.ManifoldType.html'>ManifoldType</a>  </dt>
+<dd>
+
+
+<p>The manifold type enum</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.PointState.html'>PointState</a>  </dt>
+<dd>
+
+
+<p>This is used for determining the state of contact points.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.SeparationFunctionType.html'>SeparationFunctionType</a>  </dt>
+<dd>
+
+
+<p>The separation function type enum</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.TOIOutputState.html'>TOIOutputState</a>  </dt>
+<dd>
+
+
+<p>The toi output state enum</p>
+
+</dd></dl><h3 class='section'>Delegates</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.BroadPhaseQueryCallback.html'>BroadPhaseQueryCallback</a>  </dt>
+<dd>
+
+
+<p>The broad phase query callback</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.BroadPhaseRayCastCallback.html'>BroadPhaseRayCastCallback</a>  </dt>
+<dd>
+
+
+<p>The broad phase ray cast callback</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.BroadphaseDelegate.html'>BroadphaseDelegate</a>  </dt>
+<dd>
+
+
+<p>The broadphase delegate</p>
 
 </dd></dl>
 </article>

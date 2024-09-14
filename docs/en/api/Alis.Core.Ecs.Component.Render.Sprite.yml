@@ -3,7 +3,7 @@ title: Class Sprite
 body:
 - api1: Class Sprite
   id: Alis_Core_Ecs_Component_Render_Sprite
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L45
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L46
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite
     commentId: T:Alis.Core.Ecs.Component.Render.Sprite
@@ -125,7 +125,7 @@ body:
 - h2: Constructors
 - api3: Sprite()
   id: Alis_Core_Ecs_Component_Render_Sprite__ctor
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L58
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L73
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.#ctor
     commentId: M:Alis.Core.Ecs.Component.Render.Sprite.#ctor
@@ -133,7 +133,7 @@ body:
 - code: public Sprite()
 - api3: Sprite(Image)
   id: Alis_Core_Ecs_Component_Render_Sprite__ctor_Alis_Core_Ecs_Component_Render_Image_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L69
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L84
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.#ctor(Alis.Core.Ecs.Component.Render.Image)
     commentId: M:Alis.Core.Ecs.Component.Render.Sprite.#ctor(Alis.Core.Ecs.Component.Render.Image)
@@ -148,7 +148,7 @@ body:
     description: The image
 - api3: Sprite(Image, int, RendererFlips)
   id: Alis_Core_Ecs_Component_Render_Sprite__ctor_Alis_Core_Ecs_Component_Render_Image_System_Int32_Alis_Core_Graphic_Sdl2_Enums_RendererFlips_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L82
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L97
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.#ctor(Alis.Core.Ecs.Component.Render.Image,System.Int32,Alis.Core.Graphic.Sdl2.Enums.RendererFlips)
     commentId: M:Alis.Core.Ecs.Component.Render.Sprite.#ctor(Alis.Core.Ecs.Component.Render.Image,System.Int32,Alis.Core.Graphic.Sdl2.Enums.RendererFlips)
@@ -172,12 +172,26 @@ body:
       url: Alis.Core.Graphic.Sdl2.Enums.RendererFlips.html
     description: The flips
 - h2: Fields
+- api3: Rectangle
+  id: Alis_Core_Ecs_Component_Render_Sprite_Rectangle
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L63
+  metadata:
+    uid: Alis.Core.Ecs.Component.Render.Sprite.Rectangle
+    commentId: F:Alis.Core.Ecs.Component.Render.Sprite.Rectangle
+- markdown: The rectangle
+- code: private RectangleI Rectangle
+- h4: Field Value
+- parameters:
+  - type:
+    - text: RectangleI
+      url: Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI.html
 - api3: dstRect
   id: Alis_Core_Ecs_Component_Render_Sprite_dstRect
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L49
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L53
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.dstRect
     commentId: F:Alis.Core.Ecs.Component.Render.Sprite.dstRect
+- markdown: The dst rect
 - code: private RectangleI dstRect
 - h4: Field Value
 - parameters:
@@ -186,10 +200,11 @@ body:
       url: Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI.html
 - api3: h
   id: Alis_Core_Ecs_Component_Render_Sprite_h
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L53
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L58
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.h
     commentId: F:Alis.Core.Ecs.Component.Render.Sprite.h
+- markdown: The
 - code: private int h
 - h4: Field Value
 - parameters:
@@ -198,10 +213,11 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int32
 - api3: w
   id: Alis_Core_Ecs_Component_Render_Sprite_w
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L51
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L68
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.w
     commentId: F:Alis.Core.Ecs.Component.Render.Sprite.w
+- markdown: The
 - code: private int w
 - h4: Field Value
 - parameters:
@@ -211,7 +227,7 @@ body:
 - h2: Properties
 - api3: Depth
   id: Alis_Core_Ecs_Component_Render_Sprite_Depth
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L99
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L114
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.Depth
     commentId: P:Alis.Core.Ecs.Component.Render.Sprite.Depth
@@ -227,7 +243,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int32
 - api3: Flips
   id: Alis_Core_Ecs_Component_Render_Sprite_Flips
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L105
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L120
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.Flips
     commentId: P:Alis.Core.Ecs.Component.Render.Sprite.Flips
@@ -243,7 +259,7 @@ body:
       url: Alis.Core.Graphic.Sdl2.Enums.RendererFlips.html
 - api3: Image
   id: Alis_Core_Ecs_Component_Render_Sprite_Image
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L93
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L108
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.Image
     commentId: P:Alis.Core.Ecs.Component.Render.Sprite.Image
@@ -260,7 +276,7 @@ body:
 - h2: Methods
 - api3: Builder()
   id: Alis_Core_Ecs_Component_Render_Sprite_Builder
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L112
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L127
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.Builder
     commentId: M:Alis.Core.Ecs.Component.Render.Sprite.Builder
@@ -272,9 +288,86 @@ body:
     - text: SpriteBuilder
       url: Alis.Builder.Core.Ecs.Component.Render.SpriteBuilder.html
     description: The sprite builder
+- api3: IsVisible(Vector2, Vector2, float)
+  id: Alis_Core_Ecs_Component_Render_Sprite_IsVisible_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L211
+  metadata:
+    uid: Alis.Core.Ecs.Component.Render.Sprite.IsVisible(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
+    commentId: M:Alis.Core.Ecs.Component.Render.Sprite.IsVisible(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
+- markdown: Describes whether this instance is visible
+- code: public bool IsVisible(Vector2 cameraPosition, Vector2 cameraResolution, float pixelsPerMeter)
+- h4: Parameters
+- parameters:
+  - name: cameraPosition
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The camera position
+  - name: cameraResolution
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The camera resolution
+  - name: pixelsPerMeter
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The pixels per meter
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: Max(float[])
+  id: Alis_Core_Ecs_Component_Render_Sprite_Max_System_Single___
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L275
+  metadata:
+    uid: Alis.Core.Ecs.Component.Render.Sprite.Max(System.Single[])
+    commentId: M:Alis.Core.Ecs.Component.Render.Sprite.Max(System.Single[])
+- markdown: Maxes the corners x
+- code: private float Max(float[] cornersX)
+- h4: Parameters
+- parameters:
+  - name: cornersX
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    - '['
+    - ']'
+    description: The corners
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The max
+- api3: Min(float[])
+  id: Alis_Core_Ecs_Component_Render_Sprite_Min_System_Single___
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L256
+  metadata:
+    uid: Alis.Core.Ecs.Component.Render.Sprite.Min(System.Single[])
+    commentId: M:Alis.Core.Ecs.Component.Render.Sprite.Min(System.Single[])
+- markdown: Mins the corners x
+- code: private float Min(float[] cornersX)
+- h4: Parameters
+- parameters:
+  - name: cornersX
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    - '['
+    - ']'
+    description: The corners
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The min
 - api3: OnAwake()
   id: Alis_Core_Ecs_Component_Render_Sprite_OnAwake
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L125
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L140
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.OnAwake
     commentId: M:Alis.Core.Ecs.Component.Render.Sprite.OnAwake
@@ -282,7 +375,7 @@ body:
 - code: public override void OnAwake()
 - api3: OnExit()
   id: Alis_Core_Ecs_Component_Render_Sprite_OnExit
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L144
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L165
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.OnExit
     commentId: M:Alis.Core.Ecs.Component.Render.Sprite.OnExit
@@ -290,7 +383,7 @@ body:
 - code: public override void OnExit()
 - api3: OnInit()
   id: Alis_Core_Ecs_Component_Render_Sprite_OnInit
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L117
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L132
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.OnInit
     commentId: M:Alis.Core.Ecs.Component.Render.Sprite.OnInit
@@ -298,37 +391,28 @@ body:
 - code: public override void OnInit()
 - api3: OnStart()
   id: Alis_Core_Ecs_Component_Render_Sprite_OnStart
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L130
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L148
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Sprite.OnStart
     commentId: M:Alis.Core.Ecs.Component.Render.Sprite.OnStart
 - markdown: Ons the start
 - code: public override void OnStart()
-- api3: Render(IntPtr, Camera)
-  id: Alis_Core_Ecs_Component_Render_Sprite_Render_System_IntPtr_Alis_Core_Ecs_Component_Render_Camera_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L149
+- api3: OnUpdate()
+  id: Alis_Core_Ecs_Component_Render_Sprite_OnUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L158
   metadata:
-    uid: Alis.Core.Ecs.Component.Render.Sprite.Render(System.IntPtr,Alis.Core.Ecs.Component.Render.Camera)
-    commentId: M:Alis.Core.Ecs.Component.Render.Sprite.Render(System.IntPtr,Alis.Core.Ecs.Component.Render.Camera)
-- code: public void Render(IntPtr renderer, Camera camera)
-- h4: Parameters
-- parameters:
-  - name: renderer
-    type:
-    - text: IntPtr
-      url: https://learn.microsoft.com/dotnet/api/system.intptr
-  - name: camera
-    type:
-    - text: Camera
-      url: Alis.Core.Ecs.Component.Render.Camera.html
-- api3: Render(IntPtr)
-  id: Alis_Core_Ecs_Component_Render_Sprite_Render_System_IntPtr_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L176
+    uid: Alis.Core.Ecs.Component.Render.Sprite.OnUpdate
+    commentId: M:Alis.Core.Ecs.Component.Render.Sprite.OnUpdate
+- markdown: Ons the update
+- code: public override void OnUpdate()
+- api3: Render(IntPtr, Vector2, Vector2, float)
+  id: Alis_Core_Ecs_Component_Render_Sprite_Render_System_IntPtr_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Sprite.cs#L177
   metadata:
-    uid: Alis.Core.Ecs.Component.Render.Sprite.Render(System.IntPtr)
-    commentId: M:Alis.Core.Ecs.Component.Render.Sprite.Render(System.IntPtr)
+    uid: Alis.Core.Ecs.Component.Render.Sprite.Render(System.IntPtr,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
+    commentId: M:Alis.Core.Ecs.Component.Render.Sprite.Render(System.IntPtr,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
 - markdown: Renders the renderer
-- code: public void Render(IntPtr renderer)
+- code: public void Render(IntPtr renderer, Vector2 cameraPosition, Vector2 cameraResolution, float pixelsPerMeter)
 - h4: Parameters
 - parameters:
   - name: renderer
@@ -336,6 +420,21 @@ body:
     - text: IntPtr
       url: https://learn.microsoft.com/dotnet/api/system.intptr
     description: The renderer
+  - name: cameraPosition
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The camera position
+  - name: cameraResolution
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The camera resolution
+  - name: pixelsPerMeter
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The pixels per meter
 - h2: See Also
 - list:
   - - text: AComponent

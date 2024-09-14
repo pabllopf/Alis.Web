@@ -1,0 +1,136 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Physic.Common.Decomposition
+body:
+- api1: Namespace Alis.Core.Physic.Common.Decomposition
+  id: Alis_Core_Physic_Common_Decomposition
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition
+    commentId: N:Alis.Core.Physic.Common.Decomposition
+- h3: Namespaces
+- parameters:
+  - type:
+      text: Alis.Core.Physic.Common.Decomposition.CDT
+      url: Alis.Core.Physic.Common.Decomposition.CDT.html
+  - type:
+      text: Alis.Core.Physic.Common.Decomposition.Seidel
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.html
+- h3: Classes
+- parameters:
+  - type:
+      text: BayazitDecomposer
+      url: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.html
+    description: >-
+      Convex decomposition algorithm created by Mark Bayazit (http://mnbayazit.com/)
+
+      Properties:
+
+      - Tries to decompose using polygons instead of triangles.
+
+      - Tends to produce optimal results with low processing time.
+
+      - Running time is O(nr), n = number of vertices, r = reflex vertices.
+
+      - Does not support holes.
+
+      For more information about this algorithm, see http://mnbayazit.com/406/bayazit
+  - type:
+      text: CDTDecomposer
+      url: Alis.Core.Physic.Common.Decomposition.CDTDecomposer.html
+    description: >-
+      2D constrained Delaunay triangulation algorithm.
+
+      Based on the paper "Sweep-line algorithm for constrained Delaunay triangulation" by V. Domiter and and B. Zalik
+
+      Properties:
+
+      - Creates triangles with a large interior angle.
+
+      - Supports holes
+
+      - Generate a lot of garbage due to incapsulation of the Poly2Tri library.
+
+      - Running time is O(n^2), n = number of vertices.
+
+      - Does not care about winding order.
+
+      Source: http://code.google.com/p/poly2tri/
+  - type:
+      text: EarclipDecomposer
+      url: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.html
+    description: >-
+      Convex decomposition algorithm using ear clipping
+
+      Properties:
+
+      - Only works on simple polygons.
+
+      - Does not support holes.
+
+      - Running time is O(n^2), n = number of vertices.
+
+      Source: http://www.ewjordan.com/earClip/
+  - type:
+      text: FlipcodeDecomposer
+      url: Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer.html
+    description: >-
+      Convex decomposition algorithm created by unknown
+
+      Properties:
+
+      - No support for holes
+
+      - Very fast
+
+      - Only works on simple polygons
+
+      - Only works on counter clockwise polygons
+
+      More information: http://www.flipcode.com/archives/Efficient_Polygon_Triangulation.shtml
+  - type:
+      text: SeidelDecomposer
+      url: Alis.Core.Physic.Common.Decomposition.SeidelDecomposer.html
+    description: >-
+      Convex decomposition algorithm created by Raimund Seidel
+
+      Properties:
+
+      - Decompose the polygon into trapezoids, then triangulate.
+
+      - To use the trapezoid data, use ConvexPartitionTrapezoid()
+
+      - Generate a lot of garbage due to incapsulation of the Poly2Tri library.
+
+      - Running time is O(n log n), n = number of vertices.
+
+      - Running time is almost linear for most simple polygons.
+
+      - Does not care about winding order.
+
+      For more information, see Raimund Seidel's paper "A simple and fast incremental randomized
+
+      algorithm for computing trapezoidal decompositions and for triangulating polygons"
+
+      See also: "Computational Geometry", 3rd edition, by Mark de Berg et al, Chapter 6.2
+
+      "Computational Geometry in C", 2nd edition, by Joseph O'Rourke
+
+      Original code from the Poly2Tri project by Mason Green.
+
+      http://code.google.com/p/poly2tri/source/browse?repo=archive#hg/scala/src/org/poly2tri/seidel
+
+      This implementation is from Dec 14, 2010
+  - type:
+      text: EarclipDecomposer.Triangle
+      url: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Triangle.html
+    description: The triangle class
+  - type:
+      text: Triangulate
+      url: Alis.Core.Physic.Common.Decomposition.Triangulate.html
+    description: The triangulate class
+- h3: Enums
+- parameters:
+  - type:
+      text: TriangulationAlgorithm
+      url: Alis.Core.Physic.Common.Decomposition.TriangulationAlgorithm.html
+    description: The triangulation algorithm enum
+languageId: csharp

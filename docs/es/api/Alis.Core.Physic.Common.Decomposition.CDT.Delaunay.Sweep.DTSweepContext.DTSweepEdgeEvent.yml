@@ -1,0 +1,70 @@
+### YamlMime:ApiPage
+title: Class DTSweepContext.DTSweepEdgeEvent
+body:
+- api1: Class DTSweepContext.DTSweepEdgeEvent
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_DTSweepEdgeEvent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L315
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepEdgeEvent
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepEdgeEvent
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The dt sweep edge event class
+- code: public class DTSweepContext.DTSweepEdgeEvent
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: DTSweepContext.DTSweepEdgeEvent
+    url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepEdgeEvent.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: ConstrainedEdge
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_DTSweepEdgeEvent_ConstrainedEdge
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L320
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepEdgeEvent.ConstrainedEdge
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepEdgeEvent.ConstrainedEdge
+- markdown: The constrained edge
+- code: public DtSweepConstraint ConstrainedEdge
+- h4: Field Value
+- parameters:
+  - type:
+    - text: DtSweepConstraint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint.html
+- api3: Right
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_DTSweepEdgeEvent_Right
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L325
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepEdgeEvent.Right
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepEdgeEvent.Right
+- markdown: The right
+- code: public bool Right
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+languageId: csharp
+metadata:
+  description: The dt sweep edge event class

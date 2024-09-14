@@ -96,14 +96,14 @@ body:
     - text: Transform
       url: Alis.Core.Aspect.Math.Transform.html
     description: The transform
-- api3: GameObject(bool, string, string, string, Transform, Dictionary<string, AComponent>)
-  id: Alis_Core_Ecs_Entity_GameObject__ctor_System_Boolean_System_String_System_String_System_String_Alis_Core_Aspect_Math_Transform_System_Collections_Generic_Dictionary_System_String_Alis_Core_Ecs_Component_AComponent__
+- api3: GameObject(bool, string, string, string, Transform, List<AComponent>)
+  id: Alis_Core_Ecs_Entity_GameObject__ctor_System_Boolean_System_String_System_String_System_String_Alis_Core_Aspect_Math_Transform_System_Collections_Generic_List_Alis_Core_Ecs_Component_AComponent__
   src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L91
   metadata:
-    uid: Alis.Core.Ecs.Entity.GameObject.#ctor(System.Boolean,System.String,System.String,System.String,Alis.Core.Aspect.Math.Transform,System.Collections.Generic.Dictionary{System.String,Alis.Core.Ecs.Component.AComponent})
-    commentId: M:Alis.Core.Ecs.Entity.GameObject.#ctor(System.Boolean,System.String,System.String,System.String,Alis.Core.Aspect.Math.Transform,System.Collections.Generic.Dictionary{System.String,Alis.Core.Ecs.Component.AComponent})
+    uid: Alis.Core.Ecs.Entity.GameObject.#ctor(System.Boolean,System.String,System.String,System.String,Alis.Core.Aspect.Math.Transform,System.Collections.Generic.List{Alis.Core.Ecs.Component.AComponent})
+    commentId: M:Alis.Core.Ecs.Entity.GameObject.#ctor(System.Boolean,System.String,System.String,System.String,Alis.Core.Aspect.Math.Transform,System.Collections.Generic.List{Alis.Core.Ecs.Component.AComponent})
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Entity.GameObject" data-throw-if-not-resolved="false"></xref> class
-- code: public GameObject(bool isEnable, string name, string id, string tag, Transform transform, Dictionary<string, AComponent> components)
+- code: public GameObject(bool isEnable, string name, string id, string tag, Transform transform, List<AComponent> components)
 - h4: Parameters
 - parameters:
   - name: isEnable
@@ -133,13 +133,9 @@ body:
     description: The transform
   - name: components
     type:
-    - text: Dictionary
-      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
     - <
-    - text: string
-      url: https://learn.microsoft.com/dotnet/api/system.string
-    - ','
-    - " "
     - text: AComponent
       url: Alis.Core.Ecs.Component.AComponent.html
     - '>'
@@ -155,17 +151,13 @@ body:
 - code: >-
     [JsonPropertyName("_Components_")]
 
-    public Dictionary<string, AComponent> Components { get; set; }
+    public List<AComponent> Components { get; set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Dictionary
-      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
     - <
-    - text: string
-      url: https://learn.microsoft.com/dotnet/api/system.string
-    - ','
-    - " "
     - text: AComponent
       url: Alis.Core.Ecs.Component.AComponent.html
     - '>'
@@ -209,6 +201,22 @@ body:
     [JsonPropertyName("_IsEnable_")]
 
     public bool IsEnable { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: IsStatic
+  id: Alis_Core_Ecs_Entity_GameObject_IsStatic
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L152
+  metadata:
+    uid: Alis.Core.Ecs.Entity.GameObject.IsStatic
+    commentId: P:Alis.Core.Ecs.Entity.GameObject.IsStatic
+- markdown: Gets or sets the value of the is static
+- code: >-
+    [JsonPropertyName("_IsStatic_")]
+
+    public bool IsStatic { get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -265,15 +273,15 @@ body:
 - h2: Methods
 - api3: Add<T>(T)
   id: Alis_Core_Ecs_Entity_GameObject_Add__1___0_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L154
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L160
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.Add``1(``0)
     commentId: M:Alis.Core.Ecs.Entity.GameObject.Add``1(``0)
 - markdown: Adds the component
-- code: 'public void Add<T>(T component) where T : AComponent'
+- code: 'public void Add<T>(T value) where T : AComponent'
 - h4: Parameters
 - parameters:
-  - name: component
+  - name: value
     type:
     - T
     description: The component
@@ -297,7 +305,7 @@ body:
     description: The game object builder
 - api3: Clear()
   id: Alis_Core_Ecs_Entity_GameObject_Clear
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L209
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L202
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.Clear
     commentId: M:Alis.Core.Ecs.Entity.GameObject.Clear
@@ -305,7 +313,7 @@ body:
 - code: public void Clear()
 - api3: Contains<T>()
   id: Alis_Core_Ecs_Entity_GameObject_Contains__1
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L201
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L197
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.Contains``1
     commentId: M:Alis.Core.Ecs.Entity.GameObject.Contains``1
@@ -323,7 +331,7 @@ body:
     description: The
 - api3: Create()
   id: Alis_Core_Ecs_Entity_GameObject_Create
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L427
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L420
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.Create
     commentId: M:Alis.Core.Ecs.Entity.GameObject.Create
@@ -337,7 +345,7 @@ body:
     description: The game object builder
 - api3: Get<T>()
   id: Alis_Core_Ecs_Entity_GameObject_Get__1
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L186
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L187
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.Get``1
     commentId: M:Alis.Core.Ecs.Entity.GameObject.Get``1
@@ -354,7 +362,7 @@ body:
     description: The
 - api3: OnAfterFixedUpdate()
   id: Alis_Core_Ecs_Entity_GameObject_OnAfterFixedUpdate
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L315
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L308
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnAfterFixedUpdate
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnAfterFixedUpdate
@@ -362,7 +370,7 @@ body:
 - code: public void OnAfterFixedUpdate()
 - api3: OnAfterUpdate()
   id: Alis_Core_Ecs_Entity_GameObject_OnAfterUpdate
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L282
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L275
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnAfterUpdate
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnAfterUpdate
@@ -370,7 +378,7 @@ body:
 - code: public void OnAfterUpdate()
 - api3: OnAwake()
   id: Alis_Core_Ecs_Entity_GameObject_OnAwake
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L238
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L231
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnAwake
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnAwake
@@ -378,7 +386,7 @@ body:
 - code: public void OnAwake()
 - api3: OnBeforeFixedUpdate()
   id: Alis_Core_Ecs_Entity_GameObject_OnBeforeFixedUpdate
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L293
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L286
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnBeforeFixedUpdate
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnBeforeFixedUpdate
@@ -386,7 +394,7 @@ body:
 - code: public void OnBeforeFixedUpdate()
 - api3: OnBeforeUpdate()
   id: Alis_Core_Ecs_Entity_GameObject_OnBeforeUpdate
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L260
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L253
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnBeforeUpdate
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnBeforeUpdate
@@ -394,7 +402,7 @@ body:
 - code: public void OnBeforeUpdate()
 - api3: OnCalculate()
   id: Alis_Core_Ecs_Entity_GameObject_OnCalculate
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L337
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L330
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnCalculate
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnCalculate
@@ -402,7 +410,7 @@ body:
 - code: public void OnCalculate()
 - api3: OnDestroy()
   id: Alis_Core_Ecs_Entity_GameObject_OnDestroy
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L415
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L408
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnDestroy
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnDestroy
@@ -410,7 +418,7 @@ body:
 - code: public void OnDestroy()
 - api3: OnDisable()
   id: Alis_Core_Ecs_Entity_GameObject_OnDisable
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L370
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L363
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnDisable
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnDisable
@@ -418,7 +426,7 @@ body:
 - code: public void OnDisable()
 - api3: OnDispatchEvents()
   id: Alis_Core_Ecs_Entity_GameObject_OnDispatchEvents
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L326
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L319
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnDispatchEvents
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnDispatchEvents
@@ -426,7 +434,7 @@ body:
 - code: public void OnDispatchEvents()
 - api3: OnDraw()
   id: Alis_Core_Ecs_Entity_GameObject_OnDraw
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L348
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L341
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnDraw
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnDraw
@@ -434,7 +442,7 @@ body:
 - code: public void OnDraw()
 - api3: OnEnable()
   id: Alis_Core_Ecs_Entity_GameObject_OnEnable
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L214
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L207
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnEnable
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnEnable
@@ -442,7 +450,7 @@ body:
 - code: public void OnEnable()
 - api3: OnExit()
   id: Alis_Core_Ecs_Entity_GameObject_OnExit
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L404
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L397
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnExit
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnExit
@@ -450,7 +458,7 @@ body:
 - code: public void OnExit()
 - api3: OnFixedUpdate()
   id: Alis_Core_Ecs_Entity_GameObject_OnFixedUpdate
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L304
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L297
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnFixedUpdate
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnFixedUpdate
@@ -458,7 +466,7 @@ body:
 - code: public void OnFixedUpdate()
 - api3: OnGui()
   id: Alis_Core_Ecs_Entity_GameObject_OnGui
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L359
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L352
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnGui
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnGui
@@ -466,7 +474,7 @@ body:
 - code: public void OnGui()
 - api3: OnInit()
   id: Alis_Core_Ecs_Entity_GameObject_OnInit
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L226
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L219
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnInit
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnInit
@@ -474,7 +482,7 @@ body:
 - code: public void OnInit()
 - api3: OnReset()
   id: Alis_Core_Ecs_Entity_GameObject_OnReset
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L382
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L375
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnReset
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnReset
@@ -482,7 +490,7 @@ body:
 - code: public void OnReset()
 - api3: OnStart()
   id: Alis_Core_Ecs_Entity_GameObject_OnStart
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L249
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L242
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnStart
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnStart
@@ -490,7 +498,7 @@ body:
 - code: public void OnStart()
 - api3: OnStop()
   id: Alis_Core_Ecs_Entity_GameObject_OnStop
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L393
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L386
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnStop
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnStop
@@ -498,7 +506,7 @@ body:
 - code: public void OnStop()
 - api3: OnUpdate()
   id: Alis_Core_Ecs_Entity_GameObject_OnUpdate
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L271
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L264
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.OnUpdate
     commentId: M:Alis.Core.Ecs.Entity.GameObject.OnUpdate
@@ -506,15 +514,15 @@ body:
 - code: public void OnUpdate()
 - api3: Remove<T>(T)
   id: Alis_Core_Ecs_Entity_GameObject_Remove__1___0_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L172
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Entity/GameObject.cs#L174
   metadata:
     uid: Alis.Core.Ecs.Entity.GameObject.Remove``1(``0)
     commentId: M:Alis.Core.Ecs.Entity.GameObject.Remove``1(``0)
 - markdown: Removes the component
-- code: 'public void Remove<T>(T component) where T : AComponent'
+- code: 'public void Remove<T>(T value) where T : AComponent'
 - h4: Parameters
 - parameters:
-  - name: component
+  - name: value
     type:
     - T
     description: The component

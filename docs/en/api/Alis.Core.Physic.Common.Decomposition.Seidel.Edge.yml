@@ -1,0 +1,218 @@
+### YamlMime:ApiPage
+title: Class Edge
+body:
+- api1: Class Edge
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge
+    commentId: T:Alis.Core.Physic.Common.Decomposition.Seidel.Edge
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.Seidel
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The edge class
+- code: internal class Edge
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Edge
+    url: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Edge(Point, Point)
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge__ctor_Alis_Core_Physic_Common_Decomposition_Seidel_Point_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L84
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.#ctor(Alis.Core.Physic.Common.Decomposition.Seidel.Point,Alis.Core.Physic.Common.Decomposition.Seidel.Point)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Edge.#ctor(Alis.Core.Physic.Common.Decomposition.Seidel.Point,Alis.Core.Physic.Common.Decomposition.Seidel.Point)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Decomposition.Seidel.Edge" data-throw-if-not-resolved="false"></xref> class
+- code: public Edge(Point p, Point q)
+- h4: Parameters
+- parameters:
+  - name: p
+    type:
+    - text: Point
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
+    description: The
+  - name: q
+    type:
+    - text: Point
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
+    description: The
+- h2: Fields
+- api3: Above
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge_Above
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L44
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.Above
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Edge.Above
+- markdown: The above
+- code: public Trapezoid Above
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+- api3: B
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge_B
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L49
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.B
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Edge.B
+- markdown: The
+- code: public float B
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Below
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge_Below
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L54
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.Below
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Edge.Below
+- markdown: The below
+- code: public Trapezoid Below
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+- api3: MPoints
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge_MPoints
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L60
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.MPoints
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Edge.MPoints
+- markdown: The points
+- code: public HashSet<Point> MPoints
+- h4: Field Value
+- parameters:
+  - type:
+    - text: HashSet
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+    - <
+    - text: Point
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
+    - '>'
+- api3: P
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge_P
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L65
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.P
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Edge.P
+- markdown: The
+- code: public Point P
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Point
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
+- api3: Q
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge_Q
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L70
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.Q
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Edge.Q
+- markdown: The
+- code: public Point Q
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Point
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
+- api3: Slope
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge_Slope
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L76
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.Slope
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Edge.Slope
+- markdown: The slope
+- code: public float Slope
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Methods
+- api3: AddMpoint(Point)
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge_AddMpoint_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L120
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.AddMpoint(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Edge.AddMpoint(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
+- markdown: Adds the mpoint using the specified point
+- code: public void AddMpoint(Point point)
+- h4: Parameters
+- parameters:
+  - name: point
+    type:
+    - text: Point
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
+    description: The point
+- api3: IsAbove(Point)
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge_IsAbove_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L107
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.IsAbove(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Edge.IsAbove(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
+- markdown: Describes whether this instance is above
+- code: public bool IsAbove(Point point)
+- h4: Parameters
+- parameters:
+  - name: point
+    type:
+    - text: Point
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
+    description: The point
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: IsBelow(Point)
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_Edge_IsBelow_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Edge.cs#L114
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.IsBelow(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Edge.IsBelow(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
+- markdown: Describes whether this instance is below
+- code: public bool IsBelow(Point point)
+- h4: Parameters
+- parameters:
+  - name: point
+    type:
+    - text: Point
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
+    description: The point
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+languageId: csharp
+metadata:
+  description: The edge class

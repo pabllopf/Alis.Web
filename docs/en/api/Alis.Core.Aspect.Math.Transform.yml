@@ -41,14 +41,14 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Constructors
-- api3: Transform(Vector2, Rotation, Vector2)
-  id: Alis_Core_Aspect_Math_Transform__ctor_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Rotation_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L67
+- api3: Transform(Vector2, float, Vector2)
+  id: Alis_Core_Aspect_Math_Transform__ctor_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L65
   metadata:
-    uid: Alis.Core.Aspect.Math.Transform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Rotation,Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Aspect.Math.Transform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Rotation,Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Aspect.Math.Transform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,System.Single,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Aspect.Math.Transform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,System.Single,Alis.Core.Aspect.Math.Vector.Vector2)
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Math.Transform" data-throw-if-not-resolved="false"></xref> class
-- code: public Transform(Vector2 position, Rotation rotation, Vector2 scale)
+- code: public Transform(Vector2 position, float rotation, Vector2 scale)
 - h4: Parameters
 - parameters:
   - name: position
@@ -58,8 +58,8 @@ body:
     description: The position
   - name: rotation
     type:
-    - text: Rotation
-      url: Alis.Core.Aspect.Math.Rotation.html
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
     description: The rotation
   - name: scale
     type:
@@ -82,20 +82,20 @@ body:
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: Rotation
   id: Alis_Core_Aspect_Math_Transform_Rotation
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L58
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L52
   metadata:
     uid: Alis.Core.Aspect.Math.Transform.Rotation
     commentId: F:Alis.Core.Aspect.Math.Transform.Rotation
 - markdown: The
-- code: public Rotation Rotation
+- code: public float Rotation
 - h4: Field Value
 - parameters:
   - type:
-    - text: Rotation
-      url: Alis.Core.Aspect.Math.Rotation.html
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Scale
   id: Alis_Core_Aspect_Math_Transform_Scale
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L52
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L57
   metadata:
     uid: Alis.Core.Aspect.Math.Transform.Scale
     commentId: F:Alis.Core.Aspect.Math.Transform.Scale
@@ -109,7 +109,7 @@ body:
 - h2: Methods
 - api3: GetObjectData(SerializationInfo, StreamingContext)
   id: Alis_Core_Aspect_Math_Transform_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L95
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L77
   metadata:
     uid: Alis.Core.Aspect.Math.Transform.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
     commentId: M:Alis.Core.Aspect.Math.Transform.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
@@ -129,7 +129,7 @@ body:
     description: The context
 - api3: Set(Vector2, float)
   id: Alis_Core_Aspect_Math_Transform_Set_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L84
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L94
   metadata:
     uid: Alis.Core.Aspect.Math.Transform.Set(Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Transform.Set(Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
@@ -149,7 +149,7 @@ body:
     description: The angle.
 - api3: SetIdentity()
   id: Alis_Core_Aspect_Math_Transform_SetIdentity
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L75
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Transform.cs#L85
   metadata:
     uid: Alis.Core.Aspect.Math.Transform.SetIdentity
     commentId: M:Alis.Core.Aspect.Math.Transform.SetIdentity

@@ -1,0 +1,119 @@
+### YamlMime:ApiPage
+title: Class PolygonSet
+body:
+- api1: Class PolygonSet
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonSet
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/PolygonSet.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.CDT.Polygon
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The polygon set class
+- code: internal class PolygonSet
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: PolygonSet
+    url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: PolygonSet()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonSet__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/PolygonSet.cs#L53
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.#ctor
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet" data-throw-if-not-resolved="false"></xref> class
+- code: public PolygonSet()
+- api3: PolygonSet(Polygon)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonSet__ctor_Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/PolygonSet.cs#L61
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.#ctor(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.#ctor(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet" data-throw-if-not-resolved="false"></xref> class
+- code: public PolygonSet(Polygon poly)
+- h4: Parameters
+- parameters:
+  - name: poly
+    type:
+    - text: Polygon
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.html
+    description: The poly
+- h2: Fields
+- api3: _polygons
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonSet__polygons
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/PolygonSet.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet._polygons
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet._polygons
+- markdown: The polygon
+- code: protected List<Polygon> _polygons
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Polygon
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.html
+    - '>'
+- h2: Properties
+- api3: Polygons
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonSet_Polygons
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/PolygonSet.cs#L69
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.Polygons
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.Polygons
+- markdown: Gets the value of the polygons
+- code: public IEnumerable<Polygon> Polygons { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - text: Polygon
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.html
+    - '>'
+- h2: Methods
+- api3: Add(Polygon)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonSet_Add_Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/PolygonSet.cs#L75
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.Add(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.Add(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon)
+- markdown: Adds the p
+- code: public void Add(Polygon p)
+- h4: Parameters
+- parameters:
+  - name: p
+    type:
+    - text: Polygon
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.html
+    description: The
+languageId: csharp
+metadata:
+  description: The polygon set class

@@ -317,17 +317,12 @@
 
         <article data-uid="">
 <h1 class='section api' data-uid='Alis.Core.Physic.Dynamics' data-commentid='N:Alis.Core.Physic.Dynamics' id='Alis_Core_Physic_Dynamics'>Namespace Alis.Core.Physic.Dynamics   </h1>
- <h3 class='section'>Namespaces</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Handlers.html'>Alis.Core.Physic.Dynamics.Handlers</a>  </dt>
+ <h3 class='section'>Namespaces</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Contacts.html'>Alis.Core.Physic.Dynamics.Contacts</a>  </dt>
 <dd>
 
 
 
 </dd><dt> <a href='Alis.Core.Physic.Dynamics.Joints.html'>Alis.Core.Physic.Dynamics.Joints</a>  </dt>
-<dd>
-
-
-
-</dd><dt> <a href='Alis.Core.Physic.Dynamics.Solver.html'>Alis.Core.Physic.Dynamics.Solver</a>  </dt>
 <dd>
 
 
@@ -338,44 +333,231 @@
 
 <p>The body class</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Dynamics.BodyHelper.html'>BodyHelper</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.BodyCollection.html'>BodyCollection</a>  </dt>
 <dd>
 
 
-<p>The body helper class</p>
+<p>The body collection class</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Dynamics.BreakableBody.html'>BreakableBody</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.ContactManager.html'>ContactManager</a>  </dt>
 <dd>
 
 
-<p>A type of body that supports multiple fixtures that can break apart.</p>
+<p>The contact manager class</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.ControllerCollection.html'>ControllerCollection</a>  </dt>
+<dd>
+
+
+<p>The controller collection class</p>
 
 </dd><dt> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
 <dd>
 
 
-<p>A fixture is used to attach a Shape to a body for collision detection. A fixture inherits its transform from
-its parent. Fixtures hold additional non-geometric data such as friction, collision filters, etc. Fixtures are
-created
-via Body.CreateFixture. Warning: You cannot reuse fixtures.</p>
+<p>A fixture is used to attach a Shape to a body for collision detection. A fixture
+inherits its transform from its parent. Fixtures hold additional non-geometric data
+such as friction, collision filters, etc.</p>
 
-</dd></dl><h3 class='section'>Structs</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.FixtureProxy.html'>FixtureProxy</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.FixtureCollection.html'>FixtureCollection</a>  </dt>
+<dd>
+
+
+<p>The fixture collection class</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.Island.html'>Island</a>  </dt>
+<dd>
+
+
+<p>This is an internal class.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.JointCollection.html'>JointCollection</a>  </dt>
+<dd>
+
+
+<p>The joint collection class</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.MathUtils.html'>MathUtils</a>  </dt>
+<dd>
+
+
+<p>The math utils class</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.World.html'>World</a>  </dt>
+<dd>
+
+
+<p>The world class manages all physics entities, dynamic simulation,
+and asynchronous queries.</p>
+
+</dd></dl><h3 class='section'>Structs</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.BodyCollection.BodyEnumerator.html'>BodyCollection.BodyEnumerator</a>  </dt>
+<dd>
+
+
+<p>The body enumerator</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.ControllerCollection.ControllerEnumerator.html'>ControllerCollection.ControllerEnumerator</a>  </dt>
+<dd>
+
+
+<p>The controller enumerator</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.FixtureCollection.FixtureEnumerator.html'>FixtureCollection.FixtureEnumerator</a>  </dt>
+<dd>
+
+
+<p>The fixture enumerator</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.FixtureProxy.html'>FixtureProxy</a>  </dt>
 <dd>
 
 
 <p>This proxy is used internally to connect fixtures to the broad-phase.</p>
 
-</dd></dl><h3 class='section'>Enums</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.BodySettings.html'>BodySettings</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.JointCollection.JointEnumerator.html'>JointCollection.JointEnumerator</a>  </dt>
 <dd>
 
 
-<p>The body flags enum</p>
+<p>The joint enumerator</p>
 
-</dd><dt> <a href='Alis.Core.Physic.Dynamics.BodyType.html'>BodyType</a>  </dt>
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.SolverData.html'>SolverData</a>  </dt>
+<dd>
+
+
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.SolverIterations.html'>SolverIterations</a>  </dt>
+<dd>
+
+
+<p>The solver iterations</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.SolverPosition.html'>SolverPosition</a>  </dt>
+<dd>
+
+
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.SolverVelocity.html'>SolverVelocity</a>  </dt>
+<dd>
+
+
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.TimeStep.html'>TimeStep</a>  </dt>
+<dd>
+
+
+<p>This is an internal structure.</p>
+
+</dd></dl><h3 class='section'>Enums</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.BodyType.html'>BodyType</a>  </dt>
 <dd>
 
 
 <p>The body type.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.Category.html'>Category</a>  </dt>
+<dd>
+
+
+<p>The category enum</p>
+
+</dd></dl><h3 class='section'>Delegates</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.AfterCollisionEventHandler.html'>AfterCollisionEventHandler</a>  </dt>
+<dd>
+
+
+<p>The after collision event handler</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.BeforeCollisionEventHandler.html'>BeforeCollisionEventHandler</a>  </dt>
+<dd>
+
+
+<p>The before collision event handler</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.BeginContactDelegate.html'>BeginContactDelegate</a>  </dt>
+<dd>
+
+
+<p>This delegate is called when a contact is created</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.BodyDelegate.html'>BodyDelegate</a>  </dt>
+<dd>
+
+
+<p>The body delegate</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.CollisionFilterDelegate.html'>CollisionFilterDelegate</a>  </dt>
+<dd>
+
+
+<p>The collision filter delegate</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.ControllerDelegate.html'>ControllerDelegate</a>  </dt>
+<dd>
+
+
+<p>The controller delegate</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.EndContactDelegate.html'>EndContactDelegate</a>  </dt>
+<dd>
+
+
+<p>This delegate is called when a contact is deleted</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.FixtureDelegate.html'>FixtureDelegate</a>  </dt>
+<dd>
+
+
+<p>The fixture delegate</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.JointDelegate.html'>JointDelegate</a>  </dt>
+<dd>
+
+
+<p>The joint delegate</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.OnCollisionEventHandler.html'>OnCollisionEventHandler</a>  </dt>
+<dd>
+
+
+<p>The on collision event handler</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.OnSeparationEventHandler.html'>OnSeparationEventHandler</a>  </dt>
+<dd>
+
+
+<p>The on separation event handler</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.PostSolveDelegate.html'>PostSolveDelegate</a>  </dt>
+<dd>
+
+
+<p>The post solve delegate</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.PreSolveDelegate.html'>PreSolveDelegate</a>  </dt>
+<dd>
+
+
+<p>The pre solve delegate</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.QueryReportFixtureDelegate.html'>QueryReportFixtureDelegate</a>  </dt>
+<dd>
+
+
+<p>Called for each fixture found in the query.
+<returns>true: Continues the query, false: Terminate the query</returns></p>
+
+</dd><dt> <a href='Alis.Core.Physic.Dynamics.RayCastReportFixtureDelegate.html'>RayCastReportFixtureDelegate</a>  </dt>
+<dd>
+
+
+<p>Called for each fixture found in the query. You control how the ray cast
+proceeds by returning a float:
+return -1: ignore this fixture and continue
+return 0: terminate the ray cast
+return fraction: clip the ray to this point
+return 1: don't clip the ray and continue
+@param fixture the fixture hit by the ray
+@param point the point of initial intersection
+@param normal the normal vector at the point of intersection
+@return 0 to terminate, fraction to clip the ray for closest hit, 1 to continue</p>
 
 </dd></dl>
 </article>

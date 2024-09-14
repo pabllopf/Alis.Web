@@ -3,7 +3,7 @@ title: Class WheelJoint
 body:
 - api1: Class WheelJoint
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L57
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L58
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint
     commentId: T:Alis.Core.Physic.Dynamics.Joints.WheelJoint
@@ -15,37 +15,15 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: >-
-    A wheel joint. This joint provides two degrees of freedom: translation along an axis fixed in bodyA and
+    A wheel joint. This joint provides two degrees of freedom: translation
 
-    rotation in the plane. In other words, it is a point to line constraint with a rotational motor and a linear
+    along an axis fixed in bodyA and rotation in the plane. You can use a
 
-    spring/damper. The spring/damper is initialized upon creation. This joint is designed for vehicle suspensions.
+    joint limit to restrict the range of motion and a joint motor to drive
 
-    Linear constraint (point-to-line)
+    the rotation or to model rotational friction.
 
-    d = pB - pA = xB + rB - xA - rA
-
-    C = dot(ay, d)
-
-    Cdo = dot(d, cross(wA, ay)) + dot(ay, vB + cross(wB, rB) - vA - cross(wA, rA))
-
-    = -dot(ay, vA) - dot(cross(d + rA, ay), wA) + dot(ay, vB) + dot(cross(rB, ay), vB)
-
-    J = [-ay, -cross(d + rA, ay), ay, cross(rB, ay)]
-
-    Spring linear constraint
-
-    C = dot(ax, d)
-
-    Cdo = = -dot(ax, vA) - dot(cross(d + rA, ax), wA) + dot(ax, vB) + dot(cross(rB, ax), vB)
-
-    J = [-ax -cross(d+rA, ax) ax cross(rB, ax)]
-
-    Motor rotational constraint
-
-    Cdo = wB - wA
-
-    J = [0 0 -1 0 0 1]
+    This joint is designed for vehicle suspensions.
 - code: 'public class WheelJoint : Joint'
 - h4: Inheritance
 - inheritance:
@@ -57,18 +35,26 @@ body:
     url: Alis.Core.Physic.Dynamics.Joints.WheelJoint.html
 - h4: Inherited Members
 - list:
-  - text: Joint._jointType
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__jointType
+  - text: Joint._breakpoint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpoint
+  - text: Joint._breakpointSquared
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpointSquared
+  - text: Joint._world
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__world
   - text: Joint.EdgeA
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeA
   - text: Joint.EdgeB
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeB
-  - text: Joint.IslandFlag
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IslandFlag
-  - text: Joint.JointType
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_JointType
   - text: Joint.Enabled
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Enabled
+  - text: Joint.IslandFlag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IslandFlag
+  - text: Joint.Tag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Tag
+  - text: Joint.World
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_World
+  - text: Joint.JointType
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_JointType
   - text: Joint.BodyA
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyA
   - text: Joint.BodyB
@@ -77,8 +63,6 @@ body:
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorA
   - text: Joint.WorldAnchorB
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorB
-  - text: Joint.UserData
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_UserData
   - text: Joint.CollideConnected
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_CollideConnected
   - text: Joint.Breakpoint
@@ -89,22 +73,18 @@ body:
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionForce_System_Single_
   - text: Joint.GetReactionTorque(float)
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionTorque_System_Single_
-  - text: Joint.ShiftOrigin(ref Vector2)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_ShiftOrigin_Alis_Core_Aspect_Math_Vector_Vector2__
   - text: Joint.WakeBodies()
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WakeBodies
   - text: Joint.IsFixedType()
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IsFixedType
   - text: Joint.InitVelocityConstraints(ref SolverData)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
   - text: Joint.Validate(float)
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Validate_System_Single_
   - text: Joint.SolveVelocityConstraints(ref SolverData)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
   - text: Joint.SolvePositionConstraints(ref SolverData)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  - text: Joint.DisableIslandFlag()
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_DisableIslandFlag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_SolverData__
   - text: object.Equals(object?)
     url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - text: object.Equals(object?, object?)
@@ -119,10 +99,45 @@ body:
     url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Linear constraint (point-to-line)
+
+    d = pB - pA = xB + rB - xA - rA
+
+    C = dot(ay, d)
+
+    Cdot = dot(d, cross(wA, ay)) + dot(ay, vB + cross(wB, rB) - vA - cross(wA, rA))
+
+    = -dot(ay, vA) - dot(cross(d + rA, ay), wA) + dot(ay, vB) + dot(cross(rB, ay), vB)
+
+    J = [-ay, -cross(d + rA, ay), ay, cross(rB, ay)]
+
+    Spring linear constraint
+
+    C = dot(ax, d)
+
+    Cdot = = -dot(ax, vA) - dot(cross(d + rA, ax), wA) + dot(ax, vB) + dot(cross(rB, ax), vB)
+
+    J = [-ax -cross(d+rA, ax) ax cross(rB, ax)]
+
+    Motor rotational constraint
+
+    Cdot = wB - wA
+
+    J = [0 0 -1 0 0 1]
 - h2: Constructors
+- api3: WheelJoint()
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L190
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.#ctor
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Joints.WheelJoint" data-throw-if-not-resolved="false"></xref> class
+- code: internal WheelJoint()
 - api3: WheelJoint(Body, Body, Vector2, Vector2, bool)
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L241
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L200
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
@@ -156,253 +171,348 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: Set to true if you are using world coordinates as anchors.
     optional: true
-- api3: WheelJoint(Body, Body, JointType, bool, Vector2, Vector2, Vector2, bool, float, float, bool, float, float, float, float)
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Joints_JointType_System_Boolean_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_System_Single_System_Single_System_Boolean_System_Single_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L279
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Joints.JointType,System.Boolean,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean,System.Single,System.Single,System.Boolean,System.Single,System.Single,System.Single,System.Single)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Joints.JointType,System.Boolean,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean,System.Single,System.Single,System.Boolean,System.Single,System.Single,System.Single,System.Single)
-- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Joints.WheelJoint" data-throw-if-not-resolved="false"></xref> class
-- code: public WheelJoint(Body bodyA = null, Body bodyB = null, JointType jointType = JointType.Unknown, bool collideConnected = false, Vector2 localAnchorA = default, Vector2 localAnchorB = default, Vector2 localAxisA = default, bool enableLimit = false, float lowerTranslation = 0, float upperTranslation = 0, bool enableMotor = false, float maxMotorTorque = 0, float motorSpeed = 0, float stiffness = 0, float damping = 0)
-- h4: Parameters
-- parameters:
-  - name: bodyA
-    type:
-    - text: Body
-      url: Alis.Core.Physic.Dynamics.Body.html
-    description: The body
-    optional: true
-  - name: bodyB
-    type:
-    - text: Body
-      url: Alis.Core.Physic.Dynamics.Body.html
-    description: The body
-    optional: true
-  - name: jointType
-    type:
-    - text: JointType
-      url: Alis.Core.Physic.Dynamics.Joints.JointType.html
-    description: The joint type
-    optional: true
-  - name: collideConnected
-    type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The collide connected
-    optional: true
-  - name: localAnchorA
-    type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The local anchor
-    optional: true
-  - name: localAnchorB
-    type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The local anchor
-    optional: true
-  - name: localAxisA
-    type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The local axis
-    optional: true
-  - name: enableLimit
-    type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The enable limit
-    optional: true
-  - name: lowerTranslation
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The lower translation
-    optional: true
-  - name: upperTranslation
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The upper translation
-    optional: true
-  - name: enableMotor
-    type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The enable motor
-    optional: true
-  - name: maxMotorTorque
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The max motor torque
-    optional: true
-  - name: motorSpeed
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The motor speed
-    optional: true
-  - name: stiffness
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The stiffness
-    optional: true
-  - name: damping
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The damping
-    optional: true
 - h2: Fields
-- api3: ax
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_ax
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L72
+- api3: _ax
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__ax
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L63
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.ax
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.ax
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._ax
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._ax
 - markdown: The ay
-- code: private Vector2 ax
+- code: private Vector2 _ax
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: axialMass
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_axialMass
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L77
+- api3: _axis
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__axis
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L68
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.axialMass
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.axialMass
-- markdown: The axial mass
-- code: private float axialMass
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: ay
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_ay
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L72
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.ay
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.ay
-- markdown: The ay
-- code: private Vector2 ay
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._axis
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._axis
+- markdown: The axis
+- code: private Vector2 _axis
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: bias
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_bias
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L82
+- api3: _ay
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__ay
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L63
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.bias
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.bias
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._ay
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._ay
+- markdown: The ay
+- code: private Vector2 _ay
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _bias
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__bias
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L73
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._bias
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._bias
 - markdown: The bias
-- code: private float bias
+- code: private float _bias
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: damping
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_damping
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L87
+- api3: _enableMotor
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__enableMotor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L78
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.damping
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.damping
-- markdown: The damping
-- code: private float damping
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: enableLimit
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_enableLimit
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L92
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.enableLimit
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.enableLimit
-- markdown: The enable limit
-- code: private bool enableLimit
-- h4: Field Value
-- parameters:
-  - type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: enableMotor
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_enableMotor
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L97
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.enableMotor
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.enableMotor
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._enableMotor
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._enableMotor
 - markdown: The enable motor
-- code: private bool enableMotor
+- code: private bool _enableMotor
 - h4: Field Value
 - parameters:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: gamma
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_gamma
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L102
+- api3: _gamma
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__gamma
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L83
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.gamma
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.gamma
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._gamma
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._gamma
 - markdown: The gamma
-- code: private float gamma
+- code: private float _gamma
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: impulse
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_impulse
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L107
+- api3: _impulse
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__impulse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L88
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.impulse
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.impulse
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._impulse
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._impulse
 - markdown: The impulse
-- code: private float impulse
+- code: private float _impulse
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: indexA
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_indexA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L113
+- api3: _indexA
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__indexA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L94
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.indexA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.indexA
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._indexA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._indexA
 - markdown: The index
-- code: private int indexA
+- code: private int _indexA
 - h4: Field Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: indexB
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_indexB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L118
+- api3: _indexB
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__indexB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L99
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.indexB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.indexB
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._indexB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._indexB
 - markdown: The index
-- code: private int indexB
+- code: private int _indexB
 - h4: Field Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _invMassA
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__invMassA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L104
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._invMassA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._invMassA
+- markdown: The inv mass
+- code: private float _invMassA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _invMassB
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__invMassB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L109
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._invMassB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._invMassB
+- markdown: The inv mass
+- code: private float _invMassB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _localCenterA
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__localCenterA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L114
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._localCenterA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._localCenterA
+- markdown: The local center
+- code: private Vector2 _localCenterA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _localCenterB
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__localCenterB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L119
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._localCenterB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._localCenterB
+- markdown: The local center
+- code: private Vector2 _localCenterB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _localXAxis
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__localXAxis
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L125
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._localXAxis
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._localXAxis
+- markdown: The local axis
+- code: private Vector2 _localXAxis
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _localYAxis
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__localYAxis
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L130
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._localYAxis
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._localYAxis
+- markdown: The local axis
+- code: private Vector2 _localYAxis
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _mass
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__mass
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L135
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._mass
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._mass
+- markdown: The mass
+- code: private float _mass
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _maxMotorTorque
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__maxMotorTorque
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L140
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._maxMotorTorque
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._maxMotorTorque
+- markdown: The max motor torque
+- code: private float _maxMotorTorque
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _motorImpulse
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__motorImpulse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L145
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._motorImpulse
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._motorImpulse
+- markdown: The motor impulse
+- code: private float _motorImpulse
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _motorMass
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__motorMass
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L150
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._motorMass
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._motorMass
+- markdown: The motor mass
+- code: private float _motorMass
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _motorSpeed
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__motorSpeed
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L155
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._motorSpeed
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._motorSpeed
+- markdown: The motor speed
+- code: private float _motorSpeed
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _sAx
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__sAx
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L160
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._sAx
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._sAx
+- markdown: The bx
+- code: private float _sAx
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _sAy
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__sAy
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L165
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._sAy
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._sAy
+- markdown: The by
+- code: private float _sAy
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _sBx
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__sBx
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L160
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._sBx
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._sBx
+- markdown: The bx
+- code: private float _sBx
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _sBy
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__sBy
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L165
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._sBy
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._sBy
+- markdown: The by
+- code: private float _sBy
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _springImpulse
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__springImpulse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L170
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._springImpulse
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._springImpulse
+- markdown: The spring impulse
+- code: private float _springImpulse
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _springMass
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__springMass
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L175
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._springMass
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._springMass
+- markdown: The spring mass
+- code: private float _springMass
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: invIa
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_invIa
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L123
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L180
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.invIa
     commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.invIa
@@ -415,7 +525,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: invIb
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_invIb
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L128
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L185
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.invIb
     commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.invIb
@@ -426,392 +536,54 @@ body:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: invMassA
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_invMassA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L133
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.invMassA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.invMassA
-- markdown: The inv mass
-- code: private float invMassA
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: invMassB
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_invMassB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L138
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.invMassB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.invMassB
-- markdown: The inv mass
-- code: private float invMassB
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: localAnchorA
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_localAnchorA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L143
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.localAnchorA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.localAnchorA
-- markdown: The local anchor
-- code: private Vector2 localAnchorA
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localAnchorB
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_localAnchorB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L148
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.localAnchorB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.localAnchorB
-- markdown: The local anchor
-- code: private Vector2 localAnchorB
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localCenterA
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_localCenterA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L153
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.localCenterA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.localCenterA
-- markdown: The local center
-- code: private Vector2 localCenterA
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localCenterB
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_localCenterB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L158
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.localCenterB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.localCenterB
-- markdown: The local center
-- code: private Vector2 localCenterB
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localXAxisA
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_localXAxisA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L62
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.localXAxisA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.localXAxisA
-- markdown: The local axis
-- code: private readonly Vector2 localXAxisA
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localYAxisA
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_localYAxisA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L67
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.localYAxisA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.localYAxisA
-- markdown: The local axis
-- code: private readonly Vector2 localYAxisA
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: lowerImpulse
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_lowerImpulse
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L163
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.lowerImpulse
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.lowerImpulse
-- markdown: The lower impulse
-- code: private float lowerImpulse
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: lowerTranslation
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_lowerTranslation
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L168
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.lowerTranslation
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.lowerTranslation
-- markdown: The lower translation
-- code: private float lowerTranslation
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: mass
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_mass
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L173
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.mass
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.mass
-- markdown: The mass
-- code: private float mass
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: maxMotorTorque
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_maxMotorTorque
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L178
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.maxMotorTorque
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.maxMotorTorque
-- markdown: The max motor torque
-- code: private float maxMotorTorque
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: motorImpulse
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_motorImpulse
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L183
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.motorImpulse
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.motorImpulse
-- markdown: The motor impulse
-- code: private float motorImpulse
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: motorMass
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_motorMass
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L188
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.motorMass
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.motorMass
-- markdown: The motor mass
-- code: private float motorMass
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: motorSpeed
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_motorSpeed
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L193
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.motorSpeed
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.motorSpeed
-- markdown: The motor speed
-- code: private float motorSpeed
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: sAx
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_sAx
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L198
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.sAx
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.sAx
-- markdown: The bx
-- code: private float sAx
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: sAy
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_sAy
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L203
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.sAy
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.sAy
-- markdown: The by
-- code: private float sAy
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: sBx
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_sBx
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L198
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.sBx
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.sBx
-- markdown: The bx
-- code: private float sBx
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: sBy
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_sBy
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L203
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.sBy
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.sBy
-- markdown: The by
-- code: private float sBy
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: springImpulse
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_springImpulse
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L208
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.springImpulse
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.springImpulse
-- markdown: The spring impulse
-- code: private float springImpulse
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: springMass
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_springMass
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L213
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.springMass
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.springMass
-- markdown: The spring mass
-- code: private float springMass
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: stiffness
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_stiffness
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L218
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.stiffness
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.stiffness
-- markdown: The stiffness
-- code: private float stiffness
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: translation
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_translation
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L223
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.translation
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.translation
-- markdown: The translation
-- code: private float translation
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: upperImpulse
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_upperImpulse
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L228
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.upperImpulse
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.upperImpulse
-- markdown: The upper impulse
-- code: private float upperImpulse
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: upperTranslation
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_upperTranslation
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L233
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.upperTranslation
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint.upperTranslation
-- markdown: The upper translation
-- code: private float upperTranslation
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
 - h2: Properties
-- api3: Damping
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_Damping
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L525
+- api3: Axis
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_Axis
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L250
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.Damping
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.Damping
-- markdown: Gets or sets the value of the damping
-- code: public float Damping { get; set; }
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.Axis
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.Axis
+- markdown: The axis at which the suspension moves.
+- code: public Vector2 Axis { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: DampingRatio
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_DampingRatio
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L300
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.DampingRatio
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.DampingRatio
+- markdown: Suspension damping ratio, one indicates critical damping
+- code: public float DampingRatio { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: EnableLimit
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_EnableLimit
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L507
+- api3: Frequency
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_Frequency
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L295
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.EnableLimit
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.EnableLimit
-- markdown: Gets or sets the value of the enable limit
-- code: public bool EnableLimit { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: JointAngle
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_JointAngle
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L435
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.JointAngle
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.JointAngle
-- markdown: Gets the value of the joint angle
-- code: public float JointAngle { get; }
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.Frequency
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.Frequency
+- markdown: Suspension frequency, zero indicates no suspension
+- code: public float Frequency { get; set; }
 - h4: Property Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: JointAngularSpeed
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_JointAngularSpeed
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L446
+- api3: JointSpeed
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_JointSpeed
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L325
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.JointAngularSpeed
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.JointAngularSpeed
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.JointSpeed
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.JointSpeed
 - markdown: Gets the angular velocity of the joint
-- code: public float JointAngularSpeed { get; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: JointLinearSpeed
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_JointLinearSpeed
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L407
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.JointLinearSpeed
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.JointLinearSpeed
-- markdown: Gets the value of the joint linear speed
-- code: public float JointLinearSpeed { get; }
+- code: public float JointSpeed { get; }
 - h4: Property Value
 - parameters:
   - type:
@@ -819,7 +591,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: JointTranslation
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_JointTranslation
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L388
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L305
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.JointTranslation
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.JointTranslation
@@ -832,7 +604,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: LocalAnchorA
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_LocalAnchorA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L328
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L222
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalAnchorA
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalAnchorA
@@ -845,7 +617,7 @@ body:
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: LocalAnchorB
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_LocalAnchorB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L335
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L227
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalAnchorB
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalAnchorB
@@ -856,40 +628,27 @@ body:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: LocalXAxisA
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_LocalXAxisA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L320
+- api3: LocalXAxis
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_LocalXAxis
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L264
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalXAxisA
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalXAxisA
-- markdown: Gets the value of the local x axis a
-- code: public Vector2 LocalXAxisA { get; }
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalXAxis
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalXAxis
+- markdown: The axis in local coordinates relative to BodyA
+- code: public Vector2 LocalXAxis { get; }
 - h4: Property Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: LocalYAxisA
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_LocalYAxisA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L325
+- api3: MaxMotorTorque
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_MaxMotorTorque
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L282
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalYAxisA
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalYAxisA
-- markdown: Gets the value of the local y axis a
-- code: public Vector2 LocalYAxisA { get; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: LowerLimit
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_LowerLimit
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L490
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.LowerLimit
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.LowerLimit
-- markdown: Gets or sets the value of the lower limit
-- code: public float LowerLimit { get; set; }
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.MaxMotorTorque
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.MaxMotorTorque
+- markdown: The maximum motor torque, usually in N-m.
+- code: public float MaxMotorTorque { get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -897,7 +656,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: MotorEnabled
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_MotorEnabled
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L457
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L338
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.MotorEnabled
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.MotorEnabled
@@ -910,7 +669,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: MotorSpeed
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_MotorSpeed
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L360
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L269
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.MotorSpeed
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.MotorSpeed
@@ -921,48 +680,9 @@ body:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: MotorTorque
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_MotorTorque
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L374
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.MotorTorque
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.MotorTorque
-- markdown: The maximum motor torque, usually in N-m.
-- code: public float MotorTorque { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: Stiffness
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_Stiffness
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L534
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.Stiffness
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.Stiffness
-- markdown: Gets or sets the value of the stiffness
-- code: public float Stiffness { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: UpperLimit
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_UpperLimit
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L473
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.UpperLimit
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.UpperLimit
-- markdown: Gets or sets the value of the upper limit
-- code: public float UpperLimit { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: WorldAnchorA
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_WorldAnchorA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L344
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L232
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.WorldAnchorA
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.WorldAnchorA
@@ -975,7 +695,7 @@ body:
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: WorldAnchorB
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_WorldAnchorB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L353
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L241
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.WorldAnchorB
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.WorldAnchorB
@@ -987,105 +707,9 @@ body:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - h2: Methods
-- api3: ApplyWarmStarting(ref SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_ApplyWarmStarting_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L733
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.ApplyWarmStarting(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.ApplyWarmStarting(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-- markdown: Applies the warm starting using the specified data
-- code: internal void ApplyWarmStarting(ref SolverData data)
-- h4: Parameters
-- parameters:
-  - name: data
-    type:
-    - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
-    description: The data
-- api3: CalculateAxAndAxialMass(Vector2, SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_CalculateAxAndAxialMass_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Physic_Dynamics_Solver_SolverData_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L689
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.CalculateAxAndAxialMass(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Physic.Dynamics.Solver.SolverData)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.CalculateAxAndAxialMass(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Physic.Dynamics.Solver.SolverData)
-- markdown: Calculates the ax and axial mass using the specified d
-- code: private void CalculateAxAndAxialMass(Vector2 d, SolverData data)
-- h4: Parameters
-- parameters:
-  - name: d
-    type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The
-  - name: data
-    type:
-    - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
-    description: The data
-- api3: CalculateAyAndMass(Vector2, SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_CalculateAyAndMass_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Physic_Dynamics_Solver_SolverData_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L672
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.CalculateAyAndMass(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Physic.Dynamics.Solver.SolverData)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.CalculateAyAndMass(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Physic.Dynamics.Solver.SolverData)
-- markdown: Calculates the ay and mass using the specified d
-- code: private void CalculateAyAndMass(Vector2 d, SolverData data)
-- h4: Parameters
-- parameters:
-  - name: d
-    type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The
-  - name: data
-    type:
-    - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
-    description: The data
-- api3: CalculateDVector(SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_CalculateDVector_Alis_Core_Physic_Dynamics_Solver_SolverData_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L657
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.CalculateDVector(Alis.Core.Physic.Dynamics.Solver.SolverData)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.CalculateDVector(Alis.Core.Physic.Dynamics.Solver.SolverData)
-- markdown: Calculates the d vector using the specified data
-- code: private Vector2 CalculateDVector(SolverData data)
-- h4: Parameters
-- parameters:
-  - name: data
-    type:
-    - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
-    description: The data
-- h4: Returns
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The vector
-- api3: CalculateSpringMassAndRelatedValues(Vector2, SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_CalculateSpringMassAndRelatedValues_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Physic_Dynamics_Solver_SolverData_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L710
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.CalculateSpringMassAndRelatedValues(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Physic.Dynamics.Solver.SolverData)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.CalculateSpringMassAndRelatedValues(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Physic.Dynamics.Solver.SolverData)
-- markdown: Calculates the spring mass and related values using the specified d
-- code: private void CalculateSpringMassAndRelatedValues(Vector2 d, SolverData data)
-- h4: Parameters
-- parameters:
-  - name: d
-    type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-    description: The
-  - name: data
-    type:
-    - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
-    description: The data
 - api3: GetMotorTorque(float)
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_GetMotorTorque_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L560
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L352
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.GetMotorTorque(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.GetMotorTorque(System.Single)
@@ -1105,12 +729,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: GetReactionForce(float)
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_GetReactionForce_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L567
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L359
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.GetReactionForce(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.GetReactionForce(System.Single)
 - markdown: Gets the reaction force using the specified inv dt
-- code: protected override Vector2 GetReactionForce(float invDt)
+- code: public override Vector2 GetReactionForce(float invDt)
 - h4: Parameters
 - parameters:
   - name: invDt
@@ -1126,7 +750,7 @@ body:
     description: The vector
 - api3: GetReactionTorque(float)
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_GetReactionTorque_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L575
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L366
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.GetReactionTorque(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.GetReactionTorque(System.Single)
@@ -1146,11 +770,11 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
     description: The float
 - api3: InitVelocityConstraints(ref SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L581
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L372
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
 - markdown: Inits the velocity constraints using the specified data
 - code: internal override void InitVelocityConstraints(ref SolverData data)
 - h4: Parameters
@@ -1158,42 +782,14 @@ body:
   - name: data
     type:
     - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
+      url: Alis.Core.Physic.Dynamics.SolverData.html
     description: The data
-- api3: SetInitialValues()
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_SetInitialValues
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L640
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.SetInitialValues
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.SetInitialValues
-- markdown: Sets the initial values using the specified data
-- code: private void SetInitialValues()
-- api3: SetLimits(float, float)
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_SetLimits_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L545
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.SetLimits(System.Single,System.Single)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.SetLimits(System.Single,System.Single)
-- markdown: Sets the limits using the specified lower
-- code: public void SetLimits(float lower, float upper)
-- h4: Parameters
-- parameters:
-  - name: lower
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The lower
-  - name: upper
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The upper
 - api3: SolvePositionConstraints(ref SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L857
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L585
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
 - markdown: Describes whether this instance solve position constraints
 - code: internal override bool SolvePositionConstraints(ref SolverData data)
 - h4: Parameters
@@ -1201,7 +797,7 @@ body:
   - name: data
     type:
     - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
+      url: Alis.Core.Physic.Dynamics.SolverData.html
     description: The data
 - h4: Returns
 - parameters:
@@ -1210,11 +806,11 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: The bool
 - api3: SolveVelocityConstraints(ref SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L752
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L516
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
 - markdown: Solves the velocity constraints using the specified data
 - code: internal override void SolveVelocityConstraints(ref SolverData data)
 - h4: Parameters
@@ -1222,39 +818,17 @@ body:
   - name: data
     type:
     - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
+      url: Alis.Core.Physic.Dynamics.SolverData.html
     description: The data
 languageId: csharp
 metadata:
   description: >-
-    A wheel joint. This joint provides two degrees of freedom: translation along an axis fixed in bodyA and
+    A wheel joint. This joint provides two degrees of freedom: translation
 
-    rotation in the plane. In other words, it is a point to line constraint with a rotational motor and a linear
+    along an axis fixed in bodyA and rotation in the plane. You can use a
 
-    spring/damper. The spring/damper is initialized upon creation. This joint is designed for vehicle suspensions.
+    joint limit to restrict the range of motion and a joint motor to drive
 
-    Linear constraint (point-to-line)
+    the rotation or to model rotational friction.
 
-    d = pB - pA = xB + rB - xA - rA
-
-    C = dot(ay, d)
-
-    Cdo = dot(d, cross(wA, ay)) + dot(ay, vB + cross(wB, rB) - vA - cross(wA, rA))
-
-    = -dot(ay, vA) - dot(cross(d + rA, ay), wA) + dot(ay, vB) + dot(cross(rB, ay), vB)
-
-    J = [-ay, -cross(d + rA, ay), ay, cross(rB, ay)]
-
-    Spring linear constraint
-
-    C = dot(ax, d)
-
-    Cdo = = -dot(ax, vA) - dot(cross(d + rA, ax), wA) + dot(ax, vB) + dot(cross(rB, ax), vB)
-
-    J = [-ax -cross(d+rA, ax) ax cross(rB, ax)]
-
-    Motor rotational constraint
-
-    Cdo = wB - wA
-
-    J = [0 0 -1 0 0 1]
+    This joint is designed for vehicle suspensions.

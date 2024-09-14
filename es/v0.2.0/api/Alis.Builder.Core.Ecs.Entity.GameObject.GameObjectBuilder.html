@@ -318,7 +318,7 @@
  <div class="facts text-secondary">
 <dl><dt>Namespace</dt><dd><a href='Alis.Builder.Core.Ecs.Entity.GameObject.html'>Alis.Builder.Core.Ecs.Entity.GameObject</a></dd></dl><dl><dt>Assembly</dt><dd>Alis.dll</dd></dl>
 </div><p>The game object builder class</p>
-<pre><code class='lang-csharp'>public class GameObjectBuilder : IBuild&lt;GameObject&gt;, IName&lt;GameObjectBuilder, string&gt;, IAddComponent&lt;GameObjectBuilder, AComponent&gt;, ITransform&lt;GameObjectBuilder, Func&lt;TransformBuilder, Transform&gt;&gt;, IWithTag&lt;GameObjectBuilder, string&gt;</code></pre><h4 class='section'>Inheritance</h4><dl class="typelist inheritance"><dd>
+<pre><code class='lang-csharp'>public class GameObjectBuilder : IBuild&lt;GameObject&gt;, IName&lt;GameObjectBuilder, string&gt;, IIsStatic&lt;GameObjectBuilder, bool&gt;, IAddComponent&lt;GameObjectBuilder, AComponent&gt;, ITransform&lt;GameObjectBuilder, Func&lt;TransformBuilder, Transform&gt;&gt;, IWithTag&lt;GameObjectBuilder, string&gt;</code></pre><h4 class='section'>Inheritance</h4><dl class="typelist inheritance"><dd>
 <div>
 <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>
 </div>
@@ -332,6 +332,9 @@
 </div>
 <div>
 <a href='Alis.Core.Aspect.Fluent.Words.IName-2.html'>IName&lt;GameObjectBuilder, string&gt;</a>
+</div>
+<div>
+<a href='Alis.Core.Aspect.Fluent.Words.IIsStatic-2.html'>IIsStatic&lt;GameObjectBuilder, bool&gt;</a>
 </div>
 <div>
 <a href='Alis.Core.Aspect.Fluent.Words.IAddComponent-2.html'>IAddComponent&lt;GameObjectBuilder, AComponent&gt;</a>
@@ -366,14 +369,14 @@
 <a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
 </div>
 
-</dd></dl><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.gameObject' data-commentid='F:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.gameObject' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_gameObject'>gameObject    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L51'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.gameObject' data-commentid='F:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.gameObject' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_gameObject'>gameObject    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L52'><i class='bi bi-code-slash'></i></a></h3>
  <p>Gets or sets the value of the game object</p>
 <pre><code class='lang-csharp'>private readonly GameObject gameObject</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Entity.GameObject.html'>GameObject</a>  </dt>
 <dd>
 
 
 
-</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(System.Func{``0,Alis.Core.Ecs.Component.AComponent})' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(System.Func{``0,Alis.Core.Ecs.Component.AComponent})' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_AddComponent__1_System_Func___0_Alis_Core_Ecs_Component_AComponent__'>AddComponent&lt;T&gt;(Func&lt;T, AComponent&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L60'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(System.Func{``0,Alis.Core.Ecs.Component.AComponent})' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(System.Func{``0,Alis.Core.Ecs.Component.AComponent})' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_AddComponent__1_System_Func___0_Alis_Core_Ecs_Component_AComponent__'>AddComponent&lt;T&gt;(Func&lt;T, AComponent&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L61'><i class='bi bi-code-slash'></i></a></h3>
  <p>Adds the component using the specified value</p>
 <pre><code class='lang-csharp'>public GameObjectBuilder AddComponent&lt;T&gt;(Func&lt;T, AComponent&gt; value) where T : AComponent</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>value</code> <a href='https://learn.microsoft.com/dotnet/api/system.func-2'>Func</a>&lt;T, <a href='Alis.Core.Ecs.Component.AComponent.html'>AComponent</a>&gt;  </dt>
 <dd>
@@ -393,7 +396,7 @@
 
 <p>The</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(``0)' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(``0)' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_AddComponent__1___0_'>AddComponent&lt;T&gt;(T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L74'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(``0)' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.AddComponent``1(``0)' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_AddComponent__1___0_'>AddComponent&lt;T&gt;(T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L75'><i class='bi bi-code-slash'></i></a></h3>
  <p>Adds the component using the specified value</p>
 <pre><code class='lang-csharp'>public GameObjectBuilder AddComponent&lt;T&gt;(T value) where T : AComponent</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>value</code> T  </dt>
 <dd>
@@ -413,7 +416,7 @@
 
 <p>The</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Build' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Build' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_Build'>Build()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L85'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Build' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Build' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_Build'>Build()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L86'><i class='bi bi-code-slash'></i></a></h3>
  <p>Builds this instance</p>
 <pre><code class='lang-csharp'>public GameObject Build()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Entity.GameObject.html'>GameObject</a>  </dt>
 <dd>
@@ -421,7 +424,29 @@
 
 <p>The game object</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Name(System.String)' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Name(System.String)' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_Name_System_String_'>Name(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L92'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.IsStatic' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.IsStatic' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_IsStatic'>IsStatic()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L92'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Ises the static</p>
+<pre><code class='lang-csharp'>public GameObjectBuilder IsStatic()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.html'>GameObjectBuilder</a>  </dt>
+<dd>
+
+
+<p>The game object builder</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.IsStatic(System.Boolean)' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.IsStatic(System.Boolean)' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_IsStatic_System_Boolean_'>IsStatic(bool)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L103'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Ises the static using the specified value</p>
+<pre><code class='lang-csharp'>public GameObjectBuilder IsStatic(bool value)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>value</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The value</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.html'>GameObjectBuilder</a>  </dt>
+<dd>
+
+
+<p>The game object builder</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Name(System.String)' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Name(System.String)' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_Name_System_String_'>Name(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L114'><i class='bi bi-code-slash'></i></a></h3>
  <p>Names the value</p>
 <pre><code class='lang-csharp'>public GameObjectBuilder Name(string value)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>value</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
 <dd>
@@ -435,7 +460,7 @@
 
 <p>The game object builder</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Transform(System.Func{Alis.Builder.Core.Ecs.Entity.Transform.TransformBuilder,Alis.Core.Aspect.Math.Transform})' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Transform(System.Func{Alis.Builder.Core.Ecs.Entity.Transform.TransformBuilder,Alis.Core.Aspect.Math.Transform})' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_Transform_System_Func_Alis_Builder_Core_Ecs_Entity_Transform_TransformBuilder_Alis_Core_Aspect_Math_Transform__'>Transform(Func&lt;TransformBuilder, Transform&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L103'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Transform(System.Func{Alis.Builder.Core.Ecs.Entity.Transform.TransformBuilder,Alis.Core.Aspect.Math.Transform})' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.Transform(System.Func{Alis.Builder.Core.Ecs.Entity.Transform.TransformBuilder,Alis.Core.Aspect.Math.Transform})' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_Transform_System_Func_Alis_Builder_Core_Ecs_Entity_Transform_TransformBuilder_Alis_Core_Aspect_Math_Transform__'>Transform(Func&lt;TransformBuilder, Transform&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L125'><i class='bi bi-code-slash'></i></a></h3>
  <p>Transforms the value</p>
 <pre><code class='lang-csharp'>public GameObjectBuilder Transform(Func&lt;TransformBuilder, Transform&gt; value)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>value</code> <a href='https://learn.microsoft.com/dotnet/api/system.func-2'>Func</a>&lt;<a href='Alis.Builder.Core.Ecs.Entity.Transform.TransformBuilder.html'>TransformBuilder</a>, <a href='Alis.Core.Aspect.Math.Transform.html'>Transform</a>&gt;  </dt>
 <dd>
@@ -449,7 +474,7 @@
 
 <p>The game object builder</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.WithTag(System.String)' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.WithTag(System.String)' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_WithTag_System_String_'>WithTag(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L114'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.WithTag(System.String)' data-commentid='M:Alis.Builder.Core.Ecs.Entity.GameObject.GameObjectBuilder.WithTag(System.String)' id='Alis_Builder_Core_Ecs_Entity_GameObject_GameObjectBuilder_WithTag_System_String_'>WithTag(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObject/GameObjectBuilder.cs#L136'><i class='bi bi-code-slash'></i></a></h3>
  <p>Adds the tag using the specified value</p>
 <pre><code class='lang-csharp'>public GameObjectBuilder WithTag(string value)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>value</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
 <dd>

@@ -1,0 +1,123 @@
+### YamlMime:ApiPage
+title: Class PolygonGenerator
+body:
+- api1: Class PolygonGenerator
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_PolygonGenerator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PolygonGenerator.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.PolygonGenerator
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.Util.PolygonGenerator
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.CDT.Util
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Util.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The polygon generator class
+- code: internal class PolygonGenerator
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: PolygonGenerator
+    url: Alis.Core.Physic.Common.Decomposition.CDT.Util.PolygonGenerator.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: PI_2
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_PolygonGenerator_PI_2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PolygonGenerator.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.PolygonGenerator.PI_2
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Util.PolygonGenerator.PI_2
+- markdown: The pi
+- code: private static readonly double PI_2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- api3: RNG
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_PolygonGenerator_RNG
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PolygonGenerator.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.PolygonGenerator.RNG
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Util.PolygonGenerator.RNG
+- markdown: The random
+- code: private static readonly Random RNG
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Random
+      url: https://learn.microsoft.com/dotnet/api/system.random
+- h2: Methods
+- api3: RandomCircleSweep(double, int)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_PolygonGenerator_RandomCircleSweep_System_Double_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PolygonGenerator.cs#L56
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.PolygonGenerator.RandomCircleSweep(System.Double,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Util.PolygonGenerator.RandomCircleSweep(System.Double,System.Int32)
+- markdown: Randoms the circle sweep using the specified scale
+- code: public static Polygon RandomCircleSweep(double scale, int vertexCount)
+- h4: Parameters
+- parameters:
+  - name: scale
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+    description: The scale
+  - name: vertexCount
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The vertex count
+- h4: Returns
+- parameters:
+  - type:
+    - text: Polygon
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.html
+    description: The polygon polygon
+- api3: RandomCircleSweep2(double, int)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_PolygonGenerator_RandomCircleSweep2_System_Double_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PolygonGenerator.cs#L98
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.PolygonGenerator.RandomCircleSweep2(System.Double,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Util.PolygonGenerator.RandomCircleSweep2(System.Double,System.Int32)
+- markdown: Randoms the circle sweep 2 using the specified scale
+- code: public static Polygon RandomCircleSweep2(double scale, int vertexCount)
+- h4: Parameters
+- parameters:
+  - name: scale
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+    description: The scale
+  - name: vertexCount
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The vertex count
+- h4: Returns
+- parameters:
+  - type:
+    - text: Polygon
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.html
+    description: The polygon polygon
+languageId: csharp
+metadata:
+  description: The polygon generator class

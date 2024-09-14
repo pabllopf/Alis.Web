@@ -1,0 +1,38 @@
+### YamlMime:ApiPage
+title: Enum BreakableBody.BreakableBodyState
+body:
+- api1: Enum BreakableBody.BreakableBodyState
+  id: Alis_Core_Physic_Common_PhysicsLogic_BreakableBody_BreakableBodyState
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PhysicsLogic/BreakableBody.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Common.PhysicsLogic.BreakableBody.BreakableBodyState
+    commentId: T:Alis.Core.Physic.Common.PhysicsLogic.BreakableBody.BreakableBodyState
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.PhysicsLogic
+      url: Alis.Core.Physic.Common.PhysicsLogic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The breakable body state enum
+- code: public enum BreakableBody.BreakableBodyState
+- h2: Fields
+- parameters:
+  - name: Unbroken
+    default: "0"
+    description: >+
+      The unbroken breakable body state
+
+  - name: ShouldBreak
+    default: "1"
+    description: >+
+      The should break breakable body state
+
+  - name: Broken
+    default: "2"
+    description: >+
+      The broken breakable body state
+
+languageId: csharp
+metadata:
+  description: The breakable body state enum

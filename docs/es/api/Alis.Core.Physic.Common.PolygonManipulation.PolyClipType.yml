@@ -1,0 +1,38 @@
+### YamlMime:ApiPage
+title: Enum PolyClipType
+body:
+- api1: Enum PolyClipType
+  id: Alis_Core_Physic_Common_PolygonManipulation_PolyClipType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/PolyClipType.cs#L35
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation.PolyClipType
+    commentId: T:Alis.Core.Physic.Common.PolygonManipulation.PolyClipType
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.PolygonManipulation
+      url: Alis.Core.Physic.Common.PolygonManipulation.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The poly clip type enum
+- code: internal enum PolyClipType
+- h2: Fields
+- parameters:
+  - name: Intersect
+    default: "0"
+    description: >+
+      The intersect poly clip type
+
+  - name: Union
+    default: "1"
+    description: >+
+      The union poly clip type
+
+  - name: Difference
+    default: "2"
+    description: >+
+      The difference poly clip type
+
+languageId: csharp
+metadata:
+  description: The poly clip type enum

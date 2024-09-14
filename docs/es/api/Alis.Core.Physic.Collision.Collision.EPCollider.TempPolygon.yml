@@ -1,0 +1,95 @@
+### YamlMime:ApiPage
+title: Struct Collision.EPCollider.TempPolygon
+body:
+- api1: Struct Collision.EPCollider.TempPolygon
+  id: Alis_Core_Physic_Collision_Collision_EPCollider_TempPolygon
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Collision.cs#L1351
+  metadata:
+    uid: Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon
+    commentId: T:Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collision
+      url: Alis.Core.Physic.Collision.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: This holds polygon B expressed in frame A.
+- code: internal struct Collision.EPCollider.TempPolygon
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: TempPolygon(int)
+  id: Alis_Core_Physic_Collision_Collision_EPCollider_TempPolygon__ctor_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Collision.cs#L1372
+  metadata:
+    uid: Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon.#ctor(System.Int32)
+    commentId: M:Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon.#ctor(System.Int32)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon" data-throw-if-not-resolved="false"></xref> class
+- code: internal TempPolygon(int maxPolygonVertices)
+- h4: Parameters
+- parameters:
+  - name: maxPolygonVertices
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The max polygon vertices
+- h2: Fields
+- api3: Count
+  id: Alis_Core_Physic_Collision_Collision_EPCollider_TempPolygon_Count
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Collision.cs#L1366
+  metadata:
+    uid: Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon.Count
+    commentId: F:Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon.Count
+- markdown: The count
+- code: public int Count
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Normals
+  id: Alis_Core_Physic_Collision_Collision_EPCollider_TempPolygon_Normals
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Collision.cs#L1361
+  metadata:
+    uid: Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon.Normals
+    commentId: F:Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon.Normals
+- markdown: The normals
+- code: public readonly Vector2[] Normals
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - '['
+    - ']'
+- api3: Vertices
+  id: Alis_Core_Physic_Collision_Collision_EPCollider_TempPolygon_Vertices
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Collision.cs#L1356
+  metadata:
+    uid: Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon.Vertices
+    commentId: F:Alis.Core.Physic.Collision.Collision.EPCollider.TempPolygon.Vertices
+- markdown: The vertices
+- code: public readonly Vector2[] Vertices
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - '['
+    - ']'
+languageId: csharp
+metadata:
+  description: This holds polygon B expressed in frame A.

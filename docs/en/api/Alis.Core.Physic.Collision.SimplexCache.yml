@@ -1,0 +1,102 @@
+### YamlMime:ApiPage
+title: Struct SimplexCache
+body:
+- api1: Struct SimplexCache
+  id: Alis_Core_Physic_Collision_SimplexCache
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/SimplexCache.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Collision.SimplexCache
+    commentId: T:Alis.Core.Physic.Collision.SimplexCache
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collision
+      url: Alis.Core.Physic.Collision.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Used to warm start ComputeDistance.
+
+    Set count to zero on first call.
+- code: public struct SimplexCache
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Count
+  id: Alis_Core_Physic_Collision_SimplexCache_Count
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/SimplexCache.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Collision.SimplexCache.Count
+    commentId: F:Alis.Core.Physic.Collision.SimplexCache.Count
+- markdown: Length or area
+- code: public ushort Count
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: IndexA
+  id: Alis_Core_Physic_Collision_SimplexCache_IndexA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/SimplexCache.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Collision.SimplexCache.IndexA
+    commentId: F:Alis.Core.Physic.Collision.SimplexCache.IndexA
+- markdown: Vertices on shape A
+- code: public FixedArray3<byte> IndexA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FixedArray3
+      url: Alis.Core.Physic.Common.FixedArray3-1.html
+    - <
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '>'
+- api3: IndexB
+  id: Alis_Core_Physic_Collision_SimplexCache_IndexB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/SimplexCache.cs#L53
+  metadata:
+    uid: Alis.Core.Physic.Collision.SimplexCache.IndexB
+    commentId: F:Alis.Core.Physic.Collision.SimplexCache.IndexB
+- markdown: Vertices on shape B
+- code: public FixedArray3<byte> IndexB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FixedArray3
+      url: Alis.Core.Physic.Common.FixedArray3-1.html
+    - <
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '>'
+- api3: Metric
+  id: Alis_Core_Physic_Collision_SimplexCache_Metric
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/SimplexCache.cs#L58
+  metadata:
+    uid: Alis.Core.Physic.Collision.SimplexCache.Metric
+    commentId: F:Alis.Core.Physic.Collision.SimplexCache.Metric
+- markdown: The metric
+- code: public float Metric
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+languageId: csharp
+metadata:
+  description: >-
+    Used to warm start ComputeDistance.
+
+    Set count to zero on first call.

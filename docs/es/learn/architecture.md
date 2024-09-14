@@ -18,6 +18,7 @@ El módulo de **Extension** ofrece una serie de funcionalidades adicionales para
 ### Módulo: **Installer**
 Este módulo permite la instalación y configuración del framework en diferentes entornos de desarrollo. Contiene dos proyectos que se encargan de la instalación automática de dependencias y configuraciones necesarias.
 
+
 ## 2. Aplicación
 
 ### Módulo: **Alis**

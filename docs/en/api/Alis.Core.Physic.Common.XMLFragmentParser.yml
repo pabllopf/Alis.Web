@@ -1,0 +1,274 @@
+### YamlMime:ApiPage
+title: Class XMLFragmentParser
+body:
+- api1: Class XMLFragmentParser
+  id: Alis_Core_Physic_Common_XMLFragmentParser
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser
+    commentId: T:Alis.Core.Physic.Common.XMLFragmentParser
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common
+      url: Alis.Core.Physic.Common.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The xml fragment parser class
+- code: internal class XMLFragmentParser
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: XMLFragmentParser
+    url: Alis.Core.Physic.Common.XMLFragmentParser.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: XMLFragmentParser(Stream)
+  id: Alis_Core_Physic_Common_XMLFragmentParser__ctor_System_IO_Stream_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L54
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser.#ctor(System.IO.Stream)
+    commentId: M:Alis.Core.Physic.Common.XMLFragmentParser.#ctor(System.IO.Stream)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.XMLFragmentParser" data-throw-if-not-resolved="false"></xref> class
+- code: public XMLFragmentParser(Stream stream)
+- h4: Parameters
+- parameters:
+  - name: stream
+    type:
+    - text: Stream
+      url: https://learn.microsoft.com/dotnet/api/system.io.stream
+    description: The stream
+- h2: Fields
+- api3: _buffer
+  id: Alis_Core_Physic_Common_XMLFragmentParser__buffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser._buffer
+    commentId: F:Alis.Core.Physic.Common.XMLFragmentParser._buffer
+- markdown: The buffer
+- code: private FileBuffer _buffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FileBuffer
+      url: Alis.Core.Physic.Common.FileBuffer.html
+- api3: _punctuation
+  id: Alis_Core_Physic_Common_XMLFragmentParser__punctuation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser._punctuation
+    commentId: F:Alis.Core.Physic.Common.XMLFragmentParser._punctuation
+- markdown: The list
+- code: private static readonly List<char> _punctuation
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: char
+      url: https://learn.microsoft.com/dotnet/api/system.char
+    - '>'
+- h2: Properties
+- api3: RootNode
+  id: Alis_Core_Physic_Common_XMLFragmentParser_RootNode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L62
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser.RootNode
+    commentId: P:Alis.Core.Physic.Common.XMLFragmentParser.RootNode
+- markdown: Gets or sets the value of the root node
+- code: public XMLFragmentElement RootNode { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: XMLFragmentElement
+      url: Alis.Core.Physic.Common.XMLFragmentElement.html
+- h2: Methods
+- api3: Load(Stream)
+  id: Alis_Core_Physic_Common_XMLFragmentParser_Load_System_IO_Stream_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L68
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser.Load(System.IO.Stream)
+    commentId: M:Alis.Core.Physic.Common.XMLFragmentParser.Load(System.IO.Stream)
+- markdown: Loads the stream
+- code: public void Load(Stream stream)
+- h4: Parameters
+- parameters:
+  - name: stream
+    type:
+    - text: Stream
+      url: https://learn.microsoft.com/dotnet/api/system.io.stream
+    description: The stream
+- api3: LoadFromStream(Stream)
+  id: Alis_Core_Physic_Common_XMLFragmentParser_LoadFromStream_System_IO_Stream_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L78
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser.LoadFromStream(System.IO.Stream)
+    commentId: M:Alis.Core.Physic.Common.XMLFragmentParser.LoadFromStream(System.IO.Stream)
+- markdown: Loads the from stream using the specified stream
+- code: public static XMLFragmentElement LoadFromStream(Stream stream)
+- h4: Parameters
+- parameters:
+  - name: stream
+    type:
+    - text: Stream
+      url: https://learn.microsoft.com/dotnet/api/system.io.stream
+    description: The stream
+- h4: Returns
+- parameters:
+  - type:
+    - text: XMLFragmentElement
+      url: Alis.Core.Physic.Common.XMLFragmentElement.html
+    description: The xml fragment element
+- api3: NextToken()
+  id: Alis_Core_Physic_Common_XMLFragmentParser_NextToken
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L89
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser.NextToken
+    commentId: M:Alis.Core.Physic.Common.XMLFragmentParser.NextToken
+- markdown: Nexts the token
+- code: private string NextToken()
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The str
+- api3: Parse()
+  id: Alis_Core_Physic_Common_XMLFragmentParser_Parse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L305
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser.Parse
+    commentId: M:Alis.Core.Physic.Common.XMLFragmentParser.Parse
+- markdown: Parses this instance
+- code: private void Parse()
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: XMLFragmentException
+      url: Alis.Core.Physic.Common.XMLFragmentException.html
+    description: Unable to load root node
+- api3: PeekToken()
+  id: Alis_Core_Physic_Common_XMLFragmentParser_PeekToken
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L137
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser.PeekToken
+    commentId: M:Alis.Core.Physic.Common.XMLFragmentParser.PeekToken
+- markdown: Peeks the token
+- code: private string PeekToken()
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The str
+- api3: ReadUntil(char)
+  id: Alis_Core_Physic_Common_XMLFragmentParser_ReadUntil_System_Char_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L150
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser.ReadUntil(System.Char)
+    commentId: M:Alis.Core.Physic.Common.XMLFragmentParser.ReadUntil(System.Char)
+- markdown: Reads the until using the specified c
+- code: private string ReadUntil(char c)
+- h4: Parameters
+- parameters:
+  - name: c
+    type:
+    - text: char
+      url: https://learn.microsoft.com/dotnet/api/system.char
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The str
+- api3: TrimControl(string)
+  id: Alis_Core_Physic_Common_XMLFragmentParser_TrimControl_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L182
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser.TrimControl(System.String)
+    commentId: M:Alis.Core.Physic.Common.XMLFragmentParser.TrimControl(System.String)
+- markdown: Trims the control using the specified str
+- code: private string TrimControl(string str)
+- h4: Parameters
+- parameters:
+  - name: str
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The str
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The new str
+- api3: TrimTags(string)
+  id: Alis_Core_Physic_Common_XMLFragmentParser_TrimTags_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L207
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser.TrimTags(System.String)
+    commentId: M:Alis.Core.Physic.Common.XMLFragmentParser.TrimTags(System.String)
+- markdown: Trims the tags using the specified outer
+- code: private string TrimTags(string outer)
+- h4: Parameters
+- parameters:
+  - name: outer
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The outer
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+- api3: TryParseNode()
+  id: Alis_Core_Physic_Common_XMLFragmentParser_TryParseNode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentParser.cs#L222
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentParser.TryParseNode
+    commentId: M:Alis.Core.Physic.Common.XMLFragmentParser.TryParseNode
+- markdown: Tries the parse node
+- code: public XMLFragmentElement TryParseNode()
+- h4: Returns
+- parameters:
+  - type:
+    - text: XMLFragmentElement
+      url: Alis.Core.Physic.Common.XMLFragmentElement.html
+    description: The element
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: XMLFragmentException
+      url: Alis.Core.Physic.Common.XMLFragmentException.html
+    description: ''
+  - type:
+    - text: XMLFragmentException
+      url: Alis.Core.Physic.Common.XMLFragmentException.html
+    description: ''
+  - type:
+    - text: XMLFragmentException
+      url: Alis.Core.Physic.Common.XMLFragmentException.html
+    description: ''
+languageId: csharp
+metadata:
+  description: The xml fragment parser class

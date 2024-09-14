@@ -1,0 +1,347 @@
+### YamlMime:ApiPage
+title: Class Shape
+body:
+- api1: Class Shape
+  id: Alis_Core_Physic_Collision_Shapes_Shape
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L41
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape
+    commentId: T:Alis.Core.Physic.Collision.Shapes.Shape
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collision.Shapes
+      url: Alis.Core.Physic.Collision.Shapes.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    A shape is used for collision detection. You can create a shape however you like.
+
+    Shapes used for simulation in World are created automatically when a Fixture
+
+    is created. Shapes may encapsulate a one or more child shapes.
+- code: public abstract class Shape
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Shape
+    url: Alis.Core.Physic.Collision.Shapes.Shape.html
+- h4: Derived
+- list:
+  - text: ChainShape
+    url: Alis.Core.Physic.Collision.Shapes.ChainShape.html
+  - text: CircleShape
+    url: Alis.Core.Physic.Collision.Shapes.CircleShape.html
+  - text: EdgeShape
+    url: Alis.Core.Physic.Collision.Shapes.EdgeShape.html
+  - text: PolygonShape
+    url: Alis.Core.Physic.Collision.Shapes.PolygonShape.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Shape(float)
+  id: Alis_Core_Physic_Collision_Shapes_Shape__ctor_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L71
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.#ctor(System.Single)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.Shape.#ctor(System.Single)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Collision.Shapes.Shape" data-throw-if-not-resolved="false"></xref> class
+- code: protected Shape(float density)
+- h4: Parameters
+- parameters:
+  - name: density
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The density
+- h2: Fields
+- api3: MassData
+  id: Alis_Core_Physic_Collision_Shapes_Shape_MassData
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L65
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.MassData
+    commentId: F:Alis.Core.Physic.Collision.Shapes.Shape.MassData
+- markdown: >-
+    Contains the properties of the shape such as:
+
+    - Area of the shape
+
+    - Centroid
+
+    - Inertia
+
+    - Mass
+- code: public MassData MassData
+- h4: Field Value
+- parameters:
+  - type:
+    - text: MassData
+      url: Alis.Core.Physic.Collision.Shapes.MassData.html
+- api3: _2radius
+  id: Alis_Core_Physic_Collision_Shapes_Shape__2radius
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L46
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape._2radius
+    commentId: F:Alis.Core.Physic.Collision.Shapes.Shape._2radius
+- markdown: The 2radius
+- code: internal float _2radius
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _density
+  id: Alis_Core_Physic_Collision_Shapes_Shape__density
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L51
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape._density
+    commentId: F:Alis.Core.Physic.Collision.Shapes.Shape._density
+- markdown: The density
+- code: internal float _density
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _radius
+  id: Alis_Core_Physic_Collision_Shapes_Shape__radius
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L56
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape._radius
+    commentId: F:Alis.Core.Physic.Collision.Shapes.Shape._radius
+- markdown: The radius
+- code: internal float _radius
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Properties
+- api3: ChildCount
+  id: Alis_Core_Physic_Collision_Shapes_Shape_ChildCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L87
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.ChildCount
+    commentId: P:Alis.Core.Physic.Collision.Shapes.Shape.ChildCount
+- markdown: Get the number of child primitives.
+- code: public abstract int ChildCount { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Density
+  id: Alis_Core_Physic_Collision_Shapes_Shape_Density
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L94
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.Density
+    commentId: P:Alis.Core.Physic.Collision.Shapes.Shape.Density
+- markdown: >-
+    Gets or sets the density.
+
+    Changing the density causes a recalculation of shape properties.
+- code: public float Density { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Radius
+  id: Alis_Core_Physic_Collision_Shapes_Shape_Radius
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L110
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.Radius
+    commentId: P:Alis.Core.Physic.Collision.Shapes.Shape.Radius
+- markdown: >-
+    Radius of the Shape
+
+    Changing the radius causes a recalculation of shape properties.
+- code: public float Radius { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: ShapeType
+  id: Alis_Core_Physic_Collision_Shapes_Shape_ShapeType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L81
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.ShapeType
+    commentId: P:Alis.Core.Physic.Collision.Shapes.Shape.ShapeType
+- markdown: Get the type of this shape.
+- code: public ShapeType ShapeType { get; internal set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ShapeType
+      url: Alis.Core.Physic.Collision.Shapes.ShapeType.html
+- h2: Methods
+- api3: Clone()
+  id: Alis_Core_Physic_Collision_Shapes_Shape_Clone
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L128
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.Clone
+    commentId: M:Alis.Core.Physic.Collision.Shapes.Shape.Clone
+- markdown: Clone the concrete shape
+- code: public abstract Shape Clone()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Shape
+      url: Alis.Core.Physic.Collision.Shapes.Shape.html
+    description: A clone of the shape
+- api3: ComputeAABB(out AABB, ref Transform, int)
+  id: Alis_Core_Physic_Collision_Shapes_Shape_ComputeAABB_Alis_Core_Physic_Collision_AABB__Alis_Core_Physic_Common_Transform__System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L155
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.ComputeAABB(Alis.Core.Physic.Collision.AABB@,Alis.Core.Physic.Common.Transform@,System.Int32)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.Shape.ComputeAABB(Alis.Core.Physic.Collision.AABB@,Alis.Core.Physic.Common.Transform@,System.Int32)
+- markdown: Given a transform, compute the associated axis aligned bounding box for a child shape.
+- code: public abstract void ComputeAABB(out AABB aabb, ref Transform transform, int childIndex)
+- h4: Parameters
+- parameters:
+  - name: aabb
+    type:
+    - text: AABB
+      url: Alis.Core.Physic.Collision.AABB.html
+    description: The aabb results.
+  - name: transform
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: The world transform of the shape.
+  - name: childIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The child shape index.
+- api3: ComputeProperties()
+  id: Alis_Core_Physic_Collision_Shapes_Shape_ComputeProperties
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L161
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.ComputeProperties
+    commentId: M:Alis.Core.Physic.Collision.Shapes.Shape.ComputeProperties
+- markdown: >-
+    Compute the mass properties of this shape using its dimensions and density.
+
+    The inertia tensor is computed about the local origin, not the centroid.
+- code: protected abstract void ComputeProperties()
+- api3: ComputeSubmergedArea(ref Vector2, float, ref Transform, out Vector2)
+  id: Alis_Core_Physic_Collision_Shapes_Shape_ComputeSubmergedArea_Alis_Core_Aspect_Math_Vector_Vector2__System_Single_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L166
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.ComputeSubmergedArea(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single,Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.Shape.ComputeSubmergedArea(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single,Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: Used for the buoyancy controller
+- code: public abstract float ComputeSubmergedArea(ref Vector2 normal, float offset, ref Transform xf, out Vector2 sc)
+- h4: Parameters
+- parameters:
+  - name: normal
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+  - name: offset
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+  - name: xf
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+  - name: sc
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: RayCast(out RayCastOutput, ref RayCastInput, ref Transform, int)
+  id: Alis_Core_Physic_Collision_Shapes_Shape_RayCast_Alis_Core_Physic_Collision_RayCastOutput__Alis_Core_Physic_Collision_RayCastInput__Alis_Core_Physic_Common_Transform__System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L147
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.RayCast(Alis.Core.Physic.Collision.RayCastOutput@,Alis.Core.Physic.Collision.RayCastInput@,Alis.Core.Physic.Common.Transform@,System.Int32)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.Shape.RayCast(Alis.Core.Physic.Collision.RayCastOutput@,Alis.Core.Physic.Collision.RayCastInput@,Alis.Core.Physic.Common.Transform@,System.Int32)
+- markdown: Cast a ray against a child shape.
+- code: public abstract bool RayCast(out RayCastOutput output, ref RayCastInput input, ref Transform transform, int childIndex)
+- h4: Parameters
+- parameters:
+  - name: output
+    type:
+    - text: RayCastOutput
+      url: Alis.Core.Physic.Collision.RayCastOutput.html
+    description: The ray-cast results.
+  - name: input
+    type:
+    - text: RayCastInput
+      url: Alis.Core.Physic.Collision.RayCastInput.html
+    description: The ray-cast input parameters.
+  - name: transform
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: The transform to be applied to the shape.
+  - name: childIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The child shape index.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: True if the ray-cast hits the shape
+- api3: TestPoint(ref Transform, ref Vector2)
+  id: Alis_Core_Physic_Collision_Shapes_Shape_TestPoint_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/Shape.cs#L137
+  metadata:
+    uid: Alis.Core.Physic.Collision.Shapes.Shape.TestPoint(Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+    commentId: M:Alis.Core.Physic.Collision.Shapes.Shape.TestPoint(Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)
+- markdown: >-
+    Test a point for containment in this shape.
+
+    Note: This only works for convex shapes.
+- code: public abstract bool TestPoint(ref Transform transform, ref Vector2 point)
+- h4: Parameters
+- parameters:
+  - name: transform
+    type:
+    - text: Transform
+      url: Alis.Core.Physic.Common.Transform.html
+    description: The shape world transform.
+  - name: point
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: A point in world coordinates.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: True if the point is inside the shape
+languageId: csharp
+metadata:
+  description: >-
+    A shape is used for collision detection. You can create a shape however you like.
+
+    Shapes used for simulation in World are created automatically when a Fixture
+
+    is created. Shapes may encapsulate a one or more child shapes.

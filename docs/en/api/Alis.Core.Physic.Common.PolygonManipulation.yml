@@ -1,0 +1,46 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Physic.Common.PolygonManipulation
+body:
+- api1: Namespace Alis.Core.Physic.Common.PolygonManipulation
+  id: Alis_Core_Physic_Common_PolygonManipulation
+  metadata:
+    uid: Alis.Core.Physic.Common.PolygonManipulation
+    commentId: N:Alis.Core.Physic.Common.PolygonManipulation
+- h3: Classes
+- parameters:
+  - type:
+      text: CuttingTools
+      url: Alis.Core.Physic.Common.PolygonManipulation.CuttingTools.html
+    description: The cutting tools class
+  - type:
+      text: YuPengClipper.Edge
+      url: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.html
+    description: Specifies an Edge. Edges are used to represent simplicies in simplical chains
+  - type:
+      text: SimpleCombiner
+      url: Alis.Core.Physic.Common.PolygonManipulation.SimpleCombiner.html
+    description: >-
+      Combines a list of triangles into a list of convex polygons.
+
+      Starts with a seed triangle, keep adding triangles to it until you can't add any more without making the polygon
+
+      non-convex.
+  - type:
+      text: SimplifyTools
+      url: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.html
+    description: Provides a set of tools to simplify polygons in various ways.
+  - type:
+      text: YuPengClipper
+      url: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.html
+    description: The yu peng clipper class
+- h3: Enums
+- parameters:
+  - type:
+      text: PolyClipError
+      url: Alis.Core.Physic.Common.PolygonManipulation.PolyClipError.html
+    description: The poly clip error enum
+  - type:
+      text: PolyClipType
+      url: Alis.Core.Physic.Common.PolygonManipulation.PolyClipType.html
+    description: The poly clip type enum
+languageId: csharp

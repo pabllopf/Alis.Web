@@ -316,8 +316,98 @@
         </div>
 
         <article data-uid="">
-<h1 id="samples">Samples</h1>
+<h1 id="-examples">🎮 Examples</h1>
 
+<p>To help you better understand how to use <strong>Alis</strong> in real-world projects, we’ve prepared some examples that show the framework in action. These examples include fully functional code that you can study, modify, and run to accelerate your learning process.</p>
+<h2 id="flappybird">FlappyBird</h2>
+<p>One of the most popular examples is the <strong>FlappyBird</strong> project, a simple yet fun game that will show you how to create a complete game using <strong>Alis</strong>'s basic features.</p>
+<h3 id="game-description">Game Description</h3>
+<p>In <strong>FlappyBird</strong>, you control a bird that must fly while avoiding obstacles in the form of pipes. The goal is to navigate between the pipes and score as many points as possible without colliding with them. The player controls the bird with a single button that allows the bird to &quot;jump&quot; or gain altitude, while gravity pushes it toward the ground.</p>
+<p>The game has a simple cycle of start, play, game over, and the ability to restart after each session.</p>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li><strong>Simple Physics</strong>: The flight behavior is determined by a basic gravity and impulse control system.</li>
+<li><strong>Collision System</strong>: Accurate collision detection between the bird and the pipes.</li>
+<li><strong>Minimalist UI</strong>: Simple and clear menus with an on-screen display of the current score.</li>
+<li><strong>Development Mode</strong>: Ability to activate development mode to debug collisions and game behavior in real-time.</li>
+<li><strong>Multiplatform Optimization</strong>: The game can run on different operating systems thanks to <strong>Alis</strong>.</li>
+</ul>
+<h3 id="game-screenshots">Game Screenshots</h3>
+<p>Here are some images showing the game in action:</p>
+<p><img src="https://raw.githubusercontent.com/pabllopf/Alis.Sample.Flappy.Bird/master/docs/screenshots/Menu_FlappyBird.png" alt="Screenshot 1"><br>
+<em>Figure 1: Main screen with the start menu.</em></p>
+<hr>
+<p><img src="https://raw.githubusercontent.com/pabllopf/Alis.Sample.Flappy.Bird/master/docs/screenshots/Game_FlappyBird.png" alt="Screenshot 2"><br>
+<em>Figure 2: Gameplay view with development mode enabled, showing the collision areas.</em></p>
+<hr>
+<h3 id="how-to-access-the-example">How to Access the Example</h3>
+<p>The source code for the <strong>FlappyBird</strong> example is available in the following GitHub repository:</p>
+<p><a href="https://github.com/pabllopf/Alis.Sample.Flappy.Bird">Alis.Sample.Flappy.Bird</a></p>
+<p>This repository contains the entire project structure and resources needed for you to download and run the game in your local environment.</p>
+<h3 id="example-features">Example Features</h3>
+<p>The <strong>FlappyBird</strong> example includes:</p>
+<ul>
+<li><strong>Sprite Handling</strong>: Learn how to load and display images efficiently on the screen.</li>
+<li><strong>Collision Detection</strong>: Implementation of collisions between the character (bird) and obstacles (pipes).</li>
+<li><strong>Input Control</strong>: Managing player input through keyboard or controller.</li>
+<li><strong>Basic Game Cycle</strong>: Handling the logic for game start, end, and restart with well-defined states.</li>
+<li><strong>Optimization and Scalability</strong>: Best practices to ensure the game runs smoothly even on devices with limited hardware.</li>
+</ul>
+<h3 id="clone-and-run-the-example">Clone and Run the Example</h3>
+<p>To try this example in your local environment, follow these steps:</p>
+<ol>
+<li><p>Clone the example repository:</p>
+<pre><code class="lang-bash">git clone https://github.com/pabllopf/Alis.Sample.Flappy.Bird.git
+</code></pre>
+</li>
+<li><p>Navigate to the project directory:</p>
+<pre><code class="lang-bash">cd Alis.Sample.Flappy.Bird
+</code></pre>
+</li>
+<li><p>Compile and run the project using the .NET CLI:</p>
+<pre><code class="lang-bash">dotnet run
+</code></pre>
+</li>
+</ol>
+<h3 id="project-structure">Project Structure</h3>
+<p>The <strong>FlappyBird</strong> project follows the typical organization of a game developed with <strong>Alis</strong>:</p>
+<pre><code class="lang-markdown">/Alis.Sample.Flappy.Bird
+│
+├── .Config/
+│   ├── .editorconfig
+│   ├── .gitignore
+│   ├── code_of_conduct.md
+│   ├── Directory.Build.props
+│   ├── funding.yml
+│   ├── licence.md
+│   └── readme.md
+│
+├── /Assets/
+│   ├── /audio/         # Contains the audio files used in the game.
+│   ├── /font/          # Fonts used for the game interface.
+│   ├── /icon/          # Icons displayed in the window or other elements.
+│   └── /sprite/        # Game images, including the bird and pipe sprites.
+│
+├── BirdController.cs    # Controller that handles the bird's movement and physics.
+├── BirdIdle.cs          # Controller for the bird's idle state (when not flying).
+├── CounterController.cs # Controller that manages the score counter.
+├── DeathZone.cs         # Logic for the collision zones that cause the player’s death.
+├── FloorAnimation.cs    # Animation for the ground in the background of the game.
+├── MainMenuController.cs# Controller for the main menu.
+├── PipelineController.cs# Generates and controls the movement of the pipes.
+├── Program.cs           # Main entry point of the game.
+├── WindowSetting.cs     # Window settings, such as size and visual properties.
+└── Alis.Sample.Flappy.Bird.csproj # Project file for .NET configuration.
+
+</code></pre>
+<h3 id="additional-notes">Additional Notes</h3>
+<ul>
+<li><strong>Extensibility</strong>: You can easily modify this project to add new mechanics, change graphic assets, or improve gameplay.</li>
+<li><strong>Use of Alis</strong>: This project leverages <strong>Alis</strong>'s multiplatform capabilities, meaning you can compile and run the game on various operating systems like Windows, macOS, and Linux.</li>
+<li><strong>Optimization</strong>: The game has been optimized to provide smooth and stable performance regardless of the hardware.</li>
+</ul>
+<hr>
+<p>Exploring examples like <strong>FlappyBird</strong> is an excellent way to learn about <strong>Alis</strong>'s capabilities and apply these concepts to your own projects. Plus, you can modify the code to experiment with new ideas and game mechanics.</p>
 
 </article>
 

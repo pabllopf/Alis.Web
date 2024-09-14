@@ -1,0 +1,346 @@
+### YamlMime:ApiPage
+title: Class ContactManager
+body:
+- api1: Class ContactManager
+  id: Alis_Core_Physic_Dynamics_ContactManager
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L42
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager
+    commentId: T:Alis.Core.Physic.Dynamics.ContactManager
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Dynamics
+      url: Alis.Core.Physic.Dynamics.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The contact manager class
+- code: public class ContactManager
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: ContactManager
+    url: Alis.Core.Physic.Dynamics.ContactManager.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: ContactManager(IBroadPhase)
+  id: Alis_Core_Physic_Dynamics_ContactManager__ctor_Alis_Core_Physic_Collision_IBroadPhase_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L142
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.#ctor(Alis.Core.Physic.Collision.IBroadPhase)
+    commentId: M:Alis.Core.Physic.Dynamics.ContactManager.#ctor(Alis.Core.Physic.Collision.IBroadPhase)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.ContactManager" data-throw-if-not-resolved="false"></xref> class
+- code: internal ContactManager(IBroadPhase broadPhase)
+- h4: Parameters
+- parameters:
+  - name: broadPhase
+    type:
+    - text: IBroadPhase
+      url: Alis.Core.Physic.Collision.IBroadPhase.html
+    description: The broad phase
+- h2: Fields
+- api3: BeginContact
+  id: Alis_Core_Physic_Dynamics_ContactManager_BeginContact
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L76
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.BeginContact
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.BeginContact
+- markdown: Fires when a contact is created
+- code: public BeginContactDelegate BeginContact
+- h4: Field Value
+- parameters:
+  - type:
+    - text: BeginContactDelegate
+      url: Alis.Core.Physic.Dynamics.BeginContactDelegate.html
+- api3: BroadPhase
+  id: Alis_Core_Physic_Dynamics_ContactManager_BroadPhase
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L81
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.BroadPhase
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.BroadPhase
+- markdown: The broad phase
+- code: public readonly IBroadPhase BroadPhase
+- h4: Field Value
+- parameters:
+  - type:
+    - text: IBroadPhase
+      url: Alis.Core.Physic.Collision.IBroadPhase.html
+- api3: CollideMultithreadThreshold
+  id: Alis_Core_Physic_Dynamics_ContactManager_CollideMultithreadThreshold
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L68
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.CollideMultithreadThreshold
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.CollideMultithreadThreshold
+- markdown: >-
+    A threshold for activating multiple cores to solve Collide.
+
+    An World with a contact count above this threshold will use multiple threads to solve Collide.
+
+    A value of 0 will always use multithreading. A value of (int.MaxValue) will never use multithreading.
+
+    Typical values are {128 or 256}.
+- code: public int CollideMultithreadThreshold
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: ContactFilter
+  id: Alis_Core_Physic_Dynamics_ContactManager_ContactFilter
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L101
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.ContactFilter
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.ContactFilter
+- markdown: The filter used by the contact manager.
+- code: public CollisionFilterDelegate ContactFilter
+- h4: Field Value
+- parameters:
+  - type:
+    - text: CollisionFilterDelegate
+      url: Alis.Core.Physic.Dynamics.CollisionFilterDelegate.html
+- api3: ContactList
+  id: Alis_Core_Physic_Dynamics_ContactManager_ContactList
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L86
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.ContactList
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.ContactList
+- markdown: The contact list
+- code: public readonly ContactListHead ContactList
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ContactListHead
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactListHead.html
+- api3: EndContact
+  id: Alis_Core_Physic_Dynamics_ContactManager_EndContact
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L121
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.EndContact
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.EndContact
+- markdown: Fires when a contact is deleted
+- code: public EndContactDelegate EndContact
+- h4: Field Value
+- parameters:
+  - type:
+    - text: EndContactDelegate
+      url: Alis.Core.Physic.Dynamics.EndContactDelegate.html
+- api3: OnBroadphaseCollision
+  id: Alis_Core_Physic_Dynamics_ContactManager_OnBroadphaseCollision
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L126
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.OnBroadphaseCollision
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.OnBroadphaseCollision
+- markdown: Fires when the broadphase detects that two Fixtures are close to each other.
+- code: public BroadphaseDelegate OnBroadphaseCollision
+- h4: Field Value
+- parameters:
+  - type:
+    - text: BroadphaseDelegate
+      url: Alis.Core.Physic.Collision.BroadphaseDelegate.html
+- api3: PositionConstraintsMultithreadThreshold
+  id: Alis_Core_Physic_Dynamics_ContactManager_PositionConstraintsMultithreadThreshold
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L60
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.PositionConstraintsMultithreadThreshold
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.PositionConstraintsMultithreadThreshold
+- markdown: >-
+    A threshold for activating multiple cores to solve PositionConstraints.
+
+    An Island with a contact count above this threshold will use multiple threads to solve PositionConstraints.
+
+    A value of 0 will always use multithreading. A value of (int.MaxValue) will never use multithreading.
+
+    Typical values are {128 or 256}.
+- code: public int PositionConstraintsMultithreadThreshold
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: PostSolve
+  id: Alis_Core_Physic_Dynamics_ContactManager_PostSolve
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L131
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.PostSolve
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.PostSolve
+- markdown: Fires after the solver has run
+- code: public PostSolveDelegate PostSolve
+- h4: Field Value
+- parameters:
+  - type:
+    - text: PostSolveDelegate
+      url: Alis.Core.Physic.Dynamics.PostSolveDelegate.html
+- api3: PreSolve
+  id: Alis_Core_Physic_Dynamics_ContactManager_PreSolve
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L136
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.PreSolve
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.PreSolve
+- markdown: Fires before the solver runs
+- code: public PreSolveDelegate PreSolve
+- h4: Field Value
+- parameters:
+  - type:
+    - text: PreSolveDelegate
+      url: Alis.Core.Physic.Dynamics.PreSolveDelegate.html
+- api3: VelocityConstraintsMultithreadThreshold
+  id: Alis_Core_Physic_Dynamics_ContactManager_VelocityConstraintsMultithreadThreshold
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L52
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.VelocityConstraintsMultithreadThreshold
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.VelocityConstraintsMultithreadThreshold
+- markdown: >-
+    A threshold for activating multiple cores to solve VelocityConstraints.
+
+    An Island with a contact count above this threshold will use multiple threads to solve VelocityConstraints.
+
+    A value of 0 will always use multithreading. A value of (int.MaxValue) will never use multithreading.
+
+    Typical values are {128 or 256}.
+- code: public int VelocityConstraintsMultithreadThreshold
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _contactPoolList
+  id: Alis_Core_Physic_Dynamics_ContactManager__contactPoolList
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L96
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager._contactPoolList
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager._contactPoolList
+- markdown: The contact pool list
+- code: internal readonly ContactListHead _contactPoolList
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ContactListHead
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactListHead.html
+- api3: updateList
+  id: Alis_Core_Physic_Dynamics_ContactManager_updateList
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L483
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.updateList
+    commentId: F:Alis.Core.Physic.Dynamics.ContactManager.updateList
+- markdown: A temporary list of contacts to be updated during Collide().
+- code: private readonly List<Contact> updateList
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Contact
+      url: Alis.Core.Physic.Dynamics.Contacts.Contact.html
+    - '>'
+- h2: Properties
+- api3: ContactCount
+  id: Alis_Core_Physic_Dynamics_ContactManager_ContactCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L91
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.ContactCount
+    commentId: P:Alis.Core.Physic.Dynamics.ContactManager.ContactCount
+- markdown: Gets or sets the value of the contact count
+- code: public int ContactCount { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: AddPair(int, int)
+  id: Alis_Core_Physic_Dynamics_ContactManager_AddPair_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L158
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.AddPair(System.Int32,System.Int32)
+    commentId: M:Alis.Core.Physic.Dynamics.ContactManager.AddPair(System.Int32,System.Int32)
+- markdown: Adds the pair using the specified proxy id a
+- code: private void AddPair(int proxyIdA, int proxyIdB)
+- h4: Parameters
+- parameters:
+  - name: proxyIdA
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id
+  - name: proxyIdB
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id
+- api3: Collide()
+  id: Alis_Core_Physic_Dynamics_ContactManager_Collide
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L370
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.Collide
+    commentId: M:Alis.Core.Physic.Dynamics.ContactManager.Collide
+- markdown: Collides this instance
+- code: internal void Collide()
+- api3: Destroy(Contact)
+  id: Alis_Core_Physic_Dynamics_ContactManager_Destroy_Alis_Core_Physic_Dynamics_Contacts_Contact_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L297
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.Destroy(Alis.Core.Physic.Dynamics.Contacts.Contact)
+    commentId: M:Alis.Core.Physic.Dynamics.ContactManager.Destroy(Alis.Core.Physic.Dynamics.Contacts.Contact)
+- markdown: Destroys the contact
+- code: internal void Destroy(Contact contact)
+- h4: Parameters
+- parameters:
+  - name: contact
+    type:
+    - text: Contact
+      url: Alis.Core.Physic.Dynamics.Contacts.Contact.html
+    description: The contact
+- api3: FindNewContacts()
+  id: Alis_Core_Physic_Dynamics_ContactManager_FindNewContacts
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L288
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.FindNewContacts
+    commentId: M:Alis.Core.Physic.Dynamics.ContactManager.FindNewContacts
+- markdown: Finds the new contacts
+- code: internal void FindNewContacts()
+- api3: ShouldCollide(Fixture, Fixture)
+  id: Alis_Core_Physic_Dynamics_ContactManager_ShouldCollide_Alis_Core_Physic_Dynamics_Fixture_Alis_Core_Physic_Dynamics_Fixture_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ContactManager.cs#L644
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ContactManager.ShouldCollide(Alis.Core.Physic.Dynamics.Fixture,Alis.Core.Physic.Dynamics.Fixture)
+    commentId: M:Alis.Core.Physic.Dynamics.ContactManager.ShouldCollide(Alis.Core.Physic.Dynamics.Fixture,Alis.Core.Physic.Dynamics.Fixture)
+- markdown: Describes whether should collide
+- code: private static bool ShouldCollide(Fixture fixtureA, Fixture fixtureB)
+- h4: Parameters
+- parameters:
+  - name: fixtureA
+    type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+  - name: fixtureB
+    type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The collide
+languageId: csharp
+metadata:
+  description: The contact manager class

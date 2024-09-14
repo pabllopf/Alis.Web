@@ -1,0 +1,584 @@
+### YamlMime:ApiPage
+title: Class Settings
+body:
+- api1: Class Settings
+  id: Alis_Core_Physic_Settings
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Settings
+    commentId: T:Alis.Core.Physic.Settings
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic
+      url: Alis.Core.Physic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The settings class
+- code: public static class Settings
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Settings
+    url: Alis.Core.Physic.Settings.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: AABBExtension
+  id: Alis_Core_Physic_Settings_AABBExtension
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L77
+  metadata:
+    uid: Alis.Core.Physic.Settings.AABBExtension
+    commentId: F:Alis.Core.Physic.Settings.AABBExtension
+- markdown: >-
+    This is used to fatten AABBs in the dynamic tree. This allows proxies
+
+    to move by a small amount without triggering a tree adjustment.
+
+    This is in meters.
+- code: public const float AABBExtension = 0.1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: AABBMultiplier
+  id: Alis_Core_Physic_Settings_AABBMultiplier
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L84
+  metadata:
+    uid: Alis.Core.Physic.Settings.AABBMultiplier
+    commentId: F:Alis.Core.Physic.Settings.AABBMultiplier
+- markdown: >-
+    This is used to fatten AABBs in the dynamic tree. This is used to predict
+
+    the future position based on the current displacement.
+
+    This is a dimensionless multiplier.
+- code: public const float AABBMultiplier = 2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: AllowSleep
+  id: Alis_Core_Physic_Settings_AllowSleep
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L226
+  metadata:
+    uid: Alis.Core.Physic.Settings.AllowSleep
+    commentId: F:Alis.Core.Physic.Settings.AllowSleep
+- markdown: Enable/Disable sleeping
+- code: public static bool AllowSleep
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: AngularSleepTolerance
+  id: Alis_Core_Physic_Settings_AngularSleepTolerance
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L151
+  metadata:
+    uid: Alis.Core.Physic.Settings.AngularSleepTolerance
+    commentId: F:Alis.Core.Physic.Settings.AngularSleepTolerance
+- markdown: A body cannot sleep if its angular velocity is above this tolerance.
+- code: public const float AngularSleepTolerance = 0.03490659
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: AngularSlop
+  id: Alis_Core_Physic_Settings_AngularSlop
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L96
+  metadata:
+    uid: Alis.Core.Physic.Settings.AngularSlop
+    commentId: F:Alis.Core.Physic.Settings.AngularSlop
+- markdown: >-
+    A small angle used as a collision and constraint tolerance. Usually it is
+
+    chosen to be numerically significant, but visually insignificant.
+- code: public const float AngularSlop = 0.03490659
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: AutoClearForces
+  id: Alis_Core_Physic_Settings_AutoClearForces
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L188
+  metadata:
+    uid: Alis.Core.Physic.Settings.AutoClearForces
+    commentId: F:Alis.Core.Physic.Settings.AutoClearForces
+- markdown: >-
+    By default, forces are cleared automatically after each call to Step.
+
+    The default behavior is modified with this setting.
+
+    The purpose of this setting is to support sub-stepping. Sub-stepping is often used to maintain
+
+    a fixed sized time step under a variable frame-rate.
+
+    When you perform sub-stepping you should disable auto clearing of forces and instead call
+
+    ClearForces after all sub-steps are complete in one pass of your game loop.
+- code: public const bool AutoClearForces = true
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Baumgarte
+  id: Alis_Core_Physic_Settings_Baumgarte
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L135
+  metadata:
+    uid: Alis.Core.Physic.Settings.Baumgarte
+    commentId: F:Alis.Core.Physic.Settings.Baumgarte
+- markdown: >-
+    This scale factor controls how fast overlap is resolved. Ideally this would be 1 so
+
+    that overlap is removed in one time step. However using values close to 1 often lead
+
+    to overshoot.
+- code: public const float Baumgarte = 0.2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: ContinuousPhysics
+  id: Alis_Core_Physic_Settings_ContinuousPhysics
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L203
+  metadata:
+    uid: Alis.Core.Physic.Settings.ContinuousPhysics
+    commentId: F:Alis.Core.Physic.Settings.ContinuousPhysics
+- markdown: Enable/Disable Continuous Collision Detection (CCD)
+- code: public static bool ContinuousPhysics
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: EnableDiagnostics
+  id: Alis_Core_Physic_Settings_EnableDiagnostics
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L59
+  metadata:
+    uid: Alis.Core.Physic.Settings.EnableDiagnostics
+    commentId: F:Alis.Core.Physic.Settings.EnableDiagnostics
+- markdown: >-
+    Enabling diagnistics causes the engine to gather timing information.
+
+    You can see how much time it took to solve the contacts, solve CCD
+
+    and update the controllers.
+
+    NOTE: If you are using a debug view that shows performance counters,
+
+    you might want to enable this.
+- code: public const bool EnableDiagnostics = true
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Epsilon
+  id: Alis_Core_Physic_Settings_Epsilon
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Settings.Epsilon
+    commentId: F:Alis.Core.Physic.Settings.Epsilon
+- markdown: The epsilon
+- code: public const float Epsilon = 1.1920929E-07
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: LinearSleepTolerance
+  id: Alis_Core_Physic_Settings_LinearSleepTolerance
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L146
+  metadata:
+    uid: Alis.Core.Physic.Settings.LinearSleepTolerance
+    commentId: F:Alis.Core.Physic.Settings.LinearSleepTolerance
+- markdown: A body cannot sleep if its linear velocity is above this tolerance.
+- code: public const float LinearSleepTolerance = 0.01
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: LinearSlop
+  id: Alis_Core_Physic_Settings_LinearSlop
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L90
+  metadata:
+    uid: Alis.Core.Physic.Settings.LinearSlop
+    commentId: F:Alis.Core.Physic.Settings.LinearSlop
+- markdown: >-
+    A small length used as a collision and constraint tolerance. Usually it is
+
+    chosen to be numerically significant, but visually insignificant.
+- code: public const float LinearSlop = 0.005
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxAngularCorrection
+  id: Alis_Core_Physic_Settings_MaxAngularCorrection
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L128
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxAngularCorrection
+    commentId: F:Alis.Core.Physic.Settings.MaxAngularCorrection
+- markdown: >-
+    The maximum angular position correction used when solving constraints. This helps to
+
+    prevent overshoot.
+- code: public const float MaxAngularCorrection = 0.13962635
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxFloat
+  id: Alis_Core_Physic_Settings_MaxFloat
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxFloat
+    commentId: F:Alis.Core.Physic.Settings.MaxFloat
+- markdown: The max float
+- code: public const float MaxFloat = 3.4028235E+38
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxGJKIterations
+  id: Alis_Core_Physic_Settings_MaxGJKIterations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L178
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxGJKIterations
+    commentId: F:Alis.Core.Physic.Settings.MaxGJKIterations
+- markdown: Defines the maximum number of iterations made by the GJK algorithm.
+- code: public const int MaxGJKIterations = 20
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxLinearCorrection
+  id: Alis_Core_Physic_Settings_MaxLinearCorrection
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L122
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxLinearCorrection
+    commentId: F:Alis.Core.Physic.Settings.MaxLinearCorrection
+- markdown: >-
+    The maximum linear position correction used when solving constraints. This helps to
+
+    prevent overshoot.
+- code: public const float MaxLinearCorrection = 0.2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxManifoldPoints
+  id: Alis_Core_Physic_Settings_MaxManifoldPoints
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L70
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxManifoldPoints
+    commentId: F:Alis.Core.Physic.Settings.MaxManifoldPoints
+- markdown: >-
+    The maximum number of contact points between two convex shapes.
+
+    DO NOT CHANGE THIS VALUE!
+- code: public const int MaxManifoldPoints = 2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxPolygonVertices
+  id: Alis_Core_Physic_Settings_MaxPolygonVertices
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L231
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxPolygonVertices
+    commentId: F:Alis.Core.Physic.Settings.MaxPolygonVertices
+- markdown: The maximum number of vertices on a convex polygon.
+- code: public static int MaxPolygonVertices
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxRotation
+  id: Alis_Core_Physic_Settings_MaxRotation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L168
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxRotation
+    commentId: F:Alis.Core.Physic.Settings.MaxRotation
+- markdown: >-
+    The maximum angular velocity of a body. This limit is very large and is used
+
+    to prevent numerical problems. You shouldn't need to adjust this.
+- code: public const float MaxRotation = 1.5707964
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxRotationSquared
+  id: Alis_Core_Physic_Settings_MaxRotationSquared
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L173
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxRotationSquared
+    commentId: F:Alis.Core.Physic.Settings.MaxRotationSquared
+- markdown: The max rotation
+- code: public const float MaxRotationSquared = 2.4674013
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxSubSteps
+  id: Alis_Core_Physic_Settings_MaxSubSteps
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L64
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxSubSteps
+    commentId: F:Alis.Core.Physic.Settings.MaxSubSteps
+- markdown: Maximum number of sub-steps per contact in continuous physics simulation.
+- code: public const int MaxSubSteps = 8
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxTOIContacts
+  id: Alis_Core_Physic_Settings_MaxTOIContacts
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L110
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxTOIContacts
+    commentId: F:Alis.Core.Physic.Settings.MaxTOIContacts
+- markdown: Maximum number of contacts to be handled to solve a TOI impact.
+- code: public const int MaxTOIContacts = 32
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxTranslation
+  id: Alis_Core_Physic_Settings_MaxTranslation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L157
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxTranslation
+    commentId: F:Alis.Core.Physic.Settings.MaxTranslation
+- markdown: >-
+    The maximum linear velocity of a body. This limit is very large and is used
+
+    to prevent numerical problems. You shouldn't need to adjust this.
+- code: public const float MaxTranslation = 2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxTranslationSquared
+  id: Alis_Core_Physic_Settings_MaxTranslationSquared
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L162
+  metadata:
+    uid: Alis.Core.Physic.Settings.MaxTranslationSquared
+    commentId: F:Alis.Core.Physic.Settings.MaxTranslationSquared
+- markdown: The max translation
+- code: public const float MaxTranslationSquared = 4
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: PolygonRadius
+  id: Alis_Core_Physic_Settings_PolygonRadius
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L103
+  metadata:
+    uid: Alis.Core.Physic.Settings.PolygonRadius
+    commentId: F:Alis.Core.Physic.Settings.PolygonRadius
+- markdown: >-
+    The radius of the polygon/edge shape skin. This should not be modified. Making
+
+    this smaller means polygons will have an insufficient buffer for continuous collision.
+
+    Making it larger may create artifacts for vertex collision.
+- code: public const float PolygonRadius = 0.01
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: PositionIterations
+  id: Alis_Core_Physic_Settings_PositionIterations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L198
+  metadata:
+    uid: Alis.Core.Physic.Settings.PositionIterations
+    commentId: F:Alis.Core.Physic.Settings.PositionIterations
+- markdown: The number of position iterations used in the solver.
+- code: public static int PositionIterations
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: TOIPositionIterations
+  id: Alis_Core_Physic_Settings_TOIPositionIterations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L221
+  metadata:
+    uid: Alis.Core.Physic.Settings.TOIPositionIterations
+    commentId: F:Alis.Core.Physic.Settings.TOIPositionIterations
+- markdown: The number of position iterations in the TOI solver
+- code: public static int TOIPositionIterations
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: TOIVelocityIterations
+  id: Alis_Core_Physic_Settings_TOIVelocityIterations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L216
+  metadata:
+    uid: Alis.Core.Physic.Settings.TOIVelocityIterations
+    commentId: F:Alis.Core.Physic.Settings.TOIVelocityIterations
+- markdown: The number of velocity iterations in the TOI solver
+- code: public static int TOIVelocityIterations
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: TimeToSleep
+  id: Alis_Core_Physic_Settings_TimeToSleep
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L141
+  metadata:
+    uid: Alis.Core.Physic.Settings.TimeToSleep
+    commentId: F:Alis.Core.Physic.Settings.TimeToSleep
+- markdown: The time that a body must be still before it will go to sleep.
+- code: public const float TimeToSleep = 0.5
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: UseConvexHullPolygons
+  id: Alis_Core_Physic_Settings_UseConvexHullPolygons
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L211
+  metadata:
+    uid: Alis.Core.Physic.Settings.UseConvexHullPolygons
+    commentId: F:Alis.Core.Physic.Settings.UseConvexHullPolygons
+- markdown: >-
+    If true, it will run a GiftWrap convex hull on all polygon inputs.
+
+    This makes for a more stable engine when given random input,
+
+    but if speed of the creation of polygons are more important,
+
+    you might want to set this to false.
+- code: public static bool UseConvexHullPolygons
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: VelocityIterations
+  id: Alis_Core_Physic_Settings_VelocityIterations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L193
+  metadata:
+    uid: Alis.Core.Physic.Settings.VelocityIterations
+    commentId: F:Alis.Core.Physic.Settings.VelocityIterations
+- markdown: The number of velocity iterations used in the solver.
+- code: public static int VelocityIterations
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: VelocityThreshold
+  id: Alis_Core_Physic_Settings_VelocityThreshold
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L116
+  metadata:
+    uid: Alis.Core.Physic.Settings.VelocityThreshold
+    commentId: F:Alis.Core.Physic.Settings.VelocityThreshold
+- markdown: >-
+    A velocity threshold for elastic collisions. Any collision with a relative linear
+
+    velocity below this threshold will be treated as inelastic.
+- code: public const float VelocityThreshold = 1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Methods
+- api3: MixFriction(float, float)
+  id: Alis_Core_Physic_Settings_MixFriction_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L239
+  metadata:
+    uid: Alis.Core.Physic.Settings.MixFriction(System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Settings.MixFriction(System.Single,System.Single)
+- markdown: Friction mixing law. Feel free to customize this.
+- code: public static float MixFriction(float friction1, float friction2)
+- h4: Parameters
+- parameters:
+  - name: friction1
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The friction1.
+  - name: friction2
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The friction2.
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: ''
+- api3: MixRestitution(float, float)
+  id: Alis_Core_Physic_Settings_MixRestitution_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Settings.cs#L247
+  metadata:
+    uid: Alis.Core.Physic.Settings.MixRestitution(System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Settings.MixRestitution(System.Single,System.Single)
+- markdown: Restitution mixing law. Feel free to customize this.
+- code: public static float MixRestitution(float restitution1, float restitution2)
+- h4: Parameters
+- parameters:
+  - name: restitution1
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The restitution1.
+  - name: restitution2
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The restitution2.
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: ''
+languageId: csharp
+metadata:
+  description: The settings class

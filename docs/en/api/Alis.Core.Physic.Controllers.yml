@@ -1,0 +1,36 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Physic.Controllers
+body:
+- api1: Namespace Alis.Core.Physic.Controllers
+  id: Alis_Core_Physic_Controllers
+  metadata:
+    uid: Alis.Core.Physic.Controllers
+    commentId: N:Alis.Core.Physic.Controllers
+- h3: Classes
+- parameters:
+  - type:
+      text: BuoyancyController
+      url: Alis.Core.Physic.Controllers.BuoyancyController.html
+    description: The buoyancy controller class
+  - type:
+      text: Controller
+      url: Alis.Core.Physic.Controllers.Controller.html
+    description: The controller class
+  - type:
+      text: GravityController
+      url: Alis.Core.Physic.Controllers.GravityController.html
+    description: The gravity controller class
+  - type:
+      text: VelocityLimitController
+      url: Alis.Core.Physic.Controllers.VelocityLimitController.html
+    description: >-
+      Put a limit on the linear (translation - the movespeed) and angular (rotation) velocity
+
+      of bodies added to this controller.
+- h3: Enums
+- parameters:
+  - type:
+      text: GravityType
+      url: Alis.Core.Physic.Controllers.GravityType.html
+    description: The gravity type enum
+languageId: csharp

@@ -3,7 +3,7 @@ title: Class PhysicManager
 body:
 - api1: Class PhysicManager
   id: Alis_Core_Ecs_System_Manager_Physic_PhysicManager
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L40
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L38
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Physic.PhysicManager
     commentId: T:Alis.Core.Ecs.System.Manager.Physic.PhysicManager
@@ -84,6 +84,8 @@ body:
     url: Alis.Core.Ecs.System.Manager.AManager.html#Alis_Core_Ecs_System_Manager_AManager_OnExit
   - text: AManager.OnDestroy()
     url: Alis.Core.Ecs.System.Manager.AManager.html#Alis_Core_Ecs_System_Manager_AManager_OnDestroy
+  - text: AManager.OnPhysicUpdate()
+    url: Alis.Core.Ecs.System.Manager.AManager.html#Alis_Core_Ecs_System_Manager_AManager_OnPhysicUpdate
   - text: object.Equals(object?)
     url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - text: object.Equals(object?, object?)
@@ -99,38 +101,60 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Fields
-- api3: world
-  id: Alis_Core_Ecs_System_Manager_Physic_PhysicManager_world
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L45
+- api3: World
+  id: Alis_Core_Ecs_System_Manager_Physic_PhysicManager_World
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L48
   metadata:
-    uid: Alis.Core.Ecs.System.Manager.Physic.PhysicManager.world
-    commentId: F:Alis.Core.Ecs.System.Manager.Physic.PhysicManager.world
+    uid: Alis.Core.Ecs.System.Manager.Physic.PhysicManager.World
+    commentId: F:Alis.Core.Ecs.System.Manager.Physic.PhysicManager.World
 - markdown: The vector
-- code: private readonly World world
+- code: public World World
 - h4: Field Value
 - parameters:
   - type:
     - text: World
-      url: Alis.Core.Physic.World.html
-- h2: Methods
-- api3: Attach(Body)
-  id: Alis_Core_Ecs_System_Manager_Physic_PhysicManager_Attach_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L64
+      url: Alis.Core.Physic.Dynamics.World.html
+- api3: timeStepPhysics
+  id: Alis_Core_Ecs_System_Manager_Physic_PhysicManager_timeStepPhysics
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L43
   metadata:
-    uid: Alis.Core.Ecs.System.Manager.Physic.PhysicManager.Attach(Alis.Core.Physic.Dynamics.Body)
-    commentId: M:Alis.Core.Ecs.System.Manager.Physic.PhysicManager.Attach(Alis.Core.Physic.Dynamics.Body)
-- markdown: Attaches the body
-- code: public void Attach(Body body)
-- h4: Parameters
+    uid: Alis.Core.Ecs.System.Manager.Physic.PhysicManager.timeStepPhysics
+    commentId: F:Alis.Core.Ecs.System.Manager.Physic.PhysicManager.timeStepPhysics
+- markdown: The time step physics
+- code: private float timeStepPhysics
+- h4: Field Value
 - parameters:
-  - name: body
-    type:
-    - text: Body
-      url: Alis.Core.Physic.Dynamics.Body.html
-    description: The body
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Methods
+- api3: OnAwake()
+  id: Alis_Core_Ecs_System_Manager_Physic_PhysicManager_OnAwake
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.System.Manager.Physic.PhysicManager.OnAwake
+    commentId: M:Alis.Core.Ecs.System.Manager.Physic.PhysicManager.OnAwake
+- markdown: Ons the awake
+- code: public override void OnAwake()
+- api3: OnInit()
+  id: Alis_Core_Ecs_System_Manager_Physic_PhysicManager_OnInit
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.System.Manager.Physic.PhysicManager.OnInit
+    commentId: M:Alis.Core.Ecs.System.Manager.Physic.PhysicManager.OnInit
+- markdown: Ons the init
+- code: public override void OnInit()
+- api3: OnPhysicUpdate()
+  id: Alis_Core_Ecs_System_Manager_Physic_PhysicManager_OnPhysicUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L103
+  metadata:
+    uid: Alis.Core.Ecs.System.Manager.Physic.PhysicManager.OnPhysicUpdate
+    commentId: M:Alis.Core.Ecs.System.Manager.Physic.PhysicManager.OnPhysicUpdate
+- markdown: Ons the physic update
+- code: public override void OnPhysicUpdate()
 - api3: OnUpdate()
   id: Alis_Core_Ecs_System_Manager_Physic_PhysicManager_OnUpdate
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L50
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L111
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Physic.PhysicManager.OnUpdate
     commentId: M:Alis.Core.Ecs.System.Manager.Physic.PhysicManager.OnUpdate
@@ -138,7 +162,7 @@ body:
 - code: public override void OnUpdate()
 - api3: UnAttach(Body)
   id: Alis_Core_Ecs_System_Manager_Physic_PhysicManager_UnAttach_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L73
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Physic/PhysicManager.cs#L123
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Physic.PhysicManager.UnAttach(Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Ecs.System.Manager.Physic.PhysicManager.UnAttach(Alis.Core.Physic.Dynamics.Body)

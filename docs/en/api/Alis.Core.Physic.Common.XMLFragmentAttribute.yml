@@ -1,0 +1,70 @@
+### YamlMime:ApiPage
+title: Class XMLFragmentAttribute
+body:
+- api1: Class XMLFragmentAttribute
+  id: Alis_Core_Physic_Common_XMLFragmentAttribute
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentAttribute.cs#L35
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentAttribute
+    commentId: T:Alis.Core.Physic.Common.XMLFragmentAttribute
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common
+      url: Alis.Core.Physic.Common.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The xml fragment attribute class
+- code: internal class XMLFragmentAttribute
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: XMLFragmentAttribute
+    url: Alis.Core.Physic.Common.XMLFragmentAttribute.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Properties
+- api3: Name
+  id: Alis_Core_Physic_Common_XMLFragmentAttribute_Name
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentAttribute.cs#L40
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentAttribute.Name
+    commentId: P:Alis.Core.Physic.Common.XMLFragmentAttribute.Name
+- markdown: Gets or sets the value of the name
+- code: public string Name { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Value
+  id: Alis_Core_Physic_Common_XMLFragmentAttribute_Value
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/XMLFragmentAttribute.cs#L45
+  metadata:
+    uid: Alis.Core.Physic.Common.XMLFragmentAttribute.Value
+    commentId: P:Alis.Core.Physic.Common.XMLFragmentAttribute.Value
+- markdown: Gets or sets the value of the value
+- code: public string Value { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+languageId: csharp
+metadata:
+  description: The xml fragment attribute class

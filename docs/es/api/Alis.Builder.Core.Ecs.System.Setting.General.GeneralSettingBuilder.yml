@@ -3,7 +3,7 @@ title: Class GeneralSettingBuilder
 body:
 - api1: Class GeneralSettingBuilder
   id: Alis_Builder_Core_Ecs_System_Setting_General_GeneralSettingBuilder
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L40
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L41
   metadata:
     uid: Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder
     commentId: T:Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder
@@ -59,7 +59,7 @@ body:
 - h2: Fields
 - api3: generalSetting
   id: Alis_Builder_Core_Ecs_System_Setting_General_GeneralSettingBuilder_generalSetting
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L53
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L54
   metadata:
     uid: Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.generalSetting
     commentId: F:Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.generalSetting
@@ -73,7 +73,7 @@ body:
 - h2: Methods
 - api3: Author(string)
   id: Alis_Builder_Core_Ecs_System_Setting_General_GeneralSettingBuilder_Author_System_String_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L60
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L61
   metadata:
     uid: Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Author(System.String)
     commentId: M:Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Author(System.String)
@@ -94,7 +94,7 @@ body:
     description: The general setting builder
 - api3: Build()
   id: Alis_Builder_Core_Ecs_System_Setting_General_GeneralSettingBuilder_Build
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L70
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L71
   metadata:
     uid: Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Build
     commentId: M:Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Build
@@ -108,7 +108,7 @@ body:
     description: The general setting
 - api3: Debug(bool)
   id: Alis_Builder_Core_Ecs_System_Setting_General_GeneralSettingBuilder_Debug_System_Boolean_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L77
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L78
   metadata:
     uid: Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Debug(System.Boolean)
     commentId: M:Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Debug(System.Boolean)
@@ -129,7 +129,7 @@ body:
     description: The general setting builder
 - api3: Description(string)
   id: Alis_Builder_Core_Ecs_System_Setting_General_GeneralSettingBuilder_Description_System_String_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L88
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L89
   metadata:
     uid: Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Description(System.String)
     commentId: M:Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Description(System.String)
@@ -150,7 +150,7 @@ body:
     description: The general setting builder
 - api3: Icon(string)
   id: Alis_Builder_Core_Ecs_System_Setting_General_GeneralSettingBuilder_Icon_System_String_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L99
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L100
   metadata:
     uid: Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Icon(System.String)
     commentId: M:Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Icon(System.String)
@@ -171,7 +171,7 @@ body:
     description: The general setting builder
 - api3: License(string)
   id: Alis_Builder_Core_Ecs_System_Setting_General_GeneralSettingBuilder_License_System_String_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L110
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L111
   metadata:
     uid: Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.License(System.String)
     commentId: M:Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.License(System.String)
@@ -192,7 +192,7 @@ body:
     description: The general setting builder
 - api3: Name(string)
   id: Alis_Builder_Core_Ecs_System_Setting_General_GeneralSettingBuilder_Name_System_String_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L121
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L122
   metadata:
     uid: Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Name(System.String)
     commentId: M:Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Name(System.String)
@@ -213,7 +213,7 @@ body:
     description: The general setting builder
 - api3: Version(string)
   id: Alis_Builder_Core_Ecs_System_Setting_General_GeneralSettingBuilder_Version_System_String_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L132
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/Setting/General/GeneralSettingBuilder.cs#L133
   metadata:
     uid: Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Version(System.String)
     commentId: M:Alis.Builder.Core.Ecs.System.Setting.General.GeneralSettingBuilder.Version(System.String)

@@ -1,0 +1,38 @@
+### YamlMime:ApiPage
+title: Enum Orientation
+body:
+- api1: Enum Orientation
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Orientation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Orientation.cs#L35
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Orientation
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.Orientation
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.CDT
+      url: Alis.Core.Physic.Common.Decomposition.CDT.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The orientation enum
+- code: internal enum Orientation
+- h2: Fields
+- parameters:
+  - name: CW
+    default: "0"
+    description: >+
+      The cw orientation
+
+  - name: CCW
+    default: "1"
+    description: >+
+      The ccw orientation
+
+  - name: Collinear
+    default: "2"
+    description: >+
+      The collinear orientation
+
+languageId: csharp
+metadata:
+  description: The orientation enum

@@ -1,0 +1,75 @@
+### YamlMime:ApiPage
+title: Struct EPAxis
+body:
+- api1: Struct EPAxis
+  id: Alis_Core_Physic_Collision_EPAxis
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/EPAxis.cs#L35
+  metadata:
+    uid: Alis.Core.Physic.Collision.EPAxis
+    commentId: T:Alis.Core.Physic.Collision.EPAxis
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collision
+      url: Alis.Core.Physic.Collision.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: This structure is used to keep track of the best separating axis.
+- code: public struct EPAxis
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Index
+  id: Alis_Core_Physic_Collision_EPAxis_Index
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/EPAxis.cs#L40
+  metadata:
+    uid: Alis.Core.Physic.Collision.EPAxis.Index
+    commentId: F:Alis.Core.Physic.Collision.EPAxis.Index
+- markdown: The index
+- code: public int Index
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Separation
+  id: Alis_Core_Physic_Collision_EPAxis_Separation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/EPAxis.cs#L45
+  metadata:
+    uid: Alis.Core.Physic.Collision.EPAxis.Separation
+    commentId: F:Alis.Core.Physic.Collision.EPAxis.Separation
+- markdown: The separation
+- code: public float Separation
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Type
+  id: Alis_Core_Physic_Collision_EPAxis_Type
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/EPAxis.cs#L50
+  metadata:
+    uid: Alis.Core.Physic.Collision.EPAxis.Type
+    commentId: F:Alis.Core.Physic.Collision.EPAxis.Type
+- markdown: The type
+- code: public EPAxisType Type
+- h4: Field Value
+- parameters:
+  - type:
+    - text: EPAxisType
+      url: Alis.Core.Physic.Collision.EPAxisType.html
+languageId: csharp
+metadata:
+  description: This structure is used to keep track of the best separating axis.

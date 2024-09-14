@@ -1,0 +1,315 @@
+### YamlMime:ApiPage
+title: Class EarclipDecomposer.Triangle
+body:
+- api1: Class EarclipDecomposer.Triangle
+  id: Alis_Core_Physic_Common_Decomposition_EarclipDecomposer_Triangle
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L359
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Triangle
+    commentId: T:Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Triangle
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition
+      url: Alis.Core.Physic.Common.Decomposition.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The triangle class
+- code: 'private class EarclipDecomposer.Triangle : Vertices, IList<Vector2>, ICollection<Vector2>, IReadOnlyList<Vector2>, IReadOnlyCollection<Vector2>, IEnumerable<Vector2>, IList, ICollection, IEnumerable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: List<Vector2>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - text: Vertices
+    url: Alis.Core.Physic.Common.Vertices.html
+  - text: EarclipDecomposer.Triangle
+    url: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Triangle.html
+- h4: Implements
+- list:
+  - text: IList<Vector2>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - text: ICollection<Vector2>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - text: IReadOnlyList<Vector2>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - text: IReadOnlyCollection<Vector2>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - text: IEnumerable<Vector2>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - text: IList
+    url: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  - text: ICollection
+    url: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - text: IEnumerable
+    url: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+- h4: Inherited Members
+- list:
+  - text: Vertices.AttachedToBody
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_AttachedToBody
+  - text: Vertices.Holes
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_Holes
+  - text: Vertices.NextIndex(int)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_NextIndex_System_Int32_
+  - text: Vertices.NextVertex(int)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_NextVertex_System_Int32_
+  - text: Vertices.PreviousIndex(int)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_PreviousIndex_System_Int32_
+  - text: Vertices.PreviousVertex(int)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_PreviousVertex_System_Int32_
+  - text: Vertices.GetSignedArea()
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_GetSignedArea
+  - text: Vertices.GetArea()
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_GetArea
+  - text: Vertices.GetCentroid()
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_GetCentroid
+  - text: Vertices.GetAABB()
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_GetAABB
+  - text: Vertices.Translate(Vector2)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_Translate_Alis_Core_Aspect_Math_Vector_Vector2_
+  - text: Vertices.Translate(ref Vector2)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_Translate_Alis_Core_Aspect_Math_Vector_Vector2__
+  - text: Vertices.Scale(Vector2)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_Scale_Alis_Core_Aspect_Math_Vector_Vector2_
+  - text: Vertices.Scale(ref Vector2)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_Scale_Alis_Core_Aspect_Math_Vector_Vector2__
+  - text: Vertices.Rotate(float)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_Rotate_System_Single_
+  - text: Vertices.IsConvex()
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_IsConvex
+  - text: Vertices.IsCounterClockWise()
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_IsCounterClockWise
+  - text: Vertices.ForceCounterClockWise()
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_ForceCounterClockWise
+  - text: Vertices.IsSimple()
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_IsSimple
+  - text: Vertices.CheckPolygon()
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_CheckPolygon
+  - text: Vertices.ProjectToAxis(ref Vector2, out float, out float)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_ProjectToAxis_Alis_Core_Aspect_Math_Vector_Vector2__System_Single__System_Single__
+  - text: Vertices.PointInPolygon(ref Vector2)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_PointInPolygon_Alis_Core_Aspect_Math_Vector_Vector2__
+  - text: Vertices.PointInPolygonAngle(ref Vector2)
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_PointInPolygonAngle_Alis_Core_Aspect_Math_Vector_Vector2__
+  - text: Vertices.ToString()
+    url: Alis.Core.Physic.Common.Vertices.html#Alis_Core_Physic_Common_Vertices_ToString
+  - text: List<Vector2>.IList.get_Item(int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-get_item
+  - text: List<Vector2>.IList.set_Item(int, object)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-set_item
+  - text: List<Vector2>.Add(Vector2)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.add
+  - text: List<Vector2>.AddRange(IEnumerable<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.addrange
+  - text: List<Vector2>.AsReadOnly()
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.asreadonly
+  - text: List<Vector2>.BinarySearch(int, int, Vector2, IComparer<Vector2>?)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(system-int32-system-int32-0-system-collections-generic-icomparer((-0)))
+  - text: List<Vector2>.BinarySearch(Vector2)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(-0)
+  - text: List<Vector2>.BinarySearch(Vector2, IComparer<Vector2>?)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(-0-system-collections-generic-icomparer((-0)))
+  - text: List<Vector2>.Clear()
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.clear
+  - text: List<Vector2>.Contains(Vector2)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.contains
+  - text: List<Vector2>.ConvertAll<TOutput>(Converter<Vector2, TOutput>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.convertall
+  - text: List<Vector2>.CopyTo(int, Vector2[], int, int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(system-int32-0()-system-int32-system-int32)
+  - text: List<Vector2>.CopyTo(Vector2[])
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(-0())
+  - text: List<Vector2>.CopyTo(Vector2[], int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(-0()-system-int32)
+  - text: List<Vector2>.Exists(Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.exists
+  - text: List<Vector2>.Find(Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.find
+  - text: List<Vector2>.FindAll(Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findall
+  - text: List<Vector2>.FindIndex(int, int, Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-int32-system-int32-system-predicate((-0)))
+  - text: List<Vector2>.FindIndex(int, Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-int32-system-predicate((-0)))
+  - text: List<Vector2>.FindIndex(Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-predicate((-0)))
+  - text: List<Vector2>.FindLast(Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlast
+  - text: List<Vector2>.FindLastIndex(int, int, Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-int32-system-int32-system-predicate((-0)))
+  - text: List<Vector2>.FindLastIndex(int, Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-int32-system-predicate((-0)))
+  - text: List<Vector2>.FindLastIndex(Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-predicate((-0)))
+  - text: List<Vector2>.ForEach(Action<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.foreach
+  - text: List<Vector2>.GetEnumerator()
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.getenumerator
+  - text: List<Vector2>.GetRange(int, int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.getrange
+  - text: List<Vector2>.IndexOf(Vector2)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0)
+  - text: List<Vector2>.IndexOf(Vector2, int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0-system-int32)
+  - text: List<Vector2>.IndexOf(Vector2, int, int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0-system-int32-system-int32)
+  - text: List<Vector2>.Insert(int, Vector2)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.insert
+  - text: List<Vector2>.InsertRange(int, IEnumerable<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.insertrange
+  - text: List<Vector2>.LastIndexOf(Vector2)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0)
+  - text: List<Vector2>.LastIndexOf(Vector2, int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0-system-int32)
+  - text: List<Vector2>.LastIndexOf(Vector2, int, int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0-system-int32-system-int32)
+  - text: List<Vector2>.Remove(Vector2)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.remove
+  - text: List<Vector2>.RemoveAll(Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removeall
+  - text: List<Vector2>.RemoveAt(int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removeat
+  - text: List<Vector2>.RemoveRange(int, int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removerange
+  - text: List<Vector2>.Reverse()
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#system-collections-generic-list-1-reverse
+  - text: List<Vector2>.Reverse(int, int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#system-collections-generic-list-1-reverse(system-int32-system-int32)
+  - text: List<Vector2>.Sort()
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort
+  - text: List<Vector2>.Sort(IComparer<Vector2>?)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-collections-generic-icomparer((-0)))
+  - text: List<Vector2>.Sort(Comparison<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-comparison((-0)))
+  - text: List<Vector2>.Sort(int, int, IComparer<Vector2>?)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-int32-system-int32-system-collections-generic-icomparer((-0)))
+  - text: List<Vector2>.IEnumerable<Vector2>.GetEnumerator()
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-ienumerable-t--getenumerator
+  - text: List<Vector2>.ICollection.CopyTo(Array, int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-copyto
+  - text: List<Vector2>.IEnumerable.GetEnumerator()
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ienumerable-getenumerator
+  - text: List<Vector2>.IList.Add(object)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-add
+  - text: List<Vector2>.IList.Contains(object)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-contains
+  - text: List<Vector2>.IList.IndexOf(object)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-indexof
+  - text: List<Vector2>.IList.Insert(int, object)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-insert
+  - text: List<Vector2>.IList.Remove(object)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-remove
+  - text: List<Vector2>.ToArray()
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.toarray
+  - text: List<Vector2>.TrimExcess()
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.trimexcess
+  - text: List<Vector2>.TrueForAll(Predicate<Vector2>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.trueforall
+  - text: List<Vector2>.Capacity
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.capacity
+  - text: List<Vector2>.Count
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.count
+  - text: List<Vector2>.this[int]
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.item
+  - text: List<Vector2>.ICollection<Vector2>.IsReadOnly
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-icollection-t--isreadonly
+  - text: List<Vector2>.ICollection.IsSynchronized
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-issynchronized
+  - text: List<Vector2>.ICollection.SyncRoot
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-syncroot
+  - text: List<Vector2>.IList.IsFixedSize
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isfixedsize
+  - text: List<Vector2>.IList.IsReadOnly
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isreadonly
+  - text: List<Vector2>.IList.Item[int]
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-item
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Triangle(float, float, float, float, float, float)
+  id: Alis_Core_Physic_Common_Decomposition_EarclipDecomposer_Triangle__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L371
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Triangle.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Triangle.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Triangle" data-throw-if-not-resolved="false"></xref> class
+- code: public Triangle(float x1, float y1, float x2, float y2, float x3, float y3)
+- h4: Parameters
+- parameters:
+  - name: x1
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+  - name: y1
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+  - name: x2
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+  - name: y2
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+  - name: x3
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+  - name: y3
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+- h2: Methods
+- api3: IsInside(float, float)
+  id: Alis_Core_Physic_Common_Decomposition_EarclipDecomposer_Triangle_IsInside_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L394
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Triangle.IsInside(System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Triangle.IsInside(System.Single,System.Single)
+- markdown: Describes whether this instance is inside
+- code: public bool IsInside(float x, float y)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+  - name: y
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- h2: See Also
+- list:
+  - - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+languageId: csharp
+metadata:
+  description: The triangle class

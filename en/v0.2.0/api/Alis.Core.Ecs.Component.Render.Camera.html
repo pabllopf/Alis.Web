@@ -476,9 +476,9 @@
 <a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
 </div>
 
-</dd></dl><h2 class='section'>Constructors</h2><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.#ctor' data-commentid='M:Alis.Core.Ecs.Component.Render.Camera.#ctor' id='Alis_Core_Ecs_Component_Render_Camera__ctor'>Camera()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L53'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h2 class='section'>Constructors</h2><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.#ctor' data-commentid='M:Alis.Core.Ecs.Component.Render.Camera.#ctor' id='Alis_Core_Ecs_Component_Render_Camera__ctor'>Camera()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L63'><i class='bi bi-code-slash'></i></a></h3>
  <p>Initializes a new instance of the <span class="xref">Alis.Core.Ecs.Component.Render.Camera</span> class</p>
-<pre><code class='lang-csharp'>public Camera()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.#ctor(System.String,System.String,System.String,System.Boolean,Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Definition.Color,System.Single)' data-commentid='M:Alis.Core.Ecs.Component.Render.Camera.#ctor(System.String,System.String,System.String,System.Boolean,Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Definition.Color,System.Single)' id='Alis_Core_Ecs_Component_Render_Camera__ctor_System_String_System_String_System_String_System_Boolean_Alis_Core_Aspect_Math_Shape_Rectangle_RectangleI_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Definition_Color_System_Single_'>Camera(string, string, string, bool, RectangleI, Vector2, Color, float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L73'><i class='bi bi-code-slash'></i></a></h3>
+<pre><code class='lang-csharp'>public Camera()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.#ctor(System.String,System.String,System.String,System.Boolean,Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Definition.Color,System.Single)' data-commentid='M:Alis.Core.Ecs.Component.Render.Camera.#ctor(System.String,System.String,System.String,System.Boolean,Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Definition.Color,System.Single)' id='Alis_Core_Ecs_Component_Render_Camera__ctor_System_String_System_String_System_String_System_Boolean_Alis_Core_Aspect_Math_Shape_Rectangle_RectangleI_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Definition_Color_System_Single_'>Camera(string, string, string, bool, RectangleI, Vector2, Color, float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L83'><i class='bi bi-code-slash'></i></a></h3>
  <p>Initializes a new instance of the <span class="xref">Alis.Core.Ecs.Component.Render.Camera</span> class</p>
 <pre><code class='lang-csharp'>public Camera(string id, string name, string tag, bool isEnable, RectangleI viewport, Vector2 resolution, Color backgroundColor, float cameraBorder)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>id</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
 <dd>
@@ -528,7 +528,23 @@
 
 <p>The camera border</p>
 
-</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.BackgroundColor' data-commentid='P:Alis.Core.Ecs.Component.Render.Camera.BackgroundColor' id='Alis_Core_Ecs_Component_Render_Camera_BackgroundColor'>BackgroundColor    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L107'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.Position' data-commentid='F:Alis.Core.Ecs.Component.Render.Camera.Position' id='Alis_Core_Ecs_Component_Render_Camera_Position'>Position    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L53'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The position</p>
+<pre><code class='lang-csharp'>[JsonPropertyName(&quot;_Position_&quot;)]
+public Vector2 Position</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.Viewport' data-commentid='F:Alis.Core.Ecs.Component.Render.Camera.Viewport' id='Alis_Core_Ecs_Component_Render_Camera_Viewport'>Viewport    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L58'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The viewport</p>
+<pre><code class='lang-csharp'>[JsonPropertyName(&quot;_Viewport_&quot;)]
+public RectangleI Viewport</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI.html'>RectangleI</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.BackgroundColor' data-commentid='P:Alis.Core.Ecs.Component.Render.Camera.BackgroundColor' id='Alis_Core_Ecs_Component_Render_Camera_BackgroundColor'>BackgroundColor    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L111'><i class='bi bi-code-slash'></i></a></h3>
  <p>Gets or sets the value of the background color</p>
 <pre><code class='lang-csharp'>[JsonPropertyName(&quot;_BackgroundColor_&quot;)]
 public Color BackgroundColor { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Definition.Color.html'>Color</a>  </dt>
@@ -536,7 +552,7 @@ public Color BackgroundColor { get; set; }</code></pre><h4 class='section'>Prope
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.CameraBorder' data-commentid='P:Alis.Core.Ecs.Component.Render.Camera.CameraBorder' id='Alis_Core_Ecs_Component_Render_Camera_CameraBorder'>CameraBorder    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L113'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.CameraBorder' data-commentid='P:Alis.Core.Ecs.Component.Render.Camera.CameraBorder' id='Alis_Core_Ecs_Component_Render_Camera_CameraBorder'>CameraBorder    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L117'><i class='bi bi-code-slash'></i></a></h3>
  <p>Gets or sets the value of the camera border</p>
 <pre><code class='lang-csharp'>[JsonPropertyName(&quot;_CameraBorder_&quot;)]
 public float CameraBorder { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
@@ -544,7 +560,7 @@ public float CameraBorder { get; set; }</code></pre><h4 class='section'>Property
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.Resolution' data-commentid='P:Alis.Core.Ecs.Component.Render.Camera.Resolution' id='Alis_Core_Ecs_Component_Render_Camera_Resolution'>Resolution    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L101'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.Resolution' data-commentid='P:Alis.Core.Ecs.Component.Render.Camera.Resolution' id='Alis_Core_Ecs_Component_Render_Camera_Resolution'>Resolution    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L105'><i class='bi bi-code-slash'></i></a></h3>
  <p>Gets or sets the value of the resolution</p>
 <pre><code class='lang-csharp'>[JsonPropertyName(&quot;_Resolution_&quot;)]
 public Vector2 Resolution { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
@@ -552,7 +568,7 @@ public Vector2 Resolution { get; set; }</code></pre><h4 class='section'>Property
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.TextureTarget' data-commentid='P:Alis.Core.Ecs.Component.Render.Camera.TextureTarget' id='Alis_Core_Ecs_Component_Render_Camera_TextureTarget'>TextureTarget    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L95'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.TextureTarget' data-commentid='P:Alis.Core.Ecs.Component.Render.Camera.TextureTarget' id='Alis_Core_Ecs_Component_Render_Camera_TextureTarget'>TextureTarget    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L99'><i class='bi bi-code-slash'></i></a></h3>
  <p>Gets or sets the value of the texture target</p>
 <pre><code class='lang-csharp'>[JsonPropertyName(&quot;_TextureTarget_&quot;, true, true)]
 public IntPtr TextureTarget { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.intptr'>IntPtr</a>  </dt>
@@ -560,15 +576,7 @@ public IntPtr TextureTarget { get; set; }</code></pre><h4 class='section'>Proper
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.Viewport' data-commentid='P:Alis.Core.Ecs.Component.Render.Camera.Viewport' id='Alis_Core_Ecs_Component_Render_Camera_Viewport'>Viewport    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L89'><i class='bi bi-code-slash'></i></a></h3>
- <p>The viewport</p>
-<pre><code class='lang-csharp'>[JsonPropertyName(&quot;_Viewport_&quot;)]
-public RectangleI Viewport { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI.html'>RectangleI</a>  </dt>
-<dd>
-
-
-
-</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.Builder' data-commentid='M:Alis.Core.Ecs.Component.Render.Camera.Builder' id='Alis_Core_Ecs_Component_Render_Camera_Builder'>Builder()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L120'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.Builder' data-commentid='M:Alis.Core.Ecs.Component.Render.Camera.Builder' id='Alis_Core_Ecs_Component_Render_Camera_Builder'>Builder()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L124'><i class='bi bi-code-slash'></i></a></h3>
  <p>Builders this instance</p>
 <pre><code class='lang-csharp'>public CameraBuilder Builder()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Builder.Core.Ecs.Component.Render.CameraBuilder.html'>CameraBuilder</a>  </dt>
 <dd>
@@ -576,9 +584,9 @@ public RectangleI Viewport { get; set; }</code></pre><h4 class='section'>Propert
 
 <p>The camera builder</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.OnExit' data-commentid='M:Alis.Core.Ecs.Component.Render.Camera.OnExit' id='Alis_Core_Ecs_Component_Render_Camera_OnExit'>OnExit()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L158'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.OnExit' data-commentid='M:Alis.Core.Ecs.Component.Render.Camera.OnExit' id='Alis_Core_Ecs_Component_Render_Camera_OnExit'>OnExit()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L157'><i class='bi bi-code-slash'></i></a></h3>
  <p>Ons the exit</p>
-<pre><code class='lang-csharp'>public override void OnExit()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.OnStart' data-commentid='M:Alis.Core.Ecs.Component.Render.Camera.OnStart' id='Alis_Core_Ecs_Component_Render_Camera_OnStart'>OnStart()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L125'><i class='bi bi-code-slash'></i></a></h3>
+<pre><code class='lang-csharp'>public override void OnExit()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.OnStart' data-commentid='M:Alis.Core.Ecs.Component.Render.Camera.OnStart' id='Alis_Core_Ecs_Component_Render_Camera_OnStart'>OnStart()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L129'><i class='bi bi-code-slash'></i></a></h3>
  <p>Starts this instance</p>
 <pre><code class='lang-csharp'>public override void OnStart()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.Component.Render.Camera.OnUpdate' data-commentid='M:Alis.Core.Ecs.Component.Render.Camera.OnUpdate' id='Alis_Core_Ecs_Component_Render_Camera_OnUpdate'>OnUpdate()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L145'><i class='bi bi-code-slash'></i></a></h3>
  <p>Ons the update</p>

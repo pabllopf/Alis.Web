@@ -3,7 +3,7 @@ title: Class GearJoint
 body:
 - api1: Class GearJoint
   id: Alis_Core_Physic_Dynamics_Joints_GearJoint
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L64
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L65
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.GearJoint
     commentId: T:Alis.Core.Physic.Dynamics.Joints.GearJoint
@@ -15,53 +15,21 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: >-
-    A gear joint is used to connect two joints together. Either joint can be a revolute or prismatic joint. You specify
+    A gear joint is used to connect two joints together.
 
-    a
+    Either joint can be a revolute or prismatic joint.
 
-    gear ratio to bind the motions together:
+    You specify a gear ratio to bind the motions together:
 
     coordinate1 + ratio * coordinate2 = ant
 
-    The ratio can be negative or positive. If one joint is a revolute joint and the other joint is a prismatic joint,
+    The ratio can be negative or positive. If one joint is a revolute joint
 
-    then
+    and the other joint is a prismatic joint, then the ratio will have units
 
-    the ratio will have units of length or units of 1/length. Warning: You have to manually destroy the gear joint if
+    of length or units of 1/length.
 
-    jointA or jointB is destroyed.
-
-    Gear Joint:
-
-    C0 = (coordinate1 + ratio * coordinate2)_initial
-
-    C = (coordinate1 + ratio * coordinate2) - C0 = 0
-
-    J = [J1 ratio * J2]
-
-    K = J * invM * JT
-
-    = J1 * invM1 * J1T + ratio * ratio * J2 * invM2 * J2T
-
-    Revolute:
-
-    coordinate = rotation
-
-    Cdo = angularVelocity
-
-    J = [0 0 1]
-
-    K = J * invM * JT = invI
-
-    Prismatic:
-
-    coordinate = dot(p - pg, ug)
-
-    Cdo = dot(v + cross(w, r), ug)
-
-    J = [ug cross(r, ug)]
-
-    K = J * invM * JT = invMass + invI * cross(r, ug)^2
+    Warning: You have to manually destroy the gear joint if jointA or jointB is destroyed.
 - code: 'public class GearJoint : Joint'
 - h4: Inheritance
 - inheritance:
@@ -73,18 +41,26 @@ body:
     url: Alis.Core.Physic.Dynamics.Joints.GearJoint.html
 - h4: Inherited Members
 - list:
-  - text: Joint._jointType
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__jointType
+  - text: Joint._breakpoint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpoint
+  - text: Joint._breakpointSquared
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpointSquared
+  - text: Joint._world
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__world
   - text: Joint.EdgeA
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeA
   - text: Joint.EdgeB
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeB
-  - text: Joint.IslandFlag
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IslandFlag
-  - text: Joint.JointType
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_JointType
   - text: Joint.Enabled
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Enabled
+  - text: Joint.IslandFlag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IslandFlag
+  - text: Joint.Tag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Tag
+  - text: Joint.World
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_World
+  - text: Joint.JointType
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_JointType
   - text: Joint.BodyA
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_BodyA
   - text: Joint.BodyB
@@ -93,8 +69,6 @@ body:
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorA
   - text: Joint.WorldAnchorB
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorB
-  - text: Joint.UserData
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_UserData
   - text: Joint.CollideConnected
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_CollideConnected
   - text: Joint.Breakpoint
@@ -105,22 +79,18 @@ body:
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionForce_System_Single_
   - text: Joint.GetReactionTorque(float)
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionTorque_System_Single_
-  - text: Joint.ShiftOrigin(ref Vector2)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_ShiftOrigin_Alis_Core_Aspect_Math_Vector_Vector2__
   - text: Joint.WakeBodies()
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WakeBodies
   - text: Joint.IsFixedType()
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IsFixedType
   - text: Joint.InitVelocityConstraints(ref SolverData)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
   - text: Joint.Validate(float)
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Validate_System_Single_
   - text: Joint.SolveVelocityConstraints(ref SolverData)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
   - text: Joint.SolvePositionConstraints(ref SolverData)
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  - text: Joint.DisableIslandFlag()
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_DisableIslandFlag
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_SolverData__
   - text: object.Equals(object?)
     url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - text: object.Equals(object?, object?)
@@ -138,11 +108,14 @@ body:
 - h2: Constructors
 - api3: GearJoint(Body, Body, Joint, Joint, float)
   id: Alis_Core_Physic_Dynamics_Joints_GearJoint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Joints_Joint_Alis_Core_Physic_Dynamics_Joints_Joint_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L194
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L198
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Joints.Joint,Alis.Core.Physic.Dynamics.Joints.Joint,System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Joints.Joint,Alis.Core.Physic.Dynamics.Joints.Joint,System.Single)
-- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Joints.GearJoint" data-throw-if-not-resolved="false"></xref> class
+- markdown: >-
+    Requires two existing revolute or prismatic joints (any combination will work).
+
+    The provided joints must attach a dynamic body to a static body.
 - code: public GearJoint(Body bodyA, Body bodyB, Joint jointA, Joint jointB, float ratio = 1)
 - h4: Parameters
 - parameters:
@@ -150,544 +123,544 @@ body:
     type:
     - text: Body
       url: Alis.Core.Physic.Dynamics.Body.html
-    description: The body
+    description: The first body
   - name: bodyB
     type:
     - text: Body
       url: Alis.Core.Physic.Dynamics.Body.html
-    description: The body
+    description: The second body
   - name: jointA
     type:
     - text: Joint
       url: Alis.Core.Physic.Dynamics.Joints.Joint.html
-    description: The joint
+    description: The first joint.
   - name: jointB
     type:
     - text: Joint
       url: Alis.Core.Physic.Dynamics.Joints.Joint.html
-    description: The joint
+    description: The second joint.
   - name: ratio
     type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The ratio
+    description: The ratio.
     optional: true
 - h2: Fields
-- api3: bodyC
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_bodyC
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L69
+- api3: _JvAC
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__JvAC
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L152
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.bodyC
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.bodyC
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._JvAC
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._JvAC
+- markdown: The jv bd
+- code: private Vector2 _JvAC
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _JvBD
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__JvBD
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L152
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._JvBD
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._JvBD
+- markdown: The jv bd
+- code: private Vector2 _JvBD
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _JwA
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__JwA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L157
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._JwA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._JwA
+- markdown: The jw
+- code: private float _JwA
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _JwB
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__JwB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L157
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._JwB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._JwB
+- markdown: The jw
+- code: private float _JwB
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _JwC
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__JwC
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L157
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._JwC
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._JwC
+- markdown: The jw
+- code: private float _JwC
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _JwD
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__JwD
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L157
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._JwD
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._JwD
+- markdown: The jw
+- code: private float _JwD
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _bodyA
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__bodyA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L70
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._bodyA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._bodyA
 - markdown: The body
-- code: private readonly Body bodyC
+- code: private readonly Body _bodyA
 - h4: Field Value
 - parameters:
   - type:
     - text: Body
       url: Alis.Core.Physic.Dynamics.Body.html
-- api3: bodyD
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_bodyD
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L74
+- api3: _bodyB
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__bodyB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L75
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.bodyD
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.bodyD
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._bodyB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._bodyB
 - markdown: The body
-- code: private readonly Body bodyD
+- code: private readonly Body _bodyB
 - h4: Field Value
 - parameters:
   - type:
     - text: Body
       url: Alis.Core.Physic.Dynamics.Body.html
-- api3: constant
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_constant
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L79
+- api3: _bodyC
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__bodyC
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L80
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.constant
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.constant
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._bodyC
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._bodyC
+- markdown: The body
+- code: private readonly Body _bodyC
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+- api3: _bodyD
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__bodyD
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L85
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._bodyD
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._bodyD
+- markdown: The body
+- code: private readonly Body _bodyD
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+- api3: _constant
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__constant
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L90
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._constant
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._constant
 - markdown: The constant
-- code: private readonly float constant
+- code: private readonly float _constant
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: iA
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_iA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L104
+- api3: _iA
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__iA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L136
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.iA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.iA
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._iA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._iA
 - markdown: The
-- code: private float iA
+- code: private float _iA
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: iB
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_iB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L104
+- api3: _iB
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__iB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L136
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.iB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.iB
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._iB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._iB
 - markdown: The
-- code: private float iB
+- code: private float _iB
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: iC
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_iC
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L104
+- api3: _iC
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__iC
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L136
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.iC
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.iC
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._iC
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._iC
 - markdown: The
-- code: private float iC
+- code: private float _iC
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: iD
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_iD
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L104
+- api3: _iD
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__iD
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L136
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.iD
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.iD
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._iD
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._iD
 - markdown: The
-- code: private float iD
+- code: private float _iD
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: impulse
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_impulse
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L109
+- api3: _impulse
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__impulse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L141
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.impulse
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.impulse
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._impulse
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._impulse
 - markdown: The impulse
-- code: private float impulse
+- code: private float _impulse
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: indexA
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_indexA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L114
+- api3: _indexA
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__indexA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L147
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.indexA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.indexA
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._indexA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._indexA
 - markdown: The index
-- code: private int indexA
+- code: private int _indexA
 - h4: Field Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: indexB
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_indexB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L114
+- api3: _indexB
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__indexB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L147
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.indexB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.indexB
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._indexB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._indexB
 - markdown: The index
-- code: private int indexB
+- code: private int _indexB
 - h4: Field Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: indexC
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_indexC
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L114
+- api3: _indexC
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__indexC
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L147
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.indexC
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.indexC
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._indexC
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._indexC
 - markdown: The index
-- code: private int indexC
+- code: private int _indexC
 - h4: Field Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: indexD
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_indexD
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L114
+- api3: _indexD
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__indexD
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L147
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.indexD
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.indexD
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._indexD
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._indexD
 - markdown: The index
-- code: private int indexD
+- code: private int _indexD
 - h4: Field Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: jointA
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_jointA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L84
+- api3: _lcA
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__lcA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L162
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.jointA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.jointA
-- markdown: The joint
-- code: private readonly Joint jointA
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Joint
-      url: Alis.Core.Physic.Dynamics.Joints.Joint.html
-- api3: jointB
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_jointB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L89
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.jointB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.jointB
-- markdown: The joint
-- code: private readonly Joint jointB
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Joint
-      url: Alis.Core.Physic.Dynamics.Joints.Joint.html
-- api3: jvAc
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_jvAc
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L119
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.jvAc
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.jvAc
-- markdown: The jv bd
-- code: private Vector2 jvAc
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: jvBd
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_jvBd
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L119
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.jvBd
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.jvBd
-- markdown: The jv bd
-- code: private Vector2 jvBd
-- h4: Field Value
-- parameters:
-  - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: jwA
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_jwA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L124
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.jwA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.jwA
-- markdown: The jw
-- code: private float jwA
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: jwB
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_jwB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L124
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.jwB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.jwB
-- markdown: The jw
-- code: private float jwB
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: jwC
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_jwC
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L124
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.jwC
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.jwC
-- markdown: The jw
-- code: private float jwC
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: jwD
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_jwD
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L124
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.jwD
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.jwD
-- markdown: The jw
-- code: private float jwD
-- h4: Field Value
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: lcA
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_lcA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L129
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.lcA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.lcA
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._lcA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._lcA
 - markdown: The lc
-- code: private Vector2 lcA
+- code: private Vector2 _lcA
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: lcB
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_lcB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L129
+- api3: _lcB
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__lcB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L162
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.lcB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.lcB
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._lcB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._lcB
 - markdown: The lc
-- code: private Vector2 lcB
+- code: private Vector2 _lcB
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: lcC
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_lcC
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L129
+- api3: _lcC
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__lcC
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L162
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.lcC
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.lcC
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._lcC
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._lcC
 - markdown: The lc
-- code: private Vector2 lcC
+- code: private Vector2 _lcC
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: lcD
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_lcD
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L129
+- api3: _lcD
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__lcD
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L162
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.lcD
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.lcD
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._lcD
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._lcD
 - markdown: The lc
-- code: private Vector2 lcD
+- code: private Vector2 _lcD
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localAnchorA
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_localAnchorA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L134
+- api3: _localAnchorA
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__localAnchorA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L96
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.localAnchorA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.localAnchorA
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._localAnchorA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._localAnchorA
 - markdown: The local anchor
-- code: private Vector2 localAnchorA
+- code: private readonly Vector2 _localAnchorA
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localAnchorB
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_localAnchorB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L139
+- api3: _localAnchorB
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__localAnchorB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L101
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.localAnchorB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.localAnchorB
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._localAnchorB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._localAnchorB
 - markdown: The local anchor
-- code: private Vector2 localAnchorB
+- code: private readonly Vector2 _localAnchorB
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localAnchorC
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_localAnchorC
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L144
+- api3: _localAnchorC
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__localAnchorC
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L106
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.localAnchorC
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.localAnchorC
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._localAnchorC
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._localAnchorC
 - markdown: The local anchor
-- code: private Vector2 localAnchorC
+- code: private readonly Vector2 _localAnchorC
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localAnchorD
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_localAnchorD
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L149
+- api3: _localAnchorD
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__localAnchorD
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L111
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.localAnchorD
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.localAnchorD
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._localAnchorD
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._localAnchorD
 - markdown: The local anchor
-- code: private Vector2 localAnchorD
+- code: private readonly Vector2 _localAnchorD
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localAxisC
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_localAxisC
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L154
+- api3: _localAxisC
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__localAxisC
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L167
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.localAxisC
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.localAxisC
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._localAxisC
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._localAxisC
 - markdown: The local axis
-- code: private Vector2 localAxisC
+- code: private Vector2 _localAxisC
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: localAxisD
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_localAxisD
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L159
+- api3: _localAxisD
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__localAxisD
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L172
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.localAxisD
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.localAxisD
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._localAxisD
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._localAxisD
 - markdown: The local axis
-- code: private Vector2 localAxisD
+- code: private Vector2 _localAxisD
 - h4: Field Value
 - parameters:
   - type:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: mA
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_mA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L164
+- api3: _mA
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__mA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L177
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.mA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.mA
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._mA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._mA
 - markdown: The
-- code: private float mA
+- code: private float _mA
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: mB
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_mB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L164
+- api3: _mB
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__mB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L177
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.mB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.mB
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._mB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._mB
 - markdown: The
-- code: private float mB
+- code: private float _mB
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: mC
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_mC
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L164
+- api3: _mC
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__mC
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L177
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.mC
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.mC
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._mC
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._mC
 - markdown: The
-- code: private float mC
+- code: private float _mC
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: mD
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_mD
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L164
+- api3: _mD
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__mD
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L177
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.mD
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.mD
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._mD
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._mD
 - markdown: The
-- code: private float mD
+- code: private float _mD
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: mass
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_mass
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L169
+- api3: _mass
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__mass
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L182
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.mass
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.mass
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._mass
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._mass
 - markdown: The mass
-- code: private float mass
+- code: private float _mass
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: ratio
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_ratio
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L174
+- api3: _ratio
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__ratio
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L187
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.ratio
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.ratio
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._ratio
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._ratio
 - markdown: The ratio
-- code: private float ratio
+- code: private float _ratio
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: referenceAngleA
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_referenceAngleA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L179
+- api3: _referenceAngleA
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__referenceAngleA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L116
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.referenceAngleA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.referenceAngleA
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._referenceAngleA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._referenceAngleA
 - markdown: The reference angle
-- code: private float referenceAngleA
+- code: private readonly float _referenceAngleA
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: referenceAngleB
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_referenceAngleB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L184
+- api3: _referenceAngleB
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__referenceAngleB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L121
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.referenceAngleB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.referenceAngleB
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._referenceAngleB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._referenceAngleB
 - markdown: The reference angle
-- code: private float referenceAngleB
+- code: private readonly float _referenceAngleB
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: typeA
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_typeA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L94
+- api3: _typeA
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__typeA
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L126
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.typeA
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.typeA
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._typeA
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._typeA
 - markdown: The type
-- code: private readonly JointType typeA
+- code: private readonly JointType _typeA
 - h4: Field Value
 - parameters:
   - type:
     - text: JointType
       url: Alis.Core.Physic.Dynamics.Joints.JointType.html
-- api3: typeB
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_typeB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L99
+- api3: _typeB
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint__typeB
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L131
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.typeB
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint.typeB
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint._typeB
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.GearJoint._typeB
 - markdown: The type
-- code: private readonly JointType typeB
+- code: private readonly JointType _typeB
 - h4: Field Value
 - parameters:
   - type:
@@ -696,12 +669,12 @@ body:
 - h2: Properties
 - api3: JointA
   id: Alis_Core_Physic_Dynamics_Joints_GearJoint_JointA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L245
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L319
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.JointA
     commentId: P:Alis.Core.Physic.Dynamics.Joints.GearJoint.JointA
 - markdown: The first revolute/prismatic joint attached to the gear joint.
-- code: private Joint JointA { get; }
+- code: public Joint JointA { get; }
 - h4: Property Value
 - parameters:
   - type:
@@ -709,12 +682,12 @@ body:
       url: Alis.Core.Physic.Dynamics.Joints.Joint.html
 - api3: JointB
   id: Alis_Core_Physic_Dynamics_Joints_GearJoint_JointB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L248
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L324
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.JointB
     commentId: P:Alis.Core.Physic.Dynamics.Joints.GearJoint.JointB
 - markdown: The second revolute/prismatic joint attached to the gear joint.
-- code: private Joint JointB { get; }
+- code: public Joint JointB { get; }
 - h4: Property Value
 - parameters:
   - type:
@@ -722,7 +695,7 @@ body:
       url: Alis.Core.Physic.Dynamics.Joints.Joint.html
 - api3: Ratio
   id: Alis_Core_Physic_Dynamics_Joints_GearJoint_Ratio
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L238
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L306
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.Ratio
     commentId: P:Alis.Core.Physic.Dynamics.Joints.GearJoint.Ratio
@@ -735,7 +708,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: WorldAnchorA
   id: Alis_Core_Physic_Dynamics_Joints_GearJoint_WorldAnchorA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L222
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L288
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.WorldAnchorA
     commentId: P:Alis.Core.Physic.Dynamics.Joints.GearJoint.WorldAnchorA
@@ -748,7 +721,7 @@ body:
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: WorldAnchorB
   id: Alis_Core_Physic_Dynamics_Joints_GearJoint_WorldAnchorB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L231
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L297
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.WorldAnchorB
     commentId: P:Alis.Core.Physic.Dynamics.Joints.GearJoint.WorldAnchorB
@@ -760,146 +733,14 @@ body:
     - text: Vector2
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - h2: Methods
-- api3: GetCoordinateA()
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_GetCoordinateA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L254
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateA
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateA
-- markdown: Gets the coordinate a
-- code: private float GetCoordinateA()
-- h4: Returns
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The float
-- api3: GetCoordinateAForPrismaticJoint(Transform, Transform)
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_GetCoordinateAForPrismaticJoint_Alis_Core_Aspect_Math_Transform_Alis_Core_Aspect_Math_Transform_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L292
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateAForPrismaticJoint(Alis.Core.Aspect.Math.Transform,Alis.Core.Aspect.Math.Transform)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateAForPrismaticJoint(Alis.Core.Aspect.Math.Transform,Alis.Core.Aspect.Math.Transform)
-- markdown: Gets the coordinate a for prismatic joint using the specified xf a
-- code: private float GetCoordinateAForPrismaticJoint(Transform xfA, Transform xfC)
-- h4: Parameters
-- parameters:
-  - name: xfA
-    type:
-    - text: Transform
-      url: Alis.Core.Aspect.Math.Transform.html
-    description: The xf
-  - name: xfC
-    type:
-    - text: Transform
-      url: Alis.Core.Aspect.Math.Transform.html
-    description: The xf
-- h4: Returns
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The float
-- api3: GetCoordinateAForRevoluteJoint(float, float)
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_GetCoordinateAForRevoluteJoint_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L275
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateAForRevoluteJoint(System.Single,System.Single)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateAForRevoluteJoint(System.Single,System.Single)
-- markdown: Gets the coordinate a for revolute joint using the specified a a
-- code: private float GetCoordinateAForRevoluteJoint(float aA, float aC)
-- h4: Parameters
-- parameters:
-  - name: aA
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The
-  - name: aC
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The
-- h4: Returns
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The float
-- api3: GetCoordinateB()
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_GetCoordinateB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L309
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateB
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateB
-- markdown: Gets the coordinate b
-- code: private float GetCoordinateB()
-- h4: Returns
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The float
-- api3: GetCoordinateBForPrismaticJoint(Transform, Transform)
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_GetCoordinateBForPrismaticJoint_Alis_Core_Aspect_Math_Transform_Alis_Core_Aspect_Math_Transform_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L347
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateBForPrismaticJoint(Alis.Core.Aspect.Math.Transform,Alis.Core.Aspect.Math.Transform)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateBForPrismaticJoint(Alis.Core.Aspect.Math.Transform,Alis.Core.Aspect.Math.Transform)
-- markdown: Gets the coordinate b for prismatic joint using the specified xf b
-- code: private float GetCoordinateBForPrismaticJoint(Transform xfB, Transform xfD)
-- h4: Parameters
-- parameters:
-  - name: xfB
-    type:
-    - text: Transform
-      url: Alis.Core.Aspect.Math.Transform.html
-    description: The xf
-  - name: xfD
-    type:
-    - text: Transform
-      url: Alis.Core.Aspect.Math.Transform.html
-    description: The xf
-- h4: Returns
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The float
-- api3: GetCoordinateBForRevoluteJoint(float, float)
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_GetCoordinateBForRevoluteJoint_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L330
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateBForRevoluteJoint(System.Single,System.Single)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.GetCoordinateBForRevoluteJoint(System.Single,System.Single)
-- markdown: Gets the coordinate b for revolute joint using the specified a b
-- code: private float GetCoordinateBForRevoluteJoint(float aB, float aD)
-- h4: Parameters
-- parameters:
-  - name: aB
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The
-  - name: aD
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The
-- h4: Returns
-- parameters:
-  - type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The float
 - api3: GetReactionForce(float)
   id: Alis_Core_Physic_Dynamics_Joints_GearJoint_GetReactionForce_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L365
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L331
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.GetReactionForce(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.GetReactionForce(System.Single)
 - markdown: Gets the reaction force using the specified inv dt
-- code: protected override Vector2 GetReactionForce(float invDt)
+- code: public override Vector2 GetReactionForce(float invDt)
 - h4: Parameters
 - parameters:
   - name: invDt
@@ -915,7 +756,7 @@ body:
     description: The vector
 - api3: GetReactionTorque(float)
   id: Alis_Core_Physic_Dynamics_Joints_GearJoint_GetReactionTorque_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L376
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L342
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.GetReactionTorque(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.GetReactionTorque(System.Single)
@@ -935,11 +776,11 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
     description: The float
 - api3: InitVelocityConstraints(ref SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L386
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L352
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
 - markdown: Inits the velocity constraints using the specified data
 - code: internal override void InitVelocityConstraints(ref SolverData data)
 - h4: Parameters
@@ -947,14 +788,14 @@ body:
   - name: data
     type:
     - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
+      url: Alis.Core.Physic.Dynamics.SolverData.html
     description: The data
 - api3: SolvePositionConstraints(ref SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L535
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L504
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
 - markdown: Describes whether this instance solve position constraints
 - code: internal override bool SolvePositionConstraints(ref SolverData data)
 - h4: Parameters
@@ -962,7 +803,7 @@ body:
   - name: data
     type:
     - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
+      url: Alis.Core.Physic.Dynamics.SolverData.html
     description: The data
 - h4: Returns
 - parameters:
@@ -971,11 +812,11 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: The bool
 - api3: SolveVelocityConstraints(ref SolverData)
-  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_Solver_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L494
+  id: Alis_Core_Physic_Dynamics_Joints_GearJoint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/GearJoint.cs#L463
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.Solver.SolverData@)
+    uid: Alis.Core.Physic.Dynamics.Joints.GearJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.GearJoint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
 - markdown: Solves the velocity constraints using the specified data
 - code: internal override void SolveVelocityConstraints(ref SolverData data)
 - h4: Parameters
@@ -983,55 +824,23 @@ body:
   - name: data
     type:
     - text: SolverData
-      url: Alis.Core.Physic.Dynamics.Solver.SolverData.html
+      url: Alis.Core.Physic.Dynamics.SolverData.html
     description: The data
 languageId: csharp
 metadata:
   description: >-
-    A gear joint is used to connect two joints together. Either joint can be a revolute or prismatic joint. You specify
+    A gear joint is used to connect two joints together.
 
-    a
+    Either joint can be a revolute or prismatic joint.
 
-    gear ratio to bind the motions together:
+    You specify a gear ratio to bind the motions together:
 
     coordinate1 + ratio * coordinate2 = ant
 
-    The ratio can be negative or positive. If one joint is a revolute joint and the other joint is a prismatic joint,
+    The ratio can be negative or positive. If one joint is a revolute joint
 
-    then
+    and the other joint is a prismatic joint, then the ratio will have units
 
-    the ratio will have units of length or units of 1/length. Warning: You have to manually destroy the gear joint if
+    of length or units of 1/length.
 
-    jointA or jointB is destroyed.
-
-    Gear Joint:
-
-    C0 = (coordinate1 + ratio * coordinate2)_initial
-
-    C = (coordinate1 + ratio * coordinate2) - C0 = 0
-
-    J = [J1 ratio * J2]
-
-    K = J * invM * JT
-
-    = J1 * invM1 * J1T + ratio * ratio * J2 * invM2 * J2T
-
-    Revolute:
-
-    coordinate = rotation
-
-    Cdo = angularVelocity
-
-    J = [0 0 1]
-
-    K = J * invM * JT = invI
-
-    Prismatic:
-
-    coordinate = dot(p - pg, ug)
-
-    Cdo = dot(v + cross(w, r), ug)
-
-    J = [ug cross(r, ug)]
-
-    K = J * invM * JT = invMass + invI * cross(r, ug)^2
+    Warning: You have to manually destroy the gear joint if jointA or jointB is destroyed.

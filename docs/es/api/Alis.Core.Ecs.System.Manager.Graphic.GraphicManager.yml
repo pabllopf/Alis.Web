@@ -3,7 +3,7 @@ title: Class GraphicManager
 body:
 - api1: Class GraphicManager
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L56
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L54
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager
     commentId: T:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager
@@ -84,6 +84,8 @@ body:
     url: Alis.Core.Ecs.System.Manager.AManager.html#Alis_Core_Ecs_System_Manager_AManager_OnExit
   - text: AManager.OnDestroy()
     url: Alis.Core.Ecs.System.Manager.AManager.html#Alis_Core_Ecs_System_Manager_AManager_OnDestroy
+  - text: AManager.OnPhysicUpdate()
+    url: Alis.Core.Ecs.System.Manager.AManager.html#Alis_Core_Ecs_System_Manager_AManager_OnPhysicUpdate
   - text: object.Equals(object?)
     url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - text: object.Equals(object?, object?)
@@ -101,7 +103,7 @@ body:
 - h2: Constructors
 - api3: GraphicManager()
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager__ctor
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L61
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L64
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor
@@ -109,7 +111,7 @@ body:
 - code: public GraphicManager()
 - api3: GraphicManager(List<BoxCollider>, IntPtr, Vector2, IntPtr, List<Sprite>, List<Camera>)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager__ctor_System_Collections_Generic_List_Alis_Core_Ecs_Component_Collider_BoxCollider__System_IntPtr_Alis_Core_Aspect_Math_Vector_Vector2_System_IntPtr_System_Collections_Generic_List_Alis_Core_Ecs_Component_Render_Sprite__System_Collections_Generic_List_Alis_Core_Ecs_Component_Render_Camera__
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L80
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L83
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor(System.Collections.Generic.List{Alis.Core.Ecs.Component.Collider.BoxCollider},System.IntPtr,Alis.Core.Aspect.Math.Vector.Vector2,System.IntPtr,System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Sprite},System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Camera})
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.#ctor(System.Collections.Generic.List{Alis.Core.Ecs.Component.Collider.BoxCollider},System.IntPtr,Alis.Core.Aspect.Math.Vector.Vector2,System.IntPtr,System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Sprite},System.Collections.Generic.List{Alis.Core.Ecs.Component.Render.Camera})
@@ -159,10 +161,24 @@ body:
       url: Alis.Core.Ecs.Component.Render.Camera.html
     - '>'
     description: The cameras
+- h2: Fields
+- api3: PixelsPerMeter
+  id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_PixelsPerMeter
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L59
+  metadata:
+    uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.PixelsPerMeter
+    commentId: F:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.PixelsPerMeter
+- markdown: The pixels per meter
+- code: private const float PixelsPerMeter = 32
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
 - h2: Properties
 - api3: Cameras
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Cameras
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L124
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L127
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Cameras
     commentId: P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Cameras
@@ -182,7 +198,7 @@ body:
     - '>'
 - api3: ColliderBases
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_ColliderBases
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L94
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L97
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.ColliderBases
     commentId: P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.ColliderBases
@@ -202,7 +218,7 @@ body:
     - '>'
 - api3: DefaultSize
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_DefaultSize
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L106
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L109
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.DefaultSize
     commentId: P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.DefaultSize
@@ -218,7 +234,7 @@ body:
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: Renderer
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Renderer
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L112
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L115
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Renderer
     commentId: P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Renderer
@@ -234,7 +250,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.intptr
 - api3: Sprites
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Sprites
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L118
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L121
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Sprites
     commentId: P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Sprites
@@ -254,7 +270,7 @@ body:
     - '>'
 - api3: Window
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Window
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L100
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L103
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Window
     commentId: P:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Window
@@ -271,7 +287,7 @@ body:
 - h2: Methods
 - api3: Attach(Sprite)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Render_Sprite_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L311
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L343
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Sprite)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Sprite)
@@ -286,7 +302,7 @@ body:
     description: The sprite
 - api3: Attach(BoxCollider)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Collider_BoxCollider_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L331
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L363
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Collider.BoxCollider)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Collider.BoxCollider)
@@ -301,7 +317,7 @@ body:
     description: The collider
 - api3: Attach(Camera)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_Attach_Alis_Core_Ecs_Component_Render_Camera_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L340
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L372
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Camera)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.Attach(Alis.Core.Ecs.Component.Render.Camera)
@@ -316,7 +332,7 @@ body:
     description: The camera
 - api3: OnEnable()
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnEnable
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L130
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L133
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnEnable
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnEnable
@@ -324,7 +340,7 @@ body:
 - code: public override void OnEnable()
 - api3: OnInit()
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnInit
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L138
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L141
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnInit
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnInit
@@ -332,7 +348,7 @@ body:
 - code: public override void OnInit()
 - api3: OnStart()
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnStart
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L271
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L274
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnStart
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnStart
@@ -340,7 +356,7 @@ body:
 - code: public override void OnStart()
 - api3: OnUpdate()
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_OnUpdate
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L280
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L283
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnUpdate
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.OnUpdate
@@ -348,7 +364,7 @@ body:
 - code: public override void OnUpdate()
 - api3: UnAttach(Sprite)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Render_Sprite_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L321
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L353
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Sprite)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Sprite)
@@ -363,7 +379,7 @@ body:
     description: The sprite
 - api3: UnAttach(BoxCollider)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Collider_BoxCollider_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L349
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L381
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Collider.BoxCollider)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Collider.BoxCollider)
@@ -378,7 +394,7 @@ body:
     description: The collider
 - api3: UnAttach(Camera)
   id: Alis_Core_Ecs_System_Manager_Graphic_GraphicManager_UnAttach_Alis_Core_Ecs_Component_Render_Camera_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L358
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/Graphic/GraphicManager.cs#L390
   metadata:
     uid: Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Camera)
     commentId: M:Alis.Core.Ecs.System.Manager.Graphic.GraphicManager.UnAttach(Alis.Core.Ecs.Component.Render.Camera)

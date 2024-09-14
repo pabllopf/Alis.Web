@@ -317,23 +317,15 @@
 
         <article data-uid="">
 <h1 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes' data-commentid='N:Alis.Core.Physic.Collision.Shapes' id='Alis_Core_Physic_Collision_Shapes'>Namespace Alis.Core.Physic.Collision.Shapes   </h1>
- <h3 class='section'>Classes</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.Shapes.AShape.html'>AShape</a>  </dt>
+ <h3 class='section'>Classes</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.Shapes.ChainShape.html'>ChainShape</a>  </dt>
 <dd>
 
 
-<p>A shape is used for collision detection. You can create a shape however you like. Shapes used for simulation
-in World are created automatically when a Fixture is created. Shapes may encapsulate a one or more child shapes.
-A shape is 2D geometrical object, such as a circle or polygon.</p>
-
-</dd><dt> <a href='Alis.Core.Physic.Collision.Shapes.ChainShape.html'>ChainShape</a>  </dt>
-<dd>
-
-
-<p>A chain shape is a free form sequence of line segments. The chain has one-sided collision, with the surface
-normal pointing to the right of the edge. This provides a counter-clockwise winding like the polygon shape.
-Connectivity information is used to create smooth collisions. Warning: the chain will not collide properly if there
-are
-self-intersections.</p>
+<p>A chain shape is a free form sequence of line segments.
+The chain has two-sided collision, so you can use inside and outside collision.
+Therefore, you may use any winding order.
+Connectivity information is used to create smooth collisions.
+WARNING: The chain will not collide properly if there are self-intersections.</p>
 
 </dd><dt> <a href='Alis.Core.Physic.Collision.Shapes.CircleShape.html'>CircleShape</a>  </dt>
 <dd>
@@ -345,14 +337,24 @@ self-intersections.</p>
 <dd>
 
 
-<p>A line segment (edge) shape. These can be connected in chains or loops to other edge shapes. Edges created
-independently are two-sided and do no provide smooth movement across junctions.</p>
+<p>A line segment (edge) shape. These can be connected in chains or loops
+to other edge shapes.
+The connectivity information is used to ensure correct contact normals.</p>
 
 </dd><dt> <a href='Alis.Core.Physic.Collision.Shapes.PolygonShape.html'>PolygonShape</a>  </dt>
 <dd>
 
 
-<p>Represents a simple non-self intersecting convex polygon. Create a convex hull from the given array of points.</p>
+<p>Represents a simple non-selfintersecting convex polygon.
+Create a convex hull from the given array of points.</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Collision.Shapes.Shape.html'>Shape</a>  </dt>
+<dd>
+
+
+<p>A shape is used for collision detection. You can create a shape however you like.
+Shapes used for simulation in World are created automatically when a Fixture
+is created. Shapes may encapsulate a one or more child shapes.</p>
 
 </dd></dl><h3 class='section'>Structs</h3><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.Shapes.MassData.html'>MassData</a>  </dt>
 <dd>

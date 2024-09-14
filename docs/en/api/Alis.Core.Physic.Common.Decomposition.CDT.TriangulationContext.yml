@@ -1,0 +1,215 @@
+### YamlMime:ApiPage
+title: Class TriangulationContext
+body:
+- api1: Class TriangulationContext
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.CDT
+      url: Alis.Core.Physic.Common.Decomposition.CDT.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The triangulation context class
+- code: internal abstract class TriangulationContext
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: TriangulationContext
+    url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html
+- h4: Derived
+- list:
+  - text: DTSweepContext
+    url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: TriangulationContext()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L53
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.#ctor
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext" data-throw-if-not-resolved="false"></xref> class
+- code: public TriangulationContext()
+- h2: Fields
+- api3: Points
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Points
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Points
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Points
+- markdown: The triangulation point
+- code: public readonly List<TriangulationPoint> Points
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    - '>'
+- api3: Triangles
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Triangles
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Triangles
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Triangles
+- markdown: The delaunay triangle
+- code: public readonly List<DelaunayTriangle> Triangles
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: DelaunayTriangle
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html
+    - '>'
+- h2: Properties
+- api3: StepCount
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_StepCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L78
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.StepCount
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.StepCount
+- markdown: Gets or sets the value of the step count
+- code: public int StepCount { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Terminated
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Terminated
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L73
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Terminated
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Terminated
+- markdown: Gets or sets the value of the terminated
+- code: public bool Terminated { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Triangulatable
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Triangulatable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L63
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Triangulatable
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Triangulatable
+- markdown: Gets or sets the value of the triangulatable
+- code: public Triangulatable Triangulatable { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Triangulatable
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable.html
+- api3: TriangulationMode
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_TriangulationMode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L58
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.TriangulationMode
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.TriangulationMode
+- markdown: Gets or sets the value of the triangulation mode
+- code: public TriangulationMode TriangulationMode { get; protected set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: TriangulationMode
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationMode.html
+- api3: WaitUntilNotified
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_WaitUntilNotified
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L68
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.WaitUntilNotified
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.WaitUntilNotified
+- markdown: Gets the value of the wait until notified
+- code: public bool WaitUntilNotified { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h2: Methods
+- api3: Clear()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Clear
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L110
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Clear
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Clear
+- markdown: Clears this instance
+- code: public virtual void Clear()
+- api3: Done()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_Done
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L83
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Done
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Done
+- markdown: Dones this instance
+- code: public void Done()
+- api3: NewConstraint(TriangulationPoint, TriangulationPoint)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_NewConstraint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L105
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.NewConstraint(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.NewConstraint(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
+- markdown: News the constraint using the specified a
+- code: public abstract TriangulationConstraint NewConstraint(TriangulationPoint a, TriangulationPoint b)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: The
+  - name: b
+    type:
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: TriangulationConstraint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationConstraint.html
+    description: The triangulation constraint
+- api3: PrepareTriangulation(Triangulatable)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_PrepareTriangulation_Alis_Core_Physic_Common_Decomposition_CDT_Triangulatable_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L92
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable)
+- markdown: Prepares the triangulation using the specified t
+- code: public virtual void PrepareTriangulation(Triangulatable t)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: Triangulatable
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable.html
+    description: The
+languageId: csharp
+metadata:
+  description: The triangulation context class

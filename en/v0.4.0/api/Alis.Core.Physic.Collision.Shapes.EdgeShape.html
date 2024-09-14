@@ -316,17 +316,18 @@
         </div>
 
         <article data-uid="">
-<h1 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape' data-commentid='T:Alis.Core.Physic.Collision.Shapes.EdgeShape' id='Alis_Core_Physic_Collision_Shapes_EdgeShape'>Class EdgeShape    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L42'><i class='bi bi-code-slash'></i></a></h1>
+<h1 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape' data-commentid='T:Alis.Core.Physic.Collision.Shapes.EdgeShape' id='Alis_Core_Physic_Collision_Shapes_EdgeShape'>Class EdgeShape    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L44'><i class='bi bi-code-slash'></i></a></h1>
  <div class="facts text-secondary">
 <dl><dt>Namespace</dt><dd><a href='Alis.Core.Physic.Collision.Shapes.html'>Alis.Core.Physic.Collision.Shapes</a></dd></dl><dl><dt>Assembly</dt><dd>Alis.dll</dd></dl>
-</div><p>A line segment (edge) shape. These can be connected in chains or loops to other edge shapes. Edges created
-independently are two-sided and do no provide smooth movement across junctions.</p>
-<pre><code class='lang-csharp'>public class EdgeShape : AShape</code></pre><h4 class='section'>Inheritance</h4><dl class="typelist inheritance"><dd>
+</div><p>A line segment (edge) shape. These can be connected in chains or loops
+to other edge shapes.
+The connectivity information is used to ensure correct contact normals.</p>
+<pre><code class='lang-csharp'>public class EdgeShape : Shape</code></pre><h4 class='section'>Inheritance</h4><dl class="typelist inheritance"><dd>
 <div>
 <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html'>AShape</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html'>Shape</a>
 </div>
 <div>
 <a href='Alis.Core.Physic.Collision.Shapes.EdgeShape.html'>EdgeShape</a>
@@ -334,46 +335,46 @@ independently are two-sided and do no provide smooth movement across junctions.<
 
 </dd></dl><h4 class='section'>Inherited Members</h4><dl class="typelist"><dd>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_DensityPrivate'>AShape.DensityPrivate</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape__2radius'>Shape._2radius</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_MassDataPrivate'>AShape.MassDataPrivate</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape__density'>Shape._density</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_RadiusPrivate'>AShape.RadiusPrivate</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape__radius'>Shape._radius</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_ShapeTypePrivate'>AShape.ShapeTypePrivate</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_MassData'>Shape.MassData</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_ShapeType'>AShape.ShapeType</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ShapeType'>Shape.ShapeType</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_ChildCount'>AShape.ChildCount</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ChildCount'>Shape.ChildCount</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_Radius'>AShape.Radius</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_Density'>Shape.Density</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_Density'>AShape.Density</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_Radius'>Shape.Radius</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_GetMassData_Alis_Core_Physic_Collision_Shapes_MassData__'>AShape.GetMassData(out MassData)</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_Clone'>Shape.Clone()</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_Clone'>AShape.Clone()</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_TestPoint_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__'>Shape.TestPoint(ref Transform, ref Vector2)</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_TestPoint_Alis_Core_Aspect_Math_Transform__Alis_Core_Aspect_Math_Vector_Vector2__'>AShape.TestPoint(ref Transform, ref Vector2)</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_RayCast_Alis_Core_Physic_Collision_RayCastOutput__Alis_Core_Physic_Collision_RayCastInput__Alis_Core_Physic_Common_Transform__System_Int32_'>Shape.RayCast(out RayCastOutput, ref RayCastInput, ref Transform, int)</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_RayCast_Alis_Core_Physic_Collision_RayCast_RayCastInput__Alis_Core_Aspect_Math_Transform__System_Int32_Alis_Core_Physic_Collision_RayCast_RayCastOutput__'>AShape.RayCast(ref RayCastInput, ref Transform, int, out RayCastOutput)</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ComputeAABB_Alis_Core_Physic_Collision_AABB__Alis_Core_Physic_Common_Transform__System_Int32_'>Shape.ComputeAABB(out AABB, ref Transform, int)</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_ComputeAabb_Alis_Core_Aspect_Math_Transform__System_Int32_Alis_Core_Physic_Shared_Aabb__'>AShape.ComputeAabb(ref Transform, int, out Aabb)</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ComputeProperties'>Shape.ComputeProperties()</a>
 </div>
 <div>
-<a href='Alis.Core.Physic.Collision.Shapes.AShape.html#Alis_Core_Physic_Collision_Shapes_AShape_ComputeProperties'>AShape.ComputeProperties()</a>
+<a href='Alis.Core.Physic.Collision.Shapes.Shape.html#Alis_Core_Physic_Collision_Shapes_Shape_ComputeSubmergedArea_Alis_Core_Aspect_Math_Vector_Vector2__System_Single_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__'>Shape.ComputeSubmergedArea(ref Vector2, float, ref Transform, out Vector2)</a>
 </div>
 <div>
 <a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)'>object.Equals(object?)</a>
@@ -397,8 +398,10 @@ independently are two-sided and do no provide smooth movement across junctions.<
 <a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
 </div>
 
-</dd></dl><h2 class='section'>Constructors</h2><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape__ctor_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_'>EdgeShape(Vector2, Vector2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L57'><i class='bi bi-code-slash'></i></a></h3>
- <p>Create a new EdgeShape with the specified start and end. This edge supports two-sided collision.</p>
+</dd></dl><h2 class='section'>Constructors</h2><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.#ctor' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.#ctor' id='Alis_Core_Physic_Collision_Shapes_EdgeShape__ctor'>EdgeShape()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L59'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Initializes a new instance of the <span class="xref">Alis.Core.Physic.Collision.Shapes.EdgeShape</span> class</p>
+<pre><code class='lang-csharp'>internal EdgeShape()</code></pre><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape__ctor_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_'>EdgeShape(Vector2, Vector2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L71'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Create a new EdgeShape with the specified start and end.</p>
 <pre><code class='lang-csharp'>public EdgeShape(Vector2 start, Vector2 end)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>start</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
 <dd>
 
@@ -411,141 +414,84 @@ independently are two-sided and do no provide smooth movement across junctions.<
 
 <p>The end of the edge.</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape__ctor_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_'>EdgeShape(Vector2, Vector2, Vector2, Vector2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L63'><i class='bi bi-code-slash'></i></a></h3>
- <p>Create a new EdgeShape with ghost vertices for smooth collision. This edge only supports one-sided collision.</p>
-<pre><code class='lang-csharp'>public EdgeShape(Vector2 v0, Vector2 v1, Vector2 v2, Vector2 v3)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>v0</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+</dd></dl><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape._vertex1' data-commentid='F:Alis.Core.Physic.Collision.Shapes.EdgeShape._vertex1' id='Alis_Core_Physic_Collision_Shapes_EdgeShape__vertex1'>_vertex1    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L49'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Edge start vertex</p>
+<pre><code class='lang-csharp'>internal Vector2 _vertex1</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
 <dd>
 
 
 
-</dd><dt><code>v1</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape._vertex2' data-commentid='F:Alis.Core.Physic.Collision.Shapes.EdgeShape._vertex2' id='Alis_Core_Physic_Collision_Shapes_EdgeShape__vertex2'>_vertex2    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L54'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Edge end vertex</p>
+<pre><code class='lang-csharp'>internal Vector2 _vertex2</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
 <dd>
 
 
 
-</dd><dt><code>v2</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
-<dd>
-
-
-
-</dd><dt><code>v3</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
-<dd>
-
-
-
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.#ctor' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.#ctor' id='Alis_Core_Physic_Collision_Shapes_EdgeShape__ctor'>EdgeShape()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L71'><i class='bi bi-code-slash'></i></a></h3>
- <p>Initializes a new instance of the <span class="xref">Alis.Core.Physic.Collision.Shapes.EdgeShape</span> class</p>
-<pre><code class='lang-csharp'>public EdgeShape()</code></pre><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.vertex1' data-commentid='F:Alis.Core.Physic.Collision.Shapes.EdgeShape.vertex1' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_vertex1'>vertex1    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L47'><i class='bi bi-code-slash'></i></a></h3>
- <p>The vertex</p>
-<pre><code class='lang-csharp'>private Vector2 vertex1</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
-<dd>
-
-
-
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.vertex2' data-commentid='F:Alis.Core.Physic.Collision.Shapes.EdgeShape.vertex2' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_vertex2'>vertex2    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L52'><i class='bi bi-code-slash'></i></a></h3>
- <p>The vertex</p>
-<pre><code class='lang-csharp'>private Vector2 vertex2</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
-<dd>
-
-
-
-</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.ChildCount' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.ChildCount' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_ChildCount'>ChildCount    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L78'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.ChildCount' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.ChildCount' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_ChildCount'>ChildCount    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L82'><i class='bi bi-code-slash'></i></a></h3>
  <p>Gets the value of the child count</p>
 <pre><code class='lang-csharp'>public override int ChildCount { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
 <dd>
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.OneSided' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.OneSided' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_OneSided'>OneSided    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L81'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.HasVertex0' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.HasVertex0' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_HasVertex0'>HasVertex0    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L87'><i class='bi bi-code-slash'></i></a></h3>
  <p>Is true if the edge is connected to an adjacent vertex before vertex 1.</p>
-<pre><code class='lang-csharp'>public bool OneSided { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<pre><code class='lang-csharp'>public bool HasVertex0 { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
 <dd>
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex0' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex0' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_Vertex0'>Vertex0    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L84'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.HasVertex3' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.HasVertex3' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_HasVertex3'>HasVertex3    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L92'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Is true if the edge is connected to an adjacent vertex after vertex2.</p>
+<pre><code class='lang-csharp'>public bool HasVertex3 { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex0' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex0' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_Vertex0'>Vertex0    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L97'><i class='bi bi-code-slash'></i></a></h3>
  <p>Optional adjacent vertices. These are used for smooth collision.</p>
 <pre><code class='lang-csharp'>public Vector2 Vertex0 { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
 <dd>
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex1' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex1' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_Vertex1'>Vertex1    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L90'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex1' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex1' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_Vertex1'>Vertex1    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L107'><i class='bi bi-code-slash'></i></a></h3>
  <p>These are the edge vertices</p>
 <pre><code class='lang-csharp'>public Vector2 Vertex1 { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
 <dd>
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex2' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex2' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_Vertex2'>Vertex2    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L101'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex2' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex2' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_Vertex2'>Vertex2    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L120'><i class='bi bi-code-slash'></i></a></h3>
  <p>These are the edge vertices</p>
 <pre><code class='lang-csharp'>public Vector2 Vertex2 { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
 <dd>
 
 
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex3' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex3' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_Vertex3'>Vertex3    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L87'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex3' data-commentid='P:Alis.Core.Physic.Collision.Shapes.EdgeShape.Vertex3' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_Vertex3'>Vertex3    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L102'><i class='bi bi-code-slash'></i></a></h3>
  <p>Optional adjacent vertices. These are used for smooth collision.</p>
 <pre><code class='lang-csharp'>public Vector2 Vertex3 { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
 <dd>
 
 
 
-</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.Clone' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.Clone' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_Clone'>Clone()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L187'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.Clone' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.Clone' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_Clone'>Clone()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L317'><i class='bi bi-code-slash'></i></a></h3>
  <p>Clones this instance</p>
-<pre><code class='lang-csharp'>public override AShape Clone()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.Shapes.AShape.html'>AShape</a>  </dt>
+<pre><code class='lang-csharp'>public override Shape Clone()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Collision.Shapes.Shape.html'>Shape</a>  </dt>
 <dd>
 
 
 <p>The clone</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.ComputeAabb(Alis.Core.Aspect.Math.Transform@,System.Int32,Alis.Core.Physic.Shared.Aabb@)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.ComputeAabb(Alis.Core.Aspect.Math.Transform@,System.Int32,Alis.Core.Physic.Shared.Aabb@)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_ComputeAabb_Alis_Core_Aspect_Math_Transform__System_Int32_Alis_Core_Physic_Shared_Aabb__'>ComputeAabb(ref Transform, int, out Aabb)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L170'><i class='bi bi-code-slash'></i></a></h3>
- <p>Computes the aabb using the specified transform</p>
-<pre><code class='lang-csharp'>public override void ComputeAabb(ref Transform transform, int childIndex, out Aabb aabb)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>transform</code> <a href='Alis.Core.Aspect.Math.Transform.html'>Transform</a>  </dt>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.CompareTo(Alis.Core.Physic.Collision.Shapes.EdgeShape)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.CompareTo(Alis.Core.Physic.Collision.Shapes.EdgeShape)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_CompareTo_Alis_Core_Physic_Collision_Shapes_EdgeShape_'>CompareTo(EdgeShape)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L306'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Describes whether this instance compare to</p>
+<pre><code class='lang-csharp'>public bool CompareTo(EdgeShape shape)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>shape</code> <a href='Alis.Core.Physic.Collision.Shapes.EdgeShape.html'>EdgeShape</a>  </dt>
 <dd>
 
 
-<p>The transform</p>
-
-</dd><dt><code>childIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
-<dd>
-
-
-<p>The child index</p>
-
-</dd><dt><code>aabb</code> <a href='Alis.Core.Physic.Shared.Aabb.html'>Aabb</a>  </dt>
-<dd>
-
-
-<p>The aabb</p>
-
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.ComputeProperties' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.ComputeProperties' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_ComputeProperties'>ComputeProperties()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L178'><i class='bi bi-code-slash'></i></a></h3>
- <p>Computes the properties</p>
-<pre><code class='lang-csharp'>internal override sealed void ComputeProperties()</code></pre><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.RayCast(Alis.Core.Physic.Collision.RayCast.RayCastInput@,Alis.Core.Aspect.Math.Transform@,System.Int32,Alis.Core.Physic.Collision.RayCast.RayCastOutput@)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.RayCast(Alis.Core.Physic.Collision.RayCast.RayCastInput@,Alis.Core.Aspect.Math.Transform@,System.Int32,Alis.Core.Physic.Collision.RayCast.RayCastOutput@)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_RayCast_Alis_Core_Physic_Collision_RayCast_RayCastInput__Alis_Core_Aspect_Math_Transform__System_Int32_Alis_Core_Physic_Collision_RayCast_RayCastOutput__'>RayCast(ref RayCastInput, ref Transform, int, out RayCastOutput)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L159'><i class='bi bi-code-slash'></i></a></h3>
- <p>Describes whether this instance ray cast</p>
-<pre><code class='lang-csharp'>public override bool RayCast(ref RayCastInput input, ref Transform transform, int childIndex, out RayCastOutput output)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>input</code> <a href='Alis.Core.Physic.Collision.RayCast.RayCastInput.html'>RayCastInput</a>  </dt>
-<dd>
-
-
-<p>The input</p>
-
-</dd><dt><code>transform</code> <a href='Alis.Core.Aspect.Math.Transform.html'>Transform</a>  </dt>
-<dd>
-
-
-<p>The transform</p>
-
-</dd><dt><code>childIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
-<dd>
-
-
-<p>The child index</p>
-
-</dd><dt><code>output</code> <a href='Alis.Core.Physic.Collision.RayCast.RayCastOutput.html'>RayCastOutput</a>  </dt>
-<dd>
-
-
-<p>The output</p>
+<p>The shape</p>
 
 </dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
 <dd>
@@ -553,49 +499,109 @@ independently are two-sided and do no provide smooth movement across junctions.<
 
 <p>The bool</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.SetOneSided(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.SetOneSided(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_SetOneSided_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_'>SetOneSided(Vector2, Vector2, Vector2, Vector2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L118'><i class='bi bi-code-slash'></i></a></h3>
- <p>Sets the one sided using the specified v 0</p>
-<pre><code class='lang-csharp'>internal void SetOneSided(Vector2 v0, Vector2 v1, Vector2 v2, Vector2 v3)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>v0</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.ComputeAABB(Alis.Core.Physic.Collision.AABB@,Alis.Core.Physic.Common.Transform@,System.Int32)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.ComputeAABB(Alis.Core.Physic.Collision.AABB@,Alis.Core.Physic.Common.Transform@,System.Int32)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_ComputeAABB_Alis_Core_Physic_Collision_AABB__Alis_Core_Physic_Common_Transform__System_Int32_'>ComputeAABB(out AABB, ref Transform, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L234'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Computes the aabb using the specified aabb</p>
+<pre><code class='lang-csharp'>public override void ComputeAABB(out AABB aabb, ref Transform transform, int childIndex)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>aabb</code> <a href='Alis.Core.Physic.Collision.AABB.html'>AABB</a>  </dt>
 <dd>
 
 
-<p>The</p>
+<p>The aabb</p>
 
-</dd><dt><code>v1</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+</dd><dt><code>transform</code> <a href='Alis.Core.Physic.Common.Transform.html'>Transform</a>  </dt>
 <dd>
 
 
-<p>The</p>
+<p>The transform</p>
 
-</dd><dt><code>v2</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+</dd><dt><code>childIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
 <dd>
 
 
-<p>The</p>
+<p>The child index</p>
 
-</dd><dt><code>v3</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.ComputeProperties' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.ComputeProperties' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_ComputeProperties'>ComputeProperties()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L282'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Computes the properties</p>
+<pre><code class='lang-csharp'>protected override void ComputeProperties()</code></pre><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.ComputeSubmergedArea(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single,Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.ComputeSubmergedArea(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single,Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_ComputeSubmergedArea_Alis_Core_Aspect_Math_Vector_Vector2__System_Single_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__'>ComputeSubmergedArea(ref Vector2, float, ref Transform, out Vector2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L295'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Computes the submerged area using the specified normal</p>
+<pre><code class='lang-csharp'>public override float ComputeSubmergedArea(ref Vector2 normal, float offset, ref Transform xf, out Vector2 sc)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>normal</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
 <dd>
 
 
-<p>The</p>
+<p>The normal</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.SetTwoSided(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.SetTwoSided(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_SetTwoSided_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_'>SetTwoSided(Vector2, Vector2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L134'><i class='bi bi-code-slash'></i></a></h3>
- <p>Sets the two sided using the specified start</p>
-<pre><code class='lang-csharp'>internal void SetTwoSided(Vector2 start, Vector2 end)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>start</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+</dd><dt><code>offset</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
 <dd>
 
 
-<p>The start</p>
+<p>The offset</p>
+
+</dd><dt><code>xf</code> <a href='Alis.Core.Physic.Common.Transform.html'>Transform</a>  </dt>
+<dd>
+
+
+<p>The xf</p>
+
+</dd><dt><code>sc</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+<dd>
+
+
+<p>The sc</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The float</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.RayCast(Alis.Core.Physic.Collision.RayCastOutput@,Alis.Core.Physic.Collision.RayCastInput@,Alis.Core.Physic.Common.Transform@,System.Int32)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.RayCast(Alis.Core.Physic.Collision.RayCastOutput@,Alis.Core.Physic.Collision.RayCastInput@,Alis.Core.Physic.Common.Transform@,System.Int32)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_RayCast_Alis_Core_Physic_Collision_RayCastOutput__Alis_Core_Physic_Collision_RayCastInput__Alis_Core_Physic_Common_Transform__System_Int32_'>RayCast(out RayCastOutput, ref RayCastInput, ref Transform, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L161'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Describes whether this instance ray cast</p>
+<pre><code class='lang-csharp'>public override bool RayCast(out RayCastOutput output, ref RayCastInput input, ref Transform transform, int childIndex)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>output</code> <a href='Alis.Core.Physic.Collision.RayCastOutput.html'>RayCastOutput</a>  </dt>
+<dd>
+
+
+<p>The output</p>
+
+</dd><dt><code>input</code> <a href='Alis.Core.Physic.Collision.RayCastInput.html'>RayCastInput</a>  </dt>
+<dd>
+
+
+<p>The input</p>
+
+</dd><dt><code>transform</code> <a href='Alis.Core.Physic.Common.Transform.html'>Transform</a>  </dt>
+<dd>
+
+
+<p>The transform</p>
+
+</dd><dt><code>childIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The child index</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The bool</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.Set(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.Set(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_Set_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_'>Set(Vector2, Vector2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L135'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Set this as an isolated edge.</p>
+<pre><code class='lang-csharp'>public void Set(Vector2 start, Vector2 end)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>start</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
+<dd>
+
+
+<p>The start.</p>
 
 </dd><dt><code>end</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2.html'>Vector2</a>  </dt>
 <dd>
 
 
-<p>The end</p>
+<p>The end.</p>
 
-</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.TestPoint(Alis.Core.Aspect.Math.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.TestPoint(Alis.Core.Aspect.Math.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_TestPoint_Alis_Core_Aspect_Math_Transform__Alis_Core_Aspect_Math_Vector_Vector2__'>TestPoint(ref Transform, ref Vector2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L149'><i class='bi bi-code-slash'></i></a></h3>
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Collision.Shapes.EdgeShape.TestPoint(Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)' data-commentid='M:Alis.Core.Physic.Collision.Shapes.EdgeShape.TestPoint(Alis.Core.Physic.Common.Transform@,Alis.Core.Aspect.Math.Vector.Vector2@)' id='Alis_Core_Physic_Collision_Shapes_EdgeShape_TestPoint_Alis_Core_Physic_Common_Transform__Alis_Core_Aspect_Math_Vector_Vector2__'>TestPoint(ref Transform, ref Vector2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/EdgeShape.cs#L151'><i class='bi bi-code-slash'></i></a></h3>
  <p>Describes whether this instance test point</p>
-<pre><code class='lang-csharp'>public override bool TestPoint(ref Transform transform, ref Vector2 point)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>transform</code> <a href='Alis.Core.Aspect.Math.Transform.html'>Transform</a>  </dt>
+<pre><code class='lang-csharp'>public override bool TestPoint(ref Transform transform, ref Vector2 point)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>transform</code> <a href='Alis.Core.Physic.Common.Transform.html'>Transform</a>  </dt>
 <dd>
 
 

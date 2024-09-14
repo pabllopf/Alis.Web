@@ -1,0 +1,84 @@
+### YamlMime:ApiPage
+title: Class WorldSerializer
+body:
+- api1: Class WorldSerializer
+  id: Alis_Core_Physic_Common_WorldSerializer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldSerializer.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldSerializer
+    commentId: T:Alis.Core.Physic.Common.WorldSerializer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common
+      url: Alis.Core.Physic.Common.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Serialize the world into an XML file
+- code: public static class WorldSerializer
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: WorldSerializer
+    url: Alis.Core.Physic.Common.WorldSerializer.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: Deserialize(Stream)
+  id: Alis_Core_Physic_Common_WorldSerializer_Deserialize_System_IO_Stream_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldSerializer.cs#L54
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldSerializer.Deserialize(System.IO.Stream)
+    commentId: M:Alis.Core.Physic.Common.WorldSerializer.Deserialize(System.IO.Stream)
+- markdown: Deserialize the world from a stream XML
+- code: public static World Deserialize(Stream stream)
+- h4: Parameters
+- parameters:
+  - name: stream
+    type:
+    - text: Stream
+      url: https://learn.microsoft.com/dotnet/api/system.io.stream
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+- api3: Serialize(World, Stream)
+  id: Alis_Core_Physic_Common_WorldSerializer_Serialize_Alis_Core_Physic_Dynamics_World_System_IO_Stream_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/WorldSerializer.cs#L45
+  metadata:
+    uid: Alis.Core.Physic.Common.WorldSerializer.Serialize(Alis.Core.Physic.Dynamics.World,System.IO.Stream)
+    commentId: M:Alis.Core.Physic.Common.WorldSerializer.Serialize(Alis.Core.Physic.Dynamics.World,System.IO.Stream)
+- markdown: Serialize the world to a stream in XML format
+- code: public static void Serialize(World world, Stream stream)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: ''
+  - name: stream
+    type:
+    - text: Stream
+      url: https://learn.microsoft.com/dotnet/api/system.io.stream
+    description: ''
+languageId: csharp
+metadata:
+  description: Serialize the world into an XML file

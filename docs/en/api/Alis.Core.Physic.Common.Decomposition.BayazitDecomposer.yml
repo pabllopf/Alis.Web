@@ -1,0 +1,413 @@
+### YamlMime:ApiPage
+title: Class BayazitDecomposer
+body:
+- api1: Class BayazitDecomposer
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer
+    commentId: T:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition
+      url: Alis.Core.Physic.Common.Decomposition.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Convex decomposition algorithm created by Mark Bayazit (http://mnbayazit.com/)
+
+    Properties:
+
+    - Tries to decompose using polygons instead of triangles.
+
+    - Tends to produce optimal results with low processing time.
+
+    - Running time is O(nr), n = number of vertices, r = reflex vertices.
+
+    - Does not support holes.
+
+    For more information about this algorithm, see http://mnbayazit.com/406/bayazit
+- code: internal static class BayazitDecomposer
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: BayazitDecomposer
+    url: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: At(int, Vertices)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_At_System_Int32_Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L194
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.At(System.Int32,Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.At(System.Int32,Alis.Core.Physic.Common.Vertices)
+- markdown: Ats the i
+- code: private static Vector2 At(int i, Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: i
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The vector
+- api3: CanSee(int, int, Vertices)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_CanSee_System_Int32_System_Int32_Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L229
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.CanSee(System.Int32,System.Int32,Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.CanSee(System.Int32,System.Int32,Alis.Core.Physic.Common.Vertices)
+- markdown: Describes whether can see
+- code: private static bool CanSee(int i, int j, Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: i
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: j
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: ConvexPartition(Vertices)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_ConvexPartition_Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L55
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices)
+- markdown: >-
+    Decompose the polygon into several smaller non-concave polygon.
+
+    If the polygon is already convex, it will return the original polygon, unless it is over
+
+    Settings.MaxPolygonVertices.
+- code: public static List<Vertices> ConvexPartition(Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    - '>'
+- api3: Copy(int, int, Vertices)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Copy_System_Int32_System_Int32_Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L207
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Copy(System.Int32,System.Int32,Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Copy(System.Int32,System.Int32,Alis.Core.Physic.Common.Vertices)
+- markdown: Copies the i
+- code: private static Vertices Copy(int i, int j, Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: i
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: j
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The
+- api3: Left(Vector2, Vector2, Vector2)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Left_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L290
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Left(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Left(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Describes whether left
+- code: private static bool Left(Vector2 a, Vector2 b, Vector2 c)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: b
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: c
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: LeftOn(Vector2, Vector2, Vector2)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_LeftOn_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L299
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.LeftOn(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.LeftOn(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Describes whether left on
+- code: private static bool LeftOn(Vector2 a, Vector2 b, Vector2 c)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: b
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: c
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: Reflex(int, Vertices)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Reflex_System_Int32_Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L273
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Reflex(System.Int32,Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Reflex(System.Int32,Alis.Core.Physic.Common.Vertices)
+- markdown: Describes whether reflex
+- code: private static bool Reflex(int i, Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: i
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: Right(int, Vertices)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Right_System_Int32_Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L281
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Right(System.Int32,Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Right(System.Int32,Alis.Core.Physic.Common.Vertices)
+- markdown: Describes whether right
+- code: private static bool Right(int i, Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: i
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: Right(Vector2, Vector2, Vector2)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Right_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L308
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Right(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Right(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Describes whether right
+- code: private static bool Right(Vector2 a, Vector2 b, Vector2 c)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: b
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: c
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: RightOn(Vector2, Vector2, Vector2)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_RightOn_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L317
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.RightOn(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.RightOn(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Describes whether right on
+- code: private static bool RightOn(Vector2 a, Vector2 b, Vector2 c)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: b
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: c
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: SquareDist(Vector2, Vector2)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_SquareDist_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L325
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.SquareDist(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.SquareDist(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Squares the dist using the specified a
+- code: private static float SquareDist(Vector2 a, Vector2 b)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+  - name: b
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The float
+- api3: TriangulatePolygon(Vertices)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_TriangulatePolygon_Alis_Core_Physic_Common_Vertices_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L68
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.TriangulatePolygon(Alis.Core.Physic.Common.Vertices)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.TriangulatePolygon(Alis.Core.Physic.Common.Vertices)
+- markdown: Triangulates the polygon using the specified vertices
+- code: private static List<Vertices> TriangulatePolygon(Vertices vertices)
+- h4: Parameters
+- parameters:
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+- h4: Returns
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    - '>'
+    description: The list
+languageId: csharp
+metadata:
+  description: >-
+    Convex decomposition algorithm created by Mark Bayazit (http://mnbayazit.com/)
+
+    Properties:
+
+    - Tries to decompose using polygons instead of triangles.
+
+    - Tends to produce optimal results with low processing time.
+
+    - Running time is O(nr), n = number of vertices, r = reflex vertices.
+
+    - Does not support holes.
+
+    For more information about this algorithm, see http://mnbayazit.com/406/bayazit

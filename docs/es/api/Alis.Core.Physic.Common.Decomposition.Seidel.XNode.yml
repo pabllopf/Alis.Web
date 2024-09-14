@@ -1,0 +1,121 @@
+### YamlMime:ApiPage
+title: Class XNode
+body:
+- api1: Class XNode
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_XNode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/XNode.cs#L36
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.XNode
+    commentId: T:Alis.Core.Physic.Common.Decomposition.Seidel.XNode
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.Seidel
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The node class
+- code: 'internal class XNode : Node'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Node
+    url: Alis.Core.Physic.Common.Decomposition.Seidel.Node.html
+  - text: XNode
+    url: Alis.Core.Physic.Common.Decomposition.Seidel.XNode.html
+- h4: Inherited Members
+- list:
+  - text: Node.LeftChild
+    url: Alis.Core.Physic.Common.Decomposition.Seidel.Node.html#Alis_Core_Physic_Common_Decomposition_Seidel_Node_LeftChild
+  - text: Node.ParentList
+    url: Alis.Core.Physic.Common.Decomposition.Seidel.Node.html#Alis_Core_Physic_Common_Decomposition_Seidel_Node_ParentList
+  - text: Node.RightChild
+    url: Alis.Core.Physic.Common.Decomposition.Seidel.Node.html#Alis_Core_Physic_Common_Decomposition_Seidel_Node_RightChild
+  - text: Node.Locate(Edge)
+    url: Alis.Core.Physic.Common.Decomposition.Seidel.Node.html#Alis_Core_Physic_Common_Decomposition_Seidel_Node_Locate_Alis_Core_Physic_Common_Decomposition_Seidel_Edge_
+  - text: Node.Replace(Node)
+    url: Alis.Core.Physic.Common.Decomposition.Seidel.Node.html#Alis_Core_Physic_Common_Decomposition_Seidel_Node_Replace_Alis_Core_Physic_Common_Decomposition_Seidel_Node_
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: XNode(Point, Node, Node)
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_XNode__ctor_Alis_Core_Physic_Common_Decomposition_Seidel_Point_Alis_Core_Physic_Common_Decomposition_Seidel_Node_Alis_Core_Physic_Common_Decomposition_Seidel_Node_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/XNode.cs#L49
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.XNode.#ctor(Alis.Core.Physic.Common.Decomposition.Seidel.Point,Alis.Core.Physic.Common.Decomposition.Seidel.Node,Alis.Core.Physic.Common.Decomposition.Seidel.Node)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.XNode.#ctor(Alis.Core.Physic.Common.Decomposition.Seidel.Point,Alis.Core.Physic.Common.Decomposition.Seidel.Node,Alis.Core.Physic.Common.Decomposition.Seidel.Node)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Decomposition.Seidel.XNode" data-throw-if-not-resolved="false"></xref> class
+- code: public XNode(Point point, Node lChild, Node rChild)
+- h4: Parameters
+- parameters:
+  - name: point
+    type:
+    - text: Point
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
+    description: The point
+  - name: lChild
+    type:
+    - text: Node
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Node.html
+    description: The child
+  - name: rChild
+    type:
+    - text: Node
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Node.html
+    description: The child
+- h2: Fields
+- api3: _point
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_XNode__point
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/XNode.cs#L41
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.XNode._point
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.XNode._point
+- markdown: The point
+- code: private readonly Point _point
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Point
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
+- h2: Methods
+- api3: Locate(Edge)
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_XNode_Locate_Alis_Core_Physic_Common_Decomposition_Seidel_Edge_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/XNode.cs#L58
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.XNode.Locate(Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.XNode.Locate(Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
+- markdown: Locates the edge
+- code: public override Sink Locate(Edge edge)
+- h4: Parameters
+- parameters:
+  - name: edge
+    type:
+    - text: Edge
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.html
+    description: The edge
+- h4: Returns
+- parameters:
+  - type:
+    - text: Sink
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Sink.html
+    description: The sink
+- h2: See Also
+- list:
+  - - text: Node
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Node.html
+languageId: csharp
+metadata:
+  description: The node class

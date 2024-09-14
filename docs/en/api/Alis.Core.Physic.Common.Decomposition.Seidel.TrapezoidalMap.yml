@@ -1,0 +1,255 @@
+### YamlMime:ApiPage
+title: Class TrapezoidalMap
+body:
+- api1: Class TrapezoidalMap
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap
+    commentId: T:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.Seidel
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The trapezoidal map class
+- code: internal class TrapezoidalMap
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: TrapezoidalMap
+    url: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: TrapezoidalMap()
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L67
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.#ctor
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap" data-throw-if-not-resolved="false"></xref> class
+- code: public TrapezoidalMap()
+- h2: Fields
+- api3: Map
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap_Map
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L62
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Map
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Map
+- markdown: The map
+- code: public HashSet<Trapezoid> Map
+- h4: Field Value
+- parameters:
+  - type:
+    - text: HashSet
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+    - <
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+    - '>'
+- api3: _bCross
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap__bCross
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L50
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap._bCross
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap._bCross
+- markdown: The cross
+- code: private Edge _bCross
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Edge
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.html
+- api3: _cross
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap__cross
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L56
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap._cross
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap._cross
+- markdown: The cross
+- code: private Edge _cross
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Edge
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.html
+- api3: _margin
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap__margin
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L44
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap._margin
+    commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap._margin
+- markdown: The margin
+- code: private readonly float _margin
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Methods
+- api3: BoundingBox(List<Edge>)
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap_BoundingBox_System_Collections_Generic_List_Alis_Core_Physic_Common_Decomposition_Seidel_Edge__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L250
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.BoundingBox(System.Collections.Generic.List{Alis.Core.Physic.Common.Decomposition.Seidel.Edge})
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.BoundingBox(System.Collections.Generic.List{Alis.Core.Physic.Common.Decomposition.Seidel.Edge})
+- markdown: Boundings the box using the specified edges
+- code: public Trapezoid BoundingBox(List<Edge> edges)
+- h4: Parameters
+- parameters:
+  - name: edges
+    type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Edge
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.html
+    - '>'
+    description: The edges
+- h4: Returns
+- parameters:
+  - type:
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+    description: The trapezoid
+- api3: Case1(Trapezoid, Edge)
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap_Case1_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Alis_Core_Physic_Common_Decomposition_Seidel_Edge_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L92
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case1(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case1(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
+- markdown: Cases the 1 using the specified t
+- code: public Trapezoid[] Case1(Trapezoid t, Edge e)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+    description: The
+  - name: e
+    type:
+    - text: Edge
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+    - '['
+    - ']'
+    description: The trapezoids
+- api3: Case2(Trapezoid, Edge)
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap_Case2_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Alis_Core_Physic_Common_Decomposition_Seidel_Edge_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L116
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case2(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case2(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
+- markdown: Cases the 2 using the specified t
+- code: public Trapezoid[] Case2(Trapezoid t, Edge e)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+    description: The
+  - name: e
+    type:
+    - text: Edge
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+    - '['
+    - ']'
+    description: The trapezoids
+- api3: Case3(Trapezoid, Edge)
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap_Case3_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Alis_Core_Physic_Common_Decomposition_Seidel_Edge_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L149
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case3(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case3(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
+- markdown: Cases the 3 using the specified t
+- code: public Trapezoid[] Case3(Trapezoid t, Edge e)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+    description: The
+  - name: e
+    type:
+    - text: Edge
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+    - '['
+    - ']'
+    description: The trapezoids
+- api3: Case4(Trapezoid, Edge)
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap_Case4_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Alis_Core_Physic_Common_Decomposition_Seidel_Edge_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L206
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case4(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case4(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
+- markdown: Cases the 4 using the specified t
+- code: public Trapezoid[] Case4(Trapezoid t, Edge e)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+    description: The
+  - name: e
+    type:
+    - text: Edge
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: Trapezoid
+      url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
+    - '['
+    - ']'
+    description: The trapezoids
+- api3: Clear()
+  id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap_Clear
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L78
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Clear
+    commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Clear
+- markdown: Clears this instance
+- code: public void Clear()
+languageId: csharp
+metadata:
+  description: The trapezoidal map class

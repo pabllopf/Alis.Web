@@ -1,0 +1,1141 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <title> Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis ">
+      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!">
+      <link rel="icon" href="../resources/logo.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="En este art&#237;culo">
+      <meta name="loc:searchResultsCount" content="{count} resultados para &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="Sin resultados para &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filtrar por t&#237;tulo">
+      <meta name="loc:nextArticle" content="Siguiente">
+      <meta name="loc:prevArticle" content="Anterior">
+      <meta name="loc:themeLight" content="Claro">
+      <meta name="loc:themeDark" content="Oscuro">
+      <meta name="loc:themeAuto" content="Autom&#225;tico">
+      <meta name="loc:changeTheme" content="Cambiar tema">
+      <meta name="loc:copy" content="Copiar">
+      <meta name="loc:downloadPdf" content="Descargar PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+        const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+      
+        // Función para actualizar el contenido del dropdownToggle según el idioma
+        function updateLanguage() {
+          const currentLang = document.documentElement.lang;
+          const isEnglish = currentLang === 'en';
+          const isSpanish = currentLang === 'es';
+      
+          if (isEnglish) {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              English`;
+          } else {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              Español`;
+          }
+        }
+      
+        // Llama a la función para actualizar el idioma al cargar la página
+        updateLanguage();
+      });
+    </script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+
+          // Función para actualizar el texto del botón según la URL actual
+          function updateDropdownVersion() {
+              const path = window.location.pathname;
+              const versionMatch = path.match(/v\d+\.\d+\.\d+/i); // Buscar la versión en cualquier parte del path
+
+              if (versionMatch) {
+                  const currentVersion = versionMatch[0]; // Obtener la versión encontrada
+                  dropdownToggle.textContent = currentVersion;
+              }
+          }
+
+          updateDropdownVersion(); // Llamar la función al cargar la página
+      });
+
+    </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ApiPage">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="../resources/logo_small_v2.png" alt="Alis">
+            Alis
+          </a>
+
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+
+        
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Buscar" autocomplete="off" aria-label="Search">
+              </form>
+
+              
+              <script>
+
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                const dropdownMenu = document.querySelector('.dropdown-menu-versions');
+
+                dropdownToggle.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const isExpanded = dropdownMenu.style.display === 'block';
+                  dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                });
+
+                document.addEventListener('click', function (e) {
+                  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.style.display = 'none';
+                  }
+                });
+
+                // Manejar la selección de versión y actualizar la URL
+                dropdownMenu.addEventListener('click', function (e) {
+                  if (e.target.classList.contains('dropdown-item')) {
+                    e.preventDefault();
+                    
+                    const selectedVersion = e.target.getAttribute('data-version');
+                    const lang = document.documentElement.lang; // Obtener el idioma actual del documento
+                    
+                    let basePath = '';
+                    
+                    // Comprobar si el idioma es español
+                    if (lang === 'es') {
+                      basePath += '/es';
+                    }
+
+                    if (lang === 'en') {
+                      basePath += '/en';
+                    }
+
+                    // Redirigir a la ruta de la versión seleccionada
+                    const newPath = `${basePath}/${selectedVersion}/index.html`;
+                    window.location.href = newPath;
+                  }
+                });
+              });
+ 
+
+              </script>
+
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" data-version="v0.4.0">v0.4.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.3.0">v0.3.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.2.0">v0.2.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.1.0">v0.1.0</a></li>
+                </ul>
+              </div>
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                    const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+
+                    dropdownToggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const isExpanded = dropdownMenu.style.display === 'block';
+                        dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                    });
+
+                    document.addEventListener('click', function (e) {
+                        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    });
+
+                    // Manejar la selección de idioma y actualizar la URL
+                    dropdownMenu.addEventListener('click', function (e) {
+                        if (e.target.classList.contains('dropdown-item')) {
+                            e.preventDefault();
+                            
+                            const selectedLang = e.target.getAttribute('lang');
+                            const currentPath = window.location.pathname;
+                            const pathParts = currentPath.split('/');
+
+                            // Verificar si la URL sigue el formato esperado y reemplazar el idioma
+                            if (pathParts.length >= 3) {
+                                pathParts[1] = selectedLang;  // Reemplaza el idioma en la URL
+                            }
+
+                            // Reconstruir la URL y redirigir
+                            const newPath = pathParts.join('/');
+                            window.location.href = newPath;
+                        }
+                    });
+                });
+                </script>
+
+
+
+              
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-lang" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                  <svg viewbox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                    <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                  </svg>
+                  English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lang" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" lang="es">Español</a></li>
+                </ul>
+            </div>
+
+
+              <a class="hover_custom" style="order: 55;margin: 0 10px;" href="https://github.com/pabllopf/Alis/releases/latest">
+              <button type="button" class="btn btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewbox="0 0 17 17">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+                  </svg>
+                  Descargar
+              </button>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+      
+      
+
+
+
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep' data-commentid='T:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep'>Class DtSweep    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L39'><i class='bi bi-code-slash'></i></a></h1>
+ <div class="facts text-secondary">
+<dl><dt>Namespace</dt><dd><a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.html'>Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep</a></dd></dl><dl><dt>Assembly</dt><dd>Alis.dll</dd></dl>
+</div><p>The dt sweep class</p>
+<pre><code class='lang-csharp'>internal static class DtSweep</code></pre><h4 class='section'>Inheritance</h4><dl class="typelist inheritance"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.html'>DtSweep</a>
+</div>
+
+</dd></dl><h4 class='section'>Inherited Members</h4><dl class="typelist"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)'>object.Equals(object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)'>object.Equals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gethashcode'>object.GetHashCode()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gettype'>object.GetType()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone'>object.MemberwiseClone()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.referenceequals'>object.ReferenceEquals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
+</div>
+
+</dd></dl><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Pi3Div4' data-commentid='F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Pi3Div4' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_Pi3Div4'>Pi3Div4    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L49'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The pi</p>
+<pre><code class='lang-csharp'>private const double Pi3Div4 = 2.356194490192345</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.double'>double</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.PiDiv2' data-commentid='F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.PiDiv2' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_PiDiv2'>PiDiv2    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L44'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The pi</p>
+<pre><code class='lang-csharp'>private const double PiDiv2 = 1.5707963267948966</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.double'>double</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Angle(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Angle(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_Angle_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_'>Angle(TriangulationPoint, TriangulationPoint, TriangulationPoint)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L896'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Angles the origin</p>
+<pre><code class='lang-csharp'>private static double Angle(TriangulationPoint origin, TriangulationPoint pa, TriangulationPoint pb)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>origin</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The origin</p>
+
+</dd><dt><code>pa</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The pa</p>
+
+</dd><dt><code>pb</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The pb</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.double'>double</a>  </dt>
+<dd>
+
+
+<p>The angle</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.AngleExceeds90Degrees(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.AngleExceeds90Degrees(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_AngleExceeds90Degrees_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_'>AngleExceeds90Degrees(TriangulationPoint, TriangulationPoint, TriangulationPoint)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L868'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Describes whether angle exceeds 90 degrees</p>
+<pre><code class='lang-csharp'>private static bool AngleExceeds90Degrees(TriangulationPoint origin, TriangulationPoint pa, TriangulationPoint pb)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>origin</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The origin</p>
+
+</dd><dt><code>pa</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The pa</p>
+
+</dd><dt><code>pb</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The pb</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The exceeds 90 degrees</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.AngleExceedsPlus90DegreesOrIsNegative(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.AngleExceedsPlus90DegreesOrIsNegative(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_AngleExceedsPlus90DegreesOrIsNegative_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_'>AngleExceedsPlus90DegreesOrIsNegative(TriangulationPoint, TriangulationPoint, TriangulationPoint)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L882'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Describes whether angle exceeds plus 90 degrees or is negative</p>
+<pre><code class='lang-csharp'>private static bool AngleExceedsPlus90DegreesOrIsNegative(TriangulationPoint origin, TriangulationPoint pa, TriangulationPoint pb)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>origin</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The origin</p>
+
+</dd><dt><code>pa</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The pa</p>
+
+</dd><dt><code>pb</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The pb</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The exceeds plus 90 degrees or is negative</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.BasinAngle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.BasinAngle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_BasinAngle_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>BasinAngle(AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L1078'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The basin angle is decided against the horizontal line [1,0]</p>
+<pre><code class='lang-csharp'>private static double BasinAngle(AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.double'>double</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.EdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.EdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_EdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepConstraint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>EdgeEvent(DTSweepContext, DtSweepConstraint, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L280'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Edges the event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void EdgeEvent(DTSweepContext tcx, DtSweepConstraint edge, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>edge</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint.html'>DtSweepConstraint</a>  </dt>
+<dd>
+
+
+<p>The edge</p>
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.EdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.EdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_EdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_'>EdgeEvent(DTSweepContext, TriangulationPoint, TriangulationPoint, DelaunayTriangle, TriangulationPoint)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L561'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Edges the event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void EdgeEvent(DTSweepContext tcx, TriangulationPoint ep, TriangulationPoint eq, DelaunayTriangle triangle, TriangulationPoint point)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>ep</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The ep</p>
+
+</dd><dt><code>eq</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The eq</p>
+
+</dd><dt><code>triangle</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+<p>The triangle</p>
+
+</dd><dt><code>point</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The point</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.PointOnEdgeException.html'>PointOnEdgeException</a>  </dt>
+<dd>
+
+
+<p>EdgeEvent - Point on constrained edge not supported yet</p>
+
+</dd><dt> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.PointOnEdgeException.html'>PointOnEdgeException</a>  </dt>
+<dd>
+
+
+<p>EdgeEvent - Point on constrained edge not supported yet</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Fill(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Fill(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_Fill_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>Fill(DTSweepContext, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L1090'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds a triangle to the advancing front to fill a hole.</p>
+<pre><code class='lang-csharp'>private static void Fill(DTSweepContext tcx, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>middle node, that is the bottom of the hole</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillAdvancingFront(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillAdvancingFront(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillAdvancingFront_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillAdvancingFront(DTSweepContext, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L789'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Fills holes in the Advancing Front</p>
+<pre><code class='lang-csharp'>private static void FillAdvancingFront(DTSweepContext tcx, AdvancingFrontNode n)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>n</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillBasin(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillBasin(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillBasin_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillBasin(DTSweepContext, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L926'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Fills a basin that has formed on the Advancing Front to the right
+of given node.
+First we decide a left,bottom and right node that forms the
+boundaries of the basin. Then we do a reqursive fill.</p>
+<pre><code class='lang-csharp'>private static void FillBasin(DTSweepContext tcx, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>starting node, this or next node will be left node</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillBasinReq(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillBasinReq(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillBasinReq_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillBasinReq(DTSweepContext, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L972'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Recursive algorithm to fill a Basin with triangles</p>
+<pre><code class='lang-csharp'>private static void FillBasinReq(DTSweepContext tcx, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillEdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepConstraint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillEdgeEvent(DTSweepContext, DtSweepConstraint, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L311'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Fills the edge event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void FillEdgeEvent(DTSweepContext tcx, DtSweepConstraint edge, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>edge</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint.html'>DtSweepConstraint</a>  </dt>
+<dd>
+
+
+<p>The edge</p>
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillLeftAboveEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillLeftAboveEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillLeftAboveEdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepConstraint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillLeftAboveEdgeEvent(DTSweepContext, DtSweepConstraint, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L509'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Fills the left above edge event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void FillLeftAboveEdgeEvent(DTSweepContext tcx, DtSweepConstraint edge, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>edge</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint.html'>DtSweepConstraint</a>  </dt>
+<dd>
+
+
+<p>The edge</p>
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillLeftBelowEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillLeftBelowEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillLeftBelowEdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepConstraint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillLeftBelowEdgeEvent(DTSweepContext, DtSweepConstraint, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L484'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Fills the left below edge event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void FillLeftBelowEdgeEvent(DTSweepContext tcx, DtSweepConstraint edge, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>edge</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint.html'>DtSweepConstraint</a>  </dt>
+<dd>
+
+
+<p>The edge</p>
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillLeftConcaveEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillLeftConcaveEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillLeftConcaveEdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepConstraint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillLeftConcaveEdgeEvent(DTSweepContext, DtSweepConstraint, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L459'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Fills the left concave edge event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void FillLeftConcaveEdgeEvent(DTSweepContext tcx, DtSweepConstraint edge, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>edge</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint.html'>DtSweepConstraint</a>  </dt>
+<dd>
+
+
+<p>The edge</p>
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillLeftConvexEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillLeftConvexEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillLeftConvexEdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepConstraint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillLeftConvexEdgeEvent(DTSweepContext, DtSweepConstraint, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L431'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Fills the left convex edge event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void FillLeftConvexEdgeEvent(DTSweepContext tcx, DtSweepConstraint edge, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>edge</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint.html'>DtSweepConstraint</a>  </dt>
+<dd>
+
+
+<p>The edge</p>
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillRightAboveEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillRightAboveEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillRightAboveEdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepConstraint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillRightAboveEdgeEvent(DTSweepContext, DtSweepConstraint, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L408'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Fills the right above edge event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void FillRightAboveEdgeEvent(DTSweepContext tcx, DtSweepConstraint edge, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>edge</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint.html'>DtSweepConstraint</a>  </dt>
+<dd>
+
+
+<p>The edge</p>
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillRightBelowEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillRightBelowEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillRightBelowEdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepConstraint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillRightBelowEdgeEvent(DTSweepContext, DtSweepConstraint, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L383'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Fills the right below edge event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void FillRightBelowEdgeEvent(DTSweepContext tcx, DtSweepConstraint edge, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>edge</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint.html'>DtSweepConstraint</a>  </dt>
+<dd>
+
+
+<p>The edge</p>
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillRightConcaveEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillRightConcaveEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillRightConcaveEdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepConstraint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillRightConcaveEdgeEvent(DTSweepContext, DtSweepConstraint, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L329'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Fills the right concave edge event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void FillRightConcaveEdgeEvent(DTSweepContext tcx, DtSweepConstraint edge, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>edge</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint.html'>DtSweepConstraint</a>  </dt>
+<dd>
+
+
+<p>The edge</p>
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillRightConvexEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FillRightConvexEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FillRightConvexEdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepConstraint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>FillRightConvexEdgeEvent(DTSweepContext, DtSweepConstraint, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L355'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Fills the right convex edge event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void FillRightConvexEdgeEvent(DTSweepContext tcx, DtSweepConstraint edge, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>edge</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepConstraint.html'>DtSweepConstraint</a>  </dt>
+<dd>
+
+
+<p>The edge</p>
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FinalizationConvexHull(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FinalizationConvexHull(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FinalizationConvexHull_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_'>FinalizationConvexHull(DTSweepContext)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L99'><i class='bi bi-code-slash'></i></a></h3>
+ <p>If this is a Delaunay Triangulation of a pointset we need to fill so the triangle mesh gets a ConvexHull</p>
+<pre><code class='lang-csharp'>private static void FinalizationConvexHull(DTSweepContext tcx)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FinalizationPolygon(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FinalizationPolygon(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FinalizationPolygon_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_'>FinalizationPolygon(DTSweepContext)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L212'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Finalizations the polygon using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void FinalizationPolygon(DTSweepContext tcx)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FlipEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FlipEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FlipEdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_'>FlipEdgeEvent(DTSweepContext, TriangulationPoint, TriangulationPoint, DelaunayTriangle, TriangulationPoint)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L642'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Flips the edge event using the specified tcx</p>
+<pre><code class='lang-csharp'>private static void FlipEdgeEvent(DTSweepContext tcx, TriangulationPoint ep, TriangulationPoint eq, DelaunayTriangle t, TriangulationPoint p)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>ep</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The ep</p>
+
+</dd><dt><code>eq</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The eq</p>
+
+</dd><dt><code>t</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>p</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.exception'>Exception</a>  </dt>
+<dd>
+
+
+<p>Intersecting Constraints</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>[BUG:FIXME] FLIP failed due to missing triangle</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FlipScanEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.FlipScanEdgeEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_FlipScanEdgeEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_'>FlipScanEdgeEvent(DTSweepContext, TriangulationPoint, TriangulationPoint, DelaunayTriangle, DelaunayTriangle, TriangulationPoint)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L761'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Scan part of the FlipScan algorithm
+When a triangle pair isn't flippable we will scan for the next
+point that is inside the flip triangle scan area. When found
+we generate a new flipEdgeEvent</p>
+<pre><code class='lang-csharp'>private static void FlipScanEdgeEvent(DTSweepContext tcx, TriangulationPoint ep, TriangulationPoint eq, DelaunayTriangle flipTriangle, DelaunayTriangle t, TriangulationPoint p)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>ep</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>last point on the edge we are traversing</p>
+
+</dd><dt><code>eq</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>first point on the edge we are traversing</p>
+
+</dd><dt><code>flipTriangle</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+<p>the current triangle sharing the point eq with edge</p>
+
+</dd><dt><code>t</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>p</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.HoleAngle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.HoleAngle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_HoleAngle_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>HoleAngle(AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L1054'><i class='bi bi-code-slash'></i></a></h3>
+ <p>???</p>
+<pre><code class='lang-csharp'>private static double HoleAngle(AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>middle node</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.double'>double</a>  </dt>
+<dd>
+
+
+<p>the angle between 3 front nodes</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.IsEdgeSideOfTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.IsEdgeSideOfTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_IsEdgeSideOfTriangle_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_'>IsEdgeSideOfTriangle(DelaunayTriangle, TriangulationPoint, TriangulationPoint)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L533'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Describes whether is edge side of triangle</p>
+<pre><code class='lang-csharp'>private static bool IsEdgeSideOfTriangle(DelaunayTriangle triangle, TriangulationPoint ep, TriangulationPoint eq)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>triangle</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+<p>The triangle</p>
+
+</dd><dt><code>ep</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The ep</p>
+
+</dd><dt><code>eq</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>The eq</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The bool</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.IsShallow(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.IsShallow(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_IsShallow_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>IsShallow(DTSweepContext, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L1028'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Describes whether is shallow</p>
+<pre><code class='lang-csharp'>private static bool IsShallow(DTSweepContext tcx, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+<p>The tcx</p>
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The bool</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.LargeHole_DontFill(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.LargeHole_DontFill(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_LargeHole_DontFill_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>LargeHole_DontFill(AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L840'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Describes whether large hole dont fill</p>
+<pre><code class='lang-csharp'>private static bool LargeHole_DontFill(AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+<p>The node</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The bool</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Legalize(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Legalize(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_Legalize_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_'>Legalize(DTSweepContext, DelaunayTriangle)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L1114'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Returns true if triangle was legalized</p>
+<pre><code class='lang-csharp'>private static bool Legalize(DTSweepContext tcx, DelaunayTriangle t)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>t</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.NewFrontTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.NewFrontTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_NewFrontTriangle_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>NewFrontTriangle(DTSweepContext, TriangulationPoint, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L252'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates a new front triangle and legalize it</p>
+<pre><code class='lang-csharp'>private static AdvancingFrontNode NewFrontTriangle(DTSweepContext tcx, TriangulationPoint point, AdvancingFrontNode node)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>point</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>node</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.NextFlipPoint(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.NextFlipPoint(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_NextFlipPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_'>NextFlipPoint(TriangulationPoint, TriangulationPoint, DelaunayTriangle, TriangulationPoint)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L698'><i class='bi bi-code-slash'></i></a></h3>
+ <p>When we need to traverse from one triangle to the next we need
+the point in current triangle that is the opposite point to the next
+triangle.</p>
+<pre><code class='lang-csharp'>private static TriangulationPoint NextFlipPoint(TriangulationPoint ep, TriangulationPoint eq, DelaunayTriangle ot, TriangulationPoint op)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>ep</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>eq</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>ot</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>op</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.NextFlipTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Orientation,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.NextFlipTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Orientation,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_NextFlipTriangle_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Orientation_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_'>NextFlipTriangle(DTSweepContext, Orientation, DelaunayTriangle, DelaunayTriangle, TriangulationPoint, TriangulationPoint)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L728'><i class='bi bi-code-slash'></i></a></h3>
+ <p>After a flip we have two triangles and know that only one will still be
+intersecting the edge. So decide which to contiune with and legalize the other</p>
+<pre><code class='lang-csharp'>private static DelaunayTriangle NextFlipTriangle(DTSweepContext tcx, Orientation o, DelaunayTriangle t, DelaunayTriangle ot, TriangulationPoint p, TriangulationPoint op)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>o</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Orientation.html'>Orientation</a>  </dt>
+<dd>
+
+
+<p>should be the result of an TriangulationUtil.orient2d( eq, op, ep )</p>
+
+</dd><dt><code>t</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+<p>triangle 1</p>
+
+</dd><dt><code>ot</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+<p>triangle 2</p>
+
+</dd><dt><code>p</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>a point shared by both triangles</p>
+
+</dd><dt><code>op</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+<p>another point shared by both triangles</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+<p>returns the triangle still intersecting the edge</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.PointEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.PointEvent(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_PointEvent_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_'>PointEvent(DTSweepContext, TriangulationPoint)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L231'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Find closes node to the left of the new point and
+create a new triangle. If needed new holes and basins
+will be filled to.</p>
+<pre><code class='lang-csharp'>private static AdvancingFrontNode PointEvent(DTSweepContext tcx, TriangulationPoint point)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>point</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.RotateTrianglePair(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.RotateTrianglePair(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_RotateTrianglePair_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_'>RotateTrianglePair(DelaunayTriangle, TriangulationPoint, DelaunayTriangle, TriangulationPoint)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L1198'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Rotates a triangle pair one vertex CW
+n2                    n2
+P +-----+             P +-----+
+| t  /|               |\  t |
+|   / |               | \   |
+n1|  /  |n3           n1|  \  |n3
+| /   |    after CW   |   \ |
+|/ oT |               | oT |
++-----+ oP            +-----+
+n4                    n4</p>
+<pre><code class='lang-csharp'>private static void RotateTrianglePair(DelaunayTriangle t, TriangulationPoint p, DelaunayTriangle ot, TriangulationPoint op)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>t</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>p</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>ot</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html'>DelaunayTriangle</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>op</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html'>TriangulationPoint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Sweep(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Sweep(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_Sweep_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_'>Sweep(DTSweepContext)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L76'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Start sweeping the Y-sorted point set from bottom to top</p>
+<pre><code class='lang-csharp'>private static void Sweep(DTSweepContext tcx)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Triangulate(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.Triangulate(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_Triangulate_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_'>Triangulate(DTSweepContext)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L54'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Triangulate simple polygon with holes</p>
+<pre><code class='lang-csharp'>public static void Triangulate(DTSweepContext tcx)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.TurnAdvancingFrontConvex(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' data-commentid='M:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweep.TurnAdvancingFrontConvex(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode,Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode)' id='Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweep_TurnAdvancingFrontConvex_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_'>TurnAdvancingFrontConvex(DTSweepContext, AdvancingFrontNode, AdvancingFrontNode)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweep.cs#L178'><i class='bi bi-code-slash'></i></a></h3>
+ <p>We will traverse the entire advancing front and fill it to form a convex hull.</p>
+<pre><code class='lang-csharp'>private static void TurnAdvancingFrontConvex(DTSweepContext tcx, AdvancingFrontNode b, AdvancingFrontNode c)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>tcx</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html'>DTSweepContext</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>b</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>c</code> <a href='Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html'>AdvancingFrontNode</a>  </dt>
+<dd>
+
+
+
+</dd></dl>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Alis - Desarrolla los videojuegos de tus sueños 💯 gratis en Windows, MacOS, Linux, Android (próximamente), iOS (próximamente).
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

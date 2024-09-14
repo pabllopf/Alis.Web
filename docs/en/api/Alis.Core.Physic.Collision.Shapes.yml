@@ -9,27 +9,18 @@ body:
 - h3: Classes
 - parameters:
   - type:
-      text: AShape
-      url: Alis.Core.Physic.Collision.Shapes.AShape.html
-    description: >-
-      A shape is used for collision detection. You can create a shape however you like. Shapes used for simulation
-
-      in World are created automatically when a Fixture is created. Shapes may encapsulate a one or more child shapes.
-
-      A shape is 2D geometrical object, such as a circle or polygon.
-  - type:
       text: ChainShape
       url: Alis.Core.Physic.Collision.Shapes.ChainShape.html
     description: >-
-      A chain shape is a free form sequence of line segments. The chain has one-sided collision, with the surface
+      A chain shape is a free form sequence of line segments.
 
-      normal pointing to the right of the edge. This provides a counter-clockwise winding like the polygon shape.
+      The chain has two-sided collision, so you can use inside and outside collision.
 
-      Connectivity information is used to create smooth collisions. Warning: the chain will not collide properly if there
+      Therefore, you may use any winding order.
 
-      are
+      Connectivity information is used to create smooth collisions.
 
-      self-intersections.
+      WARNING: The chain will not collide properly if there are self-intersections.
   - type:
       text: CircleShape
       url: Alis.Core.Physic.Collision.Shapes.CircleShape.html
@@ -38,13 +29,27 @@ body:
       text: EdgeShape
       url: Alis.Core.Physic.Collision.Shapes.EdgeShape.html
     description: >-
-      A line segment (edge) shape. These can be connected in chains or loops to other edge shapes. Edges created
+      A line segment (edge) shape. These can be connected in chains or loops
 
-      independently are two-sided and do no provide smooth movement across junctions.
+      to other edge shapes.
+
+      The connectivity information is used to ensure correct contact normals.
   - type:
       text: PolygonShape
       url: Alis.Core.Physic.Collision.Shapes.PolygonShape.html
-    description: Represents a simple non-self intersecting convex polygon. Create a convex hull from the given array of points.
+    description: >-
+      Represents a simple non-selfintersecting convex polygon.
+
+      Create a convex hull from the given array of points.
+  - type:
+      text: Shape
+      url: Alis.Core.Physic.Collision.Shapes.Shape.html
+    description: >-
+      A shape is used for collision detection. You can create a shape however you like.
+
+      Shapes used for simulation in World are created automatically when a Fixture
+
+      is created. Shapes may encapsulate a one or more child shapes.
 - h3: Structs
 - parameters:
   - type:

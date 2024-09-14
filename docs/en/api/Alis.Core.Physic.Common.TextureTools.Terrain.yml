@@ -1,0 +1,443 @@
+### YamlMime:ApiPage
+title: Class Terrain
+body:
+- api1: Class Terrain
+  id: Alis_Core_Physic_Common_TextureTools_Terrain
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L42
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain
+    commentId: T:Alis.Core.Physic.Common.TextureTools.Terrain
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.TextureTools
+      url: Alis.Core.Physic.Common.TextureTools.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Simple class to maintain a terrain. It can keep track
+- code: public class Terrain
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Terrain
+    url: Alis.Core.Physic.Common.TextureTools.Terrain.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Terrain(World, AABB)
+  id: Alis_Core_Physic_Common_TextureTools_Terrain__ctor_Alis_Core_Physic_Dynamics_World_Alis_Core_Physic_Collision_AABB_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L136
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.#ctor(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Collision.AABB)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.Terrain.#ctor(Alis.Core.Physic.Dynamics.World,Alis.Core.Physic.Collision.AABB)
+- markdown: Creates a new terrain.
+- code: public Terrain(World world, AABB area)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The World
+  - name: area
+    type:
+    - text: AABB
+      url: Alis.Core.Physic.Collision.AABB.html
+    description: The area of the terrain.
+- api3: Terrain(World, Vector2, float, float)
+  id: Alis_Core_Physic_Common_TextureTools_Terrain__ctor_Alis_Core_Physic_Dynamics_World_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L151
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.#ctor(Alis.Core.Physic.Dynamics.World,Alis.Core.Aspect.Math.Vector.Vector2,System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.Terrain.#ctor(Alis.Core.Physic.Dynamics.World,Alis.Core.Aspect.Math.Vector.Vector2,System.Single,System.Single)
+- markdown: Creates a new terrain
+- code: public Terrain(World world, Vector2 position, float width, float height)
+- h4: Parameters
+- parameters:
+  - name: world
+    type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+    description: The World
+  - name: position
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: The position (center) of the terrain.
+  - name: width
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The width of the terrain.
+  - name: height
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The height of the terrain.
+- h2: Fields
+- api3: CellSize
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_CellSize
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L87
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.CellSize
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain.CellSize
+- markdown: Points per cell.
+- code: public int CellSize
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Center
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_Center
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L92
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.Center
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain.Center
+- markdown: Center of terrain in world units.
+- code: public Vector2 Center
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: Decomposer
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_Decomposer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L98
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.Decomposer
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain.Decomposer
+- markdown: >-
+    Decomposer to use when regenerating terrain. Can be changed on the fly without consequence.
+
+    Note: Some decomposerers are unstable.
+- code: public TriangulationAlgorithm Decomposer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: TriangulationAlgorithm
+      url: Alis.Core.Physic.Common.Decomposition.TriangulationAlgorithm.html
+- api3: Height
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_Height
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L103
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.Height
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain.Height
+- markdown: Height of terrain in world units.
+- code: public float Height
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Iterations
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_Iterations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L109
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.Iterations
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain.Iterations
+- markdown: >-
+    Number of iterations to perform in the Marching Squares algorithm.
+
+    Note: More then 3 has almost no effect on quality.
+- code: public int Iterations
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: PointsPerUnit
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_PointsPerUnit
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L114
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.PointsPerUnit
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain.PointsPerUnit
+- markdown: Points per each world unit used to define the terrain in the point cloud.
+- code: public int PointsPerUnit
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: SubCellSize
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_SubCellSize
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L119
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.SubCellSize
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain.SubCellSize
+- markdown: Points per sub cell.
+- code: public int SubCellSize
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Width
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_Width
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L124
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.Width
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain.Width
+- markdown: Width of terrain in world units.
+- code: public float Width
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: World
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_World
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L129
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.World
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain.World
+- markdown: World to manage terrain in.
+- code: public World World
+- h4: Field Value
+- parameters:
+  - type:
+    - text: World
+      url: Alis.Core.Physic.Dynamics.World.html
+- api3: _bodyMap
+  id: Alis_Core_Physic_Common_TextureTools_Terrain__bodyMap
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L47
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain._bodyMap
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain._bodyMap
+- markdown: Generated bodies.
+- code: private List<Body>[,] _bodyMap
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+    - '>'
+    - '['
+    - ','
+    - ']'
+- api3: _dirtyArea
+  id: Alis_Core_Physic_Common_TextureTools_Terrain__dirtyArea
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L52
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain._dirtyArea
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain._dirtyArea
+- markdown: The dirty area
+- code: private AABB _dirtyArea
+- h4: Field Value
+- parameters:
+  - type:
+    - text: AABB
+      url: Alis.Core.Physic.Collision.AABB.html
+- api3: _localHeight
+  id: Alis_Core_Physic_Common_TextureTools_Terrain__localHeight
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L57
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain._localHeight
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain._localHeight
+- markdown: The local height
+- code: private float _localHeight
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _localWidth
+  id: Alis_Core_Physic_Common_TextureTools_Terrain__localWidth
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L62
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain._localWidth
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain._localWidth
+- markdown: The local width
+- code: private float _localWidth
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _terrainMap
+  id: Alis_Core_Physic_Common_TextureTools_Terrain__terrainMap
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L67
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain._terrainMap
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain._terrainMap
+- markdown: Point cloud defining the terrain.
+- code: private sbyte[,] _terrainMap
+- h4: Field Value
+- parameters:
+  - type:
+    - text: sbyte
+      url: https://learn.microsoft.com/dotnet/api/system.sbyte
+    - '['
+    - ','
+    - ']'
+- api3: _topLeft
+  id: Alis_Core_Physic_Common_TextureTools_Terrain__topLeft
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L72
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain._topLeft
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain._topLeft
+- markdown: The top left
+- code: private Vector2 _topLeft
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: _xnum
+  id: Alis_Core_Physic_Common_TextureTools_Terrain__xnum
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L77
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain._xnum
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain._xnum
+- markdown: The xnum
+- code: private int _xnum
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _ynum
+  id: Alis_Core_Physic_Common_TextureTools_Terrain__ynum
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L82
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain._ynum
+    commentId: F:Alis.Core.Physic.Common.TextureTools.Terrain._ynum
+- markdown: The ynum
+- code: private int _ynum
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: ApplyData(sbyte[,], Vector2)
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_ApplyData_System_SByte_0__0___Alis_Core_Aspect_Math_Vector_Vector2_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L194
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.ApplyData(System.SByte[0:,0:],Alis.Core.Aspect.Math.Vector.Vector2)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.Terrain.ApplyData(System.SByte[0:,0:],Alis.Core.Aspect.Math.Vector.Vector2)
+- markdown: Apply the specified texture data to the terrain.
+- code: public void ApplyData(sbyte[,] data, Vector2 offset = default)
+- h4: Parameters
+- parameters:
+  - name: data
+    type:
+    - text: sbyte
+      url: https://learn.microsoft.com/dotnet/api/system.sbyte
+    - '['
+    - ','
+    - ']'
+    description: ''
+  - name: offset
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: ''
+    optional: true
+- api3: GenerateTerrain(int, int)
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_GenerateTerrain_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L296
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.GenerateTerrain(System.Int32,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.Terrain.GenerateTerrain(System.Int32,System.Int32)
+- markdown: Generates the terrain using the specified gx
+- code: private void GenerateTerrain(int gx, int gy)
+- h4: Parameters
+- parameters:
+  - name: gx
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The gx
+  - name: gy
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The gy
+- api3: Initialize()
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_Initialize
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L162
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.Initialize
+    commentId: M:Alis.Core.Physic.Common.TextureTools.Terrain.Initialize
+- markdown: Initialize the terrain for use.
+- code: public void Initialize()
+- api3: ModifyTerrain(Vector2, sbyte)
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_ModifyTerrain_Alis_Core_Aspect_Math_Vector_Vector2_System_SByte_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L215
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.ModifyTerrain(Alis.Core.Aspect.Math.Vector.Vector2,System.SByte)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.Terrain.ModifyTerrain(Alis.Core.Aspect.Math.Vector.Vector2,System.SByte)
+- markdown: Modify a single point in the terrain.
+- code: public void ModifyTerrain(Vector2 location, sbyte value)
+- h4: Parameters
+- parameters:
+  - name: location
+    type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    description: World location to modify. Automatically clipped.
+  - name: value
+    type:
+    - text: sbyte
+      url: https://learn.microsoft.com/dotnet/api/system.sbyte
+    description: -1 = inside terrain, 1 = outside terrain
+- api3: RegenerateTerrain()
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_RegenerateTerrain
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L241
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.RegenerateTerrain
+    commentId: M:Alis.Core.Physic.Common.TextureTools.Terrain.RegenerateTerrain
+- markdown: Regenerate the terrain.
+- code: public void RegenerateTerrain()
+- api3: RemoveOldData(int, int, int, int)
+  id: Alis_Core_Physic_Common_TextureTools_Terrain_RemoveOldData_System_Int32_System_Int32_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/Terrain.cs#L268
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.Terrain.RemoveOldData(System.Int32,System.Int32,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.Terrain.RemoveOldData(System.Int32,System.Int32,System.Int32,System.Int32)
+- markdown: Removes the old data using the specified x start
+- code: private void RemoveOldData(int xStart, int xEnd, int yStart, int yEnd)
+- h4: Parameters
+- parameters:
+  - name: xStart
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The start
+  - name: xEnd
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The end
+  - name: yStart
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The start
+  - name: yEnd
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The end
+languageId: csharp
+metadata:
+  description: Simple class to maintain a terrain. It can keep track

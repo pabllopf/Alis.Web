@@ -3,7 +3,7 @@ title: Struct MassData
 body:
 - api1: Struct MassData
   id: Alis_Core_Physic_Collision_Shapes_MassData
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L36
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L38
   metadata:
     uid: Alis.Core.Physic.Collision.Shapes.MassData
     commentId: T:Alis.Core.Physic.Collision.Shapes.MassData
@@ -34,41 +34,15 @@ body:
     url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
-- h2: Constructors
-- api3: MassData(float, float, float)
-  id: Alis_Core_Physic_Collision_Shapes_MassData__ctor_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L44
-  metadata:
-    uid: Alis.Core.Physic.Collision.Shapes.MassData.#ctor(System.Single,System.Single,System.Single)
-    commentId: M:Alis.Core.Physic.Collision.Shapes.MassData.#ctor(System.Single,System.Single,System.Single)
-- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Collision.Shapes.MassData" data-throw-if-not-resolved="false"></xref> class
-- code: public MassData(float area, float inertia, float mass)
-- h4: Parameters
-- parameters:
-  - name: area
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The area
-  - name: inertia
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The inertia
-  - name: mass
-    type:
-    - text: float
-      url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The mass
 - h2: Properties
 - api3: Area
   id: Alis_Core_Physic_Collision_Shapes_MassData_Area
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L53
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L43
   metadata:
     uid: Alis.Core.Physic.Collision.Shapes.MassData.Area
     commentId: P:Alis.Core.Physic.Collision.Shapes.MassData.Area
 - markdown: The area of the shape
-- code: public float Area { readonly get; set; }
+- code: public float Area { readonly get; internal set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -76,12 +50,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Centroid
   id: Alis_Core_Physic_Collision_Shapes_MassData_Centroid
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L56
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L48
   metadata:
     uid: Alis.Core.Physic.Collision.Shapes.MassData.Centroid
     commentId: P:Alis.Core.Physic.Collision.Shapes.MassData.Centroid
 - markdown: The position of the shape's centroid relative to the shape's origin.
-- code: public Vector2 Centroid { readonly get; set; }
+- code: public Vector2 Centroid { readonly get; internal set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -89,12 +63,12 @@ body:
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: Inertia
   id: Alis_Core_Physic_Collision_Shapes_MassData_Inertia
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L59
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L53
   metadata:
     uid: Alis.Core.Physic.Collision.Shapes.MassData.Inertia
     commentId: P:Alis.Core.Physic.Collision.Shapes.MassData.Inertia
 - markdown: The rotational inertia of the shape about the local origin.
-- code: public float Inertia { readonly get; set; }
+- code: public float Inertia { readonly get; internal set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -102,12 +76,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Mass
   id: Alis_Core_Physic_Collision_Shapes_MassData_Mass
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L62
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L58
   metadata:
     uid: Alis.Core.Physic.Collision.Shapes.MassData.Mass
     commentId: P:Alis.Core.Physic.Collision.Shapes.MassData.Mass
 - markdown: The mass of the shape, usually in kilograms.
-- code: public float Mass { readonly get; set; }
+- code: public float Mass { readonly get; internal set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -116,7 +90,7 @@ body:
 - h2: Methods
 - api3: Equals(MassData)
   id: Alis_Core_Physic_Collision_Shapes_MassData_Equals_Alis_Core_Physic_Collision_Shapes_MassData_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L83
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L81
   metadata:
     uid: Alis.Core.Physic.Collision.Shapes.MassData.Equals(Alis.Core.Physic.Collision.Shapes.MassData)
     commentId: M:Alis.Core.Physic.Collision.Shapes.MassData.Equals(Alis.Core.Physic.Collision.Shapes.MassData)
@@ -137,7 +111,7 @@ body:
     description: The bool
 - api3: Equals(object)
   id: Alis_Core_Physic_Collision_Shapes_MassData_Equals_System_Object_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L90
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L88
   metadata:
     uid: Alis.Core.Physic.Collision.Shapes.MassData.Equals(System.Object)
     commentId: M:Alis.Core.Physic.Collision.Shapes.MassData.Equals(System.Object)
@@ -158,7 +132,7 @@ body:
     description: The bool
 - api3: GetHashCode()
   id: Alis_Core_Physic_Collision_Shapes_MassData_GetHashCode
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L104
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L103
   metadata:
     uid: Alis.Core.Physic.Collision.Shapes.MassData.GetHashCode
     commentId: M:Alis.Core.Physic.Collision.Shapes.MassData.GetHashCode
@@ -173,7 +147,7 @@ body:
 - h2: Operators
 - api3: operator ==(MassData, MassData)
   id: Alis_Core_Physic_Collision_Shapes_MassData_op_Equality_Alis_Core_Physic_Collision_Shapes_MassData_Alis_Core_Physic_Collision_Shapes_MassData_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L67
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L66
   metadata:
     uid: Alis.Core.Physic.Collision.Shapes.MassData.op_Equality(Alis.Core.Physic.Collision.Shapes.MassData,Alis.Core.Physic.Collision.Shapes.MassData)
     commentId: M:Alis.Core.Physic.Collision.Shapes.MassData.op_Equality(Alis.Core.Physic.Collision.Shapes.MassData,Alis.Core.Physic.Collision.Shapes.MassData)
@@ -196,9 +170,10 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
 - api3: operator !=(MassData, MassData)
   id: Alis_Core_Physic_Collision_Shapes_MassData_op_Inequality_Alis_Core_Physic_Collision_Shapes_MassData_Alis_Core_Physic_Collision_Shapes_MassData_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L76
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collision/Shapes/MassData.cs#L74
   metadata:
     uid: Alis.Core.Physic.Collision.Shapes.MassData.op_Inequality(Alis.Core.Physic.Collision.Shapes.MassData,Alis.Core.Physic.Collision.Shapes.MassData)
     commentId: M:Alis.Core.Physic.Collision.Shapes.MassData.op_Inequality(Alis.Core.Physic.Collision.Shapes.MassData,Alis.Core.Physic.Collision.Shapes.MassData)
@@ -221,6 +196,7 @@ body:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
 languageId: csharp
 metadata:
   description: This holds the mass data computed for a shape.

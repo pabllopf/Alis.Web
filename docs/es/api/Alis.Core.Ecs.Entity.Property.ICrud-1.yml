@@ -27,10 +27,10 @@ body:
     uid: Alis.Core.Ecs.Entity.Property.ICrud`1.Add``1(``0)
     commentId: M:Alis.Core.Ecs.Entity.Property.ICrud`1.Add``1(``0)
 - markdown: Adds the component
-- code: 'void Add<T>(T component) where T : TItem'
+- code: 'void Add<T>(T value) where T : TItem'
 - h4: Parameters
 - parameters:
-  - name: component
+  - name: value
     type:
     - T
     description: The component
@@ -88,10 +88,10 @@ body:
     uid: Alis.Core.Ecs.Entity.Property.ICrud`1.Remove``1(``0)
     commentId: M:Alis.Core.Ecs.Entity.Property.ICrud`1.Remove``1(``0)
 - markdown: Removes the component
-- code: 'void Remove<T>(T component) where T : TItem'
+- code: 'void Remove<T>(T value) where T : TItem'
 - h4: Parameters
 - parameters:
-  - name: component
+  - name: value
     type:
     - T
     description: The component

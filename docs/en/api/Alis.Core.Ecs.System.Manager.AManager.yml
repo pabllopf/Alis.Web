@@ -303,6 +303,14 @@ body:
     commentId: M:Alis.Core.Ecs.System.Manager.AManager.OnInit
 - markdown: Ons the init
 - code: public virtual void OnInit()
+- api3: OnPhysicUpdate()
+  id: Alis_Core_Ecs_System_Manager_AManager_OnPhysicUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/AManager.cs#L197
+  metadata:
+    uid: Alis.Core.Ecs.System.Manager.AManager.OnPhysicUpdate
+    commentId: M:Alis.Core.Ecs.System.Manager.AManager.OnPhysicUpdate
+- markdown: Ons the physics update
+- code: public virtual void OnPhysicUpdate()
 - api3: OnReset()
   id: Alis_Core_Ecs_System_Manager_AManager_OnReset
   src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/System/Manager/AManager.cs#L177

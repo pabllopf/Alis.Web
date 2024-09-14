@@ -125,7 +125,7 @@ body:
 - h2: Constructors
 - api3: Camera()
   id: Alis_Core_Ecs_Component_Render_Camera__ctor
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L53
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L63
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Camera.#ctor
     commentId: M:Alis.Core.Ecs.Component.Render.Camera.#ctor
@@ -133,7 +133,7 @@ body:
 - code: public Camera()
 - api3: Camera(string, string, string, bool, RectangleI, Vector2, Color, float)
   id: Alis_Core_Ecs_Component_Render_Camera__ctor_System_String_System_String_System_String_System_Boolean_Alis_Core_Aspect_Math_Shape_Rectangle_RectangleI_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Definition_Color_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L73
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L83
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Camera.#ctor(System.String,System.String,System.String,System.Boolean,Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Definition.Color,System.Single)
     commentId: M:Alis.Core.Ecs.Component.Render.Camera.#ctor(System.String,System.String,System.String,System.Boolean,Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Definition.Color,System.Single)
@@ -181,10 +181,43 @@ body:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
     description: The camera border
+- h2: Fields
+- api3: Position
+  id: Alis_Core_Ecs_Component_Render_Camera_Position
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Component.Render.Camera.Position
+    commentId: F:Alis.Core.Ecs.Component.Render.Camera.Position
+- markdown: The position
+- code: >-
+    [JsonPropertyName("_Position_")]
+
+    public Vector2 Position
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2
+      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+- api3: Viewport
+  id: Alis_Core_Ecs_Component_Render_Camera_Viewport
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L58
+  metadata:
+    uid: Alis.Core.Ecs.Component.Render.Camera.Viewport
+    commentId: F:Alis.Core.Ecs.Component.Render.Camera.Viewport
+- markdown: The viewport
+- code: >-
+    [JsonPropertyName("_Viewport_")]
+
+    public RectangleI Viewport
+- h4: Field Value
+- parameters:
+  - type:
+    - text: RectangleI
+      url: Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI.html
 - h2: Properties
 - api3: BackgroundColor
   id: Alis_Core_Ecs_Component_Render_Camera_BackgroundColor
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L107
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L111
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Camera.BackgroundColor
     commentId: P:Alis.Core.Ecs.Component.Render.Camera.BackgroundColor
@@ -200,7 +233,7 @@ body:
       url: Alis.Core.Aspect.Math.Definition.Color.html
 - api3: CameraBorder
   id: Alis_Core_Ecs_Component_Render_Camera_CameraBorder
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L113
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L117
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Camera.CameraBorder
     commentId: P:Alis.Core.Ecs.Component.Render.Camera.CameraBorder
@@ -216,7 +249,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Resolution
   id: Alis_Core_Ecs_Component_Render_Camera_Resolution
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L101
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L105
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Camera.Resolution
     commentId: P:Alis.Core.Ecs.Component.Render.Camera.Resolution
@@ -232,7 +265,7 @@ body:
       url: Alis.Core.Aspect.Math.Vector.Vector2.html
 - api3: TextureTarget
   id: Alis_Core_Ecs_Component_Render_Camera_TextureTarget
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L95
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L99
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Camera.TextureTarget
     commentId: P:Alis.Core.Ecs.Component.Render.Camera.TextureTarget
@@ -246,26 +279,10 @@ body:
   - type:
     - text: IntPtr
       url: https://learn.microsoft.com/dotnet/api/system.intptr
-- api3: Viewport
-  id: Alis_Core_Ecs_Component_Render_Camera_Viewport
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L89
-  metadata:
-    uid: Alis.Core.Ecs.Component.Render.Camera.Viewport
-    commentId: P:Alis.Core.Ecs.Component.Render.Camera.Viewport
-- markdown: The viewport
-- code: >-
-    [JsonPropertyName("_Viewport_")]
-
-    public RectangleI Viewport { get; set; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: RectangleI
-      url: Alis.Core.Aspect.Math.Shape.Rectangle.RectangleI.html
 - h2: Methods
 - api3: Builder()
   id: Alis_Core_Ecs_Component_Render_Camera_Builder
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L120
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L124
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Camera.Builder
     commentId: M:Alis.Core.Ecs.Component.Render.Camera.Builder
@@ -279,7 +296,7 @@ body:
     description: The camera builder
 - api3: OnExit()
   id: Alis_Core_Ecs_Component_Render_Camera_OnExit
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L158
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L157
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Camera.OnExit
     commentId: M:Alis.Core.Ecs.Component.Render.Camera.OnExit
@@ -287,7 +304,7 @@ body:
 - code: public override void OnExit()
 - api3: OnStart()
   id: Alis_Core_Ecs_Component_Render_Camera_OnStart
-  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L125
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Component/Render/Camera.cs#L129
   metadata:
     uid: Alis.Core.Ecs.Component.Render.Camera.OnStart
     commentId: M:Alis.Core.Ecs.Component.Render.Camera.OnStart

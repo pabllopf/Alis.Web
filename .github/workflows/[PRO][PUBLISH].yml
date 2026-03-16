@@ -104,6 +104,9 @@ jobs:
       - name: clone Alis
         run: git clone https://github.com/pabllopf/Alis.git --depth=1
 
+      - name: Build Alis
+        run: dotnet build ./Alis/alis_design.sln -c Release 
+
       - name: install tools
         run: dotnet tool update -g docfx
 

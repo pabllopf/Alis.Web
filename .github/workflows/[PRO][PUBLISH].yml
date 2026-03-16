@@ -79,13 +79,7 @@ jobs:
       - name: setup
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: |
-            3.0.x
-            3.1.x
-            5.0.x
-            6.0.x
-            7.0.x
-            8.0.x
+          dotnet-version: 10.0.x
           
       - name: clone Alis
         run: git clone https://github.com/pabllopf/Alis.git --depth=1
@@ -95,7 +89,7 @@ jobs:
 
       - name: Build Documentation for all versions
         run: |
-          versions=("v0.1.0" "v0.2.0" "v0.3.0" "v0.4.0")
+          versions=("v0.1.0" "v0.2.0" "v0.3.0" "v0.4.0" "v0.5.0" "v0.6.0" "v0.7.0" "v0.8.0" "v0.9.0" "v1.0.0")
           languages=("EN" "ES")
           for version in "${versions[@]}"; do
             for lang in "${languages[@]}"; do

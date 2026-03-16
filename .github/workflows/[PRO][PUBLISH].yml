@@ -8,8 +8,21 @@ on:
 jobs:
   
   Build_And_Deploy:
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      deployments: write
+      discussions: write
+      issues: write
+      pages: write
+      packages: write
+      pull-requests: write
+      repository-projects: write
+      security-events: write
+      statuses: write
     if: "contains(github.event.head_commit.message, 'release:')"
-    runs-on: macos-latest
+    runs-on: macos-15-intel
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -79,7 +92,14 @@ jobs:
       - name: setup
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 10.0.x
+          dotnet-version: |
+            3.0.x
+            3.1.x
+            5.0.x
+            6.0.x
+            7.0.x
+            8.0.x
+            10.0.x
           
       - name: clone Alis
         run: git clone https://github.com/pabllopf/Alis.git --depth=1

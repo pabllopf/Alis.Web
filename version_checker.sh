@@ -45,3 +45,4 @@ while IFS= read -r line; do
 done < "$input_file" > "$output_file"
 
 echo "El fichero de salida $output_file se ha actualizado con la versión $new_version."
+

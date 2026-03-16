@@ -1,0 +1,103 @@
+### YamlMime:ApiPage
+title: Struct ComponentEvent
+body:
+- api1: Struct ComponentEvent
+  id: Alis_Core_Ecs_Kernel_Events_ComponentEvent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/ComponentEvent.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.ComponentEvent
+    commentId: T:Alis.Core.Ecs.Kernel.Events.ComponentEvent
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Events
+      url: Alis.Core.Ecs.Kernel.Events.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The component event
+- code: public struct ComponentEvent
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: GenericEvent reference (8 bytes) + Event struct (24 bytes)
+
+    Total: 32 bytes
+
+    Pack = 8 for optimal alignment with reference types
+- h2: Constructors
+- api3: ComponentEvent()
+  id: Alis_Core_Ecs_Kernel_Events_ComponentEvent__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/ComponentEvent.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.ComponentEvent.#ctor
+    commentId: M:Alis.Core.Ecs.Kernel.Events.ComponentEvent.#ctor
+- markdown: The component event
+- code: public ComponentEvent()
+- h4: Remarks
+- markdown: >-
+    Memory layout optimized: GenericEvent reference (8 bytes) + Event struct (24 bytes)
+
+    Total: 32 bytes
+
+    Pack = 8 for optimal alignment with reference types
+- h2: Fields
+- api3: GenericEvent
+  id: Alis_Core_Ecs_Kernel_Events_ComponentEvent_GenericEvent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/ComponentEvent.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.ComponentEvent.GenericEvent
+    commentId: F:Alis.Core.Ecs.Kernel.Events.ComponentEvent.GenericEvent
+- markdown: The generic event
+- code: internal GenericEvent GenericEvent
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GenericEvent
+      url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+- api3: NormalEvent
+  id: Alis_Core_Ecs_Kernel_Events_ComponentEvent_NormalEvent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/ComponentEvent.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.ComponentEvent.NormalEvent
+    commentId: F:Alis.Core.Ecs.Kernel.Events.ComponentEvent.NormalEvent
+- markdown: The normal event
+- code: internal Event<ComponentId> NormalEvent
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- h2: Properties
+- api3: HasListeners
+  id: Alis_Core_Ecs_Kernel_Events_ComponentEvent_HasListeners
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/ComponentEvent.cs#L58
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.ComponentEvent.HasListeners
+    commentId: P:Alis.Core.Ecs.Kernel.Events.ComponentEvent.HasListeners
+- markdown: Gets the value of the has listeners
+- code: public bool HasListeners { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+languageId: csharp
+metadata:
+  description: The component event

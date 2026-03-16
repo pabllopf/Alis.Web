@@ -1,0 +1,188 @@
+### YamlMime:ApiPage
+title: Struct ArchetypeEdgeKey
+body:
+- api1: Struct ArchetypeEdgeKey
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeEdgeKey.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey
+    commentId: T:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Archetypes
+      url: Alis.Core.Ecs.Kernel.Archetypes.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The archetype edge key
+- code: 'public struct ArchetypeEdgeKey : IEquatable<ArchetypeEdgeKey>'
+- h4: Implements
+- list:
+  - text: IEquatable<ArchetypeEdgeKey>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 8 bytes total (ArchetypeEdgeType enum 4 bytes + ComponentId 2 bytes + GameObjectType 2 bytes)
+
+    Field order reordered for optimal packing: enum (4 bytes) -&gt; ComponentId (2 bytes) -&gt; GameObjectType (2 bytes)
+
+    Pack = 1 for minimal memory footprint, fits in 8 bytes (long)
+- h2: Fields
+- api3: ArchetypeFrom
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey_ArchetypeFrom
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeEdgeKey.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.ArchetypeFrom
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.ArchetypeFrom
+- markdown: The archetype from
+- code: internal GameObjectType ArchetypeFrom
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+- api3: ComponentID
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey_ComponentID
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeEdgeKey.cs#L56
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.ComponentID
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.ComponentID
+- markdown: The component id
+- code: internal ComponentId ComponentID
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+- api3: EdgeType
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey_EdgeType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeEdgeKey.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.EdgeType
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.EdgeType
+- markdown: The edge type
+- code: internal ArchetypeEdgeType EdgeType
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ArchetypeEdgeType
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeType.html
+- h2: Properties
+- api3: Packed
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey_Packed
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeEdgeKey.cs#L83
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.Packed
+    commentId: P:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.Packed
+- markdown: Gets the value of the packed
+- code: internal long Packed { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: long
+      url: https://learn.microsoft.com/dotnet/api/system.int64
+- h2: Methods
+- api3: Component(ComponentId, GameObjectType, ArchetypeEdgeType)
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey_Component_Alis_Core_Ecs_Kernel_ComponentId_Alis_Core_Ecs_Kernel_GameObjectType_Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeType_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeEdgeKey.cs#L71
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.Component(Alis.Core.Ecs.Kernel.ComponentId,Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeType)
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.Component(Alis.Core.Ecs.Kernel.ComponentId,Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeType)
+- markdown: Components the component id
+- code: public static ArchetypeEdgeKey Component(ComponentId componentId, GameObjectType from, ArchetypeEdgeType archetypeEdgeType)
+- h4: Parameters
+- parameters:
+  - name: componentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The component id
+  - name: from
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The from
+  - name: archetypeEdgeType
+    type:
+    - text: ArchetypeEdgeType
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeType.html
+    description: The archetype edge type
+- h4: Returns
+- parameters:
+  - type:
+    - text: ArchetypeEdgeKey
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.html
+    description: The archetype edge key
+- api3: Equals(ArchetypeEdgeKey)
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey_Equals_Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeEdgeKey.cs#L90
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.Equals(Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey)
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.Equals(Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey)
+- markdown: Equalses the other
+- code: public bool Equals(ArchetypeEdgeKey other)
+- h4: Parameters
+- parameters:
+  - name: other
+    type:
+    - text: ArchetypeEdgeKey
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.html
+    description: The other
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: Equals(object)
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey_Equals_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeEdgeKey.cs#L97
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.Equals(System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.Equals(System.Object)
+- markdown: Equalses the obj
+- code: public override bool Equals(object obj)
+- h4: Parameters
+- parameters:
+  - name: obj
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The obj
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: GetHashCode()
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey_GetHashCode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeEdgeKey.cs#L103
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.GetHashCode
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.GetHashCode
+- markdown: Gets the hash code
+- code: public override int GetHashCode()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+languageId: csharp
+metadata:
+  description: The archetype edge key

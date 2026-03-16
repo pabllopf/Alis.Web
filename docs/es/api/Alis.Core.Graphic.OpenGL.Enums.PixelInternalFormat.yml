@@ -1,0 +1,748 @@
+### YamlMime:ApiPage
+title: Enum PixelInternalFormat
+body:
+- api1: Enum PixelInternalFormat
+  id: Alis_Core_Graphic_OpenGL_Enums_PixelInternalFormat
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/PixelInternalFormat.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.PixelInternalFormat
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.PixelInternalFormat
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The pixel internal format enum
+- code: public enum PixelInternalFormat
+- h2: Fields
+- parameters:
+  - name: DepthComponent
+    default: "6402"
+    description: >+
+      The depth component pixel internal format
+
+  - name: Alpha
+    default: "6406"
+    description: >+
+      The alpha pixel internal format
+
+  - name: Rgb
+    default: "6407"
+    description: >+
+      The rgb pixel internal format
+
+  - name: Rgba
+    default: "6408"
+    description: >+
+      The rgba pixel internal format
+
+  - name: Luminance
+    default: "6409"
+    description: >+
+      The luminance pixel internal format
+
+  - name: LuminanceAlpha
+    default: "6410"
+    description: >+
+      The luminance alpha pixel internal format
+
+  - name: R3G3B2
+    default: "10768"
+    description: >+
+      The  pixel internal format
+
+  - name: Alpha4
+    default: "32827"
+    description: >+
+      The alpha pixel internal format
+
+  - name: Alpha8
+    default: "32828"
+    description: >+
+      The alpha pixel internal format
+
+  - name: Alpha12
+    default: "32829"
+    description: >+
+      The alpha 12 pixel internal format
+
+  - name: Alpha16
+    default: "32830"
+    description: >+
+      The alpha 16 pixel internal format
+
+  - name: Luminance4
+    default: "32831"
+    description: >+
+      The luminance pixel internal format
+
+  - name: Luminance8
+    default: "32832"
+    description: >+
+      The luminance pixel internal format
+
+  - name: Luminance12
+    default: "32833"
+    description: >+
+      The luminance 12 pixel internal format
+
+  - name: Luminance16
+    default: "32834"
+    description: >+
+      The luminance 16 pixel internal format
+
+  - name: Luminance4Alpha4
+    default: "32835"
+    description: >+
+      The luminance alpha pixel internal format
+
+  - name: Luminance6Alpha2
+    default: "32836"
+    description: >+
+      The luminance alpha pixel internal format
+
+  - name: Luminance8Alpha8
+    default: "32837"
+    description: >+
+      The luminance alpha pixel internal format
+
+  - name: Luminance12Alpha4
+    default: "32838"
+    description: >+
+      The luminance 12 alpha pixel internal format
+
+  - name: Luminance12Alpha12
+    default: "32839"
+    description: >+
+      The luminance 12 alpha 12 pixel internal format
+
+  - name: Luminance16Alpha16
+    default: "32840"
+    description: >+
+      The luminance 16 alpha 16 pixel internal format
+
+  - name: Intensity
+    default: "32841"
+    description: >+
+      The intensity pixel internal format
+
+  - name: Intensity4
+    default: "32842"
+    description: >+
+      The intensity pixel internal format
+
+  - name: Intensity8
+    default: "32843"
+    description: >+
+      The intensity pixel internal format
+
+  - name: Intensity12
+    default: "32844"
+    description: >+
+      The intensity 12 pixel internal format
+
+  - name: Intensity16
+    default: "32845"
+    description: >+
+      The intensity 16 pixel internal format
+
+  - name: Rgb2Ext
+    default: "32846"
+    description: >+
+      The rgb ext pixel internal format
+
+  - name: Rgb4
+    default: "32847"
+    description: >+
+      The rgb pixel internal format
+
+  - name: Rgb5
+    default: "32848"
+    description: >+
+      The rgb pixel internal format
+
+  - name: Rgb8
+    default: "32849"
+    description: >+
+      The rgb pixel internal format
+
+  - name: Rgb10
+    default: "32850"
+    description: >+
+      The rgb 10 pixel internal format
+
+  - name: Rgb12
+    default: "32851"
+    description: >+
+      The rgb 12 pixel internal format
+
+  - name: Rgb16
+    default: "32852"
+    description: >+
+      The rgb 16 pixel internal format
+
+  - name: Rgba2
+    default: "32853"
+    description: >+
+      The rgba pixel internal format
+
+  - name: Rgba4
+    default: "32854"
+    description: >+
+      The rgba pixel internal format
+
+  - name: Rgb5A1
+    default: "32855"
+    description: >+
+      The rgb pixel internal format
+
+  - name: Rgba8
+    default: "32856"
+    description: >+
+      The rgba pixel internal format
+
+  - name: Rgb10A2
+    default: "32857"
+    description: >+
+      The rgb 10 pixel internal format
+
+  - name: Rgba12
+    default: "32858"
+    description: >+
+      The rgba 12 pixel internal format
+
+  - name: Rgba16
+    default: "32859"
+    description: >+
+      The rgba 16 pixel internal format
+
+  - name: DualAlpha4Sgis
+    default: "33040"
+    description: >+
+      The dual alpha sgis pixel internal format
+
+  - name: DualAlpha8Sgis
+    default: "33041"
+    description: >+
+      The dual alpha sgis pixel internal format
+
+  - name: DualAlpha12Sgis
+    default: "33042"
+    description: >+
+      The dual alpha 12 sgis pixel internal format
+
+  - name: DualAlpha16Sgis
+    default: "33043"
+    description: >+
+      The dual alpha 16 sgis pixel internal format
+
+  - name: DualLuminance4Sgis
+    default: "33044"
+    description: >+
+      The dual luminance sgis pixel internal format
+
+  - name: DualLuminance8Sgis
+    default: "33045"
+    description: >+
+      The dual luminance sgis pixel internal format
+
+  - name: DualLuminance12Sgis
+    default: "33046"
+    description: >+
+      The dual luminance 12 sgis pixel internal format
+
+  - name: DualLuminance16Sgis
+    default: "33047"
+    description: >+
+      The dual luminance 16 sgis pixel internal format
+
+  - name: DualIntensity4Sgis
+    default: "33048"
+    description: >+
+      The dual intensity sgis pixel internal format
+
+  - name: DualIntensity8Sgis
+    default: "33049"
+    description: >+
+      The dual intensity sgis pixel internal format
+
+  - name: DualIntensity12Sgis
+    default: "33050"
+    description: >+
+      The dual intensity 12 sgis pixel internal format
+
+  - name: DualIntensity16Sgis
+    default: "33051"
+    description: >+
+      The dual intensity 16 sgis pixel internal format
+
+  - name: DualLuminanceAlpha4Sgis
+    default: "33052"
+    description: >+
+      The dual luminance alpha sgis pixel internal format
+
+  - name: DualLuminanceAlpha8Sgis
+    default: "33053"
+    description: >+
+      The dual luminance alpha sgis pixel internal format
+
+  - name: QuadAlpha4Sgis
+    default: "33054"
+    description: >+
+      The quad alpha sgis pixel internal format
+
+  - name: QuadAlpha8Sgis
+    default: "33055"
+    description: >+
+      The quad alpha sgis pixel internal format
+
+  - name: QuadLuminance4Sgis
+    default: "33056"
+    description: >+
+      The quad luminance sgis pixel internal format
+
+  - name: QuadLuminance8Sgis
+    default: "33057"
+    description: >+
+      The quad luminance sgis pixel internal format
+
+  - name: QuadIntensity4Sgis
+    default: "33058"
+    description: >+
+      The quad intensity sgis pixel internal format
+
+  - name: QuadIntensity8Sgis
+    default: "33059"
+    description: >+
+      The quad intensity sgis pixel internal format
+
+  - name: DepthComponent16
+    default: "33189"
+    description: >+
+      The depth component 16 pixel internal format
+
+  - name: DepthComponent16Sgix
+    default: "33189"
+    description: >+
+      The depth component 16 sgix pixel internal format
+
+  - name: DepthComponent24
+    default: "33190"
+    description: >+
+      The depth component 24 pixel internal format
+
+  - name: DepthComponent24Sgix
+    default: "33190"
+    description: >+
+      The depth component 24 sgix pixel internal format
+
+  - name: DepthComponent32
+    default: "33191"
+    description: >+
+      The depth component 32 pixel internal format
+
+  - name: DepthComponent32Sgix
+    default: "33191"
+    description: >+
+      The depth component 32 sgix pixel internal format
+
+  - name: CompressedRed
+    default: "33317"
+    description: >+
+      The compressed red pixel internal format
+
+  - name: CompressedRg
+    default: "33318"
+    description: >+
+      The compressed rg pixel internal format
+
+  - name: R8
+    default: "33321"
+    description: >+
+      The  pixel internal format
+
+  - name: R16
+    default: "33322"
+    description: >+
+      The 16 pixel internal format
+
+  - name: Rg8
+    default: "33323"
+    description: >+
+      The rg pixel internal format
+
+  - name: Rg16
+    default: "33324"
+    description: >+
+      The rg 16 pixel internal format
+
+  - name: R16F
+    default: "33325"
+    description: >+
+      The 16f pixel internal format
+
+  - name: R32F
+    default: "33326"
+    description: >+
+      The 32f pixel internal format
+
+  - name: Rg16F
+    default: "33327"
+    description: >+
+      The rg 16f pixel internal format
+
+  - name: Rg32F
+    default: "33328"
+    description: >+
+      The rg 32f pixel internal format
+
+  - name: R8I
+    default: "33329"
+    description: >+
+      The 8i pixel internal format
+
+  - name: R8Ui
+    default: "33330"
+    description: >+
+      The 8ui pixel internal format
+
+  - name: R16I
+    default: "33331"
+    description: >+
+      The 16i pixel internal format
+
+  - name: R16Ui
+    default: "33332"
+    description: >+
+      The 16ui pixel internal format
+
+  - name: R32I
+    default: "33333"
+    description: >+
+      The 32i pixel internal format
+
+  - name: R32Ui
+    default: "33334"
+    description: >+
+      The 32ui pixel internal format
+
+  - name: Rg8I
+    default: "33335"
+    description: >+
+      The rg 8i pixel internal format
+
+  - name: Rg8Ui
+    default: "33336"
+    description: >+
+      The rg 8ui pixel internal format
+
+  - name: Rg16I
+    default: "33337"
+    description: >+
+      The rg 16i pixel internal format
+
+  - name: Rg16Ui
+    default: "33338"
+    description: >+
+      The rg 16ui pixel internal format
+
+  - name: Rg32I
+    default: "33339"
+    description: >+
+      The rg 32i pixel internal format
+
+  - name: Rg32Ui
+    default: "33340"
+    description: >+
+      The rg 32ui pixel internal format
+
+  - name: CompressedRgbS3TcDxt1Ext
+    default: "33776"
+    description: >+
+      The compressed rgb 3tc dxt ext pixel internal format
+
+  - name: CompressedRgbaS3TcDxt1Ext
+    default: "33777"
+    description: >+
+      The compressed rgba 3tc dxt ext pixel internal format
+
+  - name: CompressedRgbaS3TcDxt3Ext
+    default: "33778"
+    description: >+
+      The compressed rgba 3tc dxt ext pixel internal format
+
+  - name: CompressedRgbaS3TcDxt5Ext
+    default: "33779"
+    description: >+
+      The compressed rgba 3tc dxt ext pixel internal format
+
+  - name: CompressedAlpha
+    default: "34025"
+    description: >+
+      The compressed alpha pixel internal format
+
+  - name: CompressedLuminance
+    default: "34026"
+    description: >+
+      The compressed luminance pixel internal format
+
+  - name: CompressedLuminanceAlpha
+    default: "34027"
+    description: >+
+      The compressed luminance alpha pixel internal format
+
+  - name: CompressedIntensity
+    default: "34028"
+    description: >+
+      The compressed intensity pixel internal format
+
+  - name: CompressedRgb
+    default: "34029"
+    description: >+
+      The compressed rgb pixel internal format
+
+  - name: CompressedRgba
+    default: "34030"
+    description: >+
+      The compressed rgba pixel internal format
+
+  - name: DepthStencil
+    default: "34041"
+    description: >+
+      The depth stencil pixel internal format
+
+  - name: Rgba32F
+    default: "34836"
+    description: >+
+      The rgba 32f pixel internal format
+
+  - name: Rgb32F
+    default: "34837"
+    description: >+
+      The rgb 32f pixel internal format
+
+  - name: Rgba16F
+    default: "34842"
+    description: >+
+      The rgba 16f pixel internal format
+
+  - name: Rgb16F
+    default: "34843"
+    description: >+
+      The rgb 16f pixel internal format
+
+  - name: Depth24Stencil8
+    default: "35056"
+    description: >+
+      The depth 24 stencil pixel internal format
+
+  - name: R11Fg11Fb10F
+    default: "35898"
+    description: >+
+      The 11f 11f 10f pixel internal format
+
+  - name: Rgb9E5
+    default: "35901"
+    description: >+
+      The rgb pixel internal format
+
+  - name: Srgb
+    default: "35904"
+    description: >+
+      The srgb pixel internal format
+
+  - name: Srgb8
+    default: "35905"
+    description: >+
+      The srgb pixel internal format
+
+  - name: SrgbAlpha
+    default: "35906"
+    description: >+
+      The srgb alpha pixel internal format
+
+  - name: Srgb8Alpha8
+    default: "35907"
+    description: >+
+      The srgb alpha pixel internal format
+
+  - name: SluminanceAlpha
+    default: "35908"
+    description: >+
+      The sluminance alpha pixel internal format
+
+  - name: Sluminance8Alpha8
+    default: "35909"
+    description: >+
+      The sluminance alpha pixel internal format
+
+  - name: Sluminance
+    default: "35910"
+    description: >+
+      The sluminance pixel internal format
+
+  - name: Sluminance8
+    default: "35911"
+    description: >+
+      The sluminance pixel internal format
+
+  - name: CompressedSrgb
+    default: "35912"
+    description: >+
+      The compressed srgb pixel internal format
+
+  - name: CompressedSrgbAlpha
+    default: "35913"
+    description: >+
+      The compressed srgb alpha pixel internal format
+
+  - name: CompressedSluminance
+    default: "35914"
+    description: >+
+      The compressed sluminance pixel internal format
+
+  - name: CompressedSluminanceAlpha
+    default: "35915"
+    description: >+
+      The compressed sluminance alpha pixel internal format
+
+  - name: CompressedSrgbS3TcDxt1Ext
+    default: "35916"
+    description: >+
+      The compressed srgb 3tc dxt ext pixel internal format
+
+  - name: CompressedSrgbAlphaS3TcDxt1Ext
+    default: "35917"
+    description: >+
+      The compressed srgb alpha 3tc dxt ext pixel internal format
+
+  - name: CompressedSrgbAlphaS3TcDxt3Ext
+    default: "35918"
+    description: >+
+      The compressed srgb alpha 3tc dxt ext pixel internal format
+
+  - name: CompressedSrgbAlphaS3TcDxt5Ext
+    default: "35919"
+    description: >+
+      The compressed srgb alpha 3tc dxt ext pixel internal format
+
+  - name: DepthComponent32F
+    default: "36012"
+    description: >+
+      The depth component 32f pixel internal format
+
+  - name: Depth32FStencil8
+    default: "36013"
+    description: >+
+      The depth 32f stencil pixel internal format
+
+  - name: Rgba32Ui
+    default: "36208"
+    description: >+
+      The rgba 32ui pixel internal format
+
+  - name: Rgb32Ui
+    default: "36209"
+    description: >+
+      The rgb 32ui pixel internal format
+
+  - name: Rgba16Ui
+    default: "36214"
+    description: >+
+      The rgba 16ui pixel internal format
+
+  - name: Rgb16Ui
+    default: "36215"
+    description: >+
+      The rgb 16ui pixel internal format
+
+  - name: Rgba8Ui
+    default: "36220"
+    description: >+
+      The rgba 8ui pixel internal format
+
+  - name: Rgb8Ui
+    default: "36221"
+    description: >+
+      The rgb 8ui pixel internal format
+
+  - name: Rgba32I
+    default: "36226"
+    description: >+
+      The rgba 32i pixel internal format
+
+  - name: Rgb32I
+    default: "36227"
+    description: >+
+      The rgb 32i pixel internal format
+
+  - name: Rgba16I
+    default: "36232"
+    description: >+
+      The rgba 16i pixel internal format
+
+  - name: Rgb16I
+    default: "36233"
+    description: >+
+      The rgb 16i pixel internal format
+
+  - name: Rgba8I
+    default: "36238"
+    description: >+
+      The rgba 8i pixel internal format
+
+  - name: Rgb8I
+    default: "36239"
+    description: >+
+      The rgb 8i pixel internal format
+
+  - name: Float32UnsignedInt248Rev
+    default: "36269"
+    description: >+
+      The float 32 unsigned int 248 rev pixel internal format
+
+  - name: CompressedRedRgtc1
+    default: "36283"
+    description: >+
+      The compressed red rgtc pixel internal format
+
+  - name: CompressedSignedRedRgtc1
+    default: "36284"
+    description: >+
+      The compressed signed red rgtc pixel internal format
+
+  - name: CompressedRgRgtc2
+    default: "36285"
+    description: >+
+      The compressed rg rgtc pixel internal format
+
+  - name: CompressedSignedRgRgtc2
+    default: "36286"
+    description: >+
+      The compressed signed rg rgtc pixel internal format
+
+  - name: One
+    default: "1"
+    description: >+
+      The one pixel internal format
+
+  - name: Two
+    default: "2"
+    description: >+
+      The two pixel internal format
+
+  - name: Three
+    default: "3"
+    description: >+
+      The three pixel internal format
+
+  - name: Four
+    default: "4"
+    description: >+
+      The four pixel internal format
+
+languageId: csharp
+metadata:
+  description: The pixel internal format enum

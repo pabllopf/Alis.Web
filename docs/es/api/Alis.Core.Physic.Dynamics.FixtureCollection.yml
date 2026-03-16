@@ -3,7 +3,7 @@ title: Class FixtureCollection
 body:
 - api1: Class FixtureCollection
   id: Alis_Core_Physic_Dynamics_FixtureCollection
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L42
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L43
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection
     commentId: T:Alis.Core.Physic.Dynamics.FixtureCollection
@@ -51,7 +51,7 @@ body:
 - h2: Constructors
 - api3: FixtureCollection(Body)
   id: Alis_Core_Physic_Dynamics_FixtureCollection__ctor_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L64
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L65
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.#ctor(Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.#ctor(Alis.Core.Physic.Dynamics.Body)
@@ -65,9 +65,39 @@ body:
       url: Alis.Core.Physic.Dynamics.Body.html
     description: The body
 - h2: Fields
+- api3: GenerationStamp
+  id: Alis_Core_Physic_Dynamics_FixtureCollection_GenerationStamp
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L59
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.FixtureCollection.GenerationStamp
+    commentId: F:Alis.Core.Physic.Dynamics.FixtureCollection.GenerationStamp
+- markdown: The generation stamp
+- code: internal int GenerationStamp
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: List
+  id: Alis_Core_Physic_Dynamics_FixtureCollection_List
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L54
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.FixtureCollection.List
+    commentId: F:Alis.Core.Physic.Dynamics.FixtureCollection.List
+- markdown: The fixture
+- code: internal readonly List<Fixture> List
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    - '>'
 - api3: _body
   id: Alis_Core_Physic_Dynamics_FixtureCollection__body
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L48
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L49
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection._body
     commentId: F:Alis.Core.Physic.Dynamics.FixtureCollection._body
@@ -78,40 +108,10 @@ body:
   - type:
     - text: Body
       url: Alis.Core.Physic.Dynamics.Body.html
-- api3: _generationStamp
-  id: Alis_Core_Physic_Dynamics_FixtureCollection__generationStamp
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L58
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.FixtureCollection._generationStamp
-    commentId: F:Alis.Core.Physic.Dynamics.FixtureCollection._generationStamp
-- markdown: The generation stamp
-- code: internal int _generationStamp
-- h4: Field Value
-- parameters:
-  - type:
-    - text: int
-      url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: _list
-  id: Alis_Core_Physic_Dynamics_FixtureCollection__list
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L53
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.FixtureCollection._list
-    commentId: F:Alis.Core.Physic.Dynamics.FixtureCollection._list
-- markdown: The fixture
-- code: internal readonly List<Fixture> _list
-- h4: Field Value
-- parameters:
-  - type:
-    - text: List
-      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-    - <
-    - text: Fixture
-      url: Alis.Core.Physic.Dynamics.Fixture.html
-    - '>'
 - h2: Properties
 - api3: Count
   id: Alis_Core_Physic_Dynamics_FixtureCollection_Count
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L266
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L76
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.Count
     commentId: P:Alis.Core.Physic.Dynamics.FixtureCollection.Count
@@ -124,7 +124,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int32
 - api3: IsReadOnly
   id: Alis_Core_Physic_Dynamics_FixtureCollection_IsReadOnly
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L261
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L71
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.IsReadOnly
     commentId: P:Alis.Core.Physic.Dynamics.FixtureCollection.IsReadOnly
@@ -137,7 +137,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: this[int]
   id: Alis_Core_Physic_Dynamics_FixtureCollection_Item_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L219
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L139
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.Item(System.Int32)
     commentId: P:Alis.Core.Physic.Dynamics.FixtureCollection.Item(System.Int32)
@@ -151,7 +151,7 @@ body:
 - h2: Methods
 - api3: Contains(Fixture)
   id: Alis_Core_Physic_Dynamics_FixtureCollection_Contains_Alis_Core_Physic_Dynamics_Fixture_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L299
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L109
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.Contains(Alis.Core.Physic.Dynamics.Fixture)
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.Contains(Alis.Core.Physic.Dynamics.Fixture)
@@ -172,7 +172,7 @@ body:
     description: The bool
 - api3: CopyTo(Fixture[], int)
   id: Alis_Core_Physic_Dynamics_FixtureCollection_CopyTo_Alis_Core_Physic_Dynamics_Fixture___System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L306
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L116
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.CopyTo(Alis.Core.Physic.Dynamics.Fixture[],System.Int32)
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.CopyTo(Alis.Core.Physic.Dynamics.Fixture[],System.Int32)
@@ -194,7 +194,7 @@ body:
     description: The array index
 - api3: GetEnumerator()
   id: Alis_Core_Physic_Dynamics_FixtureCollection_GetEnumerator
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L92
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L178
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.GetEnumerator
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.GetEnumerator
@@ -211,7 +211,7 @@ body:
     description: The fixture enumerator
 - api3: IndexOf(Fixture)
   id: Alis_Core_Physic_Dynamics_FixtureCollection_IndexOf_Alis_Core_Physic_Dynamics_Fixture_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L230
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L150
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.IndexOf(Alis.Core.Physic.Dynamics.Fixture)
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.IndexOf(Alis.Core.Physic.Dynamics.Fixture)
@@ -232,7 +232,7 @@ body:
     description: The int
 - api3: ICollection<Fixture>.Add(Fixture)
   id: Alis_Core_Physic_Dynamics_FixtureCollection_System_Collections_Generic_ICollection_Alis_Core_Physic_Dynamics_Fixture__Add_Alis_Core_Physic_Dynamics_Fixture_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L273
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L83
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Fixture}#Add(Alis.Core.Physic.Dynamics.Fixture)
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Fixture}#Add(Alis.Core.Physic.Dynamics.Fixture)
@@ -253,7 +253,7 @@ body:
     description: ''
 - api3: ICollection<Fixture>.Clear()
   id: Alis_Core_Physic_Dynamics_FixtureCollection_System_Collections_Generic_ICollection_Alis_Core_Physic_Dynamics_Fixture__Clear
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L289
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L99
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Fixture}#Clear
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Fixture}#Clear
@@ -267,7 +267,7 @@ body:
     description: ''
 - api3: ICollection<Fixture>.Remove(Fixture)
   id: Alis_Core_Physic_Dynamics_FixtureCollection_System_Collections_Generic_ICollection_Alis_Core_Physic_Dynamics_Fixture__Remove_Alis_Core_Physic_Dynamics_Fixture_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L283
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L93
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Fixture}#Remove(Alis.Core.Physic.Dynamics.Fixture)
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Fixture}#Remove(Alis.Core.Physic.Dynamics.Fixture)
@@ -288,7 +288,7 @@ body:
     description: The bool
 - api3: IEnumerable<Fixture>.GetEnumerator()
   id: Alis_Core_Physic_Dynamics_FixtureCollection_System_Collections_Generic_IEnumerable_Alis_Core_Physic_Dynamics_Fixture__GetEnumerator
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L73
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L126
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#IEnumerable{Alis#Core#Physic#Dynamics#Fixture}#GetEnumerator
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#IEnumerable{Alis#Core#Physic#Dynamics#Fixture}#GetEnumerator
@@ -306,7 +306,7 @@ body:
     description: An enumerator of fixture
 - api3: IList<Fixture>.Insert(int, Fixture)
   id: Alis_Core_Physic_Dynamics_FixtureCollection_System_Collections_Generic_IList_Alis_Core_Physic_Dynamics_Fixture__Insert_System_Int32_Alis_Core_Physic_Dynamics_Fixture_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L238
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L158
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Fixture}#Insert(System.Int32,Alis.Core.Physic.Dynamics.Fixture)
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Fixture}#Insert(System.Int32,Alis.Core.Physic.Dynamics.Fixture)
@@ -332,7 +332,7 @@ body:
     description: ''
 - api3: IList<Fixture>.RemoveAt(int)
   id: Alis_Core_Physic_Dynamics_FixtureCollection_System_Collections_Generic_IList_Alis_Core_Physic_Dynamics_Fixture__RemoveAt_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L248
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L168
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Fixture}#RemoveAt(System.Int32)
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Fixture}#RemoveAt(System.Int32)
@@ -353,7 +353,7 @@ body:
     description: ''
 - api3: IEnumerable.GetEnumerator()
   id: Alis_Core_Physic_Dynamics_FixtureCollection_System_Collections_IEnumerable_GetEnumerator
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L84
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureCollection.cs#L133
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#IEnumerable#GetEnumerator
     commentId: M:Alis.Core.Physic.Dynamics.FixtureCollection.System#Collections#IEnumerable#GetEnumerator

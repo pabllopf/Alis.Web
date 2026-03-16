@@ -1,0 +1,37 @@
+### YamlMime:ApiPage
+title: Interface IOnReleaseKey
+body:
+- api1: Interface IOnReleaseKey
+  id: Alis_Core_Aspect_Fluent_Components_IOnReleaseKey
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnReleaseKey.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnReleaseKey
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnReleaseKey
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Interfaz para gestionar el evento de soltar una tecla
+- code: public interface IOnReleaseKey
+- h2: Methods
+- api3: OnReleaseKey(KeyEventInfo)
+  id: Alis_Core_Aspect_Fluent_Components_IOnReleaseKey_OnReleaseKey_Alis_Core_Aspect_Fluent_KeyEventInfo_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnReleaseKey.cs#L41
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnReleaseKey.OnReleaseKey(Alis.Core.Aspect.Fluent.KeyEventInfo)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnReleaseKey.OnReleaseKey(Alis.Core.Aspect.Fluent.KeyEventInfo)
+- markdown: Ons the release key using the specified info
+- code: void OnReleaseKey(KeyEventInfo info)
+- h4: Parameters
+- parameters:
+  - name: info
+    type:
+    - text: KeyEventInfo
+      url: Alis.Core.Aspect.Fluent.KeyEventInfo.html
+    description: The info
+languageId: csharp
+metadata:
+  description: Interfaz para gestionar el evento de soltar una tecla

@@ -1,0 +1,600 @@
+### YamlMime:ApiPage
+title: Class QueryIterationExtensions
+body:
+- api1: Class QueryIterationExtensions
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions
+    commentId: T:Alis.Core.Ecs.Systems.QueryIterationExtensions
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The query iteration extensions class
+- code: public static class QueryIterationExtensions
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: QueryIterationExtensions
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: Delegate<T>(Query, Query<T>)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__1_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L46
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``1(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0})
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``1(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0})
+- markdown: Executes a delegate for every gameObject in a query, using the specified component types.
+- code: public static void Delegate<T>(this Query query, QueryDelegates.Query<T> action)
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - text: QueryDelegates
+      url: Alis.Core.Ecs.Systems.QueryDelegates.html
+    - .
+    - text: Query
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-1.html
+    - <
+    - T
+    - '>'
+    description: The behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: T
+- api3: Delegate<T1, T2>(Query, Query<T1, T2>)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__2_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L90
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``2(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1})
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``2(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1})
+- markdown: Executes a delegate for every gameObject in a query, using the specified component types.
+- code: public static void Delegate<T1, T2>(this Query query, QueryDelegates.Query<T1, T2> action)
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - text: QueryDelegates
+      url: Alis.Core.Ecs.Systems.QueryDelegates.html
+    - .
+    - text: Query
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-2.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - '>'
+    description: The behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+- api3: Delegate<T1, T2, T3>(Query, Query<T1, T2, T3>)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__3_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L140
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``3(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2})
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``3(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2})
+- markdown: Executes a delegate for every gameObject in a query, using the specified component types.
+- code: public static void Delegate<T1, T2, T3>(this Query query, QueryDelegates.Query<T1, T2, T3> action)
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - text: QueryDelegates
+      url: Alis.Core.Ecs.Systems.QueryDelegates.html
+    - .
+    - text: Query
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-3.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - '>'
+    description: The behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+- api3: Delegate<T1, T2, T3, T4>(Query, Query<T1, T2, T3, T4>)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__4_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2___3__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L194
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``4(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2,``3})
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``4(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2,``3})
+- markdown: Executes a delegate for every gameObject in a query, using the specified component types.
+- code: public static void Delegate<T1, T2, T3, T4>(this Query query, QueryDelegates.Query<T1, T2, T3, T4> action)
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - text: QueryDelegates
+      url: Alis.Core.Ecs.Systems.QueryDelegates.html
+    - .
+    - text: Query
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-4.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - '>'
+    description: The behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+- api3: Delegate<T1, T2, T3, T4, T5>(Query, Query<T1, T2, T3, T4, T5>)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__5_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2___3___4__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L252
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``5(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2,``3,``4})
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``5(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2,``3,``4})
+- markdown: Executes a delegate for every gameObject in a query, using the specified component types.
+- code: public static void Delegate<T1, T2, T3, T4, T5>(this Query query, QueryDelegates.Query<T1, T2, T3, T4, T5> action)
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - text: QueryDelegates
+      url: Alis.Core.Ecs.Systems.QueryDelegates.html
+    - .
+    - text: Query
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-5.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - '>'
+    description: The behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+- api3: Delegate<T1, T2, T3, T4, T5, T6>(Query, Query<T1, T2, T3, T4, T5, T6>)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__6_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2___3___4___5__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L314
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``6(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2,``3,``4,``5})
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``6(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2,``3,``4,``5})
+- markdown: Executes a delegate for every gameObject in a query, using the specified component types.
+- code: public static void Delegate<T1, T2, T3, T4, T5, T6>(this Query query, QueryDelegates.Query<T1, T2, T3, T4, T5, T6> action)
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - text: QueryDelegates
+      url: Alis.Core.Ecs.Systems.QueryDelegates.html
+    - .
+    - text: Query
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-6.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - '>'
+    description: The behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+- api3: Delegate<T1, T2, T3, T4, T5, T6, T7>(Query, Query<T1, T2, T3, T4, T5, T6, T7>)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__7_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2___3___4___5___6__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L380
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``7(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2,``3,``4,``5,``6})
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``7(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2,``3,``4,``5,``6})
+- markdown: Executes a delegate for every gameObject in a query, using the specified component types.
+- code: public static void Delegate<T1, T2, T3, T4, T5, T6, T7>(this Query query, QueryDelegates.Query<T1, T2, T3, T4, T5, T6, T7> action)
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - text: QueryDelegates
+      url: Alis.Core.Ecs.Systems.QueryDelegates.html
+    - .
+    - text: Query
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-7.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - ','
+    - " "
+    - T7
+    - '>'
+    description: The behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+- api3: Delegate<T1, T2, T3, T4, T5, T6, T7, T8>(Query, Query<T1, T2, T3, T4, T5, T6, T7, T8>)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__8_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2___3___4___5___6___7__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L450
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``8(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2,``3,``4,``5,``6,``7})
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Delegate``8(Alis.Core.Ecs.Systems.Query,Alis.Core.Ecs.Systems.QueryDelegates.Query{``0,``1,``2,``3,``4,``5,``6,``7})
+- markdown: Executes a delegate for every gameObject in a query, using the specified component types.
+- code: public static void Delegate<T1, T2, T3, T4, T5, T6, T7, T8>(this Query query, QueryDelegates.Query<T1, T2, T3, T4, T5, T6, T7, T8> action)
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - text: QueryDelegates
+      url: Alis.Core.Ecs.Systems.QueryDelegates.html
+    - .
+    - text: Query
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-8.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - ','
+    - " "
+    - T7
+    - ','
+    - " "
+    - T8
+    - '>'
+    description: The behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+  - name: T8
+- api3: Inline<TAction, T>(Query, TAction)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__2_Alis_Core_Ecs_Systems_Query___0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L68
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``2(Alis.Core.Ecs.Systems.Query,``0)
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``2(Alis.Core.Ecs.Systems.Query,``0)
+- markdown: Executes a inlinable struct instance method for every gameObject in a query, using the specified component types.
+- code: 'public static void Inline<TAction, T>(this Query query, TAction action) where TAction : IAction<T>'
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - TAction
+    description: The struct behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: TAction
+  - name: T
+- api3: Inline<TAction, T1, T2>(Query, TAction)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__3_Alis_Core_Ecs_Systems_Query___0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L115
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``3(Alis.Core.Ecs.Systems.Query,``0)
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``3(Alis.Core.Ecs.Systems.Query,``0)
+- markdown: Executes a inlinable struct instance method for every gameObject in a query, using the specified component types.
+- code: 'public static void Inline<TAction, T1, T2>(this Query query, TAction action) where TAction : IAction<T1, T2>'
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - TAction
+    description: The struct behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: TAction
+  - name: T1
+  - name: T2
+- api3: Inline<TAction, T1, T2, T3>(Query, TAction)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__4_Alis_Core_Ecs_Systems_Query___0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L167
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``4(Alis.Core.Ecs.Systems.Query,``0)
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``4(Alis.Core.Ecs.Systems.Query,``0)
+- markdown: Executes a inlinable struct instance method for every gameObject in a query, using the specified component types.
+- code: 'public static void Inline<TAction, T1, T2, T3>(this Query query, TAction action) where TAction : IAction<T1, T2, T3>'
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - TAction
+    description: The struct behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: TAction
+  - name: T1
+  - name: T2
+  - name: T3
+- api3: Inline<TAction, T1, T2, T3, T4>(Query, TAction)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__5_Alis_Core_Ecs_Systems_Query___0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L223
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``5(Alis.Core.Ecs.Systems.Query,``0)
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``5(Alis.Core.Ecs.Systems.Query,``0)
+- markdown: Executes a inlinable struct instance method for every gameObject in a query, using the specified component types.
+- code: 'public static void Inline<TAction, T1, T2, T3, T4>(this Query query, TAction action) where TAction : IAction<T1, T2, T3, T4>'
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - TAction
+    description: The struct behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: TAction
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+- api3: Inline<TAction, T1, T2, T3, T4, T5>(Query, TAction)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__6_Alis_Core_Ecs_Systems_Query___0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L283
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``6(Alis.Core.Ecs.Systems.Query,``0)
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``6(Alis.Core.Ecs.Systems.Query,``0)
+- markdown: Executes a inlinable struct instance method for every gameObject in a query, using the specified component types.
+- code: 'public static void Inline<TAction, T1, T2, T3, T4, T5>(this Query query, TAction action) where TAction : IAction<T1, T2, T3, T4, T5>'
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - TAction
+    description: The struct behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: TAction
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+- api3: Inline<TAction, T1, T2, T3, T4, T5, T6>(Query, TAction)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__7_Alis_Core_Ecs_Systems_Query___0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L347
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``7(Alis.Core.Ecs.Systems.Query,``0)
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``7(Alis.Core.Ecs.Systems.Query,``0)
+- markdown: Executes a inlinable struct instance method for every gameObject in a query, using the specified component types.
+- code: 'public static void Inline<TAction, T1, T2, T3, T4, T5, T6>(this Query query, TAction action) where TAction : IAction<T1, T2, T3, T4, T5, T6>'
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - TAction
+    description: The struct behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: TAction
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+- api3: Inline<TAction, T1, T2, T3, T4, T5, T6, T7>(Query, TAction)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__8_Alis_Core_Ecs_Systems_Query___0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L415
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``8(Alis.Core.Ecs.Systems.Query,``0)
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``8(Alis.Core.Ecs.Systems.Query,``0)
+- markdown: Executes a inlinable struct instance method for every gameObject in a query, using the specified component types.
+- code: 'public static void Inline<TAction, T1, T2, T3, T4, T5, T6, T7>(this Query query, TAction action) where TAction : IAction<T1, T2, T3, T4, T5, T6, T7>'
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - TAction
+    description: The struct behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: TAction
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+- api3: Inline<TAction, T1, T2, T3, T4, T5, T6, T7, T8>(Query, TAction)
+  id: Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__9_Alis_Core_Ecs_Systems_Query___0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryIterationExtensions.cs#L487
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``9(Alis.Core.Ecs.Systems.Query,``0)
+    commentId: M:Alis.Core.Ecs.Systems.QueryIterationExtensions.Inline``9(Alis.Core.Ecs.Systems.Query,``0)
+- markdown: Executes a inlinable struct instance method for every gameObject in a query, using the specified component types.
+- code: 'public static void Inline<TAction, T1, T2, T3, T4, T5, T6, T7, T8>(this Query query, TAction action) where TAction : IAction<T1, T2, T3, T4, T5, T6, T7, T8>'
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query to iterate over.
+  - name: action
+    type:
+    - TAction
+    description: The struct behavior to execute on every component set.
+- h4: Type Parameters
+- parameters:
+  - name: TAction
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+  - name: T8
+languageId: csharp
+metadata:
+  description: The query iteration extensions class

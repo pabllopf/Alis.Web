@@ -33,7 +33,7 @@ body:
 - h2: Constructors
 - api3: Quaternion(float, float, float, float)
   id: Alis_Core_Aspect_Math_Util_Quaternion__ctor_System_Single_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L66
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L67
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
@@ -64,7 +64,7 @@ body:
 - h2: Fields
 - api3: Count
   id: Alis_Core_Aspect_Math_Util_Quaternion_Count
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L59
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L60
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.Count
     commentId: F:Alis.Core.Aspect.Math.Util.Quaternion.Count
@@ -77,7 +77,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int32
 - api3: hashCode
   id: Alis_Core_Aspect_Math_Util_Quaternion_hashCode
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L42
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L43
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.hashCode
     commentId: F:Alis.Core.Aspect.Math.Util.Quaternion.hashCode
@@ -91,7 +91,7 @@ body:
 - h2: Properties
 - api3: W
   id: Alis_Core_Aspect_Math_Util_Quaternion_W
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L54
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L55
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.W
     commentId: P:Alis.Core.Aspect.Math.Util.Quaternion.W
@@ -104,7 +104,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: X
   id: Alis_Core_Aspect_Math_Util_Quaternion_X
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L45
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L46
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.X
     commentId: P:Alis.Core.Aspect.Math.Util.Quaternion.X
@@ -117,7 +117,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Y
   id: Alis_Core_Aspect_Math_Util_Quaternion_Y
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L48
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L49
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.Y
     commentId: P:Alis.Core.Aspect.Math.Util.Quaternion.Y
@@ -130,7 +130,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Z
   id: Alis_Core_Aspect_Math_Util_Quaternion_Z
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L51
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L52
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.Z
     commentId: P:Alis.Core.Aspect.Math.Util.Quaternion.Z
@@ -143,7 +143,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Zero
   id: Alis_Core_Aspect_Math_Util_Quaternion_Zero
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L84
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L85
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.Zero
     commentId: P:Alis.Core.Aspect.Math.Util.Quaternion.Zero
@@ -157,7 +157,7 @@ body:
 - h2: Methods
 - api3: Equals(object)
   id: Alis_Core_Aspect_Math_Util_Quaternion_Equals_System_Object_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L280
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L281
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.Equals(System.Object)
     commentId: M:Alis.Core.Aspect.Math.Util.Quaternion.Equals(System.Object)
@@ -177,8 +177,10 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: >-
       <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current instance and <code class="paramref">obj</code> are equal; otherwise,
-          <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. If <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the method returns
-          <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. If <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the method returns
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - h4: Remarks
 - markdown: >-
     The current instance and <code class="paramref">obj</code> are equal if <code class="paramref">obj</code> is a
@@ -186,7 +188,7 @@ body:
     <xref href="Alis.Core.Aspect.Math.Util.Quaternion" data-throw-if-not-resolved="false"></xref> object and the corresponding components of each matrix are equal.
 - api3: Equals(Quaternion)
   id: Alis_Core_Aspect_Math_Util_Quaternion_Equals_Alis_Core_Aspect_Math_Util_Quaternion_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L286
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L287
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.Equals(Alis.Core.Aspect.Math.Util.Quaternion)
     commentId: M:Alis.Core.Aspect.Math.Util.Quaternion.Equals(Alis.Core.Aspect.Math.Util.Quaternion)
@@ -243,7 +245,7 @@ body:
 - h2: Operators
 - api3: operator +(Quaternion, Quaternion)
   id: Alis_Core_Aspect_Math_Util_Quaternion_op_Addition_Alis_Core_Aspect_Math_Util_Quaternion_Alis_Core_Aspect_Math_Util_Quaternion_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L94
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L95
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.op_Addition(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
     commentId: M:Alis.Core.Aspect.Math.Util.Quaternion.op_Addition(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
@@ -274,7 +276,7 @@ body:
     <xref href="Alis.Core.Aspect.Math.Util.Quaternion" data-throw-if-not-resolved="false"></xref> objects.
 - api3: operator /(Quaternion, Quaternion)
   id: Alis_Core_Aspect_Math_Util_Quaternion_op_Division_Alis_Core_Aspect_Math_Util_Quaternion_Alis_Core_Aspect_Math_Util_Quaternion_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L114
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L115
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.op_Division(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
     commentId: M:Alis.Core.Aspect.Math.Util.Quaternion.op_Division(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
@@ -305,7 +307,7 @@ body:
     objects.
 - api3: operator ==(Quaternion, Quaternion)
   id: Alis_Core_Aspect_Math_Util_Quaternion_op_Equality_Alis_Core_Aspect_Math_Util_Quaternion_Alis_Core_Aspect_Math_Util_Quaternion_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L161
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L162
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.op_Equality(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
     commentId: M:Alis.Core.Aspect.Math.Util.Quaternion.op_Equality(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
@@ -338,7 +340,7 @@ body:
     <xref href="Alis.Core.Aspect.Math.Util.Quaternion" data-throw-if-not-resolved="false"></xref> objects.
 - api3: operator !=(Quaternion, Quaternion)
   id: Alis_Core_Aspect_Math_Util_Quaternion_op_Inequality_Alis_Core_Aspect_Math_Util_Quaternion_Alis_Core_Aspect_Math_Util_Quaternion_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L173
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L174
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.op_Inequality(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
     commentId: M:Alis.Core.Aspect.Math.Util.Quaternion.op_Inequality(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
@@ -363,10 +365,11 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: >-
       <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value1</code> and <code class="paramref">value2</code> are not equal; otherwise,
-          <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: operator *(Quaternion, Quaternion)
   id: Alis_Core_Aspect_Math_Util_Quaternion_op_Multiply_Alis_Core_Aspect_Math_Util_Quaternion_Alis_Core_Aspect_Math_Util_Quaternion_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L179
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L180
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.op_Multiply(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
     commentId: M:Alis.Core.Aspect.Math.Util.Quaternion.op_Multiply(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
@@ -392,7 +395,7 @@ body:
     description: The product quaternion.
 - api3: operator *(Quaternion, float)
   id: Alis_Core_Aspect_Math_Util_Quaternion_op_Multiply_Alis_Core_Aspect_Math_Util_Quaternion_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L215
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L216
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.op_Multiply(Alis.Core.Aspect.Math.Util.Quaternion,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Quaternion.op_Multiply(Alis.Core.Aspect.Math.Util.Quaternion,System.Single)
@@ -421,7 +424,7 @@ body:
     description: The scaled quaternion.
 - api3: operator -(Quaternion, Quaternion)
   id: Alis_Core_Aspect_Math_Util_Quaternion_op_Subtraction_Alis_Core_Aspect_Math_Util_Quaternion_Alis_Core_Aspect_Math_Util_Quaternion_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L238
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L239
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.op_Subtraction(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
     commentId: M:Alis.Core.Aspect.Math.Util.Quaternion.op_Subtraction(Alis.Core.Aspect.Math.Util.Quaternion,Alis.Core.Aspect.Math.Util.Quaternion)
@@ -455,7 +458,7 @@ body:
     <xref href="Alis.Core.Aspect.Math.Util.Quaternion" data-throw-if-not-resolved="false"></xref> objects.
 - api3: operator -(Quaternion)
   id: Alis_Core_Aspect_Math_Util_Quaternion_op_UnaryNegation_Alis_Core_Aspect_Math_Util_Quaternion_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L257
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Quaternion.cs#L258
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Quaternion.op_UnaryNegation(Alis.Core.Aspect.Math.Util.Quaternion)
     commentId: M:Alis.Core.Aspect.Math.Util.Quaternion.op_UnaryNegation(Alis.Core.Aspect.Math.Util.Quaternion)

@@ -1,0 +1,91 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Updating.Runners
+body:
+- api1: Namespace Alis.Core.Ecs.Updating.Runners
+  id: Alis_Core_Ecs_Updating_Runners
+  metadata:
+    uid: Alis.Core.Ecs.Updating.Runners
+    commentId: N:Alis.Core.Ecs.Updating.Runners
+- h3: Classes
+- parameters:
+  - type:
+      text: GameObjectUpdate<TComp, TArg>
+      url: Alis.Core.Ecs.Updating.Runners.GameObjectUpdate-2.html
+    description: The gameObject update class
+  - type:
+      text: NoneUpdate<TComp>
+      url: Alis.Core.Ecs.Updating.Runners.NoneUpdate-1.html
+    description: The none update class
+  - type:
+      text: NoneUpdateRunnerFactory<T>
+      url: Alis.Core.Ecs.Updating.Runners.NoneUpdateRunnerFactory-1.html
+    description: The none update runner factory class
+  - type:
+      text: Update<TComp, TArg1, TArg2>
+      url: Alis.Core.Ecs.Updating.Runners.Update-3.html
+    description: The gameObject update class
+  - type:
+      text: Update<TComp, TArg1, TArg2, TArg3, TArg4>
+      url: Alis.Core.Ecs.Updating.Runners.Update-5.html
+    description: The update class
+  - type:
+      text: Update<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+      url: Alis.Core.Ecs.Updating.Runners.Update-9.html
+    description: The update class
+  - type:
+      text: Update<TComp, TArg1, TArg2, TArg3>
+      url: Alis.Core.Ecs.Updating.Runners.Update-4.html
+    description: The update class
+  - type:
+      text: Update<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+      url: Alis.Core.Ecs.Updating.Runners.Update-7.html
+    description: The update class
+  - type:
+      text: Update<TComp>
+      url: Alis.Core.Ecs.Updating.Runners.Update-1.html
+    description: The gameObject update class
+  - type:
+      text: Update<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+      url: Alis.Core.Ecs.Updating.Runners.Update-8.html
+    description: The update class
+  - type:
+      text: UpdateLoop
+      url: Alis.Core.Ecs.Updating.Runners.UpdateLoop.html
+    description: The update loop class
+  - type:
+      text: UpdateRunnerFactory<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+      url: Alis.Core.Ecs.Updating.Runners.UpdateRunnerFactory-8.html
+    description: The update runner factory class
+  - type:
+      text: UpdateRunnerFactory<TComp, TArg1, TArg2, TArg3, TArg4, TArg5>
+      url: Alis.Core.Ecs.Updating.Runners.UpdateRunnerFactory-6.html
+    description: The update runner factory class
+  - type:
+      text: UpdateRunnerFactory<TComp, TArg1, TArg2, TArg3, TArg4>
+      url: Alis.Core.Ecs.Updating.Runners.UpdateRunnerFactory-5.html
+    description: The update runner factory class
+  - type:
+      text: UpdateRunnerFactory<TComp, TArg1, TArg2, TArg3>
+      url: Alis.Core.Ecs.Updating.Runners.UpdateRunnerFactory-4.html
+    description: The gameObject update runner factory class
+  - type:
+      text: UpdateRunnerFactory<TComp, TArg1, TArg2>
+      url: Alis.Core.Ecs.Updating.Runners.UpdateRunnerFactory-3.html
+    description: The update runner factory class
+  - type:
+      text: UpdateRunnerFactory<TComp, TArg>
+      url: Alis.Core.Ecs.Updating.Runners.UpdateRunnerFactory-2.html
+    description: The update runner factory class
+  - type:
+      text: UpdateRunnerFactory<TComp>
+      url: Alis.Core.Ecs.Updating.Runners.UpdateRunnerFactory-1.html
+    description: The update runner factory class
+  - type:
+      text: UpdateRunnerFactory<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+      url: Alis.Core.Ecs.Updating.Runners.UpdateRunnerFactory-9.html
+    description: The update runner factory class
+  - type:
+      text: UpdateRunnerFactory<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+      url: Alis.Core.Ecs.Updating.Runners.UpdateRunnerFactory-7.html
+    description: The update runner factory class
+languageId: csharp

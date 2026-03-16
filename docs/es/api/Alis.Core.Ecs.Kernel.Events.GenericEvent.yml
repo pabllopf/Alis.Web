@@ -1,0 +1,228 @@
+### YamlMime:ApiPage
+title: Class GenericEvent
+body:
+- api1: Class GenericEvent
+  id: Alis_Core_Ecs_Kernel_Events_GenericEvent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/GenericEvent.cs#L37
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.GenericEvent
+    commentId: T:Alis.Core.Ecs.Kernel.Events.GenericEvent
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Events
+      url: Alis.Core.Ecs.Kernel.Events.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: A collection of <xref href="Alis.Core.Ecs.Kernel.Events.IGenericAction%601" data-throw-if-not-resolved="false"></xref> instances which can be added to or removed from.
+- code: public class GenericEvent
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: GenericEvent
+    url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: GenericEvent()
+  id: Alis_Core_Ecs_Kernel_Events_GenericEvent__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/GenericEvent.cs#L52
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.GenericEvent.#ctor
+    commentId: M:Alis.Core.Ecs.Kernel.Events.GenericEvent.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Kernel.Events.GenericEvent" data-throw-if-not-resolved="false"></xref> class
+- code: internal GenericEvent()
+- h2: Fields
+- api3: _first
+  id: Alis_Core_Ecs_Kernel_Events_GenericEvent__first
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/GenericEvent.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.GenericEvent._first
+    commentId: F:Alis.Core.Ecs.Kernel.Events.GenericEvent._first
+- markdown: The first
+- code: private IGenericAction<GameObject> _first
+- h4: Field Value
+- parameters:
+  - type:
+    - text: IGenericAction
+      url: Alis.Core.Ecs.Kernel.Events.IGenericAction-1.html
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - '>'
+- api3: _invokationList
+  id: Alis_Core_Ecs_Kernel_Events_GenericEvent__invokationList
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/GenericEvent.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.GenericEvent._invokationList
+    commentId: F:Alis.Core.Ecs.Kernel.Events.GenericEvent._invokationList
+- markdown: The gameObject
+- code: private FrugalStack<IGenericAction<GameObject>> _invokationList
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FrugalStack
+      url: Alis.Core.Ecs.Collections.FrugalStack-1.html
+    - <
+    - text: IGenericAction
+      url: Alis.Core.Ecs.Kernel.Events.IGenericAction-1.html
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - '>'
+    - '>'
+- h2: Properties
+- api3: HasListeners
+  id: Alis_Core_Ecs_Kernel_Events_GenericEvent_HasListeners
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/GenericEvent.cs#L59
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.GenericEvent.HasListeners
+    commentId: P:Alis.Core.Ecs.Kernel.Events.GenericEvent.HasListeners
+- markdown: Gets the value of the has listeners
+- code: internal bool HasListeners { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h2: Methods
+- api3: Add(IGenericAction<GameObject>)
+  id: Alis_Core_Ecs_Kernel_Events_GenericEvent_Add_Alis_Core_Ecs_Kernel_Events_IGenericAction_Alis_Core_Ecs_GameObject__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/GenericEvent.cs#L65
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.GenericEvent.Add(Alis.Core.Ecs.Kernel.Events.IGenericAction{Alis.Core.Ecs.GameObject})
+    commentId: M:Alis.Core.Ecs.Kernel.Events.GenericEvent.Add(Alis.Core.Ecs.Kernel.Events.IGenericAction{Alis.Core.Ecs.GameObject})
+- markdown: Adds the action
+- code: internal void Add(IGenericAction<GameObject> action)
+- h4: Parameters
+- parameters:
+  - name: action
+    type:
+    - text: IGenericAction
+      url: Alis.Core.Ecs.Kernel.Events.IGenericAction-1.html
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - '>'
+    description: The action
+- api3: Invoke<T>(GameObject, ref T)
+  id: Alis_Core_Ecs_Kernel_Events_GenericEvent_Invoke__1_Alis_Core_Ecs_GameObject___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/GenericEvent.cs#L103
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.GenericEvent.Invoke``1(Alis.Core.Ecs.GameObject,``0@)
+    commentId: M:Alis.Core.Ecs.Kernel.Events.GenericEvent.Invoke``1(Alis.Core.Ecs.GameObject,``0@)
+- markdown: Invokes the gameObject
+- code: internal void Invoke<T>(GameObject gameObject, ref T arg)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: arg
+    type:
+    - T
+    description: The arg
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: Remove(IGenericAction<GameObject>)
+  id: Alis_Core_Ecs_Kernel_Events_GenericEvent_Remove_Alis_Core_Ecs_Kernel_Events_IGenericAction_Alis_Core_Ecs_GameObject__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/GenericEvent.cs#L81
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.GenericEvent.Remove(Alis.Core.Ecs.Kernel.Events.IGenericAction{Alis.Core.Ecs.GameObject})
+    commentId: M:Alis.Core.Ecs.Kernel.Events.GenericEvent.Remove(Alis.Core.Ecs.Kernel.Events.IGenericAction{Alis.Core.Ecs.GameObject})
+- markdown: Removes the action
+- code: internal void Remove(IGenericAction<GameObject> action)
+- h4: Parameters
+- parameters:
+  - name: action
+    type:
+    - text: IGenericAction
+      url: Alis.Core.Ecs.Kernel.Events.IGenericAction-1.html
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - '>'
+    description: The action
+- h2: Operators
+- api3: operator +(GenericEvent, IGenericAction<GameObject>)
+  id: Alis_Core_Ecs_Kernel_Events_GenericEvent_op_Addition_Alis_Core_Ecs_Kernel_Events_GenericEvent_Alis_Core_Ecs_Kernel_Events_IGenericAction_Alis_Core_Ecs_GameObject__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/GenericEvent.cs#L124
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.GenericEvent.op_Addition(Alis.Core.Ecs.Kernel.Events.GenericEvent,Alis.Core.Ecs.Kernel.Events.IGenericAction{Alis.Core.Ecs.GameObject})
+    commentId: M:Alis.Core.Ecs.Kernel.Events.GenericEvent.op_Addition(Alis.Core.Ecs.Kernel.Events.GenericEvent,Alis.Core.Ecs.Kernel.Events.IGenericAction{Alis.Core.Ecs.GameObject})
+- markdown: Adds an <xref href="Alis.Core.Ecs.Kernel.Events.IGenericAction%601" data-throw-if-not-resolved="false"></xref> to this event instance
+- code: public static GenericEvent operator +(GenericEvent left, IGenericAction<GameObject> right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: GenericEvent
+      url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+    description: The event collection to add to.
+  - name: right
+    type:
+    - text: IGenericAction
+      url: Alis.Core.Ecs.Kernel.Events.IGenericAction-1.html
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - '>'
+    description: The event to add
+- h4: Returns
+- parameters:
+  - type:
+    - text: GenericEvent
+      url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+    description: The event itself. When <code class="paramref">left</code> is null, the return value is also null.
+- api3: operator -(GenericEvent, IGenericAction<GameObject>)
+  id: Alis_Core_Ecs_Kernel_Events_GenericEvent_op_Subtraction_Alis_Core_Ecs_Kernel_Events_GenericEvent_Alis_Core_Ecs_Kernel_Events_IGenericAction_Alis_Core_Ecs_GameObject__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/GenericEvent.cs#L149
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.GenericEvent.op_Subtraction(Alis.Core.Ecs.Kernel.Events.GenericEvent,Alis.Core.Ecs.Kernel.Events.IGenericAction{Alis.Core.Ecs.GameObject})
+    commentId: M:Alis.Core.Ecs.Kernel.Events.GenericEvent.op_Subtraction(Alis.Core.Ecs.Kernel.Events.GenericEvent,Alis.Core.Ecs.Kernel.Events.IGenericAction{Alis.Core.Ecs.GameObject})
+- markdown: Unsubscribes an <xref href="Alis.Core.Ecs.Kernel.Events.IGenericAction%601" data-throw-if-not-resolved="false"></xref> to this event instance
+- code: public static GenericEvent operator -(GenericEvent left, IGenericAction<GameObject> right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: GenericEvent
+      url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+    description: The event collection to unsubscribe from.
+  - name: right
+    type:
+    - text: IGenericAction
+      url: Alis.Core.Ecs.Kernel.Events.IGenericAction-1.html
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - '>'
+    description: The event to unsubscribe
+- h4: Returns
+- parameters:
+  - type:
+    - text: GenericEvent
+      url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+    description: The event itself. When <code class="paramref">left</code> is null, the return value is also null.
+languageId: csharp
+metadata:
+  description: A collection of  instances which can be added to or removed from.

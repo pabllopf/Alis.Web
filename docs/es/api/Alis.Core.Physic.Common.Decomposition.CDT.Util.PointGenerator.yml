@@ -3,7 +3,7 @@ title: Class PointGenerator
 body:
 - api1: Class PointGenerator
   id: Alis_Core_Physic_Common_Decomposition_CDT_Util_PointGenerator
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PointGenerator.cs#L38
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PointGenerator.cs#L39
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.PointGenerator
     commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.Util.PointGenerator
@@ -39,23 +39,23 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Fields
-- api3: RNG
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_PointGenerator_RNG
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PointGenerator.cs#L43
+- api3: Rng
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Util_PointGenerator_Rng
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PointGenerator.cs#L44
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.PointGenerator.RNG
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Util.PointGenerator.RNG
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.PointGenerator.Rng
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Util.PointGenerator.Rng
 - markdown: The random
-- code: private static readonly Random RNG
+- code: private static readonly RandomNumberGenerator Rng
 - h4: Field Value
 - parameters:
   - type:
-    - text: Random
-      url: https://learn.microsoft.com/dotnet/api/system.random
+    - text: RandomNumberGenerator
+      url: https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator
 - h2: Methods
 - api3: UniformDistribution(int, double)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Util_PointGenerator_UniformDistribution_System_Int32_System_Double_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PointGenerator.cs#L51
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PointGenerator.cs#L52
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.PointGenerator.UniformDistribution(System.Int32,System.Double)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Util.PointGenerator.UniformDistribution(System.Int32,System.Double)
@@ -85,7 +85,7 @@ body:
     description: The points
 - api3: UniformGrid(int, double)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Util_PointGenerator_UniformGrid_System_Int32_System_Double_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PointGenerator.cs#L68
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Util/PointGenerator.cs#L81
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Util.PointGenerator.UniformGrid(System.Int32,System.Double)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Util.PointGenerator.UniformGrid(System.Int32,System.Double)

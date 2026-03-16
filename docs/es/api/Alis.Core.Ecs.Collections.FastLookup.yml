@@ -1,0 +1,233 @@
+### YamlMime:ApiPage
+title: Struct FastLookup
+body:
+- api1: Struct FastLookup
+  id: Alis_Core_Ecs_Collections_FastLookup
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastLookup.cs#L45
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastLookup
+    commentId: T:Alis.Core.Ecs.Collections.FastLookup
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Collections
+      url: Alis.Core.Ecs.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The fast lookup
+- code: public struct FastLookup
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: Archetype array reference (8 bytes) -&gt; InlineArray8 structs (32 bytes + 16 bytes) -&gt; int (4 bytes)
+
+    Total: 60 bytes
+
+    Pack = 8 for optimal alignment with reference types and large inline arrays
+- h2: Constructors
+- api3: FastLookup()
+  id: Alis_Core_Ecs_Collections_FastLookup__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastLookup.cs#L45
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastLookup.#ctor
+    commentId: M:Alis.Core.Ecs.Collections.FastLookup.#ctor
+- markdown: The fast lookup
+- code: public FastLookup()
+- h4: Remarks
+- markdown: >-
+    Memory layout optimized: Archetype array reference (8 bytes) -&gt; InlineArray8 structs (32 bytes + 16 bytes) -&gt; int (4 bytes)
+
+    Total: 60 bytes
+
+    Pack = 8 for optimal alignment with reference types and large inline arrays
+- h2: Fields
+- api3: Archetypes
+  id: Alis_Core_Ecs_Collections_FastLookup_Archetypes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastLookup.cs#L51
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastLookup.Archetypes
+    commentId: F:Alis.Core.Ecs.Collections.FastLookup.Archetypes
+- markdown: The archetype
+- code: internal Archetype[] Archetypes
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    - '['
+    - ']'
+- api3: _data
+  id: Alis_Core_Ecs_Collections_FastLookup__data
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastLookup.cs#L56
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastLookup._data
+    commentId: F:Alis.Core.Ecs.Collections.FastLookup._data
+- markdown: The data
+- code: internal InlineArray8<uint> _data
+- h4: Field Value
+- parameters:
+  - type:
+    - text: InlineArray8
+      url: Alis.Core.Ecs.Collections.InlineArray8-1.html
+    - <
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    - '>'
+- api3: _ids
+  id: Alis_Core_Ecs_Collections_FastLookup__ids
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastLookup.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastLookup._ids
+    commentId: F:Alis.Core.Ecs.Collections.FastLookup._ids
+- markdown: The ids
+- code: internal InlineArray8<ushort> _ids
+- h4: Field Value
+- parameters:
+  - type:
+    - text: InlineArray8
+      url: Alis.Core.Ecs.Collections.InlineArray8-1.html
+    - <
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    - '>'
+- api3: index
+  id: Alis_Core_Ecs_Collections_FastLookup_index
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastLookup.cs#L67
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastLookup.index
+    commentId: F:Alis.Core.Ecs.Collections.FastLookup.index
+- markdown: The index
+- code: internal int index
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: FindAdjacentArchetypeId<T>(T, GameObjectType, Scene, ArchetypeEdgeType)
+  id: Alis_Core_Ecs_Collections_FastLookup_FindAdjacentArchetypeId__1___0_Alis_Core_Ecs_Kernel_GameObjectType_Alis_Core_Ecs_Scene_Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeType_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastLookup.cs#L78
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastLookup.FindAdjacentArchetypeId``1(``0,Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeType)
+    commentId: M:Alis.Core.Ecs.Collections.FastLookup.FindAdjacentArchetypeId``1(``0,Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeType)
+- markdown: Finds the adjacent archetype id using the specified id
+- code: 'public GameObjectType FindAdjacentArchetypeId<T>(T id, GameObjectType archetype, Scene scene, ArchetypeEdgeType edgeType) where T : ITypeId'
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - T
+    description: The id
+  - name: archetype
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The archetype
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: edgeType
+    type:
+    - text: ArchetypeEdgeType
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeType.html
+    description: The edge type
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The archetype id
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: GetKey(ushort, GameObjectType)
+  id: Alis_Core_Ecs_Collections_FastLookup_GetKey_System_UInt16_Alis_Core_Ecs_Kernel_GameObjectType_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastLookup.cs#L108
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastLookup.GetKey(System.UInt16,Alis.Core.Ecs.Kernel.GameObjectType)
+    commentId: M:Alis.Core.Ecs.Collections.FastLookup.GetKey(System.UInt16,Alis.Core.Ecs.Kernel.GameObjectType)
+- markdown: Gets the key using the specified id
+- code: public uint GetKey(ushort id, GameObjectType archetypeId)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The id
+  - name: archetypeId
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The archetype id
+- h4: Returns
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The key
+- api3: LookupIndex(uint)
+  id: Alis_Core_Ecs_Collections_FastLookup_LookupIndex_System_UInt32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastLookup.cs#L137
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastLookup.LookupIndex(System.UInt32)
+    commentId: M:Alis.Core.Ecs.Collections.FastLookup.LookupIndex(System.UInt32)
+- markdown: Lookups the index using the specified key
+- code: public int LookupIndex(uint key)
+- h4: Parameters
+- parameters:
+  - name: key
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The key
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: SetArchetype(ushort, GameObjectType, Archetype)
+  id: Alis_Core_Ecs_Collections_FastLookup_SetArchetype_System_UInt16_Alis_Core_Ecs_Kernel_GameObjectType_Alis_Core_Ecs_Kernel_Archetypes_Archetype_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastLookup.cs#L120
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastLookup.SetArchetype(System.UInt16,Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+    commentId: M:Alis.Core.Ecs.Collections.FastLookup.SetArchetype(System.UInt16,Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+- markdown: Sets the archetype using the specified id
+- code: public void SetArchetype(ushort id, GameObjectType from, Archetype to)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The id
+  - name: from
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The from
+  - name: to
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The to
+languageId: csharp
+metadata:
+  description: The fast lookup

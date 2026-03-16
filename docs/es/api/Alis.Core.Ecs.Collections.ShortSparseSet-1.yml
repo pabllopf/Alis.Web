@@ -1,0 +1,318 @@
+### YamlMime:ApiPage
+title: Class ShortSparseSet<T>
+body:
+- api1: Class ShortSparseSet<T>
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1
+    commentId: T:Alis.Core.Ecs.Collections.ShortSparseSet`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Collections
+      url: Alis.Core.Ecs.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The short sparse set class
+- code: public class ShortSparseSet<T>
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: ShortSparseSet<T>
+    url: Alis.Core.Ecs.Collections.ShortSparseSet-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: ShortSparseSet()
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L65
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.#ctor
+    commentId: M:Alis.Core.Ecs.Collections.ShortSparseSet`1.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Collections.ShortSparseSet%601" data-throw-if-not-resolved="false"></xref> class
+- code: public ShortSparseSet()
+- h2: Fields
+- api3: InvalidId
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_InvalidId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.InvalidId
+    commentId: F:Alis.Core.Ecs.Collections.ShortSparseSet`1.InvalidId
+- markdown: The invalid id
+- code: private const string InvalidId = "ID not in sparse set!"
+- h4: Field Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: _dense
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1__dense
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1._dense
+    commentId: F:Alis.Core.Ecs.Collections.ShortSparseSet`1._dense
+- markdown: The dense
+- code: private T[] _dense
+- h4: Field Value
+- parameters:
+  - type:
+    - T
+    - '['
+    - ']'
+- api3: _nextIndex
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1__nextIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L54
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1._nextIndex
+    commentId: F:Alis.Core.Ecs.Collections.ShortSparseSet`1._nextIndex
+- markdown: The next index
+- code: private int _nextIndex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _sparse
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1__sparse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1._sparse
+    commentId: F:Alis.Core.Ecs.Collections.ShortSparseSet`1._sparse
+- markdown: The sparse
+- code: private ushort[] _sparse
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    - '['
+    - ']'
+- h2: Properties
+- api3: Capacity
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_Capacity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L76
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.Capacity
+    commentId: P:Alis.Core.Ecs.Collections.ShortSparseSet`1.Capacity
+- markdown: Gets the number of elements that the <xref href="Alis.Core.Ecs.Collections.ShortSparseSet%601" data-throw-if-not-resolved="false"></xref> can hold without resizing.
+- code: public int Capacity { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Count
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_Count
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L81
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.Count
+    commentId: P:Alis.Core.Ecs.Collections.ShortSparseSet`1.Count
+- markdown: Gets the number of elements contained in the <xref href="Alis.Core.Ecs.Collections.ShortSparseSet%601" data-throw-if-not-resolved="false"></xref>.
+- code: public int Count { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: this[ushort]
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_Item_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L86
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.Item(System.UInt16)
+    commentId: P:Alis.Core.Ecs.Collections.ShortSparseSet`1.Item(System.UInt16)
+- markdown: The index
+- code: public ref T this[ushort id] { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - T
+- h2: Methods
+- api3: AsSpan()
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_AsSpan
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L224
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.AsSpan
+    commentId: M:Alis.Core.Ecs.Collections.ShortSparseSet`1.AsSpan
+- markdown: 'Note: this span will become invalid on resize or add'
+- code: public Span<T> AsSpan()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T
+    - '>'
+- api3: Clear()
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_Clear
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L229
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.Clear
+    commentId: M:Alis.Core.Ecs.Collections.ShortSparseSet`1.Clear
+- markdown: Clears this instance
+- code: public void Clear()
+- api3: EnsureCapacity(ushort)
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_EnsureCapacity_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L213
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.EnsureCapacity(System.UInt16)
+    commentId: M:Alis.Core.Ecs.Collections.ShortSparseSet`1.EnsureCapacity(System.UInt16)
+- markdown: Ensures the capacity using the specified capacity
+- code: public void EnsureCapacity(ushort capacity)
+- h4: Parameters
+- parameters:
+  - name: capacity
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The capacity
+- api3: EnsureDenseCapacityAndGetSlot(ushort)
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_EnsureDenseCapacityAndGetSlot_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L268
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.EnsureDenseCapacityAndGetSlot(System.UInt16)
+    commentId: M:Alis.Core.Ecs.Collections.ShortSparseSet`1.EnsureDenseCapacityAndGetSlot(System.UInt16)
+- markdown: Ensures the dense capacity and get slot using the specified index
+- code: private ref T EnsureDenseCapacityAndGetSlot(ushort index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The index
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The ref
+- api3: EnsureSparseCapacityAndGetIndex(ushort)
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_EnsureSparseCapacityAndGetIndex_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L244
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.EnsureSparseCapacityAndGetIndex(System.UInt16)
+    commentId: M:Alis.Core.Ecs.Collections.ShortSparseSet`1.EnsureSparseCapacityAndGetIndex(System.UInt16)
+- markdown: Ensures the sparse capacity and get index using the specified id
+- code: private ref ushort EnsureSparseCapacityAndGetIndex(ushort id)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The id
+- h4: Returns
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The ref ushort
+- api3: Get(ushort)
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_Get_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L106
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.Get(System.UInt16)
+    commentId: M:Alis.Core.Ecs.Collections.ShortSparseSet`1.Get(System.UInt16)
+- markdown: Gets the id
+- code: public ref T Get(ushort id)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The id
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The ref
+- api3: Has(int)
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_Has_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L198
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.Has(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.ShortSparseSet`1.Has(System.Int32)
+- markdown: Hases the id
+- code: public bool Has(int id)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The id
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: Remove(ushort)
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_Remove_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L162
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.Remove(System.UInt16)
+    commentId: M:Alis.Core.Ecs.Collections.ShortSparseSet`1.Remove(System.UInt16)
+- markdown: Removes the id
+- code: public bool Remove(ushort id)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The id
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: TryGet(ushort, out T)
+  id: Alis_Core_Ecs_Collections_ShortSparseSet_1_TryGet_System_UInt16__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ShortSparseSet.cs#L132
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ShortSparseSet`1.TryGet(System.UInt16,`0@)
+    commentId: M:Alis.Core.Ecs.Collections.ShortSparseSet`1.TryGet(System.UInt16,`0@)
+- markdown: Tries the get using the specified id
+- code: public bool TryGet(ushort id, out T value)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The id
+  - name: value
+    type:
+    - T
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+languageId: csharp
+metadata:
+  description: The short sparse set class

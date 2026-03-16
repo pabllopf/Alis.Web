@@ -1,0 +1,102 @@
+### YamlMime:ApiPage
+title: Class JsonSerializer
+body:
+- api1: Class JsonSerializer
+  id: Alis_Core_Aspect_Data_Json_Serialization_JsonSerializer
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Serialization/JsonSerializer.cs#L40
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Serialization.JsonSerializer
+    commentId: T:Alis.Core.Aspect.Data.Json.Serialization.JsonSerializer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Data.Json.Serialization
+      url: Alis.Core.Aspect.Data.Json.Serialization.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Serializes objects that implement IJsonSerializable to JSON strings.
+- code: 'public sealed class JsonSerializer : IJsonSerializer'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: JsonSerializer
+    url: Alis.Core.Aspect.Data.Json.Serialization.JsonSerializer.html
+- h4: Implements
+- list:
+  - text: IJsonSerializer
+    url: Alis.Core.Aspect.Data.Json.Serialization.IJsonSerializer.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: IsComplexJsonValue(string)
+  id: Alis_Core_Aspect_Data_Json_Serialization_JsonSerializer_IsComplexJsonValue_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Serialization/JsonSerializer.cs#L107
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Serialization.JsonSerializer.IsComplexJsonValue(System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.Serialization.JsonSerializer.IsComplexJsonValue(System.String)
+- markdown: Determines if a string value represents a complex JSON structure (object or array).
+- code: private static bool IsComplexJsonValue(string value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Serialize<T>(T)
+  id: Alis_Core_Aspect_Data_Json_Serialization_JsonSerializer_Serialize__1___0_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Serialization/JsonSerializer.cs#L50
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Serialization.JsonSerializer.Serialize``1(``0)
+    commentId: M:Alis.Core.Aspect.Data.Json.Serialization.JsonSerializer.Serialize``1(``0)
+- markdown: Serializes an object to a JSON string.
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public string Serialize<T>(T instance) where T : IJsonSerializable
+- h4: Parameters
+- parameters:
+  - name: instance
+    type:
+    - T
+    description: The instance to serialize.
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: A JSON string representation of the object.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of the object to serialize, which must implement IJsonSerializable.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when instance is null.
+  - type:
+    - text: JsonSerializationException
+      url: Alis.Core.Aspect.Data.Json.Exceptions.JsonSerializationException.html
+    description: Thrown when serialization fails.
+languageId: csharp
+metadata:
+  description: Serializes objects that implement IJsonSerializable to JSON strings.

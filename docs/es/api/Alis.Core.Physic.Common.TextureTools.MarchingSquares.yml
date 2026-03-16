@@ -3,7 +3,7 @@ title: Class MarchingSquares
 body:
 - api1: Class MarchingSquares
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L41
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L40
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares
     commentId: T:Alis.Core.Physic.Common.TextureTools.MarchingSquares
@@ -39,14 +39,14 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Fields
-- api3: _lookMarch
-  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares__lookMarch
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L290
+- api3: LookMarch
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_LookMarch
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L48
   metadata:
-    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares._lookMarch
-    commentId: F:Alis.Core.Physic.Common.TextureTools.MarchingSquares._lookMarch
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.LookMarch
+    commentId: F:Alis.Core.Physic.Common.TextureTools.MarchingSquares.LookMarch
 - markdown: The look march
-- code: private static readonly int[] _lookMarch
+- code: private static readonly int[] LookMarch
 - h4: Field Value
 - parameters:
   - type:
@@ -55,12 +55,38 @@ body:
     - '['
     - ']'
 - h2: Methods
-- api3: DetectSquares(AABB, float, float, sbyte[,], int, bool)
-  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_DetectSquares_Alis_Core_Physic_Collision_AABB_System_Single_System_Single_System_SByte_0__0___System_Int32_System_Boolean_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L57
+- api3: CombLeft(ref GeomPoly, ref GeomPoly)
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CombLeft_Alis_Core_Physic_Common_TextureTools_MarchingSquares_GeomPoly__Alis_Core_Physic_Common_TextureTools_MarchingSquares_GeomPoly__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L541
   metadata:
-    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.DetectSquares(Alis.Core.Physic.Collision.AABB,System.Single,System.Single,System.SByte[0:,0:],System.Int32,System.Boolean)
-    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.DetectSquares(Alis.Core.Physic.Collision.AABB,System.Single,System.Single,System.SByte[0:,0:],System.Int32,System.Boolean)
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CombLeft(Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly@,Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly@)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CombLeft(Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly@,Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly@)
+- markdown: Combs the left using the specified polya
+- code: private static void CombLeft(ref MarchingSquares.GeomPoly polya, ref MarchingSquares.GeomPoly polyb)
+- h4: Parameters
+- parameters:
+  - name: polya
+    type:
+    - text: MarchingSquares
+      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.html
+    - .
+    - text: GeomPoly
+      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly.html
+    description: The polya
+  - name: polyb
+    type:
+    - text: MarchingSquares
+      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.html
+    - .
+    - text: GeomPoly
+      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly.html
+    description: The polyb
+- api3: DetectSquares(Aabb, float, float, sbyte[,], int, bool)
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_DetectSquares_Alis_Core_Physic_Collisions_Aabb_System_Single_System_Single_System_SByte_0__0___System_Int32_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L68
+  metadata:
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.DetectSquares(Alis.Core.Physic.Collisions.Aabb,System.Single,System.Single,System.SByte[0:,0:],System.Int32,System.Boolean)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.DetectSquares(Alis.Core.Physic.Collisions.Aabb,System.Single,System.Single,System.SByte[0:,0:],System.Int32,System.Boolean)
 - markdown: >-
     Marching squares over the given domain using the mesh defined via the dimensions
 
@@ -71,13 +97,13 @@ body:
     if 'comb' is true, then the polygons will also be composited into larger possible concave
 
     polygons.
-- code: public static List<Vertices> DetectSquares(AABB domain, float cellWidth, float cellHeight, sbyte[,] f, int lerpCount, bool combine)
+- code: public static List<Vertices> DetectSquares(Aabb domain, float cellWidth, float cellHeight, sbyte[,] f, int lerpCount, bool combine)
 - h4: Parameters
 - parameters:
   - name: domain
     type:
-    - text: AABB
-      url: Alis.Core.Physic.Collision.AABB.html
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
     description: ''
   - name: cellWidth
     type:
@@ -119,7 +145,7 @@ body:
     description: ''
 - api3: Lerp(float, float, float, float)
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_Lerp_System_Single_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L304
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L350
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.Lerp(System.Single,System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.Lerp(System.Single,System.Single,System.Single,System.Single)
@@ -155,7 +181,7 @@ body:
     description: The float
 - api3: MarchSquare(sbyte[,], sbyte[,], ref GeomPoly, int, int, float, float, float, float, int)
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_MarchSquare_System_SByte_0__0___System_SByte_0__0___Alis_Core_Physic_Common_TextureTools_MarchingSquares_GeomPoly__System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Single_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L384
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L444
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.MarchSquare(System.SByte[0:,0:],System.SByte[0:,0:],Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly@,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Int32)
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.MarchSquare(System.SByte[0:,0:],System.SByte[0:,0:],Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly@,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Int32)
@@ -230,7 +256,7 @@ body:
     description: The key
 - api3: Square(float)
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_Square_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L347
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L407
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.Square(System.Single)
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.Square(System.Single)
@@ -246,25 +272,25 @@ body:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: VecCross(Vector2, Vector2)
-  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_VecCross_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L367
+- api3: VecCross(Vector2F, Vector2F)
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_VecCross_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L427
   metadata:
-    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.VecCross(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.VecCross(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.VecCross(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.VecCross(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Vecs the cross using the specified a
-- code: private static float VecCross(Vector2 a, Vector2 b)
+- code: private static float VecCross(Vector2F a, Vector2F b)
 - h4: Parameters
 - parameters:
   - name: a
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: b
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
 - h4: Returns
 - parameters:
@@ -272,25 +298,25 @@ body:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
     description: The float
-- api3: VecDsq(Vector2, Vector2)
-  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_VecDsq_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L355
+- api3: VecDsq(Vector2F, Vector2F)
+  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_VecDsq_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L415
   metadata:
-    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.VecDsq(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.VecDsq(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.VecDsq(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.VecDsq(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Vecs the dsq using the specified a
-- code: private static float VecDsq(Vector2 a, Vector2 b)
+- code: private static float VecDsq(Vector2F a, Vector2F b)
 - h4: Parameters
 - parameters:
   - name: a
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: b
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
 - h4: Returns
 - parameters:
@@ -300,7 +326,7 @@ body:
     description: The float
 - api3: Xlerp(float, float, float, float, float, sbyte[,], int)
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_Xlerp_System_Single_System_Single_System_Single_System_Single_System_Single_System_SByte_0__0___System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L317
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L369
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.Xlerp(System.Single,System.Single,System.Single,System.Single,System.Single,System.SByte[0:,0:],System.Int32)
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.Xlerp(System.Single,System.Single,System.Single,System.Single,System.Single,System.SByte[0:,0:],System.Int32)
@@ -345,7 +371,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Ylerp(float, float, float, float, float, sbyte[,], int)
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_Ylerp_System_Single_System_Single_System_Single_System_Single_System_Single_System_SByte_0__0___System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L332
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L388
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.Ylerp(System.Single,System.Single,System.Single,System.Single,System.Single,System.SByte[0:,0:],System.Int32)
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.Ylerp(System.Single,System.Single,System.Single,System.Single,System.Single,System.SByte[0:,0:],System.Int32)
@@ -388,32 +414,6 @@ body:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: combLeft(ref GeomPoly, ref GeomPoly)
-  id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_combLeft_Alis_Core_Physic_Common_TextureTools_MarchingSquares_GeomPoly__Alis_Core_Physic_Common_TextureTools_MarchingSquares_GeomPoly__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L440
-  metadata:
-    uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.combLeft(Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly@,Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly@)
-    commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.combLeft(Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly@,Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly@)
-- markdown: Combs the left using the specified polya
-- code: private static void combLeft(ref MarchingSquares.GeomPoly polya, ref MarchingSquares.GeomPoly polyb)
-- h4: Parameters
-- parameters:
-  - name: polya
-    type:
-    - text: MarchingSquares
-      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.html
-    - .
-    - text: GeomPoly
-      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly.html
-    description: The polya
-  - name: polyb
-    type:
-    - text: MarchingSquares
-      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.html
-    - .
-    - text: GeomPoly
-      url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly.html
-    description: The polyb
 languageId: csharp
 metadata:
   description: The marching squares class

@@ -1,0 +1,27 @@
+### YamlMime:ApiPage
+title: Delegate DeleteShader
+body:
+- api1: Delegate DeleteShader
+  id: Alis_Core_Graphic_OpenGL_Delegates_DeleteShader
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/DeleteShader.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.DeleteShader
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.DeleteShader
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The delete shader
+- code: public delegate void DeleteShader(uint shader)
+- h4: Parameters
+- parameters:
+  - name: shader
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+languageId: csharp
+metadata:
+  description: The delete shader

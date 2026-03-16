@@ -3,7 +3,7 @@ title: Class SimplifyTools
 body:
 - api1: Class SimplifyTools
   id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L41
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L40
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools
     commentId: T:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools
@@ -41,7 +41,7 @@ body:
 - h2: Methods
 - api3: CollinearSimplify(Vertices, float)
   id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_CollinearSimplify_Alis_Core_Physic_Common_Vertices_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L49
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L48
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.CollinearSimplify(Alis.Core.Physic.Common.Vertices,System.Single)
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.CollinearSimplify(Alis.Core.Physic.Common.Vertices,System.Single)
@@ -68,7 +68,7 @@ body:
     description: A simplified polygon.
 - api3: DouglasPeuckerSimplify(Vertices, float)
   id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_DouglasPeuckerSimplify_Alis_Core_Physic_Common_Vertices_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L78
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L81
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.DouglasPeuckerSimplify(Alis.Core.Physic.Common.Vertices,System.Single)
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.DouglasPeuckerSimplify(Alis.Core.Physic.Common.Vertices,System.Single)
@@ -97,7 +97,7 @@ body:
     description: The simplified polygon
 - api3: MergeIdenticalPoints(Vertices)
   id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_MergeIdenticalPoints_Alis_Core_Physic_Common_Vertices_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L224
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L241
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.MergeIdenticalPoints(Alis.Core.Physic.Common.Vertices)
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.MergeIdenticalPoints(Alis.Core.Physic.Common.Vertices)
@@ -117,7 +117,7 @@ body:
       url: Alis.Core.Physic.Common.Vertices.html
 - api3: MergeParallelEdges(Vertices, float)
   id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_MergeParallelEdges_Alis_Core_Physic_Common_Vertices_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L151
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L162
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.MergeParallelEdges(Alis.Core.Physic.Common.Vertices,System.Single)
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.MergeParallelEdges(Alis.Core.Physic.Common.Vertices,System.Single)
@@ -142,7 +142,7 @@ body:
       url: Alis.Core.Physic.Common.Vertices.html
 - api3: ReduceByArea(Vertices, float)
   id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_ReduceByArea_Alis_Core_Physic_Common_Vertices_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L299
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L326
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByArea(Alis.Core.Physic.Common.Vertices,System.Single)
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByArea(Alis.Core.Physic.Common.Vertices,System.Single)
@@ -171,7 +171,7 @@ body:
     description: ''
 - api3: ReduceByDistance(Vertices, float)
   id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_ReduceByDistance_Alis_Core_Physic_Common_Vertices_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L241
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L258
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByDistance(Alis.Core.Physic.Common.Vertices,System.Single)
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByDistance(Alis.Core.Physic.Common.Vertices,System.Single)
@@ -196,7 +196,7 @@ body:
       url: Alis.Core.Physic.Common.Vertices.html
 - api3: ReduceByNth(Vertices, int)
   id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_ReduceByNth_Alis_Core_Physic_Common_Vertices_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L271
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L292
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByNth(Alis.Core.Physic.Common.Vertices,System.Int32)
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.ReduceByNth(Alis.Core.Physic.Common.Vertices,System.Int32)
@@ -222,7 +222,7 @@ body:
     description: ''
 - api3: SimplifySection(Vertices, int, int, bool[], float)
   id: Alis_Core_Physic_Common_PolygonManipulation_SimplifyTools_SimplifySection_Alis_Core_Physic_Common_Vertices_System_Int32_System_Int32_System_Boolean___System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L109
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/SimplifyTools.cs#L118
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.SimplifySection(Alis.Core.Physic.Common.Vertices,System.Int32,System.Int32,System.Boolean[],System.Single)
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.SimplifyTools.SimplifySection(Alis.Core.Physic.Common.Vertices,System.Int32,System.Int32,System.Boolean[],System.Single)

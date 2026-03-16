@@ -1,0 +1,148 @@
+### YamlMime:ApiPage
+title: Class GlShader
+body:
+- api1: Class GlShader
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShader
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShader.cs#L40
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShader
+    commentId: T:Alis.Core.Graphic.OpenGL.Constructs.GlShader
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Constructs
+      url: Alis.Core.Graphic.OpenGL.Constructs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gl shader class
+- code: 'public sealed class GlShader : IDisposable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: GlShader
+    url: Alis.Core.Graphic.OpenGL.Constructs.GlShader.html
+- h4: Implements
+- list:
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: GlShader(string, ShaderType)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShader__ctor_System_String_Alis_Core_Graphic_OpenGL_Enums_ShaderType_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShader.cs#L48
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShader.#ctor(System.String,Alis.Core.Graphic.OpenGL.Enums.ShaderType)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShader.#ctor(System.String,Alis.Core.Graphic.OpenGL.Enums.ShaderType)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Graphic.OpenGL.Constructs.GlShader" data-throw-if-not-resolved="false"></xref> class
+- code: public GlShader(string source, ShaderType type)
+- h4: Parameters
+- parameters:
+  - name: source
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The source
+  - name: type
+    type:
+    - text: ShaderType
+      url: Alis.Core.Graphic.OpenGL.Enums.ShaderType.html
+    description: The type
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+- h2: Properties
+- api3: ShaderId
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShader_ShaderId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShader.cs#L66
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShader.ShaderId
+    commentId: P:Alis.Core.Graphic.OpenGL.Constructs.GlShader.ShaderId
+- markdown: Gets or sets the value of the shader id
+- code: public uint ShaderId { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: ShaderLog
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShader_ShaderLog
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShader.cs#L78
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShader.ShaderLog
+    commentId: P:Alis.Core.Graphic.OpenGL.Constructs.GlShader.ShaderLog
+- markdown: Gets the value of the shader log
+- code: public string ShaderLog { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: ShaderType
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShader_ShaderType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShader.cs#L72
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShader.ShaderType
+    commentId: P:Alis.Core.Graphic.OpenGL.Constructs.GlShader.ShaderType
+- markdown: Gets or sets the value of the shader type
+- code: public ShaderType ShaderType { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ShaderType
+      url: Alis.Core.Graphic.OpenGL.Enums.ShaderType.html
+- h2: Methods
+- api3: Dispose()
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShader_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShader.cs#L83
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShader.Dispose
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShader.Dispose
+- markdown: Disposes this instance
+- code: public void Dispose()
+- api3: Dispose(bool)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShader_Dispose_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShader.cs#L98
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShader.Dispose(System.Boolean)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShader.Dispose(System.Boolean)
+- markdown: Disposes the disposing
+- code: private void Dispose(bool disposing)
+- h4: Parameters
+- parameters:
+  - name: disposing
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The disposing
+- api3: ~GlShader()
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShader_Finalize
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShader.cs#L92
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShader.Finalize
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShader.Finalize
+- markdown: /
+- code: protected ~GlShader()
+- h2: See Also
+- list:
+  - - text: IDisposable
+      url: https://learn.microsoft.com/dotnet/api/system.idisposable
+languageId: csharp
+metadata:
+  description: The gl shader class

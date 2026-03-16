@@ -1,0 +1,26 @@
+### YamlMime:ApiPage
+title: Delegate ComponentDelegates<T>.DestroyDelegate
+body:
+- api1: Delegate ComponentDelegates<T>.DestroyDelegate
+  id: Alis_Core_Ecs_Kernel_ComponentDelegates_1_DestroyDelegate
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentDelegates.cs#L40
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentDelegates`1.DestroyDelegate
+    commentId: T:Alis.Core.Ecs.Kernel.ComponentDelegates`1.DestroyDelegate
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Used only in source generation
+- code: public delegate void ComponentDelegates<T>.DestroyDelegate(ref T component)
+- h4: Parameters
+- parameters:
+  - name: component
+    type:
+    - T
+languageId: csharp
+metadata:
+  description: Used only in source generation

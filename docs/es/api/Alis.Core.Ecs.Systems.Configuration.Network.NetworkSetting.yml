@@ -1,0 +1,131 @@
+### YamlMime:ApiPage
+title: Struct NetworkSetting
+body:
+- api1: Struct NetworkSetting
+  id: Alis_Core_Ecs_Systems_Configuration_Network_NetworkSetting
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Network/NetworkSetting.cs#L37
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting
+    commentId: T:Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Configuration.Network
+      url: Alis.Core.Ecs.Systems.Configuration.Network.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The network setting
+- code: 'public struct NetworkSetting : INetworkSetting'
+- h4: Implements
+- list:
+  - text: INetworkSetting
+    url: Alis.Core.Ecs.Systems.Configuration.Network.INetworkSetting.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: NetworkSetting(int, string, string, string)
+  id: Alis_Core_Ecs_Systems_Configuration_Network_NetworkSetting__ctor_System_Int32_System_String_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Network/NetworkSetting.cs#L37
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.#ctor(System.Int32,System.String,System.String,System.String)
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.#ctor(System.Int32,System.String,System.String,System.String)
+- markdown: The network setting
+- code: public NetworkSetting(int port = 8080, string ip = "127.0.0.1", string host = "localhost", string protocol = "http")
+- h4: Parameters
+- parameters:
+  - name: port
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    optional: true
+  - name: ip
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    optional: true
+  - name: host
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    optional: true
+  - name: protocol
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    optional: true
+- api3: NetworkSetting()
+  id: Alis_Core_Ecs_Systems_Configuration_Network_NetworkSetting__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Network/NetworkSetting.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.#ctor
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting" data-throw-if-not-resolved="false"></xref> class
+- code: public NetworkSetting()
+- h2: Properties
+- api3: Host
+  id: Alis_Core_Ecs_Systems_Configuration_Network_NetworkSetting_Host
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Network/NetworkSetting.cs#L64
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.Host
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.Host
+- markdown: Gets or sets the value of the host
+- code: public string Host { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Ip
+  id: Alis_Core_Ecs_Systems_Configuration_Network_NetworkSetting_Ip
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Network/NetworkSetting.cs#L59
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.Ip
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.Ip
+- markdown: Gets or sets the value of the ip
+- code: public string Ip { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Port
+  id: Alis_Core_Ecs_Systems_Configuration_Network_NetworkSetting_Port
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Network/NetworkSetting.cs#L54
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.Port
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.Port
+- markdown: Gets or sets the value of the port
+- code: public int Port { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Protocol
+  id: Alis_Core_Ecs_Systems_Configuration_Network_NetworkSetting_Protocol
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Network/NetworkSetting.cs#L69
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.Protocol
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.Protocol
+- markdown: Gets or sets the value of the protocol
+- code: public string Protocol { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+languageId: csharp
+metadata:
+  description: The network setting

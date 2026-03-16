@@ -1,0 +1,49 @@
+### YamlMime:ApiPage
+title: Interface ISprite
+body:
+- api1: Interface ISprite
+  id: Alis_Core_Ecs_Components_Render_ISprite
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/ISprite.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.ISprite
+    commentId: T:Alis.Core.Ecs.Components.Render.ISprite
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Components.Render
+      url: Alis.Core.Ecs.Components.Render.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The sprite interface
+- code: 'public interface ISprite : IOnStart, IOnUpdate, IComponentBase, IHasContext<Context>, IOnExit'
+- h4: Implements
+- list:
+  - text: IOnStart
+    url: Alis.Core.Aspect.Fluent.Components.IOnStart.html
+  - text: IOnUpdate
+    url: Alis.Core.Aspect.Fluent.Components.IOnUpdate.html
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+  - text: IHasContext<Context>
+    url: Alis.Core.Aspect.Fluent.Words.IHasContext-1.html
+  - text: IOnExit
+    url: Alis.Core.Aspect.Fluent.Components.IOnExit.html
+- h2: See Also
+- list:
+  - - text: IOnInit
+      url: Alis.Core.Aspect.Fluent.Components.IOnInit.html
+  - - text: IOnUpdate
+      url: Alis.Core.Aspect.Fluent.Components.IOnUpdate.html
+  - - text: IHasBuilder
+      url: Alis.Core.Aspect.Fluent.IHasBuilder-1.html
+    - <
+    - TOut
+    - '>'
+  - - text: IBuild
+      url: Alis.Core.Aspect.Fluent.IBuild-1.html
+    - <
+    - TOrigin
+    - '>'
+languageId: csharp
+metadata:
+  description: The sprite interface

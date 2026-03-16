@@ -1,0 +1,131 @@
+### YamlMime:ApiPage
+title: Class AudioSettingBuilder
+body:
+- api1: Class AudioSettingBuilder
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Audio_AudioSettingBuilder
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Audio/AudioSettingBuilder.cs#L38
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder
+    commentId: T:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The audio setting builder class
+- code: 'public class AudioSettingBuilder : IBuild<AudioSetting>'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: AudioSettingBuilder
+    url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.html
+- h4: Implements
+- list:
+  - text: IBuild<AudioSetting>
+    url: Alis.Core.Aspect.Fluent.IBuild-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: isMute
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Audio_AudioSettingBuilder_isMute
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Audio/AudioSettingBuilder.cs#L44
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.isMute
+    commentId: F:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.isMute
+- markdown: The is mute
+- code: private bool isMute
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: volume
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Audio_AudioSettingBuilder_volume
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Audio/AudioSettingBuilder.cs#L49
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.volume
+    commentId: F:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.volume
+- markdown: The volume
+- code: private int volume
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: Build()
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Audio_AudioSettingBuilder_Build
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Audio/AudioSettingBuilder.cs#L55
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.Build
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.Build
+- markdown: Builds this instance
+- code: public AudioSetting Build()
+- h4: Returns
+- parameters:
+  - type:
+    - text: AudioSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting.html
+    description: The audio setting
+- api3: IsMute(bool)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Audio_AudioSettingBuilder_IsMute_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Audio/AudioSettingBuilder.cs#L73
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.IsMute(System.Boolean)
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.IsMute(System.Boolean)
+- markdown: Ises the mute using the specified mute
+- code: public AudioSettingBuilder IsMute(bool mute)
+- h4: Parameters
+- parameters:
+  - name: mute
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The mute
+- h4: Returns
+- parameters:
+  - type:
+    - text: AudioSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.html
+    description: The audio setting builder
+- api3: Volume(int)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Audio_AudioSettingBuilder_Volume_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Audio/AudioSettingBuilder.cs#L62
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.Volume(System.Int32)
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.Volume(System.Int32)
+- markdown: Volumes the volume
+- code: public AudioSettingBuilder Volume(int volume)
+- h4: Parameters
+- parameters:
+  - name: volume
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The volume
+- h4: Returns
+- parameters:
+  - type:
+    - text: AudioSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.html
+    description: The audio setting builder
+languageId: csharp
+metadata:
+  description: The audio setting builder class

@@ -3,7 +3,7 @@ title: Class MonotoneMountain
 body:
 - api1: Class MonotoneMountain
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L39
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L38
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain
     commentId: T:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain
@@ -41,7 +41,7 @@ body:
 - h2: Constructors
 - api3: MonotoneMountain()
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain__ctor
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L88
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L87
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.#ctor
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.#ctor
@@ -50,7 +50,7 @@ body:
 - h2: Fields
 - api3: PiSlop
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain_PiSlop
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L45
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L44
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.PiSlop
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.PiSlop
@@ -63,12 +63,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Triangles
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain_Triangles
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L83
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L61
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Triangles
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Triangles
 - markdown: The triangles
-- code: public List<List<Point>> Triangles
+- code: public readonly List<List<Point>> Triangles
 - h4: Field Value
 - parameters:
   - type:
@@ -84,7 +84,7 @@ body:
     - '>'
 - api3: _convexPoints
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain__convexPoints
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L50
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L49
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._convexPoints
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._convexPoints
@@ -101,7 +101,7 @@ body:
     - '>'
 - api3: _head
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain__head
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L61
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L66
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._head
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._head
@@ -114,7 +114,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
 - api3: _monoPoly
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain__monoPoly
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L56
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L55
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._monoPoly
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._monoPoly
@@ -131,7 +131,7 @@ body:
     - '>'
 - api3: _positive
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain__positive
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L67
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L72
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._positive
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._positive
@@ -144,7 +144,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: _size
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain__size
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L72
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L77
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._size
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._size
@@ -157,7 +157,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int32
 - api3: _tail
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain__tail
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L77
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L82
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._tail
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain._tail
@@ -171,7 +171,7 @@ body:
 - h2: Methods
 - api3: Add(Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain_Add_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L104
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L103
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Add(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Add(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -186,7 +186,7 @@ body:
     description: The point
 - api3: Angle(Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain_Angle_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L231
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L238
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Angle(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Angle(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -207,7 +207,7 @@ body:
     description: The float
 - api3: AngleSign()
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain_AngleSign
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L242
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L249
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.AngleSign
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.AngleSign
@@ -221,7 +221,7 @@ body:
     description: The bool
 - api3: GenMonoPoly()
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain_GenMonoPoly
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L216
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L223
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.GenMonoPoly
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.GenMonoPoly
@@ -229,7 +229,7 @@ body:
 - code: private void GenMonoPoly()
 - api3: IsConvex(Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain_IsConvex_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L255
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L262
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.IsConvex(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.IsConvex(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -250,7 +250,7 @@ body:
     description: The bool
 - api3: Process()
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain_Process
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L148
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L147
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Process
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Process
@@ -258,7 +258,7 @@ body:
 - code: public void Process()
 - api3: Remove(Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain_Remove_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L134
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L133
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Remove(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Remove(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -273,7 +273,7 @@ body:
     description: The point
 - api3: Triangulate()
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain_Triangulate
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L175
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L179
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Triangulate
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Triangulate
@@ -281,7 +281,7 @@ body:
 - code: private void Triangulate()
 - api3: Valid(Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_MonotoneMountain_Valid_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L210
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/MonotoneMountain.cs#L217
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Valid(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.MonotoneMountain.Valid(Alis.Core.Physic.Common.Decomposition.Seidel.Point)

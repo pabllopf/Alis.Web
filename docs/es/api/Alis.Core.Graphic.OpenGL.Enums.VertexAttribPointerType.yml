@@ -1,0 +1,83 @@
+### YamlMime:ApiPage
+title: Enum VertexAttribPointerType
+body:
+- api1: Enum VertexAttribPointerType
+  id: Alis_Core_Graphic_OpenGL_Enums_VertexAttribPointerType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/VertexAttribPointerType.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.VertexAttribPointerType
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.VertexAttribPointerType
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The vertex attrib pointer type enum
+- code: public enum VertexAttribPointerType
+- h2: Fields
+- parameters:
+  - name: Byte
+    default: "5120"
+    description: >+
+      The byte vertex attrib pointer type
+
+  - name: UnsignedByte
+    default: "5121"
+    description: >+
+      The unsigned byte vertex attrib pointer type
+
+  - name: Short
+    default: "5122"
+    description: >+
+      The short vertex attrib pointer type
+
+  - name: UnsignedShort
+    default: "5123"
+    description: >+
+      The unsigned short vertex attrib pointer type
+
+  - name: Int
+    default: "5124"
+    description: >+
+      The int vertex attrib pointer type
+
+  - name: UnsignedInt
+    default: "5125"
+    description: >+
+      The unsigned int vertex attrib pointer type
+
+  - name: Float
+    default: "5126"
+    description: >+
+      The float vertex attrib pointer type
+
+  - name: Double
+    default: "5130"
+    description: >+
+      The double vertex attrib pointer type
+
+  - name: HalfFloat
+    default: "5131"
+    description: >+
+      The half float vertex attrib pointer type
+
+  - name: UnsignedUInt2101010Reversed
+    default: "33640"
+    description: >+
+      The unsigned int 2101010 reversed vertex attrib pointer type
+
+  - name: UnsignedInt2101010Reversed
+    default: "36255"
+    description: >+
+      The unsigned int 2101010 reversed vertex attrib pointer type
+
+  - name: UnsignedUInt101111Reversed
+    default: "35899"
+    description: >+
+      The unsigned int 101111 reversed vertex attrib pointer type
+
+languageId: csharp
+metadata:
+  description: The vertex attrib pointer type enum

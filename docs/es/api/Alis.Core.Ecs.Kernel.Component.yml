@@ -1,0 +1,308 @@
+### YamlMime:ApiPage
+title: Class Component
+body:
+- api1: Class Component
+  id: Alis_Core_Ecs_Kernel_Component
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L127
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component
+    commentId: T:Alis.Core.Ecs.Kernel.Component
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Class for registering components
+- code: public static class Component
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Component
+    url: Alis.Core.Ecs.Kernel.Component.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Component()
+  id: Alis_Core_Ecs_Kernel_Component__cctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L153
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component.#cctor
+    commentId: M:Alis.Core.Ecs.Kernel.Component.#cctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Kernel.Component" data-throw-if-not-resolved="false"></xref> class
+- code: private static Component()
+- h2: Fields
+- api3: ComponentTable
+  id: Alis_Core_Ecs_Kernel_Component_ComponentTable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L132
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component.ComponentTable
+    commentId: F:Alis.Core.Ecs.Kernel.Component.ComponentTable
+- markdown: The create
+- code: internal static FastestStack<ComponentData> ComponentTable
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: ComponentData
+      url: Alis.Core.Ecs.Kernel.ComponentData.html
+    - '>'
+- api3: NoneComponentRunnerTable
+  id: Alis_Core_Ecs_Kernel_Component_NoneComponentRunnerTable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L137
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component.NoneComponentRunnerTable
+    commentId: F:Alis.Core.Ecs.Kernel.Component.NoneComponentRunnerTable
+- markdown: The none component runner table
+- code: internal static Dictionary<Type, IComponentStorageBaseFactory> NoneComponentRunnerTable
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    - ','
+    - " "
+    - text: IComponentStorageBaseFactory
+      url: Alis.Core.Ecs.Updating.IComponentStorageBaseFactory.html
+    - '>'
+- api3: _existingComponentIDs
+  id: Alis_Core_Ecs_Kernel_Component__existingComponentIDs
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L142
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component._existingComponentIDs
+    commentId: F:Alis.Core.Ecs.Kernel.Component._existingComponentIDs
+- markdown: The existing component ds
+- code: private static readonly Dictionary<Type, ComponentId> _existingComponentIDs
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    - ','
+    - " "
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- api3: _nextComponentId
+  id: Alis_Core_Ecs_Kernel_Component__nextComponentId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L147
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component._nextComponentId
+    commentId: F:Alis.Core.Ecs.Kernel.Component._nextComponentId
+- markdown: The next component id
+- code: private static int _nextComponentId
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: GetComponentFactoryFromType(Type)
+  id: Alis_Core_Ecs_Kernel_Component_GetComponentFactoryFromType_System_Type_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L163
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component.GetComponentFactoryFromType(System.Type)
+    commentId: M:Alis.Core.Ecs.Kernel.Component.GetComponentFactoryFromType(System.Type)
+- markdown: Gets the component factory from type using the specified t
+- code: internal static IComponentStorageBaseFactory GetComponentFactoryFromType(Type t)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: IComponentStorageBaseFactory
+      url: Alis.Core.Ecs.Updating.IComponentStorageBaseFactory.html
+    description: The component storage base factory
+- api3: GetComponentId(Type)
+  id: Alis_Core_Ecs_Kernel_Component_GetComponentId_System_Type_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L253
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component.GetComponentId(System.Type)
+    commentId: M:Alis.Core.Ecs.Kernel.Component.GetComponentId(System.Type)
+- markdown: Gets the component ID of a type
+- code: public static ComponentId GetComponentId(Type t)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type to get the component ID of
+- h4: Returns
+- parameters:
+  - type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The component ID
+- api3: GetComponentTable(Type)
+  id: Alis_Core_Ecs_Kernel_Component_GetComponentTable_System_Type_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L289
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component.GetComponentTable(System.Type)
+    commentId: M:Alis.Core.Ecs.Kernel.Component.GetComponentTable(System.Type)
+- markdown: Gets the component table using the specified type
+- code: private static IdTable GetComponentTable(Type type)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type
+- h4: Returns
+- parameters:
+  - type:
+    - text: IdTable
+      url: Alis.Core.Ecs.Collections.IdTable.html
+    description: The id table
+- api3: GetExistingOrSetupNewComponent<T>()
+  id: Alis_Core_Ecs_Kernel_Component_GetExistingOrSetupNewComponent__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L202
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component.GetExistingOrSetupNewComponent``1
+    commentId: M:Alis.Core.Ecs.Kernel.Component.GetExistingOrSetupNewComponent``1
+- markdown: Gets the existing or setup new component
+- code: internal static (ComponentId ComponentID, IdTable<T> Stack, ComponentDelegates<T>.InitDelegate Initer, ComponentDelegates<T>.DestroyDelegate Destroyer) GetExistingOrSetupNewComponent<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - (
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - " "
+    - text: ComponentID
+      url: https://learn.microsoft.com/dotnet/api/system.valuetuple-alis.core.ecs.kernel.componentid,alis.core.ecs.collections.idtable---0-,alis.core.ecs.kernel.componentdelegates---0-.initdelegate,alis.core.ecs.kernel.componentdelegates---0-.destroydelegate-.componentid
+    - ','
+    - " "
+    - text: IdTable
+      url: Alis.Core.Ecs.Collections.IdTable-1.html
+    - <
+    - T
+    - '>'
+    - " "
+    - text: Stack
+      url: https://learn.microsoft.com/dotnet/api/system.valuetuple-alis.core.ecs.kernel.componentid,alis.core.ecs.collections.idtable---0-,alis.core.ecs.kernel.componentdelegates---0-.initdelegate,alis.core.ecs.kernel.componentdelegates---0-.destroydelegate-.stack
+    - ','
+    - " "
+    - text: ComponentDelegates
+      url: Alis.Core.Ecs.Kernel.ComponentDelegates-1.html
+    - <
+    - T
+    - '>'
+    - .
+    - text: InitDelegate
+      url: Alis.Core.Ecs.Kernel.ComponentDelegates-1.InitDelegate.html
+    - " "
+    - text: Initer
+      url: https://learn.microsoft.com/dotnet/api/system.valuetuple-alis.core.ecs.kernel.componentid,alis.core.ecs.collections.idtable---0-,alis.core.ecs.kernel.componentdelegates---0-.initdelegate,alis.core.ecs.kernel.componentdelegates---0-.destroydelegate-.initer
+    - ','
+    - " "
+    - text: ComponentDelegates
+      url: Alis.Core.Ecs.Kernel.ComponentDelegates-1.html
+    - <
+    - T
+    - '>'
+    - .
+    - text: DestroyDelegate
+      url: Alis.Core.Ecs.Kernel.ComponentDelegates-1.DestroyDelegate.html
+    - " "
+    - text: Destroyer
+      url: https://learn.microsoft.com/dotnet/api/system.valuetuple-alis.core.ecs.kernel.componentid,alis.core.ecs.collections.idtable---0-,alis.core.ecs.kernel.componentdelegates---0-.initdelegate,alis.core.ecs.kernel.componentdelegates---0-.destroydelegate-.destroyer
+    - )
+    description: >-
+      A component id component id and id table of t stack and component delegates t init delegate initer and
+
+      component delegates t destroy delegate destroyer
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Exceeded maximum unique component type count of 65535
+- api3: RegisterComponent<T>()
+  id: Alis_Core_Ecs_Kernel_Component_RegisterComponent__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L185
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component.RegisterComponent``1
+    commentId: M:Alis.Core.Ecs.Kernel.Component.RegisterComponent``1
+- markdown: >-
+    Register components with this method to be able to use them programmically. Note that components that implement an
+
+    IComponent interface do not need to be registered
+- code: public static void RegisterComponent<T>()
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of component to implement
+- api3: ResetForTests()
+  id: Alis_Core_Ecs_Kernel_Component_ResetForTests
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L335
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component.ResetForTests
+    commentId: M:Alis.Core.Ecs.Kernel.Component.ResetForTests
+- markdown: Resets the for tests
+- code: internal static void ResetForTests()
+- api3: Throw_ComponentTypeNotInit(Type)
+  id: Alis_Core_Ecs_Kernel_Component_Throw_ComponentTypeNotInit_System_Type_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Component.cs#L321
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Component.Throw_ComponentTypeNotInit(System.Type)
+    commentId: M:Alis.Core.Ecs.Kernel.Component.Throw_ComponentTypeNotInit(System.Type)
+- markdown: Throws the component type not init using the specified t
+- code: private static void Throw_ComponentTypeNotInit(Type t)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: >-
+      {t.FullName} is not initalized. (Did you initalize T with
+
+      Component.RegisterComponent&lt;T&gt;()?)
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: '{t.FullName} is not initalized. (Is the source generator working?)'
+languageId: csharp
+metadata:
+  description: Class for registering components

@@ -1,0 +1,418 @@
+### YamlMime:ApiPage
+title: Class EdgeShape
+body:
+- api1: Class EdgeShape
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L41
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape
+    commentId: T:Alis.Core.Physic.Collisions.Shapes.EdgeShape
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collisions.Shapes
+      url: Alis.Core.Physic.Collisions.Shapes.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    A line segment (edge) shape. These can be connected in chains or loops
+
+    to other edge shapes.
+
+    The connectivity information is used to ensure correct contact normals.
+- code: 'public class EdgeShape : Shape'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Shape
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html
+  - text: EdgeShape
+    url: Alis.Core.Physic.Collisions.Shapes.EdgeShape.html
+- h4: Inherited Members
+- list:
+  - text: Shape._2radius
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape__2radius
+  - text: Shape.Density
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_Density
+  - text: Shape.MassData
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_MassData
+  - text: Shape.Radius
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_Radius
+  - text: Shape.ShapeType
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_ShapeType
+  - text: Shape.ChildCount
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_ChildCount
+  - text: Shape.GetDensity
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_GetDensity
+  - text: Shape.GetRadius
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_GetRadius
+  - text: Shape.Clone()
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_Clone
+  - text: Shape.TestPoint(ref ControllerTransform, ref Vector2F)
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_TestPoint_Alis_Core_Physic_Dynamics_ControllerTransform__Alis_Core_Aspect_Math_Vector_Vector2F__
+  - text: Shape.RayCast(out RayCastOutput, ref RayCastInput, ref ControllerTransform, int)
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_RayCast_Alis_Core_Physic_Collisions_RayCastOutput__Alis_Core_Physic_Collisions_RayCastInput__Alis_Core_Physic_Dynamics_ControllerTransform__System_Int32_
+  - text: Shape.ComputeAabb(out Aabb, ref ControllerTransform, int)
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_ComputeAabb_Alis_Core_Physic_Collisions_Aabb__Alis_Core_Physic_Dynamics_ControllerTransform__System_Int32_
+  - text: Shape.ComputeProperties()
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_ComputeProperties
+  - text: Shape.ComputeSubmergedArea(ref Vector2F, float, ref ControllerTransform, out Vector2F)
+    url: Alis.Core.Physic.Collisions.Shapes.Shape.html#Alis_Core_Physic_Collisions_Shapes_Shape_ComputeSubmergedArea_Alis_Core_Aspect_Math_Vector_Vector2F__System_Single_Alis_Core_Physic_Dynamics_ControllerTransform__Alis_Core_Aspect_Math_Vector_Vector2F__
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: EdgeShape()
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L56
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.#ctor
+    commentId: M:Alis.Core.Physic.Collisions.Shapes.EdgeShape.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Collisions.Shapes.EdgeShape" data-throw-if-not-resolved="false"></xref> class
+- code: internal EdgeShape()
+- api3: EdgeShape(Vector2F, Vector2F)
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L68
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Collisions.Shapes.EdgeShape.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Create a new EdgeShape with the specified start and end.
+- code: public EdgeShape(Vector2F start, Vector2F end)
+- h4: Parameters
+- parameters:
+  - name: start
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The start of the edge.
+  - name: end
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The end of the edge.
+- h2: Fields
+- api3: Vertex11
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_Vertex11
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L46
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex11
+    commentId: F:Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex11
+- markdown: Edge start vertex
+- code: internal Vector2F Vertex11
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Vertex22
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_Vertex22
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L51
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex22
+    commentId: F:Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex22
+- markdown: Edge end vertex
+- code: internal Vector2F Vertex22
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- h2: Properties
+- api3: ChildCount
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_ChildCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L79
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.ChildCount
+    commentId: P:Alis.Core.Physic.Collisions.Shapes.EdgeShape.ChildCount
+- markdown: Gets the value of the child count
+- code: public override int ChildCount { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: HasVertex0
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_HasVertex0
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L84
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.HasVertex0
+    commentId: P:Alis.Core.Physic.Collisions.Shapes.EdgeShape.HasVertex0
+- markdown: Is true if the edge is connected to an adjacent vertex before vertex 1.
+- code: public bool HasVertex0 { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: HasVertex3
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_HasVertex3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L89
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.HasVertex3
+    commentId: P:Alis.Core.Physic.Collisions.Shapes.EdgeShape.HasVertex3
+- markdown: Is true if the edge is connected to an adjacent vertex after vertex2.
+- code: public bool HasVertex3 { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Vertex0
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_Vertex0
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L94
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex0
+    commentId: P:Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex0
+- markdown: Optional adjacent vertices. These are used for smooth collision.
+- code: public Vector2F Vertex0 { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Vertex1
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_Vertex1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L104
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex1
+    commentId: P:Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex1
+- markdown: These are the edge vertices
+- code: public Vector2F Vertex1 { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Vertex2
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_Vertex2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L117
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex2
+    commentId: P:Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex2
+- markdown: These are the edge vertices
+- code: public Vector2F Vertex2 { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Vertex3
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_Vertex3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L99
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex3
+    commentId: P:Alis.Core.Physic.Collisions.Shapes.EdgeShape.Vertex3
+- markdown: Optional adjacent vertices. These are used for smooth collision.
+- code: public Vector2F Vertex3 { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- h2: Methods
+- api3: Clone()
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_Clone
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L314
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.Clone
+    commentId: M:Alis.Core.Physic.Collisions.Shapes.EdgeShape.Clone
+- markdown: Clones this instance
+- code: public override Shape Clone()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Shape
+      url: Alis.Core.Physic.Collisions.Shapes.Shape.html
+    description: The clone
+- api3: CompareTo(EdgeShape)
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_CompareTo_Alis_Core_Physic_Collisions_Shapes_EdgeShape_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L303
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.CompareTo(Alis.Core.Physic.Collisions.Shapes.EdgeShape)
+    commentId: M:Alis.Core.Physic.Collisions.Shapes.EdgeShape.CompareTo(Alis.Core.Physic.Collisions.Shapes.EdgeShape)
+- markdown: Describes whether this instance compare to
+- code: public bool CompareTo(EdgeShape shape)
+- h4: Parameters
+- parameters:
+  - name: shape
+    type:
+    - text: EdgeShape
+      url: Alis.Core.Physic.Collisions.Shapes.EdgeShape.html
+    description: The shape
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: ComputeAabb(out Aabb, ref ControllerTransform, int)
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_ComputeAabb_Alis_Core_Physic_Collisions_Aabb__Alis_Core_Physic_Dynamics_ControllerTransform__System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L231
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.ComputeAabb(Alis.Core.Physic.Collisions.Aabb@,Alis.Core.Physic.Dynamics.ControllerTransform@,System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.Shapes.EdgeShape.ComputeAabb(Alis.Core.Physic.Collisions.Aabb@,Alis.Core.Physic.Dynamics.ControllerTransform@,System.Int32)
+- markdown: Computes the aabb using the specified aabb
+- code: public override void ComputeAabb(out Aabb aabb, ref ControllerTransform controllerTransform, int childIndex)
+- h4: Parameters
+- parameters:
+  - name: aabb
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The aabb
+  - name: controllerTransform
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The transform
+  - name: childIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The child index
+- api3: ComputeProperties()
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_ComputeProperties
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L279
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.ComputeProperties
+    commentId: M:Alis.Core.Physic.Collisions.Shapes.EdgeShape.ComputeProperties
+- markdown: Computes the properties
+- code: protected override void ComputeProperties()
+- api3: ComputeSubmergedArea(ref Vector2F, float, ref ControllerTransform, out Vector2F)
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_ComputeSubmergedArea_Alis_Core_Aspect_Math_Vector_Vector2F__System_Single_Alis_Core_Physic_Dynamics_ControllerTransform__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L292
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.ComputeSubmergedArea(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single,Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Collisions.Shapes.EdgeShape.ComputeSubmergedArea(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single,Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Computes the submerged area using the specified normal
+- code: public override float ComputeSubmergedArea(ref Vector2F normal, float offset, ref ControllerTransform xf, out Vector2F sc)
+- h4: Parameters
+- parameters:
+  - name: normal
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The normal
+  - name: offset
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The offset
+  - name: xf
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The xf
+  - name: sc
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The sc
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The float
+- api3: RayCast(out RayCastOutput, ref RayCastInput, ref ControllerTransform, int)
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_RayCast_Alis_Core_Physic_Collisions_RayCastOutput__Alis_Core_Physic_Collisions_RayCastInput__Alis_Core_Physic_Dynamics_ControllerTransform__System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L158
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.RayCast(Alis.Core.Physic.Collisions.RayCastOutput@,Alis.Core.Physic.Collisions.RayCastInput@,Alis.Core.Physic.Dynamics.ControllerTransform@,System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.Shapes.EdgeShape.RayCast(Alis.Core.Physic.Collisions.RayCastOutput@,Alis.Core.Physic.Collisions.RayCastInput@,Alis.Core.Physic.Dynamics.ControllerTransform@,System.Int32)
+- markdown: Describes whether this instance ray cast
+- code: public override bool RayCast(out RayCastOutput output, ref RayCastInput input, ref ControllerTransform controllerTransform, int childIndex)
+- h4: Parameters
+- parameters:
+  - name: output
+    type:
+    - text: RayCastOutput
+      url: Alis.Core.Physic.Collisions.RayCastOutput.html
+    description: The output
+  - name: input
+    type:
+    - text: RayCastInput
+      url: Alis.Core.Physic.Collisions.RayCastInput.html
+    description: The input
+  - name: controllerTransform
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The transform
+  - name: childIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The child index
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: Set(Vector2F, Vector2F)
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_Set_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L132
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.Set(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Collisions.Shapes.EdgeShape.Set(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Set this as an isolated edge.
+- code: public void Set(Vector2F start, Vector2F end)
+- h4: Parameters
+- parameters:
+  - name: start
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The start.
+  - name: end
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The end.
+- api3: TestPoint(ref ControllerTransform, ref Vector2F)
+  id: Alis_Core_Physic_Collisions_Shapes_EdgeShape_TestPoint_Alis_Core_Physic_Dynamics_ControllerTransform__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Shapes/EdgeShape.cs#L148
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Shapes.EdgeShape.TestPoint(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Collisions.Shapes.EdgeShape.TestPoint(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Describes whether this instance test point
+- code: public override bool TestPoint(ref ControllerTransform controllerTransform, ref Vector2F point)
+- h4: Parameters
+- parameters:
+  - name: controllerTransform
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The transform
+  - name: point
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The point
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+languageId: csharp
+metadata:
+  description: >-
+    A line segment (edge) shape. These can be connected in chains or loops
+
+    to other edge shapes.
+
+    The connectivity information is used to ensure correct contact normals.

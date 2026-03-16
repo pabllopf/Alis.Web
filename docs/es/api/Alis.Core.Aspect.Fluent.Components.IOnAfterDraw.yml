@@ -1,0 +1,37 @@
+### YamlMime:ApiPage
+title: Interface IOnAfterDraw
+body:
+- api1: Interface IOnAfterDraw
+  id: Alis_Core_Aspect_Fluent_Components_IOnAfterDraw
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnAfterDraw.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnAfterDraw
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnAfterDraw
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The on after draw interface
+- code: public interface IOnAfterDraw
+- h2: Methods
+- api3: OnAfterDraw(IGameObject)
+  id: Alis_Core_Aspect_Fluent_Components_IOnAfterDraw_OnAfterDraw_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnAfterDraw.cs#L41
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnAfterDraw.OnAfterDraw(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnAfterDraw.OnAfterDraw(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Ons the after draw using the specified self
+- code: void OnAfterDraw(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+languageId: csharp
+metadata:
+  description: The on after draw interface

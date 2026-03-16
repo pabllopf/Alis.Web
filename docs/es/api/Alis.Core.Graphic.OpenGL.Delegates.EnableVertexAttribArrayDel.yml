@@ -1,0 +1,27 @@
+### YamlMime:ApiPage
+title: Delegate EnableVertexAttribArrayDel
+body:
+- api1: Delegate EnableVertexAttribArrayDel
+  id: Alis_Core_Graphic_OpenGL_Delegates_EnableVertexAttribArrayDel
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/EnableVertexAttribArrayDel.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.EnableVertexAttribArrayDel
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.EnableVertexAttribArrayDel
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The enable vertex attrib array del
+- code: public delegate void EnableVertexAttribArrayDel(uint index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+languageId: csharp
+metadata:
+  description: The enable vertex attrib array del

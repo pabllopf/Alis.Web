@@ -1,0 +1,67 @@
+### YamlMime:ApiPage
+title: Interface ILogFormatter
+body:
+- api1: Interface ILogFormatter
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogFormatter
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogFormatter.cs#L37
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogFormatter
+    commentId: T:Alis.Core.Aspect.Logging.Abstractions.ILogFormatter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Abstractions
+      url: Alis.Core.Aspect.Logging.Abstractions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Formats log entries into a string representation suitable for output.
+
+    Different formatters can produce different output styles (JSON, plain text, etc.).
+
+    AOT-compatible: Uses StringBuilder, no reflection.
+- code: public interface ILogFormatter
+- h2: Properties
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogFormatter_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogFormatter.cs#L42
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.Name
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.Name
+- markdown: Gets a human-readable name for this formatter.
+- code: string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: Format(ILogEntry)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogFormatter_Format_Alis_Core_Aspect_Logging_Abstractions_ILogEntry_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogFormatter.cs#L49
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.Format(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.Format(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+- markdown: Formats the given log entry into a string.
+- code: string Format(ILogEntry entry)
+- h4: Parameters
+- parameters:
+  - name: entry
+    type:
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: The log entry to format.
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: A formatted string representation of the log entry.
+languageId: csharp
+metadata:
+  description: >-
+    Formats log entries into a string representation suitable for output.
+
+    Different formatters can produce different output styles (JSON, plain text, etc.).
+
+    AOT-compatible: Uses StringBuilder, no reflection.

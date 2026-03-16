@@ -58,8 +58,8 @@ body:
       url: Alis.Core.Physic.Dynamics.MathUtils.html
     description: The math utils class
   - type:
-      text: World
-      url: Alis.Core.Physic.Dynamics.World.html
+      text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
     description: >-
       The world class manages all physics entities, dynamic simulation,
 
@@ -71,9 +71,20 @@ body:
       url: Alis.Core.Physic.Dynamics.BodyCollection.BodyEnumerator.html
     description: The body enumerator
   - type:
-      text: ControllerCollection.ControllerEnumerator
-      url: Alis.Core.Physic.Dynamics.ControllerCollection.ControllerEnumerator.html
+      text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The complex
+  - type:
+      text: ControllerEnumerator
+      url: Alis.Core.Physic.Dynamics.ControllerEnumerator.html
     description: The controller enumerator
+  - type:
+      text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: >-
+      A transform contains translation and rotation. It is used to represent
+
+      the position and orientation of rigid frames.
   - type:
       text: FixtureCollection.FixtureEnumerator
       url: Alis.Core.Physic.Dynamics.FixtureCollection.FixtureEnumerator.html

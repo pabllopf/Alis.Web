@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Builder.Core.Ecs.Components.Audio
+body:
+- api1: Namespace Alis.Builder.Core.Ecs.Components.Audio
+  id: Alis_Builder_Core_Ecs_Components_Audio
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio
+    commentId: N:Alis.Builder.Core.Ecs.Components.Audio
+- h3: Classes
+- parameters:
+  - type:
+      text: AudioSourceBuilder
+      url: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.html
+    description: The audio clip builder class
+- h3: Delegates
+- parameters:
+  - type:
+      text: AudioSourceConfig<T>
+      url: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceConfig-1.html
+    description: The audio source config
+languageId: csharp

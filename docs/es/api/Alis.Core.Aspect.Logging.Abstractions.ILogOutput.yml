@@ -1,0 +1,92 @@
+### YamlMime:ApiPage
+title: Interface ILogOutput
+body:
+- api1: Interface ILogOutput
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogOutput
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogOutput.cs#L39
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogOutput
+    commentId: T:Alis.Core.Aspect.Logging.Abstractions.ILogOutput
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Abstractions
+      url: Alis.Core.Aspect.Logging.Abstractions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Represents a destination where log entries are written.
+
+    Implementations define how and where logs are persisted or displayed.
+
+    AOT-compatible: No reflection, no dynamic dispatch beyond virtuals.
+- code: 'public interface ILogOutput : IDisposable'
+- h4: Implements
+- list:
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h2: Properties
+- api3: IsEnabled
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogOutput_IsEnabled
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogOutput.cs#L49
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.IsEnabled
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogOutput.IsEnabled
+- markdown: Gets a value indicating whether this output is currently enabled.
+- code: bool IsEnabled { get; internal set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogOutput_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogOutput.cs#L44
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.Name
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogOutput.Name
+- markdown: Gets a human-readable name for this output destination.
+- code: string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: Flush()
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogOutput_Flush
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogOutput.cs#L62
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.Flush
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogOutput.Flush
+- markdown: >-
+    Flushes any buffered data to the output destination.
+
+    Called before application shutdown or on demand.
+- code: void Flush()
+- api3: Write(ILogEntry)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogOutput_Write_Alis_Core_Aspect_Logging_Abstractions_ILogEntry_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogOutput.cs#L56
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.Write(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogOutput.Write(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+- markdown: >-
+    Writes the given log entry to this output destination.
+
+    Implementations must be thread-safe and handle errors gracefully.
+- code: void Write(ILogEntry entry)
+- h4: Parameters
+- parameters:
+  - name: entry
+    type:
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: The log entry to write.
+languageId: csharp
+metadata:
+  description: >-
+    Represents a destination where log entries are written.
+
+    Implementations define how and where logs are persisted or displayed.
+
+    AOT-compatible: No reflection, no dynamic dispatch beyond virtuals.

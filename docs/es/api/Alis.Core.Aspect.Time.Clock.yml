@@ -3,7 +3,7 @@ title: Class Clock
 body:
 - api1: Class Clock
   id: Alis_Core_Aspect_Time_Clock
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L38
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L37
   metadata:
     uid: Alis.Core.Aspect.Time.Clock
     commentId: T:Alis.Core.Aspect.Time.Clock
@@ -38,24 +38,59 @@ body:
     url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
-- h2: Fields
-- api3: stopwatch
-  id: Alis_Core_Aspect_Time_Clock_stopwatch
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L43
+- h2: Constructors
+- api3: Clock()
+  id: Alis_Core_Aspect_Time_Clock__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L57
   metadata:
-    uid: Alis.Core.Aspect.Time.Clock.stopwatch
-    commentId: F:Alis.Core.Aspect.Time.Clock.stopwatch
-- markdown: The stopwatch
-- code: private readonly Stopwatch stopwatch
+    uid: Alis.Core.Aspect.Time.Clock.#ctor
+    commentId: M:Alis.Core.Aspect.Time.Clock.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Time.Clock" data-throw-if-not-resolved="false"></xref> class
+- code: public Clock()
+- h2: Fields
+- api3: _elapsed
+  id: Alis_Core_Aspect_Time_Clock__elapsed
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L42
+  metadata:
+    uid: Alis.Core.Aspect.Time.Clock._elapsed
+    commentId: F:Alis.Core.Aspect.Time.Clock._elapsed
+- markdown: The elapsed
+- code: private TimeSpan _elapsed
 - h4: Field Value
 - parameters:
   - type:
-    - text: Stopwatch
-      url: https://learn.microsoft.com/dotnet/api/system.diagnostics.stopwatch
+    - text: TimeSpan
+      url: https://learn.microsoft.com/dotnet/api/system.timespan
+- api3: _isRunning
+  id: Alis_Core_Aspect_Time_Clock__isRunning
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L47
+  metadata:
+    uid: Alis.Core.Aspect.Time.Clock._isRunning
+    commentId: F:Alis.Core.Aspect.Time.Clock._isRunning
+- markdown: The is running
+- code: private bool _isRunning
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _startTime
+  id: Alis_Core_Aspect_Time_Clock__startTime
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L52
+  metadata:
+    uid: Alis.Core.Aspect.Time.Clock._startTime
+    commentId: F:Alis.Core.Aspect.Time.Clock._startTime
+- markdown: The start time
+- code: private DateTime _startTime
+- h4: Field Value
+- parameters:
+  - type:
+    - text: DateTime
+      url: https://learn.microsoft.com/dotnet/api/system.datetime
 - h2: Properties
 - api3: Elapsed
   id: Alis_Core_Aspect_Time_Clock_Elapsed
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L48
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L75
   metadata:
     uid: Alis.Core.Aspect.Time.Clock.Elapsed
     commentId: P:Alis.Core.Aspect.Time.Clock.Elapsed
@@ -68,7 +103,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.timespan
 - api3: ElapsedMilliseconds
   id: Alis_Core_Aspect_Time_Clock_ElapsedMilliseconds
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L53
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L80
   metadata:
     uid: Alis.Core.Aspect.Time.Clock.ElapsedMilliseconds
     commentId: P:Alis.Core.Aspect.Time.Clock.ElapsedMilliseconds
@@ -81,20 +116,20 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int64
 - api3: ElapsedSeconds
   id: Alis_Core_Aspect_Time_Clock_ElapsedSeconds
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L63
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L65
   metadata:
     uid: Alis.Core.Aspect.Time.Clock.ElapsedSeconds
     commentId: P:Alis.Core.Aspect.Time.Clock.ElapsedSeconds
 - markdown: Gets the value of the elapsed seconds
-- code: public double ElapsedSeconds { get; }
+- code: public long ElapsedSeconds { get; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: double
-      url: https://learn.microsoft.com/dotnet/api/system.double
+    - text: long
+      url: https://learn.microsoft.com/dotnet/api/system.int64
 - api3: ElapsedTicks
   id: Alis_Core_Aspect_Time_Clock_ElapsedTicks
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L58
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L85
   metadata:
     uid: Alis.Core.Aspect.Time.Clock.ElapsedTicks
     commentId: P:Alis.Core.Aspect.Time.Clock.ElapsedTicks
@@ -105,18 +140,53 @@ body:
   - type:
     - text: long
       url: https://learn.microsoft.com/dotnet/api/system.int64
+- api3: IsRunning
+  id: Alis_Core_Aspect_Time_Clock_IsRunning
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L70
+  metadata:
+    uid: Alis.Core.Aspect.Time.Clock.IsRunning
+    commentId: P:Alis.Core.Aspect.Time.Clock.IsRunning
+- markdown: Gets the value of the is running
+- code: public bool IsRunning { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
 - h2: Methods
+- api3: Create()
+  id: Alis_Core_Aspect_Time_Clock_Create
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L104
+  metadata:
+    uid: Alis.Core.Aspect.Time.Clock.Create
+    commentId: M:Alis.Core.Aspect.Time.Clock.Create
+- markdown: Starts the new
+- code: public static Clock Create()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Clock
+      url: Alis.Core.Aspect.Time.Clock.html
+    description: The
 - api3: Reset()
   id: Alis_Core_Aspect_Time_Clock_Reset
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L78
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L127
   metadata:
     uid: Alis.Core.Aspect.Time.Clock.Reset
     commentId: M:Alis.Core.Aspect.Time.Clock.Reset
 - markdown: Resets this instance
 - code: public void Reset()
+- api3: Restart()
+  id: Alis_Core_Aspect_Time_Clock_Restart
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L138
+  metadata:
+    uid: Alis.Core.Aspect.Time.Clock.Restart
+    commentId: M:Alis.Core.Aspect.Time.Clock.Restart
+- markdown: Restarts this instance
+- code: public void Restart()
 - api3: Start()
   id: Alis_Core_Aspect_Time_Clock_Start
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L68
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L90
   metadata:
     uid: Alis.Core.Aspect.Time.Clock.Start
     commentId: M:Alis.Core.Aspect.Time.Clock.Start
@@ -124,12 +194,26 @@ body:
 - code: public void Start()
 - api3: Stop()
   id: Alis_Core_Aspect_Time_Clock_Stop
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L73
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L114
   metadata:
     uid: Alis.Core.Aspect.Time.Clock.Stop
     commentId: M:Alis.Core.Aspect.Time.Clock.Stop
 - markdown: Stops this instance
 - code: public void Stop()
+- api3: ToString()
+  id: Alis_Core_Aspect_Time_Clock_ToString
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Time/src/Clock.cs#L151
+  metadata:
+    uid: Alis.Core.Aspect.Time.Clock.ToString
+    commentId: M:Alis.Core.Aspect.Time.Clock.ToString
+- markdown: Returns the <xref href="Alis.Core.Aspect.Time.Clock.Elapsed" data-throw-if-not-resolved="false"></xref> time as a string.
+- code: public override string ToString()
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: Elapsed time string in the same format used by <xref href="System.TimeSpan.ToString" data-throw-if-not-resolved="false"></xref>.
 languageId: csharp
 metadata:
   description: The clock class

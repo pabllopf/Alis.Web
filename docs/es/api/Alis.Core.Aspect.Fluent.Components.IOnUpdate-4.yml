@@ -1,0 +1,67 @@
+### YamlMime:ApiPage
+title: Interface IOnUpdate<TArg1, TArg2, TArg3, TArg4>
+body:
+- api1: Interface IOnUpdate<TArg1, TArg2, TArg3, TArg4>
+  id: Alis_Core_Aspect_Fluent_Components_IOnUpdate_4
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnUpdate.4.cs#L37
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnUpdate`4
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnUpdate`4
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gameObject component interface
+- code: 'public interface IOnUpdate<TArg1, TArg2, TArg3, TArg4> : IComponentBase'
+- h4: Type Parameters
+- parameters:
+  - name: TArg1
+  - name: TArg2
+  - name: TArg3
+  - name: TArg4
+- h4: Implements
+- list:
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+- h2: Methods
+- api3: Update(IGameObject, ref TArg1, ref TArg2, ref TArg3, ref TArg4)
+  id: Alis_Core_Aspect_Fluent_Components_IOnUpdate_4_Update_Alis_Core_Aspect_Fluent_Components_IGameObject__0___1___2___3__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnUpdate.4.cs#L47
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnUpdate`4.Update(Alis.Core.Aspect.Fluent.Components.IGameObject,`0@,`1@,`2@,`3@)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnUpdate`4.Update(Alis.Core.Aspect.Fluent.Components.IGameObject,`0@,`1@,`2@,`3@)
+- markdown: Updates the self
+- code: void Update(IGameObject self, ref TArg1 arg1, ref TArg2 arg2, ref TArg3 arg3, ref TArg4 arg4)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+  - name: arg1
+    type:
+    - TArg1
+    description: The arg
+  - name: arg2
+    type:
+    - TArg2
+    description: The arg
+  - name: arg3
+    type:
+    - TArg3
+    description: The arg
+  - name: arg4
+    type:
+    - TArg4
+    description: The arg
+- h2: See Also
+- list:
+  - - text: IComponentBase
+      url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+languageId: csharp
+metadata:
+  description: The gameObject component interface

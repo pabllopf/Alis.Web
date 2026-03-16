@@ -1,0 +1,38 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Math.Collections
+body:
+- api1: Namespace Alis.Core.Aspect.Math.Collections
+  id: Alis_Core_Aspect_Math_Collections
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections
+    commentId: N:Alis.Core.Aspect.Math.Collections
+- h3: Classes
+- parameters:
+  - type:
+      text: FastImmutableArray<T>.Builder
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.Builder.html
+    description: >-
+      A writable array accessor that can be converted into an <see></see>
+
+      instance without allocating memory.
+  - type:
+      text: FastImmutableArray<T>.EnumeratorObject
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.EnumeratorObject.html
+    description: An array enumerator that implements <xref href="System.Collections.Generic.IEnumerator%601" data-throw-if-not-resolved="false"></xref> pattern (including <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref>).
+- h3: Structs
+- parameters:
+  - type:
+      text: FastImmutableArray<T>.Enumerator
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.Enumerator.html
+    description: An array enumerator.
+  - type:
+      text: FastImmutableArray<T>
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    description: A readonly array with O(1) indexable lookup time.
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IFastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.IFastImmutableArray.html
+    description: The fast immutable array interface
+languageId: csharp

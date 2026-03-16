@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Interface IAnimation
+body:
+- api1: Interface IAnimation
+  id: Alis_Core_Ecs_Components_Render_IAnimation
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/IAnimation.cs#L35
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.IAnimation
+    commentId: T:Alis.Core.Ecs.Components.Render.IAnimation
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Components.Render
+      url: Alis.Core.Ecs.Components.Render.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The animation interface
+- code: public interface IAnimation
+languageId: csharp
+metadata:
+  description: The animation interface

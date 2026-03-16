@@ -1,0 +1,174 @@
+### YamlMime:ApiPage
+title: Class AudioManager
+body:
+- api1: Class AudioManager
+  id: Alis_Core_Ecs_Systems_Manager_Audio_AudioManager
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Audio/AudioManager.cs#L38
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Audio.AudioManager
+    commentId: T:Alis.Core.Ecs.Systems.Manager.Audio.AudioManager
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Manager.Audio
+      url: Alis.Core.Ecs.Systems.Manager.Audio.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The audio manager base class
+- code: 'public class AudioManager : AManager, IManager, IRuntime'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: AManager
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html
+  - text: AudioManager
+    url: Alis.Core.Ecs.Systems.Manager.Audio.AudioManager.html
+- h4: Implements
+- list:
+  - text: IManager
+    url: Alis.Core.Ecs.Systems.Manager.IManager.html
+  - text: IRuntime
+    url: Alis.Core.Ecs.Systems.Execution.IRuntime.html
+- h4: Inherited Members
+- list:
+  - text: AManager._context
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager__context
+  - text: AManager.Context
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Context
+  - text: AManager.IsEnable
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_IsEnable
+  - text: AManager.Name
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Name
+  - text: AManager.Id
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Id
+  - text: AManager.Tag
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Tag
+  - text: AManager.OnEnable()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnEnable
+  - text: AManager.OnInit()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnInit
+  - text: AManager.OnAwake()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAwake
+  - text: AManager.OnStart()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnStart
+  - text: AManager.OnBeforeUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeUpdate
+  - text: AManager.OnUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnUpdate
+  - text: AManager.OnAfterUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterUpdate
+  - text: AManager.OnProcessPendingChanges()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnProcessPendingChanges
+  - text: AManager.OnBeforeFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeFixedUpdate
+  - text: AManager.OnFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnFixedUpdate
+  - text: AManager.OnAfterFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterFixedUpdate
+  - text: AManager.OnDispatchEvents()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDispatchEvents
+  - text: AManager.OnCalculate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnCalculate
+  - text: AManager.OnBeforeDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeDraw
+  - text: AManager.OnDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDraw
+  - text: AManager.OnAfterDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterDraw
+  - text: AManager.OnGui()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnGui
+  - text: AManager.OnRenderPresent()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnRenderPresent
+  - text: AManager.OnDisable()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDisable
+  - text: AManager.OnReset()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnReset
+  - text: AManager.OnStop()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnStop
+  - text: AManager.OnExit()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnExit
+  - text: AManager.OnDestroy()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDestroy
+  - text: AManager.OnSave()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnSave
+  - text: AManager.OnLoad()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnLoad
+  - text: AManager.OnSave(string)
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnSave_System_String_
+  - text: AManager.OnLoad(string)
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnLoad_System_String_
+  - text: AManager.OnPhysicUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnPhysicUpdate
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: AudioManager(Context)
+  id: Alis_Core_Ecs_Systems_Manager_Audio_AudioManager__ctor_Alis_Core_Ecs_Systems_Scope_Context_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Audio/AudioManager.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Audio.AudioManager.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Audio.AudioManager.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Manager.Audio.AudioManager" data-throw-if-not-resolved="false"></xref> class
+- code: public AudioManager(Context context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    description: The context
+- api3: AudioManager(string, string, string, bool, Context)
+  id: Alis_Core_Ecs_Systems_Manager_Audio_AudioManager__ctor_System_String_System_String_System_String_System_Boolean_Alis_Core_Ecs_Systems_Scope_Context_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Audio/AudioManager.cs#L56
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Audio.AudioManager.#ctor(System.String,System.String,System.String,System.Boolean,Alis.Core.Ecs.Systems.Scope.Context)
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Audio.AudioManager.#ctor(System.String,System.String,System.String,System.Boolean,Alis.Core.Ecs.Systems.Scope.Context)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Manager.Audio.AudioManager" data-throw-if-not-resolved="false"></xref> class
+- code: public AudioManager(string id, string name, string tag, bool isEnable, Context context)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The id
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name
+  - name: tag
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The tag
+  - name: isEnable
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The is enable
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    description: The context
+- h2: See Also
+- list:
+  - - text: AManager
+      url: Alis.Core.Ecs.Systems.Manager.AManager.html
+languageId: csharp
+metadata:
+  description: The audio manager base class

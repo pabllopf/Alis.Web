@@ -1,0 +1,27 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Components.Collider
+body:
+- api1: Namespace Alis.Core.Ecs.Components.Collider
+  id: Alis_Core_Ecs_Components_Collider
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider
+    commentId: N:Alis.Core.Ecs.Components.Collider
+- h3: Classes
+- parameters:
+  - type:
+      text: BoxCollider
+      url: Alis.Core.Ecs.Components.Collider.BoxCollider.html
+    description: The box collider class
+- h3: Structs
+- parameters:
+  - type:
+      text: CircleCollider
+      url: Alis.Core.Ecs.Components.Collider.CircleCollider.html
+    description: The circle collider
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IBoxCollider
+      url: Alis.Core.Ecs.Components.Collider.IBoxCollider.html
+    description: The box collider interface
+languageId: csharp

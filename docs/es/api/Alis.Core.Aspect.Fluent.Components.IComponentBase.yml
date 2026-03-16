@@ -1,0 +1,26 @@
+### YamlMime:ApiPage
+title: Interface IComponentBase
+body:
+- api1: Interface IComponentBase
+  id: Alis_Core_Aspect_Fluent_Components_IComponentBase
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IComponentBase.cs#L51
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IComponentBase
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IComponentBase
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Base marker component for all component interfaces
+- code: public interface IComponentBase
+- h2: Remarks
+- markdown: >-
+    All components with <xref href="Alis.Core.Aspect.Fluent.Components.IComponentBase" data-throw-if-not-resolved="false"></xref> will be auto-registered. This makes it useful for AOT
+
+    compilation scenarios
+languageId: csharp
+metadata:
+  description: Base marker component for all component interfaces

@@ -1,0 +1,50 @@
+### YamlMime:ApiPage
+title: Interface IOnUpdate<TArg>
+body:
+- api1: Interface IOnUpdate<TArg>
+  id: Alis_Core_Aspect_Fluent_Components_IOnUpdate_1
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnUpdate.1.cs#L37
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnUpdate`1
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnUpdate`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Indicates a component should be updated with itself as an argument and the specified components
+- code: 'public interface IOnUpdate<TArg> : IComponentBase'
+- h4: Type Parameters
+- parameters:
+  - name: TArg
+- h4: Implements
+- list:
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+- h2: Remarks
+- markdown: Components should only implement one "Update" method.
+- h2: Methods
+- api3: Update(IGameObject, ref TArg)
+  id: Alis_Core_Aspect_Fluent_Components_IOnUpdate_1_Update_Alis_Core_Aspect_Fluent_Components_IGameObject__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnUpdate.1.cs#L44
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnUpdate`1.Update(Alis.Core.Aspect.Fluent.Components.IGameObject,`0@)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnUpdate`1.Update(Alis.Core.Aspect.Fluent.Components.IGameObject,`0@)
+- markdown: Updates the self
+- code: void Update(IGameObject self, ref TArg arg)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+  - name: arg
+    type:
+    - TArg
+    description: The arg
+languageId: csharp
+metadata:
+  description: Indicates a component should be updated with itself as an argument and the specified components

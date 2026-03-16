@@ -1,0 +1,1328 @@
+### YamlMime:ApiPage
+title: Class FastImmutableArray<T>.Builder
+body:
+- api1: Class FastImmutableArray<T>.Builder
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L66
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder
+    commentId: T:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Math.Collections
+      url: Alis.Core.Aspect.Math.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    A writable array accessor that can be converted into an <see></see>
+
+    instance without allocating memory.
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public sealed class FastImmutableArray<T>.Builder : IList<T>, ICollection<T>, IReadOnlyList<T>, IReadOnlyCollection<T>, IEnumerable<T>, IEnumerable
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: FastImmutableArray<T>.Builder
+    url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.Builder.html
+- h4: Implements
+- list:
+  - text: IList<T>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - text: ICollection<T>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - text: IReadOnlyList<T>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - text: IReadOnlyCollection<T>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - text: IEnumerable<T>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - text: IEnumerable
+    url: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Builder(int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder__ctor_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L83
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.#ctor(System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.#ctor(System.Int32)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Math.Collections.FastImmutableArray%601.Builder" data-throw-if-not-resolved="false"></xref> class.
+- code: internal Builder(int capacity)
+- h4: Parameters
+- parameters:
+  - name: capacity
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The initial capacity of the internal array.
+- api3: Builder()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L92
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.#ctor
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Math.Collections.FastImmutableArray%601.Builder" data-throw-if-not-resolved="false"></xref> class.
+- code: internal Builder()
+- h2: Fields
+- api3: _count
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder__count
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L72
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder._count
+    commentId: F:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder._count
+- markdown: The number of initialized elements in the array.
+- code: private int _count
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _elements
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder__elements
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L77
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder._elements
+    commentId: F:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder._elements
+- markdown: The backing array for the builder.
+- code: private T[] _elements
+- h4: Field Value
+- parameters:
+  - type:
+    - T
+    - '['
+    - ']'
+- h2: Properties
+- api3: Capacity
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Capacity
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L101
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Capacity
+    commentId: P:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Capacity
+- markdown: >-
+    Get and sets the length of the internal array.  When set the internal array is
+
+    reallocated to the given capacity if it is not already the specified length.
+- code: public int Capacity { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Count
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Count
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L139
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Count
+    commentId: P:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Count
+- markdown: Gets or sets the length of the builder.
+- code: public int Count { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h4: Remarks
+- markdown: >-
+    If the value is decreased, the array contents are truncated.
+
+    If the value is increased, the added elements are initialized to the default value of type
+
+    .
+- api3: ICollection<T>.IsReadOnly
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_System_Collections_Generic_ICollection_T__IsReadOnly
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L210
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#Generic#ICollection{T}#IsReadOnly
+    commentId: P:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#Generic#ICollection{T}#IsReadOnly
+- markdown: Gets a value indicating whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+- code: bool ICollection<T>.IsReadOnly { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: this[int]
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Item_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L181
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Item(System.Int32)
+    commentId: P:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Item(System.Int32)
+- markdown: Gets or sets the element at the specified index.
+- code: public T this[int index] { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - T
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: IndexOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception
+    description: ''
+- h2: Methods
+- api3: Add(T)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Add__0_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L242
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Add(`0)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Add(`0)
+- markdown: Adds an item to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+- code: public void Add(T item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The object to add to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+- api3: AddRange(params T[])
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__0___
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L424
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(`0[])
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(`0[])
+- markdown: Adds the specified items to the end of the array.
+- code: public void AddRange(params T[] items)
+- h4: Parameters
+- parameters:
+  - name: items
+    type:
+    - T
+    - '['
+    - ']'
+    description: The items.
+- api3: AddRange<TDerived>(TDerived[])
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__1___0___
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L437
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(``0[])
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(``0[])
+- markdown: Adds the specified items to the end of the array.
+- code: 'public void AddRange<TDerived>(TDerived[] items) where TDerived : T'
+- h4: Parameters
+- parameters:
+  - name: items
+    type:
+    - TDerived
+    - '['
+    - ']'
+    description: The items.
+- h4: Type Parameters
+- parameters:
+  - name: TDerived
+    description: The type that derives from the type of item already in the array.
+- api3: AddRange(T[], int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__0___System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L450
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(`0[],System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(`0[],System.Int32)
+- markdown: Adds the specified items to the end of the array.
+- code: public void AddRange(T[] items, int length)
+- h4: Parameters
+- parameters:
+  - name: items
+    type:
+    - T
+    - '['
+    - ']'
+    description: The items.
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of elements from the source array to add.
+- api3: AddRange(FastImmutableArray<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange_Alis_Core_Aspect_Math_Collections_FastImmutableArray__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L462
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0})
+- markdown: Adds the specified items to the end of the array.
+- code: public void AddRange(FastImmutableArray<T> items)
+- h4: Parameters
+- parameters:
+  - name: items
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: The items.
+- api3: AddRange(FastImmutableArray<T>, int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange_Alis_Core_Aspect_Math_Collections_FastImmutableArray__0__System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L472
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0},System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0},System.Int32)
+- markdown: Adds the specified items to the end of the array.
+- code: public void AddRange(FastImmutableArray<T> items, int length)
+- h4: Parameters
+- parameters:
+  - name: items
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: The items.
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of elements from the source array to add.
+- api3: AddRange<TDerived>(FastImmutableArray<TDerived>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__1_Alis_Core_Aspect_Math_Collections_FastImmutableArray___0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L485
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0})
+- markdown: Adds the specified items to the end of the array.
+- code: 'public void AddRange<TDerived>(FastImmutableArray<TDerived> items) where TDerived : T'
+- h4: Parameters
+- parameters:
+  - name: items
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - TDerived
+    - '>'
+    description: The items to add at the end of the array.
+- h4: Type Parameters
+- parameters:
+  - name: TDerived
+    description: The type that derives from the type of item already in the array.
+- api3: AddRange(Builder)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange_Alis_Core_Aspect_Math_Collections_FastImmutableArray__0__Builder_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L497
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0}.Builder)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0}.Builder)
+- markdown: Adds the specified items to the end of the array.
+- code: public void AddRange(FastImmutableArray<T>.Builder items)
+- h4: Parameters
+- parameters:
+  - name: items
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    - .
+    - text: Builder
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.Builder.html
+    description: The items to add at the end of the array.
+- api3: AddRange<TDerived>(Builder)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__1_Alis_Core_Aspect_Math_Collections_FastImmutableArray___0__Builder_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L507
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0}.Builder)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0}.Builder)
+- markdown: Adds the specified items to the end of the array.
+- code: 'public void AddRange<TDerived>(FastImmutableArray<TDerived>.Builder items) where TDerived : T'
+- h4: Parameters
+- parameters:
+  - name: items
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - TDerived
+    - '>'
+    - .
+    - text: Builder
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.Builder.html
+    description: The items to add at the end of the array.
+- h4: Type Parameters
+- parameters:
+  - name: TDerived
+    description: The type that derives from the type of item already in the array.
+- api3: AddRange<TDerived>(TDerived[], int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__1___0___System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L952
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(``0[],System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(``0[],System.Int32)
+- markdown: Adds items to this collection.
+- code: 'private void AddRange<TDerived>(TDerived[] items, int length) where TDerived : T'
+- h4: Parameters
+- parameters:
+  - name: items
+    type:
+    - TDerived
+    - '['
+    - ']'
+    description: The source array.
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of elements to add to this array.
+- h4: Type Parameters
+- parameters:
+  - name: TDerived
+    description: The type of source elements.
+- api3: AsMemory()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AsMemory
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L995
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AsMemory
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AsMemory
+- markdown: Gets a <xref href="System.Memory%601" data-throw-if-not-resolved="false"></xref> for the filled portion of the backing array.
+- code: internal Memory<T> AsMemory()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Memory
+      url: https://learn.microsoft.com/dotnet/api/system.memory-1
+    - <
+    - T
+    - '>'
+- api3: Clear()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Clear
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L215
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Clear
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Clear
+- markdown: Removes all items from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+- code: public void Clear()
+- api3: Contains(T)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Contains__0_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L289
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Contains(`0)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Contains(`0)
+- markdown: Determines whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> contains a specific value.
+- code: public bool Contains(T item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The object to locate in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: true if <code class="paramref">item</code> is found in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, false.
+- api3: CopyTo(T[], int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_CopyTo__0___System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L296
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(`0[],System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(`0[],System.Int32)
+- markdown: Copies the current contents to the specified array.
+- code: public void CopyTo(T[] array, int index)
+- h4: Parameters
+- parameters:
+  - name: array
+    type:
+    - T
+    - '['
+    - ']'
+    description: The array to copy to.
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The starting index of the target array.
+- api3: CopyTo(T[])
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_CopyTo__0___
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L667
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(`0[])
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(`0[])
+- markdown: Copies the contents of this array to the specified array.
+- code: public void CopyTo(T[] destination)
+- h4: Parameters
+- parameters:
+  - name: destination
+    type:
+    - T
+    - '['
+    - ']'
+    description: The array to copy to.
+- api3: CopyTo(int, T[], int, int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_CopyTo_System_Int32__0___System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L679
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+- markdown: Copies the contents of this array to the specified array.
+- code: public void CopyTo(int sourceIndex, T[] destination, int destinationIndex, int length)
+- h4: Parameters
+- parameters:
+  - name: sourceIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index into this collection of the first element to copy.
+  - name: destination
+    type:
+    - T
+    - '['
+    - ']'
+    description: The array to copy to.
+  - name: destinationIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index into the destination array to which the first copied element is written.
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of elements to copy.
+- api3: CopyTo(Span<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_CopyTo_System_Span__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L929
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(System.Span{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(System.Span{`0})
+- markdown: Copies the current contents to the specified <xref href="System.Span%601" data-throw-if-not-resolved="false"></xref>.
+- code: public void CopyTo(Span<T> destination)
+- h4: Parameters
+- parameters:
+  - name: destination
+    type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T
+    - '>'
+    description: The <xref href="System.Span%601" data-throw-if-not-resolved="false"></xref> to copy to.
+- api3: DrainToImmutable()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_DrainToImmutable
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L381
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.DrainToImmutable
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.DrainToImmutable
+- markdown: >-
+    Returns the current contents as an <xref href="Alis.Core.Aspect.Math.Collections.FastImmutableArray%601" data-throw-if-not-resolved="false"></xref> and sets the collection to a zero length
+
+    array.
+- code: public FastImmutableArray<T> DrainToImmutable()
+- h4: Returns
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: An immutable array.
+- h4: Remarks
+- markdown: >-
+    If <xref href="Alis.Core.Aspect.Math.Collections.FastImmutableArray%601.Builder.Capacity" data-throw-if-not-resolved="false"></xref> equals <xref href="Alis.Core.Aspect.Math.Collections.FastImmutableArray%601.Builder.Count" data-throw-if-not-resolved="false"></xref>, the internal array will be extracted
+
+    as an <xref href="Alis.Core.Aspect.Math.Collections.FastImmutableArray%601" data-throw-if-not-resolved="false"></xref> without copying the contents. Otherwise, the contents
+
+    will be copied into a new array. The collection will then be set to a zero length array.
+- api3: EnsureCapacity(int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_EnsureCapacity_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L688
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.EnsureCapacity(System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.EnsureCapacity(System.Int32)
+- markdown: Resizes the array to accommodate the specified capacity requirement.
+- code: private void EnsureCapacity(int capacity)
+- h4: Parameters
+- parameters:
+  - name: capacity
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The required capacity.
+- api3: GetEnumerator()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L938
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.GetEnumerator
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.GetEnumerator
+- markdown: Returns an enumerator for the contents of the array.
+- code: public IEnumerator<T> GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+    - <
+    - T
+    - '>'
+    description: An enumerator.
+- api3: IndexOf(T)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_IndexOf__0_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L308
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0)
+- markdown: Determines the index of a specific item in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+- code: public int IndexOf(T item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The object to locate in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index of <code class="paramref">item</code> if found in the list; otherwise, -1.
+- api3: IndexOf(T, int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_IndexOf__0_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L703
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32)
+- markdown: Searches the array for the specified item.
+- code: public int IndexOf(T item, int startIndex)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item to search for.
+  - name: startIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index at which to begin the search.
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- api3: IndexOf(T, int, int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_IndexOf__0_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L712
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Int32)
+- markdown: Searches the array for the specified item.
+- code: public int IndexOf(T item, int startIndex, int count)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item to search for.
+  - name: startIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index at which to begin the search.
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of elements to search.
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- api3: IndexOf(T, int, int, IEqualityComparer<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_IndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L725
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+- markdown: Searches the array for the specified item.
+- code: public int IndexOf(T item, int startIndex, int count, IEqualityComparer<T> equalityComparer)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item to search for.
+  - name: startIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index at which to begin the search.
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of elements to search.
+  - name: equalityComparer
+    type:
+    - text: IEqualityComparer
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+    - <
+    - T
+    - '>'
+    description: >-
+      The equality comparer to use in the search.
+
+      If <code>null</code>, <xref href="System.Collections.Generic.EqualityComparer%601.Default" data-throw-if-not-resolved="false"></xref> is used.
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- api3: IndexOf(T, int, IEqualityComparer<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_IndexOf__0_System_Int32_System_Collections_Generic_IEqualityComparer__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L760
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+- markdown: Searches the array for the specified item.
+- code: public int IndexOf(T item, int startIndex, IEqualityComparer<T> equalityComparer)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item to search for.
+  - name: startIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index at which to begin the search.
+  - name: equalityComparer
+    type:
+    - text: IEqualityComparer
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+    - <
+    - T
+    - '>'
+    description: >-
+      The equality comparer to use in the search.
+
+      If <code>null</code>, <xref href="System.Collections.Generic.EqualityComparer%601.Default" data-throw-if-not-resolved="false"></xref> is used.
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- api3: Insert(int, T)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Insert_System_Int32__0_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L225
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Insert(System.Int32,`0)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Insert(System.Int32,`0)
+- markdown: Inserts an item to the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> at the specified index.
+- code: public void Insert(int index, T item)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The zero-based index at which <code class="paramref">item</code> should be inserted.
+  - name: item
+    type:
+    - T
+    description: The object to insert into the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+- api3: InsertRange(int, FastImmutableArray<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_InsertRange_System_Int32_Alis_Core_Aspect_Math_Collections_FastImmutableArray__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L401
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.InsertRange(System.Int32,Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.InsertRange(System.Int32,Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0})
+- markdown: Inserts the specified values at the specified index.
+- code: public void InsertRange(int index, FastImmutableArray<T> items)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index at which to insert the value.
+  - name: items
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: The elements to insert.
+- api3: ItemRef(int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_ItemRef_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L334
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ItemRef(System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ItemRef(System.Int32)
+- markdown: Gets a read-only reference to the element at the specified index.
+- code: public ref readonly T ItemRef(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index.
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: ''
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: IndexOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception
+    description: ''
+- api3: LastIndexOf(T)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_LastIndexOf__0_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L767
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0)
+- markdown: Searches the array for the specified item in reverse.
+- code: public int LastIndexOf(T item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item to search for.
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- api3: LastIndexOf(T, int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_LastIndexOf__0_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L783
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32)
+- markdown: Searches the array for the specified item in reverse.
+- code: public int LastIndexOf(T item, int startIndex)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item to search for.
+  - name: startIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index at which to begin the search.
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- api3: LastIndexOf(T, int, int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_LastIndexOf__0_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L801
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32,System.Int32)
+- markdown: Searches the array for the specified item in reverse.
+- code: public int LastIndexOf(T item, int startIndex, int count)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item to search for.
+  - name: startIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index at which to begin the search.
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of elements to search.
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- api3: LastIndexOf(T, int, int, IEqualityComparer<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_LastIndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L811
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+- markdown: Searches the array for the specified item in reverse.
+- code: public int LastIndexOf(T item, int startIndex, int count, IEqualityComparer<T> equalityComparer)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item to search for.
+  - name: startIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index at which to begin the search.
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of elements to search.
+  - name: equalityComparer
+    type:
+    - text: IEqualityComparer
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+    - <
+    - T
+    - '>'
+    description: The equality comparer to use in the search.
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- api3: MoveToImmutable()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_MoveToImmutable
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L358
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.MoveToImmutable
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.MoveToImmutable
+- markdown: >-
+    Extracts the internal array as an <xref href="Alis.Core.Aspect.Math.Collections.FastImmutableArray%601" data-throw-if-not-resolved="false"></xref> and replaces it
+
+    with a zero length array.
+- code: public FastImmutableArray<T> MoveToImmutable()
+- h4: Returns
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: >-
+      When <xref href="Alis.Core.Aspect.Math.Collections.FastImmutableArray%601.Builder.Count" data-throw-if-not-resolved="false"></xref> doesn't
+
+      equal <xref href="Alis.Core.Aspect.Math.Collections.FastImmutableArray%601.Builder.Capacity" data-throw-if-not-resolved="false"></xref>.
+- api3: Remove(T)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Remove__0_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L256
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Remove(`0)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Remove(`0)
+- markdown: >-
+    Removes the first occurrence of the specified element from the builder.
+
+    If no match is found, the builder remains unchanged.
+- code: public bool Remove(T element)
+- h4: Parameters
+- parameters:
+  - name: element
+    type:
+    - T
+    description: The element.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: A value indicating whether the specified element was found and removed from the collection.
+- api3: Remove(T, IEqualityComparer<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Remove__0_System_Collections_Generic_IEqualityComparer__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L522
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Remove(`0,System.Collections.Generic.IEqualityComparer{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Remove(`0,System.Collections.Generic.IEqualityComparer{`0})
+- markdown: >-
+    Removes the first occurrence of the specified element from the builder.
+
+    If no match is found, the builder remains unchanged.
+- code: public bool Remove(T element, IEqualityComparer<T> equalityComparer)
+- h4: Parameters
+- parameters:
+  - name: element
+    type:
+    - T
+    description: The element to remove.
+  - name: equalityComparer
+    type:
+    - text: IEqualityComparer
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+    - <
+    - T
+    - '>'
+    description: >-
+      The equality comparer to use in the search.
+
+      If <code>null</code>, <xref href="System.Collections.Generic.EqualityComparer%601.Default" data-throw-if-not-resolved="false"></xref> is used.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: A value indicating whether the specified element was found and removed from the collection.
+- api3: RemoveAll(Predicate<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveAll_System_Predicate__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L543
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAll(System.Predicate{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAll(System.Predicate{`0})
+- markdown: >-
+    Removes all the elements that match the conditions defined by the specified
+
+    predicate.
+- code: public void RemoveAll(Predicate<T> match)
+- h4: Parameters
+- parameters:
+  - name: match
+    type:
+    - text: Predicate
+      url: https://learn.microsoft.com/dotnet/api/system.predicate-1
+    - <
+    - T
+    - '>'
+    description: >-
+      The <xref href="System.Predicate%601" data-throw-if-not-resolved="false"></xref> delegate that defines the conditions of the elements
+
+      to remove.
+- api3: RemoveAt(int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveAt_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L272
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAt(System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAt(System.Int32)
+- markdown: Removes the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> item at the specified index.
+- code: public void RemoveAt(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The zero-based index of the item to remove.
+- api3: RemoveAtRange(ICollection<int>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveAtRange_System_Collections_Generic_ICollection_System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L970
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAtRange(System.Collections.Generic.ICollection{System.Int32})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAtRange(System.Collections.Generic.ICollection{System.Int32})
+- markdown: Removes the at range using the specified indices to remove
+- code: private void RemoveAtRange(ICollection<int> indicesToRemove)
+- h4: Parameters
+- parameters:
+  - name: indicesToRemove
+    type:
+    - text: ICollection
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+    - <
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '>'
+    description: The indices to remove
+- api3: RemoveRange(int, int)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveRange_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L566
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Int32,System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Int32,System.Int32)
+- markdown: Removes the specified values from this list.
+- code: public void RemoveRange(int index, int length)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The 0-based index into the array for the element to omit from the returned array.
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of elements to remove.
+- api3: RemoveRange(IEnumerable<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveRange_System_Collections_Generic_IEnumerable__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L591
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Collections.Generic.IEnumerable{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Collections.Generic.IEnumerable{`0})
+- markdown: Removes the specified values from this list.
+- code: public void RemoveRange(IEnumerable<T> items)
+- h4: Parameters
+- parameters:
+  - name: items
+    type:
+    - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - T
+    - '>'
+    description: The items to remove if matches are found in this list.
+- api3: RemoveRange(IEnumerable<T>, IEqualityComparer<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveRange_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEqualityComparer__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L604
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})
+- markdown: Removes the specified values from this list.
+- code: public void RemoveRange(IEnumerable<T> items, IEqualityComparer<T> equalityComparer)
+- h4: Parameters
+- parameters:
+  - name: items
+    type:
+    - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - T
+    - '>'
+    description: The items to remove if matches are found in this list.
+  - name: equalityComparer
+    type:
+    - text: IEqualityComparer
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+    - <
+    - T
+    - '>'
+    description: >-
+      The equality comparer to use in the search.
+
+      If <code>null</code>, <xref href="System.Collections.Generic.EqualityComparer%601.Default" data-throw-if-not-resolved="false"></xref> is used.
+- api3: Replace(T, T)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Replace__0__0_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L624
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Replace(`0,`0)
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Replace(`0,`0)
+- markdown: Replaces the first equal element in the list with the specified element.
+- code: public void Replace(T oldValue, T newValue)
+- h4: Parameters
+- parameters:
+  - name: oldValue
+    type:
+    - T
+    description: The element to replace.
+  - name: newValue
+    type:
+    - T
+    description: The element to replace the old element with.
+- api3: Replace(T, T, IEqualityComparer<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Replace__0__0_System_Collections_Generic_IEqualityComparer__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L638
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})
+- markdown: Replaces the first equal element in the list with the specified element.
+- code: public void Replace(T oldValue, T newValue, IEqualityComparer<T> equalityComparer)
+- h4: Parameters
+- parameters:
+  - name: oldValue
+    type:
+    - T
+    description: The element to replace.
+  - name: newValue
+    type:
+    - T
+    description: The element to replace the old element with.
+  - name: equalityComparer
+    type:
+    - text: IEqualityComparer
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+    - <
+    - T
+    - '>'
+    description: >-
+      The equality comparer to use in the search.
+
+      If <code>null</code>, <xref href="System.Collections.Generic.EqualityComparer%601.Default" data-throw-if-not-resolved="false"></xref> is used.
+- api3: Reverse()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Reverse
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L839
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Reverse
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Reverse
+- markdown: Reverses the order of elements in the collection.
+- code: public void Reverse()
+- api3: Sort()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Sort
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L861
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort
+- markdown: Sorts the array.
+- code: public void Sort()
+- api3: Sort(Comparison<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Sort_System_Comparison__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L877
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Comparison{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Comparison{`0})
+- markdown: >-
+    Sorts the elements in the entire array using
+
+    the specified <xref href="System.Comparison%601" data-throw-if-not-resolved="false"></xref>.
+- code: public void Sort(Comparison<T> comparison)
+- h4: Parameters
+- parameters:
+  - name: comparison
+    type:
+    - text: Comparison
+      url: https://learn.microsoft.com/dotnet/api/system.comparison-1
+    - <
+    - T
+    - '>'
+    description: The <xref href="System.Comparison%601" data-throw-if-not-resolved="false"></xref> to use when comparing elements.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: <code class="paramref">comparison</code> is null.
+- api3: Sort(IComparer<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Sort_System_Collections_Generic_IComparer__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L899
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Collections.Generic.IComparer{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Collections.Generic.IComparer{`0})
+- markdown: Sorts the array.
+- code: public void Sort(IComparer<T> comparer)
+- h4: Parameters
+- parameters:
+  - name: comparer
+    type:
+    - text: IComparer
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+    - <
+    - T
+    - '>'
+    description: The comparer to use in sorting. If <code>null</code>, the default comparer is used.
+- api3: Sort(int, int, IComparer<T>)
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L913
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+- markdown: Sorts the array.
+- code: public void Sort(int index, int count, IComparer<T> comparer)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index of the first element to consider in the sort.
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of elements to include in the sort.
+  - name: comparer
+    type:
+    - text: IComparer
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+    - <
+    - T
+    - '>'
+    description: The comparer to use in sorting. If <code>null</code>, the default comparer is used.
+- api3: IEnumerable<T>.GetEnumerator()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_System_Collections_Generic_IEnumerable_T__GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L314
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+- markdown: Returns an enumerator for the contents of the array.
+- code: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+    - <
+    - T
+    - '>'
+    description: An enumerator.
+- api3: IEnumerable.GetEnumerator()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_System_Collections_IEnumerable_GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L320
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#IEnumerable#GetEnumerator
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#IEnumerable#GetEnumerator
+- markdown: Returns an enumerator for the contents of the array.
+- code: IEnumerator IEnumerable.GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+    description: An enumerator.
+- api3: ThrowIndexOutOfRangeException()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_ThrowIndexOutOfRangeException
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L325
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ThrowIndexOutOfRangeException
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ThrowIndexOutOfRangeException
+- markdown: Throws the index out of range exception
+- code: private static void ThrowIndexOutOfRangeException()
+- api3: ToArray()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_ToArray
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L651
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ToArray
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ToArray
+- markdown: Creates a new array with the current contents of this Builder.
+- code: public T[] ToArray()
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    - '['
+    - ']'
+- api3: ToImmutable()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_ToImmutable
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L348
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ToImmutable
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ToImmutable
+- markdown: Returns an immutable copy of the current contents of this collection.
+- code: public FastImmutableArray<T> ToImmutable()
+- h4: Returns
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: An immutable array.
+languageId: csharp
+metadata:
+  description: >-
+    A writable array accessor that can be converted into an 
+
+    instance without allocating memory.

@@ -1,0 +1,57 @@
+### YamlMime:ApiPage
+title: Delegate GetActiveUniform
+body:
+- api1: Delegate GetActiveUniform
+  id: Alis_Core_Graphic_OpenGL_Delegates_GetActiveUniform
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/GetActiveUniform.cs#L39
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.GetActiveUniform
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.GetActiveUniform
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The get active uniform
+- code: public delegate void GetActiveUniform(uint program, uint index, int bufSize, int[] length, int[] size, ActiveUniformType[] type, StringBuilder name)
+- h4: Parameters
+- parameters:
+  - name: program
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: index
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: bufSize
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '['
+    - ']'
+  - name: size
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '['
+    - ']'
+  - name: type
+    type:
+    - text: ActiveUniformType
+      url: Alis.Core.Graphic.OpenGL.Enums.ActiveUniformType.html
+    - '['
+    - ']'
+  - name: name
+    type:
+    - text: StringBuilder
+      url: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+languageId: csharp
+metadata:
+  description: The get active uniform

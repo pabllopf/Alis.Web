@@ -1,0 +1,97 @@
+### YamlMime:ApiPage
+title: Struct AddComponent
+body:
+- api1: Struct AddComponent
+  id: Alis_Core_Ecs_Kernel_AddComponent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/AddComponent.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.AddComponent
+    commentId: T:Alis.Core.Ecs.Kernel.AddComponent
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Add component command
+- code: 'public record struct AddComponent : IEquatable<AddComponent>'
+- h4: Implements
+- list:
+  - text: IEquatable<AddComponent>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 12 bytes total (GameObjectIdOnly 6 bytes + ComponentHandle 6 bytes)
+
+    Pack = 1 for minimal memory footprint
+- h2: Constructors
+- api3: AddComponent(GameObjectIdOnly, ComponentHandle)
+  id: Alis_Core_Ecs_Kernel_AddComponent__ctor_Alis_Core_Ecs_Kernel_GameObjectIdOnly_Alis_Core_Ecs_Kernel_ComponentHandle_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/AddComponent.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.AddComponent.#ctor(Alis.Core.Ecs.Kernel.GameObjectIdOnly,Alis.Core.Ecs.Kernel.ComponentHandle)
+    commentId: M:Alis.Core.Ecs.Kernel.AddComponent.#ctor(Alis.Core.Ecs.Kernel.GameObjectIdOnly,Alis.Core.Ecs.Kernel.ComponentHandle)
+- markdown: Add component command
+- code: public AddComponent(GameObjectIdOnly Entity, ComponentHandle ComponentHandle)
+- h4: Parameters
+- parameters:
+  - name: Entity
+    type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    description: The entity to add component to
+  - name: ComponentHandle
+    type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    description: The component handle to add
+- h4: Remarks
+- markdown: >-
+    Memory layout optimized: 12 bytes total (GameObjectIdOnly 6 bytes + ComponentHandle 6 bytes)
+
+    Pack = 1 for minimal memory footprint
+- h2: Properties
+- api3: ComponentHandle
+  id: Alis_Core_Ecs_Kernel_AddComponent_ComponentHandle
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/AddComponent.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.AddComponent.ComponentHandle
+    commentId: P:Alis.Core.Ecs.Kernel.AddComponent.ComponentHandle
+- markdown: The component handle to add
+- code: public ComponentHandle ComponentHandle { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+- api3: Entity
+  id: Alis_Core_Ecs_Kernel_AddComponent_Entity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/AddComponent.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.AddComponent.Entity
+    commentId: P:Alis.Core.Ecs.Kernel.AddComponent.Entity
+- markdown: The entity to add component to
+- code: public GameObjectIdOnly Entity { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+languageId: csharp
+metadata:
+  description: Add component command

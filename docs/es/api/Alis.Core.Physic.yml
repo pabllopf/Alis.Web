@@ -9,8 +9,8 @@ body:
 - h3: Namespaces
 - parameters:
   - type:
-      text: Alis.Core.Physic.Collision
-      url: Alis.Core.Physic.Collision.html
+      text: Alis.Core.Physic.Collisions
+      url: Alis.Core.Physic.Collisions.html
   - type:
       text: Alis.Core.Physic.Common
       url: Alis.Core.Physic.Common.html
@@ -23,7 +23,7 @@ body:
 - h3: Classes
 - parameters:
   - type:
-      text: Settings
-      url: Alis.Core.Physic.Settings.html
+      text: SettingEnv
+      url: Alis.Core.Physic.SettingEnv.html
     description: The settings class
 languageId: csharp

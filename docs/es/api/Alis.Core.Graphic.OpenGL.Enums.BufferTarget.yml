@@ -1,0 +1,93 @@
+### YamlMime:ApiPage
+title: Enum BufferTarget
+body:
+- api1: Enum BufferTarget
+  id: Alis_Core_Graphic_OpenGL_Enums_BufferTarget
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/BufferTarget.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.BufferTarget
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.BufferTarget
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The buffer target enum
+- code: public enum BufferTarget
+- h2: Fields
+- parameters:
+  - name: ArrayBuffer
+    default: "34962"
+    description: >+
+      The array buffer buffer target
+
+  - name: ElementArrayBuffer
+    default: "34963"
+    description: >+
+      The element array buffer buffer target
+
+  - name: PackBuffer
+    default: "35051"
+    description: >+
+      The pixel pack buffer buffer target
+
+  - name: UnpackBuffer
+    default: "35052"
+    description: >+
+      The pixel unpack buffer buffer target
+
+  - name: UniformBuffer
+    default: "35345"
+    description: >+
+      The uniform buffer buffer target
+
+  - name: TextureBuffer
+    default: "35882"
+    description: >+
+      The texture buffer buffer target
+
+  - name: TransformFeedbackBuffer
+    default: "35982"
+    description: >+
+      The transform feedback buffer buffer target
+
+  - name: CopyReadBuffer
+    default: "36662"
+    description: >+
+      The copy read buffer buffer target
+
+  - name: CopyWriteBuffer
+    default: "36663"
+    description: >+
+      The copy write buffer buffer target
+
+  - name: DrawIndirectBuffer
+    default: "36671"
+    description: >+
+      The draw indirect buffer buffer target
+
+  - name: AtomicCounterBuffer
+    default: "37568"
+    description: >+
+      The atomic counter buffer buffer target
+
+  - name: DispatchIndirectBuffer
+    default: "37102"
+    description: >+
+      The dispatch indirect buffer buffer target
+
+  - name: QueryBuffer
+    default: "37266"
+    description: >+
+      The query buffer buffer target
+
+  - name: ShaderStorageBuffer
+    default: "37074"
+    description: >+
+      The shader storage buffer buffer target
+
+languageId: csharp
+metadata:
+  description: The buffer target enum

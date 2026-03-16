@@ -1,0 +1,131 @@
+### YamlMime:ApiPage
+title: Class MacOpenGLContext
+body:
+- api1: Class MacOpenGLContext
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacOpenGLContext
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacOpenGLContext.cs#L39
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext
+    commentId: T:Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.Platforms.Osx.Native
+      url: Alis.Core.Graphic.Platforms.Osx.Native.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Gestiona el contexto OpenGL nativo en macOS
+- code: internal class MacOpenGLContext
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: MacOpenGLContext
+    url: Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: MacOpenGLContext(MacWindow)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacOpenGLContext__ctor_Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacOpenGLContext.cs#L45
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.#ctor(Alis.Core.Graphic.Platforms.Osx.Native.MacWindow)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.#ctor(Alis.Core.Graphic.Platforms.Osx.Native.MacWindow)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext" data-throw-if-not-resolved="false"></xref> class
+- code: public MacOpenGLContext(MacWindow window)
+- h4: Parameters
+- parameters:
+  - name: window
+    type:
+    - text: MacWindow
+      url: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.html
+    description: The window
+- h2: Properties
+- api3: Context
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacOpenGLContext_Context
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacOpenGLContext.cs#L58
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.Context
+    commentId: P:Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.Context
+- markdown: Gets or sets the value of the context
+- code: public nint Context { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: PixelFormat
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacOpenGLContext_PixelFormat
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacOpenGLContext.cs#L63
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.PixelFormat
+    commentId: P:Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.PixelFormat
+- markdown: Gets or sets the value of the pixel format
+- code: public nint PixelFormat { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: View
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacOpenGLContext_View
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacOpenGLContext.cs#L53
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.View
+    commentId: P:Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.View
+- markdown: Gets or sets the value of the view
+- code: public nint View { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- h2: Methods
+- api3: CrearContexto(MacWindow)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacOpenGLContext_CrearContexto_Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacOpenGLContext.cs#L69
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.CrearContexto(Alis.Core.Graphic.Platforms.Osx.Native.MacWindow)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.CrearContexto(Alis.Core.Graphic.Platforms.Osx.Native.MacWindow)
+- markdown: Crears the contexto using the specified window
+- code: private void CrearContexto(MacWindow window)
+- h4: Parameters
+- parameters:
+  - name: window
+    type:
+    - text: MacWindow
+      url: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.html
+    description: The window
+- api3: MakeCurrent()
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacOpenGLContext_MakeCurrent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacOpenGLContext.cs#L101
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.MakeCurrent
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.MakeCurrent
+- markdown: Makes the current
+- code: public void MakeCurrent()
+- api3: SwapBuffers()
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacOpenGLContext_SwapBuffers
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacOpenGLContext.cs#L106
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.SwapBuffers
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.SwapBuffers
+- markdown: Swaps the buffers
+- code: public void SwapBuffers()
+languageId: csharp
+metadata:
+  description: Gestiona el contexto OpenGL nativo en macOS

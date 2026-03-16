@@ -1,0 +1,312 @@
+### YamlMime:ApiPage
+title: Struct ArchetypeNeighborCache
+body:
+- api1: Struct ArchetypeNeighborCache
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache
+    commentId: T:Alis.Core.Ecs.Collections.ArchetypeNeighborCache
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Collections
+      url: Alis.Core.Ecs.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: A 4-way set-associative cache mapping source archetype IDs to destination archetypes.
+- code: internal struct ArchetypeNeighborCache
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Stores both the ushort destination archetype ID (backward-compat) and the direct
+
+    <xref href="Alis.Core.Ecs.Kernel.Archetypes.Archetype" data-throw-if-not-resolved="false"></xref> reference so the hot hit-path skips the WorldArchetypeTable lookup entirely.
+
+    Round-robin (LRU-approx) eviction. Total size ~52 bytes (fits in one cache line).
+- h2: Fields
+- api3: _arch0
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__arch0
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._arch0
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._arch0
+- markdown: The arch
+- code: private Archetype _arch0
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+- api3: _arch1
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__arch1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._arch1
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._arch1
+- markdown: The arch
+- code: private Archetype _arch1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+- api3: _arch2
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__arch2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._arch2
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._arch2
+- markdown: The arch
+- code: private Archetype _arch2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+- api3: _arch3
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__arch3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._arch3
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._arch3
+- markdown: The arch
+- code: private Archetype _arch3
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+- api3: _k0
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__k0
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._k0
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._k0
+- markdown: The
+- code: private ushort _k0
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: _k1
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__k1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._k1
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._k1
+- markdown: The
+- code: private ushort _k1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: _k2
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__k2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._k2
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._k2
+- markdown: The
+- code: private ushort _k2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: _k3
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__k3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._k3
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._k3
+- markdown: The
+- code: private ushort _k3
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: _nextIndex
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__nextIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L67
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._nextIndex
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._nextIndex
+- markdown: The next index
+- code: private int _nextIndex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _v0
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__v0
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._v0
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._v0
+- markdown: The
+- code: private ushort _v0
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: _v1
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__v1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._v1
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._v1
+- markdown: The
+- code: private ushort _v1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: _v2
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__v2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._v2
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._v2
+- markdown: The
+- code: private ushort _v2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: _v3
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache__v3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache._v3
+    commentId: F:Alis.Core.Ecs.Collections.ArchetypeNeighborCache._v3
+- markdown: The
+- code: private ushort _v3
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- h2: Methods
+- api3: Lookup(int)
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache_Lookup_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L95
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache.Lookup(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.ArchetypeNeighborCache.Lookup(System.Int32)
+- markdown: Returns the destination archetype ID stored at <code class="paramref">index</code>.
+- code: public ushort Lookup(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h4: Returns
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: Set(ushort, ushort)
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache_Set_System_UInt16_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L108
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache.Set(System.UInt16,System.UInt16)
+    commentId: M:Alis.Core.Ecs.Collections.ArchetypeNeighborCache.Set(System.UInt16,System.UInt16)
+- markdown: Stores a key→value mapping (ushort only, no direct Archetype reference).
+- code: public void Set(ushort key, ushort value)
+- h4: Parameters
+- parameters:
+  - name: key
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: value
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: Set(ushort, Archetype)
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache_Set_System_UInt16_Alis_Core_Ecs_Kernel_Archetypes_Archetype_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L126
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache.Set(System.UInt16,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+    commentId: M:Alis.Core.Ecs.Collections.ArchetypeNeighborCache.Set(System.UInt16,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+- markdown: >-
+    Stores a key→archetype mapping. The destination archetype ID is derived from
+
+    <code class="paramref">archetype</code> and the reference is cached for the fast hit path.
+- code: public void Set(ushort key, Archetype archetype)
+- h4: Parameters
+- parameters:
+  - name: key
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: archetype
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+- api3: Traverse(ushort)
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache_Traverse_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L70
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache.Traverse(System.UInt16)
+    commentId: M:Alis.Core.Ecs.Collections.ArchetypeNeighborCache.Traverse(System.UInt16)
+- markdown: Returns the slot index (0-3) for <code class="paramref">value</code>, or 32 on miss.
+- code: public int Traverse(ushort value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: TraverseArchetype(ushort)
+  id: Alis_Core_Ecs_Collections_ArchetypeNeighborCache_TraverseArchetype_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/ArchetypeNeighborCache.cs#L84
+  metadata:
+    uid: Alis.Core.Ecs.Collections.ArchetypeNeighborCache.TraverseArchetype(System.UInt16)
+    commentId: M:Alis.Core.Ecs.Collections.ArchetypeNeighborCache.TraverseArchetype(System.UInt16)
+- markdown: >-
+    Returns the cached <xref href="Alis.Core.Ecs.Kernel.Archetypes.Archetype" data-throw-if-not-resolved="false"></xref> for <code class="paramref">key</code> directly,
+
+    or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> on a miss. Eliminates the WorldArchetypeTable lookup on the hot path.
+- code: public Archetype TraverseArchetype(ushort key)
+- h4: Parameters
+- parameters:
+  - name: key
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- h4: Returns
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+languageId: csharp
+metadata:
+  description: A 4-way set-associative cache mapping source archetype IDs to destination archetypes.

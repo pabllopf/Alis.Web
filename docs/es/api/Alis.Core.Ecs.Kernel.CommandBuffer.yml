@@ -1,0 +1,607 @@
+### YamlMime:ApiPage
+title: Class CommandBuffer
+body:
+- api1: Class CommandBuffer
+  id: Alis_Core_Ecs_Kernel_CommandBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer
+    commentId: T:Alis.Core.Ecs.Kernel.CommandBuffer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Stores a set of structual changes that can be applied to a <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Scene" data-throw-if-not-resolved="false"></xref>.
+- code: public class CommandBuffer
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: CommandBuffer
+    url: Alis.Core.Ecs.Kernel.CommandBuffer.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: CommandBuffer(Scene)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer__ctor_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L97
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.#ctor(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.#ctor(Alis.Core.Ecs.Scene)
+- markdown: Creates a command buffer, which stores changes to a scene without directly applying them.
+- code: public CommandBuffer(Scene scene)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene to apply things to.
+- h2: Fields
+- api3: AddComponentBuffer
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_AddComponentBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.AddComponentBuffer
+    commentId: F:Alis.Core.Ecs.Kernel.CommandBuffer.AddComponentBuffer
+- markdown: The create
+- code: internal FastestStack<AddComponent> AddComponentBuffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: AddComponent
+      url: Alis.Core.Ecs.Kernel.AddComponent.html
+    - '>'
+- api3: CreateEntityBuffer
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_CreateEntityBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.CreateEntityBuffer
+    commentId: F:Alis.Core.Ecs.Kernel.CommandBuffer.CreateEntityBuffer
+- markdown: The create
+- code: internal FastestStack<CreateCommand> CreateEntityBuffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: CreateCommand
+      url: Alis.Core.Ecs.Kernel.CreateCommand.html
+    - '>'
+- api3: CreateEntityComponents
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_CreateEntityComponents
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L65
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.CreateEntityComponents
+    commentId: F:Alis.Core.Ecs.Kernel.CommandBuffer.CreateEntityComponents
+- markdown: The create
+- code: internal FastestStack<ComponentHandle> CreateEntityComponents
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    - '>'
+- api3: DeleteEntityBuffer
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_DeleteEntityBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L70
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.DeleteEntityBuffer
+    commentId: F:Alis.Core.Ecs.Kernel.CommandBuffer.DeleteEntityBuffer
+- markdown: The create
+- code: internal FastestStack<GameObjectIdOnly> DeleteEntityBuffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    - '>'
+- api3: IsInactive
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_IsInactive
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L75
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.IsInactive
+    commentId: F:Alis.Core.Ecs.Kernel.CommandBuffer.IsInactive
+- markdown: The is inactive
+- code: internal bool IsInactive
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: LastCreateEntityComponentsBufferIndex
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_LastCreateEntityComponentsBufferIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L81
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.LastCreateEntityComponentsBufferIndex
+    commentId: F:Alis.Core.Ecs.Kernel.CommandBuffer.LastCreateEntityComponentsBufferIndex
+- markdown: The last create gameObject components buffer index
+- code: internal int LastCreateEntityComponentsBufferIndex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: RemoveComponentBuffer
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_RemoveComponentBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L86
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.RemoveComponentBuffer
+    commentId: F:Alis.Core.Ecs.Kernel.CommandBuffer.RemoveComponentBuffer
+- markdown: The create
+- code: internal FastestStack<DeleteComponent> RemoveComponentBuffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: DeleteComponent
+      url: Alis.Core.Ecs.Kernel.DeleteComponent.html
+    - '>'
+- api3: Scene
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_Scene
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L91
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.Scene
+    commentId: F:Alis.Core.Ecs.Kernel.CommandBuffer.Scene
+- markdown: The scene
+- code: internal Scene Scene
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- api3: _componentRunnerBuffer
+  id: Alis_Core_Ecs_Kernel_CommandBuffer__componentRunnerBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer._componentRunnerBuffer
+    commentId: F:Alis.Core.Ecs.Kernel.CommandBuffer._componentRunnerBuffer
+- markdown: The max component count
+- code: private readonly ComponentStorageBase[] _componentRunnerBuffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ComponentStorageBase
+      url: Alis.Core.Ecs.Updating.ComponentStorageBase.html
+    - '['
+    - ']'
+- h2: Properties
+- api3: HasBufferItems
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_HasBufferItems
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L106
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.HasBufferItems
+    commentId: P:Alis.Core.Ecs.Kernel.CommandBuffer.HasBufferItems
+- markdown: Whether or not the buffer currently has items to be played back.
+- code: public bool HasBufferItems { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h2: Methods
+- api3: AddComponent<T>(GameObject, in T)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_AddComponent__1_Alis_Core_Ecs_GameObject___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L155
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.AddComponent``1(Alis.Core.Ecs.GameObject,``0@)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.AddComponent``1(Alis.Core.Ecs.GameObject,``0@)
+- markdown: Adds a component to an gameObject when <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Playback" data-throw-if-not-resolved="false"></xref> is called.
+- code: public void AddComponent<T>(GameObject gameObject, in T component)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject to add to.
+  - name: component
+    type:
+    - T
+    description: The component to add.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The component type to add.
+- api3: AddComponent(GameObject, ComponentId, object)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_AddComponent_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_ComponentId_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L168
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.AddComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.Kernel.ComponentId,System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.AddComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.Kernel.ComponentId,System.Object)
+- markdown: Adds a component to an gameObject when <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Playback" data-throw-if-not-resolved="false"></xref> is called.
+- code: public void AddComponent(GameObject gameObject, ComponentId componentId, object component)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject to add to.
+  - name: componentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The ID of the component type to add as.
+  - name: component
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The component to add.
+- h4: Remarks
+- markdown: <code class="paramref">component</code> must be assignable to <xref href="Alis.Core.Ecs.Kernel.ComponentId.Type" data-throw-if-not-resolved="false"></xref>.
+- api3: AddComponent(GameObject, Type, object)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_AddComponent_Alis_Core_Ecs_GameObject_System_Type_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L182
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.AddComponent(Alis.Core.Ecs.GameObject,System.Type,System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.AddComponent(Alis.Core.Ecs.GameObject,System.Type,System.Object)
+- markdown: Adds a component to an gameObject when <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Playback" data-throw-if-not-resolved="false"></xref> is called.
+- code: public void AddComponent(GameObject gameObject, Type componentType, object component)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject to add to.
+  - name: componentType
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type to add the component as.
+  - name: component
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The component to add.
+- h4: Remarks
+- markdown: <code class="paramref">component</code> must be assignable to <code class="paramref">componentType</code>.
+- api3: AddComponent(GameObject, object)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_AddComponent_Alis_Core_Ecs_GameObject_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L192
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.AddComponent(Alis.Core.Ecs.GameObject,System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.AddComponent(Alis.Core.Ecs.GameObject,System.Object)
+- markdown: Adds a component to an gameObject when <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Playback" data-throw-if-not-resolved="false"></xref> is called.
+- code: public void AddComponent(GameObject gameObject, object component)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject to add to.
+  - name: component
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The component to add.
+- api3: AssertCreatingEntity()
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_AssertCreatingEntity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L330
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.AssertCreatingEntity
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.AssertCreatingEntity
+- markdown: Asserts the creating gameObject
+- code: private void AssertCreatingEntity()
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Use CommandBuffer.GameObject() to begin creating an gameObject!
+- api3: Clear()
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_Clear
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L201
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.Clear
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.Clear
+- markdown: Removes all commands without playing them back.
+- code: public void Clear()
+- h4: Remarks
+- markdown: This command also removes all empty entities (without events) that have been created by this command buffer.
+- api3: DeleteEntity(GameObject)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_DeleteEntity_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L112
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.DeleteEntity(Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.DeleteEntity(Alis.Core.Ecs.GameObject)
+- markdown: Deletes a component from when <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Playback" data-throw-if-not-resolved="false"></xref> is called.
+- code: public void DeleteEntity(GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject that will be deleted on playback.
+- api3: End()
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_End
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L418
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.End
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.End
+- markdown: >-
+    Finishes recording gameObject creation and returns an gameObject with zero components. Recorded components will be
+
+    added on
+
+    playback.
+- code: public GameObject End()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The created gameObject ID
+- api3: Entity()
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_Entity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L357
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.Entity
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.Entity
+- markdown: Begins to create an gameObject, which will be resolved when <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Playback" data-throw-if-not-resolved="false"></xref> is called.
+- code: public CommandBuffer Entity()
+- h4: Returns
+- parameters:
+  - type:
+    - text: CommandBuffer
+      url: Alis.Core.Ecs.Kernel.CommandBuffer.html
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/this">this</a> instance, for method chaining.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: An gameObject is already being created.
+- api3: Playback()
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_Playback
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L226
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.Playback
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.Playback
+- markdown: Plays all the queued commands, applying them to a scene.
+- code: public bool Playback()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when at least one change was made; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> when this command buffer
+
+      is empty and not active.
+- api3: PlaybackInternal()
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_PlaybackInternal
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L240
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.PlaybackInternal
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.PlaybackInternal
+- markdown: Playbacks the internal
+- code: internal bool PlaybackInternal()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The has items
+- api3: RemoveComponent(GameObject, ComponentId)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_RemoveComponent_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L123
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.RemoveComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.RemoveComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Removes a component from when <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Playback" data-throw-if-not-resolved="false"></xref> is called.
+- code: public void RemoveComponent(GameObject gameObject, ComponentId component)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject to remove a component from.
+  - name: component
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The component to remove.
+- api3: RemoveComponent<T>(GameObject)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_RemoveComponent__1_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L134
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.RemoveComponent``1(Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.RemoveComponent``1(Alis.Core.Ecs.GameObject)
+- markdown: Removes a component from when <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Playback" data-throw-if-not-resolved="false"></xref> is called.
+- code: public void RemoveComponent<T>(GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject to remove a component from.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The component type to remove.
+- api3: RemoveComponent(GameObject, Type)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_RemoveComponent_Alis_Core_Ecs_GameObject_System_Type_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L144
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.RemoveComponent(Alis.Core.Ecs.GameObject,System.Type)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.RemoveComponent(Alis.Core.Ecs.GameObject,System.Type)
+- markdown: Removes a component from when <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Playback" data-throw-if-not-resolved="false"></xref> is called.
+- code: public void RemoveComponent(GameObject gameObject, Type type)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject to remove a component from.
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type of component to remove.
+- api3: SetIsActive()
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_SetIsActive
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L347
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.SetIsActive
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.SetIsActive
+- markdown: Sets the is active
+- code: private void SetIsActive()
+- api3: With<T>(T)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_With__1___0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L375
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.With``1(``0)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.With``1(``0)
+- markdown: Records <code class="paramref">component</code> to be part of the gameObject created when resolved.
+- code: public CommandBuffer With<T>(T component)
+- h4: Parameters
+- parameters:
+  - name: component
+    type:
+    - T
+- h4: Returns
+- parameters:
+  - type:
+    - text: CommandBuffer
+      url: Alis.Core.Ecs.Kernel.CommandBuffer.html
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/this">this</a> instance, for method chaining.
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Entity" data-throw-if-not-resolved="false"></xref> has not been called."/&gt;
+- api3: WithBoxed(ComponentId, object)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_WithBoxed_Alis_Core_Ecs_Kernel_ComponentId_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L388
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.WithBoxed(Alis.Core.Ecs.Kernel.ComponentId,System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.WithBoxed(Alis.Core.Ecs.Kernel.ComponentId,System.Object)
+- markdown: >-
+    Records <code class="paramref">component</code> to be part of the gameObject created when resolved as a component type
+
+    represented by <code class="paramref">componentId</code>.
+- code: public CommandBuffer WithBoxed(ComponentId componentId, object component)
+- h4: Parameters
+- parameters:
+  - name: componentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+  - name: component
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+- h4: Returns
+- parameters:
+  - type:
+    - text: CommandBuffer
+      url: Alis.Core.Ecs.Kernel.CommandBuffer.html
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/this">this</a> instance, for method chaining.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Entity" data-throw-if-not-resolved="false"></xref> has not been called."/&gt;
+- api3: WithBoxed(object)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_WithBoxed_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L402
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.WithBoxed(System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.WithBoxed(System.Object)
+- markdown: Records <code class="paramref">component</code> to be part of the gameObject created when resolved.
+- code: public CommandBuffer WithBoxed(object component)
+- h4: Parameters
+- parameters:
+  - name: component
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+- h4: Returns
+- parameters:
+  - type:
+    - text: CommandBuffer
+      url: Alis.Core.Ecs.Kernel.CommandBuffer.html
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/this">this</a> instance, for method chaining.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Entity" data-throw-if-not-resolved="false"></xref> has not been called."/&gt;
+- api3: WithBoxed(Type, object)
+  id: Alis_Core_Ecs_Kernel_CommandBuffer_WithBoxed_System_Type_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/CommandBuffer.cs#L410
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.CommandBuffer.WithBoxed(System.Type,System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.CommandBuffer.WithBoxed(System.Type,System.Object)
+- markdown: >-
+    Records <code class="paramref">component</code> to be part of the gameObject created when resolved as a component type of
+
+    <code class="paramref">type</code>.
+- code: public CommandBuffer WithBoxed(Type type, object component)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+  - name: component
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+- h4: Returns
+- parameters:
+  - type:
+    - text: CommandBuffer
+      url: Alis.Core.Ecs.Kernel.CommandBuffer.html
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/this">this</a> instance, for method chaining.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Entity" data-throw-if-not-resolved="false"></xref> has not been called."/&gt;
+languageId: csharp
+metadata:
+  description: Stores a set of structual changes that can be applied to a .

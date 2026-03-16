@@ -1,0 +1,48 @@
+### YamlMime:ApiPage
+title: Enum BlendEquationMode
+body:
+- api1: Enum BlendEquationMode
+  id: Alis_Core_Graphic_OpenGL_Enums_BlendEquationMode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/BlendEquationMode.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.BlendEquationMode
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.BlendEquationMode
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The blend equation mode enum
+- code: public enum BlendEquationMode
+- h2: Fields
+- parameters:
+  - name: FuncAdd
+    default: "32774"
+    description: >+
+      The func add blend equation mode
+
+  - name: Min
+    default: "32775"
+    description: >+
+      The min blend equation mode
+
+  - name: Max
+    default: "32776"
+    description: >+
+      The max blend equation mode
+
+  - name: FuncSubtract
+    default: "32778"
+    description: >+
+      The func subtract blend equation mode
+
+  - name: FuncReverseSubtract
+    default: "32779"
+    description: >+
+      The func reverse subtract blend equation mode
+
+languageId: csharp
+metadata:
+  description: The blend equation mode enum

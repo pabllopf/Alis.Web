@@ -1,0 +1,25 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Systems.Execution
+body:
+- api1: Namespace Alis.Core.Ecs.Systems.Execution
+  id: Alis_Core_Ecs_Systems_Execution
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Execution
+    commentId: N:Alis.Core.Ecs.Systems.Execution
+- h3: Classes
+- parameters:
+  - type:
+      text: InternalRuntime<T>
+      url: Alis.Core.Ecs.Systems.Execution.InternalRuntime-1.html
+    description: The runtime class
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IRunteable
+      url: Alis.Core.Ecs.Systems.Execution.IRunteable.html
+    description: The runteable interface
+  - type:
+      text: IRuntime
+      url: Alis.Core.Ecs.Systems.Execution.IRuntime.html
+    description: The runtime interface
+languageId: csharp

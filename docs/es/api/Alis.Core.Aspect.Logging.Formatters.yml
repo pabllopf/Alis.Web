@@ -1,0 +1,40 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Logging.Formatters
+body:
+- api1: Namespace Alis.Core.Aspect.Logging.Formatters
+  id: Alis_Core_Aspect_Logging_Formatters
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Formatters
+    commentId: N:Alis.Core.Aspect.Logging.Formatters
+- h3: Classes
+- parameters:
+  - type:
+      text: CompactLogFormatter
+      url: Alis.Core.Aspect.Logging.Formatters.CompactLogFormatter.html
+    description: >-
+      Compact log formatter optimized for performance in game loops.
+
+      Format: [L] Message
+
+      Minimal output, just level and message for maximum performance.
+
+      AOT-compatible: Uses StringBuilder, no reflection.
+  - type:
+      text: JsonLogFormatter
+      url: Alis.Core.Aspect.Logging.Formatters.JsonLogFormatter.html
+    description: >-
+      Formats log entries as JSON objects for structured logging and analysis.
+
+      Suitable for cloud logging systems and centralized log aggregation.
+
+      AOT-compatible: Uses StringBuilder, no reflection-based JSON serialization.
+  - type:
+      text: SimpleLogFormatter
+      url: Alis.Core.Aspect.Logging.Formatters.SimpleLogFormatter.html
+    description: >-
+      Simple, human-readable log formatter.
+
+      Format: [TIME] [LEVEL] [LoggerName] Message [Exception]
+
+      AOT-compatible: Uses StringBuilder, no reflection.
+languageId: csharp

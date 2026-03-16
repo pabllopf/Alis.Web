@@ -6,36 +6,45 @@ body:
   metadata:
     uid: Alis.Core.Aspect.Logging
     commentId: N:Alis.Core.Aspect.Logging
+- h3: Namespaces
+- parameters:
+  - type:
+      text: Alis.Core.Aspect.Logging.Abstractions
+      url: Alis.Core.Aspect.Logging.Abstractions.html
+  - type:
+      text: Alis.Core.Aspect.Logging.Core
+      url: Alis.Core.Aspect.Logging.Core.html
+  - type:
+      text: Alis.Core.Aspect.Logging.Filters
+      url: Alis.Core.Aspect.Logging.Filters.html
+  - type:
+      text: Alis.Core.Aspect.Logging.Formatters
+      url: Alis.Core.Aspect.Logging.Formatters.html
+  - type:
+      text: Alis.Core.Aspect.Logging.Outputs
+      url: Alis.Core.Aspect.Logging.Outputs.html
 - h3: Classes
 - parameters:
   - type:
-      text: ConsoleController
-      url: Alis.Core.Aspect.Logging.ConsoleController.html
-    description: The console controller class
-  - type:
-      text: ConsoleLogConfig
-      url: Alis.Core.Aspect.Logging.ConsoleLogConfig.html
-    description: The console log config class
-  - type:
       text: Logger
       url: Alis.Core.Aspect.Logging.Logger.html
-    description: The logger class
+    description: >-
+      Static utility methods for backward compatibility with the legacy logging API.
+
+      NOTE: For new code, use LoggerFactory and ILogger directly for better performance
+
+      and flexibility. This class is provided for backward compatibility only.
+
+      Uses a default global logger instance.
   - type:
-      text: Message
-      url: Alis.Core.Aspect.Logging.Message.html
-    description: The message class
-- h3: Enums
-- parameters:
-  - type:
-      text: DetailLevel
-      url: Alis.Core.Aspect.Logging.DetailLevel.html
-    description: The detail level enum
-  - type:
-      text: LogLevel
-      url: Alis.Core.Aspect.Logging.LogLevel.html
-    description: The log level enum
-  - type:
-      text: MessageType
-      url: Alis.Core.Aspect.Logging.MessageType.html
-    description: The message type enum
+      text: LoggerFactory
+      url: Alis.Core.Aspect.Logging.LoggerFactory.html
+    description: >-
+      Factory for creating and configuring logger instances.
+
+      Uses a fluent builder pattern for configuration.
+
+      AOT-compatible: No reflection, no singleton pattern.
+
+      Not thread-safe for configuration, but created loggers are thread-safe.
 languageId: csharp

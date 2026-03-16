@@ -30,27 +30,27 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Fields
-- api3: v
-  id: Alis_Core_Physic_Dynamics_SolverVelocity_v
+- api3: V
+  id: Alis_Core_Physic_Dynamics_SolverVelocity_V
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/SolverVelocity.cs#L40
   metadata:
-    uid: Alis.Core.Physic.Dynamics.SolverVelocity.v
-    commentId: F:Alis.Core.Physic.Dynamics.SolverVelocity.v
+    uid: Alis.Core.Physic.Dynamics.SolverVelocity.V
+    commentId: F:Alis.Core.Physic.Dynamics.SolverVelocity.V
 - markdown: The
-- code: public Vector2 v
+- code: public Vector2F V
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: w
-  id: Alis_Core_Physic_Dynamics_SolverVelocity_w
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: W
+  id: Alis_Core_Physic_Dynamics_SolverVelocity_W
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/SolverVelocity.cs#L45
   metadata:
-    uid: Alis.Core.Physic.Dynamics.SolverVelocity.w
-    commentId: F:Alis.Core.Physic.Dynamics.SolverVelocity.w
+    uid: Alis.Core.Physic.Dynamics.SolverVelocity.W
+    commentId: F:Alis.Core.Physic.Dynamics.SolverVelocity.W
 - markdown: The
-- code: public float w
+- code: public float W
 - h4: Field Value
 - parameters:
   - type:

@@ -57,7 +57,7 @@ body:
 - h2: Fields
 - api3: Next
   id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_Next
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L40
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L50
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Next
     commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Next
@@ -70,12 +70,12 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html
 - api3: Point
   id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_Point
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L45
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L40
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Point
     commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Point
 - markdown: The point
-- code: public TriangulationPoint Point
+- code: public readonly TriangulationPoint Point
 - h4: Field Value
 - parameters:
   - type:
@@ -83,7 +83,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
 - api3: Prev
   id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_Prev
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L50
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L55
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Prev
     commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Prev
@@ -96,7 +96,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html
 - api3: Triangle
   id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_Triangle
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L55
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L60
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Triangle
     commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Triangle
@@ -109,12 +109,12 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html
 - api3: Value
   id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_AdvancingFrontNode_Value
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L60
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/AdvancingFrontNode.cs#L45
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Value
     commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.Value
 - markdown: The value
-- code: public double Value
+- code: public readonly double Value
 - h4: Field Value
 - parameters:
   - type:

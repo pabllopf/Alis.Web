@@ -16,6 +16,10 @@
         ]
         }
       ],
+      "properties": {
+        "TargetFramework": "net8.0",
+        "Configuration": "Release"
+      },
       "dest": "api",
       "enumSortOrder": "declaringOrder",
       "outputFormat": "apiPage",

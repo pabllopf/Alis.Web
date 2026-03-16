@@ -1,0 +1,127 @@
+### YamlMime:ApiPage
+title: Class BitOperations
+body:
+- api1: Class BitOperations
+  id: System_Numerics_BitOperations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/BitOperations.cs#L39
+  metadata:
+    uid: System.Numerics.BitOperations
+    commentId: T:System.Numerics.BitOperations
+- facts:
+  - name: Namespace
+    value:
+      text: System.Numerics
+      url: System.Numerics.html
+  - name: Assembly
+    value: Alis.dll
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static class BitOperations
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: BitOperations
+    url: System.Numerics.BitOperations.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Log2DeBruijn
+  id: System_Numerics_BitOperations_Log2DeBruijn
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/BitOperations.cs#L45
+  metadata:
+    uid: System.Numerics.BitOperations.Log2DeBruijn
+    commentId: F:System.Numerics.BitOperations.Log2DeBruijn
+- markdown: The log de bruijn
+- code: private static readonly byte[] Log2DeBruijn
+- h4: Field Value
+- parameters:
+  - type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+- h2: Methods
+- api3: Log2(uint)
+  id: System_Numerics_BitOperations_Log2_System_UInt32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/BitOperations.cs#L59
+  metadata:
+    uid: System.Numerics.BitOperations.Log2(System.UInt32)
+    commentId: M:System.Numerics.BitOperations.Log2(System.UInt32)
+- code: public static int Log2(uint value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+- api3: RotateLeft(uint, int)
+  id: System_Numerics_BitOperations_RotateLeft_System_UInt32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/BitOperations.cs#L97
+  metadata:
+    uid: System.Numerics.BitOperations.RotateLeft(System.UInt32,System.Int32)
+    commentId: M:System.Numerics.BitOperations.RotateLeft(System.UInt32,System.Int32)
+- markdown: Performs a left bitwise rotation on a 32-bit unsigned integer.
+- code: public static uint RotateLeft(uint value, int offset)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The value to rotate.
+  - name: offset
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of bits to rotate by.
+- h4: Returns
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The result of rotating <code class="paramref">value</code> left by <code class="paramref">offset</code> bits.
+- api3: RoundUpToPowerOf2(uint)
+  id: System_Numerics_BitOperations_RoundUpToPowerOf2_System_UInt32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/BitOperations.cs#L81
+  metadata:
+    uid: System.Numerics.BitOperations.RoundUpToPowerOf2(System.UInt32)
+    commentId: M:System.Numerics.BitOperations.RoundUpToPowerOf2(System.UInt32)
+- markdown: rounds up to the next highest power of 2.
+- code: public static uint RoundUpToPowerOf2(uint value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: ''
+languageId: csharp

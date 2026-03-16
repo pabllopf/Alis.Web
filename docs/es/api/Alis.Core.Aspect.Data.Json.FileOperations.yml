@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Data.Json.FileOperations
+body:
+- api1: Namespace Alis.Core.Aspect.Data.Json.FileOperations
+  id: Alis_Core_Aspect_Data_Json_FileOperations
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.FileOperations
+    commentId: N:Alis.Core.Aspect.Data.Json.FileOperations
+- h3: Classes
+- parameters:
+  - type:
+      text: JsonFileHandler
+      url: Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler.html
+    description: Handles reading and writing JSON files.
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IJsonFileHandler
+      url: Alis.Core.Aspect.Data.Json.FileOperations.IJsonFileHandler.html
+    description: Defines a contract for reading and writing JSON files.
+languageId: csharp

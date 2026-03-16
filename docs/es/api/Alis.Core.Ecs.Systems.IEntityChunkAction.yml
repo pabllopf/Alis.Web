@@ -1,0 +1,42 @@
+### YamlMime:ApiPage
+title: Interface IEntityChunkAction
+body:
+- api1: Interface IEntityChunkAction
+  id: Alis_Core_Ecs_Systems_IEntityChunkAction
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/IEntityChunkAction.cs#L38
+  metadata:
+    uid: Alis.Core.Ecs.Systems.IEntityChunkAction
+    commentId: T:Alis.Core.Ecs.Systems.IEntityChunkAction
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: An arbitary function that operates over a range of components
+- code: public interface IEntityChunkAction
+- h2: Remarks
+- markdown: Used for SIMD
+- h2: Methods
+- api3: RunChunk(ReadOnlySpan<GameObject>)
+  id: Alis_Core_Ecs_Systems_IEntityChunkAction_RunChunk_System_ReadOnlySpan_Alis_Core_Ecs_GameObject__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/IEntityChunkAction.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Systems.IEntityChunkAction.RunChunk(System.ReadOnlySpan{Alis.Core.Ecs.GameObject})
+    commentId: M:Alis.Core.Ecs.Systems.IEntityChunkAction.RunChunk(System.ReadOnlySpan{Alis.Core.Ecs.GameObject})
+- markdown: Executes the function
+- code: void RunChunk(ReadOnlySpan<GameObject> entity)
+- h4: Parameters
+- parameters:
+  - name: entity
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - '>'
+languageId: csharp
+metadata:
+  description: An arbitary function that operates over a range of components

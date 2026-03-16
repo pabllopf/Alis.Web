@@ -1,0 +1,479 @@
+### YamlMime:ApiPage
+title: Struct Sprite
+body:
+- api1: Struct Sprite
+  id: Alis_Core_Ecs_Components_Render_Sprite
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite
+    commentId: T:Alis.Core.Ecs.Components.Render.Sprite
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Components.Render
+      url: Alis.Core.Ecs.Components.Render.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The sprite
+- code: 'public record struct Sprite : ISprite, IOnStart, IOnUpdate, IComponentBase, IHasContext<Context>, IOnExit, IEquatable<Sprite>'
+- h4: Implements
+- list:
+  - text: ISprite
+    url: Alis.Core.Ecs.Components.Render.ISprite.html
+  - text: IOnStart
+    url: Alis.Core.Aspect.Fluent.Components.IOnStart.html
+  - text: IOnUpdate
+    url: Alis.Core.Aspect.Fluent.Components.IOnUpdate.html
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+  - text: IHasContext<Context>
+    url: Alis.Core.Aspect.Fluent.Words.IHasContext-1.html
+  - text: IOnExit
+    url: Alis.Core.Aspect.Fluent.Components.IOnExit.html
+  - text: IEquatable<Sprite>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Sprite(Context, string, int)
+  id: Alis_Core_Ecs_Components_Render_Sprite__ctor_Alis_Core_Ecs_Systems_Scope_Context_System_String_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.#ctor(Alis.Core.Ecs.Systems.Scope.Context,System.String,System.Int32)
+    commentId: M:Alis.Core.Ecs.Components.Render.Sprite.#ctor(Alis.Core.Ecs.Systems.Scope.Context,System.String,System.Int32)
+- markdown: The sprite
+- code: public Sprite(Context Context, string NameFile, int Depth)
+- h4: Parameters
+- parameters:
+  - name: Context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+  - name: NameFile
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+  - name: Depth
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Fields
+- api3: FlipLocation
+  id: Alis_Core_Ecs_Components_Render_Sprite_FlipLocation
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L94
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.FlipLocation
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.FlipLocation
+- markdown: The flip location
+- code: private static int FlipLocation
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: LastBoundTexture
+  id: Alis_Core_Ecs_Components_Render_Sprite_LastBoundTexture
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L105
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.LastBoundTexture
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.LastBoundTexture
+- markdown: The last bound texture
+- code: private static uint LastBoundTexture
+- h4: Field Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: OffsetLocation
+  id: Alis_Core_Ecs_Components_Render_Sprite_OffsetLocation
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L79
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.OffsetLocation
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.OffsetLocation
+- markdown: The offset location
+- code: private static int OffsetLocation
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: RotationLocation
+  id: Alis_Core_Ecs_Components_Render_Sprite_RotationLocation
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L89
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.RotationLocation
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.RotationLocation
+- markdown: The rotation location
+- code: private static int RotationLocation
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: ScaleLocation
+  id: Alis_Core_Ecs_Components_Render_Sprite_ScaleLocation
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L84
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.ScaleLocation
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.ScaleLocation
+- markdown: The scale location
+- code: private static int ScaleLocation
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: SharedEbo
+  id: Alis_Core_Ecs_Components_Render_Sprite_SharedEbo
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L68
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.SharedEbo
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.SharedEbo
+- markdown: The shared ebo
+- code: private static uint SharedEbo
+- h4: Field Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: SharedInitialized
+  id: Alis_Core_Ecs_Components_Render_Sprite_SharedInitialized
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L73
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.SharedInitialized
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.SharedInitialized
+- markdown: The shared initialized
+- code: private static bool SharedInitialized
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: SharedShaderProgram
+  id: Alis_Core_Ecs_Components_Render_Sprite_SharedShaderProgram
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.SharedShaderProgram
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.SharedShaderProgram
+- markdown: Gets or sets the value of the shader program
+- code: private static uint SharedShaderProgram
+- h4: Field Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: SharedVao
+  id: Alis_Core_Ecs_Components_Render_Sprite_SharedVao
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L58
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.SharedVao
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.SharedVao
+- markdown: The shared vao
+- code: private static uint SharedVao
+- h4: Field Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: SharedVbo
+  id: Alis_Core_Ecs_Components_Render_Sprite_SharedVbo
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L63
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.SharedVbo
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.SharedVbo
+- markdown: The shared vbo
+- code: private static uint SharedVbo
+- h4: Field Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: TextureLocation
+  id: Alis_Core_Ecs_Components_Render_Sprite_TextureLocation
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L99
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.TextureLocation
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.TextureLocation
+- markdown: The texture location
+- code: private static int TextureLocation
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: imageHandle
+  id: Alis_Core_Ecs_Components_Render_Sprite_imageHandle
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L110
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.imageHandle
+    commentId: F:Alis.Core.Ecs.Components.Render.Sprite.imageHandle
+- markdown: The image handle
+- code: private GCHandle imageHandle
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GCHandle
+      url: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.gchandle
+- h2: Properties
+- api3: Context
+  id: Alis_Core_Ecs_Components_Render_Sprite_Context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.Context
+    commentId: P:Alis.Core.Ecs.Components.Render.Sprite.Context
+- markdown: Gets the value of the context
+- code: public Context Context { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- api3: Depth
+  id: Alis_Core_Ecs_Components_Render_Sprite_Depth
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L116
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.Depth
+    commentId: P:Alis.Core.Ecs.Components.Render.Sprite.Depth
+- markdown: Gets or sets the value of the depth
+- code: public int Depth { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Flip
+  id: Alis_Core_Ecs_Components_Render_Sprite_Flip
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L145
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.Flip
+    commentId: P:Alis.Core.Ecs.Components.Render.Sprite.Flip
+- markdown: Gets or sets the value of the flip
+- code: private bool Flip { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: NameFile
+  id: Alis_Core_Ecs_Components_Render_Sprite_NameFile
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L128
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.NameFile
+    commentId: P:Alis.Core.Ecs.Components.Render.Sprite.NameFile
+- markdown: Gets or sets the value of the name file
+- code: public string NameFile { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Path
+  id: Alis_Core_Ecs_Components_Render_Sprite_Path
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L122
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.Path
+    commentId: P:Alis.Core.Ecs.Components.Render.Sprite.Path
+- markdown: Gets or sets the value of the path
+- code: private string Path { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Size
+  id: Alis_Core_Ecs_Components_Render_Sprite_Size
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L134
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.Size
+    commentId: P:Alis.Core.Ecs.Components.Render.Sprite.Size
+- markdown: Gets or sets the value of the size
+- code: private Vector2F Size { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Texture
+  id: Alis_Core_Ecs_Components_Render_Sprite_Texture
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L139
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.Texture
+    commentId: P:Alis.Core.Ecs.Components.Render.Sprite.Texture
+- markdown: Gets or sets the value of the texture
+- code: private uint Texture { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- h2: Methods
+- api3: InitializeSharedResources()
+  id: Alis_Core_Ecs_Components_Render_Sprite_InitializeSharedResources
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L190
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.InitializeSharedResources
+    commentId: M:Alis.Core.Ecs.Components.Render.Sprite.InitializeSharedResources
+- markdown: Initializes the shared shaders and quad buffers (run once)
+- code: private void InitializeSharedResources()
+- api3: IsSpriteVisible(Vector2F, Vector2F, Vector2F, float, Vector2F, Vector2F, float)
+  id: Alis_Core_Ecs_Components_Render_Sprite_IsSpriteVisible_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L442
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.IsSpriteVisible(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Ecs.Components.Render.Sprite.IsSpriteVisible(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Ises the sprite visible using the specified sprite world position
+- code: private bool IsSpriteVisible(Vector2F spriteWorldPosition, Vector2F spriteSizePixels, Vector2F spriteScale, float rotationDegrees, Vector2F cameraPosition, Vector2F cameraResolution, float pixelsPerMeter)
+- h4: Parameters
+- parameters:
+  - name: spriteWorldPosition
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The sprite world position
+  - name: spriteSizePixels
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The sprite size pixels
+  - name: spriteScale
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The sprite scale
+  - name: rotationDegrees
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The rotation degrees
+  - name: cameraPosition
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The camera position
+  - name: cameraResolution
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The camera resolution
+  - name: pixelsPerMeter
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The pixels per meter
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: LoadTexture(string)
+  id: Alis_Core_Ecs_Components_Render_Sprite_LoadTexture_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L320
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.LoadTexture(System.String)
+    commentId: M:Alis.Core.Ecs.Components.Render.Sprite.LoadTexture(System.String)
+- markdown: Loads the texture using the specified image path
+- code: internal void LoadTexture(string imagePath)
+- h4: Parameters
+- parameters:
+  - name: imagePath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The image path
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Texture file not found
+- api3: OnExit(IGameObject)
+  id: Alis_Core_Ecs_Components_Render_Sprite_OnExit_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L167
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.OnExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Render.Sprite.OnExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Ons the exit using the specified self
+- code: public void OnExit(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: OnStart(IGameObject)
+  id: Alis_Core_Ecs_Components_Render_Sprite_OnStart_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L159
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.OnStart(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Render.Sprite.OnStart(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Updates the self
+- code: public void OnStart(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: OnUpdate(IGameObject)
+  id: Alis_Core_Ecs_Components_Render_Sprite_OnUpdate_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L151
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.OnUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Render.Sprite.OnUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Inits the self
+- code: public void OnUpdate(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: Render(GameObject, Vector2F, Vector2F, float)
+  id: Alis_Core_Ecs_Components_Render_Sprite_Render_Alis_Core_Ecs_GameObject_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Sprite.cs#L365
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Sprite.Render(Alis.Core.Ecs.GameObject,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Ecs.Components.Render.Sprite.Render(Alis.Core.Ecs.GameObject,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Renders the gameobject
+- code: public void Render(GameObject gameobject, Vector2F cameraPosition, Vector2F cameraResolution, float pixelsPerMeter)
+- h4: Parameters
+- parameters:
+  - name: gameobject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameobject
+  - name: cameraPosition
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The camera position
+  - name: cameraResolution
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The camera resolution
+  - name: pixelsPerMeter
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The pixels per meter
+languageId: csharp
+metadata:
+  description: The sprite

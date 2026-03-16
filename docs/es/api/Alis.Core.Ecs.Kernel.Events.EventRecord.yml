@@ -1,0 +1,112 @@
+### YamlMime:ApiPage
+title: Class EventRecord
+body:
+- api1: Class EventRecord
+  id: Alis_Core_Ecs_Kernel_Events_EventRecord
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/EventRecord.cs#L38
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.EventRecord
+    commentId: T:Alis.Core.Ecs.Kernel.Events.EventRecord
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Events
+      url: Alis.Core.Ecs.Kernel.Events.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The event record class
+- code: public class EventRecord
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: EventRecord
+    url: Alis.Core.Ecs.Kernel.Events.EventRecord.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Add
+  id: Alis_Core_Ecs_Kernel_Events_EventRecord_Add
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/EventRecord.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.EventRecord.Add
+    commentId: F:Alis.Core.Ecs.Kernel.Events.EventRecord.Add
+- markdown: The add
+- code: internal ComponentEvent Add
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ComponentEvent
+      url: Alis.Core.Ecs.Kernel.Events.ComponentEvent.html
+- api3: Delete
+  id: Alis_Core_Ecs_Kernel_Events_EventRecord_Delete
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/EventRecord.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.EventRecord.Delete
+    commentId: F:Alis.Core.Ecs.Kernel.Events.EventRecord.Delete
+- markdown: The delete
+- code: internal FrugalStack<Action<GameObject>> Delete
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FrugalStack
+      url: Alis.Core.Ecs.Collections.FrugalStack-1.html
+    - <
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - '>'
+    - '>'
+- api3: Remove
+  id: Alis_Core_Ecs_Kernel_Events_EventRecord_Remove
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/EventRecord.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.EventRecord.Remove
+    commentId: F:Alis.Core.Ecs.Kernel.Events.EventRecord.Remove
+- markdown: The remove
+- code: internal ComponentEvent Remove
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ComponentEvent
+      url: Alis.Core.Ecs.Kernel.Events.ComponentEvent.html
+- h2: Methods
+- api3: Initalize(bool, ref EventRecord)
+  id: Alis_Core_Ecs_Kernel_Events_EventRecord_Initalize_System_Boolean_Alis_Core_Ecs_Kernel_Events_EventRecord__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/EventRecord.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.EventRecord.Initalize(System.Boolean,Alis.Core.Ecs.Kernel.Events.EventRecord@)
+    commentId: M:Alis.Core.Ecs.Kernel.Events.EventRecord.Initalize(System.Boolean,Alis.Core.Ecs.Kernel.Events.EventRecord@)
+- markdown: Initalizes the exists
+- code: public static void Initalize(bool exists, ref EventRecord record)
+- h4: Parameters
+- parameters:
+  - name: exists
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The exists
+  - name: record
+    type:
+    - text: EventRecord
+      url: Alis.Core.Ecs.Kernel.Events.EventRecord.html
+    description: The record
+languageId: csharp
+metadata:
+  description: The event record class

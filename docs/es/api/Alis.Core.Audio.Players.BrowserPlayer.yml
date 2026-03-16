@@ -1,0 +1,351 @@
+### YamlMime:ApiPage
+title: Class BrowserPlayer
+body:
+- api1: Class BrowserPlayer
+  id: Alis_Core_Audio_Players_BrowserPlayer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L44
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer
+    commentId: T:Alis.Core.Audio.Players.BrowserPlayer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Audio.Players
+      url: Alis.Core.Audio.Players.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The browser player class
+- code: 'internal class BrowserPlayer : IPlayer'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: BrowserPlayer
+    url: Alis.Core.Audio.Players.BrowserPlayer.html
+- h4: Implements
+- list:
+  - text: IPlayer
+    url: Alis.Core.Audio.Interfaces.IPlayer.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: BrowserPlayer()
+  id: Alis_Core_Audio_Players_BrowserPlayer__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L82
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer.#ctor
+    commentId: M:Alis.Core.Audio.Players.BrowserPlayer.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Audio.Players.BrowserPlayer" data-throw-if-not-resolved="false"></xref> class
+- code: public BrowserPlayer()
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: No se pudo abrir el dispositivo OpenAL
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: No se pudo activar el contexto OpenAL
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: No se pudo crear el contexto OpenAL
+- h2: Fields
+- api3: _buffer
+  id: Alis_Core_Audio_Players_BrowserPlayer__buffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L49
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer._buffer
+    commentId: F:Alis.Core.Audio.Players.BrowserPlayer._buffer
+- markdown: The buffer
+- code: private readonly uint _buffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: _context
+  id: Alis_Core_Audio_Players_BrowserPlayer__context
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L54
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer._context
+    commentId: F:Alis.Core.Audio.Players.BrowserPlayer._context
+- markdown: The context
+- code: private readonly nint _context
+- h4: Field Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: _device
+  id: Alis_Core_Audio_Players_BrowserPlayer__device
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L59
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer._device
+    commentId: F:Alis.Core.Audio.Players.BrowserPlayer._device
+- markdown: The device
+- code: private readonly nint _device
+- h4: Field Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: _paused
+  id: Alis_Core_Audio_Players_BrowserPlayer__paused
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L69
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer._paused
+    commentId: F:Alis.Core.Audio.Players.BrowserPlayer._paused
+- markdown: The paused
+- code: private bool _paused
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _playing
+  id: Alis_Core_Audio_Players_BrowserPlayer__playing
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L74
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer._playing
+    commentId: F:Alis.Core.Audio.Players.BrowserPlayer._playing
+- markdown: The playing
+- code: private bool _playing
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _source
+  id: Alis_Core_Audio_Players_BrowserPlayer__source
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L64
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer._source
+    commentId: F:Alis.Core.Audio.Players.BrowserPlayer._source
+- markdown: The source
+- code: private readonly uint _source
+- h4: Field Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- h2: Properties
+- api3: Paused
+  id: Alis_Core_Audio_Players_BrowserPlayer_Paused
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L118
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer.Paused
+    commentId: P:Alis.Core.Audio.Players.BrowserPlayer.Paused
+- markdown: Gets the value of the paused
+- code: public bool Paused { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Playing
+  id: Alis_Core_Audio_Players_BrowserPlayer_Playing
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L113
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer.Playing
+    commentId: P:Alis.Core.Audio.Players.BrowserPlayer.Playing
+- markdown: Gets the value of the playing
+- code: public bool Playing { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h2: Methods
+- api3: Pause()
+  id: Alis_Core_Audio_Players_BrowserPlayer_Pause
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L185
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer.Pause
+    commentId: M:Alis.Core.Audio.Players.BrowserPlayer.Pause
+- markdown: Pauses this instance
+- code: public Task Pause()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: Play(string)
+  id: Alis_Core_Audio_Players_BrowserPlayer_Play_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L128
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer.Play(System.String)
+    commentId: M:Alis.Core.Audio.Players.BrowserPlayer.Play(System.String)
+- markdown: Plays the file name
+- code: public Task Play(string fileName)
+- h4: Parameters
+- parameters:
+  - name: fileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The file name
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: ''
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: Formato WAV no soportado
+- api3: PlayLoop(string, bool)
+  id: Alis_Core_Audio_Players_BrowserPlayer_PlayLoop_System_String_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L178
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer.PlayLoop(System.String,System.Boolean)
+    commentId: M:Alis.Core.Audio.Players.BrowserPlayer.PlayLoop(System.String,System.Boolean)
+- markdown: Plays the loop using the specified file name
+- code: public Task PlayLoop(string fileName, bool loop)
+- h4: Parameters
+- parameters:
+  - name: fileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The file name
+  - name: loop
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The loop
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: Resume()
+  id: Alis_Core_Audio_Players_BrowserPlayer_Resume
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L196
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer.Resume
+    commentId: M:Alis.Core.Audio.Players.BrowserPlayer.Resume
+- markdown: Resumes this instance
+- code: public Task Resume()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: SetVolume(byte)
+  id: Alis_Core_Audio_Players_BrowserPlayer_SetVolume_System_Byte_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L219
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer.SetVolume(System.Byte)
+    commentId: M:Alis.Core.Audio.Players.BrowserPlayer.SetVolume(System.Byte)
+- markdown: Sets the volume using the specified percent
+- code: public Task SetVolume(byte percent)
+- h4: Parameters
+- parameters:
+  - name: percent
+    type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    description: The percent
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: Stop()
+  id: Alis_Core_Audio_Players_BrowserPlayer_Stop
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L207
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer.Stop
+    commentId: M:Alis.Core.Audio.Players.BrowserPlayer.Stop
+- markdown: Stops this instance
+- code: public Task Stop()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: TryParseWav(byte[], out int, out int, out int, out int)
+  id: Alis_Core_Audio_Players_BrowserPlayer_TryParseWav_System_Byte___System_Int32__System_Int32__System_Int32__System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L232
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer.TryParseWav(System.Byte[],System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+    commentId: M:Alis.Core.Audio.Players.BrowserPlayer.TryParseWav(System.Byte[],System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+- markdown: Tries the parse wav using the specified wav
+- code: private bool TryParseWav(byte[] wav, out int dataOffset, out int dataSize, out int freq, out int format)
+- h4: Parameters
+- parameters:
+  - name: wav
+    type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+    description: The wav
+  - name: dataOffset
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The data offset
+  - name: dataSize
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The data size
+  - name: freq
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The freq
+  - name: format
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The format
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: PlaybackFinished
+  id: Alis_Core_Audio_Players_BrowserPlayer_PlaybackFinished
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/BrowserPlayer.cs#L120
+  metadata:
+    uid: Alis.Core.Audio.Players.BrowserPlayer.PlaybackFinished
+    commentId: E:Alis.Core.Audio.Players.BrowserPlayer.PlaybackFinished
+- markdown: playback
+- code: public event EventHandler PlaybackFinished
+- h4: Event Type
+- parameters:
+  - type:
+    - text: EventHandler
+      url: https://learn.microsoft.com/dotnet/api/system.eventhandler
+- h2: See Also
+- list:
+  - - text: IPlayer
+      url: Alis.Core.Audio.Interfaces.IPlayer.html
+languageId: csharp
+metadata:
+  description: The browser player class

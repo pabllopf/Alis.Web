@@ -1,0 +1,922 @@
+### YamlMime:ApiPage
+title: Class ObjectiveCInterop
+body:
+- api1: Class ObjectiveCInterop
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/ObjectiveCInterop.cs#L41
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop
+    commentId: T:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.Platforms.Osx.Native
+      url: Alis.Core.Graphic.Platforms.Osx.Native.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Utilidades para interoperar con Objective-C
+- code: internal static class ObjectiveCInterop
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: ObjectiveCInterop
+    url: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Objc
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_Objc
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/ObjectiveCInterop.cs#L46
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.Objc
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.Objc
+- markdown: The objc
+- code: public const string Objc = "/usr/lib/libobjc.A.dylib"
+- h4: Field Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: selConvertPointFromView
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_selConvertPointFromView
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/ObjectiveCInterop.cs#L51
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.selConvertPointFromView
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.selConvertPointFromView
+- code: internal static readonly nint selConvertPointFromView
+- h4: Field Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: selMouseLocationOutside
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_selMouseLocationOutside
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/ObjectiveCInterop.cs#L48
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.selMouseLocationOutside
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.selMouseLocationOutside
+- code: internal static readonly nint selMouseLocationOutside
+- h4: Field Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- h2: Methods
+- api3: CFRelease(nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_CFRelease_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.CFRelease(System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.CFRelease(System.IntPtr)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void CFRelease(nint cf)
+- h4: Parameters
+- parameters:
+  - name: cf
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: CFStringCreateWithCString(nint, string, uint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_CFStringCreateWithCString_System_IntPtr_System_String_System_UInt32_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.CFStringCreateWithCString(System.IntPtr,System.String,System.UInt32)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.CFStringCreateWithCString(System.IntPtr,System.String,System.UInt32)
+- markdown: Cfs the string create with c string using the specified alloc
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint CFStringCreateWithCString(nint alloc, string str, uint enc)
+- h4: Parameters
+- parameters:
+  - name: alloc
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The alloc
+  - name: str
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The str
+  - name: enc
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The enc
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: CGEventCreate(nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_CGEventCreate_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.CGEventCreate(System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.CGEventCreate(System.IntPtr)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint CGEventCreate(nint source)
+- h4: Parameters
+- parameters:
+  - name: source
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: CGEventGetLocation(nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_CGEventGetLocation_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.CGEventGetLocation(System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.CGEventGetLocation(System.IntPtr)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern CGPoint CGEventGetLocation(nint eventRef)
+- h4: Parameters
+- parameters:
+  - name: eventRef
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- h4: Returns
+- parameters:
+  - type:
+    - text: CGPoint
+      url: Alis.Core.Graphic.Platforms.Osx.Native.CGPoint.html
+- api3: Class(string)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_Class_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/ObjectiveCInterop.cs#L227
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.Class(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.Class(System.String)
+- markdown: S the n
+- code: public static nint Class(string n)
+- h4: Parameters
+- parameters:
+  - name: n
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: Dlopen(string, int)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_Dlopen_System_String_System_Int32_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.Dlopen(System.String,System.Int32)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.Dlopen(System.String,System.Int32)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint Dlopen(string path, int mode)
+- h4: Parameters
+- parameters:
+  - name: path
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: ''
+  - name: mode
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: ''
+- api3: Dlsym(nint, string)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_Dlsym_System_IntPtr_System_String_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.Dlsym(System.IntPtr,System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.Dlsym(System.IntPtr,System.String)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint Dlsym(nint handle, string symbol)
+- h4: Parameters
+- parameters:
+  - name: handle
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: ''
+  - name: symbol
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: ''
+- api3: GetWindowFrame(nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_GetWindowFrame_System_IntPtr_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/ObjectiveCInterop.cs#L79
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.GetWindowFrame(System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.GetWindowFrame(System.IntPtr)
+- code: public static NsRect GetWindowFrame(nint nsWindow)
+- h4: Parameters
+- parameters:
+  - name: nsWindow
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- h4: Returns
+- parameters:
+  - type:
+    - text: NsRect
+      url: Alis.Core.Graphic.Platforms.Osx.Native.NsRect.html
+- api3: NSApplicationLoad()
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_NSApplicationLoad
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.NSApplicationLoad
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.NSApplicationLoad
+- markdown: Nses the application load
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void NSApplicationLoad()
+- api3: NSViewGetFrame(nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_NSViewGetFrame_System_IntPtr_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/ObjectiveCInterop.cs#L77
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.NSViewGetFrame(System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.NSViewGetFrame(System.IntPtr)
+- code: public static NsRect NSViewGetFrame(nint view)
+- h4: Parameters
+- parameters:
+  - name: view
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- h4: Returns
+- parameters:
+  - type:
+    - text: NsRect
+      url: Alis.Core.Graphic.Platforms.Osx.Native.NsRect.html
+- api3: NsString(string)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_NsString_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/ObjectiveCInterop.cs#L241
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.NsString(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.NsString(System.String)
+- markdown: Nses the string using the specified s
+- code: public static nint NsString(string s)
+- h4: Parameters
+- parameters:
+  - name: s
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The str
+- api3: Sel(string)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_Sel_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/ObjectiveCInterop.cs#L234
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.Sel(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.Sel(System.String)
+- markdown: Sels the n
+- code: public static nint Sel(string n)
+- h4: Parameters
+- parameters:
+  - name: n
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: objc_getClass(string)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_getClass_System_String_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_getClass(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_getClass(System.String)
+- markdown: Objcs the get using the specified name
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint objc_getClass(string name)
+- h4: Parameters
+- parameters:
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: objc_msgSend(nint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend(System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend(System.IntPtr,System.IntPtr)
+- markdown: Objcs the msg send using the specified recv
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint objc_msgSend(nint recv, nint sel)
+- h4: Parameters
+- parameters:
+  - name: recv
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The recv
+  - name: sel
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The sel
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: objc_msgSend(nint, nint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_System_IntPtr_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend(System.IntPtr,System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend(System.IntPtr,System.IntPtr,System.IntPtr)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint objc_msgSend(nint receiver, nint selector, nint arg1)
+- h4: Parameters
+- parameters:
+  - name: receiver
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: ''
+  - name: selector
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: ''
+  - name: arg1
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: ''
+- api3: objc_msgSend_Int(nint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_Int_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_Int(System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_Int(System.IntPtr,System.IntPtr)
+- markdown: Objcs the msg send int using the specified recv
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern int objc_msgSend_Int(nint recv, nint sel)
+- h4: Parameters
+- parameters:
+  - name: recv
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The recv
+  - name: sel
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The sel
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: objc_msgSend_IntPtr(nint, nint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr)
+- markdown: Objcs the msg send int ptr using the specified recv
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint objc_msgSend_IntPtr(nint recv, nint sel, nint arg1)
+- h4: Parameters
+- parameters:
+  - name: recv
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The recv
+  - name: sel
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The sel
+  - name: arg1
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The arg
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: objc_msgSend_NSPoint(nint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_NSPoint_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_NSPoint(System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_NSPoint(System.IntPtr,System.IntPtr)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern NsPoint objc_msgSend_NSPoint(nint receiver, nint selector)
+- h4: Parameters
+- parameters:
+  - name: receiver
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: selector
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- h4: Returns
+- parameters:
+  - type:
+    - text: NsPoint
+      url: Alis.Core.Graphic.Platforms.Osx.Native.NsPoint.html
+- api3: objc_msgSend_NSPoint_NSPoint_IntPtr(nint, nint, NsPoint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_NSPoint_NSPoint_IntPtr_System_IntPtr_System_IntPtr_Alis_Core_Graphic_Platforms_Osx_Native_NsPoint_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_NSPoint_NSPoint_IntPtr(System.IntPtr,System.IntPtr,Alis.Core.Graphic.Platforms.Osx.Native.NsPoint,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_NSPoint_NSPoint_IntPtr(System.IntPtr,System.IntPtr,Alis.Core.Graphic.Platforms.Osx.Native.NsPoint,System.IntPtr)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern NsPoint objc_msgSend_NSPoint_NSPoint_IntPtr(nint receiver, nint selector, NsPoint point, nint fromView)
+- h4: Parameters
+- parameters:
+  - name: receiver
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: selector
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: point
+    type:
+    - text: NsPoint
+      url: Alis.Core.Graphic.Platforms.Osx.Native.NsPoint.html
+  - name: fromView
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- h4: Returns
+- parameters:
+  - type:
+    - text: NsPoint
+      url: Alis.Core.Graphic.Platforms.Osx.Native.NsPoint.html
+- api3: objc_msgSend_NSRect(nint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_NSRect_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_NSRect(System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_NSRect(System.IntPtr,System.IntPtr)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern NsRect objc_msgSend_NSRect(nint receiver, nint selector)
+- h4: Parameters
+- parameters:
+  - name: receiver
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: selector
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- h4: Returns
+- parameters:
+  - type:
+    - text: NsRect
+      url: Alis.Core.Graphic.Platforms.Osx.Native.NsRect.html
+- api3: objc_msgSend_NSRect_IntPtr(nint, nint, double, double, double, double, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_NSRect_IntPtr_System_IntPtr_System_IntPtr_System_Double_System_Double_System_Double_System_Double_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_NSRect_IntPtr(System.IntPtr,System.IntPtr,System.Double,System.Double,System.Double,System.Double,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_NSRect_IntPtr(System.IntPtr,System.IntPtr,System.Double,System.Double,System.Double,System.Double,System.IntPtr)
+- markdown: Objcs the msg send ns rect int ptr using the specified recv
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint objc_msgSend_NSRect_IntPtr(nint recv, nint sel, double x, double y, double w, double h, nint arg1)
+- h4: Parameters
+- parameters:
+  - name: recv
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The recv
+  - name: sel
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The sel
+  - name: x
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+    description: The
+  - name: y
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+    description: The
+  - name: w
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+    description: The
+  - name: h
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+    description: The
+  - name: arg1
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The arg
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: objc_msgSend_NSRect_UL_UL_Bool(nint, nint, double, double, double, double, ulong, ulong, bool)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_NSRect_UL_UL_Bool_System_IntPtr_System_IntPtr_System_Double_System_Double_System_Double_System_Double_System_UInt64_System_UInt64_System_Boolean_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_NSRect_UL_UL_Bool(System.IntPtr,System.IntPtr,System.Double,System.Double,System.Double,System.Double,System.UInt64,System.UInt64,System.Boolean)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_NSRect_UL_UL_Bool(System.IntPtr,System.IntPtr,System.Double,System.Double,System.Double,System.Double,System.UInt64,System.UInt64,System.Boolean)
+- markdown: Objcs the msg send ns rect ul ul bool using the specified recv
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint objc_msgSend_NSRect_UL_UL_Bool(nint recv, nint sel, double x, double y, double w, double h, ulong styleMask, ulong backing, bool defer)
+- h4: Parameters
+- parameters:
+  - name: recv
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The recv
+  - name: sel
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The sel
+  - name: x
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+    description: The
+  - name: y
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+    description: The
+  - name: w
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+    description: The
+  - name: h
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+    description: The
+  - name: styleMask
+    type:
+    - text: ulong
+      url: https://learn.microsoft.com/dotnet/api/system.uint64
+    description: The style mask
+  - name: backing
+    type:
+    - text: ulong
+      url: https://learn.microsoft.com/dotnet/api/system.uint64
+    description: The backing
+  - name: defer
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The defer
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: objc_msgSend_UL(nint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_UL_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_UL(System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_UL(System.IntPtr,System.IntPtr)
+- markdown: Objcs the msg send ul using the specified recv
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern ulong objc_msgSend_UL(nint recv, nint sel)
+- h4: Parameters
+- parameters:
+  - name: recv
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The recv
+  - name: sel
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The sel
+- h4: Returns
+- parameters:
+  - type:
+    - text: ulong
+      url: https://learn.microsoft.com/dotnet/api/system.uint64
+    description: The ulong
+- api3: objc_msgSend_UL_IntPtr_IntPtr_Bool(nint, nint, ulong, nint, nint, bool)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_UL_IntPtr_IntPtr_Bool_System_IntPtr_System_IntPtr_System_UInt64_System_IntPtr_System_IntPtr_System_Boolean_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_UL_IntPtr_IntPtr_Bool(System.IntPtr,System.IntPtr,System.UInt64,System.IntPtr,System.IntPtr,System.Boolean)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_UL_IntPtr_IntPtr_Bool(System.IntPtr,System.IntPtr,System.UInt64,System.IntPtr,System.IntPtr,System.Boolean)
+- markdown: Objcs the msg send ul int ptr int ptr bool using the specified recv
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint objc_msgSend_UL_IntPtr_IntPtr_Bool(nint recv, nint sel, ulong mask, nint untilDate, nint inMode, bool dequeue)
+- h4: Parameters
+- parameters:
+  - name: recv
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The recv
+  - name: sel
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The sel
+  - name: mask
+    type:
+    - text: ulong
+      url: https://learn.microsoft.com/dotnet/api/system.uint64
+    description: The mask
+  - name: untilDate
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The until date
+  - name: inMode
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The in mode
+  - name: dequeue
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The dequeue
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: objc_msgSend_double(nint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_double_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_double(System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_double(System.IntPtr,System.IntPtr)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern double objc_msgSend_double(nint receiver, nint selector)
+- h4: Parameters
+- parameters:
+  - name: receiver
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: selector
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- h4: Returns
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- api3: objc_msgSend_stret(out NsRect, nint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_stret_Alis_Core_Graphic_Platforms_Osx_Native_NsRect__System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_stret(Alis.Core.Graphic.Platforms.Osx.Native.NsRect@,System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_stret(Alis.Core.Graphic.Platforms.Osx.Native.NsRect@,System.IntPtr,System.IntPtr)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void objc_msgSend_stret(out NsRect ret, nint receiver, nint selector)
+- h4: Parameters
+- parameters:
+  - name: ret
+    type:
+    - text: NsRect
+      url: Alis.Core.Graphic.Platforms.Osx.Native.NsRect.html
+  - name: receiver
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: selector
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: objc_msgSend_void(nint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_void_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_void(System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_void(System.IntPtr,System.IntPtr)
+- markdown: Objcs the msg send void using the specified recv
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void objc_msgSend_void(nint recv, nint sel)
+- h4: Parameters
+- parameters:
+  - name: recv
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The recv
+  - name: sel
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The sel
+- api3: objc_msgSend_void_Bool(nint, nint, bool)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_void_Bool_System_IntPtr_System_IntPtr_System_Boolean_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_void_Bool(System.IntPtr,System.IntPtr,System.Boolean)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_void_Bool(System.IntPtr,System.IntPtr,System.Boolean)
+- markdown: Objcs the msg send void bool using the specified recv
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void objc_msgSend_void_Bool(nint recv, nint sel, bool arg1)
+- h4: Parameters
+- parameters:
+  - name: recv
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The recv
+  - name: sel
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The sel
+  - name: arg1
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The arg
+- api3: objc_msgSend_void_IntPtr(nint, nint, nint)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_void_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_void_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_void_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr)
+- markdown: Objcs the msg send void int ptr using the specified recv
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void objc_msgSend_void_IntPtr(nint recv, nint sel, nint arg1)
+- h4: Parameters
+- parameters:
+  - name: recv
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The recv
+  - name: sel
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The sel
+  - name: arg1
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The arg
+- api3: objc_msgSend_void_Long(nint, nint, long)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_objc_msgSend_void_Long_System_IntPtr_System_IntPtr_System_Int64_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_void_Long(System.IntPtr,System.IntPtr,System.Int64)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.objc_msgSend_void_Long(System.IntPtr,System.IntPtr,System.Int64)
+- markdown: Objcs the msg send void long using the specified recv
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void objc_msgSend_void_Long(nint recv, nint sel, long value)
+- h4: Parameters
+- parameters:
+  - name: recv
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The recv
+  - name: sel
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The sel
+  - name: value
+    type:
+    - text: long
+      url: https://learn.microsoft.com/dotnet/api/system.int64
+    description: The value
+- api3: sel_registerName(string)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_ObjectiveCInterop_sel_registerName_System_String_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.sel_registerName(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.sel_registerName(System.String)
+- markdown: Sels the register name using the specified name
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint sel_registerName(string name)
+- h4: Parameters
+- parameters:
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+languageId: csharp
+metadata:
+  description: Utilidades para interoperar con Objective-C

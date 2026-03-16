@@ -1,0 +1,23 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Data.Json.Exceptions
+body:
+- api1: Namespace Alis.Core.Aspect.Data.Json.Exceptions
+  id: Alis_Core_Aspect_Data_Json_Exceptions
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Exceptions
+    commentId: N:Alis.Core.Aspect.Data.Json.Exceptions
+- h3: Classes
+- parameters:
+  - type:
+      text: JsonDeserializationException
+      url: Alis.Core.Aspect.Data.Json.Exceptions.JsonDeserializationException.html
+    description: Thrown when a JSON deserialization operation fails.
+  - type:
+      text: JsonParsingException
+      url: Alis.Core.Aspect.Data.Json.Exceptions.JsonParsingException.html
+    description: Thrown when a JSON parsing operation fails.
+  - type:
+      text: JsonSerializationException
+      url: Alis.Core.Aspect.Data.Json.Exceptions.JsonSerializationException.html
+    description: Thrown when a JSON serialization operation fails.
+languageId: csharp

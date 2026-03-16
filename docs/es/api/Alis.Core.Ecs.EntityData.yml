@@ -1,0 +1,80 @@
+### YamlMime:ApiPage
+title: Struct EntityData
+body:
+- api1: Struct EntityData
+  id: Alis_Core_Ecs_EntityData
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/EntityData.cs#L41
+  metadata:
+    uid: Alis.Core.Ecs.EntityData
+    commentId: T:Alis.Core.Ecs.EntityData
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs
+      url: Alis.Core.Ecs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gameObject data
+- code: public struct EntityData
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 8 bytes total (int + ushort + ushort)
+
+    Pack = 1 for minimal memory footprint
+- h2: Fields
+- api3: EntityID
+  id: Alis_Core_Ecs_EntityData_EntityID
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/EntityData.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.EntityData.EntityID
+    commentId: F:Alis.Core.Ecs.EntityData.EntityID
+- markdown: The gameObject id
+- code: internal int EntityID
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EntityVersion
+  id: Alis_Core_Ecs_EntityData_EntityVersion
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/EntityData.cs#L52
+  metadata:
+    uid: Alis.Core.Ecs.EntityData.EntityVersion
+    commentId: F:Alis.Core.Ecs.EntityData.EntityVersion
+- markdown: The gameObject version
+- code: internal ushort EntityVersion
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: WorldID
+  id: Alis_Core_Ecs_EntityData_WorldID
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/EntityData.cs#L57
+  metadata:
+    uid: Alis.Core.Ecs.EntityData.WorldID
+    commentId: F:Alis.Core.Ecs.EntityData.WorldID
+- markdown: The scene id
+- code: internal ushort WorldID
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+languageId: csharp
+metadata:
+  description: The gameObject data

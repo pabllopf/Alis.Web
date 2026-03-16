@@ -1,0 +1,83 @@
+### YamlMime:ApiPage
+title: Class ZipEntryInfo
+body:
+- api1: Class ZipEntryInfo
+  id: Alis_Core_Aspect_Memory_ZipEntryInfo
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/ZipEntryInfo.cs#L37
+  metadata:
+    uid: Alis.Core.Aspect.Memory.ZipEntryInfo
+    commentId: T:Alis.Core.Aspect.Memory.ZipEntryInfo
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Memory
+      url: Alis.Core.Aspect.Memory.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The zip entry info class
+- code: internal class ZipEntryInfo
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: ZipEntryInfo
+    url: Alis.Core.Aspect.Memory.ZipEntryInfo.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Properties
+- api3: FullName
+  id: Alis_Core_Aspect_Memory_ZipEntryInfo_FullName
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/ZipEntryInfo.cs#L42
+  metadata:
+    uid: Alis.Core.Aspect.Memory.ZipEntryInfo.FullName
+    commentId: P:Alis.Core.Aspect.Memory.ZipEntryInfo.FullName
+- markdown: Gets or sets the value of the full name
+- code: internal string FullName { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: LastWriteTimeUtc
+  id: Alis_Core_Aspect_Memory_ZipEntryInfo_LastWriteTimeUtc
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/ZipEntryInfo.cs#L52
+  metadata:
+    uid: Alis.Core.Aspect.Memory.ZipEntryInfo.LastWriteTimeUtc
+    commentId: P:Alis.Core.Aspect.Memory.ZipEntryInfo.LastWriteTimeUtc
+- markdown: Gets or sets the value of the last write time utc
+- code: internal DateTimeOffset LastWriteTimeUtc { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DateTimeOffset
+      url: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+- api3: Length
+  id: Alis_Core_Aspect_Memory_ZipEntryInfo_Length
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/ZipEntryInfo.cs#L47
+  metadata:
+    uid: Alis.Core.Aspect.Memory.ZipEntryInfo.Length
+    commentId: P:Alis.Core.Aspect.Memory.ZipEntryInfo.Length
+- markdown: Gets or sets the value of the length
+- code: internal long Length { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: long
+      url: https://learn.microsoft.com/dotnet/api/system.int64
+languageId: csharp
+metadata:
+  description: The zip entry info class

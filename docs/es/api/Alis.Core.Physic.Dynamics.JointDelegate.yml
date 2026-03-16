@@ -15,13 +15,13 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The joint delegate
-- code: public delegate void JointDelegate(World sender, Joint joint)
+- code: public delegate void JointDelegate(WorldPhysic sender, Joint joint)
 - h4: Parameters
 - parameters:
   - name: sender
     type:
-    - text: World
-      url: Alis.Core.Physic.Dynamics.World.html
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
   - name: joint
     type:
     - text: Joint

@@ -1,0 +1,27 @@
+### YamlMime:ApiPage
+title: Delegate BlendEquation
+body:
+- api1: Delegate BlendEquation
+  id: Alis_Core_Graphic_OpenGL_Delegates_BlendEquation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/BlendEquation.cs#L38
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.BlendEquation
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.BlendEquation
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The blend equation
+- code: public delegate void BlendEquation(BlendEquationMode mode)
+- h4: Parameters
+- parameters:
+  - name: mode
+    type:
+    - text: BlendEquationMode
+      url: Alis.Core.Graphic.OpenGL.Enums.BlendEquationMode.html
+languageId: csharp
+metadata:
+  description: The blend equation

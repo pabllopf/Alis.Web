@@ -1,0 +1,97 @@
+### YamlMime:ApiPage
+title: Struct DeleteComponent
+body:
+- api1: Struct DeleteComponent
+  id: Alis_Core_Ecs_Kernel_DeleteComponent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/DeleteComponent.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.DeleteComponent
+    commentId: T:Alis.Core.Ecs.Kernel.DeleteComponent
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Delete component command
+- code: 'public record struct DeleteComponent : IEquatable<DeleteComponent>'
+- h4: Implements
+- list:
+  - text: IEquatable<DeleteComponent>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 8 bytes total (GameObjectIdOnly 6 bytes + ComponentId 2 bytes)
+
+    Pack = 1 for minimal memory footprint
+- h2: Constructors
+- api3: DeleteComponent(GameObjectIdOnly, ComponentId)
+  id: Alis_Core_Ecs_Kernel_DeleteComponent__ctor_Alis_Core_Ecs_Kernel_GameObjectIdOnly_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/DeleteComponent.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.DeleteComponent.#ctor(Alis.Core.Ecs.Kernel.GameObjectIdOnly,Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.Kernel.DeleteComponent.#ctor(Alis.Core.Ecs.Kernel.GameObjectIdOnly,Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Delete component command
+- code: public DeleteComponent(GameObjectIdOnly Entity, ComponentId ComponentId)
+- h4: Parameters
+- parameters:
+  - name: Entity
+    type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    description: The entity to delete component from
+  - name: ComponentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The component ID to delete
+- h4: Remarks
+- markdown: >-
+    Memory layout optimized: 8 bytes total (GameObjectIdOnly 6 bytes + ComponentId 2 bytes)
+
+    Pack = 1 for minimal memory footprint
+- h2: Properties
+- api3: ComponentId
+  id: Alis_Core_Ecs_Kernel_DeleteComponent_ComponentId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/DeleteComponent.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.DeleteComponent.ComponentId
+    commentId: P:Alis.Core.Ecs.Kernel.DeleteComponent.ComponentId
+- markdown: The component ID to delete
+- code: public ComponentId ComponentId { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+- api3: Entity
+  id: Alis_Core_Ecs_Kernel_DeleteComponent_Entity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/DeleteComponent.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.DeleteComponent.Entity
+    commentId: P:Alis.Core.Ecs.Kernel.DeleteComponent.Entity
+- markdown: The entity to delete component from
+- code: public GameObjectIdOnly Entity { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+languageId: csharp
+metadata:
+  description: Delete component command

@@ -1,0 +1,491 @@
+### YamlMime:ApiPage
+title: Class TimeManager
+body:
+- api1: Class TimeManager
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager
+    commentId: T:Alis.Core.Ecs.Systems.Manager.Time.TimeManager
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Manager.Time
+      url: Alis.Core.Ecs.Systems.Manager.Time.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Provides an interface to get time information.
+- code: 'public class TimeManager : AManager, IManager, IRuntime'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: AManager
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html
+  - text: TimeManager
+    url: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.html
+- h4: Implements
+- list:
+  - text: IManager
+    url: Alis.Core.Ecs.Systems.Manager.IManager.html
+  - text: IRuntime
+    url: Alis.Core.Ecs.Systems.Execution.IRuntime.html
+- h4: Inherited Members
+- list:
+  - text: AManager._context
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager__context
+  - text: AManager.Context
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Context
+  - text: AManager.IsEnable
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_IsEnable
+  - text: AManager.Name
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Name
+  - text: AManager.Id
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Id
+  - text: AManager.Tag
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Tag
+  - text: AManager.OnEnable()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnEnable
+  - text: AManager.OnInit()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnInit
+  - text: AManager.OnAwake()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAwake
+  - text: AManager.OnStart()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnStart
+  - text: AManager.OnBeforeUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeUpdate
+  - text: AManager.OnUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnUpdate
+  - text: AManager.OnAfterUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterUpdate
+  - text: AManager.OnProcessPendingChanges()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnProcessPendingChanges
+  - text: AManager.OnBeforeFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeFixedUpdate
+  - text: AManager.OnFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnFixedUpdate
+  - text: AManager.OnAfterFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterFixedUpdate
+  - text: AManager.OnDispatchEvents()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDispatchEvents
+  - text: AManager.OnCalculate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnCalculate
+  - text: AManager.OnBeforeDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeDraw
+  - text: AManager.OnDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDraw
+  - text: AManager.OnAfterDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterDraw
+  - text: AManager.OnGui()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnGui
+  - text: AManager.OnRenderPresent()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnRenderPresent
+  - text: AManager.OnDisable()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDisable
+  - text: AManager.OnReset()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnReset
+  - text: AManager.OnStop()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnStop
+  - text: AManager.OnExit()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnExit
+  - text: AManager.OnDestroy()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDestroy
+  - text: AManager.OnSave()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnSave
+  - text: AManager.OnLoad()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnLoad
+  - text: AManager.OnSave(string)
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnSave_System_String_
+  - text: AManager.OnLoad(string)
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnLoad_System_String_
+  - text: AManager.OnPhysicUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnPhysicUpdate
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: TimeManager(Context)
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager__ctor_Alis_Core_Ecs_Systems_Scope_Context_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L54
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Manager.Time.TimeManager" data-throw-if-not-resolved="false"></xref> class
+- code: public TimeManager(Context context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- h2: Fields
+- api3: MillisecondsInSecond
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_MillisecondsInSecond
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.MillisecondsInSecond
+    commentId: F:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.MillisecondsInSecond
+- markdown: The milliseconds in second
+- code: public readonly int MillisecondsInSecond
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: OneSecond
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_OneSecond
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.OneSecond
+    commentId: F:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.OneSecond
+- markdown: The one second
+- code: public readonly double OneSecond
+- h4: Field Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- h2: Properties
+- api3: AverageFrames
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_AverageFrames
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L123
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.AverageFrames
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.AverageFrames
+- markdown: Gets or sets the value of the average frames
+- code: public int AverageFrames { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Clock
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_Clock
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L68
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.Clock
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.Clock
+- markdown: Gets the value of the clock
+- code: public Clock Clock { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Clock
+      url: Alis.Core.Aspect.Time.Clock.html
+- api3: DeltaTime
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_DeltaTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L73
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.DeltaTime
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.DeltaTime
+- markdown: The interval in seconds from the last frame to the current one (Read Only).
+- code: public float DeltaTime { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: FixedDeltaTime
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_FixedDeltaTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L78
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedDeltaTime
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedDeltaTime
+- markdown: The interval in seconds at which physics and other fixed frame rate updateS.
+- code: public float FixedDeltaTime { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: FixedTime
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_FixedTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L84
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedTime
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedTime
+- markdown: >-
+    The time since the last FixedUpdate started (Read Only).
+
+    This is the time in seconds since the start of the game.
+- code: public float FixedTime { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: FixedTimeAsDouble
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_FixedTimeAsDouble
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L90
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedTimeAsDouble
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedTimeAsDouble
+- markdown: >-
+    The double precision time since the last FixedUpdate started (Read Only).
+
+    This is the time in seconds since the start of the game.
+- code: public double FixedTimeAsDouble { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- api3: FixedUnscaledDeltaTime
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_FixedUnscaledDeltaTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L96
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedUnscaledDeltaTime
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedUnscaledDeltaTime
+- markdown: >-
+    The timeScale-independent interval in seconds from the last Runtime.FixedUpdate() phase to the current one (Read
+
+    Only).
+- code: public float FixedUnscaledDeltaTime { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: FixedUnscaledTime
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_FixedUnscaledTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L102
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedUnscaledTime
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedUnscaledTime
+- markdown: >-
+    The timeScale-independent time at the beginning of the last Runtime.FixedUpdate() phase (Read Only).
+
+    This is the time in seconds since the start of the game.
+- code: public float FixedUnscaledTime { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: FixedUnscaledTimeAsDouble
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_FixedUnscaledTimeAsDouble
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L108
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedUnscaledTimeAsDouble
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FixedUnscaledTimeAsDouble
+- markdown: >-
+    The double precision timeScale-independent time at the beginning of the last FixedUpdate (Read Only).
+
+    This is the time in seconds since the start of the game.
+- code: public double FixedUnscaledTimeAsDouble { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- api3: FrameCount
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_FrameCount
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L113
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FrameCount
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.FrameCount
+- markdown: The total number of frames since the start of the game (Read Only).
+- code: public float FrameCount { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: InFixedTimeStep
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_InFixedTimeStep
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L128
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.InFixedTimeStep
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.InFixedTimeStep
+- markdown: Returns true if called inside a fixed time step callback (like Runtime FixedUpdate), otherwise returns false.
+- code: public bool InFixedTimeStep { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: MaximumDeltaTime
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_MaximumDeltaTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L134
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.MaximumDeltaTime
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.MaximumDeltaTime
+- markdown: >-
+    The maximum value of TimeManager.DeltaTime in any given frame.
+
+    This is a time in seconds that limits the increase of TimeManager.time between two frames.
+- code: public float MaximumDeltaTime { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: RealtimeSinceStartup
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_RealtimeSinceStartup
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L139
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.RealtimeSinceStartup
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.RealtimeSinceStartup
+- markdown: The real time in seconds since the game started (Read Only).
+- code: public float RealtimeSinceStartup { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: RealtimeSinceStartupAsDouble
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_RealtimeSinceStartupAsDouble
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L145
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.RealtimeSinceStartupAsDouble
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.RealtimeSinceStartupAsDouble
+- markdown: >-
+    The real time in seconds since the game started (Read Only).
+
+    Double precision version of realtimeSinceStartup.
+- code: public double RealtimeSinceStartupAsDouble { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- api3: Setting
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_Setting
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L63
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.Setting
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.Setting
+- markdown: Gets or sets the value of the configuration
+- code: public TimeSetting Setting { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: TimeSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Time.TimeSetting.html
+- api3: SmoothDeltaTime
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_SmoothDeltaTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L150
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.SmoothDeltaTime
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.SmoothDeltaTime
+- markdown: A smoothed out TimeManager.DeltaTime (Read Only).
+- code: public float SmoothDeltaTime { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Time
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_Time
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L155
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.Time
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.Time
+- markdown: The time at the beginning of this frame (Read Only).
+- code: public float Time { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: TimeAsDouble
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_TimeAsDouble
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L161
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.TimeAsDouble
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.TimeAsDouble
+- markdown: >-
+    The double precision time at the beginning of this frame (Read Only).
+
+    This is the time in seconds since the start of the game.
+- code: public double TimeAsDouble { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- api3: TimeScale
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_TimeScale
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L166
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.TimeScale
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.TimeScale
+- markdown: The scale at which time passes.
+- code: public float TimeScale { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: TotalFrames
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_TotalFrames
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L118
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.TotalFrames
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.TotalFrames
+- markdown: Gets or sets the value of the total frames
+- code: public int TotalFrames { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: UnscaledDeltaTime
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_UnscaledDeltaTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L171
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.UnscaledDeltaTime
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.UnscaledDeltaTime
+- markdown: The timeScale-independent interval in seconds from the last frame to the current one (Read Only).
+- code: public float UnscaledDeltaTime { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: UnscaledTime
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_UnscaledTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L177
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.UnscaledTime
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.UnscaledTime
+- markdown: >-
+    The timeScale-independent time for this frame (Read Only).
+
+    This is the time in seconds since the start of the game.
+- code: public float UnscaledTime { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: UnscaledTimeAsDouble
+  id: Alis_Core_Ecs_Systems_Manager_Time_TimeManager_UnscaledTimeAsDouble
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Time/TimeManager.cs#L183
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.UnscaledTimeAsDouble
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Time.TimeManager.UnscaledTimeAsDouble
+- markdown: >-
+    The double precision timeScale-independent time for this frame (Read Only).
+
+    This is the time in seconds since the start of the game.
+- code: public double UnscaledTimeAsDouble { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+languageId: csharp
+metadata:
+  description: Provides an interface to get time information.

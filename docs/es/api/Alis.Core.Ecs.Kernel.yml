@@ -1,0 +1,89 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Kernel
+body:
+- api1: Namespace Alis.Core.Ecs.Kernel
+  id: Alis_Core_Ecs_Kernel
+  metadata:
+    uid: Alis.Core.Ecs.Kernel
+    commentId: N:Alis.Core.Ecs.Kernel
+- h3: Namespaces
+- parameters:
+  - type:
+      text: Alis.Core.Ecs.Kernel.Archetypes
+      url: Alis.Core.Ecs.Kernel.Archetypes.html
+  - type:
+      text: Alis.Core.Ecs.Kernel.Events
+      url: Alis.Core.Ecs.Kernel.Events.html
+- h3: Classes
+- parameters:
+  - type:
+      text: CommandBuffer
+      url: Alis.Core.Ecs.Kernel.CommandBuffer.html
+    description: Stores a set of structual changes that can be applied to a <xref href="Alis.Core.Ecs.Kernel.CommandBuffer.Scene" data-throw-if-not-resolved="false"></xref>.
+  - type:
+      text: Component<T>
+      url: Alis.Core.Ecs.Kernel.Component-1.html
+    description: Used to quickly get the component ID of a given type
+  - type:
+      text: Component
+      url: Alis.Core.Ecs.Kernel.Component.html
+    description: Class for registering components
+  - type:
+      text: ComponentDelegates<T>
+      url: Alis.Core.Ecs.Kernel.ComponentDelegates-1.html
+    description: Used only in source generation
+- h3: Structs
+- parameters:
+  - type:
+      text: AddComponent
+      url: Alis.Core.Ecs.Kernel.AddComponent.html
+    description: Add component command
+  - type:
+      text: ComponentData
+      url: Alis.Core.Ecs.Kernel.ComponentData.html
+    description: Component metadata
+  - type:
+      text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    description: A handle to a component of any type. Useful to avoid boxing.
+  - type:
+      text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: A lightweight struct that represents a component type. Used for fast lookups.
+  - type:
+      text: CreateCommand
+      url: Alis.Core.Ecs.Kernel.CreateCommand.html
+    description: Create entity command
+  - type:
+      text: DeleteComponent
+      url: Alis.Core.Ecs.Kernel.DeleteComponent.html
+    description: Delete component command
+  - type:
+      text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    description: The gameObject id only
+  - type:
+      text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: Represents an gameObject's type, or set of component and tag types that make it up
+  - type:
+      text: Ref<T>
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    description: A wrapper ref struct over a reference to a <code class="typeparamref">T</code>
+- h3: Interfaces
+- parameters:
+  - type:
+      text: ITypeId
+      url: Alis.Core.Ecs.Kernel.ITypeId.html
+    description: The type id interface
+- h3: Delegates
+- parameters:
+  - type:
+      text: ComponentDelegates<T>.DestroyDelegate
+      url: Alis.Core.Ecs.Kernel.ComponentDelegates-1.DestroyDelegate.html
+    description: Used only in source generation
+  - type:
+      text: ComponentDelegates<T>.InitDelegate
+      url: Alis.Core.Ecs.Kernel.ComponentDelegates-1.InitDelegate.html
+    description: Used only in source generation
+languageId: csharp

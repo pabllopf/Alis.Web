@@ -1,0 +1,40 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Logging.Core
+body:
+- api1: Namespace Alis.Core.Aspect.Logging.Core
+  id: Alis_Core_Aspect_Logging_Core
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core
+    commentId: N:Alis.Core.Aspect.Logging.Core
+- h3: Classes
+- parameters:
+  - type:
+      text: CoreLogger
+      url: Alis.Core.Aspect.Logging.Core.CoreLogger.html
+    description: >-
+      Core implementation of ILogger providing structured logging with support for
+
+      multiple outputs, filters, scopes, and correlation tracking.
+
+      Thread-safe: Uses locks for scope and correlation ID management.
+
+      AOT-compatible: No reflection, pure interface-based design.
+  - type:
+      text: LogEntry
+      url: Alis.Core.Aspect.Logging.Core.LogEntry.html
+    description: >-
+      Default implementation of ILogEntry containing all log data.
+
+      Immutable after creation to ensure thread safety.
+
+      AOT-compatible: No reflection, value-based semantics.
+  - type:
+      text: LoggerScope
+      url: Alis.Core.Aspect.Logging.Core.LoggerScope.html
+    description: >-
+      Manages scope context for a logger instance using a stack-based approach.
+
+      Scopes are used to group related log entries and provide context information.
+
+      Thread-safe: Uses a stack per context value.
+languageId: csharp

@@ -1,0 +1,208 @@
+### YamlMime:ApiPage
+title: Class AsyncLogOutput
+body:
+- api1: Class AsyncLogOutput
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L41
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput
+    commentId: T:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Outputs
+      url: Alis.Core.Aspect.Logging.Outputs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Wraps an output and queues writes to process them asynchronously.
+
+    Useful for file and network I/O to avoid blocking the main thread.
+
+    AOT-compatible: Uses queuing and thread management, no reflection.
+- code: 'public sealed class AsyncLogOutput : ILogOutput, IDisposable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: AsyncLogOutput
+    url: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.html
+- h4: Implements
+- list:
+  - text: ILogOutput
+    url: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.html
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: AsyncLogOutput(ILogOutput, int)
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput__ctor_Alis_Core_Aspect_Logging_Abstractions_ILogOutput_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L73
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.#ctor(Alis.Core.Aspect.Logging.Abstractions.ILogOutput,System.Int32)
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.#ctor(Alis.Core.Aspect.Logging.Abstractions.ILogOutput,System.Int32)
+- markdown: Initializes a new instance of the AsyncLogOutput class.
+- code: public AsyncLogOutput(ILogOutput innerOutput, int maxQueueSize = 10000)
+- h4: Parameters
+- parameters:
+  - name: innerOutput
+    type:
+    - text: ILogOutput
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.html
+    description: The underlying output to wrap.
+  - name: maxQueueSize
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: Maximum entries to queue. 0 = unlimited.
+    optional: true
+- h2: Fields
+- api3: _disposed
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput__disposed
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L66
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput._disposed
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput._disposed
+- markdown: The disposed
+- code: private bool _disposed
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _innerOutput
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput__innerOutput
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L46
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput._innerOutput
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput._innerOutput
+- markdown: The inner output
+- code: private readonly ILogOutput _innerOutput
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ILogOutput
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.html
+- api3: _maxQueueSize
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput__maxQueueSize
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L51
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput._maxQueueSize
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput._maxQueueSize
+- markdown: The max queue size
+- code: private readonly int _maxQueueSize
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _queue
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput__queue
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L56
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput._queue
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput._queue
+- markdown: The queue
+- code: private readonly Queue<ILogEntry> _queue
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Queue
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.queue-1
+    - <
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    - '>'
+- api3: _queueLock
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput__queueLock
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L61
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput._queueLock
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput._queueLock
+- markdown: The queue lock
+- code: private readonly object _queueLock
+- h4: Field Value
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+- h2: Properties
+- api3: IsEnabled
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput_IsEnabled
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L90
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.IsEnabled
+    commentId: P:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.IsEnabled
+- markdown: Gets or sets the value of the is enabled
+- code: public bool IsEnabled { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L84
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.Name
+    commentId: P:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.Name
+- markdown: Gets the value of the name
+- code: public string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: Dispose()
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L152
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.Dispose
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.Dispose
+- markdown: Disposes this instance
+- code: public void Dispose()
+- api3: Flush()
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput_Flush
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L127
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.Flush
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.Flush
+- markdown: Flushes this instance
+- code: public void Flush()
+- api3: Write(ILogEntry)
+  id: Alis_Core_Aspect_Logging_Outputs_AsyncLogOutput_Write_Alis_Core_Aspect_Logging_Abstractions_ILogEntry_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/AsyncLogOutput.cs#L97
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.Write(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.Write(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+- markdown: Writes the entry
+- code: public void Write(ILogEntry entry)
+- h4: Parameters
+- parameters:
+  - name: entry
+    type:
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: The entry
+languageId: csharp
+metadata:
+  description: >-
+    Wraps an output and queues writes to process them asynchronously.
+
+    Useful for file and network I/O to avoid blocking the main thread.
+
+    AOT-compatible: Uses queuing and thread management, no reflection.

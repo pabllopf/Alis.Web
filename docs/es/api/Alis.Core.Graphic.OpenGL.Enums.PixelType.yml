@@ -1,0 +1,173 @@
+### YamlMime:ApiPage
+title: Enum PixelType
+body:
+- api1: Enum PixelType
+  id: Alis_Core_Graphic_OpenGL_Enums_PixelType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/PixelType.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.PixelType
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.PixelType
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The pixel type enum
+- code: public enum PixelType
+- h2: Fields
+- parameters:
+  - name: Byte
+    default: "5120"
+    description: >+
+      The byte pixel type
+
+  - name: UnsignedByte
+    default: "5121"
+    description: >+
+      The unsigned byte pixel type
+
+  - name: Short
+    default: "5122"
+    description: >+
+      The short pixel type
+
+  - name: UnsignedShort
+    default: "5123"
+    description: >+
+      The unsigned short pixel type
+
+  - name: Int
+    default: "5124"
+    description: >+
+      The int pixel type
+
+  - name: UnsignedInt
+    default: "5125"
+    description: >+
+      The unsigned int pixel type
+
+  - name: Float
+    default: "5126"
+    description: >+
+      The float pixel type
+
+  - name: HalfFloat
+    default: "5131"
+    description: >+
+      The half float pixel type
+
+  - name: Bitmap
+    default: "6656"
+    description: >+
+      The bitmap pixel type
+
+  - name: UnsignedByte332
+    default: "32818"
+    description: >+
+      The unsigned byte 332 pixel type
+
+  - name: UnsignedByte332Ext
+    default: "32818"
+    description: >+
+      The unsigned byte 332 ext pixel type
+
+  - name: UnsignedShort4444
+    default: "32819"
+    description: >+
+      The unsigned short 4444 pixel type
+
+  - name: UnsignedShort4444Ext
+    default: "32819"
+    description: >+
+      The unsigned short 4444 ext pixel type
+
+  - name: UnsignedShort5551
+    default: "32820"
+    description: >+
+      The unsigned short 5551 pixel type
+
+  - name: UnsignedShort5551Ext
+    default: "32820"
+    description: >+
+      The unsigned short 5551 ext pixel type
+
+  - name: UnsignedInt8888
+    default: "32821"
+    description: >+
+      The unsigned int 8888 pixel type
+
+  - name: UnsignedInt8888Ext
+    default: "32821"
+    description: >+
+      The unsigned int 8888 ext pixel type
+
+  - name: UnsignedInt1010102
+    default: "32822"
+    description: >+
+      The unsigned int 1010102 pixel type
+
+  - name: UnsignedInt1010102Ext
+    default: "32822"
+    description: >+
+      The unsigned int 1010102 ext pixel type
+
+  - name: UnsignedByte233Reversed
+    default: "33634"
+    description: >+
+      The unsigned byte 233 reversed pixel type
+
+  - name: UnsignedShort565
+    default: "33635"
+    description: >+
+      The unsigned short 565 pixel type
+
+  - name: UnsignedShort565Reversed
+    default: "33636"
+    description: >+
+      The unsigned short 565 reversed pixel type
+
+  - name: UnsignedShort4444Reversed
+    default: "33637"
+    description: >+
+      The unsigned short 4444 reversed pixel type
+
+  - name: UnsignedShort1555Reversed
+    default: "33638"
+    description: >+
+      The unsigned short 1555 reversed pixel type
+
+  - name: UnsignedInt8888Reversed
+    default: "33639"
+    description: >+
+      The unsigned int 8888 reversed pixel type
+
+  - name: UnsignedInt2101010Reversed
+    default: "33640"
+    description: >+
+      The unsigned int 2101010 reversed pixel type
+
+  - name: UnsignedInt248
+    default: "34042"
+    description: >+
+      The unsigned int 248 pixel type
+
+  - name: UnsignedInt10F11F11FRev
+    default: "35899"
+    description: >+
+      The unsigned int 10 11 11 rev pixel type
+
+  - name: UnsignedInt5999Rev
+    default: "35902"
+    description: >+
+      The unsigned int 5999 rev pixel type
+
+  - name: Float32UnsignedInt248Rev
+    default: "36269"
+    description: >+
+      The float 32 unsigned int 248 rev pixel type
+
+languageId: csharp
+metadata:
+  description: The pixel type enum

@@ -1,0 +1,702 @@
+### YamlMime:ApiPage
+title: Class EGL
+body:
+- api1: Class EGL
+  id: Alis_Core_Graphic_Platforms_Web_EGL
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L39
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL
+    commentId: T:Alis.Core.Graphic.Platforms.Web.EGL
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.Platforms.Web
+      url: Alis.Core.Graphic.Platforms.Web.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The egl class
+- code: public static class EGL
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: EGL
+    url: Alis.Core.Graphic.Platforms.Web.EGL.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: EGL_BLUE_SIZE
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_BLUE_SIZE
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L64
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_BLUE_SIZE
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_BLUE_SIZE
+- markdown: The egl blue size
+- code: public const int EGL_BLUE_SIZE = 12322
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_CONTEXT_CLIENT_VERSION
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_CONTEXT_CLIENT_VERSION
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L109
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_CONTEXT_CLIENT_VERSION
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_CONTEXT_CLIENT_VERSION
+- markdown: The egl context client version
+- code: public const int EGL_CONTEXT_CLIENT_VERSION = 12440
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_DEPTH_SIZE
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_DEPTH_SIZE
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L69
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_DEPTH_SIZE
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_DEPTH_SIZE
+- markdown: The egl depth size
+- code: public const int EGL_DEPTH_SIZE = 12325
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_GREEN_SIZE
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_GREEN_SIZE
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L59
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_GREEN_SIZE
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_GREEN_SIZE
+- markdown: The egl green size
+- code: public const int EGL_GREEN_SIZE = 12323
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_NATIVE_VISUAL_ID
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_NATIVE_VISUAL_ID
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L119
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_NATIVE_VISUAL_ID
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_NATIVE_VISUAL_ID
+- markdown: The egl native visual id
+- code: public const int EGL_NATIVE_VISUAL_ID = 12334
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_NONE
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_NONE
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L49
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_NONE
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_NONE
+- markdown: The egl none
+- code: public const int EGL_NONE = 12344
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_NO_CONTEXT
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_NO_CONTEXT
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L114
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_NO_CONTEXT
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_NO_CONTEXT
+- markdown: The egl no context
+- code: public const int EGL_NO_CONTEXT = 0
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_OPENGL_ES2_BIT
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_OPENGL_ES2_BIT
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L99
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_OPENGL_ES2_BIT
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_OPENGL_ES2_BIT
+- markdown: The egl opengl es2 bit
+- code: public const int EGL_OPENGL_ES2_BIT = 4
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_OPENGL_ES3_BIT
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_OPENGL_ES3_BIT
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L104
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_OPENGL_ES3_BIT
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_OPENGL_ES3_BIT
+- markdown: The egl opengl es3 bit
+- code: public const int EGL_OPENGL_ES3_BIT = 64
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_OPENGL_ES_API
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_OPENGL_ES_API
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L124
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_OPENGL_ES_API
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_OPENGL_ES_API
+- markdown: The egl opengl es api
+- code: public const int EGL_OPENGL_ES_API = 12448
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_RED_SIZE
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_RED_SIZE
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L54
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_RED_SIZE
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_RED_SIZE
+- markdown: The egl red size
+- code: public const int EGL_RED_SIZE = 12324
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_RENDERABLE_TYPE
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_RENDERABLE_TYPE
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L84
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_RENDERABLE_TYPE
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_RENDERABLE_TYPE
+- markdown: The egl renderable type
+- code: public const int EGL_RENDERABLE_TYPE = 12352
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_SAMPLES
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_SAMPLES
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L89
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_SAMPLES
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_SAMPLES
+- markdown: The egl samples
+- code: public const int EGL_SAMPLES = 12337
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_STENCIL_SIZE
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_STENCIL_SIZE
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L74
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_STENCIL_SIZE
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_STENCIL_SIZE
+- markdown: The egl stencil size
+- code: public const int EGL_STENCIL_SIZE = 12326
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_SURFACE_TYPE
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_SURFACE_TYPE
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L79
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_SURFACE_TYPE
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_SURFACE_TYPE
+- markdown: The egl surface type
+- code: public const int EGL_SURFACE_TYPE = 12339
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EGL_WINDOW_BIT
+  id: Alis_Core_Graphic_Platforms_Web_EGL_EGL_WINDOW_BIT
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L94
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.EGL_WINDOW_BIT
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.EGL_WINDOW_BIT
+- markdown: The egl window bit
+- code: public const int EGL_WINDOW_BIT = 4
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: LibEgl
+  id: Alis_Core_Graphic_Platforms_Web_EGL_LibEgl
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Web/EGL.cs#L44
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.LibEgl
+    commentId: F:Alis.Core.Graphic.Platforms.Web.EGL.LibEgl
+- markdown: The lib egl
+- code: public const string LibEgl = "libEGL"
+- h4: Field Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: BindApi(int)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_BindApi_System_Int32_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.BindApi(System.Int32)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.BindApi(System.Int32)
+- markdown: Binds the api using the specified api
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern bool BindApi(int api)
+- h4: Parameters
+- parameters:
+  - name: api
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The api
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: ChooseConfig(nint, int[], ref nint, nint, ref nint)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_ChooseConfig_System_IntPtr_System_Int32___System_IntPtr__System_IntPtr_System_IntPtr__
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.ChooseConfig(System.IntPtr,System.Int32[],System.IntPtr@,System.IntPtr,System.IntPtr@)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.ChooseConfig(System.IntPtr,System.Int32[],System.IntPtr@,System.IntPtr,System.IntPtr@)
+- markdown: Chooses the config using the specified dpy
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern bool ChooseConfig(nint dpy, int[] attribList, ref nint configs, nint configSize, ref nint numConfig)
+- h4: Parameters
+- parameters:
+  - name: dpy
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The dpy
+  - name: attribList
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '['
+    - ']'
+    description: The attrib list
+  - name: configs
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The configs
+  - name: configSize
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The config size
+  - name: numConfig
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The num config
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: CreateContext(nint, nint, nint, int[])
+  id: Alis_Core_Graphic_Platforms_Web_EGL_CreateContext_System_IntPtr_System_IntPtr_System_IntPtr_System_Int32___
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.CreateContext(System.IntPtr,System.IntPtr,System.IntPtr,System.Int32[])
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.CreateContext(System.IntPtr,System.IntPtr,System.IntPtr,System.Int32[])
+- markdown: Creates the context using the specified display
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint CreateContext(nint display, nint config, nint shareContext, int[] attribList)
+- h4: Parameters
+- parameters:
+  - name: display
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The display
+  - name: config
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The config
+  - name: shareContext
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The share context
+  - name: attribList
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '['
+    - ']'
+    description: The attrib list
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: CreateWindowSurface(nint, nint, nint, nint)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_CreateWindowSurface_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.CreateWindowSurface(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.CreateWindowSurface(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+- markdown: Creates the window surface using the specified display
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint CreateWindowSurface(nint display, nint config, nint win, nint attribList)
+- h4: Parameters
+- parameters:
+  - name: display
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The display
+  - name: config
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The config
+  - name: win
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The win
+  - name: attribList
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The attrib list
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: DestroyContext(nint, nint)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_DestroyContext_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.DestroyContext(System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.DestroyContext(System.IntPtr,System.IntPtr)
+- markdown: Destroys the context using the specified display
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern int DestroyContext(nint display, nint ctx)
+- h4: Parameters
+- parameters:
+  - name: display
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The display
+  - name: ctx
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The ctx
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: DestroySurface(nint, nint)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_DestroySurface_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.DestroySurface(System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.DestroySurface(System.IntPtr,System.IntPtr)
+- markdown: Destroys the surface using the specified display
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern int DestroySurface(nint display, nint surface)
+- h4: Parameters
+- parameters:
+  - name: display
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The display
+  - name: surface
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The surface
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: GetConfigAttrib(nint, nint, nint, ref nint)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_GetConfigAttrib_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr__
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.GetConfigAttrib(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.GetConfigAttrib(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)
+- markdown: Gets the config attrib using the specified display
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern bool GetConfigAttrib(nint display, nint config, nint attribute, ref nint value)
+- h4: Parameters
+- parameters:
+  - name: display
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The display
+  - name: config
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The config
+  - name: attribute
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The attribute
+  - name: value
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: GetDisplay(nint)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_GetDisplay_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.GetDisplay(System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.GetDisplay(System.IntPtr)
+- markdown: Gets the display using the specified display id
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint GetDisplay(nint displayId)
+- h4: Parameters
+- parameters:
+  - name: displayId
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The display id
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: GetProcAddress(string)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_GetProcAddress_System_String_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.GetProcAddress(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.GetProcAddress(System.String)
+- markdown: Gets the proc address using the specified proc
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint GetProcAddress(string proc)
+- h4: Parameters
+- parameters:
+  - name: proc
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The proc
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: Initialize(nint, out int, out int)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_Initialize_System_IntPtr_System_Int32__System_Int32__
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.Initialize(System.IntPtr,System.Int32@,System.Int32@)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.Initialize(System.IntPtr,System.Int32@,System.Int32@)
+- markdown: Initializes the display
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern bool Initialize(nint display, out int major, out int minor)
+- h4: Parameters
+- parameters:
+  - name: display
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The display
+  - name: major
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The major
+  - name: minor
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The minor
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: MakeCurrent(nint, nint, nint, nint)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_MakeCurrent_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.MakeCurrent(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.MakeCurrent(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+- markdown: Makes the current using the specified display
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern bool MakeCurrent(nint display, nint draw, nint read, nint ctx)
+- h4: Parameters
+- parameters:
+  - name: display
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The display
+  - name: draw
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The draw
+  - name: read
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The read
+  - name: ctx
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The ctx
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: SwapBuffers(nint, nint)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_SwapBuffers_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.SwapBuffers(System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.SwapBuffers(System.IntPtr,System.IntPtr)
+- markdown: Swaps the buffers using the specified display
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern int SwapBuffers(nint display, nint surface)
+- h4: Parameters
+- parameters:
+  - name: display
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The display
+  - name: surface
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The surface
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: SwapInterval(nint, int)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_SwapInterval_System_IntPtr_System_Int32_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.SwapInterval(System.IntPtr,System.Int32)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.SwapInterval(System.IntPtr,System.Int32)
+- markdown: Swaps the interval using the specified display
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern int SwapInterval(nint display, int interval)
+- h4: Parameters
+- parameters:
+  - name: display
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The display
+  - name: interval
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The interval
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: Terminate(nint)
+  id: Alis_Core_Graphic_Platforms_Web_EGL_Terminate_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Web.EGL.Terminate(System.IntPtr)
+    commentId: M:Alis.Core.Graphic.Platforms.Web.EGL.Terminate(System.IntPtr)
+- markdown: Terminates the display
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern int Terminate(nint display)
+- h4: Parameters
+- parameters:
+  - name: display
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The display
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+languageId: csharp
+metadata:
+  description: The egl class

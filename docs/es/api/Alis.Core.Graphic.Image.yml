@@ -1,0 +1,371 @@
+### YamlMime:ApiPage
+title: Class Image
+body:
+- api1: Class Image
+  id: Alis_Core_Graphic_Image
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Image.cs#L39
+  metadata:
+    uid: Alis.Core.Graphic.Image
+    commentId: T:Alis.Core.Graphic.Image
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic
+      url: Alis.Core.Graphic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The sprite class
+- code: public class Image
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Image
+    url: Alis.Core.Graphic.Image.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Image(int, int, byte[])
+  id: Alis_Core_Graphic_Image__ctor_System_Int32_System_Int32_System_Byte___
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Image.cs#L47
+  metadata:
+    uid: Alis.Core.Graphic.Image.#ctor(System.Int32,System.Int32,System.Byte[])
+    commentId: M:Alis.Core.Graphic.Image.#ctor(System.Int32,System.Int32,System.Byte[])
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Graphic.Image" data-throw-if-not-resolved="false"></xref> class
+- code: private Image(int width, int height, byte[] data)
+- h4: Parameters
+- parameters:
+  - name: width
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The width
+  - name: height
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The height
+  - name: data
+    type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+    description: The data
+- h2: Properties
+- api3: Data
+  id: Alis_Core_Graphic_Image_Data
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Image.cs#L67
+  metadata:
+    uid: Alis.Core.Graphic.Image.Data
+    commentId: P:Alis.Core.Graphic.Image.Data
+- markdown: Gets the value of the data
+- code: public byte[] Data { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+- api3: Height
+  id: Alis_Core_Graphic_Image_Height
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Image.cs#L62
+  metadata:
+    uid: Alis.Core.Graphic.Image.Height
+    commentId: P:Alis.Core.Graphic.Image.Height
+- markdown: Gets the value of the height
+- code: public int Height { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Width
+  id: Alis_Core_Graphic_Image_Width
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Image.cs#L57
+  metadata:
+    uid: Alis.Core.Graphic.Image.Width
+    commentId: P:Alis.Core.Graphic.Image.Width
+- markdown: Gets the value of the width
+- code: public int Width { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: Load(string)
+  id: Alis_Core_Graphic_Image_Load_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Image.cs#L190
+  metadata:
+    uid: Alis.Core.Graphic.Image.Load(System.String)
+    commentId: M:Alis.Core.Graphic.Image.Load(System.String)
+- markdown: Loads the path
+- code: public static Image Load(string path)
+- h4: Parameters
+- parameters:
+  - name: path
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The path
+- h4: Returns
+- parameters:
+  - type:
+    - text: Image
+      url: Alis.Core.Graphic.Image.html
+    description: The sprite
+- api3: LoadBmpRgb(BinaryReader, int, int, short, byte[], byte[][], int, int)
+  id: Alis_Core_Graphic_Image_LoadBmpRgb_System_IO_BinaryReader_System_Int32_System_Int32_System_Int16_System_Byte___System_Byte_____System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Image.cs#L211
+  metadata:
+    uid: Alis.Core.Graphic.Image.LoadBmpRgb(System.IO.BinaryReader,System.Int32,System.Int32,System.Int16,System.Byte[],System.Byte[][],System.Int32,System.Int32)
+    commentId: M:Alis.Core.Graphic.Image.LoadBmpRgb(System.IO.BinaryReader,System.Int32,System.Int32,System.Int16,System.Byte[],System.Byte[][],System.Int32,System.Int32)
+- markdown: Loads the bmp rgb using the specified reader
+- code: private static void LoadBmpRgb(BinaryReader reader, int width, int height, short bitsPerPixel, byte[] rawData, byte[][] palette, int rowPadded, int bytesPerPixel)
+- h4: Parameters
+- parameters:
+  - name: reader
+    type:
+    - text: BinaryReader
+      url: https://learn.microsoft.com/dotnet/api/system.io.binaryreader
+    description: The reader
+  - name: width
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The width
+  - name: height
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The height
+  - name: bitsPerPixel
+    type:
+    - text: short
+      url: https://learn.microsoft.com/dotnet/api/system.int16
+    description: The bits per pixel
+  - name: rawData
+    type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+    description: The raw data
+  - name: palette
+    type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+    - '['
+    - ']'
+    description: The palette
+  - name: rowPadded
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The row padded
+  - name: bytesPerPixel
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The bytes per pixel
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: NotSupportedException
+      url: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+    description: 'Unsupported bits per pixel: {bitsPerPixel}'
+- api3: LoadBmpRle4(BinaryReader, int, int, short, byte[], byte[][], int, int)
+  id: Alis_Core_Graphic_Image_LoadBmpRle4_System_IO_BinaryReader_System_Int32_System_Int32_System_Int16_System_Byte___System_Byte_____System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Image.cs#L409
+  metadata:
+    uid: Alis.Core.Graphic.Image.LoadBmpRle4(System.IO.BinaryReader,System.Int32,System.Int32,System.Int16,System.Byte[],System.Byte[][],System.Int32,System.Int32)
+    commentId: M:Alis.Core.Graphic.Image.LoadBmpRle4(System.IO.BinaryReader,System.Int32,System.Int32,System.Int16,System.Byte[],System.Byte[][],System.Int32,System.Int32)
+- markdown: Loads the bmp rle 4 using the specified reader
+- code: private static void LoadBmpRle4(BinaryReader reader, int width, int height, short bitsPerPixel, byte[] rawData, byte[][] palette, int rowPadded, int bytesPerPixel)
+- h4: Parameters
+- parameters:
+  - name: reader
+    type:
+    - text: BinaryReader
+      url: https://learn.microsoft.com/dotnet/api/system.io.binaryreader
+    description: The reader
+  - name: width
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The width
+  - name: height
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The height
+  - name: bitsPerPixel
+    type:
+    - text: short
+      url: https://learn.microsoft.com/dotnet/api/system.int16
+    description: The bits per pixel
+  - name: rawData
+    type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+    description: The raw data
+  - name: palette
+    type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+    - '['
+    - ']'
+    description: The palette
+  - name: rowPadded
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The row padded
+  - name: bytesPerPixel
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The bytes per pixel
+- api3: LoadBmpRle8(BinaryReader, int, int, short, byte[], byte[][], int, int)
+  id: Alis_Core_Graphic_Image_LoadBmpRle8_System_IO_BinaryReader_System_Int32_System_Int32_System_Int16_System_Byte___System_Byte_____System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Image.cs#L326
+  metadata:
+    uid: Alis.Core.Graphic.Image.LoadBmpRle8(System.IO.BinaryReader,System.Int32,System.Int32,System.Int16,System.Byte[],System.Byte[][],System.Int32,System.Int32)
+    commentId: M:Alis.Core.Graphic.Image.LoadBmpRle8(System.IO.BinaryReader,System.Int32,System.Int32,System.Int16,System.Byte[],System.Byte[][],System.Int32,System.Int32)
+- markdown: Loads the bmp rle 8 using the specified reader
+- code: private static void LoadBmpRle8(BinaryReader reader, int width, int height, short bitsPerPixel, byte[] rawData, byte[][] palette, int rowPadded, int bytesPerPixel)
+- h4: Parameters
+- parameters:
+  - name: reader
+    type:
+    - text: BinaryReader
+      url: https://learn.microsoft.com/dotnet/api/system.io.binaryreader
+    description: The reader
+  - name: width
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The width
+  - name: height
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The height
+  - name: bitsPerPixel
+    type:
+    - text: short
+      url: https://learn.microsoft.com/dotnet/api/system.int16
+    description: The bits per pixel
+  - name: rawData
+    type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+    description: The raw data
+  - name: palette
+    type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+    - '['
+    - ']'
+    description: The palette
+  - name: rowPadded
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The row padded
+  - name: bytesPerPixel
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The bytes per pixel
+- api3: LoadFromStream(Stream)
+  id: Alis_Core_Graphic_Image_LoadFromStream_System_IO_Stream_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Image.cs#L85
+  metadata:
+    uid: Alis.Core.Graphic.Image.LoadFromStream(System.IO.Stream)
+    commentId: M:Alis.Core.Graphic.Image.LoadFromStream(System.IO.Stream)
+- markdown: Loads the from stream using the specified stream
+- code: private static Image LoadFromStream(Stream stream)
+- h4: Parameters
+- parameters:
+  - name: stream
+    type:
+    - text: Stream
+      url: https://learn.microsoft.com/dotnet/api/system.io.stream
+    description: The stream
+- h4: Returns
+- parameters:
+  - type:
+    - text: Image
+      url: Alis.Core.Graphic.Image.html
+    description: The image
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidDataException
+      url: https://learn.microsoft.com/dotnet/api/system.io.invaliddataexception
+    description: Not a valid BMP file (missing BM header)
+  - type:
+    - text: NotSupportedException
+      url: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+    description: 'Unsupported BMP compression type: {compression}'
+- api3: LoadImageFromResources(string)
+  id: Alis_Core_Graphic_Image_LoadImageFromResources_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Image.cs#L76
+  metadata:
+    uid: Alis.Core.Graphic.Image.LoadImageFromResources(System.String)
+    commentId: M:Alis.Core.Graphic.Image.LoadImageFromResources(System.String)
+- markdown: Loads the image from resources using the specified resource name
+- code: public static Image LoadImageFromResources(string resourceName)
+- h4: Parameters
+- parameters:
+  - name: resourceName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The resource name
+- h4: Returns
+- parameters:
+  - type:
+    - text: Image
+      url: Alis.Core.Graphic.Image.html
+    description: The image
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Resource '{resourceName}' not found in 'assets.pack'.
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Resource file 'assets.pack' not found in embedded resources.
+languageId: csharp
+metadata:
+  description: The sprite class

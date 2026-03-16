@@ -3,7 +3,7 @@ title: Class BayazitDecomposer
 body:
 - api1: Class BayazitDecomposer
   id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L48
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L47
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer
     commentId: T:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer
@@ -54,12 +54,12 @@ body:
 - h2: Methods
 - api3: At(int, Vertices)
   id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_At_System_Int32_Alis_Core_Physic_Common_Vertices_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L194
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L195
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.At(System.Int32,Alis.Core.Physic.Common.Vertices)
     commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.At(System.Int32,Alis.Core.Physic.Common.Vertices)
 - markdown: Ats the i
-- code: private static Vector2 At(int i, Vertices vertices)
+- code: private static Vector2F At(int i, Vertices vertices)
 - h4: Parameters
 - parameters:
   - name: i
@@ -75,12 +75,12 @@ body:
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The vector
 - api3: CanSee(int, int, Vertices)
   id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_CanSee_System_Int32_System_Int32_Alis_Core_Physic_Common_Vertices_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L229
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L232
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.CanSee(System.Int32,System.Int32,Alis.Core.Physic.Common.Vertices)
     commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.CanSee(System.Int32,System.Int32,Alis.Core.Physic.Common.Vertices)
@@ -111,7 +111,7 @@ body:
     description: The bool
 - api3: ConvexPartition(Vertices)
   id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_ConvexPartition_Alis_Core_Physic_Common_Vertices_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L55
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L54
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices)
     commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices)
@@ -139,7 +139,7 @@ body:
     - '>'
 - api3: Copy(int, int, Vertices)
   id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Copy_System_Int32_System_Int32_Alis_Core_Physic_Common_Vertices_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L207
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L208
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Copy(System.Int32,System.Int32,Alis.Core.Physic.Common.Vertices)
     commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Copy(System.Int32,System.Int32,Alis.Core.Physic.Common.Vertices)
@@ -168,30 +168,30 @@ body:
     - text: Vertices
       url: Alis.Core.Physic.Common.Vertices.html
     description: The
-- api3: Left(Vector2, Vector2, Vector2)
-  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Left_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L290
+- api3: Left(Vector2F, Vector2F, Vector2F)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Left_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L303
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Left(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Left(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Left(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Left(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Describes whether left
-- code: private static bool Left(Vector2 a, Vector2 b, Vector2 c)
+- code: private static bool Left(Vector2F a, Vector2F b, Vector2F c)
 - h4: Parameters
 - parameters:
   - name: a
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: b
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: c
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
 - h4: Returns
 - parameters:
@@ -199,30 +199,30 @@ body:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: The bool
-- api3: LeftOn(Vector2, Vector2, Vector2)
-  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_LeftOn_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L299
+- api3: LeftOn(Vector2F, Vector2F, Vector2F)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_LeftOn_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L312
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.LeftOn(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.LeftOn(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.LeftOn(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.LeftOn(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Describes whether left on
-- code: private static bool LeftOn(Vector2 a, Vector2 b, Vector2 c)
+- code: private static bool LeftOn(Vector2F a, Vector2F b, Vector2F c)
 - h4: Parameters
 - parameters:
   - name: a
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: b
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: c
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
 - h4: Returns
 - parameters:
@@ -232,7 +232,7 @@ body:
     description: The bool
 - api3: Reflex(int, Vertices)
   id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Reflex_System_Int32_Alis_Core_Physic_Common_Vertices_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L273
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L286
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Reflex(System.Int32,Alis.Core.Physic.Common.Vertices)
     commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Reflex(System.Int32,Alis.Core.Physic.Common.Vertices)
@@ -258,7 +258,7 @@ body:
     description: The bool
 - api3: Right(int, Vertices)
   id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Right_System_Int32_Alis_Core_Physic_Common_Vertices_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L281
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L294
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Right(System.Int32,Alis.Core.Physic.Common.Vertices)
     commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Right(System.Int32,Alis.Core.Physic.Common.Vertices)
@@ -282,30 +282,30 @@ body:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: The bool
-- api3: Right(Vector2, Vector2, Vector2)
-  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Right_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L308
+- api3: Right(Vector2F, Vector2F, Vector2F)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_Right_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L321
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Right(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Right(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Right(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.Right(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Describes whether right
-- code: private static bool Right(Vector2 a, Vector2 b, Vector2 c)
+- code: private static bool Right(Vector2F a, Vector2F b, Vector2F c)
 - h4: Parameters
 - parameters:
   - name: a
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: b
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: c
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
 - h4: Returns
 - parameters:
@@ -313,30 +313,30 @@ body:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: The bool
-- api3: RightOn(Vector2, Vector2, Vector2)
-  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_RightOn_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L317
+- api3: RightOn(Vector2F, Vector2F, Vector2F)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_RightOn_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L330
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.RightOn(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.RightOn(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.RightOn(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.RightOn(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Describes whether right on
-- code: private static bool RightOn(Vector2 a, Vector2 b, Vector2 c)
+- code: private static bool RightOn(Vector2F a, Vector2F b, Vector2F c)
 - h4: Parameters
 - parameters:
   - name: a
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: b
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: c
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
 - h4: Returns
 - parameters:
@@ -344,25 +344,25 @@ body:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: The bool
-- api3: SquareDist(Vector2, Vector2)
-  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_SquareDist_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L325
+- api3: SquareDist(Vector2F, Vector2F)
+  id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_SquareDist_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L338
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.SquareDist(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.SquareDist(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.SquareDist(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.SquareDist(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Squares the dist using the specified a
-- code: private static float SquareDist(Vector2 a, Vector2 b)
+- code: private static float SquareDist(Vector2F a, Vector2F b)
 - h4: Parameters
 - parameters:
   - name: a
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: b
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
 - h4: Returns
 - parameters:
@@ -372,7 +372,7 @@ body:
     description: The float
 - api3: TriangulatePolygon(Vertices)
   id: Alis_Core_Physic_Common_Decomposition_BayazitDecomposer_TriangulatePolygon_Alis_Core_Physic_Common_Vertices_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L68
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/BayazitDecomposer.cs#L61
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.TriangulatePolygon(Alis.Core.Physic.Common.Vertices)
     commentId: M:Alis.Core.Physic.Common.Decomposition.BayazitDecomposer.TriangulatePolygon(Alis.Core.Physic.Common.Vertices)

@@ -6,15 +6,32 @@ body:
   metadata:
     uid: Alis.Builder.Core.Ecs.Entity
     commentId: N:Alis.Builder.Core.Ecs.Entity
-- h3: Namespaces
+- h3: Classes
 - parameters:
   - type:
-      text: Alis.Builder.Core.Ecs.Entity.GameObject
-      url: Alis.Builder.Core.Ecs.Entity.GameObject.html
+      text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder class
   - type:
-      text: Alis.Builder.Core.Ecs.Entity.Scene
-      url: Alis.Builder.Core.Ecs.Entity.Scene.html
+      text: SceneBuilder
+      url: Alis.Builder.Core.Ecs.Entity.SceneBuilder.html
+    description: The scene builder class
   - type:
-      text: Alis.Builder.Core.Ecs.Entity.Transform
-      url: Alis.Builder.Core.Ecs.Entity.Transform.html
+      text: TransformBuilder
+      url: Alis.Builder.Core.Ecs.Entity.TransformBuilder.html
+    description: The transform builder class
+- h3: Delegates
+- parameters:
+  - type:
+      text: AnimatorConfig<T>
+      url: Alis.Builder.Core.Ecs.Entity.AnimatorConfig-1.html
+    description: The animator config
+  - type:
+      text: CameraConfig<T>
+      url: Alis.Builder.Core.Ecs.Entity.CameraConfig-1.html
+    description: The camera config
+  - type:
+      text: SpriteConfig<T>
+      url: Alis.Builder.Core.Ecs.Entity.SpriteConfig-1.html
+    description: The sprite config
 languageId: csharp

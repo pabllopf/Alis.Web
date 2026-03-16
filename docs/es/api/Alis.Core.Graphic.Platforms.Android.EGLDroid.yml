@@ -1,0 +1,67 @@
+### YamlMime:ApiPage
+title: Class EGLDroid
+body:
+- api1: Class EGLDroid
+  id: Alis_Core_Graphic_Platforms_Android_EGLDroid
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Android/EGLDroid.cs#L39
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Android.EGLDroid
+    commentId: T:Alis.Core.Graphic.Platforms.Android.EGLDroid
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.Platforms.Android
+      url: Alis.Core.Graphic.Platforms.Android.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The egl droid class
+- code: public class EGLDroid
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: EGLDroid
+    url: Alis.Core.Graphic.Platforms.Android.EGLDroid.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: GetProcAddress(string)
+  id: Alis_Core_Graphic_Platforms_Android_EGLDroid_GetProcAddress_System_String_
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Android.EGLDroid.GetProcAddress(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Android.EGLDroid.GetProcAddress(System.String)
+- markdown: Gets the proc address using the specified proc
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint GetProcAddress(string proc)
+- h4: Parameters
+- parameters:
+  - name: proc
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The proc
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+languageId: csharp
+metadata:
+  description: The egl droid class

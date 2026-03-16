@@ -1,0 +1,60 @@
+### YamlMime:ApiPage
+title: Class QueryHashCache<T>
+body:
+- api1: Class QueryHashCache<T>
+  id: Alis_Core_Ecs_Systems_QueryHashCache_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryHashCache.cs#L35
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryHashCache`1
+    commentId: T:Alis.Core.Ecs.Systems.QueryHashCache`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The query hash cache class
+- code: 'internal static class QueryHashCache<T> where T : struct, IRuleProvider'
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: QueryHashCache<T>
+    url: Alis.Core.Ecs.Systems.QueryHashCache-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Value
+  id: Alis_Core_Ecs_Systems_QueryHashCache_1_Value
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryHashCache.cs#L41
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryHashCache`1.Value
+    commentId: F:Alis.Core.Ecs.Systems.QueryHashCache`1.Value
+- markdown: The to hash code
+- code: public static readonly int Value
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: The query hash cache class

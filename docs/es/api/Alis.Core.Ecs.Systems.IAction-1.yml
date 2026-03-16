@@ -1,0 +1,39 @@
+### YamlMime:ApiPage
+title: Interface IAction<TArg>
+body:
+- api1: Interface IAction<TArg>
+  id: Alis_Core_Ecs_Systems_IAction_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/IAction.cs#L36
+  metadata:
+    uid: Alis.Core.Ecs.Systems.IAction`1
+    commentId: T:Alis.Core.Ecs.Systems.IAction`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: An arbitary function with one parameter
+- code: public interface IAction<TArg>
+- h4: Type Parameters
+- parameters:
+  - name: TArg
+- h2: Remarks
+- markdown: Used to inline query functions
+- h2: Methods
+- api3: Run(ref TArg)
+  id: Alis_Core_Ecs_Systems_IAction_1_Run__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/IAction.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Systems.IAction`1.Run(`0@)
+    commentId: M:Alis.Core.Ecs.Systems.IAction`1.Run(`0@)
+- code: void Run(ref TArg arg)
+- h4: Parameters
+- parameters:
+  - name: arg
+    type:
+    - TArg
+languageId: csharp
+metadata:
+  description: An arbitary function with one parameter

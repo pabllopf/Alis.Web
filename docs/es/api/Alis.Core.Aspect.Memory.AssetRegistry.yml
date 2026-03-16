@@ -1,0 +1,443 @@
+### YamlMime:ApiPage
+title: Class AssetRegistry
+body:
+- api1: Class AssetRegistry
+  id: Alis_Core_Aspect_Memory_AssetRegistry
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L46
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry
+    commentId: T:Alis.Core.Aspect.Memory.AssetRegistry
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Memory
+      url: Alis.Core.Aspect.Memory.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The asset registry class
+- code: public static class AssetRegistry
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: AssetRegistry
+    url: Alis.Core.Aspect.Memory.AssetRegistry.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: RegisteredAssetLoaders
+  id: Alis_Core_Aspect_Memory_AssetRegistry_RegisteredAssetLoaders
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L51
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry.RegisteredAssetLoaders
+    commentId: F:Alis.Core.Aspect.Memory.AssetRegistry.RegisteredAssetLoaders
+- markdown: The registered asset loaders
+- code: private static readonly Dictionary<string, Func<Stream>> RegisteredAssetLoaders
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: Func
+      url: https://learn.microsoft.com/dotnet/api/system.func-1
+    - <
+    - text: Stream
+      url: https://learn.microsoft.com/dotnet/api/system.io.stream
+    - '>'
+    - '>'
+- api3: _assemblyLocks
+  id: Alis_Core_Aspect_Memory_AssetRegistry__assemblyLocks
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L57
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry._assemblyLocks
+    commentId: F:Alis.Core.Aspect.Memory.AssetRegistry._assemblyLocks
+- markdown: The assembly locks
+- code: private static readonly ConcurrentDictionary<string, object> _assemblyLocks
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ConcurrentDictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    - '>'
+- api3: _extractedPathCache
+  id: Alis_Core_Aspect_Memory_AssetRegistry__extractedPathCache
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L73
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry._extractedPathCache
+    commentId: F:Alis.Core.Aspect.Memory.AssetRegistry._extractedPathCache
+- markdown: The extracted path cache
+- code: private static readonly Dictionary<string, string> _extractedPathCache
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - '>'
+- api3: _globalLock
+  id: Alis_Core_Aspect_Memory_AssetRegistry__globalLock
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L62
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry._globalLock
+    commentId: F:Alis.Core.Aspect.Memory.AssetRegistry._globalLock
+- markdown: The global lock
+- code: private static readonly object _globalLock
+- h4: Field Value
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+- api3: _zipCache
+  id: Alis_Core_Aspect_Memory_AssetRegistry__zipCache
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L67
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry._zipCache
+    commentId: F:Alis.Core.Aspect.Memory.AssetRegistry._zipCache
+- markdown: The zip cache
+- code: private static readonly Dictionary<string, ZipCacheEntry> _zipCache
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: ZipCacheEntry
+      url: Alis.Core.Aspect.Memory.ZipCacheEntry.html
+    - '>'
+- h2: Properties
+- api3: ActiveAssemblyName
+  id: Alis_Core_Aspect_Memory_AssetRegistry_ActiveAssemblyName
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L78
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry.ActiveAssemblyName
+    commentId: P:Alis.Core.Aspect.Memory.AssetRegistry.ActiveAssemblyName
+- markdown: Gets or sets the value of the active assembly name
+- code: private static string ActiveAssemblyName { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: EnsureZipCachedForActiveAssembly()
+  id: Alis_Core_Aspect_Memory_AssetRegistry_EnsureZipCachedForActiveAssembly
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L390
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry.EnsureZipCachedForActiveAssembly
+    commentId: M:Alis.Core.Aspect.Memory.AssetRegistry.EnsureZipCachedForActiveAssembly
+- markdown: Ensures the zip cached for active assembly
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    private static void EnsureZipCachedForActiveAssembly()
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: >-
+      La asamblea activa '{ActiveAssemblyName}' no tiene un assets.pack
+
+      registrado.
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Resource file `assets.pack` not found in embedded resources.
+- api3: FindZipEntryInfo(ZipCacheEntry, string)
+  id: Alis_Core_Aspect_Memory_AssetRegistry_FindZipEntryInfo_Alis_Core_Aspect_Memory_ZipCacheEntry_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L452
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry.FindZipEntryInfo(Alis.Core.Aspect.Memory.ZipCacheEntry,System.String)
+    commentId: M:Alis.Core.Aspect.Memory.AssetRegistry.FindZipEntryInfo(Alis.Core.Aspect.Memory.ZipCacheEntry,System.String)
+- markdown: Finds the zip entry info using the specified cache entry
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    private static ZipEntryInfo FindZipEntryInfo(ZipCacheEntry cacheEntry, string resourceName)
+- h4: Parameters
+- parameters:
+  - name: cacheEntry
+    type:
+    - text: ZipCacheEntry
+      url: Alis.Core.Aspect.Memory.ZipCacheEntry.html
+    description: The cache entry
+  - name: resourceName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The resource name
+- h4: Returns
+- parameters:
+  - type:
+    - text: ZipEntryInfo
+      url: Alis.Core.Aspect.Memory.ZipEntryInfo.html
+    description: The match
+- api3: GetAssemblyLock(string)
+  id: Alis_Core_Aspect_Memory_AssetRegistry_GetAssemblyLock_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L108
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry.GetAssemblyLock(System.String)
+    commentId: M:Alis.Core.Aspect.Memory.AssetRegistry.GetAssemblyLock(System.String)
+- markdown: Gets the assembly lock using the specified assembly name
+- code: private static object GetAssemblyLock(string assemblyName)
+- h4: Parameters
+- parameters:
+  - name: assemblyName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The assembly name
+- h4: Returns
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object
+- api3: GetResourceMemoryStreamByName(string)
+  id: Alis_Core_Aspect_Memory_AssetRegistry_GetResourceMemoryStreamByName_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L127
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry.GetResourceMemoryStreamByName(System.String)
+    commentId: M:Alis.Core.Aspect.Memory.AssetRegistry.GetResourceMemoryStreamByName(System.String)
+- markdown: Gets the resource memory stream by name using the specified resource name
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static MemoryStream GetResourceMemoryStreamByName(string resourceName)
+- h4: Parameters
+- parameters:
+  - name: resourceName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The resource name
+- h4: Returns
+- parameters:
+  - type:
+    - text: MemoryStream
+      url: https://learn.microsoft.com/dotnet/api/system.io.memorystream
+    description: The memory stream
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Cache del assets.pack no disponible.
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: >-
+      La asamblea activa '{ActiveAssemblyName}' no tiene un assets.pack
+
+      registrado.
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: No hay una asamblea activa configurada.
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Resource '{resourceName}' not found in `assets.pack` (race).
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Resource '{resourceName}' not found in `assets.pack`.
+  - type:
+    - text: ArgumentException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentexception
+    description: resourceName no puede estar vacío.
+- api3: GetResourcePathByName(string)
+  id: Alis_Core_Aspect_Memory_AssetRegistry_GetResourcePathByName_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L209
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry.GetResourcePathByName(System.String)
+    commentId: M:Alis.Core.Aspect.Memory.AssetRegistry.GetResourcePathByName(System.String)
+- markdown: Gets the resource path by name using the specified resource name
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static string GetResourcePathByName(string resourceName)
+- h4: Parameters
+- parameters:
+  - name: resourceName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The resource name
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Cache del assets.pack no disponible.
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: >-
+      La asamblea activa '{ActiveAssemblyName}' no tiene un assets.pack
+
+      registrado.
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: No hay una asamblea activa configurada.
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Resource '{resourceName}' not found in `assets.pack` (race).
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Resource '{resourceName}' not found in `assets.pack`.
+  - type:
+    - text: ArgumentException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentexception
+    description: resourceName no puede estar vacío.
+- api3: MakeSafeTempName(string, string)
+  id: Alis_Core_Aspect_Memory_AssetRegistry_MakeSafeTempName_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L339
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry.MakeSafeTempName(System.String,System.String)
+    commentId: M:Alis.Core.Aspect.Memory.AssetRegistry.MakeSafeTempName(System.String,System.String)
+- markdown: Makes the safe temp name using the specified assembly name
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    private static string MakeSafeTempName(string assemblyName, string normalizedResourceKey)
+- h4: Parameters
+- parameters:
+  - name: assemblyName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The assembly name
+  - name: normalizedResourceKey
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The normalized resource key
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+- api3: NormalizeResourceKey(string)
+  id: Alis_Core_Aspect_Memory_AssetRegistry_NormalizeResourceKey_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L331
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry.NormalizeResourceKey(System.String)
+    commentId: M:Alis.Core.Aspect.Memory.AssetRegistry.NormalizeResourceKey(System.String)
+- markdown: Normalizes the resource key using the specified resource name
+- code: private static string NormalizeResourceKey(string resourceName)
+- h4: Parameters
+- parameters:
+  - name: resourceName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The resource name
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+- api3: RegisterAssembly(string, Func<Stream>)
+  id: Alis_Core_Aspect_Memory_AssetRegistry_RegisterAssembly_System_String_System_Func_System_IO_Stream__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L85
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry.RegisterAssembly(System.String,System.Func{System.IO.Stream})
+    commentId: M:Alis.Core.Aspect.Memory.AssetRegistry.RegisterAssembly(System.String,System.Func{System.IO.Stream})
+- markdown: Registers the assembly using the specified assembly name
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static void RegisterAssembly(string assemblyName, Func<Stream> assetLoader)
+- h4: Parameters
+- parameters:
+  - name: assemblyName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The assembly name
+  - name: assetLoader
+    type:
+    - text: Func
+      url: https://learn.microsoft.com/dotnet/api/system.func-1
+    - <
+    - text: Stream
+      url: https://learn.microsoft.com/dotnet/api/system.io.stream
+    - '>'
+    description: The asset loader
+- api3: ToLowerHex(byte[])
+  id: Alis_Core_Aspect_Memory_AssetRegistry_ToLowerHex_System_Byte___
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L365
+  metadata:
+    uid: Alis.Core.Aspect.Memory.AssetRegistry.ToLowerHex(System.Byte[])
+    commentId: M:Alis.Core.Aspect.Memory.AssetRegistry.ToLowerHex(System.Byte[])
+- markdown: Returns the lower hex using the specified bytes
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    private static string ToLowerHex(byte[] bytes)
+- h4: Parameters
+- parameters:
+  - name: bytes
+    type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+    description: The bytes
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+languageId: csharp
+metadata:
+  description: The asset registry class

@@ -1,0 +1,26 @@
+### YamlMime:ApiPage
+title: Delegate Gl.GetError
+body:
+- api1: Delegate Gl.GetError
+  id: Alis_Core_Graphic_OpenGL_Gl_GetError
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L798
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GetError
+    commentId: T:Alis.Core.Graphic.OpenGL.Gl.GetError
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The get error
+- code: internal delegate int Gl.GetError()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: The get error

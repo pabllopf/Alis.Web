@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Systems.Configuration.Input
+body:
+- api1: Namespace Alis.Core.Ecs.Systems.Configuration.Input
+  id: Alis_Core_Ecs_Systems_Configuration_Input
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Input
+    commentId: N:Alis.Core.Ecs.Systems.Configuration.Input
+- h3: Structs
+- parameters:
+  - type:
+      text: InputSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Input.InputSetting.html
+    description: The input setting
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IInputSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Input.IInputSetting.html
+    description: The input setting interface
+languageId: csharp

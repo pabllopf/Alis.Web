@@ -1,0 +1,37 @@
+### YamlMime:ApiPage
+title: Interface IOnPhysicUpdate
+body:
+- api1: Interface IOnPhysicUpdate
+  id: Alis_Core_Aspect_Fluent_Components_IOnPhysicUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnPhysicUpdate.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnPhysicUpdate
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnPhysicUpdate
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The on physic update interface
+- code: public interface IOnPhysicUpdate
+- h2: Methods
+- api3: OnPhysicUpdate(IGameObject)
+  id: Alis_Core_Aspect_Fluent_Components_IOnPhysicUpdate_OnPhysicUpdate_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnPhysicUpdate.cs#L41
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnPhysicUpdate.OnPhysicUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnPhysicUpdate.OnPhysicUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Ons the physic update using the specified self
+- code: void OnPhysicUpdate(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+languageId: csharp
+metadata:
+  description: The on physic update interface

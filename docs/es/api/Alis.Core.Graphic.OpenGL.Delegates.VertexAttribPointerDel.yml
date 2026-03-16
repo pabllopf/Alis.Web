@@ -1,0 +1,47 @@
+### YamlMime:ApiPage
+title: Delegate VertexAttribPointerDel
+body:
+- api1: Delegate VertexAttribPointerDel
+  id: Alis_Core_Graphic_OpenGL_Delegates_VertexAttribPointerDel
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/VertexAttribPointerDel.cs#L39
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.VertexAttribPointerDel
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.VertexAttribPointerDel
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The vertex attrib pointer del
+- code: public delegate void VertexAttribPointerDel(uint index, int size, VertexAttribPointerType type, bool normalized, int stride, nint pointer)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: size
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: type
+    type:
+    - text: VertexAttribPointerType
+      url: Alis.Core.Graphic.OpenGL.Enums.VertexAttribPointerType.html
+  - name: normalized
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: stride
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: pointer
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+languageId: csharp
+metadata:
+  description: The vertex attrib pointer del

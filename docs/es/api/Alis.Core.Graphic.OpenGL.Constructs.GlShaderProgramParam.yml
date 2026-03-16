@@ -1,0 +1,341 @@
+### YamlMime:ApiPage
+title: Class GlShaderProgramParam
+body:
+- api1: Class GlShaderProgramParam
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L40
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam
+    commentId: T:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Constructs
+      url: Alis.Core.Graphic.OpenGL.Constructs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gl shader program param class
+- code: public sealed class GlShaderProgramParam
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: GlShaderProgramParam
+    url: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: GlShaderProgramParam(Type, ParamType, string)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam__ctor_System_Type_Alis_Core_Graphic_OpenGL_Constructs_ParamType_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L63
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.#ctor(System.Type,Alis.Core.Graphic.OpenGL.Constructs.ParamType,System.String)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.#ctor(System.Type,Alis.Core.Graphic.OpenGL.Constructs.ParamType,System.String)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam" data-throw-if-not-resolved="false"></xref> class
+- code: public GlShaderProgramParam(Type type, ParamType paramType, string name)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type
+  - name: paramType
+    type:
+    - text: ParamType
+      url: Alis.Core.Graphic.OpenGL.Constructs.ParamType.html
+    description: The param type
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name
+- api3: GlShaderProgramParam(Type, ParamType, string, uint, int)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam__ctor_System_Type_Alis_Core_Graphic_OpenGL_Constructs_ParamType_System_String_System_UInt32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L78
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.#ctor(System.Type,Alis.Core.Graphic.OpenGL.Constructs.ParamType,System.String,System.UInt32,System.Int32)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.#ctor(System.Type,Alis.Core.Graphic.OpenGL.Constructs.ParamType,System.String,System.UInt32,System.Int32)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam" data-throw-if-not-resolved="false"></xref> class
+- code: public GlShaderProgramParam(Type type, ParamType paramType, string name, uint program, int location)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type
+  - name: paramType
+    type:
+    - text: ParamType
+      url: Alis.Core.Graphic.OpenGL.Constructs.ParamType.html
+    description: The param type
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name
+  - name: program
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The program
+  - name: location
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The location
+- h2: Fields
+- api3: Name
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_Name
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L45
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.Name
+    commentId: F:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.Name
+- markdown: Specifies the case-sensitive name of the parameter.
+- code: public readonly string Name
+- h4: Field Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: ParamType
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_ParamType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L50
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.ParamType
+    commentId: F:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.ParamType
+- markdown: Specifies the parameter type (either attribute or uniform).
+- code: public readonly ParamType ParamType
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ParamType
+      url: Alis.Core.Graphic.OpenGL.Constructs.ParamType.html
+- api3: Type
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_Type
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L55
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.Type
+    commentId: F:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.Type
+- markdown: Specifies the C# equivalent of the GLSL data type.
+- code: public readonly Type Type
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+- h2: Properties
+- api3: Location
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_Location
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L87
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.Location
+    commentId: P:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.Location
+- markdown: Specifies the location of the parameter in the OpenGL program.
+- code: public int Location { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Program
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_Program
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L92
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.Program
+    commentId: P:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.Program
+- markdown: Specifies the OpenGL program ID.
+- code: public uint Program { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: ProgramId
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_ProgramId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L97
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.ProgramId
+    commentId: P:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.ProgramId
+- markdown: The program id
+- code: public uint ProgramId { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- h2: Methods
+- api3: EnsureType<T>()
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_EnsureType__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L230
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.EnsureType``1
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.EnsureType``1
+- markdown: Ensures the type
+- code: >-
+    [Conditional("DEBUG")]
+
+    private void EnsureType<T>()
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: GetLocation(GlShaderProgram)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_GetLocation_Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L103
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.GetLocation(Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.GetLocation(Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram)
+- markdown: Gets the location of the parameter in a compiled OpenGL program.
+- code: public void GetLocation(GlShaderProgram program)
+- h4: Parameters
+- parameters:
+  - name: program
+    type:
+    - text: GlShaderProgram
+      url: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.html
+    description: Specifies the shader program that contains this parameter.
+- api3: SetValue(bool)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_SetValue_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L117
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(System.Boolean)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(System.Boolean)
+- markdown: Sets the value using the specified param
+- code: public void SetValue(bool param)
+- h4: Parameters
+- parameters:
+  - name: param
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The param
+- api3: SetValue(int)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_SetValue_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L127
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(System.Int32)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(System.Int32)
+- markdown: Sets the value using the specified param
+- code: public void SetValue(int param)
+- h4: Parameters
+- parameters:
+  - name: param
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The param
+- api3: SetValue(float)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_SetValue_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L137
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(System.Single)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(System.Single)
+- markdown: Sets the value using the specified param
+- code: public void SetValue(float param)
+- h4: Parameters
+- parameters:
+  - name: param
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The param
+- api3: SetValue(Vector2F)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_SetValue_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L147
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Sets the value using the specified param
+- code: public void SetValue(Vector2F param)
+- h4: Parameters
+- parameters:
+  - name: param
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The param
+- api3: SetValue(Vector3F)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_SetValue_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L157
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Sets the value using the specified param
+- code: public void SetValue(Vector3F param)
+- h4: Parameters
+- parameters:
+  - name: param
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The param
+- api3: SetValue(Vector4F)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_SetValue_Alis_Core_Aspect_Math_Vector_Vector4F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L167
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(Alis.Core.Aspect.Math.Vector.Vector4F)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(Alis.Core.Aspect.Math.Vector.Vector4F)
+- markdown: Sets the value using the specified param
+- code: public void SetValue(Vector4F param)
+- h4: Parameters
+- parameters:
+  - name: param
+    type:
+    - text: Vector4F
+      url: Alis.Core.Aspect.Math.Vector.Vector4F.html
+    description: The param
+- api3: SetValue(Matrix4X4)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_SetValue_Alis_Core_Aspect_Math_Matrix_Matrix4X4_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L177
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(Alis.Core.Aspect.Math.Matrix.Matrix4X4)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(Alis.Core.Aspect.Math.Matrix.Matrix4X4)
+- markdown: Sets the value using the specified param
+- code: public void SetValue(Matrix4X4 param)
+- h4: Parameters
+- parameters:
+  - name: param
+    type:
+    - text: Matrix4X4
+      url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
+    description: The param
+- api3: SetValue(float[])
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgramParam_SetValue_System_Single___
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgramParam.cs#L188
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(System.Single[])
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.SetValue(System.Single[])
+- markdown: Sets the value using the specified param
+- code: public void SetValue(float[] param)
+- h4: Parameters
+- parameters:
+  - name: param
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    - '['
+    - ']'
+    description: The param
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentexception
+    description: param was an unexpected length.
+languageId: csharp
+metadata:
+  description: The gl shader program param class

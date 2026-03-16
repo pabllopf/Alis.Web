@@ -3,7 +3,7 @@ title: Class Path
 body:
 - api1: Class Path
   id: Alis_Core_Physic_Common_Path
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L46
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L47
   metadata:
     uid: Alis.Core.Physic.Common.Path
     commentId: T:Alis.Core.Physic.Common.Path
@@ -50,37 +50,37 @@ body:
 - h2: Constructors
 - api3: Path()
   id: Alis_Core_Physic_Common_Path__ctor
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L61
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L62
   metadata:
     uid: Alis.Core.Physic.Common.Path.#ctor
     commentId: M:Alis.Core.Physic.Common.Path.#ctor
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Path" data-throw-if-not-resolved="false"></xref> class.
 - code: public Path()
-- api3: Path(Vector2[])
-  id: Alis_Core_Physic_Common_Path__ctor_Alis_Core_Aspect_Math_Vector_Vector2___
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L67
+- api3: Path(Vector2F[])
+  id: Alis_Core_Physic_Common_Path__ctor_Alis_Core_Aspect_Math_Vector_Vector2F___
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L68
   metadata:
-    uid: Alis.Core.Physic.Common.Path.#ctor(Alis.Core.Aspect.Math.Vector.Vector2[])
-    commentId: M:Alis.Core.Physic.Common.Path.#ctor(Alis.Core.Aspect.Math.Vector.Vector2[])
+    uid: Alis.Core.Physic.Common.Path.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F[])
+    commentId: M:Alis.Core.Physic.Common.Path.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F[])
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Path" data-throw-if-not-resolved="false"></xref> class.
-- code: public Path(Vector2[] vertices)
+- code: public Path(Vector2F[] vertices)
 - h4: Parameters
 - parameters:
   - name: vertices
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     - '['
     - ']'
     description: The vertices to created the path from.
-- api3: Path(IList<Vector2>)
-  id: Alis_Core_Physic_Common_Path__ctor_System_Collections_Generic_IList_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L81
+- api3: Path(IList<Vector2F>)
+  id: Alis_Core_Physic_Common_Path__ctor_System_Collections_Generic_IList_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L82
   metadata:
-    uid: Alis.Core.Physic.Common.Path.#ctor(System.Collections.Generic.IList{Alis.Core.Aspect.Math.Vector.Vector2})
-    commentId: M:Alis.Core.Physic.Common.Path.#ctor(System.Collections.Generic.IList{Alis.Core.Aspect.Math.Vector.Vector2})
+    uid: Alis.Core.Physic.Common.Path.#ctor(System.Collections.Generic.IList{Alis.Core.Aspect.Math.Vector.Vector2F})
+    commentId: M:Alis.Core.Physic.Common.Path.#ctor(System.Collections.Generic.IList{Alis.Core.Aspect.Math.Vector.Vector2F})
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Path" data-throw-if-not-resolved="false"></xref> class.
-- code: public Path(IList<Vector2> vertices)
+- code: public Path(IList<Vector2F> vertices)
 - h4: Parameters
 - parameters:
   - name: vertices
@@ -88,31 +88,31 @@ body:
     - text: IList
       url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
     - <
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     - '>'
     description: The vertices to created the path from.
 - h2: Fields
 - api3: ControlPoints
   id: Alis_Core_Physic_Common_Path_ControlPoints
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L56
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L52
   metadata:
     uid: Alis.Core.Physic.Common.Path.ControlPoints
     commentId: F:Alis.Core.Physic.Common.Path.ControlPoints
 - markdown: All the points that makes up the curve
-- code: public List<Vector2> ControlPoints
+- code: public readonly List<Vector2F> ControlPoints
 - h4: Field Value
 - parameters:
   - type:
     - text: List
       url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
     - <
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     - '>'
 - api3: _deltaT
   id: Alis_Core_Physic_Common_Path__deltaT
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L51
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L57
   metadata:
     uid: Alis.Core.Physic.Common.Path._deltaT
     commentId: F:Alis.Core.Physic.Common.Path._deltaT
@@ -126,7 +126,7 @@ body:
 - h2: Properties
 - api3: Closed
   id: Alis_Core_Physic_Common_Path_Closed
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L94
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L95
   metadata:
     uid: Alis.Core.Physic.Common.Path.Closed
     commentId: P:Alis.Core.Physic.Common.Path.Closed
@@ -138,50 +138,50 @@ body:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - h2: Methods
-- api3: Add(Vector2)
-  id: Alis_Core_Physic_Common_Path_Add_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L324
+- api3: Add(Vector2F)
+  id: Alis_Core_Physic_Common_Path_Add_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L387
   metadata:
-    uid: Alis.Core.Physic.Common.Path.Add(Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.Path.Add(Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.Path.Add(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.Path.Add(Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Adds the point
-- code: public void Add(Vector2 point)
+- code: public void Add(Vector2F point)
 - h4: Parameters
 - parameters:
   - name: point
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The point
-- api3: CalcCatmullRom(Vector2, Vector2, Vector2, Vector2, float, out Vector2)
-  id: Alis_Core_Physic_Common_Path_CalcCatmullRom_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L276
+- api3: CalcCatmullRom(Vector2F, Vector2F, Vector2F, Vector2F, float, out Vector2F)
+  id: Alis_Core_Physic_Common_Path_CalcCatmullRom_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L339
   metadata:
-    uid: Alis.Core.Physic.Common.Path.CalcCatmullRom(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Single,Alis.Core.Aspect.Math.Vector.Vector2@)
-    commentId: M:Alis.Core.Physic.Common.Path.CalcCatmullRom(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Single,Alis.Core.Aspect.Math.Vector.Vector2@)
+    uid: Alis.Core.Physic.Common.Path.CalcCatmullRom(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Common.Path.CalcCatmullRom(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F@)
 - markdown: Calcs the catmull rom using the specified p 0
-- code: private void CalcCatmullRom(Vector2 p0, Vector2 p1, Vector2 p2, Vector2 p3, float amount, out Vector2 result)
+- code: private void CalcCatmullRom(Vector2F p0, Vector2F p1, Vector2F p2, Vector2F p3, float amount, out Vector2F result)
 - h4: Parameters
 - parameters:
   - name: p0
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: p1
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: p2
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: p3
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
   - name: amount
     type:
@@ -190,12 +190,12 @@ body:
     description: The amount
   - name: result
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The result
 - api3: GetLength()
   id: Alis_Core_Physic_Common_Path_GetLength
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L354
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L417
   metadata:
     uid: Alis.Core.Physic.Common.Path.GetLength
     commentId: M:Alis.Core.Physic.Common.Path.GetLength
@@ -209,12 +209,12 @@ body:
     description: The length
 - api3: GetPosition(float)
   id: Alis_Core_Physic_Common_Path_GetPosition_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L204
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L211
   metadata:
     uid: Alis.Core.Physic.Common.Path.GetPosition(System.Single)
     commentId: M:Alis.Core.Physic.Common.Path.GetPosition(System.Single)
 - markdown: Gets the position using the specified time
-- code: public Vector2 GetPosition(float time)
+- code: public Vector2F GetPosition(float time)
 - h4: Parameters
 - parameters:
   - name: time
@@ -225,8 +225,8 @@ body:
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The temp
 - h4: Exceptions
 - parameters:
@@ -236,12 +236,12 @@ body:
     description: You need at least 2 control points to calculate a position.
 - api3: GetPositionNormal(float)
   id: Alis_Core_Physic_Common_Path_GetPositionNormal_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L302
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L365
   metadata:
     uid: Alis.Core.Physic.Common.Path.GetPositionNormal(System.Single)
     commentId: M:Alis.Core.Physic.Common.Path.GetPositionNormal(System.Single)
 - markdown: Gets the normal for the given time.
-- code: public Vector2 GetPositionNormal(float time)
+- code: public Vector2F GetPositionNormal(float time)
 - h4: Parameters
 - parameters:
   - name: time
@@ -252,12 +252,12 @@ body:
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The normal.
 - api3: GetVertices(int)
   id: Alis_Core_Physic_Common_Path_GetVertices_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L184
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L191
   metadata:
     uid: Alis.Core.Physic.Common.Path.GetVertices(System.Int32)
     commentId: M:Alis.Core.Physic.Common.Path.GetVertices(System.Int32)
@@ -283,7 +283,7 @@ body:
     description: ''
 - api3: NextIndex(int)
   id: Alis_Core_Physic_Common_Path_NextIndex_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L101
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L102
   metadata:
     uid: Alis.Core.Physic.Common.Path.NextIndex(System.Int32)
     commentId: M:Alis.Core.Physic.Common.Path.NextIndex(System.Int32)
@@ -304,7 +304,7 @@ body:
     description: ''
 - api3: PreviousIndex(int)
   id: Alis_Core_Physic_Common_Path_PreviousIndex_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L116
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L117
   metadata:
     uid: Alis.Core.Physic.Common.Path.PreviousIndex(System.Int32)
     commentId: M:Alis.Core.Physic.Common.Path.PreviousIndex(System.Int32)
@@ -323,24 +323,24 @@ body:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
     description: ''
-- api3: Remove(Vector2)
-  id: Alis_Core_Physic_Common_Path_Remove_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L334
+- api3: Remove(Vector2F)
+  id: Alis_Core_Physic_Common_Path_Remove_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L397
   metadata:
-    uid: Alis.Core.Physic.Common.Path.Remove(Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.Path.Remove(Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.Path.Remove(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.Path.Remove(Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Removes the point
-- code: public void Remove(Vector2 point)
+- code: public void Remove(Vector2F point)
 - h4: Parameters
 - parameters:
   - name: point
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The point
 - api3: RemoveAt(int)
   id: Alis_Core_Physic_Common_Path_RemoveAt_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L344
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L407
   metadata:
     uid: Alis.Core.Physic.Common.Path.RemoveAt(System.Int32)
     commentId: M:Alis.Core.Physic.Common.Path.RemoveAt(System.Int32)
@@ -355,7 +355,7 @@ body:
     description: The index
 - api3: Rotate(float)
   id: Alis_Core_Physic_Common_Path_Rotate_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L150
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L155
   metadata:
     uid: Alis.Core.Physic.Common.Path.Rotate(System.Single)
     commentId: M:Alis.Core.Physic.Common.Path.Rotate(System.Single)
@@ -368,29 +368,29 @@ body:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
     description: The amount to rotate by in radians.
-- api3: Scale(ref Vector2)
-  id: Alis_Core_Physic_Common_Path_Scale_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L140
+- api3: Scale(ref Vector2F)
+  id: Alis_Core_Physic_Common_Path_Scale_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L143
   metadata:
-    uid: Alis.Core.Physic.Common.Path.Scale(Alis.Core.Aspect.Math.Vector.Vector2@)
-    commentId: M:Alis.Core.Physic.Common.Path.Scale(Alis.Core.Aspect.Math.Vector.Vector2@)
+    uid: Alis.Core.Physic.Common.Path.Scale(Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Common.Path.Scale(Alis.Core.Aspect.Math.Vector.Vector2F@)
 - markdown: Scales the control points by the specified vector.
-- code: public void Scale(ref Vector2 value)
+- code: public void Scale(ref Vector2F value)
 - h4: Parameters
 - parameters:
   - name: value
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The Value.
 - api3: SubdivideEvenly(int)
   id: Alis_Core_Physic_Common_Path_SubdivideEvenly_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L375
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L440
   metadata:
     uid: Alis.Core.Physic.Common.Path.SubdivideEvenly(System.Int32)
     commentId: M:Alis.Core.Physic.Common.Path.SubdivideEvenly(System.Int32)
 - markdown: Subdivides the evenly using the specified divisions
-- code: public List<Vector3> SubdivideEvenly(int divisions)
+- code: public List<Vector3F> SubdivideEvenly(int divisions)
 - h4: Parameters
 - parameters:
   - name: divisions
@@ -404,13 +404,13 @@ body:
     - text: List
       url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
     - <
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
     - '>'
     description: The verts
 - api3: ToString()
   id: Alis_Core_Physic_Common_Path_ToString
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L162
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L169
   metadata:
     uid: Alis.Core.Physic.Common.Path.ToString
     commentId: M:Alis.Core.Physic.Common.Path.ToString
@@ -422,20 +422,20 @@ body:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
     description: The string
-- api3: Translate(ref Vector2)
-  id: Alis_Core_Physic_Common_Path_Translate_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L130
+- api3: Translate(ref Vector2F)
+  id: Alis_Core_Physic_Common_Path_Translate_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Path.cs#L131
   metadata:
-    uid: Alis.Core.Physic.Common.Path.Translate(Alis.Core.Aspect.Math.Vector.Vector2@)
-    commentId: M:Alis.Core.Physic.Common.Path.Translate(Alis.Core.Aspect.Math.Vector.Vector2@)
+    uid: Alis.Core.Physic.Common.Path.Translate(Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Common.Path.Translate(Alis.Core.Aspect.Math.Vector.Vector2F@)
 - markdown: Translates the control points by the specified vector.
-- code: public void Translate(ref Vector2 vector)
+- code: public void Translate(ref Vector2F vector)
 - h4: Parameters
 - parameters:
   - name: vector
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The vector.
 languageId: csharp
 metadata:

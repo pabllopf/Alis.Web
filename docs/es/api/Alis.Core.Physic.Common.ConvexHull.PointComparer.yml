@@ -1,0 +1,93 @@
+### YamlMime:ApiPage
+title: Class PointComparer
+body:
+- api1: Class PointComparer
+  id: Alis_Core_Physic_Common_ConvexHull_PointComparer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/ConvexHull/PointComparer.cs#L39
+  metadata:
+    uid: Alis.Core.Physic.Common.ConvexHull.PointComparer
+    commentId: T:Alis.Core.Physic.Common.ConvexHull.PointComparer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.ConvexHull
+      url: Alis.Core.Physic.Common.ConvexHull.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The point comparer class
+- code: 'internal class PointComparer : Comparer<Vector2F>, IComparer<Vector2F>, IComparer'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Comparer<Vector2F>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.comparer-1
+  - text: PointComparer
+    url: Alis.Core.Physic.Common.ConvexHull.PointComparer.html
+- h4: Implements
+- list:
+  - text: IComparer<Vector2F>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  - text: IComparer
+    url: https://learn.microsoft.com/dotnet/api/system.collections.icomparer
+- h4: Inherited Members
+- list:
+  - text: Comparer<Vector2F>.Compare(Vector2F, Vector2F)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.comparer-1.compare
+  - text: Comparer<Vector2F>.Create(Comparison<Vector2F>)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.comparer-1.create
+  - text: Comparer<Vector2F>.IComparer.Compare(object, object)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.comparer-1.system-collections-icomparer-compare
+  - text: Comparer<Vector2F>.Default
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.comparer-1.default
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: Compare(Vector2F, Vector2F)
+  id: Alis_Core_Physic_Common_ConvexHull_PointComparer_Compare_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/ConvexHull/PointComparer.cs#L47
+  metadata:
+    uid: Alis.Core.Physic.Common.ConvexHull.PointComparer.Compare(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.ConvexHull.PointComparer.Compare(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Compares the a
+- code: public override int Compare(Vector2F a, Vector2F b)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The
+  - name: b
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- h2: See Also
+- list:
+  - - text: Comparer
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.comparer-1
+    - <
+    - T
+    - '>'
+languageId: csharp
+metadata:
+  description: The point comparer class

@@ -1,0 +1,554 @@
+### YamlMime:ApiPage
+title: Class DynamicTreeBroadPhase<TNode>
+body:
+- api1: Class DynamicTreeBroadPhase<TNode>
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L50
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1
+    commentId: T:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collisions
+      url: Alis.Core.Physic.Collisions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    The broad-phase is used for computing pairs and performing volume queries and ray casts.
+
+    This broad-phase does not persist pairs. Instead, this reports potentially new pairs.
+
+    It is up to the client to consume the new pairs and to track subsequent overlap.
+- code: 'public class DynamicTreeBroadPhase<TNode> : IBroadPhase<TNode> where TNode : struct'
+- h4: Type Parameters
+- parameters:
+  - name: TNode
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: DynamicTreeBroadPhase<TNode>
+    url: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase-1.html
+- h4: Implements
+- list:
+  - text: IBroadPhase<TNode>
+    url: Alis.Core.Physic.Collisions.IBroadPhase-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: DynamicTreeBroadPhase()
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L106
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.#ctor
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.#ctor
+- markdown: Constructs a new broad phase based on the dynamic tree implementation
+- code: public DynamicTreeBroadPhase()
+- h2: Fields
+- api3: NullProxy
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_NullProxy
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L56
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.NullProxy
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.NullProxy
+- markdown: The null proxy
+- code: private const int NullProxy = -1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _moveBuffer
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1__moveBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L71
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._moveBuffer
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._moveBuffer
+- markdown: The move buffer
+- code: private int[] _moveBuffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '['
+    - ']'
+- api3: _moveCapacity
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1__moveCapacity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L76
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._moveCapacity
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._moveCapacity
+- markdown: The move capacity
+- code: private int _moveCapacity
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _moveCount
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1__moveCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L81
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._moveCount
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._moveCount
+- markdown: The move count
+- code: private int _moveCount
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _pairBuffer
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1__pairBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L86
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._pairBuffer
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._pairBuffer
+- markdown: The pair buffer
+- code: private Pair[] _pairBuffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Pair
+      url: Alis.Core.Physic.Collisions.Pair.html
+    - '['
+    - ']'
+- api3: _pairCapacity
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1__pairCapacity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L91
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._pairCapacity
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._pairCapacity
+- markdown: The pair capacity
+- code: private int _pairCapacity
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _pairCount
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1__pairCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L96
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._pairCount
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._pairCount
+- markdown: The pair count
+- code: private int _pairCount
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _queryCallbackCache
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1__queryCallbackCache
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L61
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._queryCallbackCache
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._queryCallbackCache
+- markdown: The query callback cache
+- code: private readonly BroadPhaseQueryCallback _queryCallbackCache
+- h4: Field Value
+- parameters:
+  - type:
+    - text: BroadPhaseQueryCallback
+      url: Alis.Core.Physic.Collisions.BroadPhaseQueryCallback.html
+- api3: _queryProxyId
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1__queryProxyId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L101
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._queryProxyId
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._queryProxyId
+- markdown: The query proxy id
+- code: private int _queryProxyId
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _tree
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1__tree
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L66
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._tree
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1._tree
+- markdown: The node
+- code: private readonly DynamicTree<TNode> _tree
+- h4: Field Value
+- parameters:
+  - type:
+    - text: DynamicTree
+      url: Alis.Core.Physic.Collisions.DynamicTree-1.html
+    - <
+    - TNode
+    - '>'
+- h2: Properties
+- api3: ProxyCount
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_ProxyCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L139
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.ProxyCount
+    commentId: P:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.ProxyCount
+- markdown: Get the number of proxies.
+- code: public int ProxyCount { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: TreeBalance
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_TreeBalance
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L128
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.TreeBalance
+    commentId: P:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.TreeBalance
+- markdown: Gets the balance of the tree.
+- code: public int TreeBalance { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: TreeHeight
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_TreeHeight
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L133
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.TreeHeight
+    commentId: P:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.TreeHeight
+- markdown: Gets the height of the tree.
+- code: public int TreeHeight { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: TreeQuality
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_TreeQuality
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L123
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.TreeQuality
+    commentId: P:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.TreeQuality
+- markdown: Get the tree quality based on the area of the tree.
+- code: public float TreeQuality { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Methods
+- api3: AddProxy(ref Aabb)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_AddProxy_Alis_Core_Physic_Collisions_Aabb__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L145
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.AddProxy(Alis.Core.Physic.Collisions.Aabb@)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.AddProxy(Alis.Core.Physic.Collisions.Aabb@)
+- code: public int AddProxy(ref Aabb aabb)
+- h4: Parameters
+- parameters:
+  - name: aabb
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+- api3: BufferMove(int)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_BufferMove_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L322
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.BufferMove(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.BufferMove(System.Int32)
+- markdown: Buffers the move using the specified proxy id
+- code: private void BufferMove(int proxyId)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id
+- api3: GetFatAabb(int, out Aabb)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_GetFatAabb_System_Int32_Alis_Core_Physic_Collisions_Aabb__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L194
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.GetFatAabb(System.Int32,Alis.Core.Physic.Collisions.Aabb@)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.GetFatAabb(System.Int32,Alis.Core.Physic.Collisions.Aabb@)
+- markdown: Get the AABB for a proxy.
+- code: public void GetFatAabb(int proxyId, out Aabb aabb)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id.
+  - name: aabb
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The aabb.
+- api3: GetProxy(int)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_GetProxy_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L214
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.GetProxy(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.GetProxy(System.Int32)
+- markdown: Get user data from a proxy. Returns null if the id is invalid.
+- code: public TNode GetProxy(int proxyId)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id.
+- h4: Returns
+- parameters:
+  - type:
+    - TNode
+    description: ''
+- api3: MoveProxy(int, ref Aabb, Vector2F)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_MoveProxy_System_Int32_Alis_Core_Physic_Collisions_Aabb__Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L171
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.MoveProxy(System.Int32,Alis.Core.Physic.Collisions.Aabb@,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.MoveProxy(System.Int32,Alis.Core.Physic.Collisions.Aabb@,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Moves the proxy using the specified proxy id
+- code: public void MoveProxy(int proxyId, ref Aabb aabb, Vector2F displacement)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id
+  - name: aabb
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The aabb
+  - name: displacement
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The displacement
+- api3: Query(BroadPhaseQueryCallback, ref Aabb)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_Query_Alis_Core_Physic_Collisions_BroadPhaseQueryCallback_Alis_Core_Physic_Collisions_Aabb__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L290
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.Query(Alis.Core.Physic.Collisions.BroadPhaseQueryCallback,Alis.Core.Physic.Collisions.Aabb@)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.Query(Alis.Core.Physic.Collisions.BroadPhaseQueryCallback,Alis.Core.Physic.Collisions.Aabb@)
+- markdown: >-
+    Query an AABB for overlapping proxies. The callback class
+
+    is called for each proxy that overlaps the supplied AABB.
+- code: public void Query(BroadPhaseQueryCallback callback, ref Aabb aabb)
+- h4: Parameters
+- parameters:
+  - name: callback
+    type:
+    - text: BroadPhaseQueryCallback
+      url: Alis.Core.Physic.Collisions.BroadPhaseQueryCallback.html
+    description: The callback.
+  - name: aabb
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The aabb.
+- api3: QueryCallback(int)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_QueryCallback_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L356
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.QueryCallback(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.QueryCallback(System.Int32)
+- markdown: This is called from DynamicTree.Query when we are gathering pairs.
+- code: private bool QueryCallback(int proxyId)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
+- api3: RayCast(BroadPhaseRayCastCallback, ref RayCastInput)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_RayCast_Alis_Core_Physic_Collisions_BroadPhaseRayCastCallback_Alis_Core_Physic_Collisions_RayCastInput__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L304
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.RayCast(Alis.Core.Physic.Collisions.BroadPhaseRayCastCallback,Alis.Core.Physic.Collisions.RayCastInput@)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.RayCast(Alis.Core.Physic.Collisions.BroadPhaseRayCastCallback,Alis.Core.Physic.Collisions.RayCastInput@)
+- markdown: >-
+    Ray-cast against the proxies in the tree. This relies on the callback
+
+    to perform a exact ray-cast in the case were the proxy contains a shape.
+
+    The callback also performs the any collision filtering. This has performance
+
+    roughly equal to k * log(n), where k is the number of collisions and n is the
+
+    number of proxies in the tree.
+- code: public void RayCast(BroadPhaseRayCastCallback callback, ref RayCastInput input)
+- h4: Parameters
+- parameters:
+  - name: callback
+    type:
+    - text: BroadPhaseRayCastCallback
+      url: Alis.Core.Physic.Collisions.BroadPhaseRayCastCallback.html
+    description: A callback class that is called for each proxy that is hit by the ray.
+  - name: input
+    type:
+    - text: RayCastInput
+      url: Alis.Core.Physic.Collisions.RayCastInput.html
+    description: The ray-cast input data. The ray extends from p1 to p1 + maxFraction * (p2 - p1).
+- api3: RemoveProxy(int)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_RemoveProxy_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L158
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.RemoveProxy(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.RemoveProxy(System.Int32)
+- markdown: OnDestroy a proxy. It is up to the client to remove any pairs.
+- code: public void RemoveProxy(int proxyId)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id.
+- api3: SetProxy(int, ref TNode)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_SetProxy_System_Int32__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L204
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.SetProxy(System.Int32,`0@)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.SetProxy(System.Int32,`0@)
+- markdown: Sets the proxy using the specified proxy id
+- code: public void SetProxy(int proxyId, ref TNode proxy)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id
+  - name: proxy
+    type:
+    - TNode
+    description: The proxy
+- api3: ShiftOrigin(Vector2F)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_ShiftOrigin_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L313
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.ShiftOrigin(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.ShiftOrigin(Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Shifts the origin using the specified new origin
+- code: public void ShiftOrigin(Vector2F newOrigin)
+- h4: Parameters
+- parameters:
+  - name: newOrigin
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The new origin
+- api3: TestOverlap(int, int)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_TestOverlap_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L222
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.TestOverlap(System.Int32,System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.TestOverlap(System.Int32,System.Int32)
+- markdown: Test overlap of fat AABBs.
+- code: public bool TestOverlap(int proxyIdA, int proxyIdB)
+- h4: Parameters
+- parameters:
+  - name: proxyIdA
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id A.
+  - name: proxyIdB
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id B.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
+- api3: TouchProxy(int)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_TouchProxy_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L184
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.TouchProxy(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.TouchProxy(System.Int32)
+- markdown: Touches the proxy using the specified proxy id
+- code: public void TouchProxy(int proxyId)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id
+- api3: UnBufferMove(int)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_UnBufferMove_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L340
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.UnBufferMove(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.UnBufferMove(System.Int32)
+- markdown: Uns the buffer move using the specified proxy id
+- code: private void UnBufferMove(int proxyId)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id
+- api3: UpdatePairs(BroadphaseDelegate)
+  id: Alis_Core_Physic_Collisions_DynamicTreeBroadPhase_1_UpdatePairs_Alis_Core_Physic_Collisions_BroadphaseDelegate_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTreeBroadPhase.cs#L228
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.UpdatePairs(Alis.Core.Physic.Collisions.BroadphaseDelegate)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTreeBroadPhase`1.UpdatePairs(Alis.Core.Physic.Collisions.BroadphaseDelegate)
+- markdown: Update the pairs. This results in pair callbacks. This can only add pairs.
+- code: public void UpdatePairs(BroadphaseDelegate callback)
+- h4: Parameters
+- parameters:
+  - name: callback
+    type:
+    - text: BroadphaseDelegate
+      url: Alis.Core.Physic.Collisions.BroadphaseDelegate.html
+    description: The callback.
+languageId: csharp
+metadata:
+  description: >-
+    The broad-phase is used for computing pairs and performing volume queries and ray casts.
+
+    This broad-phase does not persist pairs. Instead, this reports potentially new pairs.
+
+    It is up to the client to consume the new pairs and to track subsequent overlap.

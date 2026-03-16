@@ -3,7 +3,7 @@ title: Struct Color
 body:
 - api1: Struct Color
   id: Alis_Core_Aspect_Math_Definition_Color
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L39
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L38
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color
     commentId: T:Alis.Core.Aspect.Math.Definition.Color
@@ -15,10 +15,7 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The color
-- code: >-
-    [Serializable]
-
-    public struct Color : ISerializable
+- code: 'public struct Color : ISerializable'
 - h4: Implements
 - list:
   - text: ISerializable
@@ -40,7 +37,7 @@ body:
 - h2: Constructors
 - api3: Color(byte, byte, byte, byte)
   id: Alis_Core_Aspect_Math_Definition_Color__ctor_System_Byte_System_Byte_System_Byte_System_Byte_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L69
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L89
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.#ctor(System.Byte,System.Byte,System.Byte,System.Byte)
     commentId: M:Alis.Core.Aspect.Math.Definition.Color.#ctor(System.Byte,System.Byte,System.Byte,System.Byte)
@@ -70,7 +67,7 @@ body:
     description: The
 - api3: Color(int, int, int, int)
   id: Alis_Core_Aspect_Math_Definition_Color__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L84
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L104
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
     commentId: M:Alis.Core.Aspect.Math.Definition.Color.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -101,7 +98,7 @@ body:
 - h2: Properties
 - api3: A
   id: Alis_Core_Aspect_Math_Definition_Color_A
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L60
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L59
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.A
     commentId: P:Alis.Core.Aspect.Math.Definition.Color.A
@@ -114,7 +111,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.byte
 - api3: B
   id: Alis_Core_Aspect_Math_Definition_Color_B
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L55
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L54
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.B
     commentId: P:Alis.Core.Aspect.Math.Definition.Color.B
@@ -127,7 +124,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.byte
 - api3: Black
   id: Alis_Core_Aspect_Math_Definition_Color_Black
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L95
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L115
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.Black
     commentId: P:Alis.Core.Aspect.Math.Definition.Color.Black
@@ -138,9 +135,22 @@ body:
   - type:
     - text: Color
       url: Alis.Core.Aspect.Math.Definition.Color.html
+- api3: Blue
+  id: Alis_Core_Aspect_Math_Definition_Color_Blue
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L79
+  metadata:
+    uid: Alis.Core.Aspect.Math.Definition.Color.Blue
+    commentId: P:Alis.Core.Aspect.Math.Definition.Color.Blue
+- markdown: Gets the value of the blue
+- code: public static Color Blue { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
 - api3: Brown
   id: Alis_Core_Aspect_Math_Definition_Color_Brown
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L110
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L140
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.Brown
     commentId: P:Alis.Core.Aspect.Math.Definition.Color.Brown
@@ -151,9 +161,22 @@ body:
   - type:
     - text: Color
       url: Alis.Core.Aspect.Math.Definition.Color.html
+- api3: Cyan
+  id: Alis_Core_Aspect_Math_Definition_Color_Cyan
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L64
+  metadata:
+    uid: Alis.Core.Aspect.Math.Definition.Color.Cyan
+    commentId: P:Alis.Core.Aspect.Math.Definition.Color.Cyan
+- markdown: Gets the value of the cyan
+- code: public static Color Cyan { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
 - api3: DarkGreen
   id: Alis_Core_Aspect_Math_Definition_Color_DarkGreen
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L115
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L145
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.DarkGreen
     commentId: P:Alis.Core.Aspect.Math.Definition.Color.DarkGreen
@@ -166,7 +189,7 @@ body:
       url: Alis.Core.Aspect.Math.Definition.Color.html
 - api3: G
   id: Alis_Core_Aspect_Math_Definition_Color_G
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L50
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L49
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.G
     commentId: P:Alis.Core.Aspect.Math.Definition.Color.G
@@ -179,7 +202,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.byte
 - api3: Green
   id: Alis_Core_Aspect_Math_Definition_Color_Green
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L105
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L135
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.Green
     commentId: P:Alis.Core.Aspect.Math.Definition.Color.Green
@@ -190,9 +213,22 @@ body:
   - type:
     - text: Color
       url: Alis.Core.Aspect.Math.Definition.Color.html
+- api3: Magenta
+  id: Alis_Core_Aspect_Math_Definition_Color_Magenta
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L69
+  metadata:
+    uid: Alis.Core.Aspect.Math.Definition.Color.Magenta
+    commentId: P:Alis.Core.Aspect.Math.Definition.Color.Magenta
+- markdown: Gets the value of the magenta
+- code: public static Color Magenta { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
 - api3: R
   id: Alis_Core_Aspect_Math_Definition_Color_R
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L45
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L44
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.R
     commentId: P:Alis.Core.Aspect.Math.Definition.Color.R
@@ -205,7 +241,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.byte
 - api3: Red
   id: Alis_Core_Aspect_Math_Definition_Color_Red
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L100
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L125
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.Red
     commentId: P:Alis.Core.Aspect.Math.Definition.Color.Red
@@ -216,10 +252,49 @@ body:
   - type:
     - text: Color
       url: Alis.Core.Aspect.Math.Definition.Color.html
+- api3: Transparent
+  id: Alis_Core_Aspect_Math_Definition_Color_Transparent
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L130
+  metadata:
+    uid: Alis.Core.Aspect.Math.Definition.Color.Transparent
+    commentId: P:Alis.Core.Aspect.Math.Definition.Color.Transparent
+- markdown: Gets the value of the transparent
+- code: public static Color Transparent { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+- api3: White
+  id: Alis_Core_Aspect_Math_Definition_Color_White
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L120
+  metadata:
+    uid: Alis.Core.Aspect.Math.Definition.Color.White
+    commentId: P:Alis.Core.Aspect.Math.Definition.Color.White
+- markdown: Gets the value of the white
+- code: public static Color White { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+- api3: Yellow
+  id: Alis_Core_Aspect_Math_Definition_Color_Yellow
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L74
+  metadata:
+    uid: Alis.Core.Aspect.Math.Definition.Color.Yellow
+    commentId: P:Alis.Core.Aspect.Math.Definition.Color.Yellow
+- markdown: Gets the value of the yellow
+- code: public static Color Yellow { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
 - h2: Methods
 - api3: GetObjectData(SerializationInfo, StreamingContext)
   id: Alis_Core_Aspect_Math_Definition_Color_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L122
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Definition/Color.cs#L152
   metadata:
     uid: Alis.Core.Aspect.Math.Definition.Color.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
     commentId: M:Alis.Core.Aspect.Math.Definition.Color.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)

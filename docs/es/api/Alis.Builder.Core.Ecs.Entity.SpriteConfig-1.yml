@@ -1,0 +1,30 @@
+### YamlMime:ApiPage
+title: Delegate SpriteConfig<T>
+body:
+- api1: Delegate SpriteConfig<T>
+  id: Alis_Builder_Core_Ecs_Entity_SpriteConfig_1
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/SpriteConfig.cs#L38
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.SpriteConfig`1
+    commentId: T:Alis.Builder.Core.Ecs.Entity.SpriteConfig`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Builder.Core.Ecs.Entity
+      url: Alis.Builder.Core.Ecs.Entity.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The sprite config
+- code: 'public delegate void SpriteConfig<T>(SpriteBuilder builder) where T : ISprite'
+- h4: Parameters
+- parameters:
+  - name: builder
+    type:
+    - text: SpriteBuilder
+      url: Alis.Builder.Core.Ecs.Components.Render.SpriteBuilder.html
+- h4: Type Parameters
+- parameters:
+  - name: T
+languageId: csharp
+metadata:
+  description: The sprite config

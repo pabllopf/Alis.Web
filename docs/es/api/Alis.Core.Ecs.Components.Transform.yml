@@ -1,0 +1,197 @@
+### YamlMime:ApiPage
+title: Struct Transform
+body:
+- api1: Struct Transform
+  id: Alis_Core_Ecs_Components_Transform
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Transform.cs#L38
+  metadata:
+    uid: Alis.Core.Ecs.Components.Transform
+    commentId: T:Alis.Core.Ecs.Components.Transform
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Components
+      url: Alis.Core.Ecs.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The transform
+- code: 'public struct Transform : IOnStart, IOnExit'
+- h4: Implements
+- list:
+  - text: IOnStart
+    url: Alis.Core.Aspect.Fluent.Components.IOnStart.html
+  - text: IOnExit
+    url: Alis.Core.Aspect.Fluent.Components.IOnExit.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Transform(Vector2F, float)
+  id: Alis_Core_Ecs_Components_Transform__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Transform.cs#L75
+  metadata:
+    uid: Alis.Core.Ecs.Components.Transform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Ecs.Components.Transform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Initialize using a position vector and a Complex rotation.
+- code: public Transform(Vector2F position, float rotation)
+- h4: Parameters
+- parameters:
+  - name: position
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The position.
+  - name: rotation
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The rotation
+- api3: Transform(Vector2F, float, Vector2F)
+  id: Alis_Core_Ecs_Components_Transform__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Transform.cs#L92
+  metadata:
+    uid: Alis.Core.Ecs.Components.Transform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Ecs.Components.Transform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Components.Transform" data-throw-if-not-resolved="false"></xref> class
+- code: public Transform(Vector2F position, float rotation, Vector2F scale)
+- h4: Parameters
+- parameters:
+  - name: position
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The position
+  - name: rotation
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The rotation
+  - name: scale
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The scale
+- h2: Fields
+- api3: Position
+  id: Alis_Core_Ecs_Components_Transform_Position
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Transform.cs#L58
+  metadata:
+    uid: Alis.Core.Ecs.Components.Transform.Position
+    commentId: F:Alis.Core.Ecs.Components.Transform.Position
+- markdown: The position
+- code: public Vector2F Position
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Rotation
+  id: Alis_Core_Ecs_Components_Transform_Rotation
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Transform.cs#L63
+  metadata:
+    uid: Alis.Core.Ecs.Components.Transform.Rotation
+    commentId: F:Alis.Core.Ecs.Components.Transform.Rotation
+- markdown: The rotation
+- code: public float Rotation
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Scale
+  id: Alis_Core_Ecs_Components_Transform_Scale
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Transform.cs#L68
+  metadata:
+    uid: Alis.Core.Ecs.Components.Transform.Scale
+    commentId: F:Alis.Core.Ecs.Components.Transform.Scale
+- markdown: The scale
+- code: public Vector2F Scale
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: positionOrigin
+  id: Alis_Core_Ecs_Components_Transform_positionOrigin
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Transform.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Components.Transform.positionOrigin
+    commentId: F:Alis.Core.Ecs.Components.Transform.positionOrigin
+- markdown: The position origin
+- code: private readonly Vector2F positionOrigin
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: rotationOrigin
+  id: Alis_Core_Ecs_Components_Transform_rotationOrigin
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Transform.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Components.Transform.rotationOrigin
+    commentId: F:Alis.Core.Ecs.Components.Transform.rotationOrigin
+- markdown: The rotation origin
+- code: private readonly float rotationOrigin
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: scaleOrigin
+  id: Alis_Core_Ecs_Components_Transform_scaleOrigin
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Transform.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Components.Transform.scaleOrigin
+    commentId: F:Alis.Core.Ecs.Components.Transform.scaleOrigin
+- markdown: The scale origin
+- code: private readonly Vector2F scaleOrigin
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- h2: Methods
+- api3: OnExit(IGameObject)
+  id: Alis_Core_Ecs_Components_Transform_OnExit_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Transform.cs#L115
+  metadata:
+    uid: Alis.Core.Ecs.Components.Transform.OnExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Transform.OnExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Ons the exit using the specified self
+- code: public void OnExit(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: OnStart(IGameObject)
+  id: Alis_Core_Ecs_Components_Transform_OnStart_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Transform.cs#L107
+  metadata:
+    uid: Alis.Core.Ecs.Components.Transform.OnStart(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Transform.OnStart(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Ons the start using the specified self
+- code: public void OnStart(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+languageId: csharp
+metadata:
+  description: The transform

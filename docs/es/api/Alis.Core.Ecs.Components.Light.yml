@@ -1,0 +1,27 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Components.Light
+body:
+- api1: Namespace Alis.Core.Ecs.Components.Light
+  id: Alis_Core_Ecs_Components_Light
+  metadata:
+    uid: Alis.Core.Ecs.Components.Light
+    commentId: N:Alis.Core.Ecs.Components.Light
+- h3: Structs
+- parameters:
+  - type:
+      text: AreaLight
+      url: Alis.Core.Ecs.Components.Light.AreaLight.html
+    description: The area light
+  - type:
+      text: DirectionalLight
+      url: Alis.Core.Ecs.Components.Light.DirectionalLight.html
+    description: The directional light
+  - type:
+      text: PointLight
+      url: Alis.Core.Ecs.Components.Light.PointLight.html
+    description: The point light
+  - type:
+      text: SpotLight
+      url: Alis.Core.Ecs.Components.Light.SpotLight.html
+    description: The spot light
+languageId: csharp

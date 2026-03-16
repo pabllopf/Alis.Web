@@ -1,0 +1,41 @@
+### YamlMime:ApiPage
+title: Delegate GetShaderInfoLogDel
+body:
+- api1: Delegate GetShaderInfoLogDel
+  id: Alis_Core_Graphic_OpenGL_Delegates_GetShaderInfoLogDel
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/GetShaderInfoLogDel.cs#L38
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.GetShaderInfoLogDel
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.GetShaderInfoLogDel
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The get shader info log del
+- code: public delegate void GetShaderInfoLogDel(uint shader, int maxLength, int[] length, StringBuilder infoLog)
+- h4: Parameters
+- parameters:
+  - name: shader
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: maxLength
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '['
+    - ']'
+  - name: infoLog
+    type:
+    - text: StringBuilder
+      url: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+languageId: csharp
+metadata:
+  description: The get shader info log del

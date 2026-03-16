@@ -1,0 +1,1105 @@
+### YamlMime:ApiPage
+title: Class Query
+body:
+- api1: Class Query
+  id: Alis_Core_Ecs_Systems_Query
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L40
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query
+    commentId: T:Alis.Core.Ecs.Systems.Query
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Represents a set of entities from a scene which can have systems applied to
+- code: public class Query
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Query
+    url: Alis.Core.Ecs.Systems.Query.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h4: Extension Methods
+- list:
+  - text: QueryIterationExtensions.Delegate<T>(Query, QueryDelegates.Query<T>)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__1_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0__
+  - text: QueryIterationExtensions.Delegate<T1, T2>(Query, QueryDelegates.Query<T1, T2>)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__2_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1__
+  - text: QueryIterationExtensions.Delegate<T1, T2, T3>(Query, QueryDelegates.Query<T1, T2, T3>)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__3_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2__
+  - text: QueryIterationExtensions.Delegate<T1, T2, T3, T4>(Query, QueryDelegates.Query<T1, T2, T3, T4>)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__4_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2___3__
+  - text: QueryIterationExtensions.Delegate<T1, T2, T3, T4, T5>(Query, QueryDelegates.Query<T1, T2, T3, T4, T5>)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__5_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2___3___4__
+  - text: QueryIterationExtensions.Delegate<T1, T2, T3, T4, T5, T6>(Query, QueryDelegates.Query<T1, T2, T3, T4, T5, T6>)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__6_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2___3___4___5__
+  - text: QueryIterationExtensions.Delegate<T1, T2, T3, T4, T5, T6, T7>(Query, QueryDelegates.Query<T1, T2, T3, T4, T5, T6, T7>)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__7_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2___3___4___5___6__
+  - text: QueryIterationExtensions.Delegate<T1, T2, T3, T4, T5, T6, T7, T8>(Query, QueryDelegates.Query<T1, T2, T3, T4, T5, T6, T7, T8>)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Delegate__8_Alis_Core_Ecs_Systems_Query_Alis_Core_Ecs_Systems_QueryDelegates_Query___0___1___2___3___4___5___6___7__
+  - text: QueryIterationExtensions.Inline<TAction, T>(Query, TAction)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__2_Alis_Core_Ecs_Systems_Query___0_
+  - text: QueryIterationExtensions.Inline<TAction, T1, T2>(Query, TAction)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__3_Alis_Core_Ecs_Systems_Query___0_
+  - text: QueryIterationExtensions.Inline<TAction, T1, T2, T3>(Query, TAction)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__4_Alis_Core_Ecs_Systems_Query___0_
+  - text: QueryIterationExtensions.Inline<TAction, T1, T2, T3, T4>(Query, TAction)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__5_Alis_Core_Ecs_Systems_Query___0_
+  - text: QueryIterationExtensions.Inline<TAction, T1, T2, T3, T4, T5>(Query, TAction)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__6_Alis_Core_Ecs_Systems_Query___0_
+  - text: QueryIterationExtensions.Inline<TAction, T1, T2, T3, T4, T5, T6>(Query, TAction)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__7_Alis_Core_Ecs_Systems_Query___0_
+  - text: QueryIterationExtensions.Inline<TAction, T1, T2, T3, T4, T5, T6, T7>(Query, TAction)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__8_Alis_Core_Ecs_Systems_Query___0_
+  - text: QueryIterationExtensions.Inline<TAction, T1, T2, T3, T4, T5, T6, T7, T8>(Query, TAction)
+    url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html#Alis_Core_Ecs_Systems_QueryIterationExtensions_Inline__9_Alis_Core_Ecs_Systems_Query___0_
+- h2: Constructors
+- api3: Query(Scene, FastImmutableArray<Rule>)
+  id: Alis_Core_Ecs_Systems_Query__ctor_Alis_Core_Ecs_Scene_Alis_Core_Aspect_Math_Collections_FastImmutableArray_Alis_Core_Ecs_Systems_Rule__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L57
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.#ctor(Alis.Core.Ecs.Scene,Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Systems.Rule})
+    commentId: M:Alis.Core.Ecs.Systems.Query.#ctor(Alis.Core.Ecs.Scene,Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Systems.Rule})
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Query" data-throw-if-not-resolved="false"></xref> class
+- code: internal Query(Scene scene, FastImmutableArray<Rule> rules)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: rules
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: Rule
+      url: Alis.Core.Ecs.Systems.Rule.html
+    - '>'
+    description: The rules
+- h2: Fields
+- api3: _archetypes
+  id: Alis_Core_Ecs_Systems_Query__archetypes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query._archetypes
+    commentId: F:Alis.Core.Ecs.Systems.Query._archetypes
+- markdown: The create
+- code: private FastestStack<Archetype> _archetypes
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    - '>'
+- api3: _rules
+  id: Alis_Core_Ecs_Systems_Query__rules
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L45
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query._rules
+    commentId: F:Alis.Core.Ecs.Systems.Query._rules
+- markdown: The rules
+- code: private readonly FastImmutableArray<Rule> _rules
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: Rule
+      url: Alis.Core.Ecs.Systems.Rule.html
+    - '>'
+- h2: Properties
+- api3: Scene
+  id: Alis_Core_Ecs_Systems_Query_Scene
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L66
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.Scene
+    commentId: P:Alis.Core.Ecs.Systems.Query.Scene
+- markdown: Gets or inits the value of the scene
+- code: internal Scene Scene { get; init; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h2: Methods
+- api3: ArchetypeSatisfiesQuery(GameObjectType)
+  id: Alis_Core_Ecs_Systems_Query_ArchetypeSatisfiesQuery_Alis_Core_Ecs_Kernel_GameObjectType_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L91
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.ArchetypeSatisfiesQuery(Alis.Core.Ecs.Kernel.GameObjectType)
+    commentId: M:Alis.Core.Ecs.Systems.Query.ArchetypeSatisfiesQuery(Alis.Core.Ecs.Kernel.GameObjectType)
+- markdown: Archetypes the satisfies query using the specified id
+- code: private bool ArchetypeSatisfiesQuery(GameObjectType id)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The id
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: AsSpan()
+  id: Alis_Core_Ecs_Systems_Query_AsSpan
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L72
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.AsSpan
+    commentId: M:Alis.Core.Ecs.Systems.Query.AsSpan
+- markdown: Converts the span
+- code: internal Span<Archetype> AsSpan()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    - '>'
+    description: A span of archetype
+- api3: Enumerate<T>()
+  id: Alis_Core_Ecs_Systems_Query_Enumerate__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L107
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.Enumerate``1
+    commentId: M:Alis.Core.Ecs.Systems.Query.Enumerate``1
+- markdown: Enumerates component references for all entities in this query. Intended for use in foreach loops.
+- code: public QueryEnumerator<T>.QueryEnumerable Enumerate<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerator
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-1.html
+    - <
+    - T
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-1.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T
+- api3: Enumerate<T1, T2>()
+  id: Alis_Core_Ecs_Systems_Query_Enumerate__2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L129
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.Enumerate``2
+    commentId: M:Alis.Core.Ecs.Systems.Query.Enumerate``2
+- markdown: Enumerates component references for all entities in this query. Intended for use in foreach loops.
+- code: public QueryEnumerator<T1, T2>.QueryEnumerable Enumerate<T1, T2>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerator
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-2.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-2.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+- api3: Enumerate<T1, T2, T3>()
+  id: Alis_Core_Ecs_Systems_Query_Enumerate__3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L146
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.Enumerate``3
+    commentId: M:Alis.Core.Ecs.Systems.Query.Enumerate``3
+- markdown: Enumerates component references for all entities in this query. Intended for use in foreach loops.
+- code: public QueryEnumerator<T1, T2, T3>.QueryEnumerable Enumerate<T1, T2, T3>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerator
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-3.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-3.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+- api3: Enumerate<T1, T2, T3, T4>()
+  id: Alis_Core_Ecs_Systems_Query_Enumerate__4
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L163
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.Enumerate``4
+    commentId: M:Alis.Core.Ecs.Systems.Query.Enumerate``4
+- markdown: Enumerates component references for all entities in this query. Intended for use in foreach loops.
+- code: public QueryEnumerator<T1, T2, T3, T4>.QueryEnumerable Enumerate<T1, T2, T3, T4>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerator
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-4.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-4.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+- api3: Enumerate<T1, T2, T3, T4, T5>()
+  id: Alis_Core_Ecs_Systems_Query_Enumerate__5
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L181
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.Enumerate``5
+    commentId: M:Alis.Core.Ecs.Systems.Query.Enumerate``5
+- markdown: Enumerates component references for all entities in this query. Intended for use in foreach loops.
+- code: public QueryEnumerator<T1, T2, T3, T4, T5>.QueryEnumerable Enumerate<T1, T2, T3, T4, T5>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerator
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-5.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-5.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+- api3: Enumerate<T1, T2, T3, T4, T5, T6>()
+  id: Alis_Core_Ecs_Systems_Query_Enumerate__6
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L198
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.Enumerate``6
+    commentId: M:Alis.Core.Ecs.Systems.Query.Enumerate``6
+- markdown: Enumerates component references for all entities in this query. Intended for use in foreach loops.
+- code: public QueryEnumerator<T1, T2, T3, T4, T5, T6>.QueryEnumerable Enumerate<T1, T2, T3, T4, T5, T6>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerator
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-6.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-6.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+- api3: Enumerate<T1, T2, T3, T4, T5, T6, T7>()
+  id: Alis_Core_Ecs_Systems_Query_Enumerate__7
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L215
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.Enumerate``7
+    commentId: M:Alis.Core.Ecs.Systems.Query.Enumerate``7
+- markdown: Enumerates component references for all entities in this query. Intended for use in foreach loops.
+- code: public QueryEnumerator<T1, T2, T3, T4, T5, T6, T7>.QueryEnumerable Enumerate<T1, T2, T3, T4, T5, T6, T7>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerator
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-7.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - ','
+    - " "
+    - T7
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-7.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+- api3: Enumerate<T1, T2, T3, T4, T5, T6, T7, T8>()
+  id: Alis_Core_Ecs_Systems_Query_Enumerate__8
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L236
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.Enumerate``8
+    commentId: M:Alis.Core.Ecs.Systems.Query.Enumerate``8
+- markdown: Enumerates component references for all entities in this query. Intended for use in foreach loops.
+- code: public QueryEnumerator<T1, T2, T3, T4, T5, T6, T7, T8>.QueryEnumerable Enumerate<T1, T2, T3, T4, T5, T6, T7, T8>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerator
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-8.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - ','
+    - " "
+    - T7
+    - ','
+    - " "
+    - T8
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-8.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+  - name: T8
+- api3: EnumerateChunks<T>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateChunks__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L119
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateChunks``1
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateChunks``1
+- markdown: Enumerates component chunks for all entities in this query. Intended for use in foreach loops.
+- code: public ChunkQueryEnumerator<T>.QueryEnumerable EnumerateChunks<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkQueryEnumerator
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-1.html
+    - <
+    - T
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-1.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T
+- api3: EnumerateChunks<T1, T2>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateChunks__2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L141
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateChunks``2
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateChunks``2
+- markdown: Enumerates component chunks for all entities in this query. Intended for use in foreach loops.
+- code: public ChunkQueryEnumerator<T1, T2>.QueryEnumerable EnumerateChunks<T1, T2>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkQueryEnumerator
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-2.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-2.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+- api3: EnumerateChunks<T1, T2, T3>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateChunks__3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L158
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateChunks``3
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateChunks``3
+- markdown: Enumerates component chunks for all entities in this query. Intended for use in foreach loops.
+- code: public ChunkQueryEnumerator<T1, T2, T3>.QueryEnumerable EnumerateChunks<T1, T2, T3>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkQueryEnumerator
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-3.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-3.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+- api3: EnumerateChunks<T1, T2, T3, T4>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateChunks__4
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L175
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateChunks``4
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateChunks``4
+- markdown: Enumerates component chunks for all entities in this query. Intended for use in foreach loops.
+- code: public ChunkQueryEnumerator<T1, T2, T3, T4>.QueryEnumerable EnumerateChunks<T1, T2, T3, T4>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkQueryEnumerator
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-4.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-4.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+- api3: EnumerateChunks<T1, T2, T3, T4, T5>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateChunks__5
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L193
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateChunks``5
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateChunks``5
+- markdown: Enumerates component chunks for all entities in this query. Intended for use in foreach loops.
+- code: public ChunkQueryEnumerator<T1, T2, T3, T4, T5>.QueryEnumerable EnumerateChunks<T1, T2, T3, T4, T5>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkQueryEnumerator
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-5.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-5.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+- api3: EnumerateChunks<T1, T2, T3, T4, T5, T6>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateChunks__6
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L210
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateChunks``6
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateChunks``6
+- markdown: Enumerates component chunks for all entities in this query. Intended for use in foreach loops.
+- code: public ChunkQueryEnumerator<T1, T2, T3, T4, T5, T6>.QueryEnumerable EnumerateChunks<T1, T2, T3, T4, T5, T6>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkQueryEnumerator
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-6.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-6.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+- api3: EnumerateChunks<T1, T2, T3, T4, T5, T6, T7>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateChunks__7
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L229
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateChunks``7
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateChunks``7
+- markdown: Enumerates component chunks for all entities in this query. Intended for use in foreach loops.
+- code: public ChunkQueryEnumerator<T1, T2, T3, T4, T5, T6, T7>.QueryEnumerable EnumerateChunks<T1, T2, T3, T4, T5, T6, T7>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkQueryEnumerator
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-7.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - ','
+    - " "
+    - T7
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-7.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+- api3: EnumerateChunks<T1, T2, T3, T4, T5, T6, T7, T8>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateChunks__8
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L250
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateChunks``8
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateChunks``8
+- markdown: Enumerates component chunks for all entities in this query. Intended for use in foreach loops.
+- code: public ChunkQueryEnumerator<T1, T2, T3, T4, T5, T6, T7, T8>.QueryEnumerable EnumerateChunks<T1, T2, T3, T4, T5, T6, T7, T8>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkQueryEnumerator
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-8.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - ','
+    - " "
+    - T7
+    - ','
+    - " "
+    - T8
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-8.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+  - name: T8
+- api3: EnumerateWithEntities<T>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateWithEntities__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L114
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``1
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``1
+- markdown: >-
+    Enumerates component references and <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instances for all entities in this query. Intended
+
+    for
+
+    use in foreach loops.
+- code: public GameObjectQueryEnumerator<T>.QueryEnumerable EnumerateWithEntities<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectQueryEnumerator
+      url: Alis.Core.Ecs.Systems.GameObjectQueryEnumerator-1.html
+    - <
+    - T
+    - '>'
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.GameObjectQueryEnumerator-1.QueryEnumerable.html
+- h4: Type Parameters
+- parameters:
+  - name: T
+- api3: EnumerateWithEntities()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateWithEntities
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L124
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateWithEntities
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateWithEntities
+- markdown: Enumerates <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instances for all entities in this query. Intended for use in foreach loops.
+- code: public GameObjectQueryEnumerator.QueryEnumerable EnumerateWithEntities()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectQueryEnumerator
+      url: Alis.Core.Ecs.Systems.GameObjectQueryEnumerator.html
+    - .
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.Systems.GameObjectQueryEnumerator.QueryEnumerable.html
+- api3: EnumerateWithEntities<T1, T2>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateWithEntities__2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L136
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``2
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``2
+- markdown: >-
+    Enumerates component references and <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instances for all entities in this query. Intended
+
+    for
+
+    use in foreach loops.
+- code: public QueryEnumerable<T1, T2> EnumerateWithEntities<T1, T2>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.QueryEnumerable-2.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - '>'
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+- api3: EnumerateWithEntities<T1, T2, T3>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateWithEntities__3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L153
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``3
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``3
+- markdown: >-
+    Enumerates component references and <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instances for all entities in this query. Intended
+
+    for
+
+    use in foreach loops.
+- code: public QueryEnumerable<T1, T2, T3> EnumerateWithEntities<T1, T2, T3>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.QueryEnumerable-3.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - '>'
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+- api3: EnumerateWithEntities<T1, T2, T3, T4>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateWithEntities__4
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L170
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``4
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``4
+- markdown: >-
+    Enumerates component references and <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instances for all entities in this query. Intended
+
+    for
+
+    use in foreach loops.
+- code: public QueryEnumerable<T1, T2, T3, T4> EnumerateWithEntities<T1, T2, T3, T4>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.QueryEnumerable-4.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - '>'
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+- api3: EnumerateWithEntities<T1, T2, T3, T4, T5>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateWithEntities__5
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L188
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``5
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``5
+- markdown: >-
+    Enumerates component references and <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instances for all entities in this query. Intended
+
+    for
+
+    use in foreach loops.
+- code: public QueryEnumerable<T1, T2, T3, T4, T5> EnumerateWithEntities<T1, T2, T3, T4, T5>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.QueryEnumerable-5.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - '>'
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+- api3: EnumerateWithEntities<T1, T2, T3, T4, T5, T6>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateWithEntities__6
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L205
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``6
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``6
+- markdown: >-
+    Enumerates component references and <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instances for all entities in this query. Intended
+
+    for
+
+    use in foreach loops.
+- code: public QueryEnumerable<T1, T2, T3, T4, T5, T6> EnumerateWithEntities<T1, T2, T3, T4, T5, T6>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.QueryEnumerable-6.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - '>'
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+- api3: EnumerateWithEntities<T1, T2, T3, T4, T5, T6, T7>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateWithEntities__7
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L222
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``7
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``7
+- markdown: >-
+    Enumerates component references and <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instances for all entities in this query. Intended
+
+    for
+
+    use in foreach loops.
+- code: public QueryEnumerable<T1, T2, T3, T4, T5, T6, T7> EnumerateWithEntities<T1, T2, T3, T4, T5, T6, T7>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.QueryEnumerable-7.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - ','
+    - " "
+    - T7
+    - '>'
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+- api3: EnumerateWithEntities<T1, T2, T3, T4, T5, T6, T7, T8>()
+  id: Alis_Core_Ecs_Systems_Query_EnumerateWithEntities__8
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L243
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``8
+    commentId: M:Alis.Core.Ecs.Systems.Query.EnumerateWithEntities``8
+- markdown: >-
+    Enumerates component references and <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instances for all entities in this query. Intended
+
+    for
+
+    use in foreach loops.
+- code: public QueryEnumerable<T1, T2, T3, T4, T5, T6, T7, T8> EnumerateWithEntities<T1, T2, T3, T4, T5, T6, T7, T8>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerable
+      url: Alis.Core.Ecs.QueryEnumerable-8.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - ','
+    - " "
+    - T7
+    - ','
+    - " "
+    - T8
+    - '>'
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+  - name: T8
+- api3: TryAttachArchetype(Archetype)
+  id: Alis_Core_Ecs_Systems_Query_TryAttachArchetype_Alis_Core_Ecs_Kernel_Archetypes_Archetype_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Query.cs#L78
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Query.TryAttachArchetype(Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+    commentId: M:Alis.Core.Ecs.Systems.Query.TryAttachArchetype(Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+- markdown: Tries the attach archetype using the specified archetype
+- code: internal void TryAttachArchetype(Archetype archetype)
+- h4: Parameters
+- parameters:
+  - name: archetype
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+languageId: csharp
+metadata:
+  description: Represents a set of entities from a scene which can have systems applied to

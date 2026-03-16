@@ -1,0 +1,26 @@
+### YamlMime:ApiPage
+title: Interface IComponentUpdateOrderAttribute
+body:
+- api1: Interface IComponentUpdateOrderAttribute
+  id: Alis_Core_Ecs_Updating_IComponentUpdateOrderAttribute
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/IComponentUpdateOrderAttribute.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Updating.IComponentUpdateOrderAttribute
+    commentId: T:Alis.Core.Ecs.Updating.IComponentUpdateOrderAttribute
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Updating
+      url: Alis.Core.Ecs.Updating.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Marker interface for any update order attribute.
+- code: internal interface IComponentUpdateOrderAttribute
+- h2: Remarks
+- markdown: >-
+    This is an interface so the user can implement an
+
+    <xref href="Alis.Core.Ecs.Updating.UpdateTypeAttribute" data-throw-if-not-resolved="false"></xref> as also an order attribute
+languageId: csharp
+metadata:
+  description: Marker interface for any update order attribute.

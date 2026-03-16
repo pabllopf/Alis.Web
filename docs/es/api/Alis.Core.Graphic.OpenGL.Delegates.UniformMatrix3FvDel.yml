@@ -1,0 +1,41 @@
+### YamlMime:ApiPage
+title: Delegate UniformMatrix3FvDel
+body:
+- api1: Delegate UniformMatrix3FvDel
+  id: Alis_Core_Graphic_OpenGL_Delegates_UniformMatrix3FvDel
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/UniformMatrix3FvDel.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.UniformMatrix3FvDel
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.UniformMatrix3FvDel
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The uniform matrix 3fv del
+- code: public delegate void UniformMatrix3FvDel(int location, int count, bool transpose, float[] value)
+- h4: Parameters
+- parameters:
+  - name: location
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: transpose
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: value
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    - '['
+    - ']'
+languageId: csharp
+metadata:
+  description: The uniform matrix 3fv del

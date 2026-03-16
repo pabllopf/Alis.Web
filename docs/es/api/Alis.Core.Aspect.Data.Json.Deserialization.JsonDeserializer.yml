@@ -1,0 +1,119 @@
+### YamlMime:ApiPage
+title: Class JsonDeserializer
+body:
+- api1: Class JsonDeserializer
+  id: Alis_Core_Aspect_Data_Json_Deserialization_JsonDeserializer
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Deserialization/JsonDeserializer.cs#L41
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Deserialization.JsonDeserializer
+    commentId: T:Alis.Core.Aspect.Data.Json.Deserialization.JsonDeserializer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Data.Json.Deserialization
+      url: Alis.Core.Aspect.Data.Json.Deserialization.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Deserializes JSON strings into objects.
+- code: 'public sealed class JsonDeserializer : IJsonDeserializer'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: JsonDeserializer
+    url: Alis.Core.Aspect.Data.Json.Deserialization.JsonDeserializer.html
+- h4: Implements
+- list:
+  - text: IJsonDeserializer
+    url: Alis.Core.Aspect.Data.Json.Deserialization.IJsonDeserializer.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: JsonDeserializer(IJsonParser)
+  id: Alis_Core_Aspect_Data_Json_Deserialization_JsonDeserializer__ctor_Alis_Core_Aspect_Data_Json_Parsing_IJsonParser_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Deserialization/JsonDeserializer.cs#L53
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Deserialization.JsonDeserializer.#ctor(Alis.Core.Aspect.Data.Json.Parsing.IJsonParser)
+    commentId: M:Alis.Core.Aspect.Data.Json.Deserialization.JsonDeserializer.#ctor(Alis.Core.Aspect.Data.Json.Parsing.IJsonParser)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Data.Json.Deserialization.JsonDeserializer" data-throw-if-not-resolved="false"></xref> class.
+- code: public JsonDeserializer(IJsonParser jsonParser)
+- h4: Parameters
+- parameters:
+  - name: jsonParser
+    type:
+    - text: IJsonParser
+      url: Alis.Core.Aspect.Data.Json.Parsing.IJsonParser.html
+    description: The JSON parser to use.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when jsonParser is null.
+- h2: Fields
+- api3: _jsonParser
+  id: Alis_Core_Aspect_Data_Json_Deserialization_JsonDeserializer__jsonParser
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Deserialization/JsonDeserializer.cs#L46
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Deserialization.JsonDeserializer._jsonParser
+    commentId: F:Alis.Core.Aspect.Data.Json.Deserialization.JsonDeserializer._jsonParser
+- markdown: The json parser
+- code: private readonly IJsonParser _jsonParser
+- h4: Field Value
+- parameters:
+  - type:
+    - text: IJsonParser
+      url: Alis.Core.Aspect.Data.Json.Parsing.IJsonParser.html
+- h2: Methods
+- api3: Deserialize<T>(string)
+  id: Alis_Core_Aspect_Data_Json_Deserialization_JsonDeserializer_Deserialize__1_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Deserialization/JsonDeserializer.cs#L63
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Deserialization.JsonDeserializer.Deserialize``1(System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.Deserialization.JsonDeserializer.Deserialize``1(System.String)
+- markdown: Deserializes a JSON string into an object of the specified type.
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public T Deserialize<T>(string json) where T : IJsonSerializable, IJsonDesSerializable<T>, new()
+- h4: Parameters
+- parameters:
+  - name: json
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The JSON string to deserialize.
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: An instance of the specified type populated with data from the JSON.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The target type, which must implement IJsonSerializable and IJsonDesSerializable&lt;T&gt;.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when json is null.
+  - type:
+    - text: JsonDeserializationException
+      url: Alis.Core.Aspect.Data.Json.Exceptions.JsonDeserializationException.html
+    description: Thrown when deserialization fails.
+languageId: csharp
+metadata:
+  description: Deserializes JSON strings into objects.

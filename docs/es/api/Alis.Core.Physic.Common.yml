@@ -15,8 +15,8 @@ body:
       text: Alis.Core.Physic.Common.Decomposition
       url: Alis.Core.Physic.Common.Decomposition.html
   - type:
-      text: Alis.Core.Physic.Common.PhysicsLogic
-      url: Alis.Core.Physic.Common.PhysicsLogic.html
+      text: Alis.Core.Physic.Common.Logic
+      url: Alis.Core.Physic.Common.Logic.html
   - type:
       text: Alis.Core.Physic.Common.PolygonManipulation
       url: Alis.Core.Physic.Common.PolygonManipulation.html
@@ -65,40 +65,8 @@ body:
       text: Vertices
       url: Alis.Core.Physic.Common.Vertices.html
     description: The vertices class
-  - type:
-      text: WorldSerializer
-      url: Alis.Core.Physic.Common.WorldSerializer.html
-    description: Serialize the world into an XML file
-  - type:
-      text: WorldXmlDeserializer
-      url: Alis.Core.Physic.Common.WorldXmlDeserializer.html
-    description: The world xml deserializer class
-  - type:
-      text: WorldXmlSerializer
-      url: Alis.Core.Physic.Common.WorldXmlSerializer.html
-    description: The world xml serializer class
-  - type:
-      text: XMLFragmentAttribute
-      url: Alis.Core.Physic.Common.XMLFragmentAttribute.html
-    description: The xml fragment attribute class
-  - type:
-      text: XMLFragmentElement
-      url: Alis.Core.Physic.Common.XMLFragmentElement.html
-    description: The xml fragment element class
-  - type:
-      text: XMLFragmentException
-      url: Alis.Core.Physic.Common.XMLFragmentException.html
-    description: The xml fragment exception class
-  - type:
-      text: XMLFragmentParser
-      url: Alis.Core.Physic.Common.XMLFragmentParser.html
-    description: The xml fragment parser class
 - h3: Structs
 - parameters:
-  - type:
-      text: Complex
-      url: Alis.Core.Physic.Common.Complex.html
-    description: The complex
   - type:
       text: FixedArray2<T>
       url: Alis.Core.Physic.Common.FixedArray2-1.html
@@ -134,13 +102,6 @@ body:
       no coincide with the center of mass. However, to support dynamics
 
       we must interpolate the center of mass position.
-  - type:
-      text: Transform
-      url: Alis.Core.Physic.Common.Transform.html
-    description: >-
-      A transform contains translation and rotation. It is used to represent
-
-      the position and orientation of rigid frames.
 - h3: Enums
 - parameters:
   - type:

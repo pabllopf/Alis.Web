@@ -1,0 +1,37 @@
+### YamlMime:ApiPage
+title: Interface IOnDraw
+body:
+- api1: Interface IOnDraw
+  id: Alis_Core_Aspect_Fluent_Components_IOnDraw
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnDraw.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnDraw
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnDraw
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The on draw interface
+- code: public interface IOnDraw
+- h2: Methods
+- api3: OnDraw(IGameObject)
+  id: Alis_Core_Aspect_Fluent_Components_IOnDraw_OnDraw_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnDraw.cs#L41
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnDraw.OnDraw(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnDraw.OnDraw(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Ons the draw using the specified self
+- code: void OnDraw(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+languageId: csharp
+metadata:
+  description: The on draw interface

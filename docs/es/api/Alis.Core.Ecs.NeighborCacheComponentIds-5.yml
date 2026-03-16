@@ -1,0 +1,66 @@
+### YamlMime:ApiPage
+title: Class NeighborCacheComponentIds<T1, T2, T3, T4, T5>
+body:
+- api1: Class NeighborCacheComponentIds<T1, T2, T3, T4, T5>
+  id: Alis_Core_Ecs_NeighborCacheComponentIds_5
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/NeighborCache.cs#L86
+  metadata:
+    uid: Alis.Core.Ecs.NeighborCacheComponentIds`5
+    commentId: T:Alis.Core.Ecs.NeighborCacheComponentIds`5
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs
+      url: Alis.Core.Ecs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The neighbor cache component ids class
+- code: internal static class NeighborCacheComponentIds<T1, T2, T3, T4, T5>
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: NeighborCacheComponentIds<T1, T2, T3, T4, T5>
+    url: Alis.Core.Ecs.NeighborCacheComponentIds-5.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Values
+  id: Alis_Core_Ecs_NeighborCacheComponentIds_5_Values
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/NeighborCache.cs#L91
+  metadata:
+    uid: Alis.Core.Ecs.NeighborCacheComponentIds`5.Values
+    commentId: F:Alis.Core.Ecs.NeighborCacheComponentIds`5.Values
+- markdown: The id
+- code: internal static readonly ComponentId[] Values
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '['
+    - ']'
+languageId: csharp
+metadata:
+  description: The neighbor cache component ids class

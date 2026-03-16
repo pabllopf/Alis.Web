@@ -1,0 +1,294 @@
+### YamlMime:ApiPage
+title: Class JsonNativeAot
+body:
+- api1: Class JsonNativeAot
+  id: Alis_Core_Aspect_Data_Json_JsonNativeAot
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/JsonNativeAot.cs#L43
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.JsonNativeAot
+    commentId: T:Alis.Core.Aspect.Data.Json.JsonNativeAot
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Data.Json
+      url: Alis.Core.Aspect.Data.Json.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The json native aot class
+- code: public static class JsonNativeAot
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: JsonNativeAot
+    url: Alis.Core.Aspect.Data.Json.JsonNativeAot.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: _escapeSequenceHandler
+  id: Alis_Core_Aspect_Data_Json_JsonNativeAot__escapeSequenceHandler
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/JsonNativeAot.cs#L48
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.JsonNativeAot._escapeSequenceHandler
+    commentId: F:Alis.Core.Aspect.Data.Json.JsonNativeAot._escapeSequenceHandler
+- markdown: The escape sequence handler
+- code: private static readonly Lazy<IEscapeSequenceHandler> _escapeSequenceHandler
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Lazy
+      url: https://learn.microsoft.com/dotnet/api/system.lazy-1
+    - <
+    - text: IEscapeSequenceHandler
+      url: Alis.Core.Aspect.Data.Json.Helpers.IEscapeSequenceHandler.html
+    - '>'
+- api3: _jsonDeserializer
+  id: Alis_Core_Aspect_Data_Json_JsonNativeAot__jsonDeserializer
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/JsonNativeAot.cs#L66
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.JsonNativeAot._jsonDeserializer
+    commentId: F:Alis.Core.Aspect.Data.Json.JsonNativeAot._jsonDeserializer
+- markdown: The value
+- code: private static readonly Lazy<IJsonDeserializer> _jsonDeserializer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Lazy
+      url: https://learn.microsoft.com/dotnet/api/system.lazy-1
+    - <
+    - text: IJsonDeserializer
+      url: Alis.Core.Aspect.Data.Json.Deserialization.IJsonDeserializer.html
+    - '>'
+- api3: _jsonFileHandler
+  id: Alis_Core_Aspect_Data_Json_JsonNativeAot__jsonFileHandler
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/JsonNativeAot.cs#L72
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.JsonNativeAot._jsonFileHandler
+    commentId: F:Alis.Core.Aspect.Data.Json.JsonNativeAot._jsonFileHandler
+- markdown: The value
+- code: private static readonly Lazy<IJsonFileHandler> _jsonFileHandler
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Lazy
+      url: https://learn.microsoft.com/dotnet/api/system.lazy-1
+    - <
+    - text: IJsonFileHandler
+      url: Alis.Core.Aspect.Data.Json.FileOperations.IJsonFileHandler.html
+    - '>'
+- api3: _jsonParser
+  id: Alis_Core_Aspect_Data_Json_JsonNativeAot__jsonParser
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/JsonNativeAot.cs#L54
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.JsonNativeAot._jsonParser
+    commentId: F:Alis.Core.Aspect.Data.Json.JsonNativeAot._jsonParser
+- markdown: The value
+- code: private static readonly Lazy<IJsonParser> _jsonParser
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Lazy
+      url: https://learn.microsoft.com/dotnet/api/system.lazy-1
+    - <
+    - text: IJsonParser
+      url: Alis.Core.Aspect.Data.Json.Parsing.IJsonParser.html
+    - '>'
+- api3: _jsonSerializer
+  id: Alis_Core_Aspect_Data_Json_JsonNativeAot__jsonSerializer
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/JsonNativeAot.cs#L60
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.JsonNativeAot._jsonSerializer
+    commentId: F:Alis.Core.Aspect.Data.Json.JsonNativeAot._jsonSerializer
+- markdown: The json serializer
+- code: private static readonly Lazy<IJsonSerializer> _jsonSerializer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Lazy
+      url: https://learn.microsoft.com/dotnet/api/system.lazy-1
+    - <
+    - text: IJsonSerializer
+      url: Alis.Core.Aspect.Data.Json.Serialization.IJsonSerializer.html
+    - '>'
+- h2: Methods
+- api3: Deserialize<T>(string)
+  id: Alis_Core_Aspect_Data_Json_JsonNativeAot_Deserialize__1_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/JsonNativeAot.cs#L101
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.JsonNativeAot.Deserialize``1(System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.JsonNativeAot.Deserialize``1(System.String)
+- markdown: Deserializes a JSON string into an object.
+- code: 'public static T Deserialize<T>(string json) where T : IJsonSerializable, IJsonDesSerializable<T>, new()'
+- h4: Parameters
+- parameters:
+  - name: json
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The JSON string to deserialize.
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: An instance of the specified type.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The target type.
+- api3: DeserializeFromFile<T>(string, string)
+  id: Alis_Core_Aspect_Data_Json_JsonNativeAot_DeserializeFromFile__1_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/JsonNativeAot.cs#L134
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.JsonNativeAot.DeserializeFromFile``1(System.String,System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.JsonNativeAot.DeserializeFromFile``1(System.String,System.String)
+- markdown: Deserializes a JSON file into an object.
+- code: 'public static T DeserializeFromFile<T>(string fileName, string relativePath) where T : IJsonSerializable, IJsonDesSerializable<T>, new()'
+- h4: Parameters
+- parameters:
+  - name: fileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name of the file (without .json extension).
+  - name: relativePath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The relative path where the file is located.
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: An instance of the specified type.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The target type.
+- api3: ParseJsonToDictionary(string)
+  id: Alis_Core_Aspect_Data_Json_JsonNativeAot_ParseJsonToDictionary_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/JsonNativeAot.cs#L125
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.JsonNativeAot.ParseJsonToDictionary(System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.JsonNativeAot.ParseJsonToDictionary(System.String)
+- markdown: Parses a JSON string into a dictionary of property names and their string values.
+- code: public static Dictionary<string, string> ParseJsonToDictionary(string json)
+- h4: Parameters
+- parameters:
+  - name: json
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The JSON string to parse.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - '>'
+    description: A dictionary containing property names as keys and their string representations as values.
+- h4: Examples
+- markdown: >-
+    <pre><code class="lang-csharp">string json = "{\"Name\":\"John\",\"Age\":\"30\"}";
+
+    var props = JsonNativeAot.ParseJsonToDictionary(json);
+
+    // props["Name"] = "John"
+
+    // props["Age"] = "30"</code></pre>
+- h4: Remarks
+- markdown: >-
+    This method provides low-level access to JSON parsing. It returns a raw dictionary
+
+    of property names and values without deserializing to a specific type.
+
+    Complex values (objects and arrays) are returned as raw JSON strings.
+
+    Time Complexity: O(n) where n is the length of the JSON string.
+
+    Space Complexity: O(n) for the output dictionary.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when json is null.
+  - type:
+    - text: JsonParsingException
+      url: Alis.Core.Aspect.Data.Json.Exceptions.JsonParsingException.html
+    description: Thrown when JSON parsing fails.
+- api3: Serialize<T>(T)
+  id: Alis_Core_Aspect_Data_Json_JsonNativeAot_Serialize__1___0_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/JsonNativeAot.cs#L81
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.JsonNativeAot.Serialize``1(``0)
+    commentId: M:Alis.Core.Aspect.Data.Json.JsonNativeAot.Serialize``1(``0)
+- markdown: Serializes an object to a JSON string.
+- code: 'public static string Serialize<T>(T instance) where T : IJsonSerializable'
+- h4: Parameters
+- parameters:
+  - name: instance
+    type:
+    - T
+    description: The instance to serialize.
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: A JSON string representation of the object.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of the object to serialize.
+- api3: SerializeToFile<T>(T, string, string)
+  id: Alis_Core_Aspect_Data_Json_JsonNativeAot_SerializeToFile__1___0_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/JsonNativeAot.cs#L90
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.JsonNativeAot.SerializeToFile``1(``0,System.String,System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.JsonNativeAot.SerializeToFile``1(``0,System.String,System.String)
+- markdown: Serializes an object to a JSON file.
+- code: 'public static void SerializeToFile<T>(T instance, string fileName, string relativePath) where T : IJsonSerializable'
+- h4: Parameters
+- parameters:
+  - name: instance
+    type:
+    - T
+    description: The instance to serialize.
+  - name: fileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name of the file (without .json extension).
+  - name: relativePath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The relative path where the file will be saved.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of the object to serialize.
+languageId: csharp
+metadata:
+  description: The json native aot class

@@ -1,7 +1,7 @@
 ### YamlMime:ApiPage
-title: Class Matrix3X2
+title: Struct Matrix3X2
 body:
-- api1: Class Matrix3X2
+- api1: Struct Matrix3X2
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2
   src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L39
   metadata:
@@ -15,13 +15,7 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The matrix 3x class
-- code: public class Matrix3X2
-- h4: Inheritance
-- inheritance:
-  - text: object
-    url: https://learn.microsoft.com/dotnet/api/system.object
-  - text: Matrix3X2
-    url: Alis.Core.Aspect.Math.Matrix.Matrix3X2.html
+- code: public struct Matrix3X2
 - h4: Inherited Members
 - list:
   - text: object.Equals(object?)
@@ -32,8 +26,6 @@ body:
     url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   - text: object.GetType()
     url: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - text: object.MemberwiseClone()
-    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - text: object.ReferenceEquals(object?, object?)
     url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - text: object.ToString()
@@ -41,7 +33,7 @@ body:
 - h2: Constructors
 - api3: Matrix3X2(float, float, float, float, float, float)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L53
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L54
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
@@ -82,7 +74,7 @@ body:
 - h2: Fields
 - api3: hashCode
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_hashCode
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L44
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L45
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.hashCode
     commentId: F:Alis.Core.Aspect.Math.Matrix.Matrix3X2.hashCode
@@ -96,7 +88,7 @@ body:
 - h2: Properties
 - api3: Identity
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_Identity
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L96
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L97
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.Identity
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix3X2.Identity
@@ -109,12 +101,12 @@ body:
       url: Alis.Core.Aspect.Math.Matrix.Matrix3X2.html
 - api3: M11
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_M11
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L77
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L78
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.M11
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix3X2.M11
 - markdown: The first element of the first row.
-- code: public float M11 { get; set; }
+- code: public float M11 { readonly get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -122,12 +114,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M12
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_M12
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L80
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L81
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.M12
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix3X2.M12
 - markdown: The second element of the first row.
-- code: public float M12 { get; set; }
+- code: public float M12 { readonly get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -135,12 +127,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M21
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_M21
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L83
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L84
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.M21
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix3X2.M21
 - markdown: The first element of the second row.
-- code: public float M21 { get; set; }
+- code: public float M21 { readonly get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -148,12 +140,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M22
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_M22
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L86
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L87
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.M22
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix3X2.M22
 - markdown: The second element of the second row.
-- code: public float M22 { get; set; }
+- code: public float M22 { readonly get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -161,12 +153,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M31
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_M31
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L89
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L90
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.M31
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix3X2.M31
 - markdown: The first element of the third row.
-- code: public float M31 { get; set; }
+- code: public float M31 { readonly get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -174,12 +166,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M32
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_M32
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L92
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L93
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.M32
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix3X2.M32
 - markdown: The second element of the third row.
-- code: public float M32 { get; set; }
+- code: public float M32 { readonly get; set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -187,21 +179,21 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Translation
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_Translation
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L104
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L105
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.Translation
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix3X2.Translation
 - markdown: Gets or sets the translation component of this matrix.
-- code: public Vector2 Translation { set; }
+- code: public Vector2F Translation { set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - h2: Methods
 - api3: Add(Matrix3X2, Matrix3X2)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_Add_Alis_Core_Aspect_Math_Matrix_Matrix3X2_Alis_Core_Aspect_Math_Matrix_Matrix3X2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L287
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L291
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.Add(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.Add(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
@@ -225,20 +217,23 @@ body:
     - text: Matrix3X2
       url: Alis.Core.Aspect.Math.Matrix.Matrix3X2.html
     description: The matrix that contains the summed values of <code class="paramref">value1</code> and <code class="paramref">value2</code>.
-- api3: CreateScale(Vector2)
-  id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_CreateScale_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L294
+- api3: CreateScale(Vector2F)
+  id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_CreateScale_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L297
   metadata:
-    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.CreateScale(Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.CreateScale(Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.CreateScale(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.CreateScale(Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Creates a scaling matrix from the specified vector scale.
-- code: public static Matrix3X2 CreateScale(Vector2 scales)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static Matrix3X2 CreateScale(Vector2F scales)
 - h4: Parameters
 - parameters:
   - name: scales
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The scale to use.
 - h4: Returns
 - parameters:
@@ -248,12 +243,15 @@ body:
     description: The scaling matrix.
 - api3: CreateScale(float, float)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_CreateScale_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L308
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L312
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.CreateScale(System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.CreateScale(System.Single,System.Single)
 - markdown: Creates a scaling matrix from the specified X and Y components.
-- code: public static Matrix3X2 CreateScale(float xScale, float yScale)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static Matrix3X2 CreateScale(float xScale, float yScale)
 - h4: Parameters
 - parameters:
   - name: xScale
@@ -274,12 +272,15 @@ body:
     description: The scaling matrix.
 - api3: Equals(Matrix3X2)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_Equals_Alis_Core_Aspect_Math_Matrix_Matrix3X2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L124
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L126
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.Equals(Alis.Core.Aspect.Math.Matrix.Matrix3X2)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.Equals(Alis.Core.Aspect.Math.Matrix.Matrix3X2)
 - markdown: Describes whether this instance equals
-- code: private bool Equals(Matrix3X2 other)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    private bool Equals(Matrix3X2 other)
 - h4: Parameters
 - parameters:
   - name: other
@@ -295,12 +296,15 @@ body:
     description: The bool
 - api3: Equals(object)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_Equals_System_Object_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L131
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L134
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.Equals(System.Object)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.Equals(System.Object)
 - markdown: Describes whether this instance equals
-- code: public override bool Equals(object obj)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public override bool Equals(object obj)
 - h4: Parameters
 - parameters:
   - name: obj
@@ -316,7 +320,7 @@ body:
     description: The bool
 - api3: GetDeterminant()
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_GetDeterminant
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L323
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L328
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.GetDeterminant
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.GetDeterminant
@@ -330,12 +334,15 @@ body:
     description: The float
 - api3: GetHashCode()
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_GetHashCode
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L117
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L118
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.GetHashCode
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.GetHashCode
 - markdown: Gets the hash code
-- code: public override int GetHashCode()
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public override int GetHashCode()
 - h4: Returns
 - parameters:
   - type:
@@ -344,7 +351,7 @@ body:
     description: The int
 - api3: ToString()
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_ToString
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L331
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L336
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.ToString
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.ToString
@@ -359,7 +366,7 @@ body:
 - h2: Operators
 - api3: operator +(Matrix3X2, Matrix3X2)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_op_Addition_Alis_Core_Aspect_Math_Matrix_Matrix3X2_Alis_Core_Aspect_Math_Matrix_Matrix3X2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L154
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L158
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Addition(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Addition(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
@@ -390,7 +397,7 @@ body:
     <xref href="Alis.Core.Aspect.Math.Matrix.Matrix3X2" data-throw-if-not-resolved="false"></xref> objects.
 - api3: operator ==(Matrix3X2, Matrix3X2)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_op_Equality_Alis_Core_Aspect_Math_Matrix_Matrix3X2_Alis_Core_Aspect_Math_Matrix_Matrix3X2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L178
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L182
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Equality(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Equality(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
@@ -415,12 +422,13 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: >-
       <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value1</code> and <code class="paramref">value2</code> are equal; otherwise,
-          <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - h4: Remarks
 - markdown: Two matrices are equal if all their corresponding elements are equal.
 - api3: operator !=(Matrix3X2, Matrix3X2)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_op_Inequality_Alis_Core_Aspect_Math_Matrix_Matrix3X2_Alis_Core_Aspect_Math_Matrix_Matrix3X2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L192
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L196
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Inequality(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Inequality(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
@@ -445,10 +453,11 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: >-
       <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value1</code> and <code class="paramref">value2</code> are not equal; otherwise,
-          <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: operator *(Matrix3X2, Matrix3X2)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_op_Multiply_Alis_Core_Aspect_Math_Matrix_Matrix3X2_Alis_Core_Aspect_Math_Matrix_Matrix3X2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L198
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L202
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Multiply(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Multiply(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
@@ -474,7 +483,7 @@ body:
     description: The product matrix.
 - api3: operator *(Matrix3X2, float)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_op_Multiply_Alis_Core_Aspect_Math_Matrix_Matrix3X2_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L221
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L225
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Multiply(Alis.Core.Aspect.Math.Matrix.Matrix3X2,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Multiply(Alis.Core.Aspect.Math.Matrix.Matrix3X2,System.Single)
@@ -500,7 +509,7 @@ body:
     description: The scaled matrix.
 - api3: operator -(Matrix3X2, Matrix3X2)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_op_Subtraction_Alis_Core_Aspect_Math_Matrix_Matrix3X2_Alis_Core_Aspect_Math_Matrix_Matrix3X2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L248
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L252
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Subtraction(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_Subtraction(Alis.Core.Aspect.Math.Matrix.Matrix3X2,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
@@ -534,7 +543,7 @@ body:
     <xref href="Alis.Core.Aspect.Math.Matrix.Matrix3X2" data-throw-if-not-resolved="false"></xref> objects.
 - api3: operator -(Matrix3X2)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X2_op_UnaryNegation_Alis_Core_Aspect_Math_Matrix_Matrix3X2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L267
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X2.cs#L271
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_UnaryNegation(Alis.Core.Aspect.Math.Matrix.Matrix3X2)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X2.op_UnaryNegation(Alis.Core.Aspect.Math.Matrix.Matrix3X2)

@@ -1,0 +1,53 @@
+### YamlMime:ApiPage
+title: Enum ShaderType
+body:
+- api1: Enum ShaderType
+  id: Alis_Core_Graphic_OpenGL_Enums_ShaderType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/ShaderType.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.ShaderType
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.ShaderType
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The shader type enum
+- code: public enum ShaderType
+- h2: Fields
+- parameters:
+  - name: FragmentShader
+    default: "35632"
+    description: >+
+      The fragment shader shader type
+
+  - name: VertexShader
+    default: "35633"
+    description: >+
+      The vertex shader shader type
+
+  - name: GeometryShader
+    default: "36313"
+    description: >+
+      The geometry shader shader type
+
+  - name: TessControlShader
+    default: "36488"
+    description: >+
+      The tess control shader shader type
+
+  - name: TessEvaluationShader
+    default: "36487"
+    description: >+
+      The tess evaluation shader shader type
+
+  - name: ComputeShader
+    default: "37305"
+    description: >+
+      The compute shader shader type
+
+languageId: csharp
+metadata:
+  description: The shader type enum

@@ -1,0 +1,29 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Graphic.OpenGL.Constructs
+body:
+- api1: Namespace Alis.Core.Graphic.OpenGL.Constructs
+  id: Alis_Core_Graphic_OpenGL_Constructs
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs
+    commentId: N:Alis.Core.Graphic.OpenGL.Constructs
+- h3: Classes
+- parameters:
+  - type:
+      text: GlShader
+      url: Alis.Core.Graphic.OpenGL.Constructs.GlShader.html
+    description: The gl shader class
+  - type:
+      text: GlShaderProgram
+      url: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.html
+    description: The gl shader program class
+  - type:
+      text: GlShaderProgramParam
+      url: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.html
+    description: The gl shader program param class
+- h3: Enums
+- parameters:
+  - type:
+      text: ParamType
+      url: Alis.Core.Graphic.OpenGL.Constructs.ParamType.html
+    description: The param type enum
+languageId: csharp

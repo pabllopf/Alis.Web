@@ -1,0 +1,40 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Graphic.Platforms.Osx.Native
+body:
+- api1: Namespace Alis.Core.Graphic.Platforms.Osx.Native
+  id: Alis_Core_Graphic_Platforms_Osx_Native
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native
+    commentId: N:Alis.Core.Graphic.Platforms.Osx.Native
+- h3: Classes
+- parameters:
+  - type:
+      text: MacConstants
+      url: Alis.Core.Graphic.Platforms.Osx.Native.MacConstants.html
+    description: Constantes y structs para la plataforma Mac
+  - type:
+      text: MacOpenGLContext
+      url: Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.html
+    description: Gestiona el contexto OpenGL nativo en macOS
+  - type:
+      text: MacWindow
+      url: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.html
+    description: Representa una ventana nativa de macOS
+  - type:
+      text: ObjectiveCInterop
+      url: Alis.Core.Graphic.Platforms.Osx.Native.ObjectiveCInterop.html
+    description: Utilidades para interoperar con Objective-C
+- h3: Structs
+- parameters:
+  - type:
+      text: CGPoint
+      url: Alis.Core.Graphic.Platforms.Osx.Native.CGPoint.html
+  - type:
+      text: NsPoint
+      url: Alis.Core.Graphic.Platforms.Osx.Native.NsPoint.html
+    description: The ns point
+  - type:
+      text: NsRect
+      url: Alis.Core.Graphic.Platforms.Osx.Native.NsRect.html
+    description: The ns rect
+languageId: csharp

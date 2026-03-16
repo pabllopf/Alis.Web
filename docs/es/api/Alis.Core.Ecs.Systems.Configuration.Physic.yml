@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Systems.Configuration.Physic
+body:
+- api1: Namespace Alis.Core.Ecs.Systems.Configuration.Physic
+  id: Alis_Core_Ecs_Systems_Configuration_Physic
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Physic
+    commentId: N:Alis.Core.Ecs.Systems.Configuration.Physic
+- h3: Structs
+- parameters:
+  - type:
+      text: PhysicSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.html
+    description: The physic setting
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IPhysicSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Physic.IPhysicSetting.html
+    description: The physic setting interface
+languageId: csharp

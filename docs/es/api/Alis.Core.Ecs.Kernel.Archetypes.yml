@@ -1,0 +1,103 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Kernel.Archetypes
+body:
+- api1: Namespace Alis.Core.Ecs.Kernel.Archetypes
+  id: Alis_Core_Ecs_Kernel_Archetypes
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes
+    commentId: N:Alis.Core.Ecs.Kernel.Archetypes
+- h3: Classes
+- parameters:
+  - type:
+      text: Archetype<T1, T2, T3>
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-3.html
+    description: The archetype class
+  - type:
+      text: Archetype<T>
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-1.html
+    description: The archetype class
+  - type:
+      text: Archetype<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-5.html
+    description: The archetype class
+  - type:
+      text: Archetype<T1, T2>
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-2.html
+    description: The archetype class
+  - type:
+      text: Archetype<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-4.html
+    description: The archetype class
+  - type:
+      text: Archetype<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-7.html
+    description: The archetype class
+  - type:
+      text: Archetype<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-8.html
+    description: The archetype class
+  - type:
+      text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype class
+  - type:
+      text: Archetype<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-6.html
+    description: The archetype class
+  - type:
+      text: GlobalWorldTables
+      url: Alis.Core.Ecs.Kernel.Archetypes.GlobalWorldTables.html
+    description: The global scene tables class
+  - type:
+      text: OfComponent<T1, T2, T3, TC>
+      url: Alis.Core.Ecs.Kernel.Archetypes.OfComponent-4.html
+    description: The of component class
+  - type:
+      text: OfComponent<T1, T2, TC>
+      url: Alis.Core.Ecs.Kernel.Archetypes.OfComponent-3.html
+    description: The of component class
+  - type:
+      text: OfComponent<T1, T2, T3, T4, TC>
+      url: Alis.Core.Ecs.Kernel.Archetypes.OfComponent-5.html
+    description: The of component class
+  - type:
+      text: Archetype<T>.OfComponent<TC>
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-1.OfComponent-1.html
+    description: The of component class
+  - type:
+      text: OfComponent<T1, T2, T3, T4, T5, TC>
+      url: Alis.Core.Ecs.Kernel.Archetypes.OfComponent-6.html
+    description: The of component class
+  - type:
+      text: OfComponent<T1, T2, T3, T4, T5, T6, T7, T8, TC>
+      url: Alis.Core.Ecs.Kernel.Archetypes.OfComponent-9.html
+    description: The of component class
+  - type:
+      text: OfComponent<T1, T2, T3, T4, T5, T6, T7, TC>
+      url: Alis.Core.Ecs.Kernel.Archetypes.OfComponent-8.html
+    description: The of component class
+  - type:
+      text: OfComponent<T1, T2, T3, T4, T5, T6, TC>
+      url: Alis.Core.Ecs.Kernel.Archetypes.OfComponent-7.html
+    description: The of component class
+- h3: Structs
+- parameters:
+  - type:
+      text: ArchetypeData
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeData.html
+    description: Archetype metadata
+  - type:
+      text: ArchetypeEdgeKey
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.html
+    description: The archetype edge key
+  - type:
+      text: Fields
+      url: Alis.Core.Ecs.Kernel.Archetypes.Fields.html
+    description: The fields
+- h3: Enums
+- parameters:
+  - type:
+      text: ArchetypeEdgeType
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeType.html
+    description: The archetype edge type enum
+languageId: csharp

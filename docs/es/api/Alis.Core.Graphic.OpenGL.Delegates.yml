@@ -1,0 +1,251 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Graphic.OpenGL.Delegates
+body:
+- api1: Namespace Alis.Core.Graphic.OpenGL.Delegates
+  id: Alis_Core_Graphic_OpenGL_Delegates
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates
+    commentId: N:Alis.Core.Graphic.OpenGL.Delegates
+- h3: Delegates
+- parameters:
+  - type:
+      text: AttachShader
+      url: Alis.Core.Graphic.OpenGL.Delegates.AttachShader.html
+    description: The attach shader
+  - type:
+      text: Begin
+      url: Alis.Core.Graphic.OpenGL.Delegates.Begin.html
+    description: The begin
+  - type:
+      text: BindBuffer
+      url: Alis.Core.Graphic.OpenGL.Delegates.BindBuffer.html
+    description: The bind buffer
+  - type:
+      text: BindSampler
+      url: Alis.Core.Graphic.OpenGL.Delegates.BindSampler.html
+    description: The bind sampler
+  - type:
+      text: BindTexture
+      url: Alis.Core.Graphic.OpenGL.Delegates.BindTexture.html
+    description: The bind texture
+  - type:
+      text: BindVertexArray
+      url: Alis.Core.Graphic.OpenGL.Delegates.BindVertexArray.html
+    description: The bind vertex array
+  - type:
+      text: BlendEquation
+      url: Alis.Core.Graphic.OpenGL.Delegates.BlendEquation.html
+    description: The blend equation
+  - type:
+      text: BlendFunc
+      url: Alis.Core.Graphic.OpenGL.Delegates.BlendFunc.html
+    description: The blend func
+  - type:
+      text: BufferData
+      url: Alis.Core.Graphic.OpenGL.Delegates.BufferData.html
+    description: The buffer data
+  - type:
+      text: Clear
+      url: Alis.Core.Graphic.OpenGL.Delegates.Clear.html
+    description: The clear
+  - type:
+      text: ClearColor
+      url: Alis.Core.Graphic.OpenGL.Delegates.ClearColor.html
+    description: The clear color
+  - type:
+      text: Color4F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Color4F.html
+    description: The color 4f
+  - type:
+      text: CompileShader
+      url: Alis.Core.Graphic.OpenGL.Delegates.CompileShader.html
+    description: The compile shader
+  - type:
+      text: CreateProgram
+      url: Alis.Core.Graphic.OpenGL.Delegates.CreateProgram.html
+    description: The create program
+  - type:
+      text: CreateShader
+      url: Alis.Core.Graphic.OpenGL.Delegates.CreateShader.html
+    description: The create shader
+  - type:
+      text: DeleteBuffers
+      url: Alis.Core.Graphic.OpenGL.Delegates.DeleteBuffers.html
+    description: The delete buffers
+  - type:
+      text: DeleteProgram
+      url: Alis.Core.Graphic.OpenGL.Delegates.DeleteProgram.html
+    description: The delete program
+  - type:
+      text: DeleteShader
+      url: Alis.Core.Graphic.OpenGL.Delegates.DeleteShader.html
+    description: The delete shader
+  - type:
+      text: DeleteTextures
+      url: Alis.Core.Graphic.OpenGL.Delegates.DeleteTextures.html
+    description: The delete textures
+  - type:
+      text: DeleteVertexArrays
+      url: Alis.Core.Graphic.OpenGL.Delegates.DeleteVertexArrays.html
+    description: The delete vertex arrays
+  - type:
+      text: DetachShader
+      url: Alis.Core.Graphic.OpenGL.Delegates.DetachShader.html
+    description: The detach shader
+  - type:
+      text: Disable
+      url: Alis.Core.Graphic.OpenGL.Delegates.Disable.html
+    description: The disable
+  - type:
+      text: DisableVertexAttribArray
+      url: Alis.Core.Graphic.OpenGL.Delegates.DisableVertexAttribArray.html
+    description: The disable vertex attrib array
+  - type:
+      text: DrawElementsBaseVertex
+      url: Alis.Core.Graphic.OpenGL.Delegates.DrawElementsBaseVertex.html
+    description: The draw elements base vertex
+  - type:
+      text: Enable
+      url: Alis.Core.Graphic.OpenGL.Delegates.Enable.html
+    description: The enable
+  - type:
+      text: EnableVertexAttribArrayDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.EnableVertexAttribArrayDel.html
+    description: The enable vertex attrib array del
+  - type:
+      text: End
+      url: Alis.Core.Graphic.OpenGL.Delegates.End.html
+    description: The end
+  - type:
+      text: GenBuffers
+      url: Alis.Core.Graphic.OpenGL.Delegates.GenBuffers.html
+    description: The gen buffers
+  - type:
+      text: GenTextures
+      url: Alis.Core.Graphic.OpenGL.Delegates.GenTextures.html
+    description: The gen textures
+  - type:
+      text: GenVertexArrays
+      url: Alis.Core.Graphic.OpenGL.Delegates.GenVertexArrays.html
+    description: The gen vertex arrays
+  - type:
+      text: GetActiveAttrib
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetActiveAttrib.html
+    description: The get active attrib
+  - type:
+      text: GetActiveUniform
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetActiveUniform.html
+    description: The get active uniform
+  - type:
+      text: GetAttribLocation
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetAttribLocation.html
+    description: The get attrib location
+  - type:
+      text: GetProgramInfoLogDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetProgramInfoLogDel.html
+    description: The get program info log del
+  - type:
+      text: GetProgramiv
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetProgramiv.html
+    description: The get programiv
+  - type:
+      text: GetShaderInfoLogDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetShaderInfoLogDel.html
+    description: The get shader info log del
+  - type:
+      text: GetShaderiv
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetShaderiv.html
+    description: The get shaderiv
+  - type:
+      text: GetString
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetString.html
+    description: The get string
+  - type:
+      text: GetUniformLocation
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetUniformLocation.html
+    description: The get uniform location
+  - type:
+      text: LinkProgram
+      url: Alis.Core.Graphic.OpenGL.Delegates.LinkProgram.html
+    description: The link program
+  - type:
+      text: PolygonMode
+      url: Alis.Core.Graphic.OpenGL.Delegates.PolygonMode.html
+    description: The polygon mode
+  - type:
+      text: Scissor
+      url: Alis.Core.Graphic.OpenGL.Delegates.Scissor.html
+    description: The scissor
+  - type:
+      text: ShaderSourceDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.ShaderSourceDel.html
+    description: The shader source del
+  - type:
+      text: Storei
+      url: Alis.Core.Graphic.OpenGL.Delegates.Storei.html
+    description: The pixel storei
+  - type:
+      text: TexCoord2F
+      url: Alis.Core.Graphic.OpenGL.Delegates.TexCoord2F.html
+    description: The begin
+  - type:
+      text: TexImage2D
+      url: Alis.Core.Graphic.OpenGL.Delegates.TexImage2D.html
+    description: The tex image
+  - type:
+      text: TexParameteri
+      url: Alis.Core.Graphic.OpenGL.Delegates.TexParameteri.html
+    description: The tex parameteri
+  - type:
+      text: Uniform1F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform1F.html
+    description: The uniform 1f
+  - type:
+      text: Uniform1I
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform1I.html
+    description: The uniform 1i
+  - type:
+      text: Uniform2F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform2F.html
+    description: The uniform 2f
+  - type:
+      text: Uniform3F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform3F.html
+    description: The uniform 3f
+  - type:
+      text: Uniform3Fv
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform3Fv.html
+    description: The uniform 3fv
+  - type:
+      text: Uniform4F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform4F.html
+    description: The uniform 4f
+  - type:
+      text: Uniform4Fv
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform4Fv.html
+    description: The uniform 4fv
+  - type:
+      text: UniformMatrix3FvDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.UniformMatrix3FvDel.html
+    description: The uniform matrix 3fv del
+  - type:
+      text: UniformMatrix4FvDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.UniformMatrix4FvDel.html
+    description: The uniform matrix 4fv del
+  - type:
+      text: UseProgram
+      url: Alis.Core.Graphic.OpenGL.Delegates.UseProgram.html
+    description: The use program
+  - type:
+      text: Vertex2F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Vertex2F.html
+    description: The vertex 2f
+  - type:
+      text: VertexAttribPointerDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.VertexAttribPointerDel.html
+    description: The vertex attrib pointer del
+  - type:
+      text: Viewport
+      url: Alis.Core.Graphic.OpenGL.Delegates.Viewport.html
+    description: The viewport
+languageId: csharp

@@ -1,0 +1,763 @@
+### YamlMime:ApiPage
+title: Struct Vector3F
+body:
+- api1: Struct Vector3F
+  id: Alis_Core_Aspect_Math_Vector_Vector3F
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L40
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F
+    commentId: T:Alis.Core.Aspect.Math.Vector.Vector3F
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Math.Vector
+      url: Alis.Core.Aspect.Math.Vector.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The vector
+- code: 'public struct Vector3F : IEquatable<Vector3F>, IFormattable, ISerializable'
+- h4: Implements
+- list:
+  - text: IEquatable<Vector3F>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - text: IFormattable
+    url: https://learn.microsoft.com/dotnet/api/system.iformattable
+  - text: ISerializable
+    url: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Vector3F(float)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F__ctor_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L59
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.#ctor(System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.#ctor(System.Single)
+- markdown: Creates a new <xref href="Alis.Core.Aspect.Math.Vector.Vector3F" data-throw-if-not-resolved="false"></xref> object whose three elements have the same value.
+- code: private Vector3F(float value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The value to assign to all three elements.
+- api3: Vector3F(Vector2F, float)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L68
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Math.Vector.Vector3F" data-throw-if-not-resolved="false"></xref> class
+- code: public Vector3F(Vector2F value, float z)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The value
+  - name: z
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+- api3: Vector3F(float, float, float)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F__ctor_System_Single_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L76
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.#ctor(System.Single,System.Single,System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.#ctor(System.Single,System.Single,System.Single)
+- markdown: Creates a vector whose elements have the specified values.
+- code: public Vector3F(float x, float y, float z)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The value to assign to the <xref href="Alis.Core.Aspect.Math.Vector.Vector3F.X" data-throw-if-not-resolved="false"></xref> field.
+  - name: y
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The value to assign to the <xref href="Alis.Core.Aspect.Math.Vector.Vector3F.Y" data-throw-if-not-resolved="false"></xref> field.
+  - name: z
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The value to assign to the <xref href="Alis.Core.Aspect.Math.Vector.Vector3F.Z" data-throw-if-not-resolved="false"></xref> field.
+- h2: Fields
+- api3: hashCode
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_hashCode
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L46
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.hashCode
+    commentId: F:Alis.Core.Aspect.Math.Vector.Vector3F.hashCode
+- markdown: The hash code
+- code: private readonly int hashCode
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Properties
+- api3: One
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_One
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L95
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.One
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector3F.One
+- markdown: Gets a vector whose 3 elements are equal to one.
+- code: public static Vector3F One { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+- api3: UnitX
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_UnitX
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L99
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.UnitX
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector3F.UnitX
+- markdown: Gets the vector (1,0,0).
+- code: public static Vector3F UnitX { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+- api3: UnitY
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_UnitY
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L103
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.UnitY
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector3F.UnitY
+- markdown: Gets the vector (0,1,0).
+- code: public static Vector3F UnitY { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+- api3: UnitZ
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_UnitZ
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L107
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.UnitZ
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector3F.UnitZ
+- markdown: Gets the vector (0,0,1).
+- code: public static Vector3F UnitZ { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+- api3: X
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_X
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L49
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.X
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector3F.X
+- markdown: The X component of the vector.
+- code: public float X { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Y
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_Y
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L52
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.Y
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector3F.Y
+- markdown: The Y component of the vector.
+- code: public float Y { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Z
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_Z
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L55
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.Z
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector3F.Z
+- markdown: The Z component of the vector.
+- code: public float Z { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Zero
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_Zero
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L91
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.Zero
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector3F.Zero
+- markdown: Gets a vector whose 3 elements are equal to zero.
+- code: public static Vector3F Zero { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+- h2: Methods
+- api3: Cross(Vector3F, Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_Cross_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L212
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.Cross(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.Cross(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Computes the cross product of two vectors.
+- code: public static Vector3F Cross(Vector3F vector1, Vector3F vector2)
+- h4: Parameters
+- parameters:
+  - name: vector1
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The first vector.
+  - name: vector2
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The cross product.
+- api3: Dot(Vector3F, Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_Dot_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L222
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.Dot(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.Dot(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Returns the dot product of two vectors.
+- code: public static float Dot(Vector3F vector1, Vector3F vector2)
+- h4: Parameters
+- parameters:
+  - name: vector1
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The first vector.
+  - name: vector2
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The dot product.
+- api3: Equals(object)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_Equals_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L242
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.Equals(System.Object)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.Equals(System.Object)
+- markdown: Returns a value that indicates whether this instance and a specified object are equal.
+- code: public override readonly bool Equals(object obj)
+- h4: Parameters
+- parameters:
+  - name: obj
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object to compare with the current instance.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current instance and <code class="paramref">obj</code> are equal; otherwise,
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. If <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the method returns
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- h4: Remarks
+- markdown: >-
+    The current instance and <code class="paramref">obj</code> are equal if <code class="paramref">obj</code> is a
+
+    <xref href="Alis.Core.Aspect.Math.Vector.Vector3F" data-throw-if-not-resolved="false"></xref> object and their corresponding elements are equal.
+- api3: Equals(Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_Equals_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L251
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.Equals(Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.Equals(Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Returns a value that indicates whether this instance and another vector are equal.
+- code: public readonly bool Equals(Vector3F other)
+- h4: Parameters
+- parameters:
+  - name: other
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The other vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the two vectors are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- h4: Remarks
+- markdown: >-
+    Two vectors are equal if their <xref href="Alis.Core.Aspect.Math.Vector.Vector3F.X" data-throw-if-not-resolved="false"></xref>, <xref href="Alis.Core.Aspect.Math.Vector.Vector3F.Y" data-throw-if-not-resolved="false"></xref>, and
+
+    <xref href="Alis.Core.Aspect.Math.Vector.Vector3F.Z" data-throw-if-not-resolved="false"></xref> elements are equal.
+- api3: GetHashCode()
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_GetHashCode
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L255
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.GetHashCode
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.GetHashCode
+- markdown: Returns the hash code for this instance.
+- code: public override readonly int GetHashCode()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The hash code.
+- api3: GetObjectData(SerializationInfo, StreamingContext)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L288
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- markdown: Gets the object data using the specified info
+- code: public void GetObjectData(SerializationInfo info, StreamingContext context)
+- h4: Parameters
+- parameters:
+  - name: info
+    type:
+    - text: SerializationInfo
+      url: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+    description: The info
+  - name: context
+    type:
+    - text: StreamingContext
+      url: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+    description: The context
+- api3: Length()
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_Length
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L260
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.Length
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.Length
+- markdown: Returns the length of this vector object.
+- code: public readonly float Length()
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The vector's length.
+- api3: LengthSquared()
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_LengthSquared
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L270
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.LengthSquared
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.LengthSquared
+- markdown: Returns the length of the vector squared.
+- code: public readonly float LengthSquared()
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The vector's length squared.
+- h4: Remarks
+- markdown: This operation offers better performance than a call to the <xref href="Alis.Core.Aspect.Math.Vector.Vector3F.Length" data-throw-if-not-resolved="false"></xref> method.
+- api3: Normalize(Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_Normalize_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L229
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.Normalize(Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.Normalize(Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Returns a vector with the same direction as the specified vector, but with a length of one.
+- code: public static Vector3F Normalize(Vector3F value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The vector to normalize.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The normalized vector.
+- api3: ToString()
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_ToString
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L281
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.ToString
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.ToString
+- markdown: Returns the string representation of the current instance using default formatting.
+- code: public override readonly string ToString()
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string representation of the current instance.
+- h4: Remarks
+- markdown: >-
+    This method returns a string in which each element of the vector is formatted using the "G" (general) format
+
+    string and the formatting conventions of the current thread culture. The "&lt;" and "&gt;" characters are used to
+
+    begin and end the string, and the current culture's
+
+    <xref href="System.Globalization.NumberFormatInfo.NumberGroupSeparator" data-throw-if-not-resolved="false"></xref> property followed by a space is used to
+
+    separate each element.
+- api3: ToString(string, IFormatProvider)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_ToString_System_String_System_IFormatProvider_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L313
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.ToString(System.String,System.IFormatProvider)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.ToString(System.String,System.IFormatProvider)
+- markdown: >-
+    Returns the string representation of the current instance using the specified format string to format
+
+    individual elements and the specified format provider to define culture-specific formatting.
+- code: public readonly string ToString(string format, IFormatProvider formatProvider)
+- h4: Parameters
+- parameters:
+  - name: format
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: A standard or custom numeric format string that defines the format of individual elements.
+  - name: formatProvider
+    type:
+    - text: IFormatProvider
+      url: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+    description: A format provider that supplies culture-specific formatting information.
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string representation of the current instance.
+- h4: Remarks
+- markdown: >-
+    This method returns a string in which each element of the vector is formatted using <code class="paramref">format</code>
+
+    and <code class="paramref">formatProvider</code>. The "&lt;" and "&gt;" characters are used to begin and end the string, and
+
+    the format provider's <xref href="System.Globalization.NumberFormatInfo.NumberGroupSeparator" data-throw-if-not-resolved="false"></xref> property followed
+
+    by a space is used to separate each element.
+- h2: Operators
+- api3: operator +(Vector3F, Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_op_Addition_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L117
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.op_Addition(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.op_Addition(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Adds two vectors together.
+- code: public static Vector3F operator +(Vector3F left, Vector3F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The first vector to add.
+  - name: right
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The second vector to add.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The summed vector.
+- h4: Remarks
+- markdown: >-
+    The <xref href="Alis.Core.Aspect.Math.Vector.Vector3F.op_Addition(Alis.Core.Aspect.Math.Vector.Vector3F%2cAlis.Core.Aspect.Math.Vector.Vector3F)" data-throw-if-not-resolved="false"></xref> method defines the addition operation for <xref href="Alis.Core.Aspect.Math.Vector.Vector3F" data-throw-if-not-resolved="false"></xref>
+
+    objects.
+- api3: operator /(Vector3F, Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_op_Division_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L127
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.op_Division(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.op_Division(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Divides the first vector by the second.
+- code: public static Vector3F operator /(Vector3F left, Vector3F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The first vector.
+  - name: right
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The vector that results from dividing <code class="paramref">left</code> by <code class="paramref">right</code>.
+- api3: operator /(Vector3F, float)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_op_Division_Alis_Core_Aspect_Math_Vector_Vector3F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L137
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.op_Division(Alis.Core.Aspect.Math.Vector.Vector3F,System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.op_Division(Alis.Core.Aspect.Math.Vector.Vector3F,System.Single)
+- markdown: Divides the specified vector by a specified scalar value.
+- code: public static Vector3F operator /(Vector3F value1, float value2)
+- h4: Parameters
+- parameters:
+  - name: value1
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The vector.
+  - name: value2
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The scalar value.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The result of the division.
+- api3: operator ==(Vector3F, Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_op_Equality_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L150
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.op_Equality(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.op_Equality(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Returns a value that indicates whether each pair of elements in two specified vectors is equal.
+- code: public static bool operator ==(Vector3F left, Vector3F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The first vector to compare.
+  - name: right
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The second vector to compare.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">left</code> and <code class="paramref">right</code> are equal; otherwise,
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- h4: Remarks
+- markdown: >-
+    Two <xref href="Alis.Core.Aspect.Math.Vector.Vector3F" data-throw-if-not-resolved="false"></xref> objects are equal if each element in <code class="paramref">right</code> is equal to the
+
+    corresponding element in <code class="paramref">right</code>.
+- api3: operator !=(Vector3F, Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_op_Inequality_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L161
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.op_Inequality(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.op_Inequality(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Returns a value that indicates whether two specified vectors are not equal.
+- code: public static bool operator !=(Vector3F left, Vector3F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The first vector to compare.
+  - name: right
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The second vector to compare.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">left</code> and <code class="paramref">right</code> are not equal; otherwise,
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- api3: operator *(Vector3F, Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_op_Multiply_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L167
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.op_Multiply(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.op_Multiply(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Returns a new vector whose values are the product of each pair of elements in two specified vectors.
+- code: public static Vector3F operator *(Vector3F left, Vector3F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The first vector.
+  - name: right
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The element-wise product vector.
+- api3: operator *(Vector3F, float)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_op_Multiply_Alis_Core_Aspect_Math_Vector_Vector3F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L177
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.op_Multiply(Alis.Core.Aspect.Math.Vector.Vector3F,System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.op_Multiply(Alis.Core.Aspect.Math.Vector.Vector3F,System.Single)
+- markdown: Multiplies the specified vector by the specified scalar value.
+- code: public static Vector3F operator *(Vector3F left, float right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The vector.
+  - name: right
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The scalar value.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The scaled vector.
+- api3: operator *(float, Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_op_Multiply_System_Single_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L183
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.op_Multiply(System.Single,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.op_Multiply(System.Single,Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Multiplies the scalar value by the specified vector.
+- code: public static Vector3F operator *(float left, Vector3F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The vector.
+  - name: right
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The scalar value.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The scaled vector.
+- api3: operator -(Vector3F, Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_op_Subtraction_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L193
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.op_Subtraction(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.op_Subtraction(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Subtracts the second vector from the first.
+- code: public static Vector3F operator -(Vector3F left, Vector3F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The first vector.
+  - name: right
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The vector that results from subtracting <code class="paramref">right</code> from <code class="paramref">left</code>.
+- h4: Remarks
+- markdown: >-
+    The <xref href="Alis.Core.Aspect.Math.Vector.Vector3F.op_Subtraction(Alis.Core.Aspect.Math.Vector.Vector3F%2cAlis.Core.Aspect.Math.Vector.Vector3F)" data-throw-if-not-resolved="false"></xref> method defines the subtraction operation for
+
+    <xref href="Alis.Core.Aspect.Math.Vector.Vector3F" data-throw-if-not-resolved="false"></xref> objects.
+- api3: operator -(Vector3F)
+  id: Alis_Core_Aspect_Math_Vector_Vector3F_op_UnaryNegation_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector3F.cs#L206
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector3F.op_UnaryNegation(Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector3F.op_UnaryNegation(Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Negates the specified vector.
+- code: public static Vector3F operator -(Vector3F value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The vector to negate.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The negated vector.
+- h4: Remarks
+- markdown: >-
+    The <xref href="Alis.Core.Aspect.Math.Vector.Vector3F.op_UnaryNegation(Alis.Core.Aspect.Math.Vector.Vector3F)" data-throw-if-not-resolved="false"></xref> method defines the unary negation operation for
+
+    <xref href="Alis.Core.Aspect.Math.Vector.Vector3F" data-throw-if-not-resolved="false"></xref> objects.
+languageId: csharp
+metadata:
+  description: The vector

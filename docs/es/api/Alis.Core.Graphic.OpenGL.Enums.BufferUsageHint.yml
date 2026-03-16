@@ -1,0 +1,68 @@
+### YamlMime:ApiPage
+title: Enum BufferUsageHint
+body:
+- api1: Enum BufferUsageHint
+  id: Alis_Core_Graphic_OpenGL_Enums_BufferUsageHint
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/BufferUsageHint.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.BufferUsageHint
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.BufferUsageHint
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The buffer usage hint enum
+- code: public enum BufferUsageHint
+- h2: Fields
+- parameters:
+  - name: StreamDraw
+    default: "35040"
+    description: >+
+      The stream draw buffer usage hint
+
+  - name: StreamRead
+    default: "35041"
+    description: >+
+      The stream read buffer usage hint
+
+  - name: StreamCopy
+    default: "35042"
+    description: >+
+      The stream copy buffer usage hint
+
+  - name: StaticDraw
+    default: "35044"
+    description: >+
+      The static draw buffer usage hint
+
+  - name: StaticRead
+    default: "35045"
+    description: >+
+      The static read buffer usage hint
+
+  - name: StaticCopy
+    default: "35046"
+    description: >+
+      The static copy buffer usage hint
+
+  - name: DynamicDraw
+    default: "35048"
+    description: >+
+      The dynamic draw buffer usage hint
+
+  - name: DynamicRead
+    default: "35049"
+    description: >+
+      The dynamic read buffer usage hint
+
+  - name: DynamicCopy
+    default: "35050"
+    description: >+
+      The dynamic copy buffer usage hint
+
+languageId: csharp
+metadata:
+  description: The buffer usage hint enum

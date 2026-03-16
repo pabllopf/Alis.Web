@@ -133,6 +133,10 @@ body:
       url: Alis.Core.Aspect.Fluent.Words.IHas-2.html
     description: The has interface
   - type:
+      text: IHasContext<T>
+      url: Alis.Core.Aspect.Fluent.Words.IHasContext-1.html
+    description: The has context interface
+  - type:
       text: IIcon<TBuilder, TArgument>
       url: Alis.Core.Aspect.Fluent.Words.IIcon-2.html
     description: The icon interface
@@ -248,10 +252,6 @@ body:
       text: IScale2D<TBuilder, TArgument>
       url: Alis.Core.Aspect.Fluent.Words.IScale2D-2.html
     description: The scale interface
-  - type:
-      text: IScene<TBuilder, TArgument>
-      url: Alis.Core.Aspect.Fluent.Words.IScene-2.html
-    description: The scene interface
   - type:
       text: IScreenMode<TBuilder, TArgument>
       url: Alis.Core.Aspect.Fluent.Words.IScreenMode-2.html

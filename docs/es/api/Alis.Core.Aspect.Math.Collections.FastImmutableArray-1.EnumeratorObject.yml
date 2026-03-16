@@ -1,0 +1,194 @@
+### YamlMime:ApiPage
+title: Class FastImmutableArray<T>.EnumeratorObject
+body:
+- api1: Class FastImmutableArray<T>.EnumeratorObject
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_EnumeratorObject
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L1390
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject
+    commentId: T:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Math.Collections
+      url: Alis.Core.Aspect.Math.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: An array enumerator that implements <xref href="System.Collections.Generic.IEnumerator%601" data-throw-if-not-resolved="false"></xref> pattern (including <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref>).
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    private sealed class FastImmutableArray<T>.EnumeratorObject : IEnumerator<T>, IEnumerator, IDisposable
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: FastImmutableArray<T>.EnumeratorObject
+    url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.EnumeratorObject.html
+- h4: Implements
+- list:
+  - text: IEnumerator<T>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - text: IEnumerator
+    url: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: EnumeratorObject(T[])
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_EnumeratorObject__ctor__0___
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L1416
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.#ctor(`0[])
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.#ctor(`0[])
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Math.Collections.FastImmutableArray%601.Enumerator" data-throw-if-not-resolved="false"></xref> class.
+- code: private EnumeratorObject(T[] array)
+- h4: Parameters
+- parameters:
+  - name: array
+    type:
+    - T
+    - '['
+    - ']'
+- h2: Fields
+- api3: SEmptyEnumerator
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_EnumeratorObject_SEmptyEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L1396
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.SEmptyEnumerator
+    commentId: F:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.SEmptyEnumerator
+- markdown: A shareable singleton for enumerating empty arrays.
+- code: private static readonly IEnumerator<T> SEmptyEnumerator
+- h4: Field Value
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+    - <
+    - T
+    - '>'
+- api3: _array
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_EnumeratorObject__array
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L1402
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject._array
+    commentId: F:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject._array
+- markdown: The array being enumerated.
+- code: private readonly T[] _array
+- h4: Field Value
+- parameters:
+  - type:
+    - T
+    - '['
+    - ']'
+- api3: _index
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_EnumeratorObject__index
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L1411
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject._index
+    commentId: F:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject._index
+- markdown: The currently enumerated position.
+- code: private int _index
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Properties
+- api3: Current
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_EnumeratorObject_Current
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L1425
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.Current
+    commentId: P:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.Current
+- markdown: Gets the currently enumerated value.
+- code: public T Current { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - T
+- api3: IEnumerator.Current
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_EnumeratorObject_System_Collections_IEnumerator_Current
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L1444
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.System#Collections#IEnumerator#Current
+    commentId: P:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.System#Collections#IEnumerator#Current
+- markdown: Gets the currently enumerated value.
+- code: object IEnumerator.Current { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+- h2: Methods
+- api3: Create(T[])
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_EnumeratorObject_Create__0___
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L1488
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.Create(`0[])
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.Create(`0[])
+- markdown: Creates an enumerator for the specified array.
+- code: internal static IEnumerator<T> Create(T[] array)
+- h4: Parameters
+- parameters:
+  - name: array
+    type:
+    - T
+    - '['
+    - ']'
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+    - <
+    - T
+    - '>'
+- api3: Dispose()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_EnumeratorObject_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L1479
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.Dispose
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.Dispose
+- markdown: Disposes this enumerator.
+- code: public void Dispose()
+- h4: Remarks
+- markdown: Currently has no action.
+- api3: MoveNext()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_EnumeratorObject_MoveNext
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L1450
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.MoveNext
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.MoveNext
+- markdown: If another item exists in the array, advances to the next value to be enumerated.
+- code: public bool MoveNext()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <code>true</code> if another item exists in the array; <code>false</code> otherwise.
+- api3: IEnumerator.Reset()
+  id: Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_EnumeratorObject_System_Collections_IEnumerator_Reset
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L1468
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.System#Collections#IEnumerator#Reset
+    commentId: M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.EnumeratorObject.System#Collections#IEnumerator#Reset
+- markdown: Resets enumeration to the start of the array.
+- code: void IEnumerator.Reset()
+languageId: csharp
+metadata:
+  description: An array enumerator that implements  pattern (including ).

@@ -63,14 +63,14 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.html
     description: The poly
 - h2: Fields
-- api3: _polygons
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonSet__polygons
+- api3: Polygons
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonSet_Polygons
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/PolygonSet.cs#L48
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet._polygons
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet._polygons
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.Polygons
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.Polygons
 - markdown: The polygon
-- code: protected List<Polygon> _polygons
+- code: protected readonly List<Polygon> Polygons
 - h4: Field Value
 - parameters:
   - type:
@@ -81,14 +81,14 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.html
     - '>'
 - h2: Properties
-- api3: Polygons
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonSet_Polygons
+- api3: GetPolygons
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonSet_GetPolygons
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/PolygonSet.cs#L69
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.Polygons
-    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.Polygons
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.GetPolygons
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonSet.GetPolygons
 - markdown: Gets the value of the polygons
-- code: public IEnumerable<Polygon> Polygons { get; }
+- code: public IEnumerable<Polygon> GetPolygons { get; }
 - h4: Property Value
 - parameters:
   - type:

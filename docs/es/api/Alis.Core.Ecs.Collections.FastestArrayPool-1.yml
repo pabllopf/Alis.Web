@@ -1,0 +1,227 @@
+### YamlMime:ApiPage
+title: Class FastestArrayPool<T>
+body:
+- api1: Class FastestArrayPool<T>
+  id: Alis_Core_Ecs_Collections_FastestArrayPool_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestArrayPool.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestArrayPool`1
+    commentId: T:Alis.Core.Ecs.Collections.FastestArrayPool`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Collections
+      url: Alis.Core.Ecs.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The fastest array pool class
+- code: 'public sealed class FastestArrayPool<T> : ArrayPool<T>'
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: ArrayPool<T>
+    url: https://learn.microsoft.com/dotnet/api/system.buffers.arraypool-1
+  - text: FastestArrayPool<T>
+    url: Alis.Core.Ecs.Collections.FastestArrayPool-1.html
+- h4: Inherited Members
+- list:
+  - text: ArrayPool<T>.Create()
+    url: https://learn.microsoft.com/dotnet/api/system.buffers.arraypool-1.create#system-buffers-arraypool-1-create
+  - text: ArrayPool<T>.Create(int, int)
+    url: https://learn.microsoft.com/dotnet/api/system.buffers.arraypool-1.create#system-buffers-arraypool-1-create(system-int32-system-int32)
+  - text: ArrayPool<T>.Rent(int)
+    url: https://learn.microsoft.com/dotnet/api/system.buffers.arraypool-1.rent
+  - text: ArrayPool<T>.Return(T[], bool)
+    url: https://learn.microsoft.com/dotnet/api/system.buffers.arraypool-1.return
+  - text: ArrayPool<T>.Shared
+    url: https://learn.microsoft.com/dotnet/api/system.buffers.arraypool-1.shared
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: FastestArrayPool()
+  id: Alis_Core_Ecs_Collections_FastestArrayPool_1__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestArrayPool.cs#L62
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestArrayPool`1.#ctor
+    commentId: M:Alis.Core.Ecs.Collections.FastestArrayPool`1.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Collections.FastestArrayPool%601" data-throw-if-not-resolved="false"></xref> class
+- code: public FastestArrayPool()
+- h2: Fields
+- api3: BucketCount
+  id: Alis_Core_Ecs_Collections_FastestArrayPool_1_BucketCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestArrayPool.cs#L52
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestArrayPool`1.BucketCount
+    commentId: F:Alis.Core.Ecs.Collections.FastestArrayPool`1.BucketCount
+- markdown: The bucket count
+- code: private const int BucketCount = 27
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MinBucketSize
+  id: Alis_Core_Ecs_Collections_FastestArrayPool_1_MinBucketSize
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestArrayPool.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestArrayPool`1.MinBucketSize
+    commentId: F:Alis.Core.Ecs.Collections.FastestArrayPool`1.MinBucketSize
+- markdown: The min bucket size
+- code: private const int MinBucketSize = 16
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _buckets
+  id: Alis_Core_Ecs_Collections_FastestArrayPool_1__buckets
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestArrayPool.cs#L57
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestArrayPool`1._buckets
+    commentId: F:Alis.Core.Ecs.Collections.FastestArrayPool`1._buckets
+- markdown: The bucket count
+- code: private readonly T[][] _buckets
+- h4: Field Value
+- parameters:
+  - type:
+    - T
+    - '['
+    - ']'
+    - '['
+    - ']'
+- h2: Properties
+- api3: Instance
+  id: Alis_Core_Ecs_Collections_FastestArrayPool_1_Instance
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestArrayPool.cs#L67
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestArrayPool`1.Instance
+    commentId: P:Alis.Core.Ecs.Collections.FastestArrayPool`1.Instance
+- markdown: Gets the value of the instance
+- code: public static FastestArrayPool<T> Instance { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: FastestArrayPool
+      url: Alis.Core.Ecs.Collections.FastestArrayPool-1.html
+    - <
+    - T
+    - '>'
+- h2: Methods
+- api3: ClearBuckets()
+  id: Alis_Core_Ecs_Collections_FastestArrayPool_1_ClearBuckets
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestArrayPool.cs#L191
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestArrayPool`1.ClearBuckets
+    commentId: M:Alis.Core.Ecs.Collections.FastestArrayPool`1.ClearBuckets
+- markdown: Clears the buckets
+- code: private void ClearBuckets()
+- api3: GetBucketIndex(int)
+  id: Alis_Core_Ecs_Collections_FastestArrayPool_1_GetBucketIndex_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestArrayPool.cs#L141
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestArrayPool`1.GetBucketIndex(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.FastestArrayPool`1.GetBucketIndex(System.Int32)
+- markdown: Gets the bucket index using the specified size
+- code: private static int GetBucketIndex(int size)
+- h4: Parameters
+- parameters:
+  - name: size
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The size
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: Rent(int)
+  id: Alis_Core_Ecs_Collections_FastestArrayPool_1_Rent_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestArrayPool.cs#L88
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestArrayPool`1.Rent(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.FastestArrayPool`1.Rent(System.Int32)
+- markdown: Rents the minimum length
+- code: public override T[] Rent(int minimumLength)
+- h4: Parameters
+- parameters:
+  - name: minimumLength
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The minimum length
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    - '['
+    - ']'
+    description: The array
+- api3: ResizeArrayFromPool(ref T[], int)
+  id: Alis_Core_Ecs_Collections_FastestArrayPool_1_ResizeArrayFromPool__0____System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestArrayPool.cs#L74
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestArrayPool`1.ResizeArrayFromPool(`0[]@,System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.FastestArrayPool`1.ResizeArrayFromPool(`0[]@,System.Int32)
+- markdown: Resizes the array from pool using the specified arr
+- code: public static void ResizeArrayFromPool(ref T[] arr, int len)
+- h4: Parameters
+- parameters:
+  - name: arr
+    type:
+    - T
+    - '['
+    - ']'
+    description: The arr
+  - name: len
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The len
+- api3: Return(T[], bool)
+  id: Alis_Core_Ecs_Collections_FastestArrayPool_1_Return__0___System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestArrayPool.cs#L119
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestArrayPool`1.Return(`0[],System.Boolean)
+    commentId: M:Alis.Core.Ecs.Collections.FastestArrayPool`1.Return(`0[],System.Boolean)
+- markdown: Returns the array
+- code: public override void Return(T[] array, bool clearArray = false)
+- h4: Parameters
+- parameters:
+  - name: array
+    type:
+    - T
+    - '['
+    - ']'
+    description: The array
+  - name: clearArray
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The clear array
+    optional: true
+- h2: See Also
+- list:
+  - - text: ArrayPool
+      url: https://learn.microsoft.com/dotnet/api/system.buffers.arraypool-1
+    - <
+    - T
+    - '>'
+languageId: csharp
+metadata:
+  description: The fastest array pool class

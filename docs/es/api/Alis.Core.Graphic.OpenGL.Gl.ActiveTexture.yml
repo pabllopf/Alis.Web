@@ -1,0 +1,28 @@
+### YamlMime:ApiPage
+title: Delegate Gl.ActiveTexture
+body:
+- api1: Delegate Gl.ActiveTexture
+  id: Alis_Core_Graphic_OpenGL_Gl_ActiveTexture
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L48
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.ActiveTexture
+    commentId: T:Alis.Core.Graphic.OpenGL.Gl.ActiveTexture
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Activates the specified texture unit
+- code: public delegate void Gl.ActiveTexture(TextureUnit texture)
+- h4: Parameters
+- parameters:
+  - name: texture
+    type:
+    - text: TextureUnit
+      url: Alis.Core.Graphic.OpenGL.Enums.TextureUnit.html
+    description: The texture unit
+languageId: csharp
+metadata:
+  description: Activates the specified texture unit

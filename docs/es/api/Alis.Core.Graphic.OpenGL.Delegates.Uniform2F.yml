@@ -1,0 +1,35 @@
+### YamlMime:ApiPage
+title: Delegate Uniform2F
+body:
+- api1: Delegate Uniform2F
+  id: Alis_Core_Graphic_OpenGL_Delegates_Uniform2F
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/Uniform2F.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.Uniform2F
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.Uniform2F
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The uniform 2f
+- code: public delegate void Uniform2F(int location, float v0, float v1)
+- h4: Parameters
+- parameters:
+  - name: location
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: v0
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+  - name: v1
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+languageId: csharp
+metadata:
+  description: The uniform 2f

@@ -1,0 +1,191 @@
+### YamlMime:ApiPage
+title: Struct FrugalStack<T>
+body:
+- api1: Struct FrugalStack<T>
+  id: Alis_Core_Ecs_Collections_FrugalStack_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FrugalStack.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FrugalStack`1
+    commentId: T:Alis.Core.Ecs.Collections.FrugalStack`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Collections
+      url: Alis.Core.Ecs.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The frugal stack
+- code: public struct FrugalStack<T>
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 12 bytes total (T[] reference 8 bytes + int 4 bytes)
+
+    Pack = 4 for optimal alignment with reference types
+- h2: Constructors
+- api3: FrugalStack()
+  id: Alis_Core_Ecs_Collections_FrugalStack_1__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FrugalStack.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FrugalStack`1.#ctor
+    commentId: M:Alis.Core.Ecs.Collections.FrugalStack`1.#ctor
+- markdown: The frugal stack
+- code: public FrugalStack()
+- h4: Remarks
+- markdown: >-
+    Memory layout optimized: 12 bytes total (T[] reference 8 bytes + int 4 bytes)
+
+    Pack = 4 for optimal alignment with reference types
+- h2: Fields
+- api3: _buffer
+  id: Alis_Core_Ecs_Collections_FrugalStack_1__buffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FrugalStack.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FrugalStack`1._buffer
+    commentId: F:Alis.Core.Ecs.Collections.FrugalStack`1._buffer
+- markdown: The buffer
+- code: private T[] _buffer
+- h4: Field Value
+- parameters:
+  - type:
+    - T
+    - '['
+    - ']'
+- api3: _nextIndex
+  id: Alis_Core_Ecs_Collections_FrugalStack_1__nextIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FrugalStack.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FrugalStack`1._nextIndex
+    commentId: F:Alis.Core.Ecs.Collections.FrugalStack`1._nextIndex
+- markdown: The next index
+- code: private int _nextIndex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Properties
+- api3: Any
+  id: Alis_Core_Ecs_Collections_FrugalStack_1_Any
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FrugalStack.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FrugalStack`1.Any
+    commentId: P:Alis.Core.Ecs.Collections.FrugalStack`1.Any
+- markdown: Gets the value of the any
+- code: public bool Any { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h2: Methods
+- api3: AsSpan()
+  id: Alis_Core_Ecs_Collections_FrugalStack_1_AsSpan
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FrugalStack.cs#L145
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FrugalStack`1.AsSpan
+    commentId: M:Alis.Core.Ecs.Collections.FrugalStack`1.AsSpan
+- markdown: DO NOT ALTER WHILE SPAN IS IN USE
+- code: public readonly Span<T> AsSpan()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T
+    - '>'
+- api3: Pop()
+  id: Alis_Core_Ecs_Collections_FrugalStack_1_Pop
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FrugalStack.cs#L113
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FrugalStack`1.Pop
+    commentId: M:Alis.Core.Ecs.Collections.FrugalStack`1.Pop
+- markdown: Pops this instance
+- code: public T Pop()
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The next
+- api3: Push(T)
+  id: Alis_Core_Ecs_Collections_FrugalStack_1_Push__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FrugalStack.cs#L67
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FrugalStack`1.Push(`0)
+    commentId: M:Alis.Core.Ecs.Collections.FrugalStack`1.Push(`0)
+- markdown: Pushes the comp
+- code: public void Push(T comp)
+- h4: Parameters
+- parameters:
+  - name: comp
+    type:
+    - T
+    description: The comp
+- api3: Remove(T)
+  id: Alis_Core_Ecs_Collections_FrugalStack_1_Remove__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FrugalStack.cs#L129
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FrugalStack`1.Remove(`0)
+    commentId: M:Alis.Core.Ecs.Collections.FrugalStack`1.Remove(`0)
+- markdown: Removes the item
+- code: public void Remove(T item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item
+- api3: ResizeAndPush(in T)
+  id: Alis_Core_Ecs_Collections_FrugalStack_1_ResizeAndPush__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FrugalStack.cs#L85
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FrugalStack`1.ResizeAndPush(`0@)
+    commentId: M:Alis.Core.Ecs.Collections.FrugalStack`1.ResizeAndPush(`0@)
+- markdown: Resizes the and push using the specified comp
+- code: private void ResizeAndPush(in T comp)
+- h4: Parameters
+- parameters:
+  - name: comp
+    type:
+    - T
+    description: The comp
+- api3: TryPop(out T)
+  id: Alis_Core_Ecs_Collections_FrugalStack_1_TryPop__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FrugalStack.cs#L97
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FrugalStack`1.TryPop(`0@)
+    commentId: M:Alis.Core.Ecs.Collections.FrugalStack`1.TryPop(`0@)
+- markdown: Tries the pop using the specified value
+- code: public bool TryPop(out T value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - T
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+languageId: csharp
+metadata:
+  description: The frugal stack

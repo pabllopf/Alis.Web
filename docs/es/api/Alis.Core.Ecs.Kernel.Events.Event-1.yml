@@ -1,0 +1,203 @@
+### YamlMime:ApiPage
+title: Struct Event<T>
+body:
+- api1: Struct Event<T>
+  id: Alis_Core_Ecs_Kernel_Events_Event_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/Event.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.Event`1
+    commentId: T:Alis.Core.Ecs.Kernel.Events.Event`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Events
+      url: Alis.Core.Ecs.Kernel.Events.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The event
+- code: public struct Event<T>
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: Action reference (8 bytes) + FrugalStack struct (12 bytes)
+
+    Total: 20 bytes + 4 bytes padding = 24 bytes aligned
+
+    Pack = 8 for optimal alignment with reference types
+- h2: Constructors
+- api3: Event()
+  id: Alis_Core_Ecs_Kernel_Events_Event_1__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/Event.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.Event`1.#ctor
+    commentId: M:Alis.Core.Ecs.Kernel.Events.Event`1.#ctor
+- markdown: The event
+- code: public Event()
+- h4: Remarks
+- markdown: >-
+    Memory layout optimized: Action reference (8 bytes) + FrugalStack struct (12 bytes)
+
+    Total: 20 bytes + 4 bytes padding = 24 bytes aligned
+
+    Pack = 8 for optimal alignment with reference types
+- h2: Fields
+- api3: _first
+  id: Alis_Core_Ecs_Kernel_Events_Event_1__first
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/Event.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.Event`1._first
+    commentId: F:Alis.Core.Ecs.Kernel.Events.Event`1._first
+- markdown: The first
+- code: private Action<GameObject, T> _first
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-2
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - ','
+    - " "
+    - T
+    - '>'
+- api3: _invokationList
+  id: Alis_Core_Ecs_Kernel_Events_Event_1__invokationList
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/Event.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.Event`1._invokationList
+    commentId: F:Alis.Core.Ecs.Kernel.Events.Event`1._invokationList
+- markdown: The
+- code: private FrugalStack<Action<GameObject, T>> _invokationList
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FrugalStack
+      url: Alis.Core.Ecs.Collections.FrugalStack-1.html
+    - <
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-2
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - ','
+    - " "
+    - T
+    - '>'
+    - '>'
+- h2: Properties
+- api3: HasListeners
+  id: Alis_Core_Ecs_Kernel_Events_Event_1_HasListeners
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/Event.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.Event`1.HasListeners
+    commentId: P:Alis.Core.Ecs.Kernel.Events.Event`1.HasListeners
+- markdown: Gets the value of the has listeners
+- code: public bool HasListeners { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h2: Methods
+- api3: Add(Action<GameObject, T>)
+  id: Alis_Core_Ecs_Kernel_Events_Event_1_Add_System_Action_Alis_Core_Ecs_GameObject__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/Event.cs#L66
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.Event`1.Add(System.Action{Alis.Core.Ecs.GameObject,`0})
+    commentId: M:Alis.Core.Ecs.Kernel.Events.Event`1.Add(System.Action{Alis.Core.Ecs.GameObject,`0})
+- markdown: Adds the action
+- code: public void Add(Action<GameObject, T> action)
+- h4: Parameters
+- parameters:
+  - name: action
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-2
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - ','
+    - " "
+    - T
+    - '>'
+    description: The action
+- api3: Invoke(GameObject, T)
+  id: Alis_Core_Ecs_Kernel_Events_Event_1_Invoke_Alis_Core_Ecs_GameObject__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/Event.cs#L103
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.Event`1.Invoke(Alis.Core.Ecs.GameObject,`0)
+    commentId: M:Alis.Core.Ecs.Kernel.Events.Event`1.Invoke(Alis.Core.Ecs.GameObject,`0)
+- markdown: Invokes the gameObject
+- code: public readonly void Invoke(GameObject gameObject, T arg)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: arg
+    type:
+    - T
+    description: The arg
+- api3: InvokeInternal(GameObject, T)
+  id: Alis_Core_Ecs_Kernel_Events_Event_1_InvokeInternal_Alis_Core_Ecs_GameObject__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/Event.cs#L116
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.Event`1.InvokeInternal(Alis.Core.Ecs.GameObject,`0)
+    commentId: M:Alis.Core.Ecs.Kernel.Events.Event`1.InvokeInternal(Alis.Core.Ecs.GameObject,`0)
+- markdown: Invokes the internal using the specified gameObject
+- code: public readonly void InvokeInternal(GameObject gameObject, T arg)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: arg
+    type:
+    - T
+    description: The arg
+- api3: Remove(Action<GameObject, T>)
+  id: Alis_Core_Ecs_Kernel_Events_Event_1_Remove_System_Action_Alis_Core_Ecs_GameObject__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/Event.cs#L82
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.Event`1.Remove(System.Action{Alis.Core.Ecs.GameObject,`0})
+    commentId: M:Alis.Core.Ecs.Kernel.Events.Event`1.Remove(System.Action{Alis.Core.Ecs.GameObject,`0})
+- markdown: Removes the action
+- code: public void Remove(Action<GameObject, T> action)
+- h4: Parameters
+- parameters:
+  - name: action
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-2
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - ','
+    - " "
+    - T
+    - '>'
+    description: The action
+languageId: csharp
+metadata:
+  description: The event

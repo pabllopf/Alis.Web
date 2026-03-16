@@ -3,7 +3,7 @@ title: Class MarchingSquares.CxFastList<T>
 body:
 - api1: Class MarchingSquares.CxFastList<T>
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L532
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L632
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1
     commentId: T:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1
@@ -44,7 +44,7 @@ body:
 - h2: Fields
 - api3: _count
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1__count
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L537
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L637
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1._count
     commentId: F:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1._count
@@ -57,7 +57,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int32
 - api3: _head
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1__head
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L543
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L643
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1._head
     commentId: F:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1._head
@@ -74,7 +74,7 @@ body:
 - h2: Methods
 - api3: Add(T)
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Add__0_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L563
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L663
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Add(`0)
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Add(`0)
@@ -95,7 +95,7 @@ body:
     - '>'
 - api3: Begin()
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Begin
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L548
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L648
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Begin
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Begin
@@ -111,7 +111,7 @@ body:
     - '>'
 - api3: Clear()
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Clear
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L703
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L812
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Clear
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Clear
@@ -119,7 +119,7 @@ body:
 - code: public void Clear()
 - api3: Empty()
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Empty
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L677
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L783
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Empty
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Empty
@@ -132,7 +132,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: End()
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_End
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L553
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L653
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.End
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.End
@@ -148,7 +148,7 @@ body:
     - '>'
 - api3: Erase(CxFastListNode<T>, CxFastListNode<T>)
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Erase_Alis_Core_Physic_Common_TextureTools_CxFastListNode__0__Alis_Core_Physic_Common_TextureTools_CxFastListNode__0__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L659
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L759
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Erase(Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0},Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0})
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Erase(Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0},Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0})
@@ -183,7 +183,7 @@ body:
     - '>'
 - api3: Find(T)
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Find__0_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L728
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L837
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Find(`0)
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Find(`0)
@@ -206,7 +206,7 @@ body:
     description: A cx fast list node of t
 - api3: Front()
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Front
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L558
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L658
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Front
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Front
@@ -218,7 +218,7 @@ body:
     - T
 - api3: GetListOfElements()
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_GetListOfElements
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L768
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L877
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.GetListOfElements
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.GetListOfElements
@@ -235,7 +235,7 @@ body:
     description: The list
 - api3: Has(T)
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Has__0_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L720
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L829
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Has(`0)
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Has(`0)
@@ -253,7 +253,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: Insert(CxFastListNode<T>, T)
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Insert_Alis_Core_Physic_Common_TextureTools_CxFastListNode__0___0_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L638
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L738
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Insert(Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0},`0)
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Insert(Alis.Core.Physic.Common.TextureTools.CxFastListNode{`0},`0)
@@ -281,7 +281,7 @@ body:
     - '>'
 - api3: Pop()
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Pop
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L633
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L733
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Pop
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Pop
@@ -306,7 +306,7 @@ body:
     - '>'
 - api3: Remove(T)
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Remove__0_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L585
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L685
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Remove(`0)
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Remove(`0)
@@ -324,7 +324,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: Size()
   id: Alis_Core_Physic_Common_TextureTools_MarchingSquares_CxFastList_1_Size
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L687
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/MarchingSquares.cs#L796
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Size
     commentId: M:Alis.Core.Physic.Common.TextureTools.MarchingSquares.CxFastList`1.Size

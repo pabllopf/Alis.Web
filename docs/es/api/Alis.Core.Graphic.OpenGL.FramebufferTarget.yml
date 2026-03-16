@@ -1,0 +1,28 @@
+### YamlMime:ApiPage
+title: Enum FramebufferTarget
+body:
+- api1: Enum FramebufferTarget
+  id: Alis_Core_Graphic_OpenGL_FramebufferTarget
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/FramebufferTarget.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.FramebufferTarget
+    commentId: T:Alis.Core.Graphic.OpenGL.FramebufferTarget
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The framebuffer target enum
+- code: public enum FramebufferTarget
+- h2: Fields
+- parameters:
+  - name: Framebuffer
+    default: "36160"
+    description: >+
+      The framebuffer framebuffer target
+
+languageId: csharp
+metadata:
+  description: The framebuffer target enum

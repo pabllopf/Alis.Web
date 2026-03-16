@@ -1,0 +1,133 @@
+### YamlMime:ApiPage
+title: Class SparseSet<T>
+body:
+- api1: Class SparseSet<T>
+  id: Alis_Core_Ecs_Collections_SparseSet_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/SparseSet.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Collections.SparseSet`1
+    commentId: T:Alis.Core.Ecs.Collections.SparseSet`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Collections
+      url: Alis.Core.Ecs.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The sparse set class
+- code: public class SparseSet<T>
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: SparseSet<T>
+    url: Alis.Core.Ecs.Collections.SparseSet-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: SparseSet()
+  id: Alis_Core_Ecs_Collections_SparseSet_1__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/SparseSet.cs#L59
+  metadata:
+    uid: Alis.Core.Ecs.Collections.SparseSet`1.#ctor
+    commentId: M:Alis.Core.Ecs.Collections.SparseSet`1.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Collections.SparseSet%601" data-throw-if-not-resolved="false"></xref> class
+- code: public SparseSet()
+- h2: Fields
+- api3: _dense
+  id: Alis_Core_Ecs_Collections_SparseSet_1__dense
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/SparseSet.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Collections.SparseSet`1._dense
+    commentId: F:Alis.Core.Ecs.Collections.SparseSet`1._dense
+- markdown: The dense
+- code: private T[] _dense
+- h4: Field Value
+- parameters:
+  - type:
+    - T
+    - '['
+    - ']'
+- api3: _nextIndex
+  id: Alis_Core_Ecs_Collections_SparseSet_1__nextIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/SparseSet.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Collections.SparseSet`1._nextIndex
+    commentId: F:Alis.Core.Ecs.Collections.SparseSet`1._nextIndex
+- markdown: The next index
+- code: private int _nextIndex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _sparse
+  id: Alis_Core_Ecs_Collections_SparseSet_1__sparse
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/SparseSet.cs#L54
+  metadata:
+    uid: Alis.Core.Ecs.Collections.SparseSet`1._sparse
+    commentId: F:Alis.Core.Ecs.Collections.SparseSet`1._sparse
+- markdown: The sparse
+- code: private int[] _sparse
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '['
+    - ']'
+- h2: Properties
+- api3: this[int]
+  id: Alis_Core_Ecs_Collections_SparseSet_1_Item_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/SparseSet.cs#L70
+  metadata:
+    uid: Alis.Core.Ecs.Collections.SparseSet`1.Item(System.Int32)
+    commentId: P:Alis.Core.Ecs.Collections.SparseSet`1.Item(System.Int32)
+- markdown: The index
+- code: public ref T this[int id] { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - T
+- h2: Methods
+- api3: EnsureSparseCapacityAndGetIndex(int)
+  id: Alis_Core_Ecs_Collections_SparseSet_1_EnsureSparseCapacityAndGetIndex_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/SparseSet.cs#L90
+  metadata:
+    uid: Alis.Core.Ecs.Collections.SparseSet`1.EnsureSparseCapacityAndGetIndex(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.SparseSet`1.EnsureSparseCapacityAndGetIndex(System.Int32)
+- markdown: Ensures the sparse capacity and get index using the specified id
+- code: private ref int EnsureSparseCapacityAndGetIndex(int id)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The id
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The ref int
+languageId: csharp
+metadata:
+  description: The sparse set class

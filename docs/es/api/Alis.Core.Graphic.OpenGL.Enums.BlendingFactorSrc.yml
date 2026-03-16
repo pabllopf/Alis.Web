@@ -1,0 +1,108 @@
+### YamlMime:ApiPage
+title: Enum BlendingFactorSrc
+body:
+- api1: Enum BlendingFactorSrc
+  id: Alis_Core_Graphic_OpenGL_Enums_BlendingFactorSrc
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/BlendingFactorSrc.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.BlendingFactorSrc
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.BlendingFactorSrc
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The blending factor src enum
+- code: public enum BlendingFactorSrc
+- h2: Fields
+- parameters:
+  - name: Zero
+    default: "0"
+    description: >+
+      The zero blending factor src
+
+  - name: SrcAlpha
+    default: "770"
+    description: >+
+      The src alpha blending factor src
+
+  - name: OneMinusSrcAlpha
+    default: "771"
+    description: >+
+      The one minus src alpha blending factor src
+
+  - name: DstAlpha
+    default: "772"
+    description: >+
+      The dst alpha blending factor src
+
+  - name: OneMinusDstAlpha
+    default: "773"
+    description: >+
+      The one minus dst alpha blending factor src
+
+  - name: DstColor
+    default: "774"
+    description: >+
+      The dst color blending factor src
+
+  - name: OneMinusDstColor
+    default: "775"
+    description: >+
+      The one minus dst color blending factor src
+
+  - name: SrcAlphaSaturate
+    default: "776"
+    description: >+
+      The src alpha saturate blending factor src
+
+  - name: ConstantColor
+    default: "32769"
+    description: >+
+      The constant color blending factor src
+
+  - name: ConstantColorExt
+    default: "32769"
+    description: >+
+      The constant color ext blending factor src
+
+  - name: OneMinusConstantColor
+    default: "32770"
+    description: >+
+      The one minus constant color blending factor src
+
+  - name: OneMinusConstantColorExt
+    default: "32770"
+    description: >+
+      The one minus constant color ext blending factor src
+
+  - name: ConstantAlpha
+    default: "32771"
+    description: >+
+      The constant alpha blending factor src
+
+  - name: ConstantAlphaExt
+    default: "32771"
+    description: >+
+      The constant alpha ext blending factor src
+
+  - name: OneMinusConstantAlpha
+    default: "32772"
+    description: >+
+      The one minus constant alpha blending factor src
+
+  - name: OneMinusConstantAlphaExt
+    default: "32772"
+    description: >+
+      The one minus constant alpha ext blending factor src
+
+  - name: One
+    default: "1"
+    description: >+
+      The one blending factor src
+
+languageId: csharp
+metadata:
+  description: The blending factor src enum

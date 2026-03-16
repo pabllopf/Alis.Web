@@ -71,7 +71,7 @@ body:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.Trapezoids
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.Trapezoids
 - markdown: The trapezoids
-- code: public List<Trapezoid> Trapezoids
+- code: public readonly List<Trapezoid> Trapezoids
 - h4: Field Value
 - parameters:
   - type:
@@ -88,7 +88,7 @@ body:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.Triangles
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.Triangles
 - markdown: The triangles
-- code: public List<List<Point>> Triangles
+- code: public readonly List<List<Point>> Triangles
 - h4: Field Value
 - parameters:
   - type:
@@ -199,7 +199,7 @@ body:
 - code: private void CreateMountains()
 - api3: InitEdges(List<Point>)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Triangulator_InitEdges_System_Collections_Generic_List_Alis_Core_Physic_Common_Decomposition_Seidel_Point__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Triangulator.cs#L227
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Triangulator.cs#L231
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.InitEdges(System.Collections.Generic.List{Alis.Core.Physic.Common.Decomposition.Seidel.Point})
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.InitEdges(System.Collections.Generic.List{Alis.Core.Physic.Common.Decomposition.Seidel.Point})
@@ -228,7 +228,7 @@ body:
     description: A list of edge
 - api3: MarkOutside(Trapezoid)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Triangulator_MarkOutside_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Triangulator.cs#L215
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Triangulator.cs#L217
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.MarkOutside(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.MarkOutside(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid)
@@ -243,7 +243,7 @@ body:
     description: The
 - api3: OrderSegments(List<Edge>)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Triangulator_OrderSegments_System_Collections_Generic_List_Alis_Core_Physic_Common_Decomposition_Seidel_Edge__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Triangulator.cs#L245
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Triangulator.cs#L249
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.OrderSegments(System.Collections.Generic.List{Alis.Core.Physic.Common.Decomposition.Seidel.Edge})
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.OrderSegments(System.Collections.Generic.List{Alis.Core.Physic.Common.Decomposition.Seidel.Edge})
@@ -280,7 +280,7 @@ body:
 - code: private void Process()
 - api3: ShearTransform(Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Triangulator_ShearTransform_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Triangulator.cs#L298
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Triangulator.cs#L304
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.ShearTransform(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.ShearTransform(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -301,7 +301,7 @@ body:
     description: The point
 - api3: Shuffle<T>(IList<T>)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Triangulator_Shuffle__1_System_Collections_Generic_IList___0__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Triangulator.cs#L277
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Triangulator.cs#L281
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.Shuffle``1(System.Collections.Generic.IList{``0})
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Triangulator.Shuffle``1(System.Collections.Generic.IList{``0})

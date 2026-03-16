@@ -1,0 +1,19 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Systems.Manager.Scene
+body:
+- api1: Namespace Alis.Core.Ecs.Systems.Manager.Scene
+  id: Alis_Core_Ecs_Systems_Manager_Scene
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene
+    commentId: N:Alis.Core.Ecs.Systems.Manager.Scene
+- h3: Classes
+- parameters:
+  - type:
+      text: SceneManager
+      url: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.html
+    description: The scene manager base class
+  - type:
+      text: ScenesMap
+      url: Alis.Core.Ecs.Systems.Manager.Scene.ScenesMap.html
+    description: The scenes map class
+languageId: csharp

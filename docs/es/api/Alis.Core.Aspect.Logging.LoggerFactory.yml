@@ -1,0 +1,282 @@
+### YamlMime:ApiPage
+title: Class LoggerFactory
+body:
+- api1: Class LoggerFactory
+  id: Alis_Core_Aspect_Logging_LoggerFactory
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L45
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory
+    commentId: T:Alis.Core.Aspect.Logging.LoggerFactory
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging
+      url: Alis.Core.Aspect.Logging.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Factory for creating and configuring logger instances.
+
+    Uses a fluent builder pattern for configuration.
+
+    AOT-compatible: No reflection, no singleton pattern.
+
+    Not thread-safe for configuration, but created loggers are thread-safe.
+- code: 'public sealed class LoggerFactory : IDisposable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: LoggerFactory
+    url: Alis.Core.Aspect.Logging.LoggerFactory.html
+- h4: Implements
+- list:
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: LoggerFactory()
+  id: Alis_Core_Aspect_Logging_LoggerFactory__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L75
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory.#ctor
+    commentId: M:Alis.Core.Aspect.Logging.LoggerFactory.#ctor
+- markdown: Initializes a new instance of the LoggerFactory class.
+- code: public LoggerFactory()
+- h2: Fields
+- api3: _disposed
+  id: Alis_Core_Aspect_Logging_LoggerFactory__disposed
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L60
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory._disposed
+    commentId: F:Alis.Core.Aspect.Logging.LoggerFactory._disposed
+- markdown: The disposed
+- code: private bool _disposed
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _filters
+  id: Alis_Core_Aspect_Logging_LoggerFactory__filters
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L50
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory._filters
+    commentId: F:Alis.Core.Aspect.Logging.LoggerFactory._filters
+- markdown: The log filter
+- code: private readonly List<ILogFilter> _filters
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: ILogFilter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFilter.html
+    - '>'
+- api3: _formatter
+  id: Alis_Core_Aspect_Logging_LoggerFactory__formatter
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L65
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory._formatter
+    commentId: F:Alis.Core.Aspect.Logging.LoggerFactory._formatter
+- markdown: The formatter
+- code: private ILogFormatter _formatter
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ILogFormatter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.html
+- api3: _minimumLevel
+  id: Alis_Core_Aspect_Logging_LoggerFactory__minimumLevel
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L70
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory._minimumLevel
+    commentId: F:Alis.Core.Aspect.Logging.LoggerFactory._minimumLevel
+- markdown: The trace
+- code: private LogLevel _minimumLevel
+- h4: Field Value
+- parameters:
+  - type:
+    - text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+- api3: _outputs
+  id: Alis_Core_Aspect_Logging_LoggerFactory__outputs
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L55
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory._outputs
+    commentId: F:Alis.Core.Aspect.Logging.LoggerFactory._outputs
+- markdown: The log output
+- code: private readonly List<ILogOutput> _outputs
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: ILogOutput
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.html
+    - '>'
+- h2: Methods
+- api3: AddFilter(ILogFilter)
+  id: Alis_Core_Aspect_Logging_LoggerFactory_AddFilter_Alis_Core_Aspect_Logging_Abstractions_ILogFilter_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L134
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory.AddFilter(Alis.Core.Aspect.Logging.Abstractions.ILogFilter)
+    commentId: M:Alis.Core.Aspect.Logging.LoggerFactory.AddFilter(Alis.Core.Aspect.Logging.Abstractions.ILogFilter)
+- markdown: >-
+    Adds a log filter to this factory.
+
+    All loggers created by this factory will apply this filter.
+- code: public LoggerFactory AddFilter(ILogFilter filter)
+- h4: Parameters
+- parameters:
+  - name: filter
+    type:
+    - text: ILogFilter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFilter.html
+    description: The filter to add.
+- h4: Returns
+- parameters:
+  - type:
+    - text: LoggerFactory
+      url: Alis.Core.Aspect.Logging.LoggerFactory.html
+    description: This factory for fluent chaining.
+- api3: AddOutput(ILogOutput)
+  id: Alis_Core_Aspect_Logging_LoggerFactory_AddOutput_Alis_Core_Aspect_Logging_Abstractions_ILogOutput_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L117
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory.AddOutput(Alis.Core.Aspect.Logging.Abstractions.ILogOutput)
+    commentId: M:Alis.Core.Aspect.Logging.LoggerFactory.AddOutput(Alis.Core.Aspect.Logging.Abstractions.ILogOutput)
+- markdown: >-
+    Adds a log output to this factory.
+
+    All loggers created by this factory will write to this output.
+- code: public LoggerFactory AddOutput(ILogOutput output)
+- h4: Parameters
+- parameters:
+  - name: output
+    type:
+    - text: ILogOutput
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.html
+    description: The output to add.
+- h4: Returns
+- parameters:
+  - type:
+    - text: LoggerFactory
+      url: Alis.Core.Aspect.Logging.LoggerFactory.html
+    description: This factory for fluent chaining.
+- api3: CreateLogger(string)
+  id: Alis_Core_Aspect_Logging_LoggerFactory_CreateLogger_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L174
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory.CreateLogger(System.String)
+    commentId: M:Alis.Core.Aspect.Logging.LoggerFactory.CreateLogger(System.String)
+- markdown: >-
+    Creates a new logger instance with the given name.
+
+    The logger will use all configured outputs, filters, and formatter.
+- code: public ILogger CreateLogger(string name)
+- h4: Parameters
+- parameters:
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name for the logger (typically a class or component name).
+- h4: Returns
+- parameters:
+  - type:
+    - text: ILogger
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogger.html
+    description: A configured ILogger instance.
+- api3: Dispose()
+  id: Alis_Core_Aspect_Logging_LoggerFactory_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L83
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory.Dispose
+    commentId: M:Alis.Core.Aspect.Logging.LoggerFactory.Dispose
+- markdown: Disposes this instance
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public void Dispose()
+- api3: Flush()
+  id: Alis_Core_Aspect_Logging_LoggerFactory_Flush
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L183
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory.Flush
+    commentId: M:Alis.Core.Aspect.Logging.LoggerFactory.Flush
+- markdown: Flushes all outputs and cleans up resources.
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public void Flush()
+- api3: SetFormatter(ILogFormatter)
+  id: Alis_Core_Aspect_Logging_LoggerFactory_SetFormatter_Alis_Core_Aspect_Logging_Abstractions_ILogFormatter_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L151
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory.SetFormatter(Alis.Core.Aspect.Logging.Abstractions.ILogFormatter)
+    commentId: M:Alis.Core.Aspect.Logging.LoggerFactory.SetFormatter(Alis.Core.Aspect.Logging.Abstractions.ILogFormatter)
+- markdown: >-
+    Sets the log formatter for this factory.
+
+    All loggers created by this factory will use this formatter.
+- code: public LoggerFactory SetFormatter(ILogFormatter formatter)
+- h4: Parameters
+- parameters:
+  - name: formatter
+    type:
+    - text: ILogFormatter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.html
+    description: The formatter to use.
+- h4: Returns
+- parameters:
+  - type:
+    - text: LoggerFactory
+      url: Alis.Core.Aspect.Logging.LoggerFactory.html
+    description: This factory for fluent chaining.
+- api3: SetMinimumLevel(LogLevel)
+  id: Alis_Core_Aspect_Logging_LoggerFactory_SetMinimumLevel_Alis_Core_Aspect_Logging_Abstractions_LogLevel_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/LoggerFactory.cs#L162
+  metadata:
+    uid: Alis.Core.Aspect.Logging.LoggerFactory.SetMinimumLevel(Alis.Core.Aspect.Logging.Abstractions.LogLevel)
+    commentId: M:Alis.Core.Aspect.Logging.LoggerFactory.SetMinimumLevel(Alis.Core.Aspect.Logging.Abstractions.LogLevel)
+- markdown: Sets the minimum log level for all loggers created by this factory.
+- code: public LoggerFactory SetMinimumLevel(LogLevel level)
+- h4: Parameters
+- parameters:
+  - name: level
+    type:
+    - text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+    description: The minimum level.
+- h4: Returns
+- parameters:
+  - type:
+    - text: LoggerFactory
+      url: Alis.Core.Aspect.Logging.LoggerFactory.html
+    description: This factory for fluent chaining.
+languageId: csharp
+metadata:
+  description: >-
+    Factory for creating and configuring logger instances.
+
+    Uses a fluent builder pattern for configuration.
+
+    AOT-compatible: No reflection, no singleton pattern.
+
+    Not thread-safe for configuration, but created loggers are thread-safe.

@@ -1,0 +1,83 @@
+### YamlMime:ApiPage
+title: Struct QueryEnumerator<T1, T2, T3, T4, T5, T6>.QueryEnumerable
+body:
+- api1: Struct QueryEnumerator<T1, T2, T3, T4, T5, T6>.QueryEnumerable
+  id: Alis_Core_Ecs_Systems_QueryEnumerator_6_QueryEnumerable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryEnumerator.cs#L762
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryEnumerator`6.QueryEnumerable
+    commentId: T:Alis.Core.Ecs.Systems.QueryEnumerator`6.QueryEnumerable
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Proxy type for foreach syntax
+- code: public readonly struct QueryEnumerator<T1, T2, T3, T4, T5, T6>.QueryEnumerable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: QueryEnumerable(Query)
+  id: Alis_Core_Ecs_Systems_QueryEnumerator_6_QueryEnumerable__ctor_Alis_Core_Ecs_Systems_Query_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryEnumerator.cs#L762
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryEnumerator`6.QueryEnumerable.#ctor(Alis.Core.Ecs.Systems.Query)
+    commentId: M:Alis.Core.Ecs.Systems.QueryEnumerator`6.QueryEnumerable.#ctor(Alis.Core.Ecs.Systems.Query)
+- markdown: Proxy type for foreach syntax
+- code: public QueryEnumerable(Query query)
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: ''
+- h2: Methods
+- api3: GetEnumerator()
+  id: Alis_Core_Ecs_Systems_QueryEnumerator_6_QueryEnumerable_GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryEnumerator.cs#L768
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryEnumerator`6.QueryEnumerable.GetEnumerator
+    commentId: M:Alis.Core.Ecs.Systems.QueryEnumerator`6.QueryEnumerable.GetEnumerator
+- markdown: Gets the enumerator over a query.
+- code: public QueryEnumerator<T1, T2, T3, T4, T5, T6> GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryEnumerator
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-6.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - '>'
+languageId: csharp
+metadata:
+  description: Proxy type for foreach syntax

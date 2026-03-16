@@ -21,14 +21,14 @@ body:
   - name: TBuilder
   - name: TArgument
 - h2: Methods
-- api3: FilePath(TArgument)
-  id: Alis_Core_Aspect_Fluent_Words_IFilePath_2_FilePath__1_
+- api3: File(TArgument)
+  id: Alis_Core_Aspect_Fluent_Words_IFilePath_2_File__1_
   src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Words/IFilePath.cs#L42
   metadata:
-    uid: Alis.Core.Aspect.Fluent.Words.IFilePath`2.FilePath(`1)
-    commentId: M:Alis.Core.Aspect.Fluent.Words.IFilePath`2.FilePath(`1)
+    uid: Alis.Core.Aspect.Fluent.Words.IFilePath`2.File(`1)
+    commentId: M:Alis.Core.Aspect.Fluent.Words.IFilePath`2.File(`1)
 - markdown: Files the path using the specified value
-- code: TBuilder FilePath(TArgument value)
+- code: TBuilder File(TArgument value)
 - h4: Parameters
 - parameters:
   - name: value

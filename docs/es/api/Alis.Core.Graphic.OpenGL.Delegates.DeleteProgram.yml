@@ -1,0 +1,27 @@
+### YamlMime:ApiPage
+title: Delegate DeleteProgram
+body:
+- api1: Delegate DeleteProgram
+  id: Alis_Core_Graphic_OpenGL_Delegates_DeleteProgram
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/DeleteProgram.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.DeleteProgram
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.DeleteProgram
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The delete program
+- code: public delegate void DeleteProgram(uint program)
+- h4: Parameters
+- parameters:
+  - name: program
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+languageId: csharp
+metadata:
+  description: The delete program

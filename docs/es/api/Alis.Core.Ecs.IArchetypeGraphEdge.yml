@@ -1,0 +1,46 @@
+### YamlMime:ApiPage
+title: Interface IArchetypeGraphEdge
+body:
+- api1: Interface IArchetypeGraphEdge
+  id: Alis_Core_Ecs_IArchetypeGraphEdge
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/IArchetypeGraphEdge.cs#L38
+  metadata:
+    uid: Alis.Core.Ecs.IArchetypeGraphEdge
+    commentId: T:Alis.Core.Ecs.IArchetypeGraphEdge
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs
+      url: Alis.Core.Ecs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The archetype graph edge interface
+- code: internal interface IArchetypeGraphEdge
+- h2: Methods
+- api3: ModifyComponents(ref FastImmutableArray<ComponentId>, bool)
+  id: Alis_Core_Ecs_IArchetypeGraphEdge_ModifyComponents_Alis_Core_Aspect_Math_Collections_FastImmutableArray_Alis_Core_Ecs_Kernel_ComponentId___System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/IArchetypeGraphEdge.cs#L45
+  metadata:
+    uid: Alis.Core.Ecs.IArchetypeGraphEdge.ModifyComponents(Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Kernel.ComponentId}@,System.Boolean)
+    commentId: M:Alis.Core.Ecs.IArchetypeGraphEdge.ModifyComponents(Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Kernel.ComponentId}@,System.Boolean)
+- markdown: Modifies the components using the specified components
+- code: void ModifyComponents(ref FastImmutableArray<ComponentId> components, bool add)
+- h4: Parameters
+- parameters:
+  - name: components
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The components
+  - name: add
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The add
+languageId: csharp
+metadata:
+  description: The archetype graph edge interface

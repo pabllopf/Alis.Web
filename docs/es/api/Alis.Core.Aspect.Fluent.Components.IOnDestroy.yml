@@ -1,0 +1,34 @@
+### YamlMime:ApiPage
+title: Interface IOnDestroy
+body:
+- api1: Interface IOnDestroy
+  id: Alis_Core_Aspect_Fluent_Components_IOnDestroy
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnDestroy.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnDestroy
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnDestroy
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Marks a component to have a <xref href="Alis.Core.Aspect.Fluent.Components.IOnDestroy.OnDestroy" data-throw-if-not-resolved="false"></xref> method to be called at the end of a component lifetime.
+- code: 'public interface IOnDestroy : IComponentBase'
+- h4: Implements
+- list:
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+- h2: Methods
+- api3: OnDestroy()
+  id: Alis_Core_Aspect_Fluent_Components_IOnDestroy_OnDestroy
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnDestroy.cs#L40
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnDestroy.OnDestroy
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnDestroy.OnDestroy
+- markdown: Destroys this instance
+- code: void OnDestroy()
+languageId: csharp
+metadata:
+  description: Marks a component to have a  method to be called at the end of a component lifetime.

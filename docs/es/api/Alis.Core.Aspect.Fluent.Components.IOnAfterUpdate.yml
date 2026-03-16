@@ -1,0 +1,37 @@
+### YamlMime:ApiPage
+title: Interface IOnAfterUpdate
+body:
+- api1: Interface IOnAfterUpdate
+  id: Alis_Core_Aspect_Fluent_Components_IOnAfterUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnAfterUpdate.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnAfterUpdate
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnAfterUpdate
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The on after update interface
+- code: public interface IOnAfterUpdate
+- h2: Methods
+- api3: OnAfterUpdate(IGameObject)
+  id: Alis_Core_Aspect_Fluent_Components_IOnAfterUpdate_OnAfterUpdate_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnAfterUpdate.cs#L41
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnAfterUpdate.OnAfterUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnAfterUpdate.OnAfterUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Ons the after update using the specified self
+- code: void OnAfterUpdate(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+languageId: csharp
+metadata:
+  description: The on after update interface

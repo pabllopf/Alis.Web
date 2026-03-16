@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Data.Json.Deserialization
+body:
+- api1: Namespace Alis.Core.Aspect.Data.Json.Deserialization
+  id: Alis_Core_Aspect_Data_Json_Deserialization
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Deserialization
+    commentId: N:Alis.Core.Aspect.Data.Json.Deserialization
+- h3: Classes
+- parameters:
+  - type:
+      text: JsonDeserializer
+      url: Alis.Core.Aspect.Data.Json.Deserialization.JsonDeserializer.html
+    description: Deserializes JSON strings into objects.
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IJsonDeserializer
+      url: Alis.Core.Aspect.Data.Json.Deserialization.IJsonDeserializer.html
+    description: Defines a contract for deserializing JSON strings into objects.
+languageId: csharp

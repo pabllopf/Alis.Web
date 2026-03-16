@@ -1,0 +1,167 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Fluent.Components
+body:
+- api1: Namespace Alis.Core.Aspect.Fluent.Components
+  id: Alis_Core_Aspect_Fluent_Components
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components
+    commentId: N:Alis.Core.Aspect.Fluent.Components
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IAction<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+      url: Alis.Core.Aspect.Fluent.Components.IAction-8.html
+    description: The action interface
+  - type:
+      text: IAction<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+      url: Alis.Core.Aspect.Fluent.Components.IAction-6.html
+    description: The action interface
+  - type:
+      text: IAction<TArg1, TArg2>
+      url: Alis.Core.Aspect.Fluent.Components.IAction-2.html
+    description: The action interface
+  - type:
+      text: IAction<TArg1, TArg2, TArg3>
+      url: Alis.Core.Aspect.Fluent.Components.IAction-3.html
+    description: The action interface
+  - type:
+      text: IAction<TArg1, TArg2, TArg3, TArg4>
+      url: Alis.Core.Aspect.Fluent.Components.IAction-4.html
+    description: The action interface
+  - type:
+      text: IAction<TArg1, TArg2, TArg3, TArg4, TArg5>
+      url: Alis.Core.Aspect.Fluent.Components.IAction-5.html
+    description: The action interface
+  - type:
+      text: IAction<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+      url: Alis.Core.Aspect.Fluent.Components.IAction-7.html
+    description: The action interface
+  - type:
+      text: IAction<TArg1>
+      url: Alis.Core.Aspect.Fluent.Components.IAction-1.html
+    description: The action interface
+  - type:
+      text: IComponentBase
+      url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+    description: Base marker component for all component interfaces
+  - type:
+      text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The game object interface
+  - type:
+      text: IOnAfterDraw
+      url: Alis.Core.Aspect.Fluent.Components.IOnAfterDraw.html
+    description: The on after draw interface
+  - type:
+      text: IOnAfterFixedUpdate
+      url: Alis.Core.Aspect.Fluent.Components.IOnAfterFixedUpdate.html
+    description: The on after fixed update interface
+  - type:
+      text: IOnAfterUpdate
+      url: Alis.Core.Aspect.Fluent.Components.IOnAfterUpdate.html
+    description: The on after update interface
+  - type:
+      text: IOnAwake
+      url: Alis.Core.Aspect.Fluent.Components.IOnAwake.html
+    description: The on awake interface
+  - type:
+      text: IOnBeforeDraw
+      url: Alis.Core.Aspect.Fluent.Components.IOnBeforeDraw.html
+    description: The on before draw interface
+  - type:
+      text: IOnBeforeFixedUpdate
+      url: Alis.Core.Aspect.Fluent.Components.IOnBeforeFixedUpdate.html
+    description: The on before fixed update interface
+  - type:
+      text: IOnBeforeUpdate
+      url: Alis.Core.Aspect.Fluent.Components.IOnBeforeUpdate.html
+    description: The on before update interface
+  - type:
+      text: IOnCollisionEnter
+      url: Alis.Core.Aspect.Fluent.Components.IOnCollisionEnter.html
+    description: The on collision enter interface
+  - type:
+      text: IOnCollisionExit
+      url: Alis.Core.Aspect.Fluent.Components.IOnCollisionExit.html
+    description: The on collision exit interface
+  - type:
+      text: IOnDestroy
+      url: Alis.Core.Aspect.Fluent.Components.IOnDestroy.html
+    description: Marks a component to have a <xref href="Alis.Core.Aspect.Fluent.Components.IOnDestroy.OnDestroy" data-throw-if-not-resolved="false"></xref> method to be called at the end of a component lifetime.
+  - type:
+      text: IOnDraw
+      url: Alis.Core.Aspect.Fluent.Components.IOnDraw.html
+    description: The on draw interface
+  - type:
+      text: IOnExit
+      url: Alis.Core.Aspect.Fluent.Components.IOnExit.html
+    description: The on exit interface
+  - type:
+      text: IOnFixedUpdate
+      url: Alis.Core.Aspect.Fluent.Components.IOnFixedUpdate.html
+    description: The on fixed update interface
+  - type:
+      text: IOnHoldKey
+      url: Alis.Core.Aspect.Fluent.Components.IOnHoldKey.html
+    description: Interfaz para gestionar el evento de mantener pulsada una tecla
+  - type:
+      text: IOnInit
+      url: Alis.Core.Aspect.Fluent.Components.IOnInit.html
+    description: The initable interface
+  - type:
+      text: IOnPhysicUpdate
+      url: Alis.Core.Aspect.Fluent.Components.IOnPhysicUpdate.html
+    description: The on physic update interface
+  - type:
+      text: IOnPressKey
+      url: Alis.Core.Aspect.Fluent.Components.IOnPressKey.html
+    description: The on press key interface
+  - type:
+      text: IOnProcessPendingChanges
+      url: Alis.Core.Aspect.Fluent.Components.IOnProcessPendingChanges.html
+    description: The on process pending changes interface
+  - type:
+      text: IOnReleaseKey
+      url: Alis.Core.Aspect.Fluent.Components.IOnReleaseKey.html
+    description: Interfaz para gestionar el evento de soltar una tecla
+  - type:
+      text: IOnStart
+      url: Alis.Core.Aspect.Fluent.Components.IOnStart.html
+    description: The on start interface
+  - type:
+      text: IOnUpdate<TArg1, TArg2>
+      url: Alis.Core.Aspect.Fluent.Components.IOnUpdate-2.html
+    description: The gameObject component interface
+  - type:
+      text: IOnUpdate
+      url: Alis.Core.Aspect.Fluent.Components.IOnUpdate.html
+    description: Indicates a component should be updated with itself as an argument
+  - type:
+      text: IOnUpdate<TArg>
+      url: Alis.Core.Aspect.Fluent.Components.IOnUpdate-1.html
+    description: Indicates a component should be updated with itself as an argument and the specified components
+  - type:
+      text: IOnUpdate<TArg1, TArg2, TArg3>
+      url: Alis.Core.Aspect.Fluent.Components.IOnUpdate-3.html
+    description: The gameObject component interface
+  - type:
+      text: IOnUpdate<TArg1, TArg2, TArg3, TArg4>
+      url: Alis.Core.Aspect.Fluent.Components.IOnUpdate-4.html
+    description: The gameObject component interface
+  - type:
+      text: IOnUpdate<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>
+      url: Alis.Core.Aspect.Fluent.Components.IOnUpdate-8.html
+    description: The gameObject component interface
+  - type:
+      text: IOnUpdate<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>
+      url: Alis.Core.Aspect.Fluent.Components.IOnUpdate-6.html
+    description: The gameObject component interface
+  - type:
+      text: IOnUpdate<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>
+      url: Alis.Core.Aspect.Fluent.Components.IOnUpdate-7.html
+    description: The gameObject component interface
+  - type:
+      text: IOnUpdate<TArg1, TArg2, TArg3, TArg4, TArg5>
+      url: Alis.Core.Aspect.Fluent.Components.IOnUpdate-5.html
+    description: The gameObject component interface
+languageId: csharp

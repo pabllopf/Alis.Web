@@ -41,7 +41,7 @@ body:
 - h2: Constructors
 - api3: Point(float, float)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point__ctor_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L55
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L60
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.#ctor(System.Single,System.Single)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Point.#ctor(System.Single,System.Single)
@@ -62,7 +62,7 @@ body:
 - h2: Fields
 - api3: Next
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_Next
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L43
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L53
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.Next
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Point.Next
@@ -75,7 +75,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
 - api3: Prev
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_Prev
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L43
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L53
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.Prev
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Point.Prev
@@ -88,12 +88,12 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
 - api3: X
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_X
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L48
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L42
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.X
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Point.X
 - markdown: The
-- code: public float X
+- code: public readonly float X
 - h4: Field Value
 - parameters:
   - type:
@@ -101,12 +101,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Y
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_Y
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L48
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L47
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.Y
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Point.Y
 - markdown: The
-- code: public float Y
+- code: public readonly float Y
 - h4: Field Value
 - parameters:
   - type:
@@ -115,7 +115,7 @@ body:
 - h2: Methods
 - api3: Cross(Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_Cross_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L76
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L81
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.Cross(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Point.Cross(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -136,7 +136,7 @@ body:
     description: The float
 - api3: Dot(Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_Dot_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L83
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L88
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.Dot(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Point.Dot(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -157,7 +157,7 @@ body:
     description: The float
 - api3: Neq(Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_Neq_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L90
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L95
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.Neq(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Point.Neq(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -178,7 +178,7 @@ body:
     description: The bool
 - api3: Orient2D(Point, Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_Orient2D_Alis_Core_Physic_Common_Decomposition_Seidel_Point_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L98
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L103
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.Orient2D(Alis.Core.Physic.Common.Decomposition.Seidel.Point,Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Point.Orient2D(Alis.Core.Physic.Common.Decomposition.Seidel.Point,Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -205,7 +205,7 @@ body:
 - h2: Operators
 - api3: operator +(Point, Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_op_Addition_Alis_Core_Physic_Common_Decomposition_Seidel_Point_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L65
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L70
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.op_Addition(Alis.Core.Physic.Common.Decomposition.Seidel.Point,Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Point.op_Addition(Alis.Core.Physic.Common.Decomposition.Seidel.Point,Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -227,7 +227,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
 - api3: operator +(Point, float)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_op_Addition_Alis_Core_Physic_Common_Decomposition_Seidel_Point_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L69
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L74
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.op_Addition(Alis.Core.Physic.Common.Decomposition.Seidel.Point,System.Single)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Point.op_Addition(Alis.Core.Physic.Common.Decomposition.Seidel.Point,System.Single)
@@ -249,7 +249,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
 - api3: operator -(Point, Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_op_Subtraction_Alis_Core_Physic_Common_Decomposition_Seidel_Point_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L63
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L68
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.op_Subtraction(Alis.Core.Physic.Common.Decomposition.Seidel.Point,Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Point.op_Subtraction(Alis.Core.Physic.Common.Decomposition.Seidel.Point,Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -271,7 +271,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
 - api3: operator -(Point, float)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Point_op_Subtraction_Alis_Core_Physic_Common_Decomposition_Seidel_Point_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L67
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Point.cs#L72
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Point.op_Subtraction(Alis.Core.Physic.Common.Decomposition.Seidel.Point,System.Single)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Point.op_Subtraction(Alis.Core.Physic.Common.Decomposition.Seidel.Point,System.Single)

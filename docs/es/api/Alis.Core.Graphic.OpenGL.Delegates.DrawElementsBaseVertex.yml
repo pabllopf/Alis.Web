@@ -1,0 +1,43 @@
+### YamlMime:ApiPage
+title: Delegate DrawElementsBaseVertex
+body:
+- api1: Delegate DrawElementsBaseVertex
+  id: Alis_Core_Graphic_OpenGL_Delegates_DrawElementsBaseVertex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/DrawElementsBaseVertex.cs#L39
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.DrawElementsBaseVertex
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.DrawElementsBaseVertex
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The draw elements base vertex
+- code: public delegate void DrawElementsBaseVertex(BeginMode mode, int count, DrawElementsType type, nint indices, int basevertex)
+- h4: Parameters
+- parameters:
+  - name: mode
+    type:
+    - text: BeginMode
+      url: Alis.Core.Graphic.OpenGL.Enums.BeginMode.html
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: type
+    type:
+    - text: DrawElementsType
+      url: Alis.Core.Graphic.OpenGL.Enums.DrawElementsType.html
+  - name: indices
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: basevertex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: The draw elements base vertex

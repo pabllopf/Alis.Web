@@ -1,0 +1,95 @@
+### YamlMime:ApiPage
+title: Struct AudioSetting
+body:
+- api1: Struct AudioSetting
+  id: Alis_Core_Ecs_Systems_Configuration_Audio_AudioSetting
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Audio/AudioSetting.cs#L37
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting
+    commentId: T:Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Configuration.Audio
+      url: Alis.Core.Ecs.Systems.Configuration.Audio.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The audio setting
+- code: 'public struct AudioSetting : IAudioSetting'
+- h4: Implements
+- list:
+  - text: IAudioSetting
+    url: Alis.Core.Ecs.Systems.Configuration.Audio.IAudioSetting.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: AudioSetting(int, bool)
+  id: Alis_Core_Ecs_Systems_Configuration_Audio_AudioSetting__ctor_System_Int32_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Audio/AudioSetting.cs#L37
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting.#ctor(System.Int32,System.Boolean)
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting.#ctor(System.Int32,System.Boolean)
+- markdown: The audio setting
+- code: public AudioSetting(int volume = 100, bool mute = false)
+- h4: Parameters
+- parameters:
+  - name: volume
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    optional: true
+  - name: mute
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    optional: true
+- api3: AudioSetting()
+  id: Alis_Core_Ecs_Systems_Configuration_Audio_AudioSetting__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Audio/AudioSetting.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting.#ctor
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting" data-throw-if-not-resolved="false"></xref> class
+- code: public AudioSetting()
+- h2: Properties
+- api3: Mute
+  id: Alis_Core_Ecs_Systems_Configuration_Audio_AudioSetting_Mute
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Audio/AudioSetting.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting.Mute
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting.Mute
+- markdown: Gets or sets the value of the mute
+- code: public bool Mute { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Volume
+  id: Alis_Core_Ecs_Systems_Configuration_Audio_AudioSetting_Volume
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Audio/AudioSetting.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting.Volume
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting.Volume
+- markdown: Gets or sets the value of the volume
+- code: public int Volume { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: The audio setting

@@ -1,0 +1,52 @@
+### YamlMime:ApiPage
+title: Interface IJsonSerializer
+body:
+- api1: Interface IJsonSerializer
+  id: Alis_Core_Aspect_Data_Json_Serialization_IJsonSerializer
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Serialization/IJsonSerializer.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Serialization.IJsonSerializer
+    commentId: T:Alis.Core.Aspect.Data.Json.Serialization.IJsonSerializer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Data.Json.Serialization
+      url: Alis.Core.Aspect.Data.Json.Serialization.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Defines a contract for serializing objects that implement IJsonSerializable to JSON strings.
+- code: public interface IJsonSerializer
+- h2: Methods
+- api3: Serialize<T>(T)
+  id: Alis_Core_Aspect_Data_Json_Serialization_IJsonSerializer_Serialize__1___0_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Serialization/IJsonSerializer.cs#L44
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Serialization.IJsonSerializer.Serialize``1(``0)
+    commentId: M:Alis.Core.Aspect.Data.Json.Serialization.IJsonSerializer.Serialize``1(``0)
+- markdown: Serializes an object to a JSON string.
+- code: 'string Serialize<T>(T instance) where T : IJsonSerializable'
+- h4: Parameters
+- parameters:
+  - name: instance
+    type:
+    - T
+    description: The instance to serialize.
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: A JSON string representation of the object.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of the object to serialize, which must implement IJsonSerializable.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when instance is null.
+languageId: csharp
+metadata:
+  description: Defines a contract for serializing objects that implement IJsonSerializable to JSON strings.

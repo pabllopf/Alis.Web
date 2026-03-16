@@ -1,0 +1,35 @@
+### YamlMime:ApiPage
+title: Interface IPhysicSetting
+body:
+- api1: Interface IPhysicSetting
+  id: Alis_Core_Ecs_Systems_Configuration_Physic_IPhysicSetting
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Physic/IPhysicSetting.cs#L37
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Physic.IPhysicSetting
+    commentId: T:Alis.Core.Ecs.Systems.Configuration.Physic.IPhysicSetting
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Configuration.Physic
+      url: Alis.Core.Ecs.Systems.Configuration.Physic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The physic setting interface
+- code: public interface IPhysicSetting
+- h2: Properties
+- api3: Gravity
+  id: Alis_Core_Ecs_Systems_Configuration_Physic_IPhysicSetting_Gravity
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Physic/IPhysicSetting.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Physic.IPhysicSetting.Gravity
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Physic.IPhysicSetting.Gravity
+- markdown: Gets or sets the gravity.
+- code: Vector2F Gravity { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+languageId: csharp
+metadata:
+  description: The physic setting interface

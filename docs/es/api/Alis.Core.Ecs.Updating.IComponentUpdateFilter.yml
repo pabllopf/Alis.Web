@@ -1,0 +1,41 @@
+### YamlMime:ApiPage
+title: Interface IComponentUpdateFilter
+body:
+- api1: Interface IComponentUpdateFilter
+  id: Alis_Core_Ecs_Updating_IComponentUpdateFilter
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/IComponentUpdateFilter.cs#L37
+  metadata:
+    uid: Alis.Core.Ecs.Updating.IComponentUpdateFilter
+    commentId: T:Alis.Core.Ecs.Updating.IComponentUpdateFilter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Updating
+      url: Alis.Core.Ecs.Updating.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The component update filter interface
+- code: public interface IComponentUpdateFilter
+- h2: Methods
+- api3: UpdateSubset(ReadOnlySpan<ArchetypeDeferredUpdateRecord>)
+  id: Alis_Core_Ecs_Updating_IComponentUpdateFilter_UpdateSubset_System_ReadOnlySpan_Alis_Core_Ecs_Updating_ArchetypeDeferredUpdateRecord__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/IComponentUpdateFilter.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Updating.IComponentUpdateFilter.UpdateSubset(System.ReadOnlySpan{Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord})
+    commentId: M:Alis.Core.Ecs.Updating.IComponentUpdateFilter.UpdateSubset(System.ReadOnlySpan{Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord})
+- markdown: Updates the subset using the specified archetypes
+- code: void UpdateSubset(ReadOnlySpan<ArchetypeDeferredUpdateRecord> archetypes)
+- h4: Parameters
+- parameters:
+  - name: archetypes
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - text: ArchetypeDeferredUpdateRecord
+      url: Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.html
+    - '>'
+    description: The archetypes
+languageId: csharp
+metadata:
+  description: The component update filter interface

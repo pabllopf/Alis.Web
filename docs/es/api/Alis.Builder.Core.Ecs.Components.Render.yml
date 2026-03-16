@@ -1,0 +1,31 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Builder.Core.Ecs.Components.Render
+body:
+- api1: Namespace Alis.Builder.Core.Ecs.Components.Render
+  id: Alis_Builder_Core_Ecs_Components_Render
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Render
+    commentId: N:Alis.Builder.Core.Ecs.Components.Render
+- h3: Classes
+- parameters:
+  - type:
+      text: AnimationBuilder
+      url: Alis.Builder.Core.Ecs.Components.Render.AnimationBuilder.html
+    description: The animation builder class
+  - type:
+      text: AnimatorBuilder
+      url: Alis.Builder.Core.Ecs.Components.Render.AnimatorBuilder.html
+    description: The animator builder class
+  - type:
+      text: CameraBuilder
+      url: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.html
+    description: The camera builder class
+  - type:
+      text: FrameBuilder
+      url: Alis.Builder.Core.Ecs.Components.Render.FrameBuilder.html
+    description: The frame builder class
+  - type:
+      text: SpriteBuilder
+      url: Alis.Builder.Core.Ecs.Components.Render.SpriteBuilder.html
+    description: The sprite builder class
+languageId: csharp

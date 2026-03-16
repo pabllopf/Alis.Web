@@ -1,0 +1,640 @@
+### YamlMime:ApiPage
+title: Class BoxCollider
+body:
+- api1: Class BoxCollider
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider
+    commentId: T:Alis.Core.Ecs.Components.Collider.BoxCollider
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Components.Collider
+      url: Alis.Core.Ecs.Components.Collider.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The box collider class
+- code: 'public class BoxCollider : IBoxCollider, IOnStart, IOnUpdate, IComponentBase, IHasContext<Context>, IOnExit'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: BoxCollider
+    url: Alis.Core.Ecs.Components.Collider.BoxCollider.html
+- h4: Implements
+- list:
+  - text: IBoxCollider
+    url: Alis.Core.Ecs.Components.Collider.IBoxCollider.html
+  - text: IOnStart
+    url: Alis.Core.Aspect.Fluent.Components.IOnStart.html
+  - text: IOnUpdate
+    url: Alis.Core.Aspect.Fluent.Components.IOnUpdate.html
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+  - text: IHasContext<Context>
+    url: Alis.Core.Aspect.Fluent.Words.IHasContext-1.html
+  - text: IOnExit
+    url: Alis.Core.Aspect.Fluent.Components.IOnExit.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: BoxCollider()
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L81
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.#ctor
+    commentId: M:Alis.Core.Ecs.Components.Collider.BoxCollider.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Components.Collider.BoxCollider" data-throw-if-not-resolved="false"></xref> class
+- code: public BoxCollider()
+- api3: BoxCollider(bool, float, float, float, Vector2F, bool, BodyType, float, float, bool, float, bool, Vector2F, float)
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider__ctor_System_Boolean_System_Single_System_Single_System_Single_Alis_Core_Aspect_Math_Vector_Vector2F_System_Boolean_Alis_Core_Physic_Dynamics_BodyType_System_Single_System_Single_System_Boolean_System_Single_System_Boolean_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L115
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.#ctor(System.Boolean,System.Single,System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F,System.Boolean,Alis.Core.Physic.Dynamics.BodyType,System.Single,System.Single,System.Boolean,System.Single,System.Boolean,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Ecs.Components.Collider.BoxCollider.#ctor(System.Boolean,System.Single,System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F,System.Boolean,Alis.Core.Physic.Dynamics.BodyType,System.Single,System.Single,System.Boolean,System.Single,System.Boolean,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Components.Collider.BoxCollider" data-throw-if-not-resolved="false"></xref> class
+- code: public BoxCollider(bool isTrigger, float width, float height, float rotation, Vector2F relativePosition, bool autoTilling, BodyType bodyType, float restitution, float friction, bool fixedRotation, float mass, bool ignoreGravity, Vector2F linearVelocity, float angularVelocity)
+- h4: Parameters
+- parameters:
+  - name: isTrigger
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The is trigger
+  - name: width
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The width
+  - name: height
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The height
+  - name: rotation
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The rotation
+  - name: relativePosition
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The relative position
+  - name: autoTilling
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The auto tilling
+  - name: bodyType
+    type:
+    - text: BodyType
+      url: Alis.Core.Physic.Dynamics.BodyType.html
+    description: The body type
+  - name: restitution
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The restitution
+  - name: friction
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The friction
+  - name: fixedRotation
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The fixed rotation
+  - name: mass
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The mass
+  - name: ignoreGravity
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The ignore gravity
+  - name: linearVelocity
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The linear velocity
+  - name: angularVelocity
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The angular velocity
+- h2: Fields
+- api3: Vertices
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_Vertices
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.Vertices
+    commentId: F:Alis.Core.Ecs.Components.Collider.BoxCollider.Vertices
+- markdown: The vertices
+- code: private static readonly float[] Vertices
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    - '['
+    - ']'
+- api3: shaderProgram
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_shaderProgram
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L66
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.shaderProgram
+    commentId: F:Alis.Core.Ecs.Components.Collider.BoxCollider.shaderProgram
+- markdown: The shader program
+- code: private uint shaderProgram
+- h4: Field Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: vao
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_vao
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L71
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.vao
+    commentId: F:Alis.Core.Ecs.Components.Collider.BoxCollider.vao
+- markdown: The vao
+- code: private uint vao
+- h4: Field Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: vbo
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_vbo
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L76
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.vbo
+    commentId: F:Alis.Core.Ecs.Components.Collider.BoxCollider.vbo
+- markdown: The vbo
+- code: private uint vbo
+- h4: Field Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- h2: Properties
+- api3: AngularVelocity
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_AngularVelocity
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L235
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.AngularVelocity
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.AngularVelocity
+- markdown: Gets or sets the value of the angular velocity
+- code: public float AngularVelocity { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: AutoTilling
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_AutoTilling
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L187
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.AutoTilling
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.AutoTilling
+- markdown: Gets or sets the value of the auto tilling
+- code: public bool AutoTilling { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Body
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_Body
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L181
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.Body
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.Body
+- markdown: Gets or sets the value of the body
+- code: public Body Body { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+- api3: BodyType
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_BodyType
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L193
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.BodyType
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.BodyType
+- markdown: Gets or sets the value of the body type
+- code: public BodyType BodyType { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: BodyType
+      url: Alis.Core.Physic.Dynamics.BodyType.html
+- api3: Context
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_Context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L319
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.Context
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.Context
+- markdown: Gets or sets the value of the context
+- code: public Context Context { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- api3: FixedRotation
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_FixedRotation
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L211
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.FixedRotation
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.FixedRotation
+- markdown: Gets or sets the value of the fixed rotation
+- code: public bool FixedRotation { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Friction
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_Friction
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L205
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.Friction
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.Friction
+- markdown: Gets or sets the value of the friction
+- code: public float Friction { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Height
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_Height
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L163
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.Height
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.Height
+- markdown: Gets or sets the value of the height
+- code: public float Height { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: IgnoreGravity
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_IgnoreGravity
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L223
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.IgnoreGravity
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.IgnoreGravity
+- markdown: Gets or sets the value of the gravity scale
+- code: public bool IgnoreGravity { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: IsInit
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_IsInit
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L240
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.IsInit
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.IsInit
+- markdown: Gets or sets the value of the is init
+- code: private bool IsInit { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: IsTrigger
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_IsTrigger
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L151
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.IsTrigger
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.IsTrigger
+- markdown: Gets or sets the value of the is trigger
+- code: public bool IsTrigger { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: LinearVelocity
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_LinearVelocity
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L229
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.LinearVelocity
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.LinearVelocity
+- markdown: Gets or sets the value of the linear velocity
+- code: public Vector2F LinearVelocity { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Mass
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_Mass
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L217
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.Mass
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.Mass
+- markdown: Gets or sets the value of the mass
+- code: public float Mass { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: RelativePosition
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_RelativePosition
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L175
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.RelativePosition
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.RelativePosition
+- markdown: Gets or sets the value of the relative position
+- code: public Vector2F RelativePosition { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Restitution
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_Restitution
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L199
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.Restitution
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.Restitution
+- markdown: Gets or sets the value of the restitution
+- code: public float Restitution { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Rotation
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_Rotation
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L169
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.Rotation
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.Rotation
+- markdown: Gets or sets the value of the rotation
+- code: public float Rotation { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: ShaderProgram
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_ShaderProgram
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L246
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.ShaderProgram
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.ShaderProgram
+- markdown: Gets or sets the value of the shader program
+- code: public uint ShaderProgram { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: SizeOfTexture
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_SizeOfTexture
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L252
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.SizeOfTexture
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.SizeOfTexture
+- markdown: Gets or sets the value of the size
+- code: public Vector2F SizeOfTexture { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: ThisGameObject
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_ThisGameObject
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L258
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.ThisGameObject
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.ThisGameObject
+- markdown: Gets or sets the value of the this game object
+- code: private IGameObject ThisGameObject { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+- api3: Width
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_Width
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L157
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.Width
+    commentId: P:Alis.Core.Ecs.Components.Collider.BoxCollider.Width
+- markdown: Gets or sets the value of the width
+- code: public float Width { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Methods
+- api3: InitializeShaders()
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_InitializeShaders
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L417
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.InitializeShaders
+    commentId: M:Alis.Core.Ecs.Components.Collider.BoxCollider.InitializeShaders
+- markdown: Initializes the shaders
+- code: private void InitializeShaders()
+- api3: OnCollision(Fixture, Fixture, Contact)
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_OnCollision_Alis_Core_Physic_Dynamics_Fixture_Alis_Core_Physic_Dynamics_Fixture_Alis_Core_Physic_Dynamics_Contacts_Contact_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L342
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.OnCollision(Alis.Core.Physic.Dynamics.Fixture,Alis.Core.Physic.Dynamics.Fixture,Alis.Core.Physic.Dynamics.Contacts.Contact)
+    commentId: M:Alis.Core.Ecs.Components.Collider.BoxCollider.OnCollision(Alis.Core.Physic.Dynamics.Fixture,Alis.Core.Physic.Dynamics.Fixture,Alis.Core.Physic.Dynamics.Contacts.Contact)
+- markdown: Describes whether this instance on collision
+- code: private bool OnCollision(Fixture fixtureA, Fixture fixtureB, Contact contact)
+- h4: Parameters
+- parameters:
+  - name: fixtureA
+    type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+  - name: fixtureB
+    type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+  - name: contact
+    type:
+    - text: Contact
+      url: Alis.Core.Physic.Dynamics.Contacts.Contact.html
+    description: The contact
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: OnExit(IGameObject)
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_OnExit_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L325
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.OnExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Collider.BoxCollider.OnExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Ons the exit using the specified self
+- code: public void OnExit(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: OnSeparation(Fixture, Fixture, Contact)
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_OnSeparation_Alis_Core_Physic_Dynamics_Fixture_Alis_Core_Physic_Dynamics_Fixture_Alis_Core_Physic_Dynamics_Contacts_Contact_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L381
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.OnSeparation(Alis.Core.Physic.Dynamics.Fixture,Alis.Core.Physic.Dynamics.Fixture,Alis.Core.Physic.Dynamics.Contacts.Contact)
+    commentId: M:Alis.Core.Ecs.Components.Collider.BoxCollider.OnSeparation(Alis.Core.Physic.Dynamics.Fixture,Alis.Core.Physic.Dynamics.Fixture,Alis.Core.Physic.Dynamics.Contacts.Contact)
+- markdown: Ons the separation using the specified fixture a
+- code: private void OnSeparation(Fixture fixtureA, Fixture fixtureB, Contact contact)
+- h4: Parameters
+- parameters:
+  - name: fixtureA
+    type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+  - name: fixtureB
+    type:
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    description: The fixture
+  - name: contact
+    type:
+    - text: Contact
+      url: Alis.Core.Physic.Dynamics.Contacts.Contact.html
+    description: The contact
+- api3: OnStart(IGameObject)
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_OnStart_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L283
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.OnStart(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Collider.BoxCollider.OnStart(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Inits the self
+- code: public void OnStart(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: OnUpdate(IGameObject)
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_OnUpdate_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L265
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.OnUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Collider.BoxCollider.OnUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Updates the self
+- code: public void OnUpdate(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: Render(GameObject, Vector2F, Vector2F, float)
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_Render_Alis_Core_Ecs_GameObject_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L496
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.Render(Alis.Core.Ecs.GameObject,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Ecs.Components.Collider.BoxCollider.Render(Alis.Core.Ecs.GameObject,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Renders the gameobject
+- code: public void Render(GameObject gameobject, Vector2F cameraPosition, Vector2F cameraResolution, float pixelsPerMeter)
+- h4: Parameters
+- parameters:
+  - name: gameobject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameobject
+  - name: cameraPosition
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The camera position
+  - name: cameraResolution
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The camera resolution
+  - name: pixelsPerMeter
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The pixels per meter
+- api3: RenderBoxCollider(GameObject, Vector2F, Vector2F, float)
+  id: Alis_Core_Ecs_Components_Collider_BoxCollider_RenderBoxCollider_Alis_Core_Ecs_GameObject_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/BoxCollider.cs#L514
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.BoxCollider.RenderBoxCollider(Alis.Core.Ecs.GameObject,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Ecs.Components.Collider.BoxCollider.RenderBoxCollider(Alis.Core.Ecs.GameObject,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Renders the box collider using the specified gameobject
+- code: private void RenderBoxCollider(GameObject gameobject, Vector2F cameraPosition, Vector2F cameraResolution, float pixelsPerMeter)
+- h4: Parameters
+- parameters:
+  - name: gameobject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameobject
+  - name: cameraPosition
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The camera position
+  - name: cameraResolution
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The camera resolution
+  - name: pixelsPerMeter
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The pixels per meter
+- h2: See Also
+- list:
+  - - text: IBoxCollider
+      url: Alis.Core.Ecs.Components.Collider.IBoxCollider.html
+  - - text: IOnInit
+      url: Alis.Core.Aspect.Fluent.Components.IOnInit.html
+  - - text: IOnUpdate
+      url: Alis.Core.Aspect.Fluent.Components.IOnUpdate.html
+languageId: csharp
+metadata:
+  description: The box collider class

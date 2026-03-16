@@ -1,0 +1,115 @@
+### YamlMime:ApiPage
+title: Struct ArchetypeDeferredUpdateRecord
+body:
+- api1: Struct ArchetypeDeferredUpdateRecord
+  id: Alis_Core_Ecs_Updating_ArchetypeDeferredUpdateRecord
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ArchetypeDeferredUpdateRecord.cs#L45
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord
+    commentId: T:Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Updating
+      url: Alis.Core.Ecs.Updating.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Archetype deferred update record
+- code: 'public record struct ArchetypeDeferredUpdateRecord : IEquatable<ArchetypeDeferredUpdateRecord>'
+- h4: Implements
+- list:
+  - text: IEquatable<ArchetypeDeferredUpdateRecord>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 20 bytes total (two Archetype references 16 bytes + int 4 bytes)
+
+    Pack = 8 for optimal alignment with reference types
+- h2: Constructors
+- api3: ArchetypeDeferredUpdateRecord(Archetype, Archetype, int)
+  id: Alis_Core_Ecs_Updating_ArchetypeDeferredUpdateRecord__ctor_Alis_Core_Ecs_Kernel_Archetypes_Archetype_Alis_Core_Ecs_Kernel_Archetypes_Archetype_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ArchetypeDeferredUpdateRecord.cs#L45
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.#ctor(Alis.Core.Ecs.Kernel.Archetypes.Archetype,Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.#ctor(Alis.Core.Ecs.Kernel.Archetypes.Archetype,Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32)
+- markdown: Archetype deferred update record
+- code: public ArchetypeDeferredUpdateRecord(Archetype Archetype, Archetype TemporaryBuffers, int InitEntityCount)
+- h4: Parameters
+- parameters:
+  - name: Archetype
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+  - name: TemporaryBuffers
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The temporary buffers
+  - name: InitEntityCount
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The initial entity count
+- h4: Remarks
+- markdown: >-
+    Memory layout optimized: 20 bytes total (two Archetype references 16 bytes + int 4 bytes)
+
+    Pack = 8 for optimal alignment with reference types
+- h2: Properties
+- api3: Archetype
+  id: Alis_Core_Ecs_Updating_ArchetypeDeferredUpdateRecord_Archetype
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ArchetypeDeferredUpdateRecord.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.Archetype
+    commentId: P:Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.Archetype
+- markdown: The archetype
+- code: public Archetype Archetype { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+- api3: InitEntityCount
+  id: Alis_Core_Ecs_Updating_ArchetypeDeferredUpdateRecord_InitEntityCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ArchetypeDeferredUpdateRecord.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.InitEntityCount
+    commentId: P:Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.InitEntityCount
+- markdown: The initial entity count
+- code: public int InitEntityCount { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: TemporaryBuffers
+  id: Alis_Core_Ecs_Updating_ArchetypeDeferredUpdateRecord_TemporaryBuffers
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ArchetypeDeferredUpdateRecord.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.TemporaryBuffers
+    commentId: P:Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.TemporaryBuffers
+- markdown: The temporary buffers
+- code: public Archetype TemporaryBuffers { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+languageId: csharp
+metadata:
+  description: Archetype deferred update record

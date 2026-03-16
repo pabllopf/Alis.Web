@@ -1,0 +1,48 @@
+### YamlMime:ApiPage
+title: Enum StringName
+body:
+- api1: Enum StringName
+  id: Alis_Core_Graphic_OpenGL_Enums_StringName
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/StringName.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.StringName
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.StringName
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The string name enum
+- code: public enum StringName
+- h2: Fields
+- parameters:
+  - name: Vendor
+    default: "7936"
+    description: >+
+      The vendor string name
+
+  - name: Renderer
+    default: "7937"
+    description: >+
+      The renderer string name
+
+  - name: Version
+    default: "7938"
+    description: >+
+      The version string name
+
+  - name: Extensions
+    default: "7939"
+    description: >+
+      The extensions string name
+
+  - name: ShadingLanguageVersion
+    default: "35724"
+    description: >+
+      The shading language version string name
+
+languageId: csharp
+metadata:
+  description: The string name enum

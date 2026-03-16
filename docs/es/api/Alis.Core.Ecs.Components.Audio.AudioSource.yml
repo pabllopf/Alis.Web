@@ -1,0 +1,291 @@
+### YamlMime:ApiPage
+title: Struct AudioSource
+body:
+- api1: Struct AudioSource
+  id: Alis_Core_Ecs_Components_Audio_AudioSource
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L41
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource
+    commentId: T:Alis.Core.Ecs.Components.Audio.AudioSource
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Components.Audio
+      url: Alis.Core.Ecs.Components.Audio.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The audio clip
+- code: 'public struct AudioSource : IAudioSource, IOnStart, IOnUpdate, IComponentBase, IHasContext<Context>, IOnExit'
+- h4: Implements
+- list:
+  - text: IAudioSource
+    url: Alis.Core.Ecs.Components.Audio.IAudioSource.html
+  - text: IOnStart
+    url: Alis.Core.Aspect.Fluent.Components.IOnStart.html
+  - text: IOnUpdate
+    url: Alis.Core.Aspect.Fluent.Components.IOnUpdate.html
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+  - text: IHasContext<Context>
+    url: Alis.Core.Aspect.Fluent.Words.IHasContext-1.html
+  - text: IOnExit
+    url: Alis.Core.Aspect.Fluent.Components.IOnExit.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: AudioSource(Context, string, float, bool, bool, bool)
+  id: Alis_Core_Ecs_Components_Audio_AudioSource__ctor_Alis_Core_Ecs_Systems_Scope_Context_System_String_System_Single_System_Boolean_System_Boolean_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L41
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.#ctor(Alis.Core.Ecs.Systems.Scope.Context,System.String,System.Single,System.Boolean,System.Boolean,System.Boolean)
+    commentId: M:Alis.Core.Ecs.Components.Audio.AudioSource.#ctor(Alis.Core.Ecs.Systems.Scope.Context,System.String,System.Single,System.Boolean,System.Boolean,System.Boolean)
+- markdown: The audio clip
+- code: public AudioSource(Context context, string nameFile = "", float volume = 100, bool isMute = false, bool playOnAwake = false, bool loop = false)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+  - name: nameFile
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    optional: true
+  - name: volume
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    optional: true
+  - name: isMute
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    optional: true
+  - name: playOnAwake
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    optional: true
+  - name: loop
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    optional: true
+- h2: Fields
+- api3: loop
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_loop
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.loop
+    commentId: F:Alis.Core.Ecs.Components.Audio.AudioSource.loop
+- markdown: The loop
+- code: private readonly bool loop
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: player
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_player
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.player
+    commentId: F:Alis.Core.Ecs.Components.Audio.AudioSource.player
+- markdown: The player
+- code: private readonly Player player
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Player
+      url: Alis.Core.Audio.Player.html
+- h2: Properties
+- api3: Context
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_Context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L156
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.Context
+    commentId: P:Alis.Core.Ecs.Components.Audio.AudioSource.Context
+- markdown: Gets or sets the value of the context
+- code: public Context Context { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- api3: FullPathAudioFile
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_FullPathAudioFile
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L88
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.FullPathAudioFile
+    commentId: P:Alis.Core.Ecs.Components.Audio.AudioSource.FullPathAudioFile
+- markdown: Gets or sets the value of the full path audio file
+- code: private string FullPathAudioFile { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: IsLooping
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_IsLooping
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L73
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.IsLooping
+    commentId: P:Alis.Core.Ecs.Components.Audio.AudioSource.IsLooping
+- markdown: Gets or sets the value of the is looping
+- code: public bool IsLooping { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: IsMute
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_IsMute
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L68
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.IsMute
+    commentId: P:Alis.Core.Ecs.Components.Audio.AudioSource.IsMute
+- markdown: Gets or sets the value of the is mute
+- code: public bool IsMute { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: IsPlaying
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_IsPlaying
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L58
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.IsPlaying
+    commentId: P:Alis.Core.Ecs.Components.Audio.AudioSource.IsPlaying
+- markdown: Gets or sets the value of the is playing
+- code: public bool IsPlaying { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: NameFile
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_NameFile
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L83
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.NameFile
+    commentId: P:Alis.Core.Ecs.Components.Audio.AudioSource.NameFile
+- markdown: Gets or sets the value of the name file
+- code: public string NameFile { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: PlayOnAwake
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_PlayOnAwake
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L63
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.PlayOnAwake
+    commentId: P:Alis.Core.Ecs.Components.Audio.AudioSource.PlayOnAwake
+- markdown: Gets or sets the value of the play on awake
+- code: public bool PlayOnAwake { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Volume
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_Volume
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L78
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.Volume
+    commentId: P:Alis.Core.Ecs.Components.Audio.AudioSource.Volume
+- markdown: Gets or sets the value of the volume
+- code: public float Volume { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Methods
+- api3: OnExit(IGameObject)
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_OnExit_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L162
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.OnExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Audio.AudioSource.OnExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Ons the exit using the specified self
+- code: public void OnExit(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: OnStart(IGameObject)
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_OnStart_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L144
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.OnStart(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Audio.AudioSource.OnStart(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Inits the self
+- code: public void OnStart(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: OnUpdate(IGameObject)
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_OnUpdate_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L136
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.OnUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Audio.AudioSource.OnUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Updates the self
+- code: public void OnUpdate(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: Play()
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_Play
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L93
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.Play
+    commentId: M:Alis.Core.Ecs.Components.Audio.AudioSource.Play
+- markdown: Plays this instance
+- code: public void Play()
+- api3: Resume()
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_Resume
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L124
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.Resume
+    commentId: M:Alis.Core.Ecs.Components.Audio.AudioSource.Resume
+- markdown: Resumes this instance
+- code: public void Resume()
+- api3: Stop()
+  id: Alis_Core_Ecs_Components_Audio_AudioSource_Stop
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/AudioSource.cs#L113
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.AudioSource.Stop
+    commentId: M:Alis.Core.Ecs.Components.Audio.AudioSource.Stop
+- markdown: Stops this instance
+- code: public void Stop()
+languageId: csharp
+metadata:
+  description: The audio clip

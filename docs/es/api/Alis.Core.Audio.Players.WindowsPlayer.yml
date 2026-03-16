@@ -3,7 +3,7 @@ title: Class WindowsPlayer
 body:
 - api1: Class WindowsPlayer
   id: Alis_Core_Audio_Players_WindowsPlayer
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L44
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L47
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer
     commentId: T:Alis.Core.Audio.Players.WindowsPlayer
@@ -15,7 +15,7 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The windows player class
-- code: 'internal class WindowsPlayer : IPlayer'
+- code: 'internal class WindowsPlayer : IPlayer, IDisposable'
 - h4: Inheritance
 - inheritance:
   - text: object
@@ -26,6 +26,8 @@ body:
 - list:
   - text: IPlayer
     url: Alis.Core.Audio.Interfaces.IPlayer.html
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
 - h4: Inherited Members
 - list:
   - text: object.Equals(object?)
@@ -45,7 +47,7 @@ body:
 - h2: Fields
 - api3: _fileName
   id: Alis_Core_Audio_Players_WindowsPlayer__fileName
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L49
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L52
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer._fileName
     commentId: F:Alis.Core.Audio.Players.WindowsPlayer._fileName
@@ -58,20 +60,20 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.string
 - api3: _playStopwatch
   id: Alis_Core_Audio_Players_WindowsPlayer__playStopwatch
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L59
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L62
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer._playStopwatch
     commentId: F:Alis.Core.Audio.Players.WindowsPlayer._playStopwatch
 - markdown: The play stopwatch
-- code: private Stopwatch _playStopwatch
+- code: private Clock _playStopwatch
 - h4: Field Value
 - parameters:
   - type:
-    - text: Stopwatch
-      url: https://learn.microsoft.com/dotnet/api/system.diagnostics.stopwatch
+    - text: Clock
+      url: Alis.Core.Aspect.Time.Clock.html
 - api3: _playbackTimer
   id: Alis_Core_Audio_Players_WindowsPlayer__playbackTimer
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L54
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L57
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer._playbackTimer
     commentId: F:Alis.Core.Audio.Players.WindowsPlayer._playbackTimer
@@ -85,7 +87,7 @@ body:
 - h2: Properties
 - api3: Paused
   id: Alis_Core_Audio_Players_WindowsPlayer_Paused
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L71
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L83
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.Paused
     commentId: P:Alis.Core.Audio.Players.WindowsPlayer.Paused
@@ -98,7 +100,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: Playing
   id: Alis_Core_Audio_Players_WindowsPlayer_Playing
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L66
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L78
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.Playing
     commentId: P:Alis.Core.Audio.Players.WindowsPlayer.Playing
@@ -110,9 +112,17 @@ body:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - h2: Methods
+- api3: Dispose()
+  id: Alis_Core_Audio_Players_WindowsPlayer_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L67
+  metadata:
+    uid: Alis.Core.Audio.Players.WindowsPlayer.Dispose
+    commentId: M:Alis.Core.Audio.Players.WindowsPlayer.Dispose
+- markdown: Disposes this instance
+- code: public void Dispose()
 - api3: ExecuteMsiCommand(string)
   id: Alis_Core_Audio_Players_WindowsPlayer_ExecuteMsiCommand_System_String_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L213
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L285
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.ExecuteMsiCommand(System.String)
     commentId: M:Alis.Core.Audio.Players.WindowsPlayer.ExecuteMsiCommand(System.String)
@@ -136,9 +146,44 @@ body:
     - text: Exception
       url: https://learn.microsoft.com/dotnet/api/system.exception
     description: ''
+- api3: ExtractWavFromResourcesAsync(string)
+  id: Alis_Core_Audio_Players_WindowsPlayer_ExtractWavFromResourcesAsync_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L234
+  metadata:
+    uid: Alis.Core.Audio.Players.WindowsPlayer.ExtractWavFromResourcesAsync(System.String)
+    commentId: M:Alis.Core.Audio.Players.WindowsPlayer.ExtractWavFromResourcesAsync(System.String)
+- markdown: Extracts the wav from resources using the specified wav file name
+- code: private static string ExtractWavFromResourcesAsync(string wavFileName)
+- h4: Parameters
+- parameters:
+  - name: wavFileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The wav file name
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: A task containing the string
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: No entry assembly found.
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Resource '{wavFileName}' not found in 'assets.pack'.
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Resource file 'assets.pack' not found in embedded resources.
 - api3: HandlePlaybackFinished(object, ElapsedEventArgs)
   id: Alis_Core_Audio_Players_WindowsPlayer_HandlePlaybackFinished_System_Object_System_Timers_ElapsedEventArgs_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L200
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L272
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.HandlePlaybackFinished(System.Object,System.Timers.ElapsedEventArgs)
     commentId: M:Alis.Core.Audio.Players.WindowsPlayer.HandlePlaybackFinished(System.Object,System.Timers.ElapsedEventArgs)
@@ -158,7 +203,7 @@ body:
     description: The
 - api3: Pause()
   id: Alis_Core_Audio_Players_WindowsPlayer_Pause
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L100
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L162
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.Pause
     commentId: M:Alis.Core.Audio.Players.WindowsPlayer.Pause
@@ -171,7 +216,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
 - api3: Play(string)
   id: Alis_Core_Audio_Players_WindowsPlayer_Play_System_String_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L77
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L89
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.Play(System.String)
     commentId: M:Alis.Core.Audio.Players.WindowsPlayer.Play(System.String)
@@ -189,9 +234,40 @@ body:
   - type:
     - text: Task
       url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: PlayLoop(string, bool)
+  id: Alis_Core_Audio_Players_WindowsPlayer_PlayLoop_System_String_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L128
+  metadata:
+    uid: Alis.Core.Audio.Players.WindowsPlayer.PlayLoop(System.String,System.Boolean)
+    commentId: M:Alis.Core.Audio.Players.WindowsPlayer.PlayLoop(System.String,System.Boolean)
+- markdown: Plays the loop using the specified file name
+- code: public Task PlayLoop(string fileName, bool loop)
+- h4: Parameters
+- parameters:
+  - name: fileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The file name
+  - name: loop
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The loop
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: File '{fileName}' not found.
 - api3: Resume()
   id: Alis_Core_Audio_Players_WindowsPlayer_Resume
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L117
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L179
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.Resume
     commentId: M:Alis.Core.Audio.Players.WindowsPlayer.Resume
@@ -204,7 +280,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
 - api3: SetVolume(byte)
   id: Alis_Core_Audio_Players_WindowsPlayer_SetVolume_System_Byte_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L152
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L214
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.SetVolume(System.Byte)
     commentId: M:Alis.Core.Audio.Players.WindowsPlayer.SetVolume(System.Byte)
@@ -224,7 +300,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
 - api3: Stop()
   id: Alis_Core_Audio_Players_WindowsPlayer_Stop
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L134
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L196
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.Stop
     commentId: M:Alis.Core.Audio.Players.WindowsPlayer.Stop
@@ -241,7 +317,10 @@ body:
     uid: Alis.Core.Audio.Players.WindowsPlayer.mciGetErrorString(System.Int32,System.Text.StringBuilder,System.Int32)
     commentId: M:Alis.Core.Audio.Players.WindowsPlayer.mciGetErrorString(System.Int32,System.Text.StringBuilder,System.Int32)
 - markdown: Mcis the get error string using the specified error code
-- code: private static extern int mciGetErrorString(int errorCode, StringBuilder errorText, int errorTextSize)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    private static extern int mciGetErrorString(int errorCode, StringBuilder errorText, int errorTextSize)
 - h4: Parameters
 - parameters:
   - name: errorCode
@@ -265,13 +344,16 @@ body:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
     description: The int
-- api3: mciSendString(string, StringBuilder, int, IntPtr)
+- api3: mciSendString(string, StringBuilder, int, nint)
   id: Alis_Core_Audio_Players_WindowsPlayer_mciSendString_System_String_System_Text_StringBuilder_System_Int32_System_IntPtr_
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.mciSendString(System.String,System.Text.StringBuilder,System.Int32,System.IntPtr)
     commentId: M:Alis.Core.Audio.Players.WindowsPlayer.mciSendString(System.String,System.Text.StringBuilder,System.Int32,System.IntPtr)
 - markdown: Mcis the send string using the specified command
-- code: private static extern int mciSendString(string command, StringBuilder stringReturn, int returnLength, IntPtr hwndCallback)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    private static extern int mciSendString(string command, StringBuilder stringReturn, int returnLength, nint hwndCallback)
 - h4: Parameters
 - parameters:
   - name: command
@@ -291,7 +373,7 @@ body:
     description: The return length
   - name: hwndCallback
     type:
-    - text: IntPtr
+    - text: nint
       url: https://learn.microsoft.com/dotnet/api/system.intptr
     description: The hwnd callback
 - h4: Returns
@@ -300,18 +382,21 @@ body:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
     description: The int
-- api3: waveOutSetVolume(IntPtr, uint)
+- api3: waveOutSetVolume(nint, uint)
   id: Alis_Core_Audio_Players_WindowsPlayer_waveOutSetVolume_System_IntPtr_System_UInt32_
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.waveOutSetVolume(System.IntPtr,System.UInt32)
     commentId: M:Alis.Core.Audio.Players.WindowsPlayer.waveOutSetVolume(System.IntPtr,System.UInt32)
 - markdown: Waves the out set volume using the specified hwo
-- code: public static extern int waveOutSetVolume(IntPtr hwo, uint dwVolume)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern int waveOutSetVolume(nint hwo, uint dwVolume)
 - h4: Parameters
 - parameters:
   - name: hwo
     type:
-    - text: IntPtr
+    - text: nint
       url: https://learn.microsoft.com/dotnet/api/system.intptr
     description: The hwo
   - name: dwVolume
@@ -327,7 +412,7 @@ body:
     description: The int
 - api3: PlaybackFinished
   id: Alis_Core_Audio_Players_WindowsPlayer_PlaybackFinished
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L61
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/WindowsPlayer.cs#L73
   metadata:
     uid: Alis.Core.Audio.Players.WindowsPlayer.PlaybackFinished
     commentId: E:Alis.Core.Audio.Players.WindowsPlayer.PlaybackFinished

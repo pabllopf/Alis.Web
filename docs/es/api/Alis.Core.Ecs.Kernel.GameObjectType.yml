@@ -1,0 +1,247 @@
+### YamlMime:ApiPage
+title: Struct GameObjectType
+body:
+- api1: Struct GameObjectType
+  id: Alis_Core_Ecs_Kernel_GameObjectType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectType.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectType
+    commentId: T:Alis.Core.Ecs.Kernel.GameObjectType
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Represents an gameObject's type, or set of component and tag types that make it up
+- code: 'public struct GameObjectType : IEquatable<GameObjectType>'
+- h4: Implements
+- list:
+  - text: IEquatable<GameObjectType>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 2 bytes total (single ushort)
+
+    Pack = 1 for minimal memory footprint
+- h2: Constructors
+- api3: GameObjectType(ushort)
+  id: Alis_Core_Ecs_Kernel_GameObjectType__ctor_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectType.cs#L54
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectType.#ctor(System.UInt16)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectType.#ctor(System.UInt16)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref> class
+- code: internal GameObjectType(ushort id)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The id
+- h2: Fields
+- api3: RawIndex
+  id: Alis_Core_Ecs_Kernel_GameObjectType_RawIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectType.cs#L59
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectType.RawIndex
+    commentId: F:Alis.Core.Ecs.Kernel.GameObjectType.RawIndex
+- markdown: The raw index
+- code: internal ushort RawIndex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- h2: Properties
+- api3: Types
+  id: Alis_Core_Ecs_Kernel_GameObjectType_Types
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectType.cs#L64
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectType.Types
+    commentId: P:Alis.Core.Ecs.Kernel.GameObjectType.Types
+- markdown: The component types
+- code: public readonly FastImmutableArray<ComponentId> Types { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- h2: Methods
+- api3: Archetype(Scene)
+  id: Alis_Core_Ecs_Kernel_GameObjectType_Archetype_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectType.cs#L118
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectType.Archetype(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectType.Archetype(Alis.Core.Ecs.Scene)
+- markdown: Archetypes the context
+- code: internal readonly ref Archetype Archetype(Scene context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The context
+- h4: Returns
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The ref archetype archetype
+- api3: Equals(GameObjectType)
+  id: Alis_Core_Ecs_Kernel_GameObjectType_Equals_Alis_Core_Ecs_Kernel_GameObjectType_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectType.cs#L82
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectType.Equals(Alis.Core.Ecs.Kernel.GameObjectType)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectType.Equals(Alis.Core.Ecs.Kernel.GameObjectType)
+- markdown: Checks if this <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref> represents the same ID as <code class="paramref">other</code>
+- code: public readonly bool Equals(GameObjectType other)
+- h4: Parameters
+- parameters:
+  - name: other
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The EntityType to compare against
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if they represent the same ID, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise
+- api3: Equals(object)
+  id: Alis_Core_Ecs_Kernel_GameObjectType_Equals_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectType.cs#L89
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectType.Equals(System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectType.Equals(System.Object)
+- markdown: Checks if this <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref> represents the same ID as <code class="paramref">obj</code>
+- code: public override readonly bool Equals(object obj)
+- h4: Parameters
+- parameters:
+  - name: obj
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object to compare against
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if they represent the same ID, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise
+- api3: GetHashCode()
+  id: Alis_Core_Ecs_Kernel_GameObjectType_GetHashCode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectType.cs#L95
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectType.GetHashCode
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectType.GetHashCode
+- markdown: Gets the hash code for this <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref>
+- code: public override readonly int GetHashCode()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: An integer hash code representing this <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref>
+- api3: HasComponent(ComponentId)
+  id: Alis_Core_Ecs_Kernel_GameObjectType_HasComponent_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectType.cs#L75
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectType.HasComponent(Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectType.HasComponent(Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Checks if this <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref> has a component represented by a <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref>
+- code: public readonly bool HasComponent(ComponentId componentId)
+- h4: Parameters
+- parameters:
+  - name: componentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The ID of the component type to check if this <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref> has
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this GameObject type has a component of the specified component ID,
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise
+- h2: Operators
+- api3: operator ==(GameObjectType, GameObjectType)
+  id: Alis_Core_Ecs_Kernel_GameObjectType_op_Equality_Alis_Core_Ecs_Kernel_GameObjectType_Alis_Core_Ecs_Kernel_GameObjectType_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectType.cs#L103
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectType.op_Equality(Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Kernel.GameObjectType)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectType.op_Equality(Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Kernel.GameObjectType)
+- markdown: Checks if two <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref> instances represent the same ID
+- code: public static bool operator ==(GameObjectType left, GameObjectType right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The first EntityType
+  - name: right
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The second EntityType
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if they represent the same ID, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise
+- api3: operator !=(GameObjectType, GameObjectType)
+  id: Alis_Core_Ecs_Kernel_GameObjectType_op_Inequality_Alis_Core_Ecs_Kernel_GameObjectType_Alis_Core_Ecs_Kernel_GameObjectType_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectType.cs#L111
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectType.op_Inequality(Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Kernel.GameObjectType)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectType.op_Inequality(Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Kernel.GameObjectType)
+- markdown: Checks if two <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref> instances represent different IDs
+- code: public static bool operator !=(GameObjectType left, GameObjectType right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The first EntityType
+  - name: right
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The second EntityType
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if they represent different IDs, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise
+languageId: csharp
+metadata:
+  description: Represents an gameObject's type, or set of component and tag types that make it up

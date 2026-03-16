@@ -1,0 +1,235 @@
+### YamlMime:ApiPage
+title: Class Context
+body:
+- api1: Class Context
+  id: Alis_Core_Ecs_Systems_Scope_Context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context
+    commentId: T:Alis.Core.Ecs.Systems.Scope.Context
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Scope
+      url: Alis.Core.Ecs.Systems.Scope.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The context class
+- code: 'public class Context : IContext'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Context
+    url: Alis.Core.Ecs.Systems.Scope.Context.html
+- h4: Implements
+- list:
+  - text: IContext
+    url: Alis.Core.Ecs.Systems.Scope.IContext.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Context()
+  id: Alis_Core_Ecs_Systems_Scope_Context__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L52
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.#ctor
+    commentId: M:Alis.Core.Ecs.Systems.Scope.Context.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Scope.Context" data-throw-if-not-resolved="false"></xref> class
+- code: public Context()
+- api3: Context(Setting)
+  id: Alis_Core_Ecs_Systems_Scope_Context__ctor_Alis_Core_Ecs_Systems_Configuration_Setting_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L71
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.#ctor(Alis.Core.Ecs.Systems.Configuration.Setting)
+    commentId: M:Alis.Core.Ecs.Systems.Scope.Context.#ctor(Alis.Core.Ecs.Systems.Configuration.Setting)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Scope.Context" data-throw-if-not-resolved="false"></xref> class
+- code: public Context(Setting setting)
+- h4: Parameters
+- parameters:
+  - name: setting
+    type:
+    - text: Setting
+      url: Alis.Core.Ecs.Systems.Configuration.Setting.html
+    description: The settings
+- api3: Context(Setting, SceneManager)
+  id: Alis_Core_Ecs_Systems_Scope_Context__ctor_Alis_Core_Ecs_Systems_Configuration_Setting_Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L91
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.#ctor(Alis.Core.Ecs.Systems.Configuration.Setting,Alis.Core.Ecs.Systems.Manager.Scene.SceneManager)
+    commentId: M:Alis.Core.Ecs.Systems.Scope.Context.#ctor(Alis.Core.Ecs.Systems.Configuration.Setting,Alis.Core.Ecs.Systems.Manager.Scene.SceneManager)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Scope.Context" data-throw-if-not-resolved="false"></xref> class
+- code: public Context(Setting setting, SceneManager sceneManager)
+- h4: Parameters
+- parameters:
+  - name: setting
+    type:
+    - text: Setting
+      url: Alis.Core.Ecs.Systems.Configuration.Setting.html
+    description: The settings
+  - name: sceneManager
+    type:
+    - text: SceneManager
+      url: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.html
+    description: The scene manager
+- h2: Properties
+- api3: AudioManager
+  id: Alis_Core_Ecs_Systems_Scope_Context_AudioManager
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L121
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.AudioManager
+    commentId: P:Alis.Core.Ecs.Systems.Scope.Context.AudioManager
+- markdown: Gets the value of the audio manager
+- code: public AudioManager AudioManager { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: AudioManager
+      url: Alis.Core.Ecs.Systems.Manager.Audio.AudioManager.html
+- api3: GraphicManager
+  id: Alis_Core_Ecs_Systems_Scope_Context_GraphicManager
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L127
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.GraphicManager
+    commentId: P:Alis.Core.Ecs.Systems.Scope.Context.GraphicManager
+- markdown: Gets the value of the graphic manager
+- code: public GraphicManager GraphicManager { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GraphicManager
+      url: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.html
+- api3: InputManager
+  id: Alis_Core_Ecs_Systems_Scope_Context_InputManager
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L133
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.InputManager
+    commentId: P:Alis.Core.Ecs.Systems.Scope.Context.InputManager
+- markdown: Gets the value of the input manager
+- code: public InputManager InputManager { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: InputManager
+      url: Alis.Core.Ecs.Systems.Manager.Input.InputManager.html
+- api3: InternalRuntime
+  id: Alis_Core_Ecs_Systems_Scope_Context_InternalRuntime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L110
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.InternalRuntime
+    commentId: P:Alis.Core.Ecs.Systems.Scope.Context.InternalRuntime
+- markdown: The runtime
+- code: public InternalRuntime<AManager> InternalRuntime { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: InternalRuntime
+      url: Alis.Core.Ecs.Systems.Execution.InternalRuntime-1.html
+    - <
+    - text: AManager
+      url: Alis.Core.Ecs.Systems.Manager.AManager.html
+    - '>'
+- api3: IsRunning
+  id: Alis_Core_Ecs_Systems_Scope_Context_IsRunning
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L115
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.IsRunning
+    commentId: P:Alis.Core.Ecs.Systems.Scope.Context.IsRunning
+- markdown: Gets or sets the value of the is running
+- code: public bool IsRunning { get; internal set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: NetworkManager
+  id: Alis_Core_Ecs_Systems_Scope_Context_NetworkManager
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L139
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.NetworkManager
+    commentId: P:Alis.Core.Ecs.Systems.Scope.Context.NetworkManager
+- markdown: Gets the value of the network manager
+- code: public NetworkManager NetworkManager { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: NetworkManager
+      url: Alis.Core.Ecs.Systems.Manager.Network.NetworkManager.html
+- api3: PhysicManager
+  id: Alis_Core_Ecs_Systems_Scope_Context_PhysicManager
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L145
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.PhysicManager
+    commentId: P:Alis.Core.Ecs.Systems.Scope.Context.PhysicManager
+- markdown: Gets the value of the physic manager
+- code: public PhysicManager PhysicManager { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: PhysicManager
+      url: Alis.Core.Ecs.Systems.Manager.Physic.PhysicManager.html
+- api3: SceneManager
+  id: Alis_Core_Ecs_Systems_Scope_Context_SceneManager
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L163
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.SceneManager
+    commentId: P:Alis.Core.Ecs.Systems.Scope.Context.SceneManager
+- markdown: Gets the value of the scene manager
+- code: public SceneManager SceneManager { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: SceneManager
+      url: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.html
+- api3: Setting
+  id: Alis_Core_Ecs_Systems_Scope_Context_Setting
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L157
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.Setting
+    commentId: P:Alis.Core.Ecs.Systems.Scope.Context.Setting
+- markdown: The settings
+- code: public Setting Setting { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Setting
+      url: Alis.Core.Ecs.Systems.Configuration.Setting.html
+- api3: TimeManager
+  id: Alis_Core_Ecs_Systems_Scope_Context_TimeManager
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L151
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.TimeManager
+    commentId: P:Alis.Core.Ecs.Systems.Scope.Context.TimeManager
+- markdown: Gets the value of the time manager
+- code: public TimeManager TimeManager { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: TimeManager
+      url: Alis.Core.Ecs.Systems.Manager.Time.TimeManager.html
+- h2: Methods
+- api3: Exit()
+  id: Alis_Core_Ecs_Systems_Scope_Context_Exit
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/Context.cs#L168
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.Context.Exit
+    commentId: M:Alis.Core.Ecs.Systems.Scope.Context.Exit
+- markdown: Exits this instance
+- code: public void Exit()
+languageId: csharp
+metadata:
+  description: The context class

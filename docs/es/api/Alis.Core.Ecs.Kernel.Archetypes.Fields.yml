@@ -1,0 +1,89 @@
+### YamlMime:ApiPage
+title: Struct Fields
+body:
+- api1: Struct Fields
+  id: Alis_Core_Ecs_Kernel_Archetypes_Fields
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Fields.cs#L14
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Fields
+    commentId: T:Alis.Core.Ecs.Kernel.Archetypes.Fields
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Archetypes
+      url: Alis.Core.Ecs.Kernel.Archetypes.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The fields
+- code: public struct Fields
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 16 bytes total (two array references, 8 bytes each)
+
+    Pack = 8 for optimal alignment with reference types on 64-bit architectures
+- h2: Fields
+- api3: Components
+  id: Alis_Core_Ecs_Kernel_Archetypes_Fields_Components
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Fields.cs#L25
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Fields.Components
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.Fields.Components
+- markdown: The components
+- code: internal ComponentStorageBase[] Components
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ComponentStorageBase
+      url: Alis.Core.Ecs.Updating.ComponentStorageBase.html
+    - '['
+    - ']'
+- api3: Map
+  id: Alis_Core_Ecs_Kernel_Archetypes_Fields_Map
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Fields.cs#L20
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Fields.Map
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.Fields.Map
+- markdown: The map
+- code: internal byte[] Map
+- h4: Field Value
+- parameters:
+  - type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+- h2: Methods
+- api3: GetComponentDataReference<T>()
+  id: Alis_Core_Ecs_Kernel_Archetypes_Fields_GetComponentDataReference__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Fields.cs#L32
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Fields.GetComponentDataReference``1
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.Fields.GetComponentDataReference``1
+- markdown: Gets the component data reference
+- code: internal ref T GetComponentDataReference<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The ref
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+languageId: csharp
+metadata:
+  description: The fields

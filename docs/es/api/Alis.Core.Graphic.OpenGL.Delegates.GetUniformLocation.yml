@@ -1,0 +1,36 @@
+### YamlMime:ApiPage
+title: Delegate GetUniformLocation
+body:
+- api1: Delegate GetUniformLocation
+  id: Alis_Core_Graphic_OpenGL_Delegates_GetUniformLocation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/GetUniformLocation.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.GetUniformLocation
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.GetUniformLocation
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The get uniform location
+- code: public delegate int GetUniformLocation(uint program, string name)
+- h4: Parameters
+- parameters:
+  - name: program
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: The get uniform location

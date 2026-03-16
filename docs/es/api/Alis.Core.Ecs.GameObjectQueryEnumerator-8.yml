@@ -1,0 +1,331 @@
+### YamlMime:ApiPage
+title: Struct GameObjectQueryEnumerator<T1, T2, T3, T4, T5, T6, T7, T8>
+body:
+- api1: Struct GameObjectQueryEnumerator<T1, T2, T3, T4, T5, T6, T7, T8>
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L878
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8
+    commentId: T:Alis.Core.Ecs.GameObjectQueryEnumerator`8
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs
+      url: Alis.Core.Ecs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gameObject query enumerator
+- code: public ref struct GameObjectQueryEnumerator<T1, T2, T3, T4, T5, T6, T7, T8>
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+  - name: T8
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: Scene reference (8 bytes) + ten Spans (160 bytes) + two ints (8 bytes)
+
+    Total: 176 bytes
+
+    Pack = 4 for optimal alignment
+- h2: Constructors
+- api3: GameObjectQueryEnumerator(Query)
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__ctor_Alis_Core_Ecs_Systems_Query_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L950
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8.#ctor(Alis.Core.Ecs.Systems.Query)
+    commentId: M:Alis.Core.Ecs.GameObjectQueryEnumerator`8.#ctor(Alis.Core.Ecs.Systems.Query)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.GameObjectQueryEnumerator" data-throw-if-not-resolved="false"></xref> class
+- code: public GameObjectQueryEnumerator(Query query)
+- h4: Parameters
+- parameters:
+  - name: query
+    type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query
+- h2: Fields
+- api3: _archetypeIndex
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__archetypeIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L884
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._archetypeIndex
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._archetypeIndex
+- markdown: The archetype index
+- code: private int _archetypeIndex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _archetypes
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__archetypes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L899
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._archetypes
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._archetypes
+- markdown: The archetypes
+- code: private readonly Span<Archetype> _archetypes
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    - '>'
+- api3: _componentIndex
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__componentIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L889
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._componentIndex
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._componentIndex
+- markdown: The component index
+- code: private int _componentIndex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _currentSpan1
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__currentSpan1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L909
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan1
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan1
+- markdown: The current span
+- code: private Span<T1> _currentSpan1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T1
+    - '>'
+- api3: _currentSpan2
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__currentSpan2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L914
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan2
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan2
+- markdown: The current span
+- code: private Span<T2> _currentSpan2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T2
+    - '>'
+- api3: _currentSpan3
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__currentSpan3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L919
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan3
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan3
+- markdown: The current span
+- code: private Span<T3> _currentSpan3
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T3
+    - '>'
+- api3: _currentSpan4
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__currentSpan4
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L924
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan4
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan4
+- markdown: The current span
+- code: private Span<T4> _currentSpan4
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T4
+    - '>'
+- api3: _currentSpan5
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__currentSpan5
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L929
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan5
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan5
+- markdown: The current span
+- code: private Span<T5> _currentSpan5
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T5
+    - '>'
+- api3: _currentSpan6
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__currentSpan6
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L934
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan6
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan6
+- markdown: The current span
+- code: private Span<T6> _currentSpan6
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T6
+    - '>'
+- api3: _currentSpan7
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__currentSpan7
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L939
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan7
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan7
+- markdown: The current span
+- code: private Span<T7> _currentSpan7
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T7
+    - '>'
+- api3: _currentSpan8
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__currentSpan8
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L944
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan8
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._currentSpan8
+- markdown: The current span
+- code: private Span<T8> _currentSpan8
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T8
+    - '>'
+- api3: _entityIds
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__entityIds
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L904
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._entityIds
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._entityIds
+- markdown: The gameObject ids
+- code: private Span<GameObjectIdOnly> _entityIds
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    - '>'
+- api3: _scene
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8__scene
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L894
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8._scene
+    commentId: F:Alis.Core.Ecs.GameObjectQueryEnumerator`8._scene
+- markdown: The scene
+- code: private readonly Scene _scene
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h2: Properties
+- api3: Current
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8_Current
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L961
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8.Current
+    commentId: P:Alis.Core.Ecs.GameObjectQueryEnumerator`8.Current
+- markdown: The current tuple of component references and the <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instance.
+- code: public GameObjectRefTuple<T1, T2, T3, T4, T5, T6, T7, T8> Current { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GameObjectRefTuple
+      url: Alis.Core.Ecs.GameObjectRefTuple-8.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - ','
+    - " "
+    - T7
+    - ','
+    - " "
+    - T8
+    - '>'
+- h2: Methods
+- api3: Dispose()
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L978
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8.Dispose
+    commentId: M:Alis.Core.Ecs.GameObjectQueryEnumerator`8.Dispose
+- markdown: Indicates to the scene that this enumeration is finished; the scene might allow structual changes after this.
+- code: public void Dispose()
+- api3: MoveNext()
+  id: Alis_Core_Ecs_GameObjectQueryEnumerator_8_MoveNext
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectQueryEnumerator.cs#L987
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectQueryEnumerator`8.MoveNext
+    commentId: M:Alis.Core.Ecs.GameObjectQueryEnumerator`8.MoveNext
+- markdown: Moves to the next gameObject and its components in this enumeration.
+- code: public bool MoveNext()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when its possible to enumerate further, otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+languageId: csharp
+metadata:
+  description: The gameObject query enumerator

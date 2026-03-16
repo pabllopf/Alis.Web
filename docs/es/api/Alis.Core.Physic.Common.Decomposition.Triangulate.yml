@@ -3,7 +3,7 @@ title: Class Triangulate
 body:
 - api1: Class Triangulate
   id: Alis_Core_Physic_Common_Decomposition_Triangulate
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Triangulate.cs#L40
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Triangulate.cs#L39
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Triangulate
     commentId: T:Alis.Core.Physic.Common.Decomposition.Triangulate
@@ -41,7 +41,7 @@ body:
 - h2: Methods
 - api3: ConvexPartition(Vertices, TriangulationAlgorithm, bool, float, bool)
   id: Alis_Core_Physic_Common_Decomposition_Triangulate_ConvexPartition_Alis_Core_Physic_Common_Vertices_Alis_Core_Physic_Common_Decomposition_TriangulationAlgorithm_System_Boolean_System_Single_System_Boolean_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Triangulate.cs#L47
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Triangulate.cs#L50
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Triangulate.ConvexPartition(Alis.Core.Physic.Common.Vertices,Alis.Core.Physic.Common.Decomposition.TriangulationAlgorithm,System.Boolean,System.Single,System.Boolean)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Triangulate.ConvexPartition(Alis.Core.Physic.Common.Vertices,Alis.Core.Physic.Common.Decomposition.TriangulationAlgorithm,System.Boolean,System.Single,System.Boolean)
@@ -52,30 +52,29 @@ body:
     type:
     - text: Vertices
       url: Alis.Core.Physic.Common.Vertices.html
+    description: ''
   - name: algorithm
     type:
     - text: TriangulationAlgorithm
       url: Alis.Core.Physic.Common.Decomposition.TriangulationAlgorithm.html
+    description: ''
   - name: discardAndFixInvalid
     type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
     optional: true
   - name: tolerance
     type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
+    description: ''
     optional: true
   - name: skipSanityChecks
     type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: >-
-      Set this to true to skip sanity checks in the engine. This will speed up the
-
-      tools by removing the overhead of the checks, but you will need to handle checks
-
-      yourself where it is needed.
+    description: ''
     optional: true
 - h4: Returns
 - parameters:
@@ -86,9 +85,16 @@ body:
     - text: Vertices
       url: Alis.Core.Physic.Common.Vertices.html
     - '>'
+    description: ''
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: ''
 - api3: ValidatePolygon(Vertices)
   id: Alis_Core_Physic_Common_Decomposition_Triangulate_ValidatePolygon_Alis_Core_Physic_Common_Vertices_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Triangulate.cs#L124
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Triangulate.cs#L134
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Triangulate.ValidatePolygon(Alis.Core.Physic.Common.Vertices)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Triangulate.ValidatePolygon(Alis.Core.Physic.Common.Vertices)

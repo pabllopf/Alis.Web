@@ -1,0 +1,94 @@
+### YamlMime:ApiPage
+title: Interface IContextHandler<T>
+body:
+- api1: Interface IContextHandler<T>
+  id: Alis_Core_Ecs_Systems_Scope_IContextHandler_1
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/IContextHandler.cs#L35
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.IContextHandler`1
+    commentId: T:Alis.Core.Ecs.Systems.Scope.IContextHandler`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Scope
+      url: Alis.Core.Ecs.Systems.Scope.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The runner interface
+- code: public interface IContextHandler<T>
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h2: Properties
+- api3: Context
+  id: Alis_Core_Ecs_Systems_Scope_IContextHandler_1_Context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/IContextHandler.cs#L40
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Context
+    commentId: P:Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Context
+- markdown: Gets the value of the context
+- code: T Context { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - T
+- h2: Methods
+- api3: Exit()
+  id: Alis_Core_Ecs_Systems_Scope_IContextHandler_1_Exit
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/IContextHandler.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Exit
+    commentId: M:Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Exit
+- markdown: Exits this instance
+- code: void Exit()
+- api3: InitPreview()
+  id: Alis_Core_Ecs_Systems_Scope_IContextHandler_1_InitPreview
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/IContextHandler.cs#L70
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.IContextHandler`1.InitPreview
+    commentId: M:Alis.Core.Ecs.Systems.Scope.IContextHandler`1.InitPreview
+- markdown: Inits the preview
+- code: void InitPreview()
+- api3: Load()
+  id: Alis_Core_Ecs_Systems_Scope_IContextHandler_1_Load
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/IContextHandler.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Load
+    commentId: M:Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Load
+- markdown: Loads this instance
+- code: void Load()
+- api3: LoadAndRun()
+  id: Alis_Core_Ecs_Systems_Scope_IContextHandler_1_LoadAndRun
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/IContextHandler.cs#L65
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.IContextHandler`1.LoadAndRun
+    commentId: M:Alis.Core.Ecs.Systems.Scope.IContextHandler`1.LoadAndRun
+- markdown: Loads the and run
+- code: void LoadAndRun()
+- api3: Preview()
+  id: Alis_Core_Ecs_Systems_Scope_IContextHandler_1_Preview
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/IContextHandler.cs#L75
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Preview
+    commentId: M:Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Preview
+- markdown: Previews this instance
+- code: void Preview()
+- api3: Run()
+  id: Alis_Core_Ecs_Systems_Scope_IContextHandler_1_Run
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/IContextHandler.cs#L45
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Run
+    commentId: M:Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Run
+- markdown: Runs this instance
+- code: void Run()
+- api3: Save()
+  id: Alis_Core_Ecs_Systems_Scope_IContextHandler_1_Save
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/IContextHandler.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Save
+    commentId: M:Alis.Core.Ecs.Systems.Scope.IContextHandler`1.Save
+- markdown: Saves this instance
+- code: void Save()
+languageId: csharp
+metadata:
+  description: The runner interface

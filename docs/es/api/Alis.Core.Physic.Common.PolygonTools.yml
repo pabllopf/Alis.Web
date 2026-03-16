@@ -3,7 +3,7 @@ title: Class PolygonTools
 body:
 - api1: Class PolygonTools
   id: Alis_Core_Physic_Common_PolygonTools
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L40
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L39
   metadata:
     uid: Alis.Core.Physic.Common.PolygonTools
     commentId: T:Alis.Core.Physic.Common.PolygonTools
@@ -41,7 +41,7 @@ body:
 - h2: Methods
 - api3: CreateArc(float, int, float)
   id: Alis_Core_Physic_Common_PolygonTools_CreateArc_System_Single_System_Int32_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L198
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L202
   metadata:
     uid: Alis.Core.Physic.Common.PolygonTools.CreateArc(System.Single,System.Int32,System.Single)
     commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateArc(System.Single,System.Int32,System.Single)
@@ -106,7 +106,7 @@ body:
     description: ''
 - api3: CreateCapsule(float, float, int, float, int)
   id: Alis_Core_Physic_Common_PolygonTools_CreateCapsule_System_Single_System_Single_System_Int32_System_Single_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L246
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L248
   metadata:
     uid: Alis.Core.Physic.Common.PolygonTools.CreateCapsule(System.Single,System.Single,System.Int32,System.Single,System.Int32)
     commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateCapsule(System.Single,System.Single,System.Int32,System.Single,System.Int32)
@@ -150,7 +150,7 @@ body:
     description: ''
 - api3: CreateCircle(float, int)
   id: Alis_Core_Physic_Common_PolygonTools_CreateCircle_System_Single_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L168
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L170
   metadata:
     uid: Alis.Core.Physic.Common.PolygonTools.CreateCircle(System.Single,System.Int32)
     commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateCircle(System.Single,System.Int32)
@@ -176,7 +176,7 @@ body:
     description: ''
 - api3: CreateEllipse(float, float, int)
   id: Alis_Core_Physic_Common_PolygonTools_CreateEllipse_System_Single_System_Single_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L177
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L179
   metadata:
     uid: Alis.Core.Physic.Common.PolygonTools.CreateEllipse(System.Single,System.Single,System.Int32)
     commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateEllipse(System.Single,System.Single,System.Int32)
@@ -207,7 +207,7 @@ body:
     description: ''
 - api3: CreateGear(float, int, float, float)
   id: Alis_Core_Physic_Common_PolygonTools_CreateGear_System_Single_System_Int32_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L313
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L329
   metadata:
     uid: Alis.Core.Physic.Common.PolygonTools.CreateGear(System.Single,System.Int32,System.Single,System.Single)
     commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateGear(System.Single,System.Int32,System.Single,System.Single)
@@ -241,25 +241,25 @@ body:
     - text: Vertices
       url: Alis.Core.Physic.Common.Vertices.html
     description: ''
-- api3: CreateLine(Vector2, Vector2)
-  id: Alis_Core_Physic_Common_PolygonTools_CreateLine_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L153
+- api3: CreateLine(Vector2F, Vector2F)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateLine_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L155
   metadata:
-    uid: Alis.Core.Physic.Common.PolygonTools.CreateLine(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateLine(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateLine(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateLine(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Set this as a single edge.
-- code: public static Vertices CreateLine(Vector2 start, Vector2 end)
+- code: public static Vertices CreateLine(Vector2F start, Vector2F end)
 - h4: Parameters
 - parameters:
   - name: start
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The first point.
   - name: end
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The second point.
 - h4: Returns
 - parameters:
@@ -268,7 +268,7 @@ body:
       url: Alis.Core.Physic.Common.Vertices.html
 - api3: CreateRectangle(float, float)
   id: Alis_Core_Physic_Common_PolygonTools_CreateRectangle_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L47
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L46
   metadata:
     uid: Alis.Core.Physic.Common.PolygonTools.CreateRectangle(System.Single,System.Single)
     commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateRectangle(System.Single,System.Single)
@@ -291,14 +291,14 @@ body:
   - type:
     - text: Vertices
       url: Alis.Core.Physic.Common.Vertices.html
-- api3: CreateRectangle(float, float, Vector2, float)
-  id: Alis_Core_Physic_Common_PolygonTools_CreateRectangle_System_Single_System_Single_Alis_Core_Aspect_Math_Vector_Vector2_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L65
+- api3: CreateRectangle(float, float, Vector2F, float)
+  id: Alis_Core_Physic_Common_PolygonTools_CreateRectangle_System_Single_System_Single_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L64
   metadata:
-    uid: Alis.Core.Physic.Common.PolygonTools.CreateRectangle(System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
-    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateRectangle(System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2,System.Single)
+    uid: Alis.Core.Physic.Common.PolygonTools.CreateRectangle(System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateRectangle(System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
 - markdown: Build vertices to represent an oriented box.
-- code: public static Vertices CreateRectangle(float hx, float hy, Vector2 center, float angle)
+- code: public static Vertices CreateRectangle(float hx, float hy, Vector2F center, float angle)
 - h4: Parameters
 - parameters:
   - name: hx
@@ -313,8 +313,8 @@ body:
     description: the half-height.
   - name: center
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: the center of the box in local coordinates.
   - name: angle
     type:
@@ -328,7 +328,7 @@ body:
       url: Alis.Core.Physic.Common.Vertices.html
 - api3: CreateRoundedRectangle(float, float, float, float, int)
   id: Alis_Core_Physic_Common_PolygonTools_CreateRoundedRectangle_System_Single_System_Single_System_Single_System_Single_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L91
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonTools.cs#L90
   metadata:
     uid: Alis.Core.Physic.Common.PolygonTools.CreateRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Int32)
     commentId: M:Alis.Core.Physic.Common.PolygonTools.CreateRoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Int32)

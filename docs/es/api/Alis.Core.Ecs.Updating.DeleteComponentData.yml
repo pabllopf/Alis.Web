@@ -1,0 +1,97 @@
+### YamlMime:ApiPage
+title: Struct DeleteComponentData
+body:
+- api1: Struct DeleteComponentData
+  id: Alis_Core_Ecs_Updating_DeleteComponentData
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/DeleteComponentData.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Updating.DeleteComponentData
+    commentId: T:Alis.Core.Ecs.Updating.DeleteComponentData
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Updating
+      url: Alis.Core.Ecs.Updating.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Delete component data
+- code: 'public record struct DeleteComponentData : IEquatable<DeleteComponentData>'
+- h4: Implements
+- list:
+  - text: IEquatable<DeleteComponentData>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 8 bytes total (two ints, 4 bytes each)
+
+    Pack = 1 for minimal memory footprint, naturally aligned
+- h2: Constructors
+- api3: DeleteComponentData(int, int)
+  id: Alis_Core_Ecs_Updating_DeleteComponentData__ctor_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/DeleteComponentData.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Updating.DeleteComponentData.#ctor(System.Int32,System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.DeleteComponentData.#ctor(System.Int32,System.Int32)
+- markdown: Delete component data
+- code: public DeleteComponentData(int ToIndex, int FromIndex)
+- h4: Parameters
+- parameters:
+  - name: ToIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The destination index
+  - name: FromIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The source index
+- h4: Remarks
+- markdown: >-
+    Memory layout optimized: 8 bytes total (two ints, 4 bytes each)
+
+    Pack = 1 for minimal memory footprint, naturally aligned
+- h2: Properties
+- api3: FromIndex
+  id: Alis_Core_Ecs_Updating_DeleteComponentData_FromIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/DeleteComponentData.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Updating.DeleteComponentData.FromIndex
+    commentId: P:Alis.Core.Ecs.Updating.DeleteComponentData.FromIndex
+- markdown: The source index
+- code: public int FromIndex { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: ToIndex
+  id: Alis_Core_Ecs_Updating_DeleteComponentData_ToIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/DeleteComponentData.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Updating.DeleteComponentData.ToIndex
+    commentId: P:Alis.Core.Ecs.Updating.DeleteComponentData.ToIndex
+- markdown: The destination index
+- code: public int ToIndex { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: Delete component data

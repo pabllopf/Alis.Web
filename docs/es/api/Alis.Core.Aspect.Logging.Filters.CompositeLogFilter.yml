@@ -1,0 +1,148 @@
+### YamlMime:ApiPage
+title: Class CompositeLogFilter
+body:
+- api1: Class CompositeLogFilter
+  id: Alis_Core_Aspect_Logging_Filters_CompositeLogFilter
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/CompositeLogFilter.cs#L40
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.CompositeLogFilter
+    commentId: T:Alis.Core.Aspect.Logging.Filters.CompositeLogFilter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Filters
+      url: Alis.Core.Aspect.Logging.Filters.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Combines multiple filters with AND/OR logic.
+
+    Useful for complex filtering scenarios.
+
+    AOT-compatible: Uses interface composition.
+- code: 'public sealed class CompositeLogFilter : ILogFilter'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: CompositeLogFilter
+    url: Alis.Core.Aspect.Logging.Filters.CompositeLogFilter.html
+- h4: Implements
+- list:
+  - text: ILogFilter
+    url: Alis.Core.Aspect.Logging.Abstractions.ILogFilter.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: CompositeLogFilter(IEnumerable<ILogFilter>, bool)
+  id: Alis_Core_Aspect_Logging_Filters_CompositeLogFilter__ctor_System_Collections_Generic_IEnumerable_Alis_Core_Aspect_Logging_Abstractions_ILogFilter__System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/CompositeLogFilter.cs#L57
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.CompositeLogFilter.#ctor(System.Collections.Generic.IEnumerable{Alis.Core.Aspect.Logging.Abstractions.ILogFilter},System.Boolean)
+    commentId: M:Alis.Core.Aspect.Logging.Filters.CompositeLogFilter.#ctor(System.Collections.Generic.IEnumerable{Alis.Core.Aspect.Logging.Abstractions.ILogFilter},System.Boolean)
+- markdown: Initializes a new instance of the CompositeLogFilter class.
+- code: public CompositeLogFilter(IEnumerable<ILogFilter> filters, bool requireAll = true)
+- h4: Parameters
+- parameters:
+  - name: filters
+    type:
+    - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - text: ILogFilter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFilter.html
+    - '>'
+    description: The filters to combine.
+  - name: requireAll
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: If true, all filters must pass (AND). If false, any filter passing is sufficient (OR).
+    optional: true
+- h2: Fields
+- api3: _filters
+  id: Alis_Core_Aspect_Logging_Filters_CompositeLogFilter__filters
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/CompositeLogFilter.cs#L45
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.CompositeLogFilter._filters
+    commentId: F:Alis.Core.Aspect.Logging.Filters.CompositeLogFilter._filters
+- markdown: The filters
+- code: private readonly List<ILogFilter> _filters
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: ILogFilter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFilter.html
+    - '>'
+- api3: _requireAll
+  id: Alis_Core_Aspect_Logging_Filters_CompositeLogFilter__requireAll
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/CompositeLogFilter.cs#L50
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.CompositeLogFilter._requireAll
+    commentId: F:Alis.Core.Aspect.Logging.Filters.CompositeLogFilter._requireAll
+- markdown: The require all
+- code: private readonly bool _requireAll
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h2: Properties
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Filters_CompositeLogFilter_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/CompositeLogFilter.cs#L67
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.CompositeLogFilter.Name
+    commentId: P:Alis.Core.Aspect.Logging.Filters.CompositeLogFilter.Name
+- markdown: Gets the value of the name
+- code: public string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: ShouldLog(ILogEntry)
+  id: Alis_Core_Aspect_Logging_Filters_CompositeLogFilter_ShouldLog_Alis_Core_Aspect_Logging_Abstractions_ILogEntry_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/CompositeLogFilter.cs#L75
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.CompositeLogFilter.ShouldLog(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+    commentId: M:Alis.Core.Aspect.Logging.Filters.CompositeLogFilter.ShouldLog(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+- markdown: Shoulds the log using the specified entry
+- code: public bool ShouldLog(ILogEntry entry)
+- h4: Parameters
+- parameters:
+  - name: entry
+    type:
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: The entry
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+languageId: csharp
+metadata:
+  description: >-
+    Combines multiple filters with AND/OR logic.
+
+    Useful for complex filtering scenarios.
+
+    AOT-compatible: Uses interface composition.

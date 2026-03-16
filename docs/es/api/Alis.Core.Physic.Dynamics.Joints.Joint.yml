@@ -3,7 +3,7 @@ title: Class Joint
 body:
 - api1: Class Joint
   id: Alis_Core_Physic_Dynamics_Joints_Joint
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L39
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L38
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint
     commentId: T:Alis.Core.Physic.Dynamics.Joints.Joint
@@ -67,7 +67,7 @@ body:
 - h2: Constructors
 - api3: Joint()
   id: Alis_Core_Physic_Dynamics_Joints_Joint__ctor
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L86
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L85
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.#ctor
     commentId: M:Alis.Core.Physic.Dynamics.Joints.Joint.#ctor
@@ -75,7 +75,7 @@ body:
 - code: protected Joint()
 - api3: Joint(Body, Body)
   id: Alis_Core_Physic_Dynamics_Joints_Joint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L99
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L98
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.Joint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body)
@@ -95,7 +95,7 @@ body:
     description: The body
 - api3: Joint(Body)
   id: Alis_Core_Physic_Dynamics_Joints_Joint__ctor_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L111
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L108
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.#ctor(Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.Joint.#ctor(Alis.Core.Physic.Dynamics.Body)
@@ -110,12 +110,12 @@ body:
 - h2: Fields
 - api3: EdgeA
   id: Alis_Core_Physic_Dynamics_Joints_Joint_EdgeA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L59
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L43
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.EdgeA
     commentId: F:Alis.Core.Physic.Dynamics.Joints.Joint.EdgeA
 - markdown: The joint edge
-- code: internal JointEdge EdgeA
+- code: internal readonly JointEdge EdgeA
 - h4: Field Value
 - parameters:
   - type:
@@ -123,12 +123,12 @@ body:
       url: Alis.Core.Physic.Dynamics.Joints.JointEdge.html
 - api3: EdgeB
   id: Alis_Core_Physic_Dynamics_Joints_Joint_EdgeB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L64
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L48
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.EdgeB
     commentId: F:Alis.Core.Physic.Dynamics.Joints.Joint.EdgeB
 - markdown: The joint edge
-- code: internal JointEdge EdgeB
+- code: internal readonly JointEdge EdgeB
 - h4: Field Value
 - parameters:
   - type:
@@ -136,7 +136,7 @@ body:
       url: Alis.Core.Physic.Dynamics.Joints.JointEdge.html
 - api3: Enabled
   id: Alis_Core_Physic_Dynamics_Joints_Joint_Enabled
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L70
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L64
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.Enabled
     commentId: F:Alis.Core.Physic.Dynamics.Joints.Joint.Enabled
@@ -152,7 +152,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: IslandFlag
   id: Alis_Core_Physic_Dynamics_Joints_Joint_IslandFlag
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L75
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L69
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.IslandFlag
     commentId: F:Alis.Core.Physic.Dynamics.Joints.Joint.IslandFlag
@@ -165,7 +165,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: Tag
   id: Alis_Core_Physic_Dynamics_Joints_Joint_Tag
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L81
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L75
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.Tag
     commentId: F:Alis.Core.Physic.Dynamics.Joints.Joint.Tag
@@ -176,9 +176,22 @@ body:
   - type:
     - text: object
       url: https://learn.microsoft.com/dotnet/api/system.object
+- api3: WorldPhysicInternal
+  id: Alis_Core_Physic_Dynamics_Joints_Joint_WorldPhysicInternal
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L80
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.Joint.WorldPhysicInternal
+    commentId: F:Alis.Core.Physic.Dynamics.Joints.Joint.WorldPhysicInternal
+- markdown: The world
+- code: internal WorldPhysic WorldPhysicInternal
+- h4: Field Value
+- parameters:
+  - type:
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
 - api3: _breakpoint
   id: Alis_Core_Physic_Dynamics_Joints_Joint__breakpoint
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L44
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L53
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint._breakpoint
     commentId: F:Alis.Core.Physic.Dynamics.Joints.Joint._breakpoint
@@ -191,7 +204,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: _breakpointSquared
   id: Alis_Core_Physic_Dynamics_Joints_Joint__breakpointSquared
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L49
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L58
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint._breakpointSquared
     commentId: F:Alis.Core.Physic.Dynamics.Joints.Joint._breakpointSquared
@@ -202,23 +215,10 @@ body:
   - type:
     - text: double
       url: https://learn.microsoft.com/dotnet/api/system.double
-- api3: _world
-  id: Alis_Core_Physic_Dynamics_Joints_Joint__world
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L54
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.Joint._world
-    commentId: F:Alis.Core.Physic.Dynamics.Joints.Joint._world
-- markdown: The world
-- code: internal World _world
-- h4: Field Value
-- parameters:
-  - type:
-    - text: World
-      url: Alis.Core.Physic.Dynamics.World.html
 - h2: Properties
 - api3: BodyA
   id: Alis_Core_Physic_Dynamics_Joints_Joint_BodyA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L127
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L124
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.BodyA
     commentId: P:Alis.Core.Physic.Dynamics.Joints.Joint.BodyA
@@ -231,7 +231,7 @@ body:
       url: Alis.Core.Physic.Dynamics.Body.html
 - api3: BodyB
   id: Alis_Core_Physic_Dynamics_Joints_Joint_BodyB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L132
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L129
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.BodyB
     commentId: P:Alis.Core.Physic.Dynamics.Joints.Joint.BodyB
@@ -244,7 +244,7 @@ body:
       url: Alis.Core.Physic.Dynamics.Body.html
 - api3: Breakpoint
   id: Alis_Core_Physic_Dynamics_Joints_Joint_Breakpoint
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L155
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L152
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.Breakpoint
     commentId: P:Alis.Core.Physic.Dynamics.Joints.Joint.Breakpoint
@@ -260,7 +260,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: CollideConnected
   id: Alis_Core_Physic_Dynamics_Joints_Joint_CollideConnected
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L149
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L146
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.CollideConnected
     commentId: P:Alis.Core.Physic.Dynamics.Joints.Joint.CollideConnected
@@ -273,7 +273,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: JointType
   id: Alis_Core_Physic_Dynamics_Joints_Joint_JointType
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L122
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L119
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.JointType
     commentId: P:Alis.Core.Physic.Dynamics.Joints.Joint.JointType
@@ -284,22 +284,9 @@ body:
   - type:
     - text: JointType
       url: Alis.Core.Physic.Dynamics.Joints.JointType.html
-- api3: World
-  id: Alis_Core_Physic_Dynamics_Joints_Joint_World
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L116
-  metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.Joint.World
-    commentId: P:Alis.Core.Physic.Dynamics.Joints.Joint.World
-- markdown: Get the parent World of this joint. This is null if the joint is not attached.
-- code: public World World { get; }
-- h4: Property Value
-- parameters:
-  - type:
-    - text: World
-      url: Alis.Core.Physic.Dynamics.World.html
 - api3: WorldAnchorA
   id: Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L138
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L135
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.WorldAnchorA
     commentId: P:Alis.Core.Physic.Dynamics.Joints.Joint.WorldAnchorA
@@ -307,15 +294,15 @@ body:
     Get the anchor point on bodyA in world coordinates.
 
     On some joints, this value indicate the anchor point within the world.
-- code: public abstract Vector2 WorldAnchorA { get; set; }
+- code: public abstract Vector2F WorldAnchorA { get; set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: WorldAnchorB
   id: Alis_Core_Physic_Dynamics_Joints_Joint_WorldAnchorB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L144
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L141
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.WorldAnchorB
     commentId: P:Alis.Core.Physic.Dynamics.Joints.Joint.WorldAnchorB
@@ -323,21 +310,34 @@ body:
     Get the anchor point on bodyB in world coordinates.
 
     On some joints, this value indicate the anchor point within the world.
-- code: public abstract Vector2 WorldAnchorB { get; set; }
+- code: public abstract Vector2F WorldAnchorB { get; set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: WorldPhysic
+  id: Alis_Core_Physic_Dynamics_Joints_Joint_WorldPhysic
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L113
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Joints.Joint.WorldPhysic
+    commentId: P:Alis.Core.Physic.Dynamics.Joints.Joint.WorldPhysic
+- markdown: Get the parent World of this joint. This is null if the joint is not attached.
+- code: public WorldPhysic WorldPhysic { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
 - h2: Methods
 - api3: GetReactionForce(float)
   id: Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionForce_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L174
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L171
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.GetReactionForce(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.Joint.GetReactionForce(System.Single)
 - markdown: Get the reaction force on body at the joint anchor in Newtons.
-- code: public abstract Vector2 GetReactionForce(float invDt)
+- code: public abstract Vector2F GetReactionForce(float invDt)
 - h4: Parameters
 - parameters:
   - name: invDt
@@ -348,11 +348,11 @@ body:
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: GetReactionTorque(float)
   id: Alis_Core_Physic_Dynamics_Joints_Joint_GetReactionTorque_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L180
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L177
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.GetReactionTorque(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.Joint.GetReactionTorque(System.Single)
@@ -372,7 +372,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: InitVelocityConstraints(ref SolverData)
   id: Alis_Core_Physic_Dynamics_Joints_Joint_InitVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L209
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L210
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.Joint.InitVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
@@ -387,7 +387,7 @@ body:
     description: The data
 - api3: IsFixedType()
   id: Alis_Core_Physic_Dynamics_Joints_Joint_IsFixedType
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L197
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L198
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.IsFixedType
     commentId: M:Alis.Core.Physic.Dynamics.Joints.Joint.IsFixedType
@@ -400,7 +400,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: SolvePositionConstraints(ref SolverData)
   id: Alis_Core_Physic_Dynamics_Joints_Joint_SolvePositionConstraints_Alis_Core_Physic_Dynamics_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L242
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L249
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.Joint.SolvePositionConstraints(Alis.Core.Physic.Dynamics.SolverData@)
@@ -421,7 +421,7 @@ body:
     description: returns true if the position errors are within tolerance.
 - api3: SolveVelocityConstraints(ref SolverData)
   id: Alis_Core_Physic_Dynamics_Joints_Joint_SolveVelocityConstraints_Alis_Core_Physic_Dynamics_SolverData__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L235
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L242
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.Joint.SolveVelocityConstraints(Alis.Core.Physic.Dynamics.SolverData@)
@@ -436,7 +436,7 @@ body:
     description: The data
 - api3: Validate(float)
   id: Alis_Core_Physic_Dynamics_Joints_Joint_Validate_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L215
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L216
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.Validate(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.Joint.Validate(System.Single)
@@ -451,7 +451,7 @@ body:
     description: The inv dt
 - api3: WakeBodies()
   id: Alis_Core_Physic_Dynamics_Joints_Joint_WakeBodies
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L185
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L182
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.WakeBodies
     commentId: M:Alis.Core.Physic.Dynamics.Joints.Joint.WakeBodies
@@ -459,7 +459,7 @@ body:
 - code: protected void WakeBodies()
 - api3: Broke
   id: Alis_Core_Physic_Dynamics_Joints_Joint_Broke
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L168
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/Joint.cs#L165
   metadata:
     uid: Alis.Core.Physic.Dynamics.Joints.Joint.Broke
     commentId: E:Alis.Core.Physic.Dynamics.Joints.Joint.Broke

@@ -1,0 +1,228 @@
+### YamlMime:ApiPage
+title: Struct ComponentId
+body:
+- api1: Struct ComponentId
+  id: Alis_Core_Ecs_Kernel_ComponentId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentID.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentId
+    commentId: T:Alis.Core.Ecs.Kernel.ComponentId
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: A lightweight struct that represents a component type. Used for fast lookups.
+- code: 'public readonly struct ComponentId : ITypeId, IEquatable<ComponentId>'
+- h4: Implements
+- list:
+  - text: ITypeId
+    url: Alis.Core.Ecs.Kernel.ITypeId.html
+  - text: IEquatable<ComponentId>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 2 bytes total (single ushort)
+
+    Pack = 1 for minimal memory footprint
+
+    Readonly struct for immutability and potential compiler optimizations
+- h2: Constructors
+- api3: ComponentId(ushort)
+  id: Alis_Core_Ecs_Kernel_ComponentId__ctor_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentID.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentId.#ctor(System.UInt16)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentId.#ctor(System.UInt16)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref> class
+- code: internal ComponentId(ushort id)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The id
+- h2: Fields
+- api3: RawIndex
+  id: Alis_Core_Ecs_Kernel_ComponentId_RawIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentID.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentId.RawIndex
+    commentId: F:Alis.Core.Ecs.Kernel.ComponentId.RawIndex
+- markdown: The raw index
+- code: internal readonly ushort RawIndex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- h2: Properties
+- api3: ITypeId.Value
+  id: Alis_Core_Ecs_Kernel_ComponentId_Alis_Core_Ecs_Kernel_ITypeId_Value
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentID.cs#L65
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentId.Alis#Core#Ecs#Kernel#ITypeId#Value
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentId.Alis#Core#Ecs#Kernel#ITypeId#Value
+- markdown: Gets the value of the value
+- code: ushort ITypeId.Value { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: DebuggerDisplayString
+  id: Alis_Core_Ecs_Kernel_ComponentId_DebuggerDisplayString
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentID.cs#L106
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentId.DebuggerDisplayString
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentId.DebuggerDisplayString
+- markdown: Gets the value of the debugger display string
+- code: internal string DebuggerDisplayString { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Type
+  id: Alis_Core_Ecs_Kernel_ComponentId_Type
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentID.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentId.Type
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentId.Type
+- markdown: The type of component this <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref> represents.
+- code: public Type Type { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+- h2: Methods
+- api3: Equals(ComponentId)
+  id: Alis_Core_Ecs_Kernel_ComponentId_Equals_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentID.cs#L72
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentId.Equals(Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentId.Equals(Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Checks if this <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref> instance represents the same ID as <code class="paramref">other</code>.
+- code: public bool Equals(ComponentId other)
+- h4: Parameters
+- parameters:
+  - name: other
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref> to compare against.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if they represent the same ID, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+- api3: Equals(object)
+  id: Alis_Core_Ecs_Kernel_ComponentId_Equals_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentID.cs#L79
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentId.Equals(System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentId.Equals(System.Object)
+- markdown: Checks if this <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref> instance represents the same ID as <code class="paramref">obj</code>.
+- code: public override bool Equals(object obj)
+- h4: Parameters
+- parameters:
+  - name: obj
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object to compare against.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if they represent the same ID, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+- api3: GetHashCode()
+  id: Alis_Core_Ecs_Kernel_ComponentId_GetHashCode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentID.cs#L85
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentId.GetHashCode
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentId.GetHashCode
+- markdown: Gets the hash code for this <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref>.
+- code: public override int GetHashCode()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: An integer hash code representing this <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref>.
+- h2: Operators
+- api3: operator ==(ComponentId, ComponentId)
+  id: Alis_Core_Ecs_Kernel_ComponentId_op_Equality_Alis_Core_Ecs_Kernel_ComponentId_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentID.cs#L93
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentId.op_Equality(Alis.Core.Ecs.Kernel.ComponentId,Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentId.op_Equality(Alis.Core.Ecs.Kernel.ComponentId,Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Checks if two <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref> instances represent the same ID.
+- code: public static bool operator ==(ComponentId left, ComponentId right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The first <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref>.
+  - name: right
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The second <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref>.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if they represent the same ID, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+- api3: operator !=(ComponentId, ComponentId)
+  id: Alis_Core_Ecs_Kernel_ComponentId_op_Inequality_Alis_Core_Ecs_Kernel_ComponentId_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentID.cs#L101
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentId.op_Inequality(Alis.Core.Ecs.Kernel.ComponentId,Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentId.op_Inequality(Alis.Core.Ecs.Kernel.ComponentId,Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Checks if two <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref> instances represent different IDs.
+- code: public static bool operator !=(ComponentId left, ComponentId right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The first <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref>.
+  - name: right
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The second <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref>.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if they represent different IDs, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+languageId: csharp
+metadata:
+  description: A lightweight struct that represents a component type. Used for fast lookups.

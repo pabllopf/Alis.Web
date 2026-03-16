@@ -1,0 +1,187 @@
+### YamlMime:ApiPage
+title: Class JsonFileHandler
+body:
+- api1: Class JsonFileHandler
+  id: Alis_Core_Aspect_Data_Json_FileOperations_JsonFileHandler
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/FileOperations/JsonFileHandler.cs#L41
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler
+    commentId: T:Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Data.Json.FileOperations
+      url: Alis.Core.Aspect.Data.Json.FileOperations.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Handles reading and writing JSON files.
+- code: 'public sealed class JsonFileHandler : IJsonFileHandler'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: JsonFileHandler
+    url: Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler.html
+- h4: Implements
+- list:
+  - text: IJsonFileHandler
+    url: Alis.Core.Aspect.Data.Json.FileOperations.IJsonFileHandler.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: JsonFileHandler(IJsonSerializer, IJsonDeserializer)
+  id: Alis_Core_Aspect_Data_Json_FileOperations_JsonFileHandler__ctor_Alis_Core_Aspect_Data_Json_Serialization_IJsonSerializer_Alis_Core_Aspect_Data_Json_Deserialization_IJsonDeserializer_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/FileOperations/JsonFileHandler.cs#L59
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler.#ctor(Alis.Core.Aspect.Data.Json.Serialization.IJsonSerializer,Alis.Core.Aspect.Data.Json.Deserialization.IJsonDeserializer)
+    commentId: M:Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler.#ctor(Alis.Core.Aspect.Data.Json.Serialization.IJsonSerializer,Alis.Core.Aspect.Data.Json.Deserialization.IJsonDeserializer)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler" data-throw-if-not-resolved="false"></xref> class.
+- code: public JsonFileHandler(IJsonSerializer jsonSerializer, IJsonDeserializer jsonDeserializer)
+- h4: Parameters
+- parameters:
+  - name: jsonSerializer
+    type:
+    - text: IJsonSerializer
+      url: Alis.Core.Aspect.Data.Json.Serialization.IJsonSerializer.html
+    description: The JSON serializer to use.
+  - name: jsonDeserializer
+    type:
+    - text: IJsonDeserializer
+      url: Alis.Core.Aspect.Data.Json.Deserialization.IJsonDeserializer.html
+    description: The JSON deserializer to use.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when any parameter is null.
+- h2: Fields
+- api3: _jsonDeserializer
+  id: Alis_Core_Aspect_Data_Json_FileOperations_JsonFileHandler__jsonDeserializer
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/FileOperations/JsonFileHandler.cs#L46
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler._jsonDeserializer
+    commentId: F:Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler._jsonDeserializer
+- markdown: The json deserializer
+- code: private readonly IJsonDeserializer _jsonDeserializer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: IJsonDeserializer
+      url: Alis.Core.Aspect.Data.Json.Deserialization.IJsonDeserializer.html
+- api3: _jsonSerializer
+  id: Alis_Core_Aspect_Data_Json_FileOperations_JsonFileHandler__jsonSerializer
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/FileOperations/JsonFileHandler.cs#L51
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler._jsonSerializer
+    commentId: F:Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler._jsonSerializer
+- markdown: The json serializer
+- code: private readonly IJsonSerializer _jsonSerializer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: IJsonSerializer
+      url: Alis.Core.Aspect.Data.Json.Serialization.IJsonSerializer.html
+- h2: Methods
+- api3: DeserializeFromFile<T>(string, string)
+  id: Alis_Core_Aspect_Data_Json_FileOperations_JsonFileHandler_DeserializeFromFile__1_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/FileOperations/JsonFileHandler.cs#L121
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler.DeserializeFromFile``1(System.String,System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler.DeserializeFromFile``1(System.String,System.String)
+- markdown: Deserializes a JSON file into an object.
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public T DeserializeFromFile<T>(string fileName, string relativePath) where T : IJsonSerializable, IJsonDesSerializable<T>, new()
+- h4: Parameters
+- parameters:
+  - name: fileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name of the file (without .json extension).
+  - name: relativePath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The relative path where the file is located.
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: An instance of the specified type populated with data from the JSON file.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The target type, which must implement IJsonSerializable and IJsonDesSerializable&lt;T&gt;.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Thrown when the file does not exist.
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when parameters are null.
+  - type:
+    - text: IOException
+      url: https://learn.microsoft.com/dotnet/api/system.io.ioexception
+    description: Thrown when file operations fail.
+- api3: SerializeToFile<T>(T, string, string)
+  id: Alis_Core_Aspect_Data_Json_FileOperations_JsonFileHandler_SerializeToFile__1___0_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/FileOperations/JsonFileHandler.cs#L74
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler.SerializeToFile``1(``0,System.String,System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.FileOperations.JsonFileHandler.SerializeToFile``1(``0,System.String,System.String)
+- markdown: Serializes an object to a JSON file.
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public void SerializeToFile<T>(T instance, string fileName, string relativePath) where T : IJsonSerializable
+- h4: Parameters
+- parameters:
+  - name: instance
+    type:
+    - T
+    description: The instance to serialize.
+  - name: fileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name of the file (without .json extension).
+  - name: relativePath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The relative path where the file will be saved.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of the object to serialize, which must implement IJsonSerializable.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when parameters are null.
+  - type:
+    - text: IOException
+      url: https://learn.microsoft.com/dotnet/api/system.io.ioexception
+    description: Thrown when file operations fail.
+languageId: csharp
+metadata:
+  description: Handles reading and writing JSON files.

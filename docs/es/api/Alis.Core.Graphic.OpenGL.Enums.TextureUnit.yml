@@ -1,0 +1,103 @@
+### YamlMime:ApiPage
+title: Enum TextureUnit
+body:
+- api1: Enum TextureUnit
+  id: Alis_Core_Graphic_OpenGL_Enums_TextureUnit
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/TextureUnit.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.TextureUnit
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.TextureUnit
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The texture unit enum
+- code: public enum TextureUnit
+- h2: Fields
+- parameters:
+  - name: Texture0
+    default: "33984"
+    description: >+
+      The texture texture unit
+
+  - name: Texture1
+    default: "33985"
+    description: >+
+      The texture texture unit
+
+  - name: Texture2
+    default: "33986"
+    description: >+
+      The texture texture unit
+
+  - name: Texture3
+    default: "33987"
+    description: >+
+      The texture texture unit
+
+  - name: Texture4
+    default: "33988"
+    description: >+
+      The texture texture unit
+
+  - name: Texture5
+    default: "33989"
+    description: >+
+      The texture texture unit
+
+  - name: Texture6
+    default: "33990"
+    description: >+
+      The texture texture unit
+
+  - name: Texture7
+    default: "33991"
+    description: >+
+      The texture texture unit
+
+  - name: Texture8
+    default: "33992"
+    description: >+
+      The texture texture unit
+
+  - name: Texture9
+    default: "33993"
+    description: >+
+      The texture texture unit
+
+  - name: Texture10
+    default: "33994"
+    description: >+
+      The texture 10 texture unit
+
+  - name: Texture11
+    default: "33995"
+    description: >+
+      The texture 11 texture unit
+
+  - name: Texture12
+    default: "33996"
+    description: >+
+      The texture 12 texture unit
+
+  - name: Texture13
+    default: "33997"
+    description: >+
+      The texture 13 texture unit
+
+  - name: Texture14
+    default: "33998"
+    description: >+
+      The texture 14 texture unit
+
+  - name: Texture15
+    default: "33999"
+    description: >+
+      The texture 15 texture unit
+
+languageId: csharp
+metadata:
+  description: The texture unit enum

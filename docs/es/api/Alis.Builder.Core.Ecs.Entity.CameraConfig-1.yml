@@ -1,0 +1,30 @@
+### YamlMime:ApiPage
+title: Delegate CameraConfig<T>
+body:
+- api1: Delegate CameraConfig<T>
+  id: Alis_Builder_Core_Ecs_Entity_CameraConfig_1
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/CameraConfig.cs#L38
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.CameraConfig`1
+    commentId: T:Alis.Builder.Core.Ecs.Entity.CameraConfig`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Builder.Core.Ecs.Entity
+      url: Alis.Builder.Core.Ecs.Entity.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The camera config
+- code: 'public delegate void CameraConfig<T>(CameraBuilder builder) where T : ICamera'
+- h4: Parameters
+- parameters:
+  - name: builder
+    type:
+    - text: CameraBuilder
+      url: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.html
+- h4: Type Parameters
+- parameters:
+  - name: T
+languageId: csharp
+metadata:
+  description: The camera config

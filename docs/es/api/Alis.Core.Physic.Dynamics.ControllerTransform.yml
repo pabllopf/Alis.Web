@@ -1,0 +1,443 @@
+### YamlMime:ApiPage
+title: Struct ControllerTransform
+body:
+- api1: Struct ControllerTransform
+  id: Alis_Core_Physic_Dynamics_ControllerTransform
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform
+    commentId: T:Alis.Core.Physic.Dynamics.ControllerTransform
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Dynamics
+      url: Alis.Core.Physic.Dynamics.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    A transform contains translation and rotation. It is used to represent
+
+    the position and orientation of rigid frames.
+- code: public struct ControllerTransform
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: ControllerTransform(Vector2F, Complex)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Physic_Dynamics_Complex_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L65
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.Complex)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.Complex)
+- markdown: Initialize using a position vector and a Complex rotation.
+- code: public ControllerTransform(Vector2F position, Complex rotation)
+- h4: Parameters
+- parameters:
+  - name: position
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The position.
+  - name: rotation
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The rotation
+- api3: ControllerTransform(Vector2F, Complex, Vector2F)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Physic_Dynamics_Complex_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L78
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.Complex,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.Complex,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.ControllerTransform" data-throw-if-not-resolved="false"></xref> class
+- code: public ControllerTransform(Vector2F position, Complex rotation, Vector2F scale)
+- h4: Parameters
+- parameters:
+  - name: position
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The position
+  - name: rotation
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The rotation
+  - name: scale
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The scale
+- api3: ControllerTransform(Vector2F, float)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L90
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Initialize using a position vector and a rotation.
+- code: public ControllerTransform(Vector2F position, float angle)
+- h4: Parameters
+- parameters:
+  - name: position
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The position.
+  - name: angle
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The rotation angle
+- api3: ControllerTransform(Vector2F, float, Vector2F)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L101
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.ControllerTransform" data-throw-if-not-resolved="false"></xref> class
+- code: public ControllerTransform(Vector2F position, float angle, Vector2F scale)
+- h4: Parameters
+- parameters:
+  - name: position
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The position
+  - name: angle
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The angle
+  - name: scale
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The scale
+- h2: Fields
+- api3: Position
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Position
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Position
+    commentId: F:Alis.Core.Physic.Dynamics.ControllerTransform.Position
+- markdown: The
+- code: public Vector2F Position
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Rotation
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Rotation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Rotation
+    commentId: F:Alis.Core.Physic.Dynamics.ControllerTransform.Rotation
+- markdown: The
+- code: public Complex Rotation
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+- api3: Scale
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Scale
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L53
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Scale
+    commentId: F:Alis.Core.Physic.Dynamics.ControllerTransform.Scale
+- markdown: The scale
+- code: public Vector2F Scale
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- h2: Properties
+- api3: Identity
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Identity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L58
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Identity
+    commentId: P:Alis.Core.Physic.Dynamics.ControllerTransform.Identity
+- markdown: Gets the value of the identity
+- code: public static ControllerTransform Identity { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+- h2: Methods
+- api3: Divide(Vector2F, ref ControllerTransform)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Divide_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Physic_Dynamics_ControllerTransform__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L132
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.ControllerTransform@)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.ControllerTransform@)
+- markdown: Divides the left
+- code: public static Vector2F Divide(Vector2F left, ref ControllerTransform right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector
+- api3: Divide(ref Vector2F, ref ControllerTransform)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Divide_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Physic_Dynamics_ControllerTransform__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L140
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Physic.Dynamics.ControllerTransform@)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Physic.Dynamics.ControllerTransform@)
+- markdown: Divides the left
+- code: public static Vector2F Divide(ref Vector2F left, ref ControllerTransform right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector
+- api3: Divide(Vector2F, ref ControllerTransform, out Vector2F)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Divide_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Physic_Dynamics_ControllerTransform__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L156
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Divides the left
+- code: public static void Divide(Vector2F left, ref ControllerTransform right, out Vector2F result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The right
+  - name: result
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The result
+- api3: Divide(ref ControllerTransform, ref ControllerTransform)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Divide_Alis_Core_Physic_Dynamics_ControllerTransform__Alis_Core_Physic_Dynamics_ControllerTransform__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L182
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.ControllerTransform@)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.ControllerTransform@)
+- markdown: Divides the left
+- code: public static ControllerTransform Divide(ref ControllerTransform left, ref ControllerTransform right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The left
+  - name: right
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The transform
+- api3: Divide(ref ControllerTransform, ref ControllerTransform, out ControllerTransform)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Divide_Alis_Core_Physic_Dynamics_ControllerTransform__Alis_Core_Physic_Dynamics_ControllerTransform__Alis_Core_Physic_Dynamics_ControllerTransform__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L192
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.ControllerTransform@)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.ControllerTransform@)
+- markdown: Divides the left
+- code: public static void Divide(ref ControllerTransform left, ref ControllerTransform right, out ControllerTransform result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The left
+  - name: right
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The right
+  - name: result
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The result
+- api3: Divide(ref ControllerTransform, Complex, out ControllerTransform)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Divide_Alis_Core_Physic_Dynamics_ControllerTransform__Alis_Core_Physic_Dynamics_Complex_Alis_Core_Physic_Dynamics_ControllerTransform__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L218
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.Complex,Alis.Core.Physic.Dynamics.ControllerTransform@)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.Divide(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.Complex,Alis.Core.Physic.Dynamics.ControllerTransform@)
+- markdown: Divides the left
+- code: public static void Divide(ref ControllerTransform left, Complex right, out ControllerTransform result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The left
+  - name: right
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The right
+  - name: result
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The result
+- api3: Multiply(Vector2F, ref ControllerTransform)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Multiply_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Physic_Dynamics_ControllerTransform__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L112
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.ControllerTransform@)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.ControllerTransform@)
+- markdown: Multiplies the left
+- code: public static Vector2F Multiply(Vector2F left, ref ControllerTransform right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector
+- api3: Multiply(ref Vector2F, ref ControllerTransform)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Multiply_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Physic_Dynamics_ControllerTransform__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L120
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Physic.Dynamics.ControllerTransform@)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Physic.Dynamics.ControllerTransform@)
+- markdown: Multiplies the left
+- code: public static Vector2F Multiply(ref Vector2F left, ref ControllerTransform right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector
+- api3: Multiply(ref ControllerTransform, ref ControllerTransform)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Multiply_Alis_Core_Physic_Dynamics_ControllerTransform__Alis_Core_Physic_Dynamics_ControllerTransform__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L172
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Multiply(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.ControllerTransform@)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.Multiply(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.ControllerTransform@)
+- markdown: Multiplies the left
+- code: public static ControllerTransform Multiply(ref ControllerTransform left, ref ControllerTransform right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The left
+  - name: right
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The transform
+- api3: Multiply(ref ControllerTransform, Complex, out ControllerTransform)
+  id: Alis_Core_Physic_Dynamics_ControllerTransform_Multiply_Alis_Core_Physic_Dynamics_ControllerTransform__Alis_Core_Physic_Dynamics_Complex_Alis_Core_Physic_Dynamics_ControllerTransform__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/ControllerTransform.cs#L205
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.ControllerTransform.Multiply(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.Complex,Alis.Core.Physic.Dynamics.ControllerTransform@)
+    commentId: M:Alis.Core.Physic.Dynamics.ControllerTransform.Multiply(Alis.Core.Physic.Dynamics.ControllerTransform@,Alis.Core.Physic.Dynamics.Complex,Alis.Core.Physic.Dynamics.ControllerTransform@)
+- markdown: Multiplies the left
+- code: public static void Multiply(ref ControllerTransform left, Complex right, out ControllerTransform result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The left
+  - name: right
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The right
+  - name: result
+    type:
+    - text: ControllerTransform
+      url: Alis.Core.Physic.Dynamics.ControllerTransform.html
+    description: The result
+languageId: csharp
+metadata:
+  description: >-
+    A transform contains translation and rotation. It is used to represent
+
+    the position and orientation of rigid frames.

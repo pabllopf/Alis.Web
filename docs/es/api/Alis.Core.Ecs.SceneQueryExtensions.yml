@@ -1,0 +1,256 @@
+### YamlMime:ApiPage
+title: Class SceneQueryExtensions
+body:
+- api1: Class SceneQueryExtensions
+  id: Alis_Core_Ecs_SceneQueryExtensions
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/SceneQueryExtensions.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.SceneQueryExtensions
+    commentId: T:Alis.Core.Ecs.SceneQueryExtensions
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs
+      url: Alis.Core.Ecs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Extensions to use query the scene.
+- code: public static class SceneQueryExtensions
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: SceneQueryExtensions
+    url: Alis.Core.Ecs.SceneQueryExtensions.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: Query<T>(Scene)
+  id: Alis_Core_Ecs_SceneQueryExtensions_Query__1_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/SceneQueryExtensions.cs#L45
+  metadata:
+    uid: Alis.Core.Ecs.SceneQueryExtensions.Query``1(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.SceneQueryExtensions.Query``1(Alis.Core.Ecs.Scene)
+- markdown: Gets a query specified by the given rules
+- code: 'public static Query Query<T>(this Scene scene) where T : struct, IRuleProvider'
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The created or cached query.
+- h4: Type Parameters
+- parameters:
+  - name: T
+- api3: Query<T1, T2>(Scene)
+  id: Alis_Core_Ecs_SceneQueryExtensions_Query__2_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/SceneQueryExtensions.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.SceneQueryExtensions.Query``2(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.SceneQueryExtensions.Query``2(Alis.Core.Ecs.Scene)
+- markdown: Gets a query specified by the given rules
+- code: 'public static Query Query<T1, T2>(this Scene scene) where T1 : struct, IRuleProvider where T2 : struct, IRuleProvider'
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The created or cached query.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+- api3: Query<T1, T2, T3>(Scene)
+  id: Alis_Core_Ecs_SceneQueryExtensions_Query__3_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/SceneQueryExtensions.cs#L80
+  metadata:
+    uid: Alis.Core.Ecs.SceneQueryExtensions.Query``3(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.SceneQueryExtensions.Query``3(Alis.Core.Ecs.Scene)
+- markdown: Gets a query specified by the given rules
+- code: 'public static Query Query<T1, T2, T3>(this Scene scene) where T1 : struct, IRuleProvider where T2 : struct, IRuleProvider where T3 : struct, IRuleProvider'
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The created or cached query.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+- api3: Query<T1, T2, T3, T4>(Scene)
+  id: Alis_Core_Ecs_SceneQueryExtensions_Query__4_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/SceneQueryExtensions.cs#L101
+  metadata:
+    uid: Alis.Core.Ecs.SceneQueryExtensions.Query``4(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.SceneQueryExtensions.Query``4(Alis.Core.Ecs.Scene)
+- markdown: Gets a query specified by the given rules
+- code: 'public static Query Query<T1, T2, T3, T4>(this Scene scene) where T1 : struct, IRuleProvider where T2 : struct, IRuleProvider where T3 : struct, IRuleProvider where T4 : struct, IRuleProvider'
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The created or cached query.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+- api3: Query<T1, T2, T3, T4, T5>(Scene)
+  id: Alis_Core_Ecs_SceneQueryExtensions_Query__5_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/SceneQueryExtensions.cs#L124
+  metadata:
+    uid: Alis.Core.Ecs.SceneQueryExtensions.Query``5(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.SceneQueryExtensions.Query``5(Alis.Core.Ecs.Scene)
+- markdown: Gets a query specified by the given rules
+- code: 'public static Query Query<T1, T2, T3, T4, T5>(this Scene scene) where T1 : struct, IRuleProvider where T2 : struct, IRuleProvider where T3 : struct, IRuleProvider where T4 : struct, IRuleProvider where T5 : struct, IRuleProvider'
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The created or cached query.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+- api3: Query<T1, T2, T3, T4, T5, T6>(Scene)
+  id: Alis_Core_Ecs_SceneQueryExtensions_Query__6_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/SceneQueryExtensions.cs#L148
+  metadata:
+    uid: Alis.Core.Ecs.SceneQueryExtensions.Query``6(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.SceneQueryExtensions.Query``6(Alis.Core.Ecs.Scene)
+- markdown: Gets a query specified by the given rules
+- code: 'public static Query Query<T1, T2, T3, T4, T5, T6>(this Scene scene) where T1 : struct, IRuleProvider where T2 : struct, IRuleProvider where T3 : struct, IRuleProvider where T4 : struct, IRuleProvider where T5 : struct, IRuleProvider where T6 : struct, IRuleProvider'
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The created or cached query.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+- api3: Query<T1, T2, T3, T4, T5, T6, T7>(Scene)
+  id: Alis_Core_Ecs_SceneQueryExtensions_Query__7_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/SceneQueryExtensions.cs#L173
+  metadata:
+    uid: Alis.Core.Ecs.SceneQueryExtensions.Query``7(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.SceneQueryExtensions.Query``7(Alis.Core.Ecs.Scene)
+- markdown: Gets a query specified by the given rules
+- code: 'public static Query Query<T1, T2, T3, T4, T5, T6, T7>(this Scene scene) where T1 : struct, IRuleProvider where T2 : struct, IRuleProvider where T3 : struct, IRuleProvider where T4 : struct, IRuleProvider where T5 : struct, IRuleProvider where T6 : struct, IRuleProvider where T7 : struct, IRuleProvider'
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The created or cached query.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+- api3: Query<T1, T2, T3, T4, T5, T6, T7, T8>(Scene)
+  id: Alis_Core_Ecs_SceneQueryExtensions_Query__8_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/SceneQueryExtensions.cs#L200
+  metadata:
+    uid: Alis.Core.Ecs.SceneQueryExtensions.Query``8(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.SceneQueryExtensions.Query``8(Alis.Core.Ecs.Scene)
+- markdown: Gets a query specified by the given rules
+- code: 'public static Query Query<T1, T2, T3, T4, T5, T6, T7, T8>(this Scene scene) where T1 : struct, IRuleProvider where T2 : struct, IRuleProvider where T3 : struct, IRuleProvider where T4 : struct, IRuleProvider where T5 : struct, IRuleProvider where T6 : struct, IRuleProvider where T7 : struct, IRuleProvider where T8 : struct, IRuleProvider'
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The created or cached query.
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+  - name: T8
+languageId: csharp
+metadata:
+  description: Extensions to use query the scene.

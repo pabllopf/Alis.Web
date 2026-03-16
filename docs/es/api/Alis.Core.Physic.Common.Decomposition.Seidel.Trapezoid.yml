@@ -77,7 +77,7 @@ body:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.Bottom
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.Bottom
 - markdown: The bottom
-- code: public Edge Bottom
+- code: public readonly Edge Bottom
 - h4: Field Value
 - parameters:
   - type:
@@ -85,7 +85,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.html
 - api3: Inside
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Inside
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L47
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L57
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.Inside
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.Inside
@@ -98,12 +98,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: LeftPoint
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_LeftPoint
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L52
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L47
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.LeftPoint
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.LeftPoint
 - markdown: The left point
-- code: public Point LeftPoint
+- code: public readonly Point LeftPoint
 - h4: Field Value
 - parameters:
   - type:
@@ -111,7 +111,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
 - api3: LowerLeft
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_LowerLeft
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L58
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L63
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.LowerLeft
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.LowerLeft
@@ -124,7 +124,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
 - api3: LowerRight
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_LowerRight
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L63
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L68
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.LowerRight
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.LowerRight
@@ -137,7 +137,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.html
 - api3: RightPoint
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_RightPoint
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L68
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L73
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.RightPoint
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.RightPoint
@@ -150,7 +150,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Point.html
 - api3: Sink
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Sink
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L73
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L78
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.Sink
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.Sink
@@ -163,12 +163,12 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Sink.html
 - api3: Top
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Top
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L78
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L52
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.Top
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.Top
 - markdown: The top
-- code: public Edge Top
+- code: public readonly Edge Top
 - h4: Field Value
 - parameters:
   - type:
@@ -203,7 +203,7 @@ body:
 - h2: Methods
 - api3: AddPoints()
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_AddPoints
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L213
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L257
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.AddPoints
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.AddPoints
@@ -211,7 +211,7 @@ body:
 - code: public void AddPoints()
 - api3: Contains(Point)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Contains_Alis_Core_Physic_Common_Decomposition_Seidel_Point_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L181
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L225
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.Contains(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.Contains(Alis.Core.Physic.Common.Decomposition.Seidel.Point)
@@ -232,7 +232,7 @@ body:
     description: The bool
 - api3: GetVertices()
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_GetVertices
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L187
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L231
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.GetVertices
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.GetVertices
@@ -250,7 +250,7 @@ body:
     description: The verts
 - api3: LineIntersect(Edge, float)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_LineIntersect_Alis_Core_Physic_Common_Decomposition_Seidel_Edge_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L203
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L247
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.LineIntersect(Alis.Core.Physic.Common.Decomposition.Seidel.Edge,System.Single)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.LineIntersect(Alis.Core.Physic.Common.Decomposition.Seidel.Edge,System.Single)
@@ -276,7 +276,7 @@ body:
     description: The point
 - api3: TrimNeighbors()
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_TrimNeighbors
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L163
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L192
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.TrimNeighbors
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.TrimNeighbors
@@ -304,7 +304,7 @@ body:
     description: The ll
 - api3: UpdateLeftRight(Trapezoid, Trapezoid, Trapezoid, Trapezoid)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_UpdateLeftRight_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L147
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L161
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.UpdateLeftRight(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.UpdateLeftRight(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid)
@@ -334,7 +334,7 @@ body:
     description: The lr
 - api3: UpdateRight(Trapezoid, Trapezoid)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_UpdateRight_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L131
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/Trapezoid.cs#L138
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.UpdateRight(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid.UpdateRight(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid)

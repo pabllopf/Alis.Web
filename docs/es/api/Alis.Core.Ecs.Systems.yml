@@ -1,0 +1,381 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Systems
+body:
+- api1: Namespace Alis.Core.Ecs.Systems
+  id: Alis_Core_Ecs_Systems
+  metadata:
+    uid: Alis.Core.Ecs.Systems
+    commentId: N:Alis.Core.Ecs.Systems
+- h3: Namespaces
+- parameters:
+  - type:
+      text: Alis.Core.Ecs.Systems.Configuration
+      url: Alis.Core.Ecs.Systems.Configuration.html
+  - type:
+      text: Alis.Core.Ecs.Systems.Execution
+      url: Alis.Core.Ecs.Systems.Execution.html
+  - type:
+      text: Alis.Core.Ecs.Systems.Manager
+      url: Alis.Core.Ecs.Systems.Manager.html
+  - type:
+      text: Alis.Core.Ecs.Systems.Scope
+      url: Alis.Core.Ecs.Systems.Scope.html
+- h3: Classes
+- parameters:
+  - type:
+      text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: Represents a set of entities from a scene which can have systems applied to
+  - type:
+      text: QueryDelegates
+      url: Alis.Core.Ecs.Systems.QueryDelegates.html
+    description: Delegates for executing a functions on a <xref href="Alis.Core.Ecs.Systems.Query" data-throw-if-not-resolved="false"></xref>
+  - type:
+      text: QueryHashCache<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.Systems.QueryHashCache-4.html
+    description: The query hash cache class
+  - type:
+      text: QueryHashCache<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.Systems.QueryHashCache-8.html
+    description: The query hash cache class
+  - type:
+      text: QueryHashCache<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.Systems.QueryHashCache-7.html
+    description: The query hash cache class
+  - type:
+      text: QueryHashCache<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.Systems.QueryHashCache-6.html
+    description: The query hash cache class
+  - type:
+      text: QueryHashCache<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.Systems.QueryHashCache-5.html
+    description: The query hash cache class
+  - type:
+      text: QueryHashCache<T1, T2, T3>
+      url: Alis.Core.Ecs.Systems.QueryHashCache-3.html
+    description: The query hash cache class
+  - type:
+      text: QueryHashCache<T>
+      url: Alis.Core.Ecs.Systems.QueryHashCache-1.html
+    description: The query hash cache class
+  - type:
+      text: QueryHashCache<T1, T2>
+      url: Alis.Core.Ecs.Systems.QueryHashCache-2.html
+    description: The query hash cache class
+  - type:
+      text: QueryIterationExtensions
+      url: Alis.Core.Ecs.Systems.QueryIterationExtensions.html
+    description: The query iteration extensions class
+  - type:
+      text: VideoGame
+      url: Alis.Core.Ecs.Systems.VideoGame.html
+    description: Represents a video game with context handling capabilities.
+- h3: Structs
+- parameters:
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-6.html
+    description: The chunk query enumerator
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3>
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-3.html
+    description: The chunk query enumerator
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-4.html
+    description: The chunk query enumerator
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-5.html
+    description: The chunk query enumerator
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-7.html
+    description: The chunk query enumerator
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-8.html
+    description: The chunk query enumerator
+  - type:
+      text: ChunkQueryEnumerator<T1, T2>
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-2.html
+    description: The chunk query enumerator
+  - type:
+      text: ChunkQueryEnumerator<T>
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-1.html
+    description: The chunk query enumerator
+  - type:
+      text: ChunkTuple<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.Systems.ChunkTuple-7.html
+    description: The chunk tuple
+  - type:
+      text: ChunkTuple<T1>
+      url: Alis.Core.Ecs.Systems.ChunkTuple-1.html
+    description: The chunk tuple
+  - type:
+      text: ChunkTuple<T1, T2>
+      url: Alis.Core.Ecs.Systems.ChunkTuple-2.html
+    description: The chunk tuple
+  - type:
+      text: ChunkTuple<T1, T2, T3>
+      url: Alis.Core.Ecs.Systems.ChunkTuple-3.html
+    description: The chunk tuple
+  - type:
+      text: ChunkTuple<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.Systems.ChunkTuple-4.html
+    description: The chunk tuple
+  - type:
+      text: ChunkTuple<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.Systems.ChunkTuple-5.html
+    description: The chunk tuple
+  - type:
+      text: ChunkTuple<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.Systems.ChunkTuple-6.html
+    description: The chunk tuple
+  - type:
+      text: ChunkTuple<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.Systems.ChunkTuple-8.html
+    description: The chunk tuple
+  - type:
+      text: GameObjectEnumerator.EntityEnumerable
+      url: Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable.html
+    description: Proxy struct used to get an <xref href="Alis.Core.Ecs.Systems.GameObjectEnumerator" data-throw-if-not-resolved="false"></xref>.
+  - type:
+      text: GameObjectEnumerator
+      url: Alis.Core.Ecs.Systems.GameObjectEnumerator.html
+    description: Enumerator over a set of <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instances.
+  - type:
+      text: GameObjectQueryEnumerator<T>
+      url: Alis.Core.Ecs.Systems.GameObjectQueryEnumerator-1.html
+    description: The game object query enumerator
+  - type:
+      text: GameObjectQueryEnumerator
+      url: Alis.Core.Ecs.Systems.GameObjectQueryEnumerator.html
+    description: An enumerator that can be used to enumerate all <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instances in a <xref href="Alis.Core.Ecs.Systems.Query" data-throw-if-not-resolved="false"></xref>.
+  - type:
+      text: GameObjectRefTuple<T>
+      url: Alis.Core.Ecs.Systems.GameObjectRefTuple-1.html
+    description: A tuple of multiple references with an <xref href="Alis.Core.Ecs.Systems.GameObjectRefTuple%601.GameObject" data-throw-if-not-resolved="false"></xref>.
+  - type:
+      text: IncludeDisabled
+      url: Alis.Core.Ecs.Systems.IncludeDisabled.html
+    description: Specifies a query should include all entities
+  - type:
+      text: Not<T>
+      url: Alis.Core.Ecs.Systems.Not-1.html
+    description: Specifies a query should not have a component of <see paramref="T"></see>
+  - type:
+      text: QueryEnumerator<T1, T2, T3, T4, T5, T6>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-6.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: GameObjectQueryEnumerator<T>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.GameObjectQueryEnumerator-1.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: GameObjectQueryEnumerator.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.GameObjectQueryEnumerator.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: ChunkQueryEnumerator<T>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-1.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: ChunkQueryEnumerator<T1, T2>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-2.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-3.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3, T4>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-4.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3, T4, T5>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-5.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerator<T1, T2, T3, T4, T5, T6, T7, T8>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-8.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3, T4, T5, T6>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-6.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerator<T>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-1.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3, T4, T5, T6, T7>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-7.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: ChunkQueryEnumerator<T1, T2, T3, T4, T5, T6, T7, T8>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.ChunkQueryEnumerator-8.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerator<T1, T2, T3>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-3.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerator<T1, T2, T3, T4>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-4.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerator<T1, T2, T3, T4, T5, T6, T7>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-7.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerator<T1, T2, T3, T4, T5>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-5.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerator<T1, T2>.QueryEnumerable
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-2.QueryEnumerable.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerator<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-6.html
+    description: The query enumerator
+  - type:
+      text: QueryEnumerator<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-4.html
+    description: The query enumerator
+  - type:
+      text: QueryEnumerator<T1, T2, T3>
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-3.html
+    description: The query enumerator
+  - type:
+      text: QueryEnumerator<T1, T2>
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-2.html
+    description: The query enumerator
+  - type:
+      text: QueryEnumerator<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-5.html
+    description: The query enumerator
+  - type:
+      text: QueryEnumerator<T>
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-1.html
+    description: The query enumerator
+  - type:
+      text: QueryEnumerator<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-7.html
+    description: The query enumerator
+  - type:
+      text: QueryEnumerator<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.Systems.QueryEnumerator-8.html
+    description: The query enumerator
+  - type:
+      text: QueryHash
+      url: Alis.Core.Ecs.Systems.QueryHash.html
+    description: The query hash
+  - type:
+      text: RefTuple<T1, T2, T3>
+      url: Alis.Core.Ecs.Systems.RefTuple-3.html
+    description: The ref tuple
+  - type:
+      text: RefTuple<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.Systems.RefTuple-4.html
+    description: The ref tuple
+  - type:
+      text: RefTuple<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.Systems.RefTuple-5.html
+    description: The ref tuple
+  - type:
+      text: RefTuple<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.Systems.RefTuple-6.html
+    description: The ref tuple
+  - type:
+      text: RefTuple<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.Systems.RefTuple-7.html
+    description: The ref tuple
+  - type:
+      text: RefTuple<T>
+      url: Alis.Core.Ecs.Systems.RefTuple-1.html
+    description: A tuple of multiple references.
+  - type:
+      text: RefTuple<T1, T2>
+      url: Alis.Core.Ecs.Systems.RefTuple-2.html
+    description: The ref tuple
+  - type:
+      text: RefTuple<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.Systems.RefTuple-8.html
+    description: The ref tuple
+  - type:
+      text: Rule
+      url: Alis.Core.Ecs.Systems.Rule.html
+    description: Encapsulates a check for an gameObject, used to filter queries
+  - type:
+      text: With<T>
+      url: Alis.Core.Ecs.Systems.With-1.html
+    description: Specifies a query should have a component of <see paramref="T"></see>
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IAction<TArg>
+      url: Alis.Core.Ecs.Systems.IAction-1.html
+    description: An arbitary function with one parameter
+  - type:
+      text: IChunkAction<TArg>
+      url: Alis.Core.Ecs.Systems.IChunkAction-1.html
+    description: An arbitary function that operates over a range of components
+  - type:
+      text: IEntityChunkAction
+      url: Alis.Core.Ecs.Systems.IEntityChunkAction.html
+    description: An arbitary function that operates over a range of components
+  - type:
+      text: IGame
+      url: Alis.Core.Ecs.Systems.IGame.html
+    description: The game interface
+  - type:
+      text: IRuleProvider
+      url: Alis.Core.Ecs.Systems.IRuleProvider.html
+    description: API Consumers should not implement this interface. Use existing implementations.
+- h3: Enums
+- parameters:
+  - type:
+      text: Rule.RuleState
+      url: Alis.Core.Ecs.Systems.Rule.RuleState.html
+    description: The rule state enum
+  - type:
+      text: RuleTypes
+      url: Alis.Core.Ecs.Systems.RuleTypes.html
+    description: Types of rules.
+- h3: Delegates
+- parameters:
+  - type:
+      text: QueryDelegates.Query<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-8.html
+    description: The query
+  - type:
+      text: QueryDelegates.Query<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-6.html
+    description: The query
+  - type:
+      text: QueryDelegates.Query<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-5.html
+    description: The query
+  - type:
+      text: QueryDelegates.Query<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-4.html
+    description: The query
+  - type:
+      text: QueryDelegates.Query<T1, T2, T3>
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-3.html
+    description: The query
+  - type:
+      text: QueryDelegates.Query<T1, T2>
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-2.html
+    description: The query
+  - type:
+      text: QueryDelegates.Query<T>
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-1.html
+    description: The query
+  - type:
+      text: QueryDelegates.Query<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.Systems.QueryDelegates.Query-7.html
+    description: The query
+languageId: csharp

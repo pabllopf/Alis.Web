@@ -1,0 +1,2658 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <title> Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis ">
+      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!">
+      <link rel="icon" href="../resources/logo.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="En este art&#237;culo">
+      <meta name="loc:searchResultsCount" content="{count} resultados para &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="Sin resultados para &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filtrar por t&#237;tulo">
+      <meta name="loc:nextArticle" content="Siguiente">
+      <meta name="loc:prevArticle" content="Anterior">
+      <meta name="loc:themeLight" content="Claro">
+      <meta name="loc:themeDark" content="Oscuro">
+      <meta name="loc:themeAuto" content="Autom&#225;tico">
+      <meta name="loc:changeTheme" content="Cambiar tema">
+      <meta name="loc:copy" content="Copiar">
+      <meta name="loc:downloadPdf" content="Descargar PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+        const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+      
+        // Función para actualizar el contenido del dropdownToggle según el idioma
+        function updateLanguage() {
+          const currentLang = document.documentElement.lang;
+          const isEnglish = currentLang === 'en';
+          const isSpanish = currentLang === 'es';
+      
+          if (isEnglish) {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              English`;
+          } else {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              Español`;
+          }
+        }
+      
+        // Llama a la función para actualizar el idioma al cargar la página
+        updateLanguage();
+      });
+    </script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+
+          // Función para actualizar el texto del botón según la URL actual
+          function updateDropdownVersion() {
+              const path = window.location.pathname;
+              const versionMatch = path.match(/v\d+\.\d+\.\d+/i); // Buscar la versión en cualquier parte del path
+
+              if (versionMatch) {
+                  const currentVersion = versionMatch[0]; // Obtener la versión encontrada
+                  dropdownToggle.textContent = currentVersion;
+              }
+          }
+
+          updateDropdownVersion(); // Llamar la función al cargar la página
+      });
+
+    </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ApiPage">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="../resources/logo_small_v2.png" alt="Alis">
+            Alis
+          </a>
+
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+
+        
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Buscar" autocomplete="off" aria-label="Search">
+              </form>
+
+              
+              <script>
+
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                const dropdownMenu = document.querySelector('.dropdown-menu-versions');
+
+                dropdownToggle.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const isExpanded = dropdownMenu.style.display === 'block';
+                  dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                });
+
+                document.addEventListener('click', function (e) {
+                  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.style.display = 'none';
+                  }
+                });
+
+                // Manejar la selección de versión y actualizar la URL
+                dropdownMenu.addEventListener('click', function (e) {
+                  if (e.target.classList.contains('dropdown-item')) {
+                    e.preventDefault();
+                    
+                    const selectedVersion = e.target.getAttribute('data-version');
+                    const lang = document.documentElement.lang; // Obtener el idioma actual del documento
+                    
+                    let basePath = '';
+                    
+                    // Comprobar si el idioma es español
+                    if (lang === 'es') {
+                      basePath += '/es';
+                    }
+
+                    if (lang === 'en') {
+                      basePath += '/en';
+                    }
+
+                    // Redirigir a la ruta de la versión seleccionada
+                    const newPath = `${basePath}/${selectedVersion}/index.html`;
+                    window.location.href = newPath;
+                  }
+                });
+              });
+ 
+
+              </script>
+
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" data-version="v0.4.0">v0.4.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.3.0">v0.3.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.2.0">v0.2.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.1.0">v0.1.0</a></li>
+                </ul>
+              </div>
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                    const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+
+                    dropdownToggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const isExpanded = dropdownMenu.style.display === 'block';
+                        dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                    });
+
+                    document.addEventListener('click', function (e) {
+                        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    });
+
+                    // Manejar la selección de idioma y actualizar la URL
+                    dropdownMenu.addEventListener('click', function (e) {
+                        if (e.target.classList.contains('dropdown-item')) {
+                            e.preventDefault();
+                            
+                            const selectedLang = e.target.getAttribute('lang');
+                            const currentPath = window.location.pathname;
+                            const pathParts = currentPath.split('/');
+
+                            // Verificar si la URL sigue el formato esperado y reemplazar el idioma
+                            if (pathParts.length >= 3) {
+                                pathParts[1] = selectedLang;  // Reemplaza el idioma en la URL
+                            }
+
+                            // Reconstruir la URL y redirigir
+                            const newPath = pathParts.join('/');
+                            window.location.href = newPath;
+                        }
+                    });
+                });
+                </script>
+
+
+
+              
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-lang" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                  <svg viewbox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                    <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                  </svg>
+                  English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lang" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" lang="es">Español</a></li>
+                </ul>
+            </div>
+
+
+              <a class="hover_custom" style="order: 55;margin: 0 10px;" href="https://github.com/pabllopf/Alis/releases/latest">
+              <button type="button" class="btn btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewbox="0 0 17 17">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+                  </svg>
+                  Descargar
+              </button>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+      
+      
+
+
+
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 class='section api' data-uid='Alis.Core.Ecs.GameObject' data-commentid='T:Alis.Core.Ecs.GameObject' id='Alis_Core_Ecs_GameObject'>Struct GameObject    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L53'><i class='bi bi-code-slash'></i></a></h1>
+ <div class="facts text-secondary">
+<dl><dt>Namespace</dt><dd><a href='Alis.Core.Ecs.html'>Alis.Core.Ecs</a></dd></dl><dl><dt>Assembly</dt><dd>Alis.dll</dd></dl>
+</div><p>An GameObject reference; refers to a collection of components of unqiue types.</p>
+<pre><code class='lang-csharp'>public struct GameObject : IEquatable&lt;GameObject&gt;, IGameObject</code></pre><h4 class='section'>Implements</h4><dl class="typelist"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.iequatable-1'>IEquatable&lt;GameObject&gt;</a>
+</div>
+<div>
+<a href='Alis.Core.Aspect.Fluent.Components.IGameObject.html'>IGameObject</a>
+</div>
+
+</dd></dl><h4 class='section'>Inherited Members</h4><dl class="typelist"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)'>object.Equals(object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)'>object.Equals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gethashcode'>object.GetHashCode()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gettype'>object.GetType()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.referenceequals'>object.ReferenceEquals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
+</div>
+
+</dd></dl><h4 class='section'>Extension Methods</h4><dl class="typelist"><dd>
+<div>
+<a href='Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__1_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___'>GameObjectExtensions.Deconstruct&lt;T&gt;(GameObject, out Ref&lt;T&gt;)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__2_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___'>GameObjectExtensions.Deconstruct&lt;T1, T2&gt;(GameObject, out Ref&lt;T1&gt;, out Ref&lt;T2&gt;)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__3_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___'>GameObjectExtensions.Deconstruct&lt;T1, T2, T3&gt;(GameObject, out Ref&lt;T1&gt;, out Ref&lt;T2&gt;, out Ref&lt;T3&gt;)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__4_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___Alis_Core_Ecs_Kernel_Ref___3___'>GameObjectExtensions.Deconstruct&lt;T1, T2, T3, T4&gt;(GameObject, out Ref&lt;T1&gt;, out Ref&lt;T2&gt;, out Ref&lt;T3&gt;, out Ref&lt;T4&gt;)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__5_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___Alis_Core_Ecs_Kernel_Ref___3___Alis_Core_Ecs_Kernel_Ref___4___'>GameObjectExtensions.Deconstruct&lt;T1, T2, T3, T4, T5&gt;(GameObject, out Ref&lt;T1&gt;, out Ref&lt;T2&gt;, out Ref&lt;T3&gt;, out Ref&lt;T4&gt;, out Ref&lt;T5&gt;)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__6_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___Alis_Core_Ecs_Kernel_Ref___3___Alis_Core_Ecs_Kernel_Ref___4___Alis_Core_Ecs_Kernel_Ref___5___'>GameObjectExtensions.Deconstruct&lt;T1, T2, T3, T4, T5, T6&gt;(GameObject, out Ref&lt;T1&gt;, out Ref&lt;T2&gt;, out Ref&lt;T3&gt;, out Ref&lt;T4&gt;, out Ref&lt;T5&gt;, out Ref&lt;T6&gt;)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__7_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___Alis_Core_Ecs_Kernel_Ref___3___Alis_Core_Ecs_Kernel_Ref___4___Alis_Core_Ecs_Kernel_Ref___5___Alis_Core_Ecs_Kernel_Ref___6___'>GameObjectExtensions.Deconstruct&lt;T1, T2, T3, T4, T5, T6, T7&gt;(GameObject, out Ref&lt;T1&gt;, out Ref&lt;T2&gt;, out Ref&lt;T3&gt;, out Ref&lt;T4&gt;, out Ref&lt;T5&gt;, out Ref&lt;T6&gt;, out Ref&lt;T7&gt;)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__8_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___Alis_Core_Ecs_Kernel_Ref___3___Alis_Core_Ecs_Kernel_Ref___4___Alis_Core_Ecs_Kernel_Ref___5___Alis_Core_Ecs_Kernel_Ref___6___Alis_Core_Ecs_Kernel_Ref___7___'>GameObjectExtensions.Deconstruct&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(GameObject, out Ref&lt;T1&gt;, out Ref&lt;T2&gt;, out Ref&lt;T3&gt;, out Ref&lt;T4&gt;, out Ref&lt;T5&gt;, out Ref&lt;T6&gt;, out Ref&lt;T7&gt;, out Ref&lt;T8&gt;)</a>
+</div>
+
+</dd></dl><h2 class='section'>Remarks</h2><p>Memory layout optimized: 8 bytes total (int + ushort + ushort)
+Field order: int (4 bytes) -&gt; ushort (2 bytes) -&gt; ushort (2 bytes)
+Pack = 1 for minimal memory footprint, no padding between fields</p>
+<h2 class='section'>Constructors</h2><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.#ctor' data-commentid='M:Alis.Core.Ecs.GameObject.#ctor' id='Alis_Core_Ecs_GameObject__ctor'>GameObject()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L60'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates an <span class="xref">Alis.Core.Ecs.GameObject</span> identical to <span class="xref">Alis.Core.Ecs.GameObject.Null</span></p>
+<pre><code class='lang-csharp'>public GameObject()</code></pre><h4 class='section'>Remarks</h4><p><span class="xref">Alis.Core.Ecs.GameObject</span> generally shouldn't manually constructed</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.#ctor(System.UInt16,System.UInt16,System.Int32)' data-commentid='M:Alis.Core.Ecs.GameObject.#ctor(System.UInt16,System.UInt16,System.Int32)' id='Alis_Core_Ecs_GameObject__ctor_System_UInt16_System_UInt16_System_Int32_'>GameObject(ushort, ushort, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L70'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Initializes a new instance of the <span class="xref">Alis.Core.Ecs.GameObject</span> class</p>
+<pre><code class='lang-csharp'>internal GameObject(ushort worldId, ushort version, int entityId)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>worldId</code> <a href='https://learn.microsoft.com/dotnet/api/system.uint16'>ushort</a>  </dt>
+<dd>
+
+
+<p>The scene id</p>
+
+</dd><dt><code>version</code> <a href='https://learn.microsoft.com/dotnet/api/system.uint16'>ushort</a>  </dt>
+<dd>
+
+
+<p>The version</p>
+
+</dd><dt><code>entityId</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The gameObject id</p>
+
+</dd></dl><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.DoesNotHaveTagMessage' data-commentid='F:Alis.Core.Ecs.GameObject.DoesNotHaveTagMessage' id='Alis_Core_Ecs_GameObject_DoesNotHaveTagMessage'>DoesNotHaveTagMessage    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L192'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The does not have tag message</p>
+<pre><code class='lang-csharp'>internal const string DoesNotHaveTagMessage = &quot;This gameObject does not have this tag&quot;</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.EntityID' data-commentid='F:Alis.Core.Ecs.GameObject.EntityID' id='Alis_Core_Ecs_GameObject_EntityID'>EntityID    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L82'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The gameObject id</p>
+<pre><code class='lang-csharp'>internal int EntityID</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.EntityIsDeadMessage' data-commentid='F:Alis.Core.Ecs.GameObject.EntityIsDeadMessage' id='Alis_Core_Ecs_GameObject_EntityIsDeadMessage'>EntityIsDeadMessage    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L187'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The gameObject is dead message</p>
+<pre><code class='lang-csharp'>internal const string EntityIsDeadMessage = &quot;GameObject is dead.&quot;</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.EntityVersion' data-commentid='F:Alis.Core.Ecs.GameObject.EntityVersion' id='Alis_Core_Ecs_GameObject_EntityVersion'>EntityVersion    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L87'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The gameObject version</p>
+<pre><code class='lang-csharp'>internal ushort EntityVersion</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.uint16'>ushort</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.WorldID' data-commentid='F:Alis.Core.Ecs.GameObject.WorldID' id='Alis_Core_Ecs_GameObject_WorldID'>WorldID    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L92'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The scene id</p>
+<pre><code class='lang-csharp'>internal ushort WorldID</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.uint16'>ushort</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.ComponentTypes' data-commentid='P:Alis.Core.Ecs.GameObject.ComponentTypes' id='Alis_Core_Ecs_GameObject_ComponentTypes'>ComponentTypes    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2031'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the component types for this gameObject, ordered in update order</p>
+<pre><code class='lang-csharp'>public FastImmutableArray&lt;ComponentId&gt; ComponentTypes { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html'>FastImmutableArray</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> is dead.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.EntityIdOnly' data-commentid='P:Alis.Core.Ecs.GameObject.EntityIdOnly' id='Alis_Core_Ecs_GameObject_EntityIdOnly'>EntityIdOnly    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L98'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the value of the gameObject id only</p>
+<pre><code class='lang-csharp'>internal GameObjectIdOnly EntityIdOnly { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.GameObjectIdOnly.html'>GameObjectIdOnly</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.EntityLow' data-commentid='P:Alis.Core.Ecs.GameObject.EntityLow' id='Alis_Core_Ecs_GameObject_EntityLow'>EntityLow    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L108'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the value of the gameObject low</p>
+<pre><code class='lang-csharp'>internal int EntityLow { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.IsAlive' data-commentid='P:Alis.Core.Ecs.GameObject.IsAlive' id='Alis_Core_Ecs_GameObject_IsAlive'>IsAlive    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2012'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Checks to see if this <span class="xref">Alis.Core.Ecs.GameObject</span> is still alive</p>
+<pre><code class='lang-csharp'>public bool IsAlive { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.IsNull' data-commentid='P:Alis.Core.Ecs.GameObject.IsNull' id='Alis_Core_Ecs_GameObject_IsNull'>IsNull    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2018'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Checks to see if this <span class="xref">Alis.Core.Ecs.GameObject</span> instance is the null gameObject: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/default">default</a>(
+<span class="xref">Alis.Core.Ecs.GameObject</span>)</p>
+<pre><code class='lang-csharp'>public bool IsNull { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Null' data-commentid='P:Alis.Core.Ecs.GameObject.Null' id='Alis_Core_Ecs_GameObject_Null'>Null    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2069'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The null gameObject</p>
+<pre><code class='lang-csharp'>public static GameObject Null { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.OnComponentAddedGeneric' data-commentid='P:Alis.Core.Ecs.GameObject.OnComponentAddedGeneric' id='Alis_Core_Ecs_GameObject_OnComponentAddedGeneric'>OnComponentAddedGeneric    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1851'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Raised when a component is added to an gameObject, with the generic parameter</p>
+<pre><code class='lang-csharp'>public GenericEvent OnComponentAddedGeneric { get; readonly set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.Events.GenericEvent.html'>GenericEvent</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.OnComponentRemovedGeneric' data-commentid='P:Alis.Core.Ecs.GameObject.OnComponentRemovedGeneric' id='Alis_Core_Ecs_GameObject_OnComponentRemovedGeneric'>OnComponentRemovedGeneric    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1872'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Raised when a component is removed to an gameObject, with the generic parameter</p>
+<pre><code class='lang-csharp'>public GenericEvent OnComponentRemovedGeneric { get; readonly set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.Events.GenericEvent.html'>GenericEvent</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.PackedValue' data-commentid='P:Alis.Core.Ecs.GameObject.PackedValue' id='Alis_Core_Ecs_GameObject_PackedValue'>PackedValue    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L103'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the value of the packed value</p>
+<pre><code class='lang-csharp'>internal long PackedValue { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int64'>long</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Scene' data-commentid='P:Alis.Core.Ecs.GameObject.Scene' id='Alis_Core_Ecs_GameObject_Scene'>Scene    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2024'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the scene this gameObject belongs to</p>
+<pre><code class='lang-csharp'>public Scene Scene { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Scene.html'>Scene</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> is dead.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Type' data-commentid='P:Alis.Core.Ecs.GameObject.Type' id='Alis_Core_Ecs_GameObject_Type'>Type    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2043'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The <span class="xref">Alis.Core.Ecs.Kernel.GameObjectType</span> of this <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public GameObjectType Type { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.GameObjectType.html'>GameObjectType</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Add``1(``0@)' data-commentid='M:Alis.Core.Ecs.GameObject.Add``1(``0@)' id='Alis_Core_Ecs_GameObject_Add__1___0__'>Add&lt;T&gt;(in T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L246'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds a component to this <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public void Add&lt;T&gt;(in T c1)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>c1</code> T  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Add``2(``0@,``1@)' data-commentid='M:Alis.Core.Ecs.GameObject.Add``2(``0@,``1@)' id='Alis_Core_Ecs_GameObject_Add__2___0____1__'>Add&lt;T1, T2&gt;(in T1, in T2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L398'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds a component to this <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public void Add&lt;T1, T2&gt;(in T1 c1, in T2 c2)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>c1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>c2</code> T2  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Add``3(``0@,``1@,``2@)' data-commentid='M:Alis.Core.Ecs.GameObject.Add``3(``0@,``1@,``2@)' id='Alis_Core_Ecs_GameObject_Add__3___0____1____2__'>Add&lt;T1, T2, T3&gt;(in T1, in T2, in T3)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L524'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds a component to this <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public void Add&lt;T1, T2, T3&gt;(in T1 c1, in T2 c2, in T3 c3)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>c1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>c2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>c3</code> T3  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Add``4(``0@,``1@,``2@,``3@)' data-commentid='M:Alis.Core.Ecs.GameObject.Add``4(``0@,``1@,``2@,``3@)' id='Alis_Core_Ecs_GameObject_Add__4___0____1____2____3__'>Add&lt;T1, T2, T3, T4&gt;(in T1, in T2, in T3, in T4)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L658'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds a component to this <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public void Add&lt;T1, T2, T3, T4&gt;(in T1 c1, in T2 c2, in T3 c3, in T4 c4)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>c1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>c2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>c3</code> T3  </dt>
+<dd>
+
+
+
+</dd><dt><code>c4</code> T4  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Add``5(``0@,``1@,``2@,``3@,``4@)' data-commentid='M:Alis.Core.Ecs.GameObject.Add``5(``0@,``1@,``2@,``3@,``4@)' id='Alis_Core_Ecs_GameObject_Add__5___0____1____2____3____4__'>Add&lt;T1, T2, T3, T4, T5&gt;(in T1, in T2, in T3, in T4, in T5)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L807'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds a component to this <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public void Add&lt;T1, T2, T3, T4, T5&gt;(in T1 c1, in T2 c2, in T3 c3, in T4 c4, in T5 c5)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>c1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>c2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>c3</code> T3  </dt>
+<dd>
+
+
+
+</dd><dt><code>c4</code> T4  </dt>
+<dd>
+
+
+
+</dd><dt><code>c5</code> T5  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Add``6(``0@,``1@,``2@,``3@,``4@,``5@)' data-commentid='M:Alis.Core.Ecs.GameObject.Add``6(``0@,``1@,``2@,``3@,``4@,``5@)' id='Alis_Core_Ecs_GameObject_Add__6___0____1____2____3____4____5__'>Add&lt;T1, T2, T3, T4, T5, T6&gt;(in T1, in T2, in T3, in T4, in T5, in T6)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L968'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds a component to this <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public void Add&lt;T1, T2, T3, T4, T5, T6&gt;(in T1 c1, in T2 c2, in T3 c3, in T4 c4, in T5 c5, in T6 c6)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>c1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>c2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>c3</code> T3  </dt>
+<dd>
+
+
+
+</dd><dt><code>c4</code> T4  </dt>
+<dd>
+
+
+
+</dd><dt><code>c5</code> T5  </dt>
+<dd>
+
+
+
+</dd><dt><code>c6</code> T6  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Add``7(``0@,``1@,``2@,``3@,``4@,``5@,``6@)' data-commentid='M:Alis.Core.Ecs.GameObject.Add``7(``0@,``1@,``2@,``3@,``4@,``5@,``6@)' id='Alis_Core_Ecs_GameObject_Add__7___0____1____2____3____4____5____6__'>Add&lt;T1, T2, T3, T4, T5, T6, T7&gt;(in T1, in T2, in T3, in T4, in T5, in T6, in T7)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1141'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds a component to this <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public void Add&lt;T1, T2, T3, T4, T5, T6, T7&gt;(in T1 c1, in T2 c2, in T3 c3, in T4 c4, in T5 c5, in T6 c6, in T7 c7)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>c1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>c2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>c3</code> T3  </dt>
+<dd>
+
+
+
+</dd><dt><code>c4</code> T4  </dt>
+<dd>
+
+
+
+</dd><dt><code>c5</code> T5  </dt>
+<dd>
+
+
+
+</dd><dt><code>c6</code> T6  </dt>
+<dd>
+
+
+
+</dd><dt><code>c7</code> T7  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Add``8(``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)' data-commentid='M:Alis.Core.Ecs.GameObject.Add``8(``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)' id='Alis_Core_Ecs_GameObject_Add__8___0____1____2____3____4____5____6____7__'>Add&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(in T1, in T2, in T3, in T4, in T5, in T6, in T7, in T8)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1325'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds a component to this <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public void Add&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(in T1 c1, in T2 c2, in T3 c3, in T4 c4, in T5 c5, in T6 c6, in T7 c7, in T8 c8)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>c1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>c2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>c3</code> T3  </dt>
+<dd>
+
+
+
+</dd><dt><code>c4</code> T4  </dt>
+<dd>
+
+
+
+</dd><dt><code>c5</code> T5  </dt>
+<dd>
+
+
+
+</dd><dt><code>c6</code> T6  </dt>
+<dd>
+
+
+
+</dd><dt><code>c7</code> T7  </dt>
+<dd>
+
+
+
+</dd><dt><code>c8</code> T8  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T8</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.AddAs(System.Type,System.Object)' data-commentid='M:Alis.Core.Ecs.GameObject.AddAs(System.Type,System.Object)' id='Alis_Core_Ecs_GameObject_AddAs_System_Type_System_Object_'>AddAs(Type, object)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1760'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Add a component to an <span class="xref">Alis.Core.Ecs.GameObject</span></p>
+<pre><code class='lang-csharp'>public void AddAs(Type type, object component)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>type</code> <a href='https://learn.microsoft.com/dotnet/api/system.type'>Type</a>  </dt>
+<dd>
+
+
+<p>The type to add the component as. Note that a component of type DerivedClass and BaseClass are
+different component types.</p>
+
+</dd><dt><code>component</code> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>The component to add</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.AddAs(Alis.Core.Ecs.Kernel.ComponentId,System.Object)' data-commentid='M:Alis.Core.Ecs.GameObject.AddAs(Alis.Core.Ecs.Kernel.ComponentId,System.Object)' id='Alis_Core_Ecs_GameObject_AddAs_Alis_Core_Ecs_Kernel_ComponentId_System_Object_'>AddAs(ComponentId, object)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1774'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds a component to this <span class="xref">Alis.Core.Ecs.GameObject</span>, as a specific component type.</p>
+<pre><code class='lang-csharp'>public void AddAs(ComponentId componentId, object component)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>componentId</code> <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>  </dt>
+<dd>
+
+
+<p>The component type to add as.</p>
+
+</dd><dt><code>component</code> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>The component to add.</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidcastexception'>InvalidCastException</a>  </dt>
+<dd>
+
+
+<p><code class="paramref">component</code> is not assignable to the type represented by
+<code class="paramref">componentId</code>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.AddBoxed(System.Object)' data-commentid='M:Alis.Core.Ecs.GameObject.AddBoxed(System.Object)' id='Alis_Core_Ecs_GameObject_AddBoxed_System_Object_'>AddBoxed(object)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1747'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds a component to this <span class="xref">Alis.Core.Ecs.GameObject</span> as its own type</p>
+<pre><code class='lang-csharp'>public void AddBoxed(object component)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>component</code> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>The component, which could be boxed</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.AssertIsAlive(Alis.Core.Ecs.Scene@)' data-commentid='M:Alis.Core.Ecs.GameObject.AssertIsAlive(Alis.Core.Ecs.Scene@)' id='Alis_Core_Ecs_GameObject_AssertIsAlive_Alis_Core_Ecs_Scene__'>AssertIsAlive(out Scene)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L131'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>internal ref GameObjectLocation AssertIsAlive(out Scene scene)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>scene</code> <a href='Alis.Core.Ecs.Scene.html'>Scene</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>This <span class="xref">Alis.Core.Ecs.GameObject</span> has been deleted.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Delete' data-commentid='M:Alis.Core.Ecs.GameObject.Delete' id='Alis_Core_Ecs_GameObject_Delete'>Delete()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1985'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Deletes this gameObject</p>
+<pre><code class='lang-csharp'>public void Delete()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.EntityTypeOf(System.ReadOnlySpan{Alis.Core.Ecs.Kernel.ComponentId})' data-commentid='M:Alis.Core.Ecs.GameObject.EntityTypeOf(System.ReadOnlySpan{Alis.Core.Ecs.Kernel.ComponentId})' id='Alis_Core_Ecs_GameObject_EntityTypeOf_System_ReadOnlySpan_Alis_Core_Ecs_Kernel_ComponentId__'>EntityTypeOf(ReadOnlySpan&lt;ComponentId&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2075'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets an <span class="xref">Alis.Core.Ecs.Kernel.GameObjectType</span> without needing an <span class="xref">Alis.Core.Ecs.GameObject</span> of the specific type.</p>
+<pre><code class='lang-csharp'>public static GameObjectType EntityTypeOf(ReadOnlySpan&lt;ComponentId&gt; components)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>components</code> <a href='https://learn.microsoft.com/dotnet/api/system.readonlyspan-1'>ReadOnlySpan</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+<p>The components the <span class="xref">Alis.Core.Ecs.Kernel.GameObjectType</span> should have.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.GameObjectType.html'>GameObjectType</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.EnumerateComponents(Alis.Core.Ecs.Kernel.Events.IGenericAction)' data-commentid='M:Alis.Core.Ecs.GameObject.EnumerateComponents(Alis.Core.Ecs.Kernel.Events.IGenericAction)' id='Alis_Core_Ecs_GameObject_EnumerateComponents_Alis_Core_Ecs_Kernel_Events_IGenericAction_'>EnumerateComponents(IGenericAction)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2056'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Enumerates all components one by one</p>
+<pre><code class='lang-csharp'>public void EnumerateComponents(IGenericAction onEach)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>onEach</code> <a href='Alis.Core.Ecs.Kernel.Events.IGenericAction.html'>IGenericAction</a>  </dt>
+<dd>
+
+
+<p>The unbound generic function called on each item</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Equals(System.Object)' data-commentid='M:Alis.Core.Ecs.GameObject.Equals(System.Object)' id='Alis_Core_Ecs_GameObject_Equals_System_Object_'>Equals(object)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L222'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Determines whether the specified object is equal to the current <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public override bool Equals(object obj)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>obj</code> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>The object to compare with the current gameObject.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object is an <span class="xref">Alis.Core.Ecs.GameObject</span> and is equal to the current
+gameObject; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Equals(Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.GameObject.Equals(Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_GameObject_Equals_Alis_Core_Ecs_GameObject_'>Equals(GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L232'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Determines whether the specified <span class="xref">Alis.Core.Ecs.GameObject</span> is equal to the current <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public bool Equals(GameObject other)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>other</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject to compare with the current gameObject.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified gameObject is equal to the current gameObject; otherwise,
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Get``1' data-commentid='M:Alis.Core.Ecs.GameObject.Get``1' id='Alis_Core_Ecs_GameObject_Get__1'>Get&lt;T&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1602'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets this <span class="xref">Alis.Core.Ecs.GameObject</span>'s component of type <code class="typeparamref">T</code>.</p>
+<pre><code class='lang-csharp'>public ref T Get&lt;T&gt;()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> T  </dt>
+<dd>
+
+
+<p>A reference to the component in memory.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The type of component.</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> is dead.</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.nullreferenceexception'>NullReferenceException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> does not have component of type
+<code class="typeparamref">T</code>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Get(Alis.Core.Ecs.Kernel.ComponentId)' data-commentid='M:Alis.Core.Ecs.GameObject.Get(Alis.Core.Ecs.Kernel.ComponentId)' id='Alis_Core_Ecs_GameObject_Get_Alis_Core_Ecs_Kernel_ComponentId_'>Get(ComponentId)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1632'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets this <span class="xref">Alis.Core.Ecs.GameObject</span>'s component of type <code class="paramref">id</code>.</p>
+<pre><code class='lang-csharp'>public object Get(ComponentId id)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>id</code> <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>  </dt>
+<dd>
+
+
+<p>The ID of the type of component to get</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>The boxed component.</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> is dead.</p>
+
+</dd><dt> <a href='Alis.Core.Ecs.Exceptions.ComponentNotFoundException.html'>ComponentNotFoundException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> does not have component of type
+<code class="paramref">id</code>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Get(System.Type)' data-commentid='M:Alis.Core.Ecs.GameObject.Get(System.Type)' id='Alis_Core_Ecs_GameObject_Get_System_Type_'>Get(Type)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1656'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets this <span class="xref">Alis.Core.Ecs.GameObject</span>'s component of type <code class="paramref">type</code>.</p>
+<pre><code class='lang-csharp'>public object Get(Type type)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>type</code> <a href='https://learn.microsoft.com/dotnet/api/system.type'>Type</a>  </dt>
+<dd>
+
+
+<p>The type of component to get</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>The component of type <code class="paramref">type</code></p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> is dead.</p>
+
+</dd><dt> <a href='Alis.Core.Ecs.Exceptions.ComponentNotFoundException.html'>ComponentNotFoundException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> does not have component of type
+<code class="paramref">type</code>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.GetHashCode' data-commentid='M:Alis.Core.Ecs.GameObject.GetHashCode' id='Alis_Core_Ecs_GameObject_GetHashCode'>GetHashCode()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L238'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Serves as the default hash function.</p>
+<pre><code class='lang-csharp'>public override int GetHashCode()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>A hash code for the current <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Has(Alis.Core.Ecs.Kernel.ComponentId)' data-commentid='M:Alis.Core.Ecs.GameObject.Has(Alis.Core.Ecs.Kernel.ComponentId)' id='Alis_Core_Ecs_GameObject_Has_Alis_Core_Ecs_Kernel_ComponentId_'>Has(ComponentId)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1528'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Checks of this <span class="xref">Alis.Core.Ecs.GameObject</span> has a component specified by <code class="paramref">componentId</code>.</p>
+<pre><code class='lang-csharp'>public bool Has(ComponentId componentId)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>componentId</code> <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>  </dt>
+<dd>
+
+
+<p>The component ID of the component type to check.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject has a component of <code class="paramref">componentId</code>, otherwise
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Has``1' data-commentid='M:Alis.Core.Ecs.GameObject.Has``1' id='Alis_Core_Ecs_GameObject_Has__1'>Has&lt;T&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1542'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Checks to see if this <span class="xref">Alis.Core.Ecs.GameObject</span> has a component of Type <code class="typeparamref">T</code>.</p>
+<pre><code class='lang-csharp'>public bool Has&lt;T&gt;()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject has a component of <code class="typeparamref">T</code>, otherwise
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The type of component to check.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Has(System.Type)' data-commentid='M:Alis.Core.Ecs.GameObject.Has(System.Type)' id='Alis_Core_Ecs_GameObject_Has_System_Type_'>Has(Type)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1552'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Checks to see if this <span class="xref">Alis.Core.Ecs.GameObject</span> has a component of Type <code class="paramref">type</code>.</p>
+<pre><code class='lang-csharp'>public bool Has(Type type)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>type</code> <a href='https://learn.microsoft.com/dotnet/api/system.type'>Type</a>  </dt>
+<dd>
+
+
+<p>The component type to check if this gameObject has.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject has a component of <code class="paramref">type</code>, otherwise
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InitalizeEventRecord(System.Object,Alis.Core.Ecs.GameObjectFlags,System.Boolean)' data-commentid='M:Alis.Core.Ecs.GameObject.InitalizeEventRecord(System.Object,Alis.Core.Ecs.GameObjectFlags,System.Boolean)' id='Alis_Core_Ecs_GameObject_InitalizeEventRecord_System_Object_Alis_Core_Ecs_GameObjectFlags_System_Boolean_'>InitalizeEventRecord(object, GameObjectFlags, bool)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1938'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Initalizes the event record using the specified delegate</p>
+<pre><code class='lang-csharp'>public void InitalizeEventRecord(object d, GameObjectFlags flag, bool isGenericEvent = false)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>d</code> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>The delegate</p>
+
+</dd><dt><code>flag</code> <a href='Alis.Core.Ecs.GameObjectFlags.html'>GameObjectFlags</a>  </dt>
+<dd>
+
+
+<p>The flag</p>
+
+</dd><dt><code>isGenericEvent</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The is generic event</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InternalIsAlive(Alis.Core.Ecs.Scene@,Alis.Core.Ecs.GameObjectLocation@)' data-commentid='M:Alis.Core.Ecs.GameObject.InternalIsAlive(Alis.Core.Ecs.Scene@,Alis.Core.Ecs.GameObjectLocation@)' id='Alis_Core_Ecs_GameObject_InternalIsAlive_Alis_Core_Ecs_Scene__Alis_Core_Ecs_GameObjectLocation__'>InternalIsAlive(out Scene, out GameObjectLocation)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L117'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Internals the is alive using the specified scene</p>
+<pre><code class='lang-csharp'>internal bool InternalIsAlive(out Scene scene, out GameObjectLocation gameObjectLocation)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>scene</code> <a href='Alis.Core.Ecs.Scene.html'>Scene</a>  </dt>
+<dd>
+
+
+<p>The scene</p>
+
+</dd><dt><code>gameObjectLocation</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The gameObject location</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The bool</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``1(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``1(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__1_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_'>InvokeComponentWorldEvents&lt;T&gt;(ref Event&lt;ComponentId&gt;, GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L319'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the component scene events using the specified event</p>
+<pre><code class='lang-csharp'>public static void InvokeComponentWorldEvents&lt;T&gt;(ref Event&lt;ComponentId&gt; e, GameObject gameObject)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>e</code> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+<p>The event</p>
+
+</dd><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``2(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``2(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__2_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_'>InvokeComponentWorldEvents&lt;T1, T2&gt;(ref Event&lt;ComponentId&gt;, GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L487'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the component scene events using the specified event</p>
+<pre><code class='lang-csharp'>public static void InvokeComponentWorldEvents&lt;T1, T2&gt;(ref Event&lt;ComponentId&gt; e, GameObject gameObject)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>e</code> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+<p>The event</p>
+
+</dd><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``3(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``3(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__3_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_'>InvokeComponentWorldEvents&lt;T1, T2, T3&gt;(ref Event&lt;ComponentId&gt;, GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L617'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the component scene events using the specified event</p>
+<pre><code class='lang-csharp'>public static void InvokeComponentWorldEvents&lt;T1, T2, T3&gt;(ref Event&lt;ComponentId&gt; e, GameObject gameObject)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>e</code> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+<p>The event</p>
+
+</dd><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``4(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``4(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__4_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_'>InvokeComponentWorldEvents&lt;T1, T2, T3, T4&gt;(ref Event&lt;ComponentId&gt;, GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L760'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the component scene events using the specified event</p>
+<pre><code class='lang-csharp'>public static void InvokeComponentWorldEvents&lt;T1, T2, T3, T4&gt;(ref Event&lt;ComponentId&gt; e, GameObject gameObject)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>e</code> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+<p>The event</p>
+
+</dd><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``5(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``5(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__5_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_'>InvokeComponentWorldEvents&lt;T1, T2, T3, T4, T5&gt;(ref Event&lt;ComponentId&gt;, GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L914'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the component scene events using the specified event</p>
+<pre><code class='lang-csharp'>public static void InvokeComponentWorldEvents&lt;T1, T2, T3, T4, T5&gt;(ref Event&lt;ComponentId&gt; e, GameObject gameObject)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>e</code> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+<p>The event</p>
+
+</dd><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``6(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``6(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__6_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_'>InvokeComponentWorldEvents&lt;T1, T2, T3, T4, T5, T6&gt;(ref Event&lt;ComponentId&gt;, GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1082'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the component scene events using the specified event</p>
+<pre><code class='lang-csharp'>public static void InvokeComponentWorldEvents&lt;T1, T2, T3, T4, T5, T6&gt;(ref Event&lt;ComponentId&gt; e, GameObject gameObject)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>e</code> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+<p>The event</p>
+
+</dd><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``7(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``7(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__7_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_'>InvokeComponentWorldEvents&lt;T1, T2, T3, T4, T5, T6, T7&gt;(ref Event&lt;ComponentId&gt;, GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1261'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the component scene events using the specified event</p>
+<pre><code class='lang-csharp'>public static void InvokeComponentWorldEvents&lt;T1, T2, T3, T4, T5, T6, T7&gt;(ref Event&lt;ComponentId&gt; e, GameObject gameObject)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>e</code> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+<p>The event</p>
+
+</dd><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``8(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``8(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__8_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_'>InvokeComponentWorldEvents&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(ref Event&lt;ComponentId&gt;, GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1454'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the component scene events using the specified event</p>
+<pre><code class='lang-csharp'>public static void InvokeComponentWorldEvents&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(ref Event&lt;ComponentId&gt; e, GameObject gameObject)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>e</code> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+<p>The event</p>
+
+</dd><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T8</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokePerEntityEvents``1(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``1(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@)' id='Alis_Core_Ecs_GameObject_InvokePerEntityEvents__1_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0__'>InvokePerEntityEvents&lt;T&gt;(GameObject, bool, ref ComponentEvent, ref T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L332'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the per gameObject events using the specified gameObject</p>
+<pre><code class='lang-csharp'>public static void InvokePerEntityEvents&lt;T&gt;(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T component)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>hasGenericEvent</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The has generic event</p>
+
+</dd><dt><code>events</code> <a href='Alis.Core.Ecs.Kernel.Events.ComponentEvent.html'>ComponentEvent</a>  </dt>
+<dd>
+
+
+<p>The events</p>
+
+</dd><dt><code>component</code> T  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokePerEntityEvents``2(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``2(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@)' id='Alis_Core_Ecs_GameObject_InvokePerEntityEvents__2_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1__'>InvokePerEntityEvents&lt;T1, T2&gt;(GameObject, bool, ref ComponentEvent, ref T1, ref T2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L503'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the per gameObject events using the specified gameObject</p>
+<pre><code class='lang-csharp'>public static void InvokePerEntityEvents&lt;T1, T2&gt;(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>hasGenericEvent</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The has generic event</p>
+
+</dd><dt><code>events</code> <a href='Alis.Core.Ecs.Kernel.Events.ComponentEvent.html'>ComponentEvent</a>  </dt>
+<dd>
+
+
+<p>The events</p>
+
+</dd><dt><code>component1</code> T1  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component2</code> T2  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokePerEntityEvents``3(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``3(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@)' id='Alis_Core_Ecs_GameObject_InvokePerEntityEvents__3_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2__'>InvokePerEntityEvents&lt;T1, T2, T3&gt;(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L636'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the per gameObject events using the specified gameObject</p>
+<pre><code class='lang-csharp'>public static void InvokePerEntityEvents&lt;T1, T2, T3&gt;(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>hasGenericEvent</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The has generic event</p>
+
+</dd><dt><code>events</code> <a href='Alis.Core.Ecs.Kernel.Events.ComponentEvent.html'>ComponentEvent</a>  </dt>
+<dd>
+
+
+<p>The events</p>
+
+</dd><dt><code>component1</code> T1  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component2</code> T2  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component3</code> T3  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokePerEntityEvents``4(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``4(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@)' id='Alis_Core_Ecs_GameObject_InvokePerEntityEvents__4_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2____3__'>InvokePerEntityEvents&lt;T1, T2, T3, T4&gt;(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3, ref T4)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L782'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the per gameObject events using the specified gameObject</p>
+<pre><code class='lang-csharp'>public static void InvokePerEntityEvents&lt;T1, T2, T3, T4&gt;(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3, ref T4 component4)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>hasGenericEvent</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The has generic event</p>
+
+</dd><dt><code>events</code> <a href='Alis.Core.Ecs.Kernel.Events.ComponentEvent.html'>ComponentEvent</a>  </dt>
+<dd>
+
+
+<p>The events</p>
+
+</dd><dt><code>component1</code> T1  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component2</code> T2  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component3</code> T3  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component4</code> T4  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokePerEntityEvents``5(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``5(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@)' id='Alis_Core_Ecs_GameObject_InvokePerEntityEvents__5_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2____3____4__'>InvokePerEntityEvents&lt;T1, T2, T3, T4, T5&gt;(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3, ref T4, ref T5)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L939'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the per gameObject events using the specified gameObject</p>
+<pre><code class='lang-csharp'>public static void InvokePerEntityEvents&lt;T1, T2, T3, T4, T5&gt;(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3, ref T4 component4, ref T5 component5)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>hasGenericEvent</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The has generic event</p>
+
+</dd><dt><code>events</code> <a href='Alis.Core.Ecs.Kernel.Events.ComponentEvent.html'>ComponentEvent</a>  </dt>
+<dd>
+
+
+<p>The events</p>
+
+</dd><dt><code>component1</code> T1  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component2</code> T2  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component3</code> T3  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component4</code> T4  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component5</code> T5  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokePerEntityEvents``6(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``6(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@)' id='Alis_Core_Ecs_GameObject_InvokePerEntityEvents__6_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2____3____4____5__'>InvokePerEntityEvents&lt;T1, T2, T3, T4, T5, T6&gt;(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3, ref T4, ref T5, ref T6)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1110'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the per gameObject events using the specified gameObject</p>
+<pre><code class='lang-csharp'>public static void InvokePerEntityEvents&lt;T1, T2, T3, T4, T5, T6&gt;(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3, ref T4 component4, ref T5 component5, ref T6 component6)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>hasGenericEvent</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The has generic event</p>
+
+</dd><dt><code>events</code> <a href='Alis.Core.Ecs.Kernel.Events.ComponentEvent.html'>ComponentEvent</a>  </dt>
+<dd>
+
+
+<p>The events</p>
+
+</dd><dt><code>component1</code> T1  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component2</code> T2  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component3</code> T3  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component4</code> T4  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component5</code> T5  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component6</code> T6  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokePerEntityEvents``7(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@,``6@)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``7(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@,``6@)' id='Alis_Core_Ecs_GameObject_InvokePerEntityEvents__7_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2____3____4____5____6__'>InvokePerEntityEvents&lt;T1, T2, T3, T4, T5, T6, T7&gt;(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3, ref T4, ref T5, ref T6, ref T7)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1293'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the per gameObject events using the specified gameObject</p>
+<pre><code class='lang-csharp'>public static void InvokePerEntityEvents&lt;T1, T2, T3, T4, T5, T6, T7&gt;(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3, ref T4 component4, ref T5 component5, ref T6 component6, ref T7 component7)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>hasGenericEvent</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The has generic event</p>
+
+</dd><dt><code>events</code> <a href='Alis.Core.Ecs.Kernel.Events.ComponentEvent.html'>ComponentEvent</a>  </dt>
+<dd>
+
+
+<p>The events</p>
+
+</dd><dt><code>component1</code> T1  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component2</code> T2  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component3</code> T3  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component4</code> T4  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component5</code> T5  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component6</code> T6  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component7</code> T7  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.InvokePerEntityEvents``8(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)' data-commentid='M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``8(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)' id='Alis_Core_Ecs_GameObject_InvokePerEntityEvents__8_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2____3____4____5____6____7__'>InvokePerEntityEvents&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3, ref T4, ref T5, ref T6, ref T7, ref T8)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1489'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the per gameObject events using the specified gameObject</p>
+<pre><code class='lang-csharp'>public static void InvokePerEntityEvents&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3, ref T4 component4, ref T5 component5, ref T6 component6, ref T7 component7, ref T8 component8)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>hasGenericEvent</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The has generic event</p>
+
+</dd><dt><code>events</code> <a href='Alis.Core.Ecs.Kernel.Events.ComponentEvent.html'>ComponentEvent</a>  </dt>
+<dd>
+
+
+<p>The events</p>
+
+</dd><dt><code>component1</code> T1  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component2</code> T2  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component3</code> T3  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component4</code> T4  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component5</code> T5  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component6</code> T6  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component7</code> T7  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd><dt><code>component8</code> T8  </dt>
+<dd>
+
+
+<p>The component</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T8</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Remove``1' data-commentid='M:Alis.Core.Ecs.GameObject.Remove``1' id='Alis_Core_Ecs_GameObject_Remove__1'>Remove&lt;T&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L293'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes a component from this <span class="xref">Alis.Core.Ecs.GameObject</span></p>
+<pre><code class='lang-csharp'>public void Remove&lt;T&gt;()</code></pre><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Remove``2' data-commentid='M:Alis.Core.Ecs.GameObject.Remove``2' id='Alis_Core_Ecs_GameObject_Remove__2'>Remove&lt;T1, T2&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L455'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes a component from this <span class="xref">Alis.Core.Ecs.GameObject</span></p>
+<pre><code class='lang-csharp'>public void Remove&lt;T1, T2&gt;()</code></pre><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Remove``3' data-commentid='M:Alis.Core.Ecs.GameObject.Remove``3' id='Alis_Core_Ecs_GameObject_Remove__3'>Remove&lt;T1, T2, T3&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L585'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes a component from this <span class="xref">Alis.Core.Ecs.GameObject</span></p>
+<pre><code class='lang-csharp'>public void Remove&lt;T1, T2, T3&gt;()</code></pre><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Remove``4' data-commentid='M:Alis.Core.Ecs.GameObject.Remove``4' id='Alis_Core_Ecs_GameObject_Remove__4'>Remove&lt;T1, T2, T3, T4&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L724'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes a component from this <span class="xref">Alis.Core.Ecs.GameObject</span></p>
+<pre><code class='lang-csharp'>public void Remove&lt;T1, T2, T3, T4&gt;()</code></pre><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Remove``5' data-commentid='M:Alis.Core.Ecs.GameObject.Remove``5' id='Alis_Core_Ecs_GameObject_Remove__5'>Remove&lt;T1, T2, T3, T4, T5&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L877'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes a component from this <span class="xref">Alis.Core.Ecs.GameObject</span></p>
+<pre><code class='lang-csharp'>public void Remove&lt;T1, T2, T3, T4, T5&gt;()</code></pre><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Remove``6' data-commentid='M:Alis.Core.Ecs.GameObject.Remove``6' id='Alis_Core_Ecs_GameObject_Remove__6'>Remove&lt;T1, T2, T3, T4, T5, T6&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1043'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes a component from this <span class="xref">Alis.Core.Ecs.GameObject</span></p>
+<pre><code class='lang-csharp'>public void Remove&lt;T1, T2, T3, T4, T5, T6&gt;()</code></pre><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Remove``7' data-commentid='M:Alis.Core.Ecs.GameObject.Remove``7' id='Alis_Core_Ecs_GameObject_Remove__7'>Remove&lt;T1, T2, T3, T4, T5, T6, T7&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1221'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes a component from this <span class="xref">Alis.Core.Ecs.GameObject</span></p>
+<pre><code class='lang-csharp'>public void Remove&lt;T1, T2, T3, T4, T5, T6, T7&gt;()</code></pre><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Remove``8' data-commentid='M:Alis.Core.Ecs.GameObject.Remove``8' id='Alis_Core_Ecs_GameObject_Remove__8'>Remove&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1411'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes a component from this <span class="xref">Alis.Core.Ecs.GameObject</span></p>
+<pre><code class='lang-csharp'>public void Remove&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;()</code></pre><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T8</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the scene is being updated, changed are deffered to the end of the scene update.</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Remove(Alis.Core.Ecs.Kernel.ComponentId)' data-commentid='M:Alis.Core.Ecs.GameObject.Remove(Alis.Core.Ecs.Kernel.ComponentId)' id='Alis_Core_Ecs_GameObject_Remove_Alis_Core_Ecs_Kernel_ComponentId_'>Remove(ComponentId)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1794'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes a component from this gameObject</p>
+<pre><code class='lang-csharp'>public void Remove(ComponentId componentId)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>componentId</code> <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>  </dt>
+<dd>
+
+
+<p>The <span class="xref">Alis.Core.Ecs.Kernel.ComponentId</span> of the component to be removed</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Remove(System.Type)' data-commentid='M:Alis.Core.Ecs.GameObject.Remove(System.Type)' id='Alis_Core_Ecs_GameObject_Remove_System_Type_'>Remove(Type)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1816'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes a component from an <span class="xref">Alis.Core.Ecs.GameObject</span></p>
+<pre><code class='lang-csharp'>public void Remove(Type type)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>type</code> <a href='https://learn.microsoft.com/dotnet/api/system.type'>Type</a>  </dt>
+<dd>
+
+
+<p>The type of component to remove</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> is dead.</p>
+
+</dd><dt> <a href='Alis.Core.Ecs.Exceptions.ComponentNotFoundException.html'>ComponentNotFoundException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> does not have component of type
+<code class="paramref">type</code>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Set(Alis.Core.Ecs.Kernel.ComponentId,System.Object)' data-commentid='M:Alis.Core.Ecs.GameObject.Set(Alis.Core.Ecs.Kernel.ComponentId,System.Object)' id='Alis_Core_Ecs_GameObject_Set_Alis_Core_Ecs_Kernel_ComponentId_System_Object_'>Set(ComponentId, object)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1668'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets this <span class="xref">Alis.Core.Ecs.GameObject</span>'s component of type <code class="paramref">id</code>.</p>
+<pre><code class='lang-csharp'>public void Set(ComponentId id, object obj)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>id</code> <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>  </dt>
+<dd>
+
+
+<p>The ID of the type of component to get</p>
+
+</dd><dt><code>obj</code> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>The component to set</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> is dead.</p>
+
+</dd><dt> <a href='Alis.Core.Ecs.Exceptions.ComponentNotFoundException.html'>ComponentNotFoundException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> does not have component of type
+<code class="paramref">id</code>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Set(System.Type,System.Object)' data-commentid='M:Alis.Core.Ecs.GameObject.Set(System.Type,System.Object)' id='Alis_Core_Ecs_GameObject_Set_System_Type_System_Object_'>Set(Type, object)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1695'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets this <span class="xref">Alis.Core.Ecs.GameObject</span>'s component of type <code class="paramref">type</code>.</p>
+<pre><code class='lang-csharp'>public void Set(Type type, object obj)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>type</code> <a href='https://learn.microsoft.com/dotnet/api/system.type'>Type</a>  </dt>
+<dd>
+
+
+<p>The type of component to get</p>
+
+</dd><dt><code>obj</code> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>The component to set</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> is dead.</p>
+
+</dd><dt> <a href='Alis.Core.Ecs.Exceptions.ComponentNotFoundException.html'>ComponentNotFoundException</a>  </dt>
+<dd>
+
+
+<p><span class="xref">Alis.Core.Ecs.GameObject</span> does not have component of type
+<code class="paramref">type</code>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.Throw_EntityIsDead' data-commentid='M:Alis.Core.Ecs.GameObject.Throw_EntityIsDead' id='Alis_Core_Ecs_GameObject_Throw_EntityIsDead'>Throw_EntityIsDead()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L179'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Throws the gameObject is dead</p>
+<pre><code class='lang-csharp'>public static void Throw_EntityIsDead()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.TraverseThroughCacheOrCreate``1(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Collections.ArchetypeNeighborCache@,Alis.Core.Ecs.GameObjectLocation@,System.Boolean)' data-commentid='M:Alis.Core.Ecs.GameObject.TraverseThroughCacheOrCreate``1(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Collections.ArchetypeNeighborCache@,Alis.Core.Ecs.GameObjectLocation@,System.Boolean)' id='Alis_Core_Ecs_GameObject_TraverseThroughCacheOrCreate__1_Alis_Core_Ecs_Scene_Alis_Core_Ecs_Collections_ArchetypeNeighborCache__Alis_Core_Ecs_GameObjectLocation__System_Boolean_'>TraverseThroughCacheOrCreate&lt;TEdge&gt;(Scene, ref ArchetypeNeighborCache, ref GameObjectLocation, bool)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L357'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Traverses the through cache or create using the specified scene</p>
+<pre><code class='lang-csharp'>internal static Archetype TraverseThroughCacheOrCreate&lt;TEdge&gt;(Scene scene, ref ArchetypeNeighborCache cache, ref GameObjectLocation currentLookup, bool add) where TEdge : struct, IArchetypeGraphEdge</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>scene</code> <a href='Alis.Core.Ecs.Scene.html'>Scene</a>  </dt>
+<dd>
+
+
+<p>The scene</p>
+
+</dd><dt><code>cache</code> <a href='Alis.Core.Ecs.Collections.ArchetypeNeighborCache.html'>ArchetypeNeighborCache</a>  </dt>
+<dd>
+
+
+<p>The cache</p>
+
+</dd><dt><code>currentLookup</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The current lookup</p>
+
+</dd><dt><code>add</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The add</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.Archetypes.Archetype.html'>Archetype</a>  </dt>
+<dd>
+
+
+<p>The archetype</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>TEdge</code>   </dt>
+<dd>
+
+
+<p>The edge</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.TryGet``1(Alis.Core.Ecs.Kernel.Ref{``0}@)' data-commentid='M:Alis.Core.Ecs.GameObject.TryGet``1(Alis.Core.Ecs.Kernel.Ref{``0}@)' id='Alis_Core_Ecs_GameObject_TryGet__1_Alis_Core_Ecs_Kernel_Ref___0___'>TryGet&lt;T&gt;(out Ref&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1710'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Attempts to get a component from an <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public bool TryGet&lt;T&gt;(out Ref&lt;T&gt; value)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>value</code> <a href='Alis.Core.Ecs.Kernel.Ref-1.html'>Ref</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>A wrapper over a reference to the component when <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this gameObject has a component of type <code class="typeparamref">T</code>, otherwise
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The type of component.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.TryGet(System.Type,System.Object@)' data-commentid='M:Alis.Core.Ecs.GameObject.TryGet(System.Type,System.Object@)' id='Alis_Core_Ecs_GameObject_TryGet_System_Type_System_Object__'>TryGet(Type, out object)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1725'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Attempts to get a component from an <span class="xref">Alis.Core.Ecs.GameObject</span>.</p>
+<pre><code class='lang-csharp'>public bool TryGet(Type type, out object value)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>type</code> <a href='https://learn.microsoft.com/dotnet/api/system.type'>Type</a>  </dt>
+<dd>
+
+
+<p>The type of component to try and get</p>
+
+</dd><dt><code>value</code> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>A wrapper over a reference to the component when <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this gameObject has a component of type <code class="paramref">type</code>, otherwise
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.TryGetCore``1(System.Boolean@)' data-commentid='M:Alis.Core.Ecs.GameObject.TryGetCore``1(System.Boolean@)' id='Alis_Core_Ecs_GameObject_TryGetCore__1_System_Boolean__'>TryGetCore&lt;T&gt;(out bool)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L151'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Tries the get core using the specified exists</p>
+<pre><code class='lang-csharp'>public Ref&lt;T&gt; TryGetCore&lt;T&gt;(out bool exists)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>exists</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The exists</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.Ref-1.html'>Ref</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>A ref of t</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.TryHas(Alis.Core.Ecs.Kernel.ComponentId)' data-commentid='M:Alis.Core.Ecs.GameObject.TryHas(Alis.Core.Ecs.Kernel.ComponentId)' id='Alis_Core_Ecs_GameObject_TryHas_Alis_Core_Ecs_Kernel_ComponentId_'>TryHas(ComponentId)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1564'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Checks of this <span class="xref">Alis.Core.Ecs.GameObject</span> has a component specified by <code class="paramref">componentId</code> without
+throwing
+when dead.</p>
+<pre><code class='lang-csharp'>public bool TryHas(ComponentId componentId)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>componentId</code> <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>  </dt>
+<dd>
+
+
+<p>The component ID of the component type to check.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject is alive and has a component of <code class="paramref">componentId</code>,
+otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.TryHas``1' data-commentid='M:Alis.Core.Ecs.GameObject.TryHas``1' id='Alis_Core_Ecs_GameObject_TryHas__1'>TryHas&lt;T&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1577'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Checks of this <span class="xref">Alis.Core.Ecs.GameObject</span> has a component specified by <code class="typeparamref">T</code> without throwing
+when
+dead.</p>
+<pre><code class='lang-csharp'>public bool TryHas&lt;T&gt;()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject is alive and has a component of <code class="typeparamref">T</code>, otherwise
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The type of component to check.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.TryHas(System.Type)' data-commentid='M:Alis.Core.Ecs.GameObject.TryHas(System.Type)' id='Alis_Core_Ecs_GameObject_TryHas_System_Type_'>TryHas(Type)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1589'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Checks of this <span class="xref">Alis.Core.Ecs.GameObject</span> has a component specified by <code class="paramref">type</code> without throwing
+when
+dead.</p>
+<pre><code class='lang-csharp'>public bool TryHas(Type type)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>type</code> <a href='https://learn.microsoft.com/dotnet/api/system.type'>Type</a>  </dt>
+<dd>
+
+
+<p>The type of the component type to check.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject is alive and has a component of <code class="paramref">type</code>, otherwise
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.UnsubscribeEvent(System.Object,Alis.Core.Ecs.GameObjectFlags)' data-commentid='M:Alis.Core.Ecs.GameObject.UnsubscribeEvent(System.Object,Alis.Core.Ecs.GameObjectFlags)' id='Alis_Core_Ecs_GameObject_UnsubscribeEvent_System_Object_Alis_Core_Ecs_GameObjectFlags_'>UnsubscribeEvent(object, GameObjectFlags)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1895'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Unsubscribes the event using the specified value</p>
+<pre><code class='lang-csharp'>public void UnsubscribeEvent(object value, GameObjectFlags flag)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>value</code> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>The value</p>
+
+</dd><dt><code>flag</code> <a href='Alis.Core.Ecs.GameObjectFlags.html'>GameObjectFlags</a>  </dt>
+<dd>
+
+
+<p>The flag</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.OnComponentAdded' data-commentid='E:Alis.Core.Ecs.GameObject.OnComponentAdded' id='Alis_Core_Ecs_GameObject_OnComponentAdded'>OnComponentAdded    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1833'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Raised when a component is added to an gameObject</p>
+<pre><code class='lang-csharp'>public event Action&lt;GameObject, ComponentId&gt; OnComponentAdded</code></pre><h4 class='section'>Event Type</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.action-2'>Action</a>&lt;<a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>, <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.OnComponentRemoved' data-commentid='E:Alis.Core.Ecs.GameObject.OnComponentRemoved' id='Alis_Core_Ecs_GameObject_OnComponentRemoved'>OnComponentRemoved    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1842'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Raised when a component is removed from an gameObject</p>
+<pre><code class='lang-csharp'>public event Action&lt;GameObject, ComponentId&gt; OnComponentRemoved</code></pre><h4 class='section'>Event Type</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.action-2'>Action</a>&lt;<a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>, <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.OnDelete' data-commentid='E:Alis.Core.Ecs.GameObject.OnDelete' id='Alis_Core_Ecs_GameObject_OnDelete'>OnDelete    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1824'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Raised when the gameObject is deleted</p>
+<pre><code class='lang-csharp'>public event Action&lt;GameObject&gt; OnDelete</code></pre><h4 class='section'>Event Type</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.action-1'>Action</a>&lt;<a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Operators</h2><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.op_Equality(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.GameObject.op_Equality(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_GameObject_op_Equality_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObject_'>operator ==(GameObject, GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L201'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Checks if two <span class="xref">Alis.Core.Ecs.GameObject</span> structs refer to the same gameObject.</p>
+<pre><code class='lang-csharp'>public static bool operator ==(GameObject a, GameObject b)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>a</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The first gameObject to compare.</p>
+
+</dd><dt><code>b</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The second gameObject to compare.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entities refer to the same gameObject; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.GameObject.op_Inequality(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.GameObject.op_Inequality(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_GameObject_op_Inequality_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObject_'>operator !=(GameObject, GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L212'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Checks if two <span class="xref">Alis.Core.Ecs.GameObject</span> structs do not refer to the same gameObject.</p>
+<pre><code class='lang-csharp'>public static bool operator !=(GameObject a, GameObject b)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>a</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The first gameObject to compare.</p>
+
+</dd><dt><code>b</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The second gameObject to compare.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entities do not refer to the same gameObject; otherwise,
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+
+</dd></dl>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Alis - Desarrolla los videojuegos de tus sueños 💯 gratis en Windows, MacOS, Linux, Android (próximamente), iOS (próximamente).
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

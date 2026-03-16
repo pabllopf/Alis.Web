@@ -1,12 +1,12 @@
 ### YamlMime:ApiPage
-title: Class DTSweepContext.DTSweepBasin
+title: Class DtSweepContext.DtSweepBasin
 body:
-- api1: Class DTSweepContext.DTSweepBasin
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_DTSweepBasin
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L280
+- api1: Class DtSweepContext.DtSweepBasin
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepContext_DtSweepBasin
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L289
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin
-    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin
 - facts:
   - name: Namespace
     value:
@@ -15,13 +15,13 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The dt sweep basin class
-- code: public class DTSweepContext.DTSweepBasin
+- code: public class DtSweepContext.DtSweepBasin
 - h4: Inheritance
 - inheritance:
   - text: object
     url: https://learn.microsoft.com/dotnet/api/system.object
-  - text: DTSweepContext.DTSweepBasin
-    url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.html
+  - text: DtSweepContext.DtSweepBasin
+    url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin.html
 - h4: Inherited Members
 - list:
   - text: object.Equals(object?)
@@ -39,66 +39,66 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Fields
-- api3: bottomNode
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_DTSweepBasin_bottomNode
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L285
+- api3: BottomNode
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepContext_DtSweepBasin_BottomNode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L294
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.bottomNode
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.bottomNode
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin.BottomNode
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin.BottomNode
 - markdown: The bottom node
-- code: public AdvancingFrontNode bottomNode
+- code: public AdvancingFrontNode BottomNode
 - h4: Field Value
 - parameters:
   - type:
     - text: AdvancingFrontNode
       url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html
-- api3: leftHighest
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_DTSweepBasin_leftHighest
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L290
+- api3: LeftHighest
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepContext_DtSweepBasin_LeftHighest
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L299
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.leftHighest
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.leftHighest
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin.LeftHighest
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin.LeftHighest
 - markdown: The left highest
-- code: public bool leftHighest
+- code: public bool LeftHighest
 - h4: Field Value
 - parameters:
   - type:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
-- api3: leftNode
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_DTSweepBasin_leftNode
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L295
+- api3: LeftNode
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepContext_DtSweepBasin_LeftNode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L304
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.leftNode
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.leftNode
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin.LeftNode
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin.LeftNode
 - markdown: The left node
-- code: public AdvancingFrontNode leftNode
+- code: public AdvancingFrontNode LeftNode
 - h4: Field Value
 - parameters:
   - type:
     - text: AdvancingFrontNode
       url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html
-- api3: rightNode
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_DTSweepBasin_rightNode
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L300
+- api3: RightNode
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepContext_DtSweepBasin_RightNode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L309
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.rightNode
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.rightNode
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin.RightNode
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin.RightNode
 - markdown: The right node
-- code: public AdvancingFrontNode rightNode
+- code: public AdvancingFrontNode RightNode
 - h4: Field Value
 - parameters:
   - type:
     - text: AdvancingFrontNode
       url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.AdvancingFrontNode.html
-- api3: width
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DTSweepContext_DTSweepBasin_width
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L305
+- api3: Width
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_Sweep_DtSweepContext_DtSweepBasin_Width
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Delaunay/Sweep/DTSweepContext.cs#L314
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.width
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.DTSweepBasin.width
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin.Width
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.DtSweepBasin.Width
 - markdown: The width
-- code: public double width
+- code: public double Width
 - h4: Field Value
 - parameters:
   - type:

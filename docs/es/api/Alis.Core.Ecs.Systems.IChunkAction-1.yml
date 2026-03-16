@@ -1,0 +1,44 @@
+### YamlMime:ApiPage
+title: Interface IChunkAction<TArg>
+body:
+- api1: Interface IChunkAction<TArg>
+  id: Alis_Core_Ecs_Systems_IChunkAction_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/IChunkAction.cs#L38
+  metadata:
+    uid: Alis.Core.Ecs.Systems.IChunkAction`1
+    commentId: T:Alis.Core.Ecs.Systems.IChunkAction`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: An arbitary function that operates over a range of components
+- code: public interface IChunkAction<TArg>
+- h4: Type Parameters
+- parameters:
+  - name: TArg
+- h2: Remarks
+- markdown: Used for SIMD
+- h2: Methods
+- api3: RunChunk(Span<TArg>)
+  id: Alis_Core_Ecs_Systems_IChunkAction_1_RunChunk_System_Span__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/IChunkAction.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Systems.IChunkAction`1.RunChunk(System.Span{`0})
+    commentId: M:Alis.Core.Ecs.Systems.IChunkAction`1.RunChunk(System.Span{`0})
+- markdown: Executes the function
+- code: void RunChunk(Span<TArg> arg)
+- h4: Parameters
+- parameters:
+  - name: arg
+    type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - TArg
+    - '>'
+languageId: csharp
+metadata:
+  description: An arbitary function that operates over a range of components

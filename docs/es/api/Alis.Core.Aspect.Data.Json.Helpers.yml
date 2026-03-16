@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Data.Json.Helpers
+body:
+- api1: Namespace Alis.Core.Aspect.Data.Json.Helpers
+  id: Alis_Core_Aspect_Data_Json_Helpers
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Helpers
+    commentId: N:Alis.Core.Aspect.Data.Json.Helpers
+- h3: Classes
+- parameters:
+  - type:
+      text: EscapeSequenceHandler
+      url: Alis.Core.Aspect.Data.Json.Helpers.EscapeSequenceHandler.html
+    description: Handles JSON escape sequences in strings.
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IEscapeSequenceHandler
+      url: Alis.Core.Aspect.Data.Json.Helpers.IEscapeSequenceHandler.html
+    description: Defines a contract for handling JSON escape sequences.
+languageId: csharp

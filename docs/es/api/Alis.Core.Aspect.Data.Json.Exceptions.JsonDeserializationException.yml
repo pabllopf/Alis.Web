@@ -1,0 +1,105 @@
+### YamlMime:ApiPage
+title: Class JsonDeserializationException
+body:
+- api1: Class JsonDeserializationException
+  id: Alis_Core_Aspect_Data_Json_Exceptions_JsonDeserializationException
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Exceptions/JsonDeserializationException.cs#L37
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Exceptions.JsonDeserializationException
+    commentId: T:Alis.Core.Aspect.Data.Json.Exceptions.JsonDeserializationException
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Data.Json.Exceptions
+      url: Alis.Core.Aspect.Data.Json.Exceptions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Thrown when a JSON deserialization operation fails.
+- code: 'public sealed class JsonDeserializationException : Exception, ISerializable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Exception
+    url: https://learn.microsoft.com/dotnet/api/system.exception
+  - text: JsonDeserializationException
+    url: Alis.Core.Aspect.Data.Json.Exceptions.JsonDeserializationException.html
+- h4: Implements
+- list:
+  - text: ISerializable
+    url: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+- h4: Inherited Members
+- list:
+  - text: Exception.GetBaseException()
+    url: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - text: Exception.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - text: Exception.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - text: Exception.Data
+    url: https://learn.microsoft.com/dotnet/api/system.exception.data
+  - text: Exception.HelpLink
+    url: https://learn.microsoft.com/dotnet/api/system.exception.helplink
+  - text: Exception.HResult
+    url: https://learn.microsoft.com/dotnet/api/system.exception.hresult
+  - text: Exception.InnerException
+    url: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
+  - text: Exception.Message
+    url: https://learn.microsoft.com/dotnet/api/system.exception.message
+  - text: Exception.Source
+    url: https://learn.microsoft.com/dotnet/api/system.exception.source
+  - text: Exception.StackTrace
+    url: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
+  - text: Exception.TargetSite
+    url: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: JsonDeserializationException(string)
+  id: Alis_Core_Aspect_Data_Json_Exceptions_JsonDeserializationException__ctor_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Exceptions/JsonDeserializationException.cs#L43
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Exceptions.JsonDeserializationException.#ctor(System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.Exceptions.JsonDeserializationException.#ctor(System.String)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Data.Json.Exceptions.JsonDeserializationException" data-throw-if-not-resolved="false"></xref> class.
+- code: public JsonDeserializationException(string message)
+- h4: Parameters
+- parameters:
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The error message.
+- api3: JsonDeserializationException(string, Exception)
+  id: Alis_Core_Aspect_Data_Json_Exceptions_JsonDeserializationException__ctor_System_String_System_Exception_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Exceptions/JsonDeserializationException.cs#L52
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Exceptions.JsonDeserializationException.#ctor(System.String,System.Exception)
+    commentId: M:Alis.Core.Aspect.Data.Json.Exceptions.JsonDeserializationException.#ctor(System.String,System.Exception)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Data.Json.Exceptions.JsonDeserializationException" data-throw-if-not-resolved="false"></xref> class.
+- code: public JsonDeserializationException(string message, Exception innerException)
+- h4: Parameters
+- parameters:
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The error message.
+  - name: innerException
+    type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: The inner exception.
+languageId: csharp
+metadata:
+  description: Thrown when a JSON deserialization operation fails.

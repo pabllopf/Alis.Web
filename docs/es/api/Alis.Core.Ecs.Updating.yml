@@ -1,0 +1,72 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Updating
+body:
+- api1: Namespace Alis.Core.Ecs.Updating
+  id: Alis_Core_Ecs_Updating
+  metadata:
+    uid: Alis.Core.Ecs.Updating
+    commentId: N:Alis.Core.Ecs.Updating
+- h3: Namespaces
+- parameters:
+  - type:
+      text: Alis.Core.Ecs.Updating.Runners
+      url: Alis.Core.Ecs.Updating.Runners.html
+- h3: Classes
+- parameters:
+  - type:
+      text: ComponentStorage<TComponent>
+      url: Alis.Core.Ecs.Updating.ComponentStorage-1.html
+    description: The component storage class
+  - type:
+      text: ComponentStorageBase
+      url: Alis.Core.Ecs.Updating.ComponentStorageBase.html
+    description: The component storage base class
+  - type:
+      text: GenerationServices
+      url: Alis.Core.Ecs.Updating.GenerationServices.html
+    description: Used only for source generation
+  - type:
+      text: SceneUpdateFilter
+      url: Alis.Core.Ecs.Updating.SceneUpdateFilter.html
+    description: The scene update filter class
+  - type:
+      text: SingleComponentUpdateFilter
+      url: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.html
+    description: The single component update filter class
+  - type:
+      text: UpdateOrderAttribute
+      url: Alis.Core.Ecs.Updating.UpdateOrderAttribute.html
+    description: The update order attribute class
+  - type:
+      text: UpdateTypeAttribute
+      url: Alis.Core.Ecs.Updating.UpdateTypeAttribute.html
+    description: The base class of all attributes used to filter scene updates
+- h3: Structs
+- parameters:
+  - type:
+      text: ArchetypeDeferredUpdateRecord
+      url: Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.html
+    description: Archetype deferred update record
+  - type:
+      text: DeleteComponentData
+      url: Alis.Core.Ecs.Updating.DeleteComponentData.html
+    description: Delete component data
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IComponentStorageBaseFactory
+      url: Alis.Core.Ecs.Updating.IComponentStorageBaseFactory.html
+    description: Defines an object for creating component runners
+  - type:
+      text: IComponentStorageBaseFactory<T>
+      url: Alis.Core.Ecs.Updating.IComponentStorageBaseFactory-1.html
+    description: The component storage base factory interface
+  - type:
+      text: IComponentUpdateFilter
+      url: Alis.Core.Ecs.Updating.IComponentUpdateFilter.html
+    description: The component update filter interface
+  - type:
+      text: IComponentUpdateOrderAttribute
+      url: Alis.Core.Ecs.Updating.IComponentUpdateOrderAttribute.html
+    description: Marker interface for any update order attribute.
+languageId: csharp

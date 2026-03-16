@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <title> Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis ">
+      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!">
+      <link rel="icon" href="../resources/logo.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="En este art&#237;culo">
+      <meta name="loc:searchResultsCount" content="{count} resultados para &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="Sin resultados para &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filtrar por t&#237;tulo">
+      <meta name="loc:nextArticle" content="Siguiente">
+      <meta name="loc:prevArticle" content="Anterior">
+      <meta name="loc:themeLight" content="Claro">
+      <meta name="loc:themeDark" content="Oscuro">
+      <meta name="loc:themeAuto" content="Autom&#225;tico">
+      <meta name="loc:changeTheme" content="Cambiar tema">
+      <meta name="loc:copy" content="Copiar">
+      <meta name="loc:downloadPdf" content="Descargar PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+        const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+      
+        // Función para actualizar el contenido del dropdownToggle según el idioma
+        function updateLanguage() {
+          const currentLang = document.documentElement.lang;
+          const isEnglish = currentLang === 'en';
+          const isSpanish = currentLang === 'es';
+      
+          if (isEnglish) {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              English`;
+          } else {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              Español`;
+          }
+        }
+      
+        // Llama a la función para actualizar el idioma al cargar la página
+        updateLanguage();
+      });
+    </script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+
+          // Función para actualizar el texto del botón según la URL actual
+          function updateDropdownVersion() {
+              const path = window.location.pathname;
+              const versionMatch = path.match(/v\d+\.\d+\.\d+/i); // Buscar la versión en cualquier parte del path
+
+              if (versionMatch) {
+                  const currentVersion = versionMatch[0]; // Obtener la versión encontrada
+                  dropdownToggle.textContent = currentVersion;
+              }
+          }
+
+          updateDropdownVersion(); // Llamar la función al cargar la página
+      });
+
+    </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ApiPage">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="../resources/logo_small_v2.png" alt="Alis">
+            Alis
+          </a>
+
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+
+        
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Buscar" autocomplete="off" aria-label="Search">
+              </form>
+
+              
+              <script>
+
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                const dropdownMenu = document.querySelector('.dropdown-menu-versions');
+
+                dropdownToggle.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const isExpanded = dropdownMenu.style.display === 'block';
+                  dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                });
+
+                document.addEventListener('click', function (e) {
+                  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.style.display = 'none';
+                  }
+                });
+
+                // Manejar la selección de versión y actualizar la URL
+                dropdownMenu.addEventListener('click', function (e) {
+                  if (e.target.classList.contains('dropdown-item')) {
+                    e.preventDefault();
+                    
+                    const selectedVersion = e.target.getAttribute('data-version');
+                    const lang = document.documentElement.lang; // Obtener el idioma actual del documento
+                    
+                    let basePath = '';
+                    
+                    // Comprobar si el idioma es español
+                    if (lang === 'es') {
+                      basePath += '/es';
+                    }
+
+                    if (lang === 'en') {
+                      basePath += '/en';
+                    }
+
+                    // Redirigir a la ruta de la versión seleccionada
+                    const newPath = `${basePath}/${selectedVersion}/index.html`;
+                    window.location.href = newPath;
+                  }
+                });
+              });
+ 
+
+              </script>
+
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" data-version="v0.4.0">v0.4.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.3.0">v0.3.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.2.0">v0.2.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.1.0">v0.1.0</a></li>
+                </ul>
+              </div>
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                    const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+
+                    dropdownToggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const isExpanded = dropdownMenu.style.display === 'block';
+                        dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                    });
+
+                    document.addEventListener('click', function (e) {
+                        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    });
+
+                    // Manejar la selección de idioma y actualizar la URL
+                    dropdownMenu.addEventListener('click', function (e) {
+                        if (e.target.classList.contains('dropdown-item')) {
+                            e.preventDefault();
+                            
+                            const selectedLang = e.target.getAttribute('lang');
+                            const currentPath = window.location.pathname;
+                            const pathParts = currentPath.split('/');
+
+                            // Verificar si la URL sigue el formato esperado y reemplazar el idioma
+                            if (pathParts.length >= 3) {
+                                pathParts[1] = selectedLang;  // Reemplaza el idioma en la URL
+                            }
+
+                            // Reconstruir la URL y redirigir
+                            const newPath = pathParts.join('/');
+                            window.location.href = newPath;
+                        }
+                    });
+                });
+                </script>
+
+
+
+              
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-lang" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                  <svg viewbox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                    <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                  </svg>
+                  English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lang" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" lang="es">Español</a></li>
+                </ul>
+            </div>
+
+
+              <a class="hover_custom" style="order: 55;margin: 0 10px;" href="https://github.com/pabllopf/Alis/releases/latest">
+              <button type="button" class="btn btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewbox="0 0 17 17">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+                  </svg>
+                  Descargar
+              </button>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+      
+      
+
+
+
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform' data-commentid='T:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform'>Class MacNativePlatform    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L42'><i class='bi bi-code-slash'></i></a></h1>
+ <div class="facts text-secondary">
+<dl><dt>Namespace</dt><dd><a href='Alis.Core.Graphic.Platforms.Osx.html'>Alis.Core.Graphic.Platforms.Osx</a></dd></dl><dl><dt>Assembly</dt><dd>Alis.dll</dd></dl>
+</div><p>Plataforma nativa para macOS, coordinando ventana y contexto OpenGL</p>
+<pre><code class='lang-csharp'>public class MacNativePlatform : INativePlatform</code></pre><h4 class='section'>Inheritance</h4><dl class="typelist inheritance"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>
+</div>
+<div>
+<a href='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.html'>MacNativePlatform</a>
+</div>
+
+</dd></dl><h4 class='section'>Implements</h4><dl class="typelist"><dd>
+<div>
+<a href='Alis.Core.Graphic.Platforms.INativePlatform.html'>INativePlatform</a>
+</div>
+
+</dd></dl><h4 class='section'>Inherited Members</h4><dl class="typelist"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)'>object.Equals(object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)'>object.Equals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gethashcode'>object.GetHashCode()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gettype'>object.GetType()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone'>object.MemberwiseClone()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.referenceequals'>object.ReferenceEquals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
+</div>
+
+</dd></dl><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform._openGlHandle' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform._openGlHandle' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform__openGlHandle'>_openGlHandle    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L46'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private static nint _openGlHandle</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.intptr'>nint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.app' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.app' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_app'>app    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L68'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private nint app</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.intptr'>nint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.distantPast' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.distantPast' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_distantPast'>distantPast    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L68'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private nint distantPast</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.intptr'>nint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.glContext' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.glContext' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_glContext'>glContext    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L54'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private MacOpenGLContext glContext</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.html'>MacOpenGLContext</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.lastKeyPressed' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.lastKeyPressed' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_lastKeyPressed'>lastKeyPressed    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L58'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private ConsoleKey? lastKeyPressed</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.consolekey'>ConsoleKey</a>?  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseButtons' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseButtons' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_mouseButtons'>mouseButtons    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L48'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private readonly bool[] mouseButtons</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>[]  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseWheel' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseWheel' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_mouseWheel'>mouseWheel    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L60'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private float mouseWheel</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseX' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseX' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_mouseX'>mouseX    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L63'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private int mouseX</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseY' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseY' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_mouseY'>mouseY    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L64'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private int mouseY</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.pool' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.pool' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_pool'>pool    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L68'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private nint pool</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.intptr'>nint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.pressedKeys' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.pressedKeys' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_pressedKeys'>pressedKeys    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L50'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private readonly HashSet&lt;ConsoleKey&gt; pressedKeys</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1'>HashSet</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.consolekey'>ConsoleKey</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.runLoopMode' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.runLoopMode' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_runLoopMode'>runLoopMode    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L68'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private nint runLoopMode</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.intptr'>nint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.window' data-commentid='F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.window' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_window'>window    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L72'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private MacWindow window</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.html'>MacWindow</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Cleanup' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Cleanup' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_Cleanup'>Cleanup()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L141'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public void Cleanup()</code></pre><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseLocation' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseLocation' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetMouseLocation'>GetMouseLocation()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L774'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>private CGPoint GetMouseLocation()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Graphic.Platforms.Osx.Native.CGPoint.html'>CGPoint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMousePositionInView(System.Single@,System.Single@)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMousePositionInView(System.Single@,System.Single@)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetMousePositionInView_System_Single__System_Single__'>GetMousePositionInView(out float, out float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L628'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the mouse position in view using the specified x</p>
+<pre><code class='lang-csharp'>public void GetMousePositionInView(out float x, out float y)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>x</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>y</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseState(System.Int32@,System.Int32@,System.Boolean[]@)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseState(System.Int32@,System.Int32@,System.Boolean[]@)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetMouseState_System_Int32__System_Int32__System_Boolean____'>GetMouseState(out int, out int, out bool[])    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L562'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Obtiene el estado actual del ratón (posición y botones)</p>
+<pre><code class='lang-csharp'>public void GetMouseState(out int x, out int y, out bool[] buttons)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>x</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>y</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>buttons</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>[]  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseWheel' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseWheel' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetMouseWheel'>GetMouseWheel()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L579'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Obtiene delta de rueda (vertical) y lo consume</p>
+<pre><code class='lang-csharp'>public float GetMouseWheel()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetProcAddress(System.String)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetProcAddress(System.String)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetProcAddress_System_String_'>GetProcAddress(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L678'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public nint GetProcAddress(string name)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>name</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.intptr'>nint</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowHeight' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowHeight' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetWindowHeight'>GetWindowHeight()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L137'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public int GetWindowHeight()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowMetrics(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowMetrics(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetWindowMetrics_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__'>GetWindowMetrics(out int, out int, out int, out int, out int, out int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L604'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the window metrics using the specified win x</p>
+<pre><code class='lang-csharp'>public void GetWindowMetrics(out int winX, out int winY, out int winW, out int winH, out int fbW, out int fbH)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>winX</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The win</p>
+
+</dd><dt><code>winY</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The win</p>
+
+</dd><dt><code>winW</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The win</p>
+
+</dd><dt><code>winH</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The win</p>
+
+</dd><dt><code>fbW</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The fb</p>
+
+</dd><dt><code>fbH</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The fb</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowPositionX' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowPositionX' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetWindowPositionX'>GetWindowPositionX()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L592'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the window position x</p>
+<pre><code class='lang-csharp'>public int GetWindowPositionX()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The int</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowPositionY' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowPositionY' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetWindowPositionY'>GetWindowPositionY()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L598'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the window position y</p>
+<pre><code class='lang-csharp'>public int GetWindowPositionY()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The int</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowWidth' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowWidth' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetWindowWidth'>GetWindowWidth()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L132'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public int GetWindowWidth()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.HideWindow' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.HideWindow' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_HideWindow'>HideWindow()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L103'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public void HideWindow()</code></pre><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Initialize(System.Int32,System.Int32,System.String)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Initialize(System.Int32,System.Int32,System.String)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_Initialize_System_Int32_System_Int32_System_String_'>Initialize(int, int, string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L80'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public bool Initialize(int w, int h, string t)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>w</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>h</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>t</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Initialize(System.Int32,System.Int32,System.String,System.String)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Initialize(System.Int32,System.Int32,System.String,System.String)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_Initialize_System_Int32_System_Int32_System_String_System_String_'>Initialize(int, int, string, string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L700'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the window and sets the icon from the specified BMP file path (Cocoa, using objc_msgSend)</p>
+<pre><code class='lang-csharp'>public bool Initialize(int width, int height, string title, string iconPath)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>width</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>height</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>title</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>iconPath</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.IsKeyDown(System.ConsoleKey)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.IsKeyDown(System.ConsoleKey)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_IsKeyDown_System_ConsoleKey_'>IsKeyDown(ConsoleKey)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L672'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public bool IsKeyDown(ConsoleKey key)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>key</code> <a href='https://learn.microsoft.com/dotnet/api/system.consolekey'>ConsoleKey</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.IsWindowVisible' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.IsWindowVisible' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_IsWindowVisible'>IsWindowVisible()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L127'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public bool IsWindowVisible()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.MakeContextCurrent' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.MakeContextCurrent' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_MakeContextCurrent'>MakeContextCurrent()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L118'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public void MakeContextCurrent()</code></pre><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.PollEvents' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.PollEvents' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_PollEvents'>PollEvents()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L152'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public bool PollEvents()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetSize(System.Int32,System.Int32)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetSize(System.Int32,System.Int32)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_SetSize_System_Int32_System_Int32_'>SetSize(int, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L114'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public void SetSize(int w, int h)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>w</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd><dt><code>h</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetTitle(System.String)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetTitle(System.String)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_SetTitle_System_String_'>SetTitle(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L108'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public void SetTitle(string t)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>t</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetWindowIcon(System.String)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetWindowIcon(System.String)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_SetWindowIcon_System_String_'>SetWindowIcon(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L734'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Sets the window icon from the specified BMP file path (Cocoa, safe NSString handling)</p>
+<pre><code class='lang-csharp'>public void SetWindowIcon(string iconPath)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>iconPath</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.ShowWindow' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.ShowWindow' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_ShowWindow'>ShowWindow()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L99'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public void ShowWindow()</code></pre><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SwapBuffers' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SwapBuffers' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_SwapBuffers'>SwapBuffers()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L122'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public void SwapBuffers()</code></pre><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.TryGetLastInputCharacters(System.String@)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.TryGetLastInputCharacters(System.String@)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_TryGetLastInputCharacters_System_String__'>TryGetLastInputCharacters(out string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L586'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Devuelve la última cadena de caracteres de entrada (por ejemplo texto) acumulada por el backend de la plataforma.
+Esto permite transportar caracteres imprimibles (WM_CHAR / X11 KeySym) hacia ImGui.</p>
+<pre><code class='lang-csharp'>public bool TryGetLastInputCharacters(out string chars)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>chars</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>La cadena de caracteres entrantes (puede contener varios caracteres)</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>true si había caracteres pendientes, false si no</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.TryGetLastKeyPressed(System.ConsoleKey@)' data-commentid='M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.TryGetLastKeyPressed(System.ConsoleKey@)' id='Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_TryGetLastKeyPressed_System_ConsoleKey__'>TryGetLastKeyPressed(out ConsoleKey)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L546'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public bool TryGetLastKeyPressed(out ConsoleKey key)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>key</code> <a href='https://learn.microsoft.com/dotnet/api/system.consolekey'>ConsoleKey</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Alis - Desarrolla los videojuegos de tus sueños 💯 gratis en Windows, MacOS, Linux, Android (próximamente), iOS (próximamente).
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

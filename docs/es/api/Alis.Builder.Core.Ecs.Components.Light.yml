@@ -1,0 +1,27 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Builder.Core.Ecs.Components.Light
+body:
+- api1: Namespace Alis.Builder.Core.Ecs.Components.Light
+  id: Alis_Builder_Core_Ecs_Components_Light
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Light
+    commentId: N:Alis.Builder.Core.Ecs.Components.Light
+- h3: Classes
+- parameters:
+  - type:
+      text: AreaLightBuilder
+      url: Alis.Builder.Core.Ecs.Components.Light.AreaLightBuilder.html
+    description: The area light builder class
+  - type:
+      text: DirectionalLightBuilder
+      url: Alis.Builder.Core.Ecs.Components.Light.DirectionalLightBuilder.html
+    description: The directional light builder class
+  - type:
+      text: PointLightBuilder
+      url: Alis.Builder.Core.Ecs.Components.Light.PointLightBuilder.html
+    description: The point light builder class
+  - type:
+      text: SpotLightBuilder
+      url: Alis.Builder.Core.Ecs.Components.Light.SpotLightBuilder.html
+    description: The spot light builder class
+languageId: csharp

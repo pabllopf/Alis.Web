@@ -1,0 +1,290 @@
+### YamlMime:ApiPage
+title: Class GraphicManager
+body:
+- api1: Class GraphicManager
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L56
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager
+    commentId: T:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Manager.Graphic
+      url: Alis.Core.Ecs.Systems.Manager.Graphic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The graphic manager base class
+- code: 'public class GraphicManager : AManager, IManager, IRuntime'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: AManager
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html
+  - text: GraphicManager
+    url: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.html
+- h4: Implements
+- list:
+  - text: IManager
+    url: Alis.Core.Ecs.Systems.Manager.IManager.html
+  - text: IRuntime
+    url: Alis.Core.Ecs.Systems.Execution.IRuntime.html
+- h4: Inherited Members
+- list:
+  - text: AManager._context
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager__context
+  - text: AManager.Context
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Context
+  - text: AManager.IsEnable
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_IsEnable
+  - text: AManager.Name
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Name
+  - text: AManager.Id
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Id
+  - text: AManager.Tag
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Tag
+  - text: AManager.OnEnable()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnEnable
+  - text: AManager.OnInit()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnInit
+  - text: AManager.OnAwake()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAwake
+  - text: AManager.OnStart()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnStart
+  - text: AManager.OnBeforeUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeUpdate
+  - text: AManager.OnUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnUpdate
+  - text: AManager.OnAfterUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterUpdate
+  - text: AManager.OnProcessPendingChanges()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnProcessPendingChanges
+  - text: AManager.OnBeforeFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeFixedUpdate
+  - text: AManager.OnFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnFixedUpdate
+  - text: AManager.OnAfterFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterFixedUpdate
+  - text: AManager.OnDispatchEvents()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDispatchEvents
+  - text: AManager.OnCalculate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnCalculate
+  - text: AManager.OnBeforeDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeDraw
+  - text: AManager.OnDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDraw
+  - text: AManager.OnAfterDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterDraw
+  - text: AManager.OnGui()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnGui
+  - text: AManager.OnRenderPresent()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnRenderPresent
+  - text: AManager.OnDisable()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDisable
+  - text: AManager.OnReset()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnReset
+  - text: AManager.OnStop()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnStop
+  - text: AManager.OnExit()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnExit
+  - text: AManager.OnDestroy()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDestroy
+  - text: AManager.OnSave()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnSave
+  - text: AManager.OnLoad()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnLoad
+  - text: AManager.OnSave(string)
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnSave_System_String_
+  - text: AManager.OnLoad(string)
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnLoad_System_String_
+  - text: AManager.OnPhysicUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnPhysicUpdate
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: GraphicManager(Context)
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager__ctor_Alis_Core_Ecs_Systems_Scope_Context_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L103
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager" data-throw-if-not-resolved="false"></xref> class
+- code: public GraphicManager(Context context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- h2: Fields
+- api3: PixelsPerMeter
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_PixelsPerMeter
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.PixelsPerMeter
+    commentId: F:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.PixelsPerMeter
+- markdown: The pixels per meter
+- code: private const float PixelsPerMeter = 32
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: allKeys
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_allKeys
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L66
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.allKeys
+    commentId: F:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.allKeys
+- markdown: The escape
+- code: private readonly ConsoleKey[] allKeys
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ConsoleKey
+      url: https://learn.microsoft.com/dotnet/api/system.consolekey
+    - '['
+    - ']'
+- api3: currentKeys
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_currentKeys
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L87
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.currentKeys
+    commentId: F:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.currentKeys
+- markdown: The console key
+- code: private HashSet<ConsoleKey> currentKeys
+- h4: Field Value
+- parameters:
+  - type:
+    - text: HashSet
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+    - <
+    - text: ConsoleKey
+      url: https://learn.microsoft.com/dotnet/api/system.consolekey
+    - '>'
+- api3: keyDownTimestamps
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_keyDownTimestamps
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L81
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.keyDownTimestamps
+    commentId: F:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.keyDownTimestamps
+- markdown: The date time
+- code: private readonly Dictionary<ConsoleKey, DateTime> keyDownTimestamps
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: ConsoleKey
+      url: https://learn.microsoft.com/dotnet/api/system.consolekey
+    - ','
+    - " "
+    - text: DateTime
+      url: https://learn.microsoft.com/dotnet/api/system.datetime
+    - '>'
+- api3: platform
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_platform
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L92
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.platform
+    commentId: F:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.platform
+- markdown: The platform
+- code: private INativePlatform platform
+- h4: Field Value
+- parameters:
+  - type:
+    - text: INativePlatform
+      url: Alis.Core.Graphic.Platforms.INativePlatform.html
+- api3: previousKeys
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_previousKeys
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L98
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.previousKeys
+    commentId: F:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.previousKeys
+- markdown: The console key
+- code: private HashSet<ConsoleKey> previousKeys
+- h4: Field Value
+- parameters:
+  - type:
+    - text: HashSet
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+    - <
+    - text: ConsoleKey
+      url: https://learn.microsoft.com/dotnet/api/system.consolekey
+    - '>'
+- h2: Properties
+- api3: Renderer
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_Renderer
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L110
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.Renderer
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.Renderer
+- markdown: Gets or sets the value of the renderer
+- code: public nint Renderer { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- h2: Methods
+- api3: OnBeforeDraw()
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_OnBeforeDraw
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L179
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.OnBeforeDraw
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.OnBeforeDraw
+- markdown: Ons the before draw
+- code: public override void OnBeforeDraw()
+- api3: OnDraw()
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_OnDraw
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L186
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.OnDraw
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.OnDraw
+- markdown: Ons the draw
+- code: public override void OnDraw()
+- api3: OnInit()
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_OnInit
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L115
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.OnInit
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.OnInit
+- markdown: Ons the init
+- code: public override void OnInit()
+- api3: OnStart()
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_OnStart
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L172
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.OnStart
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.OnStart
+- markdown: Ons the start
+- code: public override void OnStart()
+- api3: RenderPreview()
+  id: Alis_Core_Ecs_Systems_Manager_Graphic_GraphicManager_RenderPreview
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Graphic/GraphicManager.cs#L345
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.RenderPreview
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Graphic.GraphicManager.RenderPreview
+- markdown: Renders the preview
+- code: private void RenderPreview()
+- h2: See Also
+- list:
+  - - text: AManager
+      url: Alis.Core.Ecs.Systems.Manager.AManager.html
+languageId: csharp
+metadata:
+  description: The graphic manager base class

@@ -1,0 +1,35 @@
+### YamlMime:ApiPage
+title: Delegate DrawArrays
+body:
+- api1: Delegate DrawArrays
+  id: Alis_Core_Graphic_OpenGL_DrawArrays
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/DrawArrays.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.DrawArrays
+    commentId: T:Alis.Core.Graphic.OpenGL.DrawArrays
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The draw arrays
+- code: public delegate void DrawArrays(PrimitiveType mode, int first, int count)
+- h4: Parameters
+- parameters:
+  - name: mode
+    type:
+    - text: PrimitiveType
+      url: Alis.Core.Graphic.OpenGL.PrimitiveType.html
+  - name: first
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: The draw arrays

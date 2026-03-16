@@ -1,0 +1,160 @@
+### YamlMime:ApiPage
+title: Class ContactSolver.SolveVelocityConstraintsState
+body:
+- api1: Class ContactSolver.SolveVelocityConstraintsState
+  id: Alis_Core_Physic_Dynamics_Contacts_ContactSolver_SolveVelocityConstraintsState
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Contacts/ContactSolver.cs#L1142
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState
+    commentId: T:Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Dynamics.Contacts
+      url: Alis.Core.Physic.Dynamics.Contacts.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The solve velocity constraints state class
+- code: private class ContactSolver.SolveVelocityConstraintsState
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: ContactSolver.SolveVelocityConstraintsState
+    url: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: SolveVelocityConstraintsState()
+  id: Alis_Core_Physic_Dynamics_Contacts_ContactSolver_SolveVelocityConstraintsState__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Contacts/ContactSolver.cs#L1157
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.#ctor
+    commentId: M:Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState" data-throw-if-not-resolved="false"></xref> class
+- code: private SolveVelocityConstraintsState()
+- h2: Fields
+- api3: ContactSolver
+  id: Alis_Core_Physic_Dynamics_Contacts_ContactSolver_SolveVelocityConstraintsState_ContactSolver
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Contacts/ContactSolver.cs#L1152
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.ContactSolver
+    commentId: F:Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.ContactSolver
+- markdown: The contact solver
+- code: public ContactSolver ContactSolver
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ContactSolver
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.html
+- api3: Queue
+  id: Alis_Core_Physic_Dynamics_Contacts_ContactSolver_SolveVelocityConstraintsState_Queue
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Contacts/ContactSolver.cs#L1147
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.Queue
+    commentId: F:Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.Queue
+- markdown: The solve velocity constraints state
+- code: private static readonly ConcurrentQueue<ContactSolver.SolveVelocityConstraintsState> Queue
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ConcurrentQueue
+      url: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1
+    - <
+    - text: ContactSolver
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.html
+    - .
+    - text: SolveVelocityConstraintsState
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.html
+    - '>'
+- h2: Properties
+- api3: End
+  id: Alis_Core_Physic_Dynamics_Contacts_ContactSolver_SolveVelocityConstraintsState_End
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Contacts/ContactSolver.cs#L1169
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.End
+    commentId: P:Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.End
+- markdown: Gets or sets the value of the end
+- code: public int End { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Start
+  id: Alis_Core_Physic_Dynamics_Contacts_ContactSolver_SolveVelocityConstraintsState_Start
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Contacts/ContactSolver.cs#L1164
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.Start
+    commentId: P:Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.Start
+- markdown: Gets or sets the value of the start
+- code: public int Start { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: Get(ContactSolver, int, int)
+  id: Alis_Core_Physic_Dynamics_Contacts_ContactSolver_SolveVelocityConstraintsState_Get_Alis_Core_Physic_Dynamics_Contacts_ContactSolver_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Contacts/ContactSolver.cs#L1178
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.Get(Alis.Core.Physic.Dynamics.Contacts.ContactSolver,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.Get(Alis.Core.Physic.Dynamics.Contacts.ContactSolver,System.Int32,System.Int32)
+- markdown: Gets the contact solver
+- code: internal static object Get(ContactSolver contactSolver, int start, int end)
+- h4: Parameters
+- parameters:
+  - name: contactSolver
+    type:
+    - text: ContactSolver
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.html
+    description: The contact solver
+  - name: start
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The start
+  - name: end
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The end
+- h4: Returns
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The result
+- api3: Return(object)
+  id: Alis_Core_Physic_Dynamics_Contacts_ContactSolver_SolveVelocityConstraintsState_Return_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Contacts/ContactSolver.cs#L1196
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.Return(System.Object)
+    commentId: M:Alis.Core.Physic.Dynamics.Contacts.ContactSolver.SolveVelocityConstraintsState.Return(System.Object)
+- markdown: Returns the state
+- code: internal static void Return(object state)
+- h4: Parameters
+- parameters:
+  - name: state
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The state
+languageId: csharp
+metadata:
+  description: The solve velocity constraints state class

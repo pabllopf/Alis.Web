@@ -1,0 +1,26 @@
+### YamlMime:ApiPage
+title: Delegate Gl.GenFramebuffer
+body:
+- api1: Delegate Gl.GenFramebuffer
+  id: Alis_Core_Graphic_OpenGL_Gl_GenFramebuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L65
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GenFramebuffer
+    commentId: T:Alis.Core.Graphic.OpenGL.Gl.GenFramebuffer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gen framebuffer
+- code: public delegate uint Gl.GenFramebuffer()
+- h4: Returns
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+languageId: csharp
+metadata:
+  description: The gen framebuffer

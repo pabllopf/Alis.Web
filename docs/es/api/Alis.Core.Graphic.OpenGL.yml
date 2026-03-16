@@ -1,0 +1,90 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Graphic.OpenGL
+body:
+- api1: Namespace Alis.Core.Graphic.OpenGL
+  id: Alis_Core_Graphic_OpenGL
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL
+    commentId: N:Alis.Core.Graphic.OpenGL
+- h3: Namespaces
+- parameters:
+  - type:
+      text: Alis.Core.Graphic.OpenGL.Constructs
+      url: Alis.Core.Graphic.OpenGL.Constructs.html
+  - type:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - type:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+- h3: Classes
+- parameters:
+  - type:
+      text: Gl
+      url: Alis.Core.Graphic.OpenGL.Gl.html
+    description: The gl class
+- h3: Enums
+- parameters:
+  - type:
+      text: FramebufferAttachment
+      url: Alis.Core.Graphic.OpenGL.FramebufferAttachment.html
+    description: The framebuffer attachment enum
+  - type:
+      text: FramebufferTarget
+      url: Alis.Core.Graphic.OpenGL.FramebufferTarget.html
+    description: The framebuffer target enum
+  - type:
+      text: PrimitiveType
+      url: Alis.Core.Graphic.OpenGL.PrimitiveType.html
+    description: The primitive type enum
+- h3: Delegates
+- parameters:
+  - type:
+      text: Gl.ActiveTexture
+      url: Alis.Core.Graphic.OpenGL.Gl.ActiveTexture.html
+    description: Activates the specified texture unit
+  - type:
+      text: Gl.BindFramebuffer
+      url: Alis.Core.Graphic.OpenGL.Gl.BindFramebuffer.html
+    description: The bind framebuffer
+  - type:
+      text: DrawArrays
+      url: Alis.Core.Graphic.OpenGL.DrawArrays.html
+    description: The draw arrays
+  - type:
+      text: DrawElements
+      url: Alis.Core.Graphic.OpenGL.DrawElements.html
+    description: The draw elements
+  - type:
+      text: Gl.FramebufferTexture2D
+      url: Alis.Core.Graphic.OpenGL.Gl.FramebufferTexture2D.html
+    description: The framebuffer texture
+  - type:
+      text: Gl.GenFramebuffer
+      url: Alis.Core.Graphic.OpenGL.Gl.GenFramebuffer.html
+    description: The gen framebuffer
+  - type:
+      text: Gl.GetError
+      url: Alis.Core.Graphic.OpenGL.Gl.GetError.html
+    description: The get error
+  - type:
+      text: Gl.GetIntegerv
+      url: Alis.Core.Graphic.OpenGL.Gl.GetIntegerv.html
+    description: The get integerv
+  - type:
+      text: Gl.GetProcAddressDelegate
+      url: Alis.Core.Graphic.OpenGL.Gl.GetProcAddressDelegate.html
+    description: The get proc address delegate
+  - type:
+      text: Gl.LineWidth
+      url: Alis.Core.Graphic.OpenGL.Gl.LineWidth.html
+    description: Sets the width of lines to be rasterized
+  - type:
+      text: Gl.ReadPixels
+      url: Alis.Core.Graphic.OpenGL.Gl.ReadPixels.html
+    description: The read pixels
+  - type:
+      text: Gl.UniformMatrix2x3FvDel
+      url: Alis.Core.Graphic.OpenGL.Gl.UniformMatrix2x3FvDel.html
+    description: The uniform matrix 2x fv del
+languageId: csharp

@@ -1,0 +1,60 @@
+### YamlMime:ApiPage
+title: Class Archetype<T>.OfComponent<TC>
+body:
+- api1: Class Archetype<T>.OfComponent<TC>
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_OfComponent_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L802
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.OfComponent`1
+    commentId: T:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.OfComponent`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Archetypes
+      url: Alis.Core.Ecs.Kernel.Archetypes.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The of component class
+- code: internal static class Archetype<T>.OfComponent<TC>
+- h4: Type Parameters
+- parameters:
+  - name: TC
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Archetype<T>.OfComponent<TC>
+    url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-1.OfComponent-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Index
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_OfComponent_1_Index
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L807
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.OfComponent`1.Index
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.OfComponent`1.Index
+- markdown: The id
+- code: public static readonly int Index
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: The of component class

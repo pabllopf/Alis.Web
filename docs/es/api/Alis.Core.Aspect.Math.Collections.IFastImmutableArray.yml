@@ -1,0 +1,35 @@
+### YamlMime:ApiPage
+title: Interface IFastImmutableArray
+body:
+- api1: Interface IFastImmutableArray
+  id: Alis_Core_Aspect_Math_Collections_IFastImmutableArray
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/IFastImmutableArray.cs#L37
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.IFastImmutableArray
+    commentId: T:Alis.Core.Aspect.Math.Collections.IFastImmutableArray
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Math.Collections
+      url: Alis.Core.Aspect.Math.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The fast immutable array interface
+- code: internal interface IFastImmutableArray
+- h2: Properties
+- api3: Array
+  id: Alis_Core_Aspect_Math_Collections_IFastImmutableArray_Array
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/IFastImmutableArray.cs#L42
+  metadata:
+    uid: Alis.Core.Aspect.Math.Collections.IFastImmutableArray.Array
+    commentId: P:Alis.Core.Aspect.Math.Collections.IFastImmutableArray.Array
+- markdown: Gets an untyped reference to the array.
+- code: Array Array { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Array
+      url: https://learn.microsoft.com/dotnet/api/system.array
+languageId: csharp
+metadata:
+  description: The fast immutable array interface

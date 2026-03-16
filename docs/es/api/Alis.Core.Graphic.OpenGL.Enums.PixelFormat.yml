@@ -1,0 +1,168 @@
+### YamlMime:ApiPage
+title: Enum PixelFormat
+body:
+- api1: Enum PixelFormat
+  id: Alis_Core_Graphic_OpenGL_Enums_PixelFormat
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/PixelFormat.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.PixelFormat
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.PixelFormat
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The pixel format enum
+- code: public enum PixelFormat
+- h2: Fields
+- parameters:
+  - name: ColorIndex
+    default: "6400"
+    description: >+
+      The color index pixel format
+
+  - name: StencilIndex
+    default: "6401"
+    description: >+
+      The stencil index pixel format
+
+  - name: DepthComponent
+    default: "6402"
+    description: >+
+      The depth component pixel format
+
+  - name: Red
+    default: "6403"
+    description: >+
+      The red pixel format
+
+  - name: Green
+    default: "6404"
+    description: >+
+      The green pixel format
+
+  - name: Blue
+    default: "6405"
+    description: >+
+      The blue pixel format
+
+  - name: Alpha
+    default: "6406"
+    description: >+
+      The alpha pixel format
+
+  - name: Rgb
+    default: "6407"
+    description: >+
+      The rgb pixel format
+
+  - name: Rgba
+    default: "6408"
+    description: >+
+      The rgba pixel format
+
+  - name: Luminance
+    default: "6409"
+    description: >+
+      The luminance pixel format
+
+  - name: LuminanceAlpha
+    default: "6410"
+    description: >+
+      The luminance alpha pixel format
+
+  - name: AbgrExt
+    default: "32768"
+    description: >+
+      The abgr ext pixel format
+
+  - name: CmykExt
+    default: "32780"
+    description: >+
+      The cmyk ext pixel format
+
+  - name: CmykaExt
+    default: "32781"
+    description: >+
+      The cmyka ext pixel format
+
+  - name: Bgr
+    default: "32992"
+    description: >+
+      The bgr pixel format
+
+  - name: Bgra
+    default: "32993"
+    description: >+
+      The bgra pixel format
+
+  - name: Ycrcb422Sgix
+    default: "33211"
+    description: >+
+      The ycrcb 422 sgix pixel format
+
+  - name: Ycrcb444Sgix
+    default: "33212"
+    description: >+
+      The ycrcb 444 sgix pixel format
+
+  - name: Rg
+    default: "33319"
+    description: >+
+      The rg pixel format
+
+  - name: RgInteger
+    default: "33320"
+    description: >+
+      The rg integer pixel format
+
+  - name: DepthStencil
+    default: "34041"
+    description: >+
+      The depth stencil pixel format
+
+  - name: RedInteger
+    default: "36244"
+    description: >+
+      The red integer pixel format
+
+  - name: GreenInteger
+    default: "36245"
+    description: >+
+      The green integer pixel format
+
+  - name: BlueInteger
+    default: "36246"
+    description: >+
+      The blue integer pixel format
+
+  - name: AlphaInteger
+    default: "36247"
+    description: >+
+      The alpha integer pixel format
+
+  - name: RgbInteger
+    default: "36248"
+    description: >+
+      The rgb integer pixel format
+
+  - name: RgbaInteger
+    default: "36249"
+    description: >+
+      The rgba integer pixel format
+
+  - name: BgrInteger
+    default: "36250"
+    description: >+
+      The bgr integer pixel format
+
+  - name: BgraInteger
+    default: "36251"
+    description: >+
+      The bgra integer pixel format
+
+languageId: csharp
+metadata:
+  description: The pixel format enum

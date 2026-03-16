@@ -1,0 +1,49 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Components.Render
+body:
+- api1: Namespace Alis.Core.Ecs.Components.Render
+  id: Alis_Core_Ecs_Components_Render
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render
+    commentId: N:Alis.Core.Ecs.Components.Render
+- h3: Structs
+- parameters:
+  - type:
+      text: Animation
+      url: Alis.Core.Ecs.Components.Render.Animation.html
+    description: The animation
+  - type:
+      text: Animator
+      url: Alis.Core.Ecs.Components.Render.Animator.html
+    description: The animator
+  - type:
+      text: Camera
+      url: Alis.Core.Ecs.Components.Render.Camera.html
+    description: The camera
+  - type:
+      text: Frame
+      url: Alis.Core.Ecs.Components.Render.Frame.html
+    description: The frame
+  - type:
+      text: Sprite
+      url: Alis.Core.Ecs.Components.Render.Sprite.html
+    description: The sprite
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IAnimation
+      url: Alis.Core.Ecs.Components.Render.IAnimation.html
+    description: The animation interface
+  - type:
+      text: IAnimator
+      url: Alis.Core.Ecs.Components.Render.IAnimator.html
+    description: The animator interface
+  - type:
+      text: ICamera
+      url: Alis.Core.Ecs.Components.Render.ICamera.html
+    description: The camera interface
+  - type:
+      text: ISprite
+      url: Alis.Core.Ecs.Components.Render.ISprite.html
+    description: The sprite interface
+languageId: csharp

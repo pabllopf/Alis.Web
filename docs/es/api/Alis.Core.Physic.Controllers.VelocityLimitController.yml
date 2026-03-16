@@ -24,7 +24,7 @@ body:
   - text: object
     url: https://learn.microsoft.com/dotnet/api/system.object
   - text: FilterData
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html
+    url: Alis.Core.Physic.Common.Logic.FilterData.html
   - text: Controller
     url: Alis.Core.Physic.Controllers.Controller.html
   - text: VelocityLimitController
@@ -35,34 +35,34 @@ body:
     url: Alis.Core.Physic.Controllers.Controller.html#Alis_Core_Physic_Controllers_Controller_ControllerCategory
   - text: Controller.Enabled
     url: Alis.Core.Physic.Controllers.Controller.html#Alis_Core_Physic_Controllers_Controller_Enabled
-  - text: Controller.World
-    url: Alis.Core.Physic.Controllers.Controller.html#Alis_Core_Physic_Controllers_Controller_World
+  - text: Controller.WorldPhysic
+    url: Alis.Core.Physic.Controllers.Controller.html#Alis_Core_Physic_Controllers_Controller_WorldPhysic
   - text: Controller.IsActiveOn(Body)
     url: Alis.Core.Physic.Controllers.Controller.html#Alis_Core_Physic_Controllers_Controller_IsActiveOn_Alis_Core_Physic_Dynamics_Body_
   - text: Controller.Update(float)
     url: Alis.Core.Physic.Controllers.Controller.html#Alis_Core_Physic_Controllers_Controller_Update_System_Single_
   - text: FilterData.DisabledOnCategories
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_DisabledOnCategories
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_DisabledOnCategories
   - text: FilterData.DisabledOnGroup
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_DisabledOnGroup
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_DisabledOnGroup
   - text: FilterData.EnabledOnCategories
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_EnabledOnCategories
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_EnabledOnCategories
   - text: FilterData.EnabledOnGroup
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_EnabledOnGroup
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_EnabledOnGroup
   - text: FilterData.IsActiveOn(Body)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_IsActiveOn_Alis_Core_Physic_Dynamics_Body_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_IsActiveOn_Alis_Core_Physic_Dynamics_Body_
   - text: FilterData.AddDisabledCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_AddDisabledCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_AddDisabledCategory_Alis_Core_Physic_Dynamics_Category_
   - text: FilterData.RemoveDisabledCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_RemoveDisabledCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_RemoveDisabledCategory_Alis_Core_Physic_Dynamics_Category_
   - text: FilterData.IsInDisabledCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_IsInDisabledCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_IsInDisabledCategory_Alis_Core_Physic_Dynamics_Category_
   - text: FilterData.AddEnabledCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_AddEnabledCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_AddEnabledCategory_Alis_Core_Physic_Dynamics_Category_
   - text: FilterData.RemoveEnabledCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_RemoveEnabledCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_RemoveEnabledCategory_Alis_Core_Physic_Dynamics_Category_
   - text: FilterData.IsInEnabledInCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_IsInEnabledInCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_IsInEnabledInCategory_Alis_Core_Physic_Dynamics_Category_
   - text: object.Equals(object?)
     url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - text: object.Equals(object?, object?)
@@ -119,12 +119,12 @@ body:
 - h2: Fields
 - api3: LimitAngularVelocity
   id: Alis_Core_Physic_Controllers_VelocityLimitController_LimitAngularVelocity
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L70
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L50
   metadata:
     uid: Alis.Core.Physic.Controllers.VelocityLimitController.LimitAngularVelocity
     commentId: F:Alis.Core.Physic.Controllers.VelocityLimitController.LimitAngularVelocity
 - markdown: The limit angular velocity
-- code: public bool LimitAngularVelocity
+- code: public readonly bool LimitAngularVelocity
 - h4: Field Value
 - parameters:
   - type:
@@ -132,12 +132,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: LimitLinearVelocity
   id: Alis_Core_Physic_Controllers_VelocityLimitController_LimitLinearVelocity
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L75
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L55
   metadata:
     uid: Alis.Core.Physic.Controllers.VelocityLimitController.LimitLinearVelocity
     commentId: F:Alis.Core.Physic.Controllers.VelocityLimitController.LimitLinearVelocity
 - markdown: The limit linear velocity
-- code: public bool LimitLinearVelocity
+- code: public readonly bool LimitLinearVelocity
 - h4: Field Value
 - parameters:
   - type:
@@ -162,7 +162,7 @@ body:
     - '>'
 - api3: _maxAngularSqared
   id: Alis_Core_Physic_Controllers_VelocityLimitController__maxAngularSqared
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L50
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L60
   metadata:
     uid: Alis.Core.Physic.Controllers.VelocityLimitController._maxAngularSqared
     commentId: F:Alis.Core.Physic.Controllers.VelocityLimitController._maxAngularSqared
@@ -175,7 +175,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: _maxAngularVelocity
   id: Alis_Core_Physic_Controllers_VelocityLimitController__maxAngularVelocity
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L55
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L65
   metadata:
     uid: Alis.Core.Physic.Controllers.VelocityLimitController._maxAngularVelocity
     commentId: F:Alis.Core.Physic.Controllers.VelocityLimitController._maxAngularVelocity
@@ -188,7 +188,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: _maxLinearSqared
   id: Alis_Core_Physic_Controllers_VelocityLimitController__maxLinearSqared
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L60
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L70
   metadata:
     uid: Alis.Core.Physic.Controllers.VelocityLimitController._maxLinearSqared
     commentId: F:Alis.Core.Physic.Controllers.VelocityLimitController._maxLinearSqared
@@ -201,7 +201,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: _maxLinearVelocity
   id: Alis_Core_Physic_Controllers_VelocityLimitController__maxLinearVelocity
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L65
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L75
   metadata:
     uid: Alis.Core.Physic.Controllers.VelocityLimitController._maxLinearVelocity
     commentId: F:Alis.Core.Physic.Controllers.VelocityLimitController._maxLinearVelocity
@@ -215,7 +215,7 @@ body:
 - h2: Properties
 - api3: MaxAngularVelocity
   id: Alis_Core_Physic_Controllers_VelocityLimitController_MaxAngularVelocity
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L111
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L115
   metadata:
     uid: Alis.Core.Physic.Controllers.VelocityLimitController.MaxAngularVelocity
     commentId: P:Alis.Core.Physic.Controllers.VelocityLimitController.MaxAngularVelocity
@@ -228,7 +228,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: MaxLinearVelocity
   id: Alis_Core_Physic_Controllers_VelocityLimitController_MaxLinearVelocity
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L125
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L129
   metadata:
     uid: Alis.Core.Physic.Controllers.VelocityLimitController.MaxLinearVelocity
     commentId: P:Alis.Core.Physic.Controllers.VelocityLimitController.MaxLinearVelocity
@@ -242,7 +242,7 @@ body:
 - h2: Methods
 - api3: AddBody(Body)
   id: Alis_Core_Physic_Controllers_VelocityLimitController_AddBody_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L181
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L187
   metadata:
     uid: Alis.Core.Physic.Controllers.VelocityLimitController.AddBody(Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Physic.Controllers.VelocityLimitController.AddBody(Alis.Core.Physic.Dynamics.Body)
@@ -257,7 +257,7 @@ body:
     description: The body
 - api3: RemoveBody(Body)
   id: Alis_Core_Physic_Controllers_VelocityLimitController_RemoveBody_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L190
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L196
   metadata:
     uid: Alis.Core.Physic.Controllers.VelocityLimitController.RemoveBody(Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Physic.Controllers.VelocityLimitController.RemoveBody(Alis.Core.Physic.Dynamics.Body)
@@ -272,7 +272,7 @@ body:
     description: The body
 - api3: Update(float)
   id: Alis_Core_Physic_Controllers_VelocityLimitController_Update_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L139
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/VelocityLimitController.cs#L143
   metadata:
     uid: Alis.Core.Physic.Controllers.VelocityLimitController.Update(System.Single)
     commentId: M:Alis.Core.Physic.Controllers.VelocityLimitController.Update(System.Single)

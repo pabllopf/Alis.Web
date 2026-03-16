@@ -34,7 +34,7 @@ body:
     @param normal the normal vector at the point of intersection
 
     @return 0 to terminate, fraction to clip the ray for closest hit, 1 to continue
-- code: public delegate float RayCastReportFixtureDelegate(Fixture fixture, Vector2 point, Vector2 normal, float fraction)
+- code: public delegate float RayCastReportFixtureDelegate(Fixture fixture, Vector2F point, Vector2F normal, float fraction)
 - h4: Parameters
 - parameters:
   - name: fixture
@@ -43,12 +43,12 @@ body:
       url: Alis.Core.Physic.Dynamics.Fixture.html
   - name: point
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
   - name: normal
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
   - name: fraction
     type:
     - text: float

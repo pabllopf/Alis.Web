@@ -1,0 +1,117 @@
+### YamlMime:ApiPage
+title: Class EnumerableHelpers
+body:
+- api1: Class EnumerableHelpers
+  id: Alis_Core_Ecs_Collections_EnumerableHelpers
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/EnumerableHelpers.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Collections.EnumerableHelpers
+    commentId: T:Alis.Core.Ecs.Collections.EnumerableHelpers
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Collections
+      url: Alis.Core.Ecs.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Internal helper functions for working with enumerables.
+- code: public static class EnumerableHelpers
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: EnumerableHelpers
+    url: Alis.Core.Ecs.Collections.EnumerableHelpers.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: GetEmptyEnumerator<T>()
+  id: Alis_Core_Ecs_Collections_EnumerableHelpers_GetEmptyEnumerator__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/EnumerableHelpers.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Collections.EnumerableHelpers.GetEmptyEnumerator``1
+    commentId: M:Alis.Core.Ecs.Collections.EnumerableHelpers.GetEmptyEnumerator``1
+- markdown: Gets an enumerator singleton for an empty collection.
+- code: public static IEnumerator<T> GetEmptyEnumerator<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+    - <
+    - T
+    - '>'
+- h4: Type Parameters
+- parameters:
+  - name: T
+- api3: Reset<T>(ref T)
+  id: Alis_Core_Ecs_Collections_EnumerableHelpers_Reset__1___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/EnumerableHelpers.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Collections.EnumerableHelpers.Reset``1(``0@)
+    commentId: M:Alis.Core.Ecs.Collections.EnumerableHelpers.Reset``1(``0@)
+- markdown: Calls Reset on an enumerator instance.
+- code: 'internal static void Reset<T>(ref T enumerator) where T : IEnumerator'
+- h4: Parameters
+- parameters:
+  - name: enumerator
+    type:
+    - T
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Remarks
+- markdown: Enables Reset to be called without boxing on a struct enumerator that lacks a public Reset.
+- api3: ToArray<T>(IEnumerable<T>, out int)
+  id: Alis_Core_Ecs_Collections_EnumerableHelpers_ToArray__1_System_Collections_Generic_IEnumerable___0__System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/EnumerableHelpers.cs#L58
+  metadata:
+    uid: Alis.Core.Ecs.Collections.EnumerableHelpers.ToArray``1(System.Collections.Generic.IEnumerable{``0},System.Int32@)
+    commentId: M:Alis.Core.Ecs.Collections.EnumerableHelpers.ToArray``1(System.Collections.Generic.IEnumerable{``0},System.Int32@)
+- markdown: Converts an enumerable to an array using the same logic as List{T}.
+- code: public static T[] ToArray<T>(IEnumerable<T> source, out int length)
+- h4: Parameters
+- parameters:
+  - name: source
+    type:
+    - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - T
+    - '>'
+    description: The enumerable to convert.
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of items stored in the resulting array, 0-indexed.
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    - '['
+    - ']'
+    description: >-
+      The resulting array.  The length of the array may be greater than <code class="paramref">length</code>,
+
+      which is the actual number of elements in the array.
+- h4: Type Parameters
+- parameters:
+  - name: T
+languageId: csharp
+metadata:
+  description: Internal helper functions for working with enumerables.

@@ -1,0 +1,1573 @@
+### YamlMime:ApiPage
+title: Struct Vector2F
+body:
+- api1: Struct Vector2F
+  id: Alis_Core_Aspect_Math_Vector_Vector2F
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L44
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F
+    commentId: T:Alis.Core.Aspect.Math.Vector.Vector2F
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Math.Vector
+      url: Alis.Core.Aspect.Math.Vector.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The vector
+- code: 'public struct Vector2F : IEquatable<Vector2F>, IFormattable, ISerializable'
+- h4: Implements
+- list:
+  - text: IEquatable<Vector2F>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - text: IFormattable
+    url: https://learn.microsoft.com/dotnet/api/system.iformattable
+  - text: ISerializable
+    url: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h4: Extension Methods
+- list:
+  - text: MathUtils.IsValid(Vector2F)
+    url: Alis.Core.Physic.Dynamics.MathUtils.html#Alis_Core_Physic_Dynamics_MathUtils_IsValid_Alis_Core_Aspect_Math_Vector_Vector2F_
+- h2: Constructors
+- api3: Vector2F(float)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F__ctor_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L55
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.#ctor(System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.#ctor(System.Single)
+- markdown: Creates a new <xref href="Alis.Core.Aspect.Math.Vector.Vector2F" data-throw-if-not-resolved="false"></xref> object whose two elements have the same value.
+- code: public Vector2F(float value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The value to assign to both elements.
+- api3: Vector2F(float, float)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F__ctor_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L62
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.#ctor(System.Single,System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.#ctor(System.Single,System.Single)
+- markdown: Creates a vector whose elements have the specified values.
+- code: public Vector2F(float x, float y)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The value to assign to the <xref href="Alis.Core.Aspect.Math.Vector.Vector2F.X" data-throw-if-not-resolved="false"></xref> field.
+  - name: y
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The value to assign to the <xref href="Alis.Core.Aspect.Math.Vector.Vector2F.Y" data-throw-if-not-resolved="false"></xref> field.
+- h2: Properties
+- api3: One
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_One
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L74
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.One
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector2F.One
+- markdown: Gets a vector whose 2 elements are equal to one.
+- code: public static Vector2F One { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: UnitX
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_UnitX
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L78
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.UnitX
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector2F.UnitX
+- markdown: Gets the vector (1,0).
+- code: public static Vector2F UnitX { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: UnitY
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_UnitY
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L82
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.UnitY
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector2F.UnitY
+- markdown: Gets the vector (0,1).
+- code: public static Vector2F UnitY { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: X
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_X
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L48
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.X
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector2F.X
+- markdown: The X component of the vector.
+- code: public float X { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Y
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Y
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L51
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Y
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector2F.Y
+- markdown: The Y component of the vector.
+- code: public float Y { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Zero
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Zero
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L70
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Zero
+    commentId: P:Alis.Core.Aspect.Math.Vector.Vector2F.Zero
+- markdown: Returns a vector whose 2 elements are equal to zero.
+- code: public static Vector2F Zero { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- h2: Methods
+- api3: Abs(Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Abs_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L178
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Abs(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Abs(Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns a vector whose elements are the absolute values of each of the specified vector's elements.
+- code: public static Vector2F Abs(Vector2F value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: A vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The absolute value vector.
+- api3: Add(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Add_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L187
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Add(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Add(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Adds two vectors together.
+- code: public static Vector2F Add(Vector2F left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector to add.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector to add.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The summed vector.
+- api3: Add(ref Vector2F, ref Vector2F, out Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Add_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L575
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Add(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Add(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Adds the left
+- code: public static void Add(ref Vector2F left, ref Vector2F right, out Vector2F result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The right
+  - name: result
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The result
+- api3: Clamp(Vector2F, Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Clamp_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L194
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Clamp(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Clamp(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Restricts a vector between a minimum and a maximum value.
+- code: public static Vector2F Clamp(Vector2F value1, Vector2F min, Vector2F max)
+- h4: Parameters
+- parameters:
+  - name: value1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector to restrict.
+  - name: min
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The minimum value.
+  - name: max
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The maximum value.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The restricted vector.
+- api3: CopyTo(float[], int)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_CopyTo_System_Single___System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L393
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.CopyTo(System.Single[],System.Int32)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.CopyTo(System.Single[],System.Int32)
+- markdown: Copies the elements of the vector to a specified array starting at a specified index position.
+- code: public void CopyTo(float[] array, int index = 0)
+- h4: Parameters
+- parameters:
+  - name: array
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    - '['
+    - ']'
+    description: The destination array.
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index at which to copy the first element of the vector.
+    optional: true
+- h4: Remarks
+- markdown: >-
+    <code class="paramref">array</code> must have a sufficient number of elements to accommodate the two vector elements. In
+
+    other words, elements <code class="paramref">index</code> and <code class="paramref">index</code> + 1 must already exist in
+
+    <code class="paramref">array</code>.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: <code class="paramref">array</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type:
+    - text: ArgumentException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentexception
+    description: The number of elements in the current instance is greater than in the array.
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: >-
+      <code class="paramref">index</code> is less than zero.
+
+      -or-
+
+      <code class="paramref">index</code> is greater than or equal to the array length.
+  - type:
+    - text: RankException
+      url: https://learn.microsoft.com/dotnet/api/system.rankexception
+    description: <code class="paramref">array</code> is multidimensional.
+- api3: Distance(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Distance_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L202
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Distance(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Distance(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Computes the Euclidean distance between the two given points.
+- code: public static float Distance(Vector2F value1, Vector2F value2)
+- h4: Parameters
+- parameters:
+  - name: value1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first point.
+  - name: value2
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second point.
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The distance.
+- api3: Distance(ref Vector2F, ref Vector2F, out float)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Distance_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__System_Single__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L549
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Distance(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single@)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Distance(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single@)
+- markdown: Distances the v 1
+- code: public static void Distance(ref Vector2F v1, ref Vector2F v2, out float result)
+- h4: Parameters
+- parameters:
+  - name: v1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The
+  - name: v2
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The
+  - name: result
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The result
+- api3: DistanceSquared(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_DistanceSquared_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L212
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.DistanceSquared(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.DistanceSquared(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns the Euclidean distance squared between two specified points.
+- code: public static float DistanceSquared(Vector2F value1, Vector2F value2)
+- h4: Parameters
+- parameters:
+  - name: value1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first point.
+  - name: value2
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second point.
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The distance squared.
+- api3: DistanceSquared(ref Vector2F, ref Vector2F, out float)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_DistanceSquared_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__System_Single__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L562
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.DistanceSquared(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single@)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.DistanceSquared(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single@)
+- markdown: Distances the squared using the specified v 1
+- code: public static void DistanceSquared(ref Vector2F v1, ref Vector2F v2, out float result)
+- h4: Parameters
+- parameters:
+  - name: v1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The
+  - name: v2
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The
+  - name: result
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The result
+- api3: Divide(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Divide_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L222
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Divides the first vector by the second.
+- code: public static Vector2F Divide(Vector2F left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector resulting from the division.
+- api3: Divide(Vector2F, float)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Divide_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L228
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Divides the specified vector by a specified scalar value.
+- code: public static Vector2F Divide(Vector2F left, float divisor)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector.
+  - name: divisor
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The scalar value.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector that results from the division.
+- api3: Divide(ref Vector2F, float, out Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Divide_Alis_Core_Aspect_Math_Vector_Vector2F__System_Single_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L619
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Divide(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Divide(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Divides the left
+- code: public static void Divide(ref Vector2F left, float right, out Vector2F result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The right
+  - name: result
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The result
+- api3: Dot(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Dot_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L234
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Dot(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Dot(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns the dot product of two vectors.
+- code: public static float Dot(Vector2F value1, Vector2F value2)
+- h4: Parameters
+- parameters:
+  - name: value1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector.
+  - name: value2
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The dot product.
+- api3: Dot(ref Vector2F, ref Vector2F, out float)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Dot_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__System_Single__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L513
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Dot(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single@)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Dot(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single@)
+- markdown: Dots the left
+- code: public static void Dot(ref Vector2F left, ref Vector2F right, out float result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The right
+  - name: result
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The result
+- api3: Equals(object)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Equals_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L425
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Equals(System.Object)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Equals(System.Object)
+- markdown: Returns a value that indicates whether this instance and a specified object are equal.
+- code: public override bool Equals(object obj)
+- h4: Parameters
+- parameters:
+  - name: obj
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object to compare with the current instance.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current instance and <code class="paramref">obj</code> are equal; otherwise,
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. If <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the method returns
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- h4: Remarks
+- markdown: >-
+    The current instance and <code class="paramref">obj</code> are equal if <code class="paramref">obj</code> is a
+
+    <xref href="Alis.Core.Aspect.Math.Vector.Vector2F" data-throw-if-not-resolved="false"></xref> object and their <xref href="Alis.Core.Aspect.Math.Vector.Vector2F.X" data-throw-if-not-resolved="false"></xref> and <xref href="Alis.Core.Aspect.Math.Vector.Vector2F.Y" data-throw-if-not-resolved="false"></xref> elements are equal.
+- api3: Equals(Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Equals_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L431
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Equals(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Equals(Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns a value that indicates whether this instance and another vector are equal.
+- code: public bool Equals(Vector2F other)
+- h4: Parameters
+- parameters:
+  - name: other
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The other vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the two vectors are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- h4: Remarks
+- markdown: Two vectors are equal if their <xref href="Alis.Core.Aspect.Math.Vector.Vector2F.X" data-throw-if-not-resolved="false"></xref> and <xref href="Alis.Core.Aspect.Math.Vector.Vector2F.Y" data-throw-if-not-resolved="false"></xref> elements are equal.
+- api3: GetHashCode()
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_GetHashCode
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L435
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.GetHashCode
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.GetHashCode
+- markdown: Returns the hash code for this instance.
+- code: public override int GetHashCode()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The hash code.
+- api3: GetObjectData(SerializationInfo, StreamingContext)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L442
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- markdown: Gets the object data using the specified info
+- code: public void GetObjectData(SerializationInfo info, StreamingContext context)
+- h4: Parameters
+- parameters:
+  - name: info
+    type:
+    - text: SerializationInfo
+      url: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+    description: The info
+  - name: context
+    type:
+    - text: StreamingContext
+      url: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+    description: The context
+- api3: Length()
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Length
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L451
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Length
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Length
+- markdown: Returns the length of the vector.
+- code: public float Length()
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The vector's length.
+- api3: LengthSquared()
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_LengthSquared
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L461
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.LengthSquared
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.LengthSquared
+- markdown: Returns the length of the vector squared.
+- code: public float LengthSquared()
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The vector's length squared.
+- h4: Remarks
+- markdown: This operation offers better performance than a call to the <xref href="Alis.Core.Aspect.Math.Vector.Vector2F.Length" data-throw-if-not-resolved="false"></xref> method.
+- api3: LerP(Vector2F, Vector2F, float)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_LerP_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L247
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.LerP(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.LerP(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Performs a linear interpolation between two vectors based on the given weighting.
+- code: public static Vector2F LerP(Vector2F value1, Vector2F value2, float amount)
+- h4: Parameters
+- parameters:
+  - name: value1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector.
+  - name: value2
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector.
+  - name: amount
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: A value between 0 and 1 that indicates the weight of <code class="paramref">value2</code>.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The interpolated vector.
+- h4: Remarks
+- markdown: >-
+    <format type="text/markdown">
+
+    The behavior of this method changed in .NET 5.0. For more information, see [Behavior change for Vector2F.Lerp and Vector4F.Lerp](/dotnet/core/compatibility/3.1-5.0#behavior-change-for-vector2lerp-and-vector4lerp).
+
+    </format>
+- api3: Max(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Max_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L253
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Max(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Max(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns a vector whose elements are the maximum of each of the pairs of elements in two specified vectors.
+- code: public static Vector2F Max(Vector2F value1, Vector2F value2)
+- h4: Parameters
+- parameters:
+  - name: value1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector.
+  - name: value2
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The maximized vector.
+- api3: Max(ref Vector2F, ref Vector2F, out Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Max_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L538
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Max(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Max(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Maxes the v 1
+- code: public static void Max(ref Vector2F v1, ref Vector2F v2, out Vector2F result)
+- h4: Parameters
+- parameters:
+  - name: v1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The
+  - name: v2
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The
+  - name: result
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The result
+- api3: Min(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Min_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L262
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Min(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Min(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns a vector whose elements are the minimum of each of the pairs of elements in two specified vectors.
+- code: public static Vector2F Min(Vector2F value1, Vector2F value2)
+- h4: Parameters
+- parameters:
+  - name: value1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector.
+  - name: value2
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The minimized vector.
+- api3: Min(ref Vector2F, ref Vector2F, out Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Min_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L524
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Min(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Min(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Mins the v 1
+- code: public static void Min(ref Vector2F v1, ref Vector2F v2, out Vector2F result)
+- h4: Parameters
+- parameters:
+  - name: v1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The
+  - name: v2
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The
+  - name: result
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The result
+- api3: Multiply(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Multiply_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L271
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns a new vector whose values are the product of each pair of elements in two specified vectors.
+- code: public static Vector2F Multiply(Vector2F left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The element-wise product vector.
+- api3: Multiply(Vector2F, float)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Multiply_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L277
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Multiplies a vector by a specified scalar.
+- code: public static Vector2F Multiply(Vector2F left, float right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector to multiply.
+  - name: right
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The scalar value.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The scaled vector.
+- api3: Multiply(float, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Multiply_System_Single_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L283
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Multiply(System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Multiply(System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Multiplies a scalar value by a specified vector.
+- code: public static Vector2F Multiply(float left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The scaled value.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The scaled vector.
+- api3: Multiply(ref Vector2F, ref Vector2F, out Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Multiply_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L597
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Multiplies the left
+- code: public static void Multiply(ref Vector2F left, ref Vector2F right, out Vector2F result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The right
+  - name: result
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The result
+- api3: Multiply(ref Vector2F, float, out Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Multiply_Alis_Core_Aspect_Math_Vector_Vector2F__System_Single_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L608
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Multiplies the left
+- code: public static void Multiply(ref Vector2F left, float right, out Vector2F result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The right
+  - name: result
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The result
+- api3: Negate(Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Negate_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L288
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Negate(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Negate(Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Negates a specified vector.
+- code: public static Vector2F Negate(Vector2F value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector to negate.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The negated vector.
+- api3: Normalize(Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Normalize_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L293
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Normalize(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Normalize(Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns a vector with the same direction as the specified vector, but with a length of one.
+- code: public static Vector2F Normalize(Vector2F value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector to normalize.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The normalized vector.
+- api3: Normalize()
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Normalize
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L498
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Normalize
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Normalize
+- markdown: Normalizes this instance
+- code: public void Normalize()
+- api3: Reflect(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Reflect_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L299
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Reflect(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Reflect(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns the reflection of a vector off a surface that has the specified normal.
+- code: public static Vector2F Reflect(Vector2F vector, Vector2F normal)
+- h4: Parameters
+- parameters:
+  - name: vector
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The source vector.
+  - name: normal
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The normal of the surface being reflected off.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The reflected vector.
+- api3: SquareRoot(Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_SquareRoot_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L308
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.SquareRoot(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.SquareRoot(Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns a vector whose elements are the square root of each of a specified vector's elements.
+- code: public static Vector2F SquareRoot(Vector2F value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: A vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The square root vector.
+- api3: Subtract(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Subtract_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L317
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Subtract(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Subtract(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Subtracts the second vector from the first.
+- code: public static Vector2F Subtract(Vector2F left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The difference vector.
+- api3: Subtract(ref Vector2F, ref Vector2F, out Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Subtract_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L586
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Subtract(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Subtract(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Subtracts the left
+- code: public static void Subtract(ref Vector2F left, ref Vector2F right, out Vector2F result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The right
+  - name: result
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The result
+- api3: ToString(string, IFormatProvider)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_ToString_System_String_System_IFormatProvider_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L481
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.ToString(System.String,System.IFormatProvider)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.ToString(System.String,System.IFormatProvider)
+- markdown: >-
+    Returns the string representation of the current instance using the specified format string to format
+
+    individual elements and the specified format provider to define culture-specific formatting.
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public string ToString(string format, IFormatProvider formatProvider)
+- h4: Parameters
+- parameters:
+  - name: format
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: A standard or custom numeric format string that defines the format of individual elements.
+  - name: formatProvider
+    type:
+    - text: IFormatProvider
+      url: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+    description: A format provider that supplies culture-specific formatting information.
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string representation of the current instance.
+- h4: Remarks
+- markdown: >-
+    This method returns a string in which each element of the vector is formatted using <code class="paramref">format</code>
+
+    and <code class="paramref">formatProvider</code>. The "&lt;" and "&gt;" characters are used to begin and end the string, and
+
+    the format provider's <xref href="System.Globalization.NumberFormatInfo.NumberGroupSeparator" data-throw-if-not-resolved="false"></xref> property followed
+
+    by a space is used to separate each element.
+- api3: ToString()
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_ToString
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L629
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.ToString
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.ToString
+- markdown: Returns the string
+- code: public override string ToString()
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+- api3: ToString(string, CultureInfo)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_ToString_System_String_System_Globalization_CultureInfo_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L638
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.ToString(System.String,System.Globalization.CultureInfo)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.ToString(System.String,System.Globalization.CultureInfo)
+- markdown: Returns the string using the specified f 2
+- code: public string ToString(string f2, CultureInfo cultureInfo)
+- h4: Parameters
+- parameters:
+  - name: f2
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The
+  - name: cultureInfo
+    type:
+    - text: CultureInfo
+      url: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+    description: The culture info
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+- api3: Transform(Vector2F, Matrix3X2)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Transform_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Matrix_Matrix3X2_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L323
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Transform(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Transform(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
+- markdown: Transforms a vector by a specified 3x2 matrix.
+- code: public static Vector2F Transform(Vector2F position, Matrix3X2 matrix)
+- h4: Parameters
+- parameters:
+  - name: position
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector to transform.
+  - name: matrix
+    type:
+    - text: Matrix3X2
+      url: Alis.Core.Aspect.Math.Matrix.Matrix3X2.html
+    description: The transformation matrix.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The transformed vector.
+- api3: Transform(Vector2F, Matrix4X4)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Transform_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Matrix_Matrix4X4_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L332
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Transform(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Transform(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
+- markdown: Transforms a vector by a specified 4x4 matrix.
+- code: public static Vector2F Transform(Vector2F position, Matrix4X4 matrix)
+- h4: Parameters
+- parameters:
+  - name: position
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector to transform.
+  - name: matrix
+    type:
+    - text: Matrix4X4
+      url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
+    description: The transformation matrix.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The transformed vector.
+- api3: Transform(Vector2F, Quaternion)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_Transform_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Util_Quaternion_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L341
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.Transform(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Util.Quaternion)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.Transform(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Util.Quaternion)
+- markdown: Transforms a vector by the specified Quaternion rotation value.
+- code: public static Vector2F Transform(Vector2F value, Quaternion rotation)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector to rotate.
+  - name: rotation
+    type:
+    - text: Quaternion
+      url: Alis.Core.Aspect.Math.Util.Quaternion.html
+    description: The rotation to apply.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The transformed vector.
+- api3: TransformNormal(Vector2F, Matrix3X2)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_TransformNormal_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Matrix_Matrix3X2_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L363
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.TransformNormal(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.TransformNormal(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Matrix.Matrix3X2)
+- markdown: Transforms a vector normal by the given 3x2 matrix.
+- code: public static Vector2F TransformNormal(Vector2F normal, Matrix3X2 matrix)
+- h4: Parameters
+- parameters:
+  - name: normal
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The source vector.
+  - name: matrix
+    type:
+    - text: Matrix3X2
+      url: Alis.Core.Aspect.Math.Matrix.Matrix3X2.html
+    description: The matrix.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The transformed vector.
+- api3: TransformNormal(Vector2F, Matrix4X4)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_TransformNormal_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Matrix_Matrix4X4_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L372
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.TransformNormal(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.TransformNormal(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
+- markdown: Transforms a vector normal by the given 4x4 matrix.
+- code: public static Vector2F TransformNormal(Vector2F normal, Matrix4X4 matrix)
+- h4: Parameters
+- parameters:
+  - name: normal
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The source vector.
+  - name: matrix
+    type:
+    - text: Matrix4X4
+      url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
+    description: The matrix.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The transformed vector.
+- h2: Operators
+- api3: operator +(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_op_Addition_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L89
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.op_Addition(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.op_Addition(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Adds two vectors together.
+- code: public static Vector2F operator +(Vector2F left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector to add.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector to add.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The summed vector.
+- h4: Remarks
+- markdown: The <xref href="Alis.Core.Aspect.Math.Vector.Vector2F.op_Addition(Alis.Core.Aspect.Math.Vector.Vector2F%2cAlis.Core.Aspect.Math.Vector.Vector2F)" data-throw-if-not-resolved="false"></xref> method defines the addition operation for <xref href="Alis.Core.Aspect.Math.Vector.Vector2F" data-throw-if-not-resolved="false"></xref> objects.
+- api3: operator /(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_op_Division_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L98
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.op_Division(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.op_Division(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Divides the first vector by the second.
+- code: public static Vector2F operator /(Vector2F left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector that results from dividing <code class="paramref">left</code> by <code class="paramref">right</code>.
+- api3: operator /(Vector2F, float)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_op_Division_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L107
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.op_Division(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.op_Division(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Divides the specified vector by a specified scalar value.
+- code: public static Vector2F operator /(Vector2F value1, float value2)
+- h4: Parameters
+- parameters:
+  - name: value1
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector.
+  - name: value2
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The scalar value.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The result of the division.
+- api3: operator ==(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_op_Equality_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L120
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.op_Equality(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.op_Equality(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns a value that indicates whether each pair of elements in two specified vectors is equal.
+- code: public static bool operator ==(Vector2F left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector to compare.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector to compare.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">left</code> and <code class="paramref">right</code> are equal; otherwise,
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- h4: Remarks
+- markdown: >-
+    Two <xref href="Alis.Core.Aspect.Math.Vector.Vector2F" data-throw-if-not-resolved="false"></xref> objects are equal if each value in <code class="paramref">left</code> is equal to the
+
+    corresponding value in <code class="paramref">right</code>.
+- api3: operator !=(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_op_Inequality_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L130
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.op_Inequality(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.op_Inequality(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns a value that indicates whether two specified vectors are not equal.
+- code: public static bool operator !=(Vector2F left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector to compare.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector to compare.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">left</code> and <code class="paramref">right</code> are not equal; otherwise,
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- api3: operator *(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_op_Multiply_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L136
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.op_Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.op_Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Returns a new vector whose values are the product of each pair of elements in two specified vectors.
+- code: public static Vector2F operator *(Vector2F left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The element-wise product vector.
+- api3: operator *(Vector2F, float)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_op_Multiply_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L145
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.op_Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.op_Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Multiplies the specified vector by the specified scalar value.
+- code: public static Vector2F operator *(Vector2F left, float right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector.
+  - name: right
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The scalar value.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The scaled vector.
+- api3: operator *(float, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_op_Multiply_System_Single_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L151
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.op_Multiply(System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.op_Multiply(System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Multiplies the scalar value by the specified vector.
+- code: public static Vector2F operator *(float left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The vector.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The scalar value.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The scaled vector.
+- api3: operator -(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_op_Subtraction_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L161
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.op_Subtraction(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.op_Subtraction(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Subtracts the second vector from the first.
+- code: public static Vector2F operator -(Vector2F left, Vector2F right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The first vector.
+  - name: right
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The second vector.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector that results from subtracting <code class="paramref">right</code> from <code class="paramref">left</code>.
+- h4: Remarks
+- markdown: >-
+    The <xref href="Alis.Core.Aspect.Math.Vector.Vector2F.op_Subtraction(Alis.Core.Aspect.Math.Vector.Vector2F%2cAlis.Core.Aspect.Math.Vector.Vector2F)" data-throw-if-not-resolved="false"></xref> method defines the subtraction operation for <xref href="Alis.Core.Aspect.Math.Vector.Vector2F" data-throw-if-not-resolved="false"></xref>
+
+    objects.
+- api3: operator -(Vector2F)
+  id: Alis_Core_Aspect_Math_Vector_Vector2F_op_UnaryNegation_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Vector/Vector2F.cs#L173
+  metadata:
+    uid: Alis.Core.Aspect.Math.Vector.Vector2F.op_UnaryNegation(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Vector.Vector2F.op_UnaryNegation(Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Negates the specified vector.
+- code: public static Vector2F operator -(Vector2F value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector to negate.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The negated vector.
+- h4: Remarks
+- markdown: >-
+    The <xref href="Alis.Core.Aspect.Math.Vector.Vector2F.op_UnaryNegation(Alis.Core.Aspect.Math.Vector.Vector2F)" data-throw-if-not-resolved="false"></xref> method defines the unary negation operation for <xref href="Alis.Core.Aspect.Math.Vector.Vector2F" data-throw-if-not-resolved="false"></xref>
+
+    objects.
+languageId: csharp
+metadata:
+  description: The vector

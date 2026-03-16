@@ -1,0 +1,28 @@
+### YamlMime:ApiPage
+title: Enum FramebufferAttachment
+body:
+- api1: Enum FramebufferAttachment
+  id: Alis_Core_Graphic_OpenGL_FramebufferAttachment
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/FramebufferAttachment.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.FramebufferAttachment
+    commentId: T:Alis.Core.Graphic.OpenGL.FramebufferAttachment
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The framebuffer attachment enum
+- code: public enum FramebufferAttachment
+- h2: Fields
+- parameters:
+  - name: ColorAttachment0
+    default: "36064"
+    description: >+
+      The color attachment framebuffer attachment
+
+languageId: csharp
+metadata:
+  description: The framebuffer attachment enum

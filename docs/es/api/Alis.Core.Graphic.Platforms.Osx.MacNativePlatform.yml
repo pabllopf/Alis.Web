@@ -1,0 +1,628 @@
+### YamlMime:ApiPage
+title: Class MacNativePlatform
+body:
+- api1: Class MacNativePlatform
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L42
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform
+    commentId: T:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.Platforms.Osx
+      url: Alis.Core.Graphic.Platforms.Osx.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Plataforma nativa para macOS, coordinando ventana y contexto OpenGL
+- code: 'public class MacNativePlatform : INativePlatform'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: MacNativePlatform
+    url: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.html
+- h4: Implements
+- list:
+  - text: INativePlatform
+    url: Alis.Core.Graphic.Platforms.INativePlatform.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: _openGlHandle
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform__openGlHandle
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L46
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform._openGlHandle
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform._openGlHandle
+- code: private static nint _openGlHandle
+- h4: Field Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: app
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_app
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L68
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.app
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.app
+- code: private nint app
+- h4: Field Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: distantPast
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_distantPast
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L68
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.distantPast
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.distantPast
+- code: private nint distantPast
+- h4: Field Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: glContext
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_glContext
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L54
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.glContext
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.glContext
+- code: private MacOpenGLContext glContext
+- h4: Field Value
+- parameters:
+  - type:
+    - text: MacOpenGLContext
+      url: Alis.Core.Graphic.Platforms.Osx.Native.MacOpenGLContext.html
+- api3: lastKeyPressed
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_lastKeyPressed
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L58
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.lastKeyPressed
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.lastKeyPressed
+- code: private ConsoleKey? lastKeyPressed
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ConsoleKey
+      url: https://learn.microsoft.com/dotnet/api/system.consolekey
+    - '?'
+- api3: mouseButtons
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_mouseButtons
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L48
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseButtons
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseButtons
+- code: private readonly bool[] mouseButtons
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    - '['
+    - ']'
+- api3: mouseWheel
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_mouseWheel
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L60
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseWheel
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseWheel
+- code: private float mouseWheel
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: mouseX
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_mouseX
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L63
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseX
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseX
+- code: private int mouseX
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: mouseY
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_mouseY
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L64
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseY
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.mouseY
+- code: private int mouseY
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: pool
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_pool
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L68
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.pool
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.pool
+- code: private nint pool
+- h4: Field Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: pressedKeys
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_pressedKeys
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L50
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.pressedKeys
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.pressedKeys
+- code: private readonly HashSet<ConsoleKey> pressedKeys
+- h4: Field Value
+- parameters:
+  - type:
+    - text: HashSet
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+    - <
+    - text: ConsoleKey
+      url: https://learn.microsoft.com/dotnet/api/system.consolekey
+    - '>'
+- api3: runLoopMode
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_runLoopMode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L68
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.runLoopMode
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.runLoopMode
+- code: private nint runLoopMode
+- h4: Field Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: window
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_window
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L72
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.window
+    commentId: F:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.window
+- code: private MacWindow window
+- h4: Field Value
+- parameters:
+  - type:
+    - text: MacWindow
+      url: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.html
+- h2: Methods
+- api3: Cleanup()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_Cleanup
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L141
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Cleanup
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Cleanup
+- code: public void Cleanup()
+- api3: GetMouseLocation()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetMouseLocation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L774
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseLocation
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseLocation
+- code: private CGPoint GetMouseLocation()
+- h4: Returns
+- parameters:
+  - type:
+    - text: CGPoint
+      url: Alis.Core.Graphic.Platforms.Osx.Native.CGPoint.html
+- api3: GetMousePositionInView(out float, out float)
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetMousePositionInView_System_Single__System_Single__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L628
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMousePositionInView(System.Single@,System.Single@)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMousePositionInView(System.Single@,System.Single@)
+- markdown: Gets the mouse position in view using the specified x
+- code: public void GetMousePositionInView(out float x, out float y)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+  - name: y
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+- api3: GetMouseState(out int, out int, out bool[])
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetMouseState_System_Int32__System_Int32__System_Boolean____
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L562
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseState(System.Int32@,System.Int32@,System.Boolean[]@)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseState(System.Int32@,System.Int32@,System.Boolean[]@)
+- markdown: Obtiene el estado actual del ratón (posición y botones)
+- code: public void GetMouseState(out int x, out int y, out bool[] buttons)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: y
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: buttons
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    - '['
+    - ']'
+- api3: GetMouseWheel()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetMouseWheel
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L579
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseWheel
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetMouseWheel
+- markdown: Obtiene delta de rueda (vertical) y lo consume
+- code: public float GetMouseWheel()
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: GetProcAddress(string)
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetProcAddress_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L678
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetProcAddress(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetProcAddress(System.String)
+- code: public nint GetProcAddress(string name)
+- h4: Parameters
+- parameters:
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: ''
+- api3: GetWindowHeight()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetWindowHeight
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L137
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowHeight
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowHeight
+- code: public int GetWindowHeight()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+- api3: GetWindowMetrics(out int, out int, out int, out int, out int, out int)
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetWindowMetrics_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L604
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowMetrics(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowMetrics(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+- markdown: Gets the window metrics using the specified win x
+- code: public void GetWindowMetrics(out int winX, out int winY, out int winW, out int winH, out int fbW, out int fbH)
+- h4: Parameters
+- parameters:
+  - name: winX
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The win
+  - name: winY
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The win
+  - name: winW
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The win
+  - name: winH
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The win
+  - name: fbW
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The fb
+  - name: fbH
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The fb
+- api3: GetWindowPositionX()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetWindowPositionX
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L592
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowPositionX
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowPositionX
+- markdown: Gets the window position x
+- code: public int GetWindowPositionX()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: GetWindowPositionY()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetWindowPositionY
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L598
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowPositionY
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowPositionY
+- markdown: Gets the window position y
+- code: public int GetWindowPositionY()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: GetWindowWidth()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_GetWindowWidth
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L132
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowWidth
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.GetWindowWidth
+- code: public int GetWindowWidth()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+- api3: HideWindow()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_HideWindow
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L103
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.HideWindow
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.HideWindow
+- code: public void HideWindow()
+- api3: Initialize(int, int, string)
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_Initialize_System_Int32_System_Int32_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L80
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Initialize(System.Int32,System.Int32,System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Initialize(System.Int32,System.Int32,System.String)
+- code: public bool Initialize(int w, int h, string t)
+- h4: Parameters
+- parameters:
+  - name: w
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+  - name: h
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+  - name: t
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
+- api3: Initialize(int, int, string, string)
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_Initialize_System_Int32_System_Int32_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L700
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Initialize(System.Int32,System.Int32,System.String,System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.Initialize(System.Int32,System.Int32,System.String,System.String)
+- markdown: Creates the window and sets the icon from the specified BMP file path (Cocoa, using objc_msgSend)
+- code: public bool Initialize(int width, int height, string title, string iconPath)
+- h4: Parameters
+- parameters:
+  - name: width
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: height
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: title
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+  - name: iconPath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: IsKeyDown(ConsoleKey)
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_IsKeyDown_System_ConsoleKey_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L672
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.IsKeyDown(System.ConsoleKey)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.IsKeyDown(System.ConsoleKey)
+- code: public bool IsKeyDown(ConsoleKey key)
+- h4: Parameters
+- parameters:
+  - name: key
+    type:
+    - text: ConsoleKey
+      url: https://learn.microsoft.com/dotnet/api/system.consolekey
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
+- api3: IsWindowVisible()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_IsWindowVisible
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L127
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.IsWindowVisible
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.IsWindowVisible
+- code: public bool IsWindowVisible()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
+- api3: MakeContextCurrent()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_MakeContextCurrent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L118
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.MakeContextCurrent
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.MakeContextCurrent
+- code: public void MakeContextCurrent()
+- api3: PollEvents()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_PollEvents
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L152
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.PollEvents
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.PollEvents
+- code: public bool PollEvents()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
+- api3: SetSize(int, int)
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_SetSize_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L114
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetSize(System.Int32,System.Int32)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetSize(System.Int32,System.Int32)
+- code: public void SetSize(int w, int h)
+- h4: Parameters
+- parameters:
+  - name: w
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+  - name: h
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+- api3: SetTitle(string)
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_SetTitle_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L108
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetTitle(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetTitle(System.String)
+- code: public void SetTitle(string t)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: ''
+- api3: SetWindowIcon(string)
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_SetWindowIcon_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L734
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetWindowIcon(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SetWindowIcon(System.String)
+- markdown: Sets the window icon from the specified BMP file path (Cocoa, safe NSString handling)
+- code: public void SetWindowIcon(string iconPath)
+- h4: Parameters
+- parameters:
+  - name: iconPath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: ShowWindow()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_ShowWindow
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L99
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.ShowWindow
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.ShowWindow
+- code: public void ShowWindow()
+- api3: SwapBuffers()
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_SwapBuffers
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L122
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SwapBuffers
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.SwapBuffers
+- code: public void SwapBuffers()
+- api3: TryGetLastInputCharacters(out string)
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_TryGetLastInputCharacters_System_String__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L586
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.TryGetLastInputCharacters(System.String@)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.TryGetLastInputCharacters(System.String@)
+- markdown: >-
+    Devuelve la última cadena de caracteres de entrada (por ejemplo texto) acumulada por el backend de la plataforma.
+
+    Esto permite transportar caracteres imprimibles (WM_CHAR / X11 KeySym) hacia ImGui.
+- code: public bool TryGetLastInputCharacters(out string chars)
+- h4: Parameters
+- parameters:
+  - name: chars
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: La cadena de caracteres entrantes (puede contener varios caracteres)
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: true si había caracteres pendientes, false si no
+- api3: TryGetLastKeyPressed(out ConsoleKey)
+  id: Alis_Core_Graphic_Platforms_Osx_MacNativePlatform_TryGetLastKeyPressed_System_ConsoleKey__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/MacNativePlatform.cs#L546
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.TryGetLastKeyPressed(System.ConsoleKey@)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.MacNativePlatform.TryGetLastKeyPressed(System.ConsoleKey@)
+- code: public bool TryGetLastKeyPressed(out ConsoleKey key)
+- h4: Parameters
+- parameters:
+  - name: key
+    type:
+    - text: ConsoleKey
+      url: https://learn.microsoft.com/dotnet/api/system.consolekey
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
+languageId: csharp
+metadata:
+  description: Plataforma nativa para macOS, coordinando ventana y contexto OpenGL

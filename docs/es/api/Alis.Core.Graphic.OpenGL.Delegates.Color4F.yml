@@ -1,0 +1,39 @@
+### YamlMime:ApiPage
+title: Delegate Color4F
+body:
+- api1: Delegate Color4F
+  id: Alis_Core_Graphic_OpenGL_Delegates_Color4F
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/Color4f.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.Color4F
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.Color4F
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The color 4f
+- code: public delegate void Color4F(float red, float green, float blue, float alpha)
+- h4: Parameters
+- parameters:
+  - name: red
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+  - name: green
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+  - name: blue
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+  - name: alpha
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+languageId: csharp
+metadata:
+  description: The color 4f

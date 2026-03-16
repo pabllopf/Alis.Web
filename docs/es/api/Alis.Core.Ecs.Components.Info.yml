@@ -1,0 +1,142 @@
+### YamlMime:ApiPage
+title: Struct Info
+body:
+- api1: Struct Info
+  id: Alis_Core_Ecs_Components_Info
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Info.cs#L37
+  metadata:
+    uid: Alis.Core.Ecs.Components.Info
+    commentId: T:Alis.Core.Ecs.Components.Info
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Components
+      url: Alis.Core.Ecs.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Info component
+- code: 'public record struct Info : IOnInit, IOnUpdate, IComponentBase, IEquatable<Info>'
+- h4: Implements
+- list:
+  - text: IOnInit
+    url: Alis.Core.Aspect.Fluent.Components.IOnInit.html
+  - text: IOnUpdate
+    url: Alis.Core.Aspect.Fluent.Components.IOnUpdate.html
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+  - text: IEquatable<Info>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Id
+  id: Alis_Core_Ecs_Components_Info_Id
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Info.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Components.Info.Id
+    commentId: F:Alis.Core.Ecs.Components.Info.Id
+- markdown: The id
+- code: public int Id
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: IsActive
+  id: Alis_Core_Ecs_Components_Info_IsActive
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Info.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Components.Info.IsActive
+    commentId: F:Alis.Core.Ecs.Components.Info.IsActive
+- markdown: The is active
+- code: public bool IsActive
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: IsStatic
+  id: Alis_Core_Ecs_Components_Info_IsStatic
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Info.cs#L52
+  metadata:
+    uid: Alis.Core.Ecs.Components.Info.IsStatic
+    commentId: F:Alis.Core.Ecs.Components.Info.IsStatic
+- markdown: The is static
+- code: public bool IsStatic
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Name
+  id: Alis_Core_Ecs_Components_Info_Name
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Info.cs#L57
+  metadata:
+    uid: Alis.Core.Ecs.Components.Info.Name
+    commentId: F:Alis.Core.Ecs.Components.Info.Name
+- markdown: The name
+- code: public string Name
+- h4: Field Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Tag
+  id: Alis_Core_Ecs_Components_Info_Tag
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Info.cs#L62
+  metadata:
+    uid: Alis.Core.Ecs.Components.Info.Tag
+    commentId: F:Alis.Core.Ecs.Components.Info.Tag
+- markdown: The tag
+- code: public string Tag
+- h4: Field Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: OnInit(IGameObject)
+  id: Alis_Core_Ecs_Components_Info_OnInit_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Info.cs#L68
+  metadata:
+    uid: Alis.Core.Ecs.Components.Info.OnInit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Info.OnInit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Inits the self
+- code: public void OnInit(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: OnUpdate(IGameObject)
+  id: Alis_Core_Ecs_Components_Info_OnUpdate_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Info.cs#L76
+  metadata:
+    uid: Alis.Core.Ecs.Components.Info.OnUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Info.OnUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Updates the self
+- code: public void OnUpdate(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+languageId: csharp
+metadata:
+  description: Info component

@@ -1,0 +1,95 @@
+### YamlMime:ApiPage
+title: Interface IJsonFileHandler
+body:
+- api1: Interface IJsonFileHandler
+  id: Alis_Core_Aspect_Data_Json_FileOperations_IJsonFileHandler
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/FileOperations/IJsonFileHandler.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.FileOperations.IJsonFileHandler
+    commentId: T:Alis.Core.Aspect.Data.Json.FileOperations.IJsonFileHandler
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Data.Json.FileOperations
+      url: Alis.Core.Aspect.Data.Json.FileOperations.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Defines a contract for reading and writing JSON files.
+- code: public interface IJsonFileHandler
+- h2: Methods
+- api3: DeserializeFromFile<T>(string, string)
+  id: Alis_Core_Aspect_Data_Json_FileOperations_IJsonFileHandler_DeserializeFromFile__1_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/FileOperations/IJsonFileHandler.cs#L56
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.FileOperations.IJsonFileHandler.DeserializeFromFile``1(System.String,System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.FileOperations.IJsonFileHandler.DeserializeFromFile``1(System.String,System.String)
+- markdown: Deserializes a JSON file into an object.
+- code: 'T DeserializeFromFile<T>(string fileName, string relativePath) where T : IJsonSerializable, IJsonDesSerializable<T>, new()'
+- h4: Parameters
+- parameters:
+  - name: fileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name of the file (without .json extension).
+  - name: relativePath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The relative path where the file is located.
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: An instance of the specified type populated with data from the JSON file.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The target type, which must implement IJsonSerializable and IJsonDesSerializable&lt;T&gt;.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Thrown when the file does not exist.
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when parameters are null.
+- api3: SerializeToFile<T>(T, string, string)
+  id: Alis_Core_Aspect_Data_Json_FileOperations_IJsonFileHandler_SerializeToFile__1___0_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/FileOperations/IJsonFileHandler.cs#L45
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.FileOperations.IJsonFileHandler.SerializeToFile``1(``0,System.String,System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.FileOperations.IJsonFileHandler.SerializeToFile``1(``0,System.String,System.String)
+- markdown: Serializes an object to a JSON file.
+- code: 'void SerializeToFile<T>(T instance, string fileName, string relativePath) where T : IJsonSerializable'
+- h4: Parameters
+- parameters:
+  - name: instance
+    type:
+    - T
+    description: The instance to serialize.
+  - name: fileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name of the file (without .json extension).
+  - name: relativePath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The relative path where the file will be saved.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of the object to serialize, which must implement IJsonSerializable.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when parameters are null.
+languageId: csharp
+metadata:
+  description: Defines a contract for reading and writing JSON files.

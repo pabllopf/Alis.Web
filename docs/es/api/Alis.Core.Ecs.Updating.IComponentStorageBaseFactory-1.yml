@@ -1,0 +1,49 @@
+### YamlMime:ApiPage
+title: Interface IComponentStorageBaseFactory<T>
+body:
+- api1: Interface IComponentStorageBaseFactory<T>
+  id: Alis_Core_Ecs_Updating_IComponentStorageBaseFactory_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/IComponentRunnerFactory.cs#L35
+  metadata:
+    uid: Alis.Core.Ecs.Updating.IComponentStorageBaseFactory`1
+    commentId: T:Alis.Core.Ecs.Updating.IComponentStorageBaseFactory`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Updating
+      url: Alis.Core.Ecs.Updating.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The component storage base factory interface
+- code: internal interface IComponentStorageBaseFactory<T>
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h2: Methods
+- api3: CreateStronglyTyped(int)
+  id: Alis_Core_Ecs_Updating_IComponentStorageBaseFactory_1_CreateStronglyTyped_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/IComponentRunnerFactory.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Updating.IComponentStorageBaseFactory`1.CreateStronglyTyped(System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.IComponentStorageBaseFactory`1.CreateStronglyTyped(System.Int32)
+- markdown: Creates the strongly typed using the specified capacity
+- code: ComponentStorage<T> CreateStronglyTyped(int capacity)
+- h4: Parameters
+- parameters:
+  - name: capacity
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The capacity
+- h4: Returns
+- parameters:
+  - type:
+    - text: ComponentStorage
+      url: Alis.Core.Ecs.Updating.ComponentStorage-1.html
+    - <
+    - T
+    - '>'
+    description: A component storage of t
+languageId: csharp
+metadata:
+  description: The component storage base factory interface

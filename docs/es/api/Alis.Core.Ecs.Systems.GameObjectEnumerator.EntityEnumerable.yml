@@ -1,0 +1,117 @@
+### YamlMime:ApiPage
+title: Struct GameObjectEnumerator.EntityEnumerable
+body:
+- api1: Struct GameObjectEnumerator.EntityEnumerable
+  id: Alis_Core_Ecs_Systems_GameObjectEnumerator_EntityEnumerable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/GameObjectEnumerator.cs#L87
+  metadata:
+    uid: Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable
+    commentId: T:Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Proxy struct used to get an <xref href="Alis.Core.Ecs.Systems.GameObjectEnumerator" data-throw-if-not-resolved="false"></xref>.
+- code: public readonly ref struct GameObjectEnumerator.EntityEnumerable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: Scene reference (8 bytes) + Span (16 bytes)
+
+    Total: 24 bytes
+
+    Pack = 4 for optimal alignment
+- h2: Constructors
+- api3: EntityEnumerable(Scene, Span<GameObjectIdOnly>)
+  id: Alis_Core_Ecs_Systems_GameObjectEnumerator_EntityEnumerable__ctor_Alis_Core_Ecs_Scene_System_Span_Alis_Core_Ecs_Kernel_GameObjectIdOnly__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/GameObjectEnumerator.cs#L105
+  metadata:
+    uid: Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable.#ctor(Alis.Core.Ecs.Scene,System.Span{Alis.Core.Ecs.Kernel.GameObjectIdOnly})
+    commentId: M:Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable.#ctor(Alis.Core.Ecs.Scene,System.Span{Alis.Core.Ecs.Kernel.GameObjectIdOnly})
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable" data-throw-if-not-resolved="false"></xref> class
+- code: internal EntityEnumerable(Scene scene, Span<GameObjectIdOnly> entities)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: entities
+    type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    - '>'
+    description: The entities
+- h2: Fields
+- api3: _entities
+  id: Alis_Core_Ecs_Systems_GameObjectEnumerator_EntityEnumerable__entities
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/GameObjectEnumerator.cs#L98
+  metadata:
+    uid: Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable._entities
+    commentId: F:Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable._entities
+- markdown: The entities
+- code: private readonly Span<GameObjectIdOnly> _entities
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    - '>'
+- api3: _scene
+  id: Alis_Core_Ecs_Systems_GameObjectEnumerator_EntityEnumerable__scene
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/GameObjectEnumerator.cs#L93
+  metadata:
+    uid: Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable._scene
+    commentId: F:Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable._scene
+- markdown: The scene
+- code: private readonly Scene _scene
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h2: Methods
+- api3: GetEnumerator()
+  id: Alis_Core_Ecs_Systems_GameObjectEnumerator_EntityEnumerable_GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/GameObjectEnumerator.cs#L116
+  metadata:
+    uid: Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable.GetEnumerator
+    commentId: M:Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable.GetEnumerator
+- markdown: >-
+    Gets an <xref href="Alis.Core.Ecs.Systems.GameObjectEnumerator" data-throw-if-not-resolved="false"></xref> from this <xref href="Alis.Core.Ecs.Systems.GameObjectEnumerator.EntityEnumerable" data-throw-if-not-resolved="false"></xref>. Allows for the usage of
+
+    foreach
+
+    syntax.
+- code: public GameObjectEnumerator GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectEnumerator
+      url: Alis.Core.Ecs.Systems.GameObjectEnumerator.html
+languageId: csharp
+metadata:
+  description: Proxy struct used to get an .

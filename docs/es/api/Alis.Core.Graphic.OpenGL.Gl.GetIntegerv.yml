@@ -1,0 +1,33 @@
+### YamlMime:ApiPage
+title: Delegate Gl.GetIntegerv
+body:
+- api1: Delegate Gl.GetIntegerv
+  id: Alis_Core_Graphic_OpenGL_Gl_GetIntegerv
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L70
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GetIntegerv
+    commentId: T:Alis.Core.Graphic.OpenGL.Gl.GetIntegerv
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The get integerv
+- code: public delegate void Gl.GetIntegerv(int pname, int[] data)
+- h4: Parameters
+- parameters:
+  - name: pname
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: data
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '['
+    - ']'
+languageId: csharp
+metadata:
+  description: The get integerv

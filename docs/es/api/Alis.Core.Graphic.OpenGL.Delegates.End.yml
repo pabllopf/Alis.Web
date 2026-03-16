@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Delegate End
+body:
+- api1: Delegate End
+  id: Alis_Core_Graphic_OpenGL_Delegates_End
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/End.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.End
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.End
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The end
+- code: public delegate void End()
+languageId: csharp
+metadata:
+  description: The end

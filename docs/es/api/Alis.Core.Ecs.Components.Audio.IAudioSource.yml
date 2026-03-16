@@ -1,0 +1,58 @@
+### YamlMime:ApiPage
+title: Interface IAudioSource
+body:
+- api1: Interface IAudioSource
+  id: Alis_Core_Ecs_Components_Audio_IAudioSource
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/IAudioSource.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.IAudioSource
+    commentId: T:Alis.Core.Ecs.Components.Audio.IAudioSource
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Components.Audio
+      url: Alis.Core.Ecs.Components.Audio.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The audio source interface
+- code: 'public interface IAudioSource : IOnStart, IOnUpdate, IComponentBase, IHasContext<Context>, IOnExit'
+- h4: Implements
+- list:
+  - text: IOnStart
+    url: Alis.Core.Aspect.Fluent.Components.IOnStart.html
+  - text: IOnUpdate
+    url: Alis.Core.Aspect.Fluent.Components.IOnUpdate.html
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+  - text: IHasContext<Context>
+    url: Alis.Core.Aspect.Fluent.Words.IHasContext-1.html
+  - text: IOnExit
+    url: Alis.Core.Aspect.Fluent.Components.IOnExit.html
+- h2: Methods
+- api3: Play()
+  id: Alis_Core_Ecs_Components_Audio_IAudioSource_Play
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/IAudioSource.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.IAudioSource.Play
+    commentId: M:Alis.Core.Ecs.Components.Audio.IAudioSource.Play
+- markdown: Plays this instance
+- code: void Play()
+- api3: Resume()
+  id: Alis_Core_Ecs_Components_Audio_IAudioSource_Resume
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/IAudioSource.cs#L58
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.IAudioSource.Resume
+    commentId: M:Alis.Core.Ecs.Components.Audio.IAudioSource.Resume
+- markdown: Resumes this instance
+- code: void Resume()
+- api3: Stop()
+  id: Alis_Core_Ecs_Components_Audio_IAudioSource_Stop
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Audio/IAudioSource.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio.IAudioSource.Stop
+    commentId: M:Alis.Core.Ecs.Components.Audio.IAudioSource.Stop
+- markdown: Stops this instance
+- code: void Stop()
+languageId: csharp
+metadata:
+  description: The audio source interface

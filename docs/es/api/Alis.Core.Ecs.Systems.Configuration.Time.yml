@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Systems.Configuration.Time
+body:
+- api1: Namespace Alis.Core.Ecs.Systems.Configuration.Time
+  id: Alis_Core_Ecs_Systems_Configuration_Time
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Time
+    commentId: N:Alis.Core.Ecs.Systems.Configuration.Time
+- h3: Structs
+- parameters:
+  - type:
+      text: TimeSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Time.TimeSetting.html
+    description: The time class
+- h3: Interfaces
+- parameters:
+  - type:
+      text: ITimeSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Time.ITimeSetting.html
+    description: The time setting interface
+languageId: csharp

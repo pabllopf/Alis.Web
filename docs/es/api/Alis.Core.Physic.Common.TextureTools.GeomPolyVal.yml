@@ -41,12 +41,12 @@ body:
 - h2: Constructors
 - api3: GeomPolyVal(GeomPoly, int)
   id: Alis_Core_Physic_Common_TextureTools_GeomPolyVal__ctor_Alis_Core_Physic_Common_TextureTools_MarchingSquares_GeomPoly_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/GeomPolyVal.cs#L51
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/GeomPolyVal.cs#L53
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.GeomPolyVal.#ctor(Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly,System.Int32)
     commentId: M:Alis.Core.Physic.Common.TextureTools.GeomPolyVal.#ctor(Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly,System.Int32)
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.TextureTools.GeomPolyVal" data-throw-if-not-resolved="false"></xref> class
-- code: public GeomPolyVal(MarchingSquares.GeomPoly geomP, int K)
+- code: public GeomPolyVal(MarchingSquares.GeomPoly geomP, int k)
 - h4: Parameters
 - parameters:
   - name: geomP
@@ -57,7 +57,7 @@ body:
     - text: GeomPoly
       url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly.html
     description: The geom
-  - name: K
+  - name: k
     type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
@@ -65,7 +65,7 @@ body:
 - h2: Fields
 - api3: GeomP
   id: Alis_Core_Physic_Common_TextureTools_GeomPolyVal_GeomP
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/GeomPolyVal.cs#L44
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/GeomPolyVal.cs#L46
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.GeomPolyVal.GeomP
     commentId: F:Alis.Core.Physic.Common.TextureTools.GeomPolyVal.GeomP
@@ -81,7 +81,7 @@ body:
       url: Alis.Core.Physic.Common.TextureTools.MarchingSquares.GeomPoly.html
 - api3: Key
   id: Alis_Core_Physic_Common_TextureTools_GeomPolyVal_Key
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/GeomPolyVal.cs#L39
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/GeomPolyVal.cs#L41
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.GeomPolyVal.Key
     commentId: F:Alis.Core.Physic.Common.TextureTools.GeomPolyVal.Key

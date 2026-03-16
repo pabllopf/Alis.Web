@@ -1,0 +1,30 @@
+### YamlMime:ApiPage
+title: Delegate AudioSourceConfig<T>
+body:
+- api1: Delegate AudioSourceConfig<T>
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceConfig_1
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceConfig.cs#L37
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceConfig`1
+    commentId: T:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceConfig`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Builder.Core.Ecs.Components.Audio
+      url: Alis.Builder.Core.Ecs.Components.Audio.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The audio source config
+- code: 'public delegate void AudioSourceConfig<T>(AudioSourceBuilder builder) where T : IAudioSource'
+- h4: Parameters
+- parameters:
+  - name: builder
+    type:
+    - text: AudioSourceBuilder
+      url: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.html
+- h4: Type Parameters
+- parameters:
+  - name: T
+languageId: csharp
+metadata:
+  description: The audio source config

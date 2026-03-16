@@ -1,0 +1,33 @@
+### YamlMime:ApiPage
+title: Delegate QueryDelegates.Query<T1, T2>
+body:
+- api1: Delegate QueryDelegates.Query<T1, T2>
+  id: Alis_Core_Ecs_Systems_QueryDelegates_Query_2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryDelegates.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryDelegates.Query`2
+    commentId: T:Alis.Core.Ecs.Systems.QueryDelegates.Query`2
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The query
+- code: public delegate void QueryDelegates.Query<T1, T2>(ref T1 comp1, ref T2 comp2)
+- h4: Parameters
+- parameters:
+  - name: comp1
+    type:
+    - T1
+  - name: comp2
+    type:
+    - T2
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+languageId: csharp
+metadata:
+  description: The query

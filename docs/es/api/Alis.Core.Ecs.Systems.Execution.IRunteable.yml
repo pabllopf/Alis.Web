@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Interface IRunteable
+body:
+- api1: Interface IRunteable
+  id: Alis_Core_Ecs_Systems_Execution_IRunteable
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Execution/IRunteable.cs#L35
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Execution.IRunteable
+    commentId: T:Alis.Core.Ecs.Systems.Execution.IRunteable
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Execution
+      url: Alis.Core.Ecs.Systems.Execution.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The runteable interface
+- code: public interface IRunteable
+languageId: csharp
+metadata:
+  description: The runteable interface

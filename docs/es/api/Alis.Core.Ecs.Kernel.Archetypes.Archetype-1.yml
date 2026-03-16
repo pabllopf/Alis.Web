@@ -1,0 +1,386 @@
+### YamlMime:ApiPage
+title: Class Archetype<T>
+body:
+- api1: Class Archetype<T>
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L747
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1
+    commentId: T:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Archetypes
+      url: Alis.Core.Ecs.Kernel.Archetypes.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The archetype class
+- code: internal static class Archetype<T>
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Archetype<T>
+    url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Archetype()
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1__cctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L834
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.#cctor
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.#cctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Kernel.Archetypes.Archetype" data-throw-if-not-resolved="false"></xref> class
+- code: private static Archetype()
+- h2: Fields
+- api3: ArchetypeComponentIDs
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_ArchetypeComponentIDs
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L752
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.ArchetypeComponentIDs
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.ArchetypeComponentIDs
+- markdown: The to immutable array
+- code: public static readonly FastImmutableArray<ComponentId> ArchetypeComponentIDs
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- api3: ArchetypeTable
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_ArchetypeTable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L819
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.ArchetypeTable
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.ArchetypeTable
+- markdown: The create
+- code: internal static FastestStack<ArchetypeData> ArchetypeTable
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: ArchetypeData
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeData.html
+    - '>'
+- api3: ExistingArchetypes
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_ExistingArchetypes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L829
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.ExistingArchetypes
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.ExistingArchetypes
+- markdown: The existing archetypes
+- code: private static readonly Dictionary<long, ArchetypeData> ExistingArchetypes
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: long
+      url: https://learn.microsoft.com/dotnet/api/system.int64
+    - ','
+    - " "
+    - text: ArchetypeData
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeData.html
+    - '>'
+- api3: Id
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_Id
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L759
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.Id
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.Id
+- markdown: The empty
+- code: public static readonly GameObjectType Id
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+- api3: NextArchetypeId
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_NextArchetypeId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L824
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.NextArchetypeId
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.NextArchetypeId
+- markdown: The next archetype id
+- code: internal static int NextArchetypeId
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: "Null"
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_Null
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L814
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.Null
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.Null
+- markdown: The null
+- code: internal static readonly GameObjectType Null
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+- h2: Methods
+- api3: CreateNewOrGetExistingArchetypes(Scene)
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_CreateNewOrGetExistingArchetypes_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L766
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.CreateNewOrGetExistingArchetypes(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.CreateNewOrGetExistingArchetypes(Alis.Core.Ecs.Scene)
+- markdown: Creates the new or get existing archetypes using the specified scene
+- code: internal static WorldArchetypeTableItem CreateNewOrGetExistingArchetypes(Scene scene)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+- h4: Returns
+- parameters:
+  - type:
+    - text: WorldArchetypeTableItem
+      url: Alis.Core.Ecs.WorldArchetypeTableItem.html
+    description: The archetypes
+- api3: CreateOrGetExistingArchetype(ReadOnlySpan<ComponentId>, Scene, FastImmutableArray<ComponentId>?)
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_CreateOrGetExistingArchetype_System_ReadOnlySpan_Alis_Core_Ecs_Kernel_ComponentId__Alis_Core_Ecs_Scene_System_Nullable_Alis_Core_Aspect_Math_Collections_FastImmutableArray_Alis_Core_Ecs_Kernel_ComponentId___
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L843
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.CreateOrGetExistingArchetype(System.ReadOnlySpan{Alis.Core.Ecs.Kernel.ComponentId},Alis.Core.Ecs.Scene,System.Nullable{Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Kernel.ComponentId}})
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.CreateOrGetExistingArchetype(System.ReadOnlySpan{Alis.Core.Ecs.Kernel.ComponentId},Alis.Core.Ecs.Scene,System.Nullable{Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Kernel.ComponentId}})
+- markdown: Creates the or get existing archetype using the specified types
+- code: internal static Archetype CreateOrGetExistingArchetype(ReadOnlySpan<ComponentId> types, Scene scene, FastImmutableArray<ComponentId>? typeArray = null)
+- h4: Parameters
+- parameters:
+  - name: types
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The types
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: typeArray
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    - '?'
+    description: The type array
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+- api3: CreateOrGetExistingArchetype(GameObjectType, Scene)
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_CreateOrGetExistingArchetype_Alis_Core_Ecs_Kernel_GameObjectType_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L855
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.CreateOrGetExistingArchetype(Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.CreateOrGetExistingArchetype(Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Ecs.Scene)
+- markdown: Creates the or get existing archetype using the specified id
+- code: internal static Archetype CreateOrGetExistingArchetype(GameObjectType id, Scene scene)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The id
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+- h4: Returns
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+- api3: GetAdjacentArchetypeCold(Scene, ArchetypeEdgeKey)
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_GetAdjacentArchetypeCold_Alis_Core_Ecs_Scene_Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L904
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.GetAdjacentArchetypeCold(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey)
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.GetAdjacentArchetypeCold(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey)
+- markdown: Gets the adjacent archetype cold using the specified scene
+- code: internal static Archetype GetAdjacentArchetypeCold(Scene scene, ArchetypeEdgeKey edge)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: edge
+    type:
+    - text: ArchetypeEdgeKey
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.html
+    description: The edge
+- h4: Returns
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+- api3: GetAdjacentArchetypeLookup(Scene, ArchetypeEdgeKey)
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_GetAdjacentArchetypeLookup_Alis_Core_Ecs_Scene_Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeKey_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L888
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.GetAdjacentArchetypeLookup(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey)
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.GetAdjacentArchetypeLookup(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey)
+- markdown: Gets the adjacent archetype lookup using the specified scene
+- code: internal static Archetype GetAdjacentArchetypeLookup(Scene scene, ArchetypeEdgeKey edge)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: edge
+    type:
+    - text: ArchetypeEdgeKey
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.html
+    description: The edge
+- h4: Returns
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+- api3: GetArchetypeId(ReadOnlySpan<ComponentId>, FastImmutableArray<ComponentId>?)
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_GetArchetypeId_System_ReadOnlySpan_Alis_Core_Ecs_Kernel_ComponentId__System_Nullable_Alis_Core_Aspect_Math_Collections_FastImmutableArray_Alis_Core_Ecs_Kernel_ComponentId___
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L935
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.GetArchetypeId(System.ReadOnlySpan{Alis.Core.Ecs.Kernel.ComponentId},System.Nullable{Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Kernel.ComponentId}})
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.GetArchetypeId(System.ReadOnlySpan{Alis.Core.Ecs.Kernel.ComponentId},System.Nullable{Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Kernel.ComponentId}})
+- markdown: Gets the archetype id using the specified types
+- code: internal static GameObjectType GetArchetypeId(ReadOnlySpan<ComponentId> types, FastImmutableArray<ComponentId>? typesArray = null)
+- h4: Parameters
+- parameters:
+  - name: types
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The types
+  - name: typesArray
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    - '?'
+    description: The types array
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The game object type
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Entities can have a max of 127 components!
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Exceeded maximum unique archetype count of 65535
+- api3: GetHash(ReadOnlySpan<ComponentId>)
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_GetHash_System_ReadOnlySpan_Alis_Core_Ecs_Kernel_ComponentId__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L1011
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.GetHash(System.ReadOnlySpan{Alis.Core.Ecs.Kernel.ComponentId})
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.GetHash(System.ReadOnlySpan{Alis.Core.Ecs.Kernel.ComponentId})
+- markdown: Gets the hash using the specified types
+- code: private static long GetHash(ReadOnlySpan<ComponentId> types)
+- h4: Parameters
+- parameters:
+  - name: types
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The types
+- h4: Returns
+- parameters:
+  - type:
+    - text: long
+      url: https://learn.microsoft.com/dotnet/api/system.int64
+    description: The hash
+- api3: ModifyComponentLocationTable(FastImmutableArray<ComponentId>, int)
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_1_ModifyComponentLocationTable_Alis_Core_Aspect_Math_Collections_FastImmutableArray_Alis_Core_Ecs_Kernel_ComponentId__System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L976
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.ModifyComponentLocationTable(Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Kernel.ComponentId},System.Int32)
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.Archetype`1.ModifyComponentLocationTable(Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Kernel.ComponentId},System.Int32)
+- markdown: Modifies the component location table using the specified archetype types
+- code: private static void ModifyComponentLocationTable(FastImmutableArray<ComponentId> archetypeTypes, int id)
+- h4: Parameters
+- parameters:
+  - name: archetypeTypes
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The archetype types
+  - name: id
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The id
+languageId: csharp
+metadata:
+  description: The archetype class

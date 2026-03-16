@@ -1,0 +1,240 @@
+### YamlMime:ApiPage
+title: Class JsonParser
+body:
+- api1: Class JsonParser
+  id: Alis_Core_Aspect_Data_Json_Parsing_JsonParser
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Parsing/JsonParser.cs#L42
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Parsing.JsonParser
+    commentId: T:Alis.Core.Aspect.Data.Json.Parsing.JsonParser
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Data.Json.Parsing
+      url: Alis.Core.Aspect.Data.Json.Parsing.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Parses JSON strings into dictionaries of properties.
+- code: 'public sealed class JsonParser : IJsonParser'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: JsonParser
+    url: Alis.Core.Aspect.Data.Json.Parsing.JsonParser.html
+- h4: Implements
+- list:
+  - text: IJsonParser
+    url: Alis.Core.Aspect.Data.Json.Parsing.IJsonParser.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: JsonParser(IEscapeSequenceHandler)
+  id: Alis_Core_Aspect_Data_Json_Parsing_JsonParser__ctor_Alis_Core_Aspect_Data_Json_Helpers_IEscapeSequenceHandler_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Parsing/JsonParser.cs#L54
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Parsing.JsonParser.#ctor(Alis.Core.Aspect.Data.Json.Helpers.IEscapeSequenceHandler)
+    commentId: M:Alis.Core.Aspect.Data.Json.Parsing.JsonParser.#ctor(Alis.Core.Aspect.Data.Json.Helpers.IEscapeSequenceHandler)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Data.Json.Parsing.JsonParser" data-throw-if-not-resolved="false"></xref> class.
+- code: public JsonParser(IEscapeSequenceHandler escapeSequenceHandler)
+- h4: Parameters
+- parameters:
+  - name: escapeSequenceHandler
+    type:
+    - text: IEscapeSequenceHandler
+      url: Alis.Core.Aspect.Data.Json.Helpers.IEscapeSequenceHandler.html
+    description: The escape sequence handler.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when escapeSequenceHandler is null.
+- h2: Fields
+- api3: _escapeSequenceHandler
+  id: Alis_Core_Aspect_Data_Json_Parsing_JsonParser__escapeSequenceHandler
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Parsing/JsonParser.cs#L47
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Parsing.JsonParser._escapeSequenceHandler
+    commentId: F:Alis.Core.Aspect.Data.Json.Parsing.JsonParser._escapeSequenceHandler
+- markdown: The escape sequence handler
+- code: private readonly IEscapeSequenceHandler _escapeSequenceHandler
+- h4: Field Value
+- parameters:
+  - type:
+    - text: IEscapeSequenceHandler
+      url: Alis.Core.Aspect.Data.Json.Helpers.IEscapeSequenceHandler.html
+- h2: Methods
+- api3: ParseToDictionary(string)
+  id: Alis_Core_Aspect_Data_Json_Parsing_JsonParser_ParseToDictionary_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Parsing/JsonParser.cs#L63
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Parsing.JsonParser.ParseToDictionary(System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.Parsing.JsonParser.ParseToDictionary(System.String)
+- markdown: Parses a JSON string into a dictionary of property names and their string values.
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public Dictionary<string, string> ParseToDictionary(string json)
+- h4: Parameters
+- parameters:
+  - name: json
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The JSON string to parse.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - '>'
+    description: A dictionary containing property names as keys and their string representations as values.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentNullException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+    description: Thrown when json is null.
+  - type:
+    - text: JsonParsingException
+      url: Alis.Core.Aspect.Data.Json.Exceptions.JsonParsingException.html
+    description: Thrown when parsing fails.
+- api3: ReadJsonString(string, ref int)
+  id: Alis_Core_Aspect_Data_Json_Parsing_JsonParser_ReadJsonString_System_String_System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Parsing/JsonParser.cs#L162
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Parsing.JsonParser.ReadJsonString(System.String,System.Int32@)
+    commentId: M:Alis.Core.Aspect.Data.Json.Parsing.JsonParser.ReadJsonString(System.String,System.Int32@)
+- markdown: Reads a JSON string starting with a quote.
+- code: private string ReadJsonString(string json, ref int position)
+- h4: Parameters
+- parameters:
+  - name: json
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+  - name: position
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: ReadJsonValue(string, ref int)
+  id: Alis_Core_Aspect_Data_Json_Parsing_JsonParser_ReadJsonValue_System_String_System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Parsing/JsonParser.cs#L136
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Parsing.JsonParser.ReadJsonValue(System.String,System.Int32@)
+    commentId: M:Alis.Core.Aspect.Data.Json.Parsing.JsonParser.ReadJsonValue(System.String,System.Int32@)
+- markdown: Reads a JSON value at the current position.
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    private string ReadJsonValue(string json, ref int position)
+- h4: Parameters
+- parameters:
+  - name: json
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+  - name: position
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: ReadPrimitive(string, ref int)
+  id: Alis_Core_Aspect_Data_Json_Parsing_JsonParser_ReadPrimitive_System_String_System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Parsing/JsonParser.cs#L241
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Parsing.JsonParser.ReadPrimitive(System.String,System.Int32@)
+    commentId: M:Alis.Core.Aspect.Data.Json.Parsing.JsonParser.ReadPrimitive(System.String,System.Int32@)
+- markdown: Reads a primitive JSON value (number, boolean, null).
+- code: private string ReadPrimitive(string json, ref int position)
+- h4: Parameters
+- parameters:
+  - name: json
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+  - name: position
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: ReadRawJsonValue(string, ref int)
+  id: Alis_Core_Aspect_Data_Json_Parsing_JsonParser_ReadRawJsonValue_System_String_System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Parsing/JsonParser.cs#L192
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Parsing.JsonParser.ReadRawJsonValue(System.String,System.Int32@)
+    commentId: M:Alis.Core.Aspect.Data.Json.Parsing.JsonParser.ReadRawJsonValue(System.String,System.Int32@)
+- markdown: Reads a raw JSON value (object or array).
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    private string ReadRawJsonValue(string json, ref int position)
+- h4: Parameters
+- parameters:
+  - name: json
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+  - name: position
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: SkipWhitespace(string, ref int)
+  id: Alis_Core_Aspect_Data_Json_Parsing_JsonParser_SkipWhitespace_System_String_System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Parsing/JsonParser.cs#L256
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Parsing.JsonParser.SkipWhitespace(System.String,System.Int32@)
+    commentId: M:Alis.Core.Aspect.Data.Json.Parsing.JsonParser.SkipWhitespace(System.String,System.Int32@)
+- markdown: Skips whitespace characters at the current position.
+- code: private void SkipWhitespace(string json, ref int position)
+- h4: Parameters
+- parameters:
+  - name: json
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+  - name: position
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: Parses JSON strings into dictionaries of properties.

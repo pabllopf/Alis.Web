@@ -1,0 +1,80 @@
+### YamlMime:ApiPage
+title: Class MemoryHelpers<T>
+body:
+- api1: Class MemoryHelpers<T>
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L307
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers`1
+    commentId: T:Alis.Core.Ecs.Redifinition.MemoryHelpers`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Redifinition
+      url: Alis.Core.Ecs.Redifinition.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The memory helpers class
+- code: internal static class MemoryHelpers<T>
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: MemoryHelpers<T>
+    url: Alis.Core.Ecs.Redifinition.MemoryHelpers-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: _pool
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_1__pool
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L312
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers`1._pool
+    commentId: F:Alis.Core.Ecs.Redifinition.MemoryHelpers`1._pool
+- markdown: The pool
+- code: private static readonly FastestArrayPool<T> _pool
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestArrayPool
+      url: Alis.Core.Ecs.Collections.FastestArrayPool-1.html
+    - <
+    - T
+    - '>'
+- h2: Properties
+- api3: Pool
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_1_Pool
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L317
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers`1.Pool
+    commentId: P:Alis.Core.Ecs.Redifinition.MemoryHelpers`1.Pool
+- markdown: Gets the value of the pool
+- code: internal static ArrayPool<T> Pool { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ArrayPool
+      url: https://learn.microsoft.com/dotnet/api/system.buffers.arraypool-1
+    - <
+    - T
+    - '>'
+languageId: csharp
+metadata:
+  description: The memory helpers class

@@ -1,0 +1,532 @@
+### YamlMime:ApiPage
+title: Struct Complex
+body:
+- api1: Struct Complex
+  id: Alis_Core_Physic_Dynamics_Complex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex
+    commentId: T:Alis.Core.Physic.Dynamics.Complex
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Dynamics
+      url: Alis.Core.Physic.Dynamics.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The complex
+- code: public struct Complex
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Complex(float, float)
+  id: Alis_Core_Physic_Dynamics_Complex__ctor_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L90
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.#ctor(System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.#ctor(System.Single,System.Single)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Complex" data-throw-if-not-resolved="false"></xref> class
+- code: public Complex(float real, float imaginary)
+- h4: Parameters
+- parameters:
+  - name: real
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The real
+  - name: imaginary
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The imaginary
+- h2: Fields
+- api3: I
+  id: Alis_Core_Physic_Dynamics_Complex_I
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.I
+    commentId: F:Alis.Core.Physic.Dynamics.Complex.I
+- markdown: The
+- code: public float I
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: R
+  id: Alis_Core_Physic_Dynamics_Complex_R
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.R
+    commentId: F:Alis.Core.Physic.Dynamics.Complex.R
+- markdown: The
+- code: public float R
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Properties
+- api3: ImaginaryOne
+  id: Alis_Core_Physic_Dynamics_Complex_ImaginaryOne
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L58
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.ImaginaryOne
+    commentId: P:Alis.Core.Physic.Dynamics.Complex.ImaginaryOne
+- markdown: Gets the value of the imaginary one
+- code: public static Complex ImaginaryOne { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+- api3: Magnitude
+  id: Alis_Core_Physic_Dynamics_Complex_Magnitude
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L82
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Magnitude
+    commentId: P:Alis.Core.Physic.Dynamics.Complex.Magnitude
+- markdown: Gets the value of the magnitude
+- code: public float Magnitude { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: One
+  id: Alis_Core_Physic_Dynamics_Complex_One
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L53
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.One
+    commentId: P:Alis.Core.Physic.Dynamics.Complex.One
+- markdown: Gets the value of the one
+- code: public static Complex One { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+- api3: Phase
+  id: Alis_Core_Physic_Dynamics_Complex_Phase
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L63
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Phase
+    commentId: P:Alis.Core.Physic.Dynamics.Complex.Phase
+- markdown: Gets or sets the value of the phase
+- code: public float Phase { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Methods
+- api3: Conjugate()
+  id: Alis_Core_Physic_Dynamics_Complex_Conjugate
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L129
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Conjugate
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Conjugate
+- markdown: Conjugates this instance
+- code: public void Conjugate()
+- api3: Conjugate(ref Complex)
+  id: Alis_Core_Physic_Dynamics_Complex_Conjugate_Alis_Core_Physic_Dynamics_Complex__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L260
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Conjugate(Alis.Core.Physic.Dynamics.Complex@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Conjugate(Alis.Core.Physic.Dynamics.Complex@)
+- markdown: Conjugates the value
+- code: public static Complex Conjugate(ref Complex value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The complex
+- api3: Divide(ref Complex, ref Complex)
+  id: Alis_Core_Physic_Dynamics_Complex_Divide_Alis_Core_Physic_Dynamics_Complex__Alis_Core_Physic_Dynamics_Complex__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L180
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Divide(Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Physic.Dynamics.Complex@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Divide(Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Physic.Dynamics.Complex@)
+- markdown: Divides the left
+- code: public static Complex Divide(ref Complex left, ref Complex right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The left
+  - name: right
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The complex
+- api3: Divide(ref Complex, ref Complex, out Complex)
+  id: Alis_Core_Physic_Dynamics_Complex_Divide_Alis_Core_Physic_Dynamics_Complex__Alis_Core_Physic_Dynamics_Complex__Alis_Core_Physic_Dynamics_Complex__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L189
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Divide(Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Physic.Dynamics.Complex@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Divide(Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Physic.Dynamics.Complex@)
+- markdown: Divides the left
+- code: public static void Divide(ref Complex left, ref Complex right, out Complex result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The left
+  - name: right
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The right
+  - name: result
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The result
+- api3: Divide(ref Vector2F, ref Complex)
+  id: Alis_Core_Physic_Dynamics_Complex_Divide_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Physic_Dynamics_Complex__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L231
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Divide(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Physic.Dynamics.Complex@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Divide(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Physic.Dynamics.Complex@)
+- markdown: Divides the left
+- code: public static Vector2F Divide(ref Vector2F left, ref Complex right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector
+- api3: Divide(Vector2F, ref Complex)
+  id: Alis_Core_Physic_Dynamics_Complex_Divide_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Physic_Dynamics_Complex__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L240
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.Complex@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.Complex@)
+- markdown: Divides the left
+- code: public static Vector2F Divide(Vector2F left, ref Complex right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector
+- api3: Divide(Vector2F, ref Complex, out Vector2F)
+  id: Alis_Core_Physic_Dynamics_Complex_Divide_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Physic_Dynamics_Complex__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L249
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Divide(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Divides the left
+- code: public static void Divide(Vector2F left, ref Complex right, out Vector2F result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The right
+  - name: result
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The result
+- api3: FromAngle(float)
+  id: Alis_Core_Physic_Dynamics_Complex_FromAngle_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L102
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.FromAngle(System.Single)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.FromAngle(System.Single)
+- markdown: Creates the angle using the specified angle degrees
+- code: public static Complex FromAngle(float angleDegrees)
+- h4: Parameters
+- parameters:
+  - name: angleDegrees
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The angle degrees
+- h4: Returns
+- parameters:
+  - type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The complex
+- api3: MagnitudeSquared()
+  id: Alis_Core_Physic_Dynamics_Complex_MagnitudeSquared
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L147
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.MagnitudeSquared
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.MagnitudeSquared
+- markdown: Magnitudes the squared
+- code: public float MagnitudeSquared()
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The float
+- api3: Multiply(ref Complex, ref Complex)
+  id: Alis_Core_Physic_Dynamics_Complex_Multiply_Alis_Core_Physic_Dynamics_Complex__Alis_Core_Physic_Dynamics_Complex__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L171
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Multiply(Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Physic.Dynamics.Complex@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Multiply(Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Physic.Dynamics.Complex@)
+- markdown: Multiplies the left
+- code: public static Complex Multiply(ref Complex left, ref Complex right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The left
+  - name: right
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The complex
+- api3: Multiply(ref Vector2F, ref Complex)
+  id: Alis_Core_Physic_Dynamics_Complex_Multiply_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Physic_Dynamics_Complex__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L201
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Physic.Dynamics.Complex@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Physic.Dynamics.Complex@)
+- markdown: Multiplies the left
+- code: public static Vector2F Multiply(ref Vector2F left, ref Complex right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector
+- api3: Multiply(ref Vector2F, ref Complex, out Vector2F)
+  id: Alis_Core_Physic_Dynamics_Complex_Multiply_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Physic_Dynamics_Complex__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L210
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Physic.Dynamics.Complex@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Multiplies the left
+- code: public static void Multiply(ref Vector2F left, ref Complex right, out Vector2F result)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The right
+  - name: result
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The result
+- api3: Multiply(Vector2F, ref Complex)
+  id: Alis_Core_Physic_Dynamics_Complex_Multiply_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Physic_Dynamics_Complex__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L222
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.Complex@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Multiply(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Physic.Dynamics.Complex@)
+- markdown: Multiplies the left
+- code: public static Vector2F Multiply(Vector2F left, ref Complex right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The left
+  - name: right
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The right
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector
+- api3: Negate()
+  id: Alis_Core_Physic_Dynamics_Complex_Negate
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L137
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Negate
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Negate
+- markdown: Negates this instance
+- code: public void Negate()
+- api3: Negate(ref Complex)
+  id: Alis_Core_Physic_Dynamics_Complex_Negate_Alis_Core_Physic_Dynamics_Complex__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L267
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Negate(Alis.Core.Physic.Dynamics.Complex@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Negate(Alis.Core.Physic.Dynamics.Complex@)
+- markdown: Negates the value
+- code: public static Complex Negate(ref Complex value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The complex
+- api3: Normalize()
+  id: Alis_Core_Physic_Dynamics_Complex_Normalize
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L152
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Normalize
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Normalize
+- markdown: Normalizes this instance
+- code: public void Normalize()
+- api3: Normalize(ref Complex)
+  id: Alis_Core_Physic_Dynamics_Complex_Normalize_Alis_Core_Physic_Dynamics_Complex__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L274
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.Normalize(Alis.Core.Physic.Dynamics.Complex@)
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.Normalize(Alis.Core.Physic.Dynamics.Complex@)
+- markdown: Normalizes the value
+- code: public static Complex Normalize(ref Complex value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: Complex
+      url: Alis.Core.Physic.Dynamics.Complex.html
+    description: The complex
+- api3: ToAngle()
+  id: Alis_Core_Physic_Dynamics_Complex_ToAngle
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L119
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.ToAngle
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.ToAngle
+- markdown: Returns the angle
+- code: public float ToAngle()
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The float
+- api3: ToString()
+  id: Alis_Core_Physic_Dynamics_Complex_ToString
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L284
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.ToString
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.ToString
+- markdown: Returns the string
+- code: public override string ToString()
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+- api3: ToVector2()
+  id: Alis_Core_Physic_Dynamics_Complex_ToVector2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Complex.cs#L163
+  metadata:
+    uid: Alis.Core.Physic.Dynamics.Complex.ToVector2
+    commentId: M:Alis.Core.Physic.Dynamics.Complex.ToVector2
+- markdown: Returns the vector 2
+- code: public Vector2F ToVector2()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The vector
+languageId: csharp
+metadata:
+  description: The complex

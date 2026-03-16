@@ -1,0 +1,331 @@
+### YamlMime:ApiPage
+title: Interface ILogger
+body:
+- api1: Interface ILogger
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L40
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger
+    commentId: T:Alis.Core.Aspect.Logging.Abstractions.ILogger
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Abstractions
+      url: Alis.Core.Aspect.Logging.Abstractions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Core logger interface for logging structured messages with various severity levels.
+
+    Implementations must be thread-safe and support dependency injection.
+
+    AOT-compatible: Uses interfaces and virtual dispatch only.
+- code: public interface ILogger
+- h2: Properties
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L45
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.Name
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogger.Name
+- markdown: Gets the logical name of this logger (typically the component/class name).
+- code: string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: BeginScope(object)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_BeginScope_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L138
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.BeginScope(System.Object)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.BeginScope(System.Object)
+- markdown: >-
+    Begins a named scope for log entries, useful for grouping related logs.
+
+    Returns a disposable that ends the scope when disposed.
+- code: IDisposable BeginScope(object scope)
+- h4: Parameters
+- parameters:
+  - name: scope
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The scope name or identifier.
+- h4: Returns
+- parameters:
+  - type:
+    - text: IDisposable
+      url: https://learn.microsoft.com/dotnet/api/system.idisposable
+    description: A disposable that removes the scope when disposed.
+- api3: GetCorrelationId()
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_GetCorrelationId
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L130
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.GetCorrelationId
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.GetCorrelationId
+- markdown: Gets the current correlation ID.
+- code: string GetCorrelationId()
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The correlation ID, or null if not set.
+- api3: IsEnabled(LogLevel)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_IsEnabled_Alis_Core_Aspect_Logging_Abstractions_LogLevel_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L146
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.IsEnabled(Alis.Core.Aspect.Logging.Abstractions.LogLevel)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.IsEnabled(Alis.Core.Aspect.Logging.Abstractions.LogLevel)
+- markdown: >-
+    Determines whether logging is enabled at the given level.
+
+    Can be used to avoid expensive message formatting for disabled levels.
+- code: bool IsEnabled(LogLevel level)
+- h4: Parameters
+- parameters:
+  - name: level
+    type:
+    - text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+    description: The log level to check.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: True if the level is enabled; false otherwise.
+- api3: Log(LogLevel, string)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_Log_Alis_Core_Aspect_Logging_Abstractions_LogLevel_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L102
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.Log(Alis.Core.Aspect.Logging.Abstractions.LogLevel,System.String)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.Log(Alis.Core.Aspect.Logging.Abstractions.LogLevel,System.String)
+- markdown: Logs a message at the specified level.
+- code: void Log(LogLevel level, string message)
+- h4: Parameters
+- parameters:
+  - name: level
+    type:
+    - text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+    description: The severity level of the log.
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The message to log.
+- api3: Log(LogLevel, string, Exception)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_Log_Alis_Core_Aspect_Logging_Abstractions_LogLevel_System_String_System_Exception_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L110
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.Log(Alis.Core.Aspect.Logging.Abstractions.LogLevel,System.String,System.Exception)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.Log(Alis.Core.Aspect.Logging.Abstractions.LogLevel,System.String,System.Exception)
+- markdown: Logs a message at the specified level with an associated exception.
+- code: void Log(LogLevel level, string message, Exception exception)
+- h4: Parameters
+- parameters:
+  - name: level
+    type:
+    - text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+    description: The severity level of the log.
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The message to log.
+  - name: exception
+    type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: The exception to include in the log.
+- api3: LogCritical(string)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_LogCritical_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L81
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.LogCritical(System.String)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.LogCritical(System.String)
+- markdown: Logs a message with Critical severity.
+- code: void LogCritical(string message)
+- h4: Parameters
+- parameters:
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The message to log.
+- api3: LogCritical(string, Exception)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_LogCritical_System_String_System_Exception_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L95
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.LogCritical(System.String,System.Exception)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.LogCritical(System.String,System.Exception)
+- markdown: Logs a message with an associated exception at Critical level.
+- code: void LogCritical(string message, Exception exception)
+- h4: Parameters
+- parameters:
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The message to log.
+  - name: exception
+    type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: The exception to include in the log.
+- api3: LogDebug(string)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_LogDebug_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L57
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.LogDebug(System.String)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.LogDebug(System.String)
+- markdown: Logs a message with Debug severity.
+- code: void LogDebug(string message)
+- h4: Parameters
+- parameters:
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The message to log.
+- api3: LogError(string)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_LogError_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L75
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.LogError(System.String)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.LogError(System.String)
+- markdown: Logs a message with Error severity.
+- code: void LogError(string message)
+- h4: Parameters
+- parameters:
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The message to log.
+- api3: LogError(string, Exception)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_LogError_System_String_System_Exception_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L88
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.LogError(System.String,System.Exception)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.LogError(System.String,System.Exception)
+- markdown: Logs a message with an associated exception at Error level.
+- code: void LogError(string message, Exception exception)
+- h4: Parameters
+- parameters:
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The message to log.
+  - name: exception
+    type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: The exception to include in the log.
+- api3: LogInfo(string)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_LogInfo_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L63
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.LogInfo(System.String)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.LogInfo(System.String)
+- markdown: Logs a message with Info severity.
+- code: void LogInfo(string message)
+- h4: Parameters
+- parameters:
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The message to log.
+- api3: LogStructured(LogLevel, string, IReadOnlyDictionary<string, object>)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_LogStructured_Alis_Core_Aspect_Logging_Abstractions_LogLevel_System_String_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L118
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.LogStructured(Alis.Core.Aspect.Logging.Abstractions.LogLevel,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.LogStructured(Alis.Core.Aspect.Logging.Abstractions.LogLevel,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+- markdown: Logs a structured message with additional properties.
+- code: void LogStructured(LogLevel level, string message, IReadOnlyDictionary<string, object> properties)
+- h4: Parameters
+- parameters:
+  - name: level
+    type:
+    - text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+    description: The severity level of the log.
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The message to log.
+  - name: properties
+    type:
+    - text: IReadOnlyDictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    - '>'
+    description: Key-value pairs of contextual data.
+- api3: LogTrace(string)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_LogTrace_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L51
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.LogTrace(System.String)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.LogTrace(System.String)
+- markdown: Logs a message with Trace severity.
+- code: void LogTrace(string message)
+- h4: Parameters
+- parameters:
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The message to log.
+- api3: LogWarning(string)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_LogWarning_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L69
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.LogWarning(System.String)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.LogWarning(System.String)
+- markdown: Logs a message with Warning severity.
+- code: void LogWarning(string message)
+- h4: Parameters
+- parameters:
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The message to log.
+- api3: SetCorrelationId(string)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogger_SetCorrelationId_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogger.cs#L124
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogger.SetCorrelationId(System.String)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogger.SetCorrelationId(System.String)
+- markdown: Sets the correlation ID for tracing related log entries.
+- code: void SetCorrelationId(string correlationId)
+- h4: Parameters
+- parameters:
+  - name: correlationId
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The correlation ID, typically a GUID or request ID.
+languageId: csharp
+metadata:
+  description: >-
+    Core logger interface for logging structured messages with various severity levels.
+
+    Implementations must be thread-safe and support dependency injection.
+
+    AOT-compatible: Uses interfaces and virtual dispatch only.

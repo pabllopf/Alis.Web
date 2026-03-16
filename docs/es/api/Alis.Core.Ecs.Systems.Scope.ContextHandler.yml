@@ -1,0 +1,274 @@
+### YamlMime:ApiPage
+title: Class ContextHandler
+body:
+- api1: Class ContextHandler
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler
+    commentId: T:Alis.Core.Ecs.Systems.Scope.ContextHandler
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Scope
+      url: Alis.Core.Ecs.Systems.Scope.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The context handler class
+- code: 'public class ContextHandler : IContextHandler<Context>'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: ContextHandler
+    url: Alis.Core.Ecs.Systems.Scope.ContextHandler.html
+- h4: Implements
+- list:
+  - text: IContextHandler<Context>
+    url: Alis.Core.Ecs.Systems.Scope.IContextHandler-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: ContextHandler(Context)
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler__ctor_Alis_Core_Ecs_Systems_Scope_Context_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L94
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+    commentId: M:Alis.Core.Ecs.Systems.Scope.ContextHandler.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Scope.ContextHandler" data-throw-if-not-resolved="false"></xref> class
+- code: public ContextHandler(Context context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    description: The context
+- h2: Fields
+- api3: _context
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler__context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler._context
+    commentId: F:Alis.Core.Ecs.Systems.Scope.ContextHandler._context
+- markdown: The context
+- code: private readonly Context _context
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- api3: accumulator
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_accumulator
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.accumulator
+    commentId: F:Alis.Core.Ecs.Systems.Scope.ContextHandler.accumulator
+- markdown: The accumulator
+- code: private float accumulator
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: currentTime
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_currentTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L58
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.currentTime
+    commentId: F:Alis.Core.Ecs.Systems.Scope.ContextHandler.currentTime
+- markdown: The current time
+- code: private double currentTime
+- h4: Field Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- api3: lastDeltaTime
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_lastDeltaTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L63
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.lastDeltaTime
+    commentId: F:Alis.Core.Ecs.Systems.Scope.ContextHandler.lastDeltaTime
+- markdown: The last delta time
+- code: private float lastDeltaTime
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: lastTime
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_lastTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L68
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.lastTime
+    commentId: F:Alis.Core.Ecs.Systems.Scope.ContextHandler.lastTime
+- markdown: The last time
+- code: private double lastTime
+- h4: Field Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- api3: smoothDeltaTimeCount
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_smoothDeltaTimeCount
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L73
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.smoothDeltaTimeCount
+    commentId: F:Alis.Core.Ecs.Systems.Scope.ContextHandler.smoothDeltaTimeCount
+- markdown: The smooth delta time count
+- code: private int smoothDeltaTimeCount
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: smoothDeltaTimeSum
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_smoothDeltaTimeSum
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L78
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.smoothDeltaTimeSum
+    commentId: F:Alis.Core.Ecs.Systems.Scope.ContextHandler.smoothDeltaTimeSum
+- markdown: The smooth delta time sum
+- code: private float smoothDeltaTimeSum
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: targetFrameDuration
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_targetFrameDuration
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L83
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.targetFrameDuration
+    commentId: F:Alis.Core.Ecs.Systems.Scope.ContextHandler.targetFrameDuration
+- markdown: The target frame duration
+- code: private double targetFrameDuration
+- h4: Field Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- api3: totalTime
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_totalTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L88
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.totalTime
+    commentId: F:Alis.Core.Ecs.Systems.Scope.ContextHandler.totalTime
+- markdown: The total time
+- code: private double totalTime
+- h4: Field Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- h2: Properties
+- api3: Context
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_Context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L99
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.Context
+    commentId: P:Alis.Core.Ecs.Systems.Scope.ContextHandler.Context
+- markdown: Gets the value of the context
+- code: public Context Context { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- h2: Methods
+- api3: Exit()
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_Exit
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L199
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.Exit
+    commentId: M:Alis.Core.Ecs.Systems.Scope.ContextHandler.Exit
+- markdown: Exits this instance
+- code: public void Exit()
+- api3: InitPreview()
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_InitPreview
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L232
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.InitPreview
+    commentId: M:Alis.Core.Ecs.Systems.Scope.ContextHandler.InitPreview
+- markdown: Inits the preview
+- code: public void InitPreview()
+- api3: Load()
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_Load
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L213
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.Load
+    commentId: M:Alis.Core.Ecs.Systems.Scope.ContextHandler.Load
+- markdown: Loads this instance
+- code: public void Load()
+- api3: LoadAndRun()
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_LoadAndRun
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L222
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.LoadAndRun
+    commentId: M:Alis.Core.Ecs.Systems.Scope.ContextHandler.LoadAndRun
+- markdown: Loads the and run
+- code: public void LoadAndRun()
+- api3: Preview()
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_Preview
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L253
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.Preview
+    commentId: M:Alis.Core.Ecs.Systems.Scope.ContextHandler.Preview
+- markdown: Previews this instance
+- code: public void Preview()
+- api3: Run()
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_Run
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L104
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.Run
+    commentId: M:Alis.Core.Ecs.Systems.Scope.ContextHandler.Run
+- markdown: Runs this instance
+- code: public void Run()
+- api3: Save()
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_Save
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L204
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.Save
+    commentId: M:Alis.Core.Ecs.Systems.Scope.ContextHandler.Save
+- markdown: Saves this instance
+- code: public void Save()
+- api3: Save(string)
+  id: Alis_Core_Ecs_Systems_Scope_ContextHandler_Save_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Scope/ContextHandler.cs#L333
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope.ContextHandler.Save(System.String)
+    commentId: M:Alis.Core.Ecs.Systems.Scope.ContextHandler.Save(System.String)
+- markdown: Saves the path
+- code: public void Save(string path)
+- h4: Parameters
+- parameters:
+  - name: path
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The path
+- h2: See Also
+- list:
+  - - text: IContextHandler
+      url: Alis.Core.Ecs.Systems.Scope.IContextHandler-1.html
+    - <
+    - T
+    - '>'
+languageId: csharp
+metadata:
+  description: The context handler class

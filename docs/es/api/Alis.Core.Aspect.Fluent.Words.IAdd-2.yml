@@ -21,14 +21,14 @@ body:
   - name: TBuilder
   - name: TArgument
 - h2: Methods
-- api3: Add<T>(TArgument)
-  id: Alis_Core_Aspect_Fluent_Words_IAdd_2_Add__1__1_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Words/IAdd.cs#L43
+- api3: Add(TArgument)
+  id: Alis_Core_Aspect_Fluent_Words_IAdd_2_Add__1_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Words/IAdd.cs#L42
   metadata:
-    uid: Alis.Core.Aspect.Fluent.Words.IAdd`2.Add``1(`1)
-    commentId: M:Alis.Core.Aspect.Fluent.Words.IAdd`2.Add``1(`1)
+    uid: Alis.Core.Aspect.Fluent.Words.IAdd`2.Add(`1)
+    commentId: M:Alis.Core.Aspect.Fluent.Words.IAdd`2.Add(`1)
 - markdown: Adds the value
-- code: TBuilder Add<T>(TArgument value)
+- code: TBuilder Add(TArgument value)
 - h4: Parameters
 - parameters:
   - name: value
@@ -40,10 +40,6 @@ body:
   - type:
     - TBuilder
     description: The builder
-- h4: Type Parameters
-- parameters:
-  - name: T
-    description: The
 languageId: csharp
 metadata:
   description: The add interface

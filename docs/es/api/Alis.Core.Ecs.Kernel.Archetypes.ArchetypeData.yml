@@ -1,0 +1,105 @@
+### YamlMime:ApiPage
+title: Struct ArchetypeData
+body:
+- api1: Struct ArchetypeData
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeData
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeData.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeData
+    commentId: T:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeData
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Archetypes
+      url: Alis.Core.Ecs.Kernel.Archetypes.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Archetype metadata
+- code: 'public record struct ArchetypeData : IEquatable<ArchetypeData>'
+- h4: Implements
+- list:
+  - text: IEquatable<ArchetypeData>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: GameObjectType (2 bytes) + FastImmutableArray struct (variable size, contains reference)
+
+    Pack = 4 for balanced alignment with mixed types
+- h2: Constructors
+- api3: ArchetypeData(GameObjectType, FastImmutableArray<ComponentId>)
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeData__ctor_Alis_Core_Ecs_Kernel_GameObjectType_Alis_Core_Aspect_Math_Collections_FastImmutableArray_Alis_Core_Ecs_Kernel_ComponentId__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeData.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeData.#ctor(Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Kernel.ComponentId})
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeData.#ctor(Alis.Core.Ecs.Kernel.GameObjectType,Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Kernel.ComponentId})
+- markdown: Archetype metadata
+- code: public ArchetypeData(GameObjectType Id, FastImmutableArray<ComponentId> ComponentTypes)
+- h4: Parameters
+- parameters:
+  - name: Id
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The archetype ID
+  - name: ComponentTypes
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The component types in this archetype
+- h4: Remarks
+- markdown: >-
+    Memory layout optimized: GameObjectType (2 bytes) + FastImmutableArray struct (variable size, contains reference)
+
+    Pack = 4 for balanced alignment with mixed types
+- h2: Properties
+- api3: ComponentTypes
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeData_ComponentTypes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeData.cs#L45
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeData.ComponentTypes
+    commentId: P:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeData.ComponentTypes
+- markdown: The component types in this archetype
+- code: public FastImmutableArray<ComponentId> ComponentTypes { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- api3: Id
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeData_Id
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeData.cs#L45
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeData.Id
+    commentId: P:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeData.Id
+- markdown: The archetype ID
+- code: public GameObjectType Id { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+languageId: csharp
+metadata:
+  description: Archetype metadata

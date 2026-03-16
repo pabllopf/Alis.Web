@@ -1,0 +1,147 @@
+### YamlMime:ApiPage
+title: Class SceneMarshal
+body:
+- api1: Class SceneMarshal
+  id: Alis_Core_Ecs_Marshalling_SceneMarshal
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Marshalling/SceneMarshal.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Marshalling.SceneMarshal
+    commentId: T:Alis.Core.Ecs.Marshalling.SceneMarshal
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Marshalling
+      url: Alis.Core.Ecs.Marshalling.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Unsafe methods to write even faster code! Users are expected to know what they are doing and improper usage can
+
+    result in corrupting scene state and segfaults.
+- code: public static class SceneMarshal
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: SceneMarshal
+    url: Alis.Core.Ecs.Marshalling.SceneMarshal.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: The APIs in this class are less stable, as many depend on implementation details.
+- h2: Methods
+- api3: Get<T>(Scene, int)
+  id: Alis_Core_Ecs_Marshalling_SceneMarshal_Get__1_Alis_Core_Ecs_Scene_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Marshalling/SceneMarshal.cs#L72
+  metadata:
+    uid: Alis.Core.Ecs.Marshalling.SceneMarshal.Get``1(Alis.Core.Ecs.Scene,System.Int32)
+    commentId: M:Alis.Core.Ecs.Marshalling.SceneMarshal.Get``1(Alis.Core.Ecs.Scene,System.Int32)
+- markdown: Gets a component of an gameObject from a raw entityID.
+- code: public static ref T Get<T>(Scene scene, int entityId)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+  - name: entityId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: A reference to the component in memory.
+- h4: Type Parameters
+- parameters:
+  - name: T
+- api3: GetComponent<T>(Scene, GameObject)
+  id: Alis_Core_Ecs_Marshalling_SceneMarshal_GetComponent__1_Alis_Core_Ecs_Scene_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Marshalling/SceneMarshal.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Marshalling.SceneMarshal.GetComponent``1(Alis.Core.Ecs.Scene,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Marshalling.SceneMarshal.GetComponent``1(Alis.Core.Ecs.Scene,Alis.Core.Ecs.GameObject)
+- markdown: >-
+    Gets a component of an gameObject, without checking if the gameObject has the component or if the scene belongs to
+
+    the
+
+    gameObject.
+- code: public static ref T GetComponent<T>(Scene scene, GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: A reference to the component in memory.
+- h4: Type Parameters
+- parameters:
+  - name: T
+- api3: GetRawBuffer<T>(Scene, GameObject, out int)
+  id: Alis_Core_Ecs_Marshalling_SceneMarshal_GetRawBuffer__1_Alis_Core_Ecs_Scene_Alis_Core_Ecs_GameObject_System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Marshalling/SceneMarshal.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Marshalling.SceneMarshal.GetRawBuffer``1(Alis.Core.Ecs.Scene,Alis.Core.Ecs.GameObject,System.Int32@)
+    commentId: M:Alis.Core.Ecs.Marshalling.SceneMarshal.GetRawBuffer``1(Alis.Core.Ecs.Scene,Alis.Core.Ecs.GameObject,System.Int32@)
+- markdown: Gets raw span over the entire buffer of a component type for an archetype.
+- code: public static Span<T> GetRawBuffer<T>(Scene scene, GameObject gameObject, out int index)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene that the gameObject belongs to.
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject whose component buffer to get.
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index of the gameObject's component.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T
+    - '>'
+    description: The entire sliced raw buffer. May be larger than the number of entities in an archetype.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of component to get.
+languageId: csharp
+metadata:
+  description: >-
+    Unsafe methods to write even faster code! Users are expected to know what they are doing and improper usage can
+
+    result in corrupting scene state and segfaults.

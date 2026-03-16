@@ -1,0 +1,33 @@
+### YamlMime:ApiPage
+title: Interface IBoxCollider
+body:
+- api1: Interface IBoxCollider
+  id: Alis_Core_Ecs_Components_Collider_IBoxCollider
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Collider/IBoxCollider.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Components.Collider.IBoxCollider
+    commentId: T:Alis.Core.Ecs.Components.Collider.IBoxCollider
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Components.Collider
+      url: Alis.Core.Ecs.Components.Collider.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The box collider interface
+- code: 'public interface IBoxCollider : IOnStart, IOnUpdate, IComponentBase, IHasContext<Context>, IOnExit'
+- h4: Implements
+- list:
+  - text: IOnStart
+    url: Alis.Core.Aspect.Fluent.Components.IOnStart.html
+  - text: IOnUpdate
+    url: Alis.Core.Aspect.Fluent.Components.IOnUpdate.html
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+  - text: IHasContext<Context>
+    url: Alis.Core.Aspect.Fluent.Words.IHasContext-1.html
+  - text: IOnExit
+    url: Alis.Core.Aspect.Fluent.Components.IOnExit.html
+languageId: csharp
+metadata:
+  description: The box collider interface

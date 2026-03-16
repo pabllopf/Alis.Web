@@ -1,0 +1,212 @@
+### YamlMime:ApiPage
+title: Class CameraBuilder
+body:
+- api1: Class CameraBuilder
+  id: Alis_Builder_Core_Ecs_Components_Render_CameraBuilder
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Render/CameraBuilder.cs#L42
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder
+    commentId: T:Alis.Builder.Core.Ecs.Components.Render.CameraBuilder
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Builder.Core.Ecs.Components.Render
+      url: Alis.Builder.Core.Ecs.Components.Render.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The camera builder class
+- code: 'public class CameraBuilder : IBuild<Camera>'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: CameraBuilder
+    url: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.html
+- h4: Implements
+- list:
+  - text: IBuild<Camera>
+    url: Alis.Core.Aspect.Fluent.IBuild-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: CameraBuilder(Context)
+  id: Alis_Builder_Core_Ecs_Components_Render_CameraBuilder__ctor_Alis_Core_Ecs_Systems_Scope_Context_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Render/CameraBuilder.cs#L63
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+    commentId: M:Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+- markdown: Initializes a new instance of the <xref href="Alis.Builder.Core.Ecs.Components.Render.CameraBuilder" data-throw-if-not-resolved="false"></xref> class
+- code: public CameraBuilder(Context context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    description: The context
+- h2: Fields
+- api3: cameraPosition
+  id: Alis_Builder_Core_Ecs_Components_Render_CameraBuilder_cameraPosition
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Render/CameraBuilder.cs#L52
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.cameraPosition
+    commentId: F:Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.cameraPosition
+- markdown: The vector
+- code: private Vector2F cameraPosition
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: context
+  id: Alis_Builder_Core_Ecs_Components_Render_CameraBuilder_context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Render/CameraBuilder.cs#L47
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.context
+    commentId: F:Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.context
+- markdown: The context
+- code: private readonly Context context
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- api3: resolution
+  id: Alis_Builder_Core_Ecs_Components_Render_CameraBuilder_resolution
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Render/CameraBuilder.cs#L57
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.resolution
+    commentId: F:Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.resolution
+- markdown: The vector
+- code: private Vector2F resolution
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- h2: Properties
+- api3: backgroundColor
+  id: Alis_Builder_Core_Ecs_Components_Render_CameraBuilder_backgroundColor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Render/CameraBuilder.cs#L68
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.backgroundColor
+    commentId: P:Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.backgroundColor
+- markdown: Gets or sets the value of the background color
+- code: private Color backgroundColor { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+- h2: Methods
+- api3: BackgroundColor(Color)
+  id: Alis_Builder_Core_Ecs_Components_Render_CameraBuilder_BackgroundColor_Alis_Core_Aspect_Math_Definition_Color_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Render/CameraBuilder.cs#L105
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.BackgroundColor(Alis.Core.Aspect.Math.Definition.Color)
+    commentId: M:Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.BackgroundColor(Alis.Core.Aspect.Math.Definition.Color)
+- markdown: Backgrounds the color using the specified black
+- code: public CameraBuilder BackgroundColor(Color black)
+- h4: Parameters
+- parameters:
+  - name: black
+    type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+    description: The black
+- h4: Returns
+- parameters:
+  - type:
+    - text: CameraBuilder
+      url: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.html
+    description: The camera builder
+- api3: Build()
+  id: Alis_Builder_Core_Ecs_Components_Render_CameraBuilder_Build
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Render/CameraBuilder.cs#L74
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.Build
+    commentId: M:Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.Build
+- markdown: Builds this instance
+- code: public Camera Build()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Camera
+      url: Alis.Core.Ecs.Components.Render.Camera.html
+    description: The camera
+- api3: Position(float, float)
+  id: Alis_Builder_Core_Ecs_Components_Render_CameraBuilder_Position_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Render/CameraBuilder.cs#L94
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.Position(System.Single,System.Single)
+    commentId: M:Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.Position(System.Single,System.Single)
+- markdown: Positions the x
+- code: public CameraBuilder Position(float x, float y)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+  - name: y
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: CameraBuilder
+      url: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.html
+    description: The camera builder
+- api3: Resolution(int, int)
+  id: Alis_Builder_Core_Ecs_Components_Render_CameraBuilder_Resolution_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Render/CameraBuilder.cs#L82
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.Resolution(System.Int32,System.Int32)
+    commentId: M:Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.Resolution(System.Int32,System.Int32)
+- markdown: Resolutions the x
+- code: public CameraBuilder Resolution(int x, int y)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: y
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: CameraBuilder
+      url: Alis.Builder.Core.Ecs.Components.Render.CameraBuilder.html
+    description: The camera builder
+- h2: See Also
+- list:
+  - - text: IBuild
+      url: Alis.Core.Aspect.Fluent.IBuild-1.html
+    - <
+    - TOrigin
+    - '>'
+languageId: csharp
+metadata:
+  description: The camera builder class

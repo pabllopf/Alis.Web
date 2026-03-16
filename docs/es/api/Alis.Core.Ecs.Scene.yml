@@ -1,0 +1,1968 @@
+### YamlMime:ApiPage
+title: Class Scene
+body:
+- api1: Class Scene
+  id: Alis_Core_Ecs_Scene
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Scene
+    commentId: T:Alis.Core.Ecs.Scene
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs
+      url: Alis.Core.Ecs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: A collection of entities that can be updated and queried.
+- code: 'public class Scene : IDisposable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Scene
+    url: Alis.Core.Ecs.Scene.html
+- h4: Implements
+- list:
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h4: Extension Methods
+- list:
+  - text: SceneQueryExtensions.Query<T>(Scene)
+    url: Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__1_Alis_Core_Ecs_Scene_
+  - text: SceneQueryExtensions.Query<T1, T2>(Scene)
+    url: Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__2_Alis_Core_Ecs_Scene_
+  - text: SceneQueryExtensions.Query<T1, T2, T3>(Scene)
+    url: Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__3_Alis_Core_Ecs_Scene_
+  - text: SceneQueryExtensions.Query<T1, T2, T3, T4>(Scene)
+    url: Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__4_Alis_Core_Ecs_Scene_
+  - text: SceneQueryExtensions.Query<T1, T2, T3, T4, T5>(Scene)
+    url: Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__5_Alis_Core_Ecs_Scene_
+  - text: SceneQueryExtensions.Query<T1, T2, T3, T4, T5, T6>(Scene)
+    url: Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__6_Alis_Core_Ecs_Scene_
+  - text: SceneQueryExtensions.Query<T1, T2, T3, T4, T5, T6, T7>(Scene)
+    url: Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__7_Alis_Core_Ecs_Scene_
+  - text: SceneQueryExtensions.Query<T1, T2, T3, T4, T5, T6, T7, T8>(Scene)
+    url: Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__8_Alis_Core_Ecs_Scene_
+- h2: Constructors
+- api3: Scene()
+  id: Alis_Core_Ecs_Scene__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L209
+  metadata:
+    uid: Alis.Core.Ecs.Scene.#ctor
+    commentId: M:Alis.Core.Ecs.Scene.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Scene" data-throw-if-not-resolved="false"></xref> class
+- code: public Scene()
+- h2: Fields
+- api3: AddComponentLookup
+  id: Alis_Core_Ecs_Scene_AddComponentLookup
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L110
+  metadata:
+    uid: Alis.Core.Ecs.Scene.AddComponentLookup
+    commentId: F:Alis.Core.Ecs.Scene.AddComponentLookup
+- markdown: The add component lookup
+- code: public FastLookup AddComponentLookup
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastLookup
+      url: Alis.Core.Ecs.Collections.FastLookup.html
+- api3: AddTagLookup
+  id: Alis_Core_Ecs_Scene_AddTagLookup
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L115
+  metadata:
+    uid: Alis.Core.Ecs.Scene.AddTagLookup
+    commentId: F:Alis.Core.Ecs.Scene.AddTagLookup
+- markdown: The add tag lookup
+- code: public FastLookup AddTagLookup
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastLookup
+      url: Alis.Core.Ecs.Collections.FastLookup.html
+- api3: ArchetypeGraphEdges
+  id: Alis_Core_Ecs_Scene_ArchetypeGraphEdges
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L120
+  metadata:
+    uid: Alis.Core.Ecs.Scene.ArchetypeGraphEdges
+    commentId: F:Alis.Core.Ecs.Scene.ArchetypeGraphEdges
+- markdown: The archetype graph edges
+- code: public Dictionary<ArchetypeEdgeKey, Archetype> ArchetypeGraphEdges
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: ArchetypeEdgeKey
+      url: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.html
+    - ','
+    - " "
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    - '>'
+- api3: ComponentAddedEvent
+  id: Alis_Core_Ecs_Scene_ComponentAddedEvent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L125
+  metadata:
+    uid: Alis.Core.Ecs.Scene.ComponentAddedEvent
+    commentId: F:Alis.Core.Ecs.Scene.ComponentAddedEvent
+- markdown: The component id
+- code: public Event<ComponentId> ComponentAddedEvent
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- api3: ComponentRemovedEvent
+  id: Alis_Core_Ecs_Scene_ComponentRemovedEvent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L130
+  metadata:
+    uid: Alis.Core.Ecs.Scene.ComponentRemovedEvent
+    commentId: F:Alis.Core.Ecs.Scene.ComponentRemovedEvent
+- markdown: The component id
+- code: public Event<ComponentId> ComponentRemovedEvent
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- api3: DefaultArchetype
+  id: Alis_Core_Ecs_Scene_DefaultArchetype
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L79
+  metadata:
+    uid: Alis.Core.Ecs.Scene.DefaultArchetype
+    commentId: F:Alis.Core.Ecs.Scene.DefaultArchetype
+- markdown: The default archetype
+- code: public readonly Archetype DefaultArchetype
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+- api3: DefaultWorldGameObject
+  id: Alis_Core_Ecs_Scene_DefaultWorldGameObject
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L84
+  metadata:
+    uid: Alis.Core.Ecs.Scene.DefaultWorldGameObject
+    commentId: F:Alis.Core.Ecs.Scene.DefaultWorldGameObject
+- markdown: The default scene gameObject
+- code: public readonly GameObject DefaultWorldGameObject
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+- api3: DeferredCreationArchetypes
+  id: Alis_Core_Ecs_Scene_DeferredCreationArchetypes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L135
+  metadata:
+    uid: Alis.Core.Ecs.Scene.DeferredCreationArchetypes
+    commentId: F:Alis.Core.Ecs.Scene.DeferredCreationArchetypes
+- markdown: The create
+- code: public FastestStack<ArchetypeDeferredUpdateRecord> DeferredCreationArchetypes
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: ArchetypeDeferredUpdateRecord
+      url: Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.html
+    - '>'
+- api3: DeferredEntityOperationRecursionLimit
+  id: Alis_Core_Ecs_Scene_DeferredEntityOperationRecursionLimit
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L54
+  metadata:
+    uid: Alis.Core.Ecs.Scene.DeferredEntityOperationRecursionLimit
+    commentId: F:Alis.Core.Ecs.Scene.DeferredEntityOperationRecursionLimit
+- markdown: The deferred gameObject operation recursion limit
+- code: internal const int DeferredEntityOperationRecursionLimit = 200
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EnabledArchetypes
+  id: Alis_Core_Ecs_Scene_EnabledArchetypes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L141
+  metadata:
+    uid: Alis.Core.Ecs.Scene.EnabledArchetypes
+    commentId: F:Alis.Core.Ecs.Scene.EnabledArchetypes
+- markdown: The create
+- code: public FastestStack<GameObjectType> EnabledArchetypes
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    - '>'
+- api3: EntityCreatedEvent
+  id: Alis_Core_Ecs_Scene_EntityCreatedEvent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L146
+  metadata:
+    uid: Alis.Core.Ecs.Scene.EntityCreatedEvent
+    commentId: F:Alis.Core.Ecs.Scene.EntityCreatedEvent
+- markdown: The gameObject only event
+- code: public GameObjectOnlyEvent EntityCreatedEvent
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GameObjectOnlyEvent
+      url: Alis.Core.Ecs.Kernel.Events.GameObjectOnlyEvent.html
+- api3: EntityDeletedEvent
+  id: Alis_Core_Ecs_Scene_EntityDeletedEvent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L151
+  metadata:
+    uid: Alis.Core.Ecs.Scene.EntityDeletedEvent
+    commentId: F:Alis.Core.Ecs.Scene.EntityDeletedEvent
+- markdown: The gameObject only event
+- code: public GameObjectOnlyEvent EntityDeletedEvent
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GameObjectOnlyEvent
+      url: Alis.Core.Ecs.Kernel.Events.GameObjectOnlyEvent.html
+- api3: EntityTable
+  id: Alis_Core_Ecs_Scene_EntityTable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L157
+  metadata:
+    uid: Alis.Core.Ecs.Scene.EntityTable
+    commentId: F:Alis.Core.Ecs.Scene.EntityTable
+- markdown: The gameObject location
+- code: public FastestTable<GameObjectLocation> EntityTable
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestTable
+      url: Alis.Core.Ecs.Collections.FastestTable-1.html
+    - <
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    - '>'
+- api3: EventLookup
+  id: Alis_Core_Ecs_Scene_EventLookup
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L162
+  metadata:
+    uid: Alis.Core.Ecs.Scene.EventLookup
+    commentId: F:Alis.Core.Ecs.Scene.EventLookup
+- markdown: The event lookup
+- code: public Dictionary<GameObjectIdOnly, EventRecord> EventLookup
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    - ','
+    - " "
+    - text: EventRecord
+      url: Alis.Core.Ecs.Kernel.Events.EventRecord.html
+    - '>'
+- api3: Id
+  id: Alis_Core_Ecs_Scene_Id
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L89
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Id
+    commentId: F:Alis.Core.Ecs.Scene.Id
+- markdown: The id
+- code: public readonly ushort Id
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: NextEntityId
+  id: Alis_Core_Ecs_Scene_NextEntityId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L167
+  metadata:
+    uid: Alis.Core.Ecs.Scene.NextEntityId
+    commentId: F:Alis.Core.Ecs.Scene.NextEntityId
+- markdown: The next gameObject id
+- code: public int NextEntityId
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: QueryCache
+  id: Alis_Core_Ecs_Scene_QueryCache
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L172
+  metadata:
+    uid: Alis.Core.Ecs.Scene.QueryCache
+    commentId: F:Alis.Core.Ecs.Scene.QueryCache
+- markdown: The query cache
+- code: public Dictionary<int, Query> QueryCache
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - ','
+    - " "
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    - '>'
+- api3: RecycledEntityIds
+  id: Alis_Core_Ecs_Scene_RecycledEntityIds
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L177
+  metadata:
+    uid: Alis.Core.Ecs.Scene.RecycledEntityIds
+    commentId: F:Alis.Core.Ecs.Scene.RecycledEntityIds
+- markdown: The gameObject id only
+- code: public FastestStack<GameObjectIdOnly> RecycledEntityIds
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    - '>'
+- api3: RemoveComponentLookup
+  id: Alis_Core_Ecs_Scene_RemoveComponentLookup
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L182
+  metadata:
+    uid: Alis.Core.Ecs.Scene.RemoveComponentLookup
+    commentId: F:Alis.Core.Ecs.Scene.RemoveComponentLookup
+- markdown: The remove component lookup
+- code: public FastLookup RemoveComponentLookup
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastLookup
+      url: Alis.Core.Ecs.Collections.FastLookup.html
+- api3: RemoveTagLookup
+  id: Alis_Core_Ecs_Scene_RemoveTagLookup
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L187
+  metadata:
+    uid: Alis.Core.Ecs.Scene.RemoveTagLookup
+    commentId: F:Alis.Core.Ecs.Scene.RemoveTagLookup
+- markdown: The remove tag lookup
+- code: public FastLookup RemoveTagLookup
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastLookup
+      url: Alis.Core.Ecs.Collections.FastLookup.html
+- api3: WorldArchetypeTable
+  id: Alis_Core_Ecs_Scene_WorldArchetypeTable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L193
+  metadata:
+    uid: Alis.Core.Ecs.Scene.WorldArchetypeTable
+    commentId: F:Alis.Core.Ecs.Scene.WorldArchetypeTable
+- markdown: The scene archetype table
+- code: public WorldArchetypeTableItem[] WorldArchetypeTable
+- h4: Field Value
+- parameters:
+  - type:
+    - text: WorldArchetypeTableItem
+      url: Alis.Core.Ecs.WorldArchetypeTableItem.html
+    - '['
+    - ']'
+- api3: WorldEventFlags
+  id: Alis_Core_Ecs_Scene_WorldEventFlags
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L199
+  metadata:
+    uid: Alis.Core.Ecs.Scene.WorldEventFlags
+    commentId: F:Alis.Core.Ecs.Scene.WorldEventFlags
+- markdown: The scene event flags
+- code: public GameObjectFlags WorldEventFlags
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GameObjectFlags
+      url: Alis.Core.Ecs.GameObjectFlags.html
+- api3: WorldUpdateCommandBuffer
+  id: Alis_Core_Ecs_Scene_WorldUpdateCommandBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L204
+  metadata:
+    uid: Alis.Core.Ecs.Scene.WorldUpdateCommandBuffer
+    commentId: F:Alis.Core.Ecs.Scene.WorldUpdateCommandBuffer
+- markdown: The scene update command buffer
+- code: public CommandBuffer WorldUpdateCommandBuffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: CommandBuffer
+      url: Alis.Core.Ecs.Kernel.CommandBuffer.html
+- api3: _allowStructuralChanges
+  id: Alis_Core_Ecs_Scene__allowStructuralChanges
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L97
+  metadata:
+    uid: Alis.Core.Ecs.Scene._allowStructuralChanges
+    commentId: F:Alis.Core.Ecs.Scene._allowStructuralChanges
+- markdown: The allow structural changes
+- code: internal int _allowStructuralChanges
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _altDeferredCreationArchetypes
+  id: Alis_Core_Ecs_Scene__altDeferredCreationArchetypes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L102
+  metadata:
+    uid: Alis.Core.Ecs.Scene._altDeferredCreationArchetypes
+    commentId: F:Alis.Core.Ecs.Scene._altDeferredCreationArchetypes
+- markdown: The create
+- code: internal FastestStack<ArchetypeDeferredUpdateRecord> _altDeferredCreationArchetypes
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: ArchetypeDeferredUpdateRecord
+      url: Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.html
+    - '>'
+- api3: _nextWorldId
+  id: Alis_Core_Ecs_Scene__nextWorldId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L59
+  metadata:
+    uid: Alis.Core.Ecs.Scene._nextWorldId
+    commentId: F:Alis.Core.Ecs.Scene._nextWorldId
+- markdown: The next scene id
+- code: internal static ushort _nextWorldId
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: _sharedCountdown
+  id: Alis_Core_Ecs_Scene__sharedCountdown
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L64
+  metadata:
+    uid: Alis.Core.Ecs.Scene._sharedCountdown
+    commentId: F:Alis.Core.Ecs.Scene._sharedCountdown
+- markdown: The shared countdown
+- code: internal readonly CountdownEvent _sharedCountdown
+- h4: Field Value
+- parameters:
+  - type:
+    - text: CountdownEvent
+      url: https://learn.microsoft.com/dotnet/api/system.threading.countdownevent
+- api3: _singleComponentUpdates
+  id: Alis_Core_Ecs_Scene__singleComponentUpdates
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L69
+  metadata:
+    uid: Alis.Core.Ecs.Scene._singleComponentUpdates
+    commentId: F:Alis.Core.Ecs.Scene._singleComponentUpdates
+- markdown: The single component updates
+- code: internal readonly Dictionary<ComponentId, SingleComponentUpdateFilter> _singleComponentUpdates
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - ','
+    - " "
+    - text: SingleComponentUpdateFilter
+      url: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.html
+    - '>'
+- api3: _updatesByAttributes
+  id: Alis_Core_Ecs_Scene__updatesByAttributes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L74
+  metadata:
+    uid: Alis.Core.Ecs.Scene._updatesByAttributes
+    commentId: F:Alis.Core.Ecs.Scene._updatesByAttributes
+- markdown: The updates by attributes
+- code: internal readonly Dictionary<Type, SceneUpdateFilter> _updatesByAttributes
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    - ','
+    - " "
+    - text: SceneUpdateFilter
+      url: Alis.Core.Ecs.Updating.SceneUpdateFilter.html
+    - '>'
+- h2: Properties
+- api3: AllowStructualChanges
+  id: Alis_Core_Ecs_Scene_AllowStructualChanges
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L236
+  metadata:
+    uid: Alis.Core.Ecs.Scene.AllowStructualChanges
+    commentId: P:Alis.Core.Ecs.Scene.AllowStructualChanges
+- markdown: Gets the value of the allow structual changes
+- code: public bool AllowStructualChanges { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: EntityCount
+  id: Alis_Core_Ecs_Scene_EntityCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L231
+  metadata:
+    uid: Alis.Core.Ecs.Scene.EntityCount
+    commentId: P:Alis.Core.Ecs.Scene.EntityCount
+- markdown: Gets the current number of entities managed by the scene.
+- code: public int EntityCount { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: SharedCountdown
+  id: Alis_Core_Ecs_Scene_SharedCountdown
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L226
+  metadata:
+    uid: Alis.Core.Ecs.Scene.SharedCountdown
+    commentId: P:Alis.Core.Ecs.Scene.SharedCountdown
+- markdown: Gets the value of the shared countdown
+- code: public CountdownEvent SharedCountdown { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: CountdownEvent
+      url: https://learn.microsoft.com/dotnet/api/system.threading.countdownevent
+- h2: Methods
+- api3: AddComponent(GameObject, ref GameObjectLocation, ComponentId, ref ComponentStorageBase, out GameObjectLocation)
+  id: Alis_Core_Ecs_Scene_AddComponent_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_Kernel_ComponentId_Alis_Core_Ecs_Updating_ComponentStorageBase__Alis_Core_Ecs_GameObjectLocation__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1664
+  metadata:
+    uid: Alis.Core.Ecs.Scene.AddComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.ComponentId,Alis.Core.Ecs.Updating.ComponentStorageBase@,Alis.Core.Ecs.GameObjectLocation@)
+    commentId: M:Alis.Core.Ecs.Scene.AddComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.ComponentId,Alis.Core.Ecs.Updating.ComponentStorageBase@,Alis.Core.Ecs.GameObjectLocation@)
+- markdown: Adds the component using the specified gameObject
+- code: internal void AddComponent(GameObject gameObject, ref GameObjectLocation lookup, ComponentId componentId, ref ComponentStorageBase runner, out GameObjectLocation gameObjectLocation)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: lookup
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The lookup
+  - name: componentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The component id
+  - name: runner
+    type:
+    - text: ComponentStorageBase
+      url: Alis.Core.Ecs.Updating.ComponentStorageBase.html
+    description: The runner
+  - name: gameObjectLocation
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The gameObject location
+- api3: AddEvent<T>(ref Event<T>, Action<GameObject, T>, GameObjectFlags)
+  id: Alis_Core_Ecs_Scene_AddEvent__1_Alis_Core_Ecs_Kernel_Events_Event___0___System_Action_Alis_Core_Ecs_GameObject___0__Alis_Core_Ecs_GameObjectFlags_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L327
+  metadata:
+    uid: Alis.Core.Ecs.Scene.AddEvent``1(Alis.Core.Ecs.Kernel.Events.Event{``0}@,System.Action{Alis.Core.Ecs.GameObject,``0},Alis.Core.Ecs.GameObjectFlags)
+    commentId: M:Alis.Core.Ecs.Scene.AddEvent``1(Alis.Core.Ecs.Kernel.Events.Event{``0}@,System.Action{Alis.Core.Ecs.GameObject,``0},Alis.Core.Ecs.GameObjectFlags)
+- markdown: Adds the event using the specified event
+- code: internal void AddEvent<T>(ref Event<T> e, Action<GameObject, T> action, GameObjectFlags flag)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - T
+    - '>'
+    description: The event
+  - name: action
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-2
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - ','
+    - " "
+    - T
+    - '>'
+    description: The action
+  - name: flag
+    type:
+    - text: GameObjectFlags
+      url: Alis.Core.Ecs.GameObjectFlags.html
+    description: The flag
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: ArchetypeAdded(Archetype, Archetype)
+  id: Alis_Core_Ecs_Scene_ArchetypeAdded_Alis_Core_Ecs_Kernel_Archetypes_Archetype_Alis_Core_Ecs_Kernel_Archetypes_Archetype_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L468
+  metadata:
+    uid: Alis.Core.Ecs.Scene.ArchetypeAdded(Alis.Core.Ecs.Kernel.Archetypes.Archetype,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+    commentId: M:Alis.Core.Ecs.Scene.ArchetypeAdded(Alis.Core.Ecs.Kernel.Archetypes.Archetype,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+- markdown: Archetypes the added using the specified archetype
+- code: public void ArchetypeAdded(Archetype archetype, Archetype temporaryCreationArchetype)
+- h4: Parameters
+- parameters:
+  - name: archetype
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+  - name: temporaryCreationArchetype
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The temporary creation archetype
+- api3: Create()
+  id: Alis_Core_Ecs_Scene_Create
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L663
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Create
+    commentId: M:Alis.Core.Ecs.Scene.Create
+- markdown: Creates an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> with zero components.
+- code: public GameObject Create()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject that was created.
+- api3: Create<T1, T2>(in T1, in T2)
+  id: Alis_Core_Ecs_Scene_Create__2___0____1__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L734
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Create``2(``0@,``1@)
+    commentId: M:Alis.Core.Ecs.Scene.Create``2(``0@,``1@)
+- markdown: Creates an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> with the given component(s)
+- code: public GameObject Create<T1, T2>(in T1 comp1, in T2 comp2)
+- h4: Parameters
+- parameters:
+  - name: comp1
+    type:
+    - T1
+  - name: comp2
+    type:
+    - T2
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: An <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> that can be used to acsess the component data
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+- api3: Create<T1, T2, T3>(in T1, in T2, in T3)
+  id: Alis_Core_Ecs_Scene_Create__3___0____1____2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L831
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Create``3(``0@,``1@,``2@)
+    commentId: M:Alis.Core.Ecs.Scene.Create``3(``0@,``1@,``2@)
+- markdown: Creates an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> with the given component(s)
+- code: public GameObject Create<T1, T2, T3>(in T1 comp1, in T2 comp2, in T3 comp3)
+- h4: Parameters
+- parameters:
+  - name: comp1
+    type:
+    - T1
+  - name: comp2
+    type:
+    - T2
+  - name: comp3
+    type:
+    - T3
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: An <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> that can be used to acsess the component data
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+- api3: Create<T1, T2, T3, T4>(in T1, in T2, in T3, in T4)
+  id: Alis_Core_Ecs_Scene_Create__4___0____1____2____3__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L929
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Create``4(``0@,``1@,``2@,``3@)
+    commentId: M:Alis.Core.Ecs.Scene.Create``4(``0@,``1@,``2@,``3@)
+- markdown: Creates an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> with the given component(s)
+- code: public GameObject Create<T1, T2, T3, T4>(in T1 comp1, in T2 comp2, in T3 comp3, in T4 comp4)
+- h4: Parameters
+- parameters:
+  - name: comp1
+    type:
+    - T1
+  - name: comp2
+    type:
+    - T2
+  - name: comp3
+    type:
+    - T3
+  - name: comp4
+    type:
+    - T4
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: An <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> that can be used to acsess the component data
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+- api3: Create<T1, T2, T3, T4, T5>(in T1, in T2, in T3, in T4, in T5)
+  id: Alis_Core_Ecs_Scene_Create__5___0____1____2____3____4__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1034
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Create``5(``0@,``1@,``2@,``3@,``4@)
+    commentId: M:Alis.Core.Ecs.Scene.Create``5(``0@,``1@,``2@,``3@,``4@)
+- markdown: Creates an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> with the given component(s)
+- code: public GameObject Create<T1, T2, T3, T4, T5>(in T1 comp1, in T2 comp2, in T3 comp3, in T4 comp4, in T5 comp5)
+- h4: Parameters
+- parameters:
+  - name: comp1
+    type:
+    - T1
+  - name: comp2
+    type:
+    - T2
+  - name: comp3
+    type:
+    - T3
+  - name: comp4
+    type:
+    - T4
+  - name: comp5
+    type:
+    - T5
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: An <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> that can be used to acsess the component data
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+- api3: Create<T1, T2, T3, T4, T5, T6>(in T1, in T2, in T3, in T4, in T5, in T6)
+  id: Alis_Core_Ecs_Scene_Create__6___0____1____2____3____4____5__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1151
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Create``6(``0@,``1@,``2@,``3@,``4@,``5@)
+    commentId: M:Alis.Core.Ecs.Scene.Create``6(``0@,``1@,``2@,``3@,``4@,``5@)
+- markdown: Creates an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> with the given component(s)
+- code: public GameObject Create<T1, T2, T3, T4, T5, T6>(in T1 comp1, in T2 comp2, in T3 comp3, in T4 comp4, in T5 comp5, in T6 comp6)
+- h4: Parameters
+- parameters:
+  - name: comp1
+    type:
+    - T1
+  - name: comp2
+    type:
+    - T2
+  - name: comp3
+    type:
+    - T3
+  - name: comp4
+    type:
+    - T4
+  - name: comp5
+    type:
+    - T5
+  - name: comp6
+    type:
+    - T6
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: An <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> that can be used to acsess the component data
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+- api3: Create<T1, T2, T3, T4, T5, T6, T7>(in T1, in T2, in T3, in T4, in T5, in T6, in T7)
+  id: Alis_Core_Ecs_Scene_Create__7___0____1____2____3____4____5____6__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1276
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Create``7(``0@,``1@,``2@,``3@,``4@,``5@,``6@)
+    commentId: M:Alis.Core.Ecs.Scene.Create``7(``0@,``1@,``2@,``3@,``4@,``5@,``6@)
+- markdown: Creates an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> with the given component(s)
+- code: public GameObject Create<T1, T2, T3, T4, T5, T6, T7>(in T1 comp1, in T2 comp2, in T3 comp3, in T4 comp4, in T5 comp5, in T6 comp6, in T7 comp7)
+- h4: Parameters
+- parameters:
+  - name: comp1
+    type:
+    - T1
+  - name: comp2
+    type:
+    - T2
+  - name: comp3
+    type:
+    - T3
+  - name: comp4
+    type:
+    - T4
+  - name: comp5
+    type:
+    - T5
+  - name: comp6
+    type:
+    - T6
+  - name: comp7
+    type:
+    - T7
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: An <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> that can be used to acsess the component data
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+- api3: Create<T1, T2, T3, T4, T5, T6, T7, T8>(in T1, in T2, in T3, in T4, in T5, in T6, in T7, in T8)
+  id: Alis_Core_Ecs_Scene_Create__8___0____1____2____3____4____5____6____7__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1410
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Create``8(``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)
+    commentId: M:Alis.Core.Ecs.Scene.Create``8(``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)
+- markdown: Creates an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> with the given component(s)
+- code: public GameObject Create<T1, T2, T3, T4, T5, T6, T7, T8>(in T1 comp1, in T2 comp2, in T3 comp3, in T4 comp4, in T5 comp5, in T6 comp6, in T7 comp7, in T8 comp8)
+- h4: Parameters
+- parameters:
+  - name: comp1
+    type:
+    - T1
+  - name: comp2
+    type:
+    - T2
+  - name: comp3
+    type:
+    - T3
+  - name: comp4
+    type:
+    - T4
+  - name: comp5
+    type:
+    - T5
+  - name: comp6
+    type:
+    - T6
+  - name: comp7
+    type:
+    - T7
+  - name: comp8
+    type:
+    - T8
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: An <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> that can be used to acsess the component data
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+  - name: T8
+- api3: Create<T>(in T)
+  id: Alis_Core_Ecs_Scene_Create__1___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1559
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Create``1(``0@)
+    commentId: M:Alis.Core.Ecs.Scene.Create``1(``0@)
+- markdown: Creates an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> with the given component(s)
+- code: public GameObject Create<T>(in T comp)
+- h4: Parameters
+- parameters:
+  - name: comp
+    type:
+    - T
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: An <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> that can be used to acsess the component data
+- h4: Type Parameters
+- parameters:
+  - name: T
+- api3: CreateEntityFromLocation(GameObjectLocation)
+  id: Alis_Core_Ecs_Scene_CreateEntityFromLocation_Alis_Core_Ecs_GameObjectLocation_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L354
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateEntityFromLocation(Alis.Core.Ecs.GameObjectLocation)
+    commentId: M:Alis.Core.Ecs.Scene.CreateEntityFromLocation(Alis.Core.Ecs.GameObjectLocation)
+- markdown: Creates the gameObject from location using the specified gameObject location
+- code: public GameObject CreateEntityFromLocation(GameObjectLocation gameObjectLocation)
+- h4: Parameters
+- parameters:
+  - name: gameObjectLocation
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The gameObject location
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- api3: CreateEntityWithoutEvent()
+  id: Alis_Core_Ecs_Scene_CreateEntityWithoutEvent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L674
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateEntityWithoutEvent
+    commentId: M:Alis.Core.Ecs.Scene.CreateEntityWithoutEvent
+- markdown: Creates the gameObject without event
+- code: public GameObject CreateEntityWithoutEvent()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- api3: CreateFromObjects(ReadOnlySpan<object>)
+  id: Alis_Core_Ecs_Scene_CreateFromObjects_System_ReadOnlySpan_System_Object__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L628
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateFromObjects(System.ReadOnlySpan{System.Object})
+    commentId: M:Alis.Core.Ecs.Scene.CreateFromObjects(System.ReadOnlySpan{System.Object})
+- markdown: Creates an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>
+- code: public GameObject CreateFromObjects(ReadOnlySpan<object> components)
+- h4: Parameters
+- parameters:
+  - name: components
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    - '>'
+    description: The components to use
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The created gameObject
+- api3: CreateMany<T1, T2>(int)
+  id: Alis_Core_Ecs_Scene_CreateMany__2_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L793
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateMany``2(System.Int32)
+    commentId: M:Alis.Core.Ecs.Scene.CreateMany``2(System.Int32)
+- markdown: Creates the many using the specified count
+- code: public ChunkTuple<T1, T2> CreateMany<T1, T2>(int count)
+- h4: Parameters
+- parameters:
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The count
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkTuple
+      url: Alis.Core.Ecs.Systems.ChunkTuple-2.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - '>'
+    description: A chunk tuple of t 1 and t 2
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: ''
+- api3: CreateMany<T1, T2, T3>(int)
+  id: Alis_Core_Ecs_Scene_CreateMany__3_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L891
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateMany``3(System.Int32)
+    commentId: M:Alis.Core.Ecs.Scene.CreateMany``3(System.Int32)
+- markdown: Creates a large amount of entities quickly
+- code: public ChunkTuple<T1, T2, T3> CreateMany<T1, T2, T3>(int count)
+- h4: Parameters
+- parameters:
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of entities to create
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkTuple
+      url: Alis.Core.Ecs.Systems.ChunkTuple-3.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - '>'
+    description: The entities created and their component spans
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+- api3: CreateMany<T1, T2, T3, T4>(int)
+  id: Alis_Core_Ecs_Scene_CreateMany__4_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L994
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateMany``4(System.Int32)
+    commentId: M:Alis.Core.Ecs.Scene.CreateMany``4(System.Int32)
+- markdown: Creates a large amount of entities quickly
+- code: public ChunkTuple<T1, T2, T3, T4> CreateMany<T1, T2, T3, T4>(int count)
+- h4: Parameters
+- parameters:
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The number of entities to create
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkTuple
+      url: Alis.Core.Ecs.Systems.ChunkTuple-4.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - '>'
+    description: The entities created and their component spans
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+- api3: CreateMany<T1, T2, T3, T4, T5>(int)
+  id: Alis_Core_Ecs_Scene_CreateMany__5_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1111
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateMany``5(System.Int32)
+    commentId: M:Alis.Core.Ecs.Scene.CreateMany``5(System.Int32)
+- markdown: Creates the many using the specified count
+- code: public ChunkTuple<T1, T2, T3, T4, T5> CreateMany<T1, T2, T3, T4, T5>(int count)
+- h4: Parameters
+- parameters:
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The count
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkTuple
+      url: Alis.Core.Ecs.Systems.ChunkTuple-5.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - '>'
+    description: A chunk tuple of t 1 and t 2 and t 3 and t 4 and t 5
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: ''
+- api3: CreateMany<T1, T2, T3, T4, T5, T6>(int)
+  id: Alis_Core_Ecs_Scene_CreateMany__6_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1235
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateMany``6(System.Int32)
+    commentId: M:Alis.Core.Ecs.Scene.CreateMany``6(System.Int32)
+- markdown: Creates the many using the specified count
+- code: public ChunkTuple<T1, T2, T3, T4, T5, T6> CreateMany<T1, T2, T3, T4, T5, T6>(int count)
+- h4: Parameters
+- parameters:
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The count
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkTuple
+      url: Alis.Core.Ecs.Systems.ChunkTuple-6.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - '>'
+    description: A chunk tuple of t 1 and t 2 and t 3 and t 4 and t 5 and t 6
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+  - name: T6
+    description: The
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: ''
+- api3: CreateMany<T1, T2, T3, T4, T5, T6, T7>(int)
+  id: Alis_Core_Ecs_Scene_CreateMany__7_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1367
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateMany``7(System.Int32)
+    commentId: M:Alis.Core.Ecs.Scene.CreateMany``7(System.Int32)
+- markdown: Creates the many using the specified count
+- code: public ChunkTuple<T1, T2, T3, T4, T5, T6, T7> CreateMany<T1, T2, T3, T4, T5, T6, T7>(int count)
+- h4: Parameters
+- parameters:
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The count
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkTuple
+      url: Alis.Core.Ecs.Systems.ChunkTuple-7.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - ','
+    - " "
+    - T7
+    - '>'
+    description: A chunk tuple of t 1 and t 2 and t 3 and t 4 and t 5 and t 6 and t 7
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+  - name: T6
+    description: The
+  - name: T7
+    description: The
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: ''
+- api3: CreateMany<T1, T2, T3, T4, T5, T6, T7, T8>(int)
+  id: Alis_Core_Ecs_Scene_CreateMany__8_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1515
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateMany``8(System.Int32)
+    commentId: M:Alis.Core.Ecs.Scene.CreateMany``8(System.Int32)
+- markdown: Creates the many using the specified count
+- code: public ChunkTuple<T1, T2, T3, T4, T5, T6, T7, T8> CreateMany<T1, T2, T3, T4, T5, T6, T7, T8>(int count)
+- h4: Parameters
+- parameters:
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The count
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkTuple
+      url: Alis.Core.Ecs.Systems.ChunkTuple-8.html
+    - <
+    - T1
+    - ','
+    - " "
+    - T2
+    - ','
+    - " "
+    - T3
+    - ','
+    - " "
+    - T4
+    - ','
+    - " "
+    - T5
+    - ','
+    - " "
+    - T6
+    - ','
+    - " "
+    - T7
+    - ','
+    - " "
+    - T8
+    - '>'
+    description: A chunk tuple of t 1 and t 2 and t 3 and t 4 and t 5 and t 6 and t 7 and t 8
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+  - name: T6
+    description: The
+  - name: T7
+    description: The
+  - name: T8
+    description: The
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: ''
+- api3: CreateMany<T>(int)
+  id: Alis_Core_Ecs_Scene_CreateMany__1_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1609
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateMany``1(System.Int32)
+    commentId: M:Alis.Core.Ecs.Scene.CreateMany``1(System.Int32)
+- markdown: Creates the many using the specified count
+- code: public ChunkTuple<T> CreateMany<T>(int count)
+- h4: Parameters
+- parameters:
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The count
+- h4: Returns
+- parameters:
+  - type:
+    - text: ChunkTuple
+      url: Alis.Core.Ecs.Systems.ChunkTuple-1.html
+    - <
+    - T
+    - '>'
+    description: A chunk tuple of t
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: ''
+- api3: CreateQuery(FastImmutableArray<Rule>)
+  id: Alis_Core_Ecs_Scene_CreateQuery_Alis_Core_Aspect_Math_Collections_FastImmutableArray_Alis_Core_Ecs_Systems_Rule__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L496
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateQuery(Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Systems.Rule})
+    commentId: M:Alis.Core.Ecs.Scene.CreateQuery(Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Systems.Rule})
+- markdown: Creates the query using the specified rules
+- code: public Query CreateQuery(FastImmutableArray<Rule> rules)
+- h4: Parameters
+- parameters:
+  - name: rules
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: Rule
+      url: Alis.Core.Ecs.Systems.Rule.html
+    - '>'
+    description: The rules
+- h4: Returns
+- parameters:
+  - type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The
+- api3: CreateQueryFromSpan(ReadOnlySpan<Rule>)
+  id: Alis_Core_Ecs_Scene_CreateQueryFromSpan_System_ReadOnlySpan_Alis_Core_Ecs_Systems_Rule__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L515
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CreateQueryFromSpan(System.ReadOnlySpan{Alis.Core.Ecs.Systems.Rule})
+    commentId: M:Alis.Core.Ecs.Scene.CreateQueryFromSpan(System.ReadOnlySpan{Alis.Core.Ecs.Systems.Rule})
+- markdown: Creates the query from span using the specified rules
+- code: public Query CreateQueryFromSpan(ReadOnlySpan<Rule> rules)
+- h4: Parameters
+- parameters:
+  - name: rules
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - text: Rule
+      url: Alis.Core.Ecs.Systems.Rule.html
+    - '>'
+    description: The rules
+- h4: Returns
+- parameters:
+  - type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: The query
+- api3: CustomQuery(params Rule[])
+  id: Alis_Core_Ecs_Scene_CustomQuery_Alis_Core_Ecs_Systems_Rule___
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L445
+  metadata:
+    uid: Alis.Core.Ecs.Scene.CustomQuery(Alis.Core.Ecs.Systems.Rule[])
+    commentId: M:Alis.Core.Ecs.Scene.CustomQuery(Alis.Core.Ecs.Systems.Rule[])
+- markdown: Creates a custom query from the given set of rules. For an gameObject to be queried, all rules must apply.
+- code: public Query CustomQuery(params Rule[] rules)
+- h4: Parameters
+- parameters:
+  - name: rules
+    type:
+    - text: Rule
+      url: Alis.Core.Ecs.Systems.Rule.html
+    - '['
+    - ']'
+    description: The rules governing which entities are queried.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Query
+      url: Alis.Core.Ecs.Systems.Query.html
+    description: A query object representing all the entities that satisfy all the rules.
+- api3: DeleteEntity(GameObject, ref GameObjectLocation)
+  id: Alis_Core_Ecs_Scene_DeleteEntity_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1877
+  metadata:
+    uid: Alis.Core.Ecs.Scene.DeleteEntity(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@)
+    commentId: M:Alis.Core.Ecs.Scene.DeleteEntity(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@)
+- markdown: Deletes the gameObject using the specified gameObject
+- code: internal void DeleteEntity(GameObject gameObject, ref GameObjectLocation gameObjectLocation)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: gameObjectLocation
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The gameObject location
+- api3: DeleteEntityWithoutEvents(GameObject, ref GameObjectLocation)
+  id: Alis_Core_Ecs_Scene_DeleteEntityWithoutEvents_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1914
+  metadata:
+    uid: Alis.Core.Ecs.Scene.DeleteEntityWithoutEvents(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@)
+    commentId: M:Alis.Core.Ecs.Scene.DeleteEntityWithoutEvents(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@)
+- markdown: Deletes the gameObject without events using the specified gameObject
+- code: internal void DeleteEntityWithoutEvents(GameObject gameObject, ref GameObjectLocation currentLookup)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: currentLookup
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The current lookup
+- api3: Dispose()
+  id: Alis_Core_Ecs_Scene_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L241
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Dispose
+    commentId: M:Alis.Core.Ecs.Scene.Dispose
+- markdown: Disposes of the <xref href="Alis.Core.Ecs.Scene" data-throw-if-not-resolved="false"></xref>.
+- code: public void Dispose()
+- api3: EnsureCapacity(GameObjectType, int)
+  id: Alis_Core_Ecs_Scene_EnsureCapacity_Alis_Core_Ecs_Kernel_GameObjectType_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L701
+  metadata:
+    uid: Alis.Core.Ecs.Scene.EnsureCapacity(Alis.Core.Ecs.Kernel.GameObjectType,System.Int32)
+    commentId: M:Alis.Core.Ecs.Scene.EnsureCapacity(Alis.Core.Ecs.Kernel.GameObjectType,System.Int32)
+- markdown: Allocates memory sufficient to store <code class="paramref">count</code> entities of a type
+- code: public void EnsureCapacity(GameObjectType entityType, int count)
+- h4: Parameters
+- parameters:
+  - name: entityType
+    type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+    description: The types of the gameObject to allocate for
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: Number of gameObject spaces to allocate
+- h4: Remarks
+- markdown: Use this method when creating a large number of entities
+- api3: EnsureCapacityCore(Archetype, int)
+  id: Alis_Core_Ecs_Scene_EnsureCapacityCore_Alis_Core_Ecs_Kernel_Archetypes_Archetype_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L718
+  metadata:
+    uid: Alis.Core.Ecs.Scene.EnsureCapacityCore(Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32)
+    commentId: M:Alis.Core.Ecs.Scene.EnsureCapacityCore(Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32)
+- markdown: Ensures the capacity core using the specified archetype
+- code: public void EnsureCapacityCore(Archetype archetype, int count)
+- h4: Parameters
+- parameters:
+  - name: archetype
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The count
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: Count must be positive
+- api3: EnterDisallowState()
+  id: Alis_Core_Ecs_Scene_EnterDisallowState
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L529
+  metadata:
+    uid: Alis.Core.Ecs.Scene.EnterDisallowState
+    commentId: M:Alis.Core.Ecs.Scene.EnterDisallowState
+- markdown: Enters the disallow state
+- code: public void EnterDisallowState()
+- api3: ExitDisallowState(IComponentUpdateFilter, bool)
+  id: Alis_Core_Ecs_Scene_ExitDisallowState_Alis_Core_Ecs_Updating_IComponentUpdateFilter_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L542
+  metadata:
+    uid: Alis.Core.Ecs.Scene.ExitDisallowState(Alis.Core.Ecs.Updating.IComponentUpdateFilter,System.Boolean)
+    commentId: M:Alis.Core.Ecs.Scene.ExitDisallowState(Alis.Core.Ecs.Updating.IComponentUpdateFilter,System.Boolean)
+- markdown: Exits the disallow state using the specified filter used
+- code: public void ExitDisallowState(IComponentUpdateFilter filterUsed, bool updateDeferredEntities = false)
+- h4: Parameters
+- parameters:
+  - name: filterUsed
+    type:
+    - text: IComponentUpdateFilter
+      url: Alis.Core.Ecs.Updating.IComponentUpdateFilter.html
+    description: The filter used
+  - name: updateDeferredEntities
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The update deferred entities
+    optional: true
+- api3: InvokeDeleteEvents(GameObject, GameObjectLocation)
+  id: Alis_Core_Ecs_Scene_InvokeDeleteEvents_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1895
+  metadata:
+    uid: Alis.Core.Ecs.Scene.InvokeDeleteEvents(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation)
+    commentId: M:Alis.Core.Ecs.Scene.InvokeDeleteEvents(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation)
+- markdown: Invokes the delete events using the specified gameObject
+- code: internal void InvokeDeleteEvents(GameObject gameObject, GameObjectLocation gameObjectLocation)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: gameObjectLocation
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The gameObject location
+- api3: InvokeEntityCreated(GameObject)
+  id: Alis_Core_Ecs_Scene_InvokeEntityCreated_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L690
+  metadata:
+    uid: Alis.Core.Ecs.Scene.InvokeEntityCreated(Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Scene.InvokeEntityCreated(Alis.Core.Ecs.GameObject)
+- markdown: Invokes the gameObject created using the specified gameObject
+- code: public void InvokeEntityCreated(GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- api3: MoveEntityToArchetypeAdd(Span<ComponentStorageBase>, GameObject, ref GameObjectLocation, out GameObjectLocation, Archetype)
+  id: Alis_Core_Ecs_Scene_MoveEntityToArchetypeAdd_System_Span_Alis_Core_Ecs_Updating_ComponentStorageBase__Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_Kernel_Archetypes_Archetype_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1683
+  metadata:
+    uid: Alis.Core.Ecs.Scene.MoveEntityToArchetypeAdd(System.Span{Alis.Core.Ecs.Updating.ComponentStorageBase},Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+    commentId: M:Alis.Core.Ecs.Scene.MoveEntityToArchetypeAdd(System.Span{Alis.Core.Ecs.Updating.ComponentStorageBase},Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+- markdown: Moves the gameObject to archetype add using the specified write to
+- code: internal void MoveEntityToArchetypeAdd(Span<ComponentStorageBase> writeTo, GameObject gameObject, ref GameObjectLocation currentLookup, out GameObjectLocation nextLocation, Archetype destination)
+- h4: Parameters
+- parameters:
+  - name: writeTo
+    type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - text: ComponentStorageBase
+      url: Alis.Core.Ecs.Updating.ComponentStorageBase.html
+    - '>'
+    description: The write to
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: currentLookup
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The current lookup
+  - name: nextLocation
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The next location
+  - name: destination
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The destination
+- api3: MoveEntityToArchetypeIso(GameObject, ref GameObjectLocation, Archetype)
+  id: Alis_Core_Ecs_Scene_MoveEntityToArchetypeIso_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_Kernel_Archetypes_Archetype_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1836
+  metadata:
+    uid: Alis.Core.Ecs.Scene.MoveEntityToArchetypeIso(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+    commentId: M:Alis.Core.Ecs.Scene.MoveEntityToArchetypeIso(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+- markdown: Moves the gameObject to archetype iso using the specified gameObject
+- code: internal void MoveEntityToArchetypeIso(GameObject gameObject, ref GameObjectLocation currentLookup, Archetype destination)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: currentLookup
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The current lookup
+  - name: destination
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The destination
+- api3: MoveEntityToArchetypeRemove(Span<ComponentHandle>, GameObject, ref GameObjectLocation, Archetype)
+  id: Alis_Core_Ecs_Scene_MoveEntityToArchetypeRemove_System_Span_Alis_Core_Ecs_Kernel_ComponentHandle__Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_Kernel_Archetypes_Archetype_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1734
+  metadata:
+    uid: Alis.Core.Ecs.Scene.MoveEntityToArchetypeRemove(System.Span{Alis.Core.Ecs.Kernel.ComponentHandle},Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+    commentId: M:Alis.Core.Ecs.Scene.MoveEntityToArchetypeRemove(System.Span{Alis.Core.Ecs.Kernel.ComponentHandle},Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+- markdown: Moves the gameObject to archetype remove using the specified component handles
+- code: internal void MoveEntityToArchetypeRemove(Span<ComponentHandle> componentHandles, GameObject gameObject, ref GameObjectLocation currentLookup, Archetype destination)
+- h4: Parameters
+- parameters:
+  - name: componentHandles
+    type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    - '>'
+    description: The component handles
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: currentLookup
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The current lookup
+  - name: destination
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The destination
+- api3: RemoveComponent(GameObject, ref GameObjectLocation, ComponentId)
+  id: Alis_Core_Ecs_Scene_RemoveComponent_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1647
+  metadata:
+    uid: Alis.Core.Ecs.Scene.RemoveComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.Scene.RemoveComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Removes the component using the specified gameObject
+- code: internal void RemoveComponent(GameObject gameObject, ref GameObjectLocation lookup, ComponentId componentId)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: lookup
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The lookup
+  - name: componentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The component id
+- api3: RemoveEvent<T>(ref Event<T>, Action<GameObject, T>, GameObjectFlags)
+  id: Alis_Core_Ecs_Scene_RemoveEvent__1_Alis_Core_Ecs_Kernel_Events_Event___0___System_Action_Alis_Core_Ecs_GameObject___0__Alis_Core_Ecs_GameObjectFlags_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L340
+  metadata:
+    uid: Alis.Core.Ecs.Scene.RemoveEvent``1(Alis.Core.Ecs.Kernel.Events.Event{``0}@,System.Action{Alis.Core.Ecs.GameObject,``0},Alis.Core.Ecs.GameObjectFlags)
+    commentId: M:Alis.Core.Ecs.Scene.RemoveEvent``1(Alis.Core.Ecs.Kernel.Events.Event{``0}@,System.Action{Alis.Core.Ecs.GameObject,``0},Alis.Core.Ecs.GameObjectFlags)
+- markdown: Removes the event using the specified event
+- code: internal void RemoveEvent<T>(ref Event<T> e, Action<GameObject, T> action, GameObjectFlags flag)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - T
+    - '>'
+    description: The event
+  - name: action
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-2
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - ','
+    - " "
+    - T
+    - '>'
+    description: The action
+  - name: flag
+    type:
+    - text: GameObjectFlags
+      url: Alis.Core.Ecs.GameObjectFlags.html
+    description: The flag
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: ResolveUpdateDeferredCreationEntities(IComponentUpdateFilter)
+  id: Alis_Core_Ecs_Scene_ResolveUpdateDeferredCreationEntities_Alis_Core_Ecs_Updating_IComponentUpdateFilter_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L580
+  metadata:
+    uid: Alis.Core.Ecs.Scene.ResolveUpdateDeferredCreationEntities(Alis.Core.Ecs.Updating.IComponentUpdateFilter)
+    commentId: M:Alis.Core.Ecs.Scene.ResolveUpdateDeferredCreationEntities(Alis.Core.Ecs.Updating.IComponentUpdateFilter)
+- markdown: Resolves the update deferred creation entities using the specified filter used
+- code: internal void ResolveUpdateDeferredCreationEntities(IComponentUpdateFilter filterUsed)
+- h4: Parameters
+- parameters:
+  - name: filterUsed
+    type:
+    - text: IComponentUpdateFilter
+      url: Alis.Core.Ecs.Updating.IComponentUpdateFilter.html
+    description: The filter used
+- api3: Update()
+  id: Alis_Core_Ecs_Scene_Update
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L365
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Update
+    commentId: M:Alis.Core.Ecs.Scene.Update
+- code: public void Update()
+- api3: Update<T>()
+  id: Alis_Core_Ecs_Scene_Update__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L386
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Update``1
+    commentId: M:Alis.Core.Ecs.Scene.Update``1
+- markdown: >-
+    Updates all component instances in the scene that implement a component interface and have update methods with the
+
+    <code class="typeparamref">T</code> attribute
+- code: 'public void Update<T>() where T : UpdateTypeAttribute'
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of attribute to filter
+- api3: Update(Type)
+  id: Alis_Core_Ecs_Scene_Update_System_Type_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L396
+  metadata:
+    uid: Alis.Core.Ecs.Scene.Update(System.Type)
+    commentId: M:Alis.Core.Ecs.Scene.Update(System.Type)
+- markdown: >-
+    Updates all component instances in the scene that implement a component interface and have update methods with an
+
+    attribute of type <code class="paramref">attributeType</code>
+- code: public void Update(Type attributeType)
+- h4: Parameters
+- parameters:
+  - name: attributeType
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The attribute type to filter
+- api3: UpdateArchetypeTable(int)
+  id: Alis_Core_Ecs_Scene_UpdateArchetypeTable_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L521
+  metadata:
+    uid: Alis.Core.Ecs.Scene.UpdateArchetypeTable(System.Int32)
+    commentId: M:Alis.Core.Ecs.Scene.UpdateArchetypeTable(System.Int32)
+- markdown: Updates the archetype table using the specified new size
+- code: public void UpdateArchetypeTable(int newSize)
+- h4: Parameters
+- parameters:
+  - name: newSize
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The new size
+- api3: UpdateComponent(ComponentId)
+  id: Alis_Core_Ecs_Scene_UpdateComponent_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L419
+  metadata:
+    uid: Alis.Core.Ecs.Scene.UpdateComponent(Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.Scene.UpdateComponent(Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Updates all instances of a specific component type.
+- code: public void UpdateComponent(ComponentId componentType)
+- h4: Parameters
+- parameters:
+  - name: componentType
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: ''
+- api3: ComponentAdded
+  id: Alis_Core_Ecs_Scene_ComponentAdded
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L303
+  metadata:
+    uid: Alis.Core.Ecs.Scene.ComponentAdded
+    commentId: E:Alis.Core.Ecs.Scene.ComponentAdded
+- markdown: Invoked whenever a component is added to an gameObject.
+- code: public event Action<GameObject, ComponentId> ComponentAdded
+- h4: Event Type
+- parameters:
+  - type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-2
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - ','
+    - " "
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- api3: ComponentRemoved
+  id: Alis_Core_Ecs_Scene_ComponentRemoved
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L312
+  metadata:
+    uid: Alis.Core.Ecs.Scene.ComponentRemoved
+    commentId: E:Alis.Core.Ecs.Scene.ComponentRemoved
+- markdown: Invoked whenever a component is removed from an gameObject.
+- code: public event Action<GameObject, ComponentId> ComponentRemoved
+- h4: Event Type
+- parameters:
+  - type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-2
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - ','
+    - " "
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- api3: EntityCreated
+  id: Alis_Core_Ecs_Scene_EntityCreated
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L263
+  metadata:
+    uid: Alis.Core.Ecs.Scene.EntityCreated
+    commentId: E:Alis.Core.Ecs.Scene.EntityCreated
+- markdown: Invoked whenever an gameObject is created on this scene.
+- code: public event Action<GameObject> EntityCreated
+- h4: Event Type
+- parameters:
+  - type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - '>'
+- api3: EntityDeleted
+  id: Alis_Core_Ecs_Scene_EntityDeleted
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L283
+  metadata:
+    uid: Alis.Core.Ecs.Scene.EntityDeleted
+    commentId: E:Alis.Core.Ecs.Scene.EntityDeleted
+- markdown: Invoked whenever an gameObject belonging to this scene is deleted.
+- code: public event Action<GameObject> EntityDeleted
+- h4: Event Type
+- parameters:
+  - type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - '>'
+languageId: csharp
+metadata:
+  description: A collection of entities that can be updated and queried.

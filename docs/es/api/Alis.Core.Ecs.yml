@@ -9,24 +9,307 @@ body:
 - h3: Namespaces
 - parameters:
   - type:
-      text: Alis.Core.Ecs.Component
-      url: Alis.Core.Ecs.Component.html
+      text: Alis.Core.Ecs.Collections
+      url: Alis.Core.Ecs.Collections.html
   - type:
-      text: Alis.Core.Ecs.Entity
-      url: Alis.Core.Ecs.Entity.html
+      text: Alis.Core.Ecs.Components
+      url: Alis.Core.Ecs.Components.html
   - type:
-      text: Alis.Core.Ecs.System
-      url: Alis.Core.Ecs.System.html
+      text: Alis.Core.Ecs.Exceptions
+      url: Alis.Core.Ecs.Exceptions.html
+  - type:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - type:
+      text: Alis.Core.Ecs.Marshalling
+      url: Alis.Core.Ecs.Marshalling.html
+  - type:
+      text: Alis.Core.Ecs.Redifinition
+      url: Alis.Core.Ecs.Redifinition.html
+  - type:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - type:
+      text: Alis.Core.Ecs.Updating
+      url: Alis.Core.Ecs.Updating.html
 - h3: Classes
 - parameters:
   - type:
-      text: VideoGame
-      url: Alis.Core.Ecs.VideoGame.html
-    description: The video game class
+      text: EntityUpdate<TComp, TArg1, TArg2, TArg3, TArg4, TArg5>
+      url: Alis.Core.Ecs.EntityUpdate-6.html
+    description: The gameObject update class
+  - type:
+      text: GameObjectExtensions
+      url: Alis.Core.Ecs.GameObjectExtensions.html
+    description: Deconstruction extensions for entities.
+  - type:
+      text: NeighborCacheAdd<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.NeighborCacheAdd-5.html
+    description: Add-edge neighbor cache for arity 5.
+  - type:
+      text: NeighborCacheAdd<T1, T2>
+      url: Alis.Core.Ecs.NeighborCacheAdd-2.html
+    description: Add-edge neighbor cache for arity 2.
+  - type:
+      text: NeighborCacheAdd<T1, T2, T3>
+      url: Alis.Core.Ecs.NeighborCacheAdd-3.html
+    description: Add-edge neighbor cache for arity 3.
+  - type:
+      text: NeighborCacheAdd<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.NeighborCacheAdd-4.html
+    description: Add-edge neighbor cache for arity 4.
+  - type:
+      text: NeighborCacheAdd<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.NeighborCacheAdd-6.html
+    description: Add-edge neighbor cache for arity 6.
+  - type:
+      text: NeighborCacheAdd<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.NeighborCacheAdd-7.html
+    description: Add-edge neighbor cache for arity 7.
+  - type:
+      text: NeighborCacheAdd<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.NeighborCacheAdd-8.html
+    description: Add-edge neighbor cache for arity 8.
+  - type:
+      text: NeighborCacheAdd<T1>
+      url: Alis.Core.Ecs.NeighborCacheAdd-1.html
+    description: Add-edge neighbor cache for arity 1.
+  - type:
+      text: NeighborCacheComponentIds<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.NeighborCacheComponentIds-8.html
+    description: The neighbor cache component ids class
+  - type:
+      text: NeighborCacheComponentIds<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.NeighborCacheComponentIds-7.html
+    description: The neighbor cache component ids class
+  - type:
+      text: NeighborCacheComponentIds<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.NeighborCacheComponentIds-6.html
+    description: The neighbor cache component ids class
+  - type:
+      text: NeighborCacheComponentIds<T1, T2>
+      url: Alis.Core.Ecs.NeighborCacheComponentIds-2.html
+    description: The neighbor cache component ids class
+  - type:
+      text: NeighborCacheComponentIds<T1, T2, T3>
+      url: Alis.Core.Ecs.NeighborCacheComponentIds-3.html
+    description: The neighbor cache component ids class
+  - type:
+      text: NeighborCacheComponentIds<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.NeighborCacheComponentIds-4.html
+    description: The neighbor cache component ids class
+  - type:
+      text: NeighborCacheComponentIds<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.NeighborCacheComponentIds-5.html
+    description: The neighbor cache component ids class
+  - type:
+      text: NeighborCacheCore
+      url: Alis.Core.Ecs.NeighborCacheCore.html
+    description: The neighbor cache core class
+  - type:
+      text: NeighborCacheRemove<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.NeighborCacheRemove-7.html
+    description: Remove-edge neighbor cache for arity 7.
+  - type:
+      text: NeighborCacheRemove<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.NeighborCacheRemove-8.html
+    description: Remove-edge neighbor cache for arity 8.
+  - type:
+      text: NeighborCacheRemove<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.NeighborCacheRemove-6.html
+    description: Remove-edge neighbor cache for arity 6.
+  - type:
+      text: NeighborCacheRemove<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.NeighborCacheRemove-5.html
+    description: Remove-edge neighbor cache for arity 5.
+  - type:
+      text: NeighborCacheRemove<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.NeighborCacheRemove-4.html
+    description: Remove-edge neighbor cache for arity 4.
+  - type:
+      text: NeighborCacheRemove<T1, T2, T3>
+      url: Alis.Core.Ecs.NeighborCacheRemove-3.html
+    description: Remove-edge neighbor cache for arity 3.
+  - type:
+      text: NeighborCacheRemove<T1>
+      url: Alis.Core.Ecs.NeighborCacheRemove-1.html
+    description: Remove-edge neighbor cache for arity 1.
+  - type:
+      text: NeighborCacheRemove<T1, T2>
+      url: Alis.Core.Ecs.NeighborCacheRemove-2.html
+    description: Remove-edge neighbor cache for arity 2.
+  - type:
+      text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: A collection of entities that can be updated and queried.
+  - type:
+      text: SceneQueryExtensions
+      url: Alis.Core.Ecs.SceneQueryExtensions.html
+    description: Extensions to use query the scene.
+- h3: Structs
+- parameters:
+  - type:
+      text: EntityData
+      url: Alis.Core.Ecs.EntityData.html
+    description: The gameObject data
+  - type:
+      text: EntityHighLow
+      url: Alis.Core.Ecs.EntityHighLow.html
+    description: The gameObject high low
+  - type:
+      text: EntityWorldInfoAccess
+      url: Alis.Core.Ecs.EntityWorldInfoAccess.html
+    description: The gameObject scene info access
+  - type:
+      text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: An GameObject reference; refers to a collection of components of unqiue types.
+  - type:
+      text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The gameObject location
+  - type:
+      text: GameObjectQueryEnumerator<T1, T2>
+      url: Alis.Core.Ecs.GameObjectQueryEnumerator-2.html
+    description: The gameObject query enumerator
+  - type:
+      text: GameObjectQueryEnumerator<T1>
+      url: Alis.Core.Ecs.GameObjectQueryEnumerator-1.html
+    description: The gameObject query enumerator
+  - type:
+      text: GameObjectQueryEnumerator<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.GameObjectQueryEnumerator-4.html
+    description: The gameObject query enumerator
+  - type:
+      text: GameObjectQueryEnumerator<T1, T2, T3>
+      url: Alis.Core.Ecs.GameObjectQueryEnumerator-3.html
+    description: The gameObject query enumerator
+  - type:
+      text: GameObjectQueryEnumerator<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.GameObjectQueryEnumerator-5.html
+    description: The gameObject query enumerator
+  - type:
+      text: GameObjectQueryEnumerator<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.GameObjectQueryEnumerator-8.html
+    description: The gameObject query enumerator
+  - type:
+      text: GameObjectQueryEnumerator<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.GameObjectQueryEnumerator-7.html
+    description: The gameObject query enumerator
+  - type:
+      text: GameObjectQueryEnumerator<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.GameObjectQueryEnumerator-6.html
+    description: The gameObject query enumerator
+  - type:
+      text: GameObjectRefTuple<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.GameObjectRefTuple-7.html
+    description: The gameObject ref tuple
+  - type:
+      text: GameObjectRefTuple<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.GameObjectRefTuple-8.html
+    description: The gameObject ref tuple
+  - type:
+      text: GameObjectRefTuple<T1, T2, T3>
+      url: Alis.Core.Ecs.GameObjectRefTuple-3.html
+    description: The gameObject ref tuple
+  - type:
+      text: GameObjectRefTuple<T1, T2>
+      url: Alis.Core.Ecs.GameObjectRefTuple-2.html
+    description: The gameObject ref tuple
+  - type:
+      text: GameObjectRefTuple<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.GameObjectRefTuple-4.html
+    description: The gameObject ref tuple
+  - type:
+      text: GameObjectRefTuple<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.GameObjectRefTuple-5.html
+    description: The gameObject ref tuple
+  - type:
+      text: GameObjectRefTuple<T1>
+      url: Alis.Core.Ecs.GameObjectRefTuple-1.html
+    description: The gameObject ref tuple
+  - type:
+      text: GameObjectRefTuple<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.GameObjectRefTuple-6.html
+    description: The gameObject ref tuple
+  - type:
+      text: NeighborCache<T>
+      url: Alis.Core.Ecs.NeighborCache-1.html
+    description: The neighbor cache (arity 1).
+  - type:
+      text: NeighborCache<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.NeighborCache-4.html
+    description: The neighbor cache (arity 4).
+  - type:
+      text: NeighborCache<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.NeighborCache-5.html
+    description: The neighbor cache (arity 5).
+  - type:
+      text: NeighborCache<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.NeighborCache-6.html
+    description: The neighbor cache (arity 6).
+  - type:
+      text: NeighborCache<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.NeighborCache-7.html
+    description: The neighbor cache (arity 7).
+  - type:
+      text: NeighborCache<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.NeighborCache-8.html
+    description: The neighbor cache (arity 8).
+  - type:
+      text: NeighborCache<T1, T2, T3>
+      url: Alis.Core.Ecs.NeighborCache-3.html
+    description: The neighbor cache (arity 3).
+  - type:
+      text: NeighborCache<T1, T2>
+      url: Alis.Core.Ecs.NeighborCache-2.html
+    description: The neighbor cache (arity 2).
+  - type:
+      text: QueryEnumerable<T1, T2, T3, T4, T5, T6, T7>
+      url: Alis.Core.Ecs.QueryEnumerable-7.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerable<T1, T2, T3, T4, T5, T6, T7, T8>
+      url: Alis.Core.Ecs.QueryEnumerable-8.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerable<T1>
+      url: Alis.Core.Ecs.QueryEnumerable-1.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerable<T1, T2>
+      url: Alis.Core.Ecs.QueryEnumerable-2.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerable<T1, T2, T3>
+      url: Alis.Core.Ecs.QueryEnumerable-3.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerable<T1, T2, T3, T4>
+      url: Alis.Core.Ecs.QueryEnumerable-4.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerable<T1, T2, T3, T4, T5>
+      url: Alis.Core.Ecs.QueryEnumerable-5.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: QueryEnumerable<T1, T2, T3, T4, T5, T6>
+      url: Alis.Core.Ecs.QueryEnumerable-6.html
+    description: Proxy type for foreach syntax
+  - type:
+      text: WorldArchetypeTableItem
+      url: Alis.Core.Ecs.WorldArchetypeTableItem.html
+    description: The scene archetype table item
 - h3: Interfaces
 - parameters:
   - type:
-      text: IGame
-      url: Alis.Core.Ecs.IGame.html
-    description: The game interface
+      text: IArchetypeGraphEdge
+      url: Alis.Core.Ecs.IArchetypeGraphEdge.html
+    description: The archetype graph edge interface
+- h3: Enums
+- parameters:
+  - type:
+      text: GameObjectFlags
+      url: Alis.Core.Ecs.GameObjectFlags.html
+    description: The gameObject flags enum
 languageId: csharp

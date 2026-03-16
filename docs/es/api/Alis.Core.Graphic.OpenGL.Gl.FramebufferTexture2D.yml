@@ -1,0 +1,43 @@
+### YamlMime:ApiPage
+title: Delegate Gl.FramebufferTexture2D
+body:
+- api1: Delegate Gl.FramebufferTexture2D
+  id: Alis_Core_Graphic_OpenGL_Gl_FramebufferTexture2D
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L60
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.FramebufferTexture2D
+    commentId: T:Alis.Core.Graphic.OpenGL.Gl.FramebufferTexture2D
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The framebuffer texture
+- code: public delegate void Gl.FramebufferTexture2D(FramebufferTarget target, FramebufferAttachment attachment, TextureTarget texTarget, uint texture, int level)
+- h4: Parameters
+- parameters:
+  - name: target
+    type:
+    - text: FramebufferTarget
+      url: Alis.Core.Graphic.OpenGL.FramebufferTarget.html
+  - name: attachment
+    type:
+    - text: FramebufferAttachment
+      url: Alis.Core.Graphic.OpenGL.FramebufferAttachment.html
+  - name: texTarget
+    type:
+    - text: TextureTarget
+      url: Alis.Core.Graphic.OpenGL.Enums.TextureTarget.html
+  - name: texture
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: level
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: The framebuffer texture

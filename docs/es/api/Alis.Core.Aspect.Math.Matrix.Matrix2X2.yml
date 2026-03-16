@@ -3,7 +3,7 @@ title: Struct Matrix2X2
 body:
 - api1: Struct Matrix2X2
   id: Alis_Core_Aspect_Math_Matrix_Matrix2X2
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L37
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L38
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2
     commentId: T:Alis.Core.Aspect.Math.Matrix.Matrix2X2
@@ -33,7 +33,7 @@ body:
 - h2: Constructors
 - api3: Matrix2X2(float, float, float, float)
   id: Alis_Core_Aspect_Math_Matrix_Matrix2X2__ctor_System_Single_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L52
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L54
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.#ctor(System.Single,System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix2X2.#ctor(System.Single,System.Single,System.Single,System.Single)
@@ -59,7 +59,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Matrix2X2(float)
   id: Alis_Core_Aspect_Math_Matrix_Matrix2X2__ctor_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L62
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L64
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.#ctor(System.Single)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix2X2.#ctor(System.Single)
@@ -77,33 +77,33 @@ body:
 - h2: Properties
 - api3: Ex
   id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_Ex
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L42
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L44
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.Ex
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix2X2.Ex
 - markdown: The col
-- code: public Vector2 Ex { readonly get; set; }
+- code: public Vector2F Ex { readonly get; set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: Ey
   id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_Ey
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L47
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L49
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.Ey
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix2X2.Ey
 - markdown: The col
-- code: public Vector2 Ey { readonly get; set; }
+- code: public Vector2F Ey { readonly get; set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: Inverse
   id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_Inverse
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L159
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L161
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.Inverse
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix2X2.Inverse
@@ -117,7 +117,7 @@ body:
 - h2: Methods
 - api3: GetAngle()
   id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_GetAngle
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L99
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L101
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.GetAngle
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix2X2.GetAngle
@@ -130,7 +130,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: GetInverse()
   id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_GetInverse
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L104
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L106
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.GetInverse
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix2X2.GetInverse
@@ -141,27 +141,27 @@ body:
   - type:
     - text: Matrix2X2
       url: Alis.Core.Aspect.Math.Matrix.Matrix2X2.html
-- api3: Set(Vector2, Vector2)
-  id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_Set_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L72
+- api3: Set(Vector2F, Vector2F)
+  id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_Set_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L74
   metadata:
-    uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.Set(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix2X2.Set(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.Set(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix2X2.Set(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Initialize this matrix using columns.
-- code: public void Set(Vector2 c1, Vector2 c2)
+- code: public void Set(Vector2F c1, Vector2F c2)
 - h4: Parameters
 - parameters:
   - name: c1
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
   - name: c2
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: SetIdentity()
   id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_SetIdentity
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L81
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L83
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.SetIdentity
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix2X2.SetIdentity
@@ -169,38 +169,38 @@ body:
 - code: public void SetIdentity()
 - api3: SetZero()
   id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_SetZero
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L90
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L92
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.SetZero
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix2X2.SetZero
 - markdown: Set this matrix to all zeros.
 - code: public void SetZero()
-- api3: Solve(Vector2)
-  id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_Solve_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L128
+- api3: Solve(Vector2F)
+  id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_Solve_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L130
   metadata:
-    uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.Solve(Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix2X2.Solve(Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.Solve(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix2X2.Solve(Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: >-
     Solve A * x = b, where b is a column vector. This is more efficient
 
     than computing the inverse in one-shot cases.
-- code: public Vector2 Solve(Vector2 b)
+- code: public Vector2F Solve(Vector2F b)
 - h4: Parameters
 - parameters:
   - name: b
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - h2: Operators
 - api3: operator +(Matrix2X2, Matrix2X2)
   id: Alis_Core_Aspect_Math_Matrix_Matrix2X2_op_Addition_Alis_Core_Aspect_Math_Matrix_Matrix2X2_Alis_Core_Aspect_Math_Matrix_Matrix2X2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L149
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix2X2.cs#L151
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix2X2.op_Addition(Alis.Core.Aspect.Math.Matrix.Matrix2X2,Alis.Core.Aspect.Math.Matrix.Matrix2X2)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix2X2.op_Addition(Alis.Core.Aspect.Math.Matrix.Matrix2X2,Alis.Core.Aspect.Math.Matrix.Matrix2X2)

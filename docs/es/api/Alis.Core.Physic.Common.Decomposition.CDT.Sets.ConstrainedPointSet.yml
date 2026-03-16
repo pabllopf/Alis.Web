@@ -15,7 +15,7 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The constrained point set class
-- code: 'internal class ConstrainedPointSet : PointSet, Triangulatable'
+- code: 'internal class ConstrainedPointSet : PointSet, ITriangulatable'
 - h4: Inheritance
 - inheritance:
   - text: object
@@ -26,14 +26,14 @@ body:
     url: Alis.Core.Physic.Common.Decomposition.CDT.Sets.ConstrainedPointSet.html
 - h4: Implements
 - list:
-  - text: Triangulatable
-    url: Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable.html
+  - text: ITriangulatable
+    url: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.html
 - h4: Inherited Members
 - list:
-  - text: PointSet.Points
-    url: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.html#Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_Points
-  - text: PointSet.Triangles
-    url: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.html#Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_Triangles
+  - text: PointSet.GetPoints
+    url: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.html#Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_GetPoints
+  - text: PointSet.GetTriangles
+    url: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.html#Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_GetTriangles
   - text: PointSet.TriangulationMode
     url: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.html#Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_TriangulationMode
   - text: PointSet.AddTriangle(DelaunayTriangle)
@@ -161,6 +161,20 @@ body:
     - text: TriangulationMode
       url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationMode.html
 - h2: Methods
+- api3: IsValid()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_ConstrainedPointSet_IsValid
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/ConstrainedPointSet.cs#L119
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Sets.ConstrainedPointSet.IsValid
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Sets.ConstrainedPointSet.IsValid
+- markdown: Describes whether this instance is valid
+- code: public bool IsValid()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
 - api3: PrepareTriangulation(TriangulationContext)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_ConstrainedPointSet_PrepareTriangulation_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/ConstrainedPointSet.cs#L89
@@ -176,20 +190,6 @@ body:
     - text: TriangulationContext
       url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html
     description: The tcx
-- api3: isValid()
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_ConstrainedPointSet_isValid
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/ConstrainedPointSet.cs#L119
-  metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Sets.ConstrainedPointSet.isValid
-    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Sets.ConstrainedPointSet.isValid
-- markdown: Describes whether this instance is valid
-- code: public bool isValid()
-- h4: Returns
-- parameters:
-  - type:
-    - text: bool
-      url: https://learn.microsoft.com/dotnet/api/system.boolean
-    description: The bool
 - h2: See Also
 - list:
   - - text: PointSet

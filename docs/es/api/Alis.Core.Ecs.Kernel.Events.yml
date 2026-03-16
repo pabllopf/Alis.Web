@@ -1,0 +1,43 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Kernel.Events
+body:
+- api1: Namespace Alis.Core.Ecs.Kernel.Events
+  id: Alis_Core_Ecs_Kernel_Events
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events
+    commentId: N:Alis.Core.Ecs.Kernel.Events
+- h3: Classes
+- parameters:
+  - type:
+      text: EventRecord
+      url: Alis.Core.Ecs.Kernel.Events.EventRecord.html
+    description: The event record class
+  - type:
+      text: GenericEvent
+      url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+    description: A collection of <xref href="Alis.Core.Ecs.Kernel.Events.IGenericAction%601" data-throw-if-not-resolved="false"></xref> instances which can be added to or removed from.
+- h3: Structs
+- parameters:
+  - type:
+      text: ComponentEvent
+      url: Alis.Core.Ecs.Kernel.Events.ComponentEvent.html
+    description: The component event
+  - type:
+      text: Event<T>
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    description: The event
+  - type:
+      text: GameObjectOnlyEvent
+      url: Alis.Core.Ecs.Kernel.Events.GameObjectOnlyEvent.html
+    description: The gameObject only event
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IGenericAction
+      url: Alis.Core.Ecs.Kernel.Events.IGenericAction.html
+    description: An generic action with known parameter
+  - type:
+      text: IGenericAction<TParam>
+      url: Alis.Core.Ecs.Kernel.Events.IGenericAction-1.html
+    description: An generic action with known parameter
+languageId: csharp

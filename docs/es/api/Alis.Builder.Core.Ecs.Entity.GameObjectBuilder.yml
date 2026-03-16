@@ -1,0 +1,504 @@
+### YamlMime:ApiPage
+title: Class GameObjectBuilder
+body:
+- api1: Class GameObjectBuilder
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L49
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder
+    commentId: T:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Builder.Core.Ecs.Entity
+      url: Alis.Builder.Core.Ecs.Entity.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The game object builder class
+- code: 'public class GameObjectBuilder : IBuild<GameObject>'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: GameObjectBuilder
+    url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+- h4: Implements
+- list:
+  - text: IBuild<GameObject>
+    url: Alis.Core.Aspect.Fluent.IBuild-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: GameObjectBuilder(Scene, Context)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder__ctor_Alis_Core_Ecs_Scene_Alis_Core_Ecs_Systems_Scope_Context_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L84
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.#ctor(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Systems.Scope.Context)
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.#ctor(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Systems.Scope.Context)
+- markdown: Initializes a new instance of the <xref href="Alis.Builder.Core.Ecs.Entity.GameObjectBuilder" data-throw-if-not-resolved="false"></xref> class
+- code: public GameObjectBuilder(Scene scene, Context context)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    description: The context
+- h2: Fields
+- api3: context
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L54
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.context
+    commentId: F:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.context
+- markdown: The context
+- code: private readonly Context context
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- api3: gameObject
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_gameObject
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L64
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.gameObject
+    commentId: F:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.gameObject
+- markdown: The game object
+- code: private GameObject gameObject
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+- api3: info
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_info
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L69
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.info
+    commentId: F:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.info
+- markdown: The is static
+- code: private Info info
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Info
+      url: Alis.Core.Ecs.Components.Info.html
+- api3: scene
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_scene
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L59
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.scene
+    commentId: F:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.scene
+- markdown: The scene
+- code: private readonly Scene scene
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h2: Methods
+- api3: Build()
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_Build
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L95
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.Build
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.Build
+- markdown: Builds this instance
+- code: public GameObject Build()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The dictionary of components
+- api3: Id(int)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_Id_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L287
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.Id(System.Int32)
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.Id(System.Int32)
+- markdown: Ids the id
+- code: public GameObjectBuilder Id(int id)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The id
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- api3: IsActive(bool)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_IsActive_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L298
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.IsActive(System.Boolean)
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.IsActive(System.Boolean)
+- markdown: Ises the active using the specified is active
+- code: public GameObjectBuilder IsActive(bool isActive)
+- h4: Parameters
+- parameters:
+  - name: isActive
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The is active
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- api3: IsActive()
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_IsActive
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L318
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.IsActive
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.IsActive
+- markdown: Ises the active
+- code: public GameObjectBuilder IsActive()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- api3: IsStatic(bool)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_IsStatic_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L340
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.IsStatic(System.Boolean)
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.IsStatic(System.Boolean)
+- markdown: Ises the static using the specified is static
+- code: public GameObjectBuilder IsStatic(bool isStatic)
+- h4: Parameters
+- parameters:
+  - name: isStatic
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The is static
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- api3: IsStatic()
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_IsStatic
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L360
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.IsStatic
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.IsStatic
+- markdown: Ises the static
+- code: public GameObjectBuilder IsStatic()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- api3: Name(string)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_Name_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L244
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.Name(System.String)
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.Name(System.String)
+- markdown: Names the camera
+- code: public GameObjectBuilder Name(string name)
+- h4: Parameters
+- parameters:
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The camera
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- api3: Tag(string)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_Tag_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L266
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.Tag(System.String)
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.Tag(System.String)
+- markdown: Tags the tag
+- code: public GameObjectBuilder Tag(string tag)
+- h4: Parameters
+- parameters:
+  - name: tag
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The tag
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- api3: Transform(Action<TransformBuilder>)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_Transform_System_Action_Alis_Builder_Core_Ecs_Entity_TransformBuilder__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L102
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.Transform(System.Action{Alis.Builder.Core.Ecs.Entity.TransformBuilder})
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.Transform(System.Action{Alis.Builder.Core.Ecs.Entity.TransformBuilder})
+- markdown: Transforms the config
+- code: public GameObjectBuilder Transform(Action<TransformBuilder> config)
+- h4: Parameters
+- parameters:
+  - name: config
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - text: TransformBuilder
+      url: Alis.Builder.Core.Ecs.Entity.TransformBuilder.html
+    - '>'
+    description: The config
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- api3: WithComponent<T>(AnimatorConfig<T>)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_WithComponent__1_Alis_Builder_Core_Ecs_Entity_AnimatorConfig___0__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L116
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(Alis.Builder.Core.Ecs.Entity.AnimatorConfig{``0})
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(Alis.Builder.Core.Ecs.Entity.AnimatorConfig{``0})
+- markdown: Adds the component using the specified config
+- code: 'public GameObjectBuilder WithComponent<T>(AnimatorConfig<T> config) where T : IAnimator, new()'
+- h4: Parameters
+- parameters:
+  - name: config
+    type:
+    - text: AnimatorConfig
+      url: Alis.Builder.Core.Ecs.Entity.AnimatorConfig-1.html
+    - <
+    - T
+    - '>'
+    description: The config
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: WithComponent<T>(CameraConfig<T>)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_WithComponent__1_Alis_Builder_Core_Ecs_Entity_CameraConfig___0__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L130
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(Alis.Builder.Core.Ecs.Entity.CameraConfig{``0})
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(Alis.Builder.Core.Ecs.Entity.CameraConfig{``0})
+- markdown: Adds the component using the specified config
+- code: 'public GameObjectBuilder WithComponent<T>(CameraConfig<T> config) where T : ICamera, new()'
+- h4: Parameters
+- parameters:
+  - name: config
+    type:
+    - text: CameraConfig
+      url: Alis.Builder.Core.Ecs.Entity.CameraConfig-1.html
+    - <
+    - T
+    - '>'
+    description: The config
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: WithComponent<T>(SpriteConfig<T>)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_WithComponent__1_Alis_Builder_Core_Ecs_Entity_SpriteConfig___0__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L144
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(Alis.Builder.Core.Ecs.Entity.SpriteConfig{``0})
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(Alis.Builder.Core.Ecs.Entity.SpriteConfig{``0})
+- markdown: Adds the component using the specified config
+- code: 'public GameObjectBuilder WithComponent<T>(SpriteConfig<T> config) where T : ISprite, new()'
+- h4: Parameters
+- parameters:
+  - name: config
+    type:
+    - text: SpriteConfig
+      url: Alis.Builder.Core.Ecs.Entity.SpriteConfig-1.html
+    - <
+    - T
+    - '>'
+    description: The config
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: WithComponent<T>(AudioSourceConfig<T>)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_WithComponent__1_Alis_Builder_Core_Ecs_Components_Audio_AudioSourceConfig___0__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L158
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(Alis.Builder.Core.Ecs.Components.Audio.AudioSourceConfig{``0})
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(Alis.Builder.Core.Ecs.Components.Audio.AudioSourceConfig{``0})
+- markdown: Adds the component using the specified config
+- code: 'public GameObjectBuilder WithComponent<T>(AudioSourceConfig<T> config) where T : IAudioSource, new()'
+- h4: Parameters
+- parameters:
+  - name: config
+    type:
+    - text: AudioSourceConfig
+      url: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceConfig-1.html
+    - <
+    - T
+    - '>'
+    description: The config
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: WithComponent<T>(BoxColliderConfig<T>)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_WithComponent__1_Alis_Builder_Core_Ecs_Components_Collider_BoxColliderConfig___0__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L173
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(Alis.Builder.Core.Ecs.Components.Collider.BoxColliderConfig{``0})
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(Alis.Builder.Core.Ecs.Components.Collider.BoxColliderConfig{``0})
+- markdown: Adds the component using the specified config
+- code: 'public GameObjectBuilder WithComponent<T>(BoxColliderConfig<T> config) where T : IBoxCollider, new()'
+- h4: Parameters
+- parameters:
+  - name: config
+    type:
+    - text: BoxColliderConfig
+      url: Alis.Builder.Core.Ecs.Components.Collider.BoxColliderConfig-1.html
+    - <
+    - T
+    - '>'
+    description: The config
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: WithComponent<T>(Action<T>)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_WithComponent__1_System_Action___0__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L188
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(System.Action{``0})
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(System.Action{``0})
+- markdown: Adds the component using the specified config
+- code: 'public GameObjectBuilder WithComponent<T>(Action<T> config) where T : IOnUpdate, new()'
+- h4: Parameters
+- parameters:
+  - name: config
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - T
+    - '>'
+    description: The config
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: WithComponent<T>()
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_WithComponent__1
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L208
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1
+- markdown: Adds the component
+- code: 'public GameObjectBuilder WithComponent<T>() where T : IOnUpdate, new()'
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: WithComponent<T>(T)
+  id: Alis_Builder_Core_Ecs_Entity_GameObjectBuilder_WithComponent__1___0_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/GameObjectBuilder.cs#L228
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(``0)
+    commentId: M:Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.WithComponent``1(``0)
+- markdown: Adds the component using the specified component
+- code: 'public GameObjectBuilder WithComponent<T>(T component) where T : IOnUpdate, new()'
+- h4: Parameters
+- parameters:
+  - name: component
+    type:
+    - T
+    description: The component
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectBuilder
+      url: Alis.Builder.Core.Ecs.Entity.GameObjectBuilder.html
+    description: The game object builder
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+languageId: csharp
+metadata:
+  description: The game object builder class

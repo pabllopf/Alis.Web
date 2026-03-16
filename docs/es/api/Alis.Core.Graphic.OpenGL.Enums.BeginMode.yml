@@ -1,0 +1,83 @@
+### YamlMime:ApiPage
+title: Enum BeginMode
+body:
+- api1: Enum BeginMode
+  id: Alis_Core_Graphic_OpenGL_Enums_BeginMode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/BeginMode.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.BeginMode
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.BeginMode
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The begin mode enum
+- code: public enum BeginMode
+- h2: Fields
+- parameters:
+  - name: Points
+    default: "0"
+    description: >+
+      The points begin mode
+
+  - name: Lines
+    default: "1"
+    description: >+
+      The lines begin mode
+
+  - name: LineLoop
+    default: "2"
+    description: >+
+      The line loop begin mode
+
+  - name: LineStrip
+    default: "3"
+    description: >+
+      The line strip begin mode
+
+  - name: Triangles
+    default: "4"
+    description: >+
+      The triangles begin mode
+
+  - name: TriangleStrip
+    default: "5"
+    description: >+
+      The triangle strip begin mode
+
+  - name: TriangleFan
+    default: "6"
+    description: >+
+      The triangle fan begin mode
+
+  - name: LinesAdjacency
+    default: "10"
+    description: >+
+      The lines adjacency begin mode
+
+  - name: LineStripAdjacency
+    default: "11"
+    description: >+
+      The line strip adjacency begin mode
+
+  - name: TrianglesAdjacency
+    default: "12"
+    description: >+
+      The triangles adjacency begin mode
+
+  - name: TriangleStripAdjacency
+    default: "13"
+    description: >+
+      The triangle strip adjacency begin mode
+
+  - name: Patches
+    default: "14"
+    description: >+
+      The patches begin mode
+
+languageId: csharp
+metadata:
+  description: The begin mode enum

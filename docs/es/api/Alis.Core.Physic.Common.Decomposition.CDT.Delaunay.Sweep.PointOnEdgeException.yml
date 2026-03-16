@@ -36,8 +36,6 @@ body:
 - list:
   - text: Exception.GetBaseException()
     url: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
-  - text: Exception.GetObjectData(SerializationInfo, StreamingContext)
-    url: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
   - text: Exception.GetType()
     url: https://learn.microsoft.com/dotnet/api/system.exception.gettype
   - text: Exception.ToString()

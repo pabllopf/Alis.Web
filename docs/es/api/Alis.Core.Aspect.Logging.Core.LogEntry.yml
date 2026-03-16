@@ -1,0 +1,247 @@
+### YamlMime:ApiPage
+title: Class LogEntry
+body:
+- api1: Class LogEntry
+  id: Alis_Core_Aspect_Logging_Core_LogEntry
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Core/LogEntry.cs#L42
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core.LogEntry
+    commentId: T:Alis.Core.Aspect.Logging.Core.LogEntry
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Core
+      url: Alis.Core.Aspect.Logging.Core.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Default implementation of ILogEntry containing all log data.
+
+    Immutable after creation to ensure thread safety.
+
+    AOT-compatible: No reflection, value-based semantics.
+- code: 'public sealed class LogEntry : ILogEntry'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: LogEntry
+    url: Alis.Core.Aspect.Logging.Core.LogEntry.html
+- h4: Implements
+- list:
+  - text: ILogEntry
+    url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: LogEntry(LogLevel, string, string, Exception, string, IReadOnlyDictionary<string, object>, IReadOnlyList<object>)
+  id: Alis_Core_Aspect_Logging_Core_LogEntry__ctor_Alis_Core_Aspect_Logging_Abstractions_LogLevel_System_String_System_String_System_Exception_System_String_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__System_Collections_Generic_IReadOnlyList_System_Object__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Core/LogEntry.cs#L54
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core.LogEntry.#ctor(Alis.Core.Aspect.Logging.Abstractions.LogLevel,System.String,System.String,System.Exception,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Collections.Generic.IReadOnlyList{System.Object})
+    commentId: M:Alis.Core.Aspect.Logging.Core.LogEntry.#ctor(Alis.Core.Aspect.Logging.Abstractions.LogLevel,System.String,System.String,System.Exception,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Collections.Generic.IReadOnlyList{System.Object})
+- markdown: Initializes a new instance of the LogEntry class.
+- code: public LogEntry(LogLevel level, string message, string loggerName, Exception exception = null, string correlationId = null, IReadOnlyDictionary<string, object> properties = null, IReadOnlyList<object> scopes = null)
+- h4: Parameters
+- parameters:
+  - name: level
+    type:
+    - text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+    description: The log level.
+  - name: message
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The log message.
+  - name: loggerName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The logger name.
+  - name: exception
+    type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: The exception, if any.
+    optional: true
+  - name: correlationId
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The correlation ID for tracing.
+    optional: true
+  - name: properties
+    type:
+    - text: IReadOnlyDictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    - '>'
+    description: Structured properties of the log.
+    optional: true
+  - name: scopes
+    type:
+    - text: IReadOnlyList
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+    - <
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    - '>'
+    description: The scope stack.
+    optional: true
+- h2: Properties
+- api3: CorrelationId
+  id: Alis_Core_Aspect_Logging_Core_LogEntry_CorrelationId
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Core/LogEntry.cs#L114
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core.LogEntry.CorrelationId
+    commentId: P:Alis.Core.Aspect.Logging.Core.LogEntry.CorrelationId
+- markdown: Gets the value of the correlation id
+- code: public string CorrelationId { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Exception
+  id: Alis_Core_Aspect_Logging_Core_LogEntry_Exception
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Core/LogEntry.cs#L102
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core.LogEntry.Exception
+    commentId: P:Alis.Core.Aspect.Logging.Core.LogEntry.Exception
+- markdown: Gets the value of the exception
+- code: public Exception Exception { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+- api3: Level
+  id: Alis_Core_Aspect_Logging_Core_LogEntry_Level
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Core/LogEntry.cs#L78
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core.LogEntry.Level
+    commentId: P:Alis.Core.Aspect.Logging.Core.LogEntry.Level
+- markdown: Gets the value of the level
+- code: public LogLevel Level { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+- api3: LoggerName
+  id: Alis_Core_Aspect_Logging_Core_LogEntry_LoggerName
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Core/LogEntry.cs#L96
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core.LogEntry.LoggerName
+    commentId: P:Alis.Core.Aspect.Logging.Core.LogEntry.LoggerName
+- markdown: Gets the value of the logger name
+- code: public string LoggerName { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Message
+  id: Alis_Core_Aspect_Logging_Core_LogEntry_Message
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Core/LogEntry.cs#L84
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core.LogEntry.Message
+    commentId: P:Alis.Core.Aspect.Logging.Core.LogEntry.Message
+- markdown: Gets the value of the message
+- code: public string Message { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Properties
+  id: Alis_Core_Aspect_Logging_Core_LogEntry_Properties
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Core/LogEntry.cs#L120
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core.LogEntry.Properties
+    commentId: P:Alis.Core.Aspect.Logging.Core.LogEntry.Properties
+- markdown: Gets the value of the properties
+- code: public IReadOnlyDictionary<string, object> Properties { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: IReadOnlyDictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    - '>'
+- api3: Scopes
+  id: Alis_Core_Aspect_Logging_Core_LogEntry_Scopes
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Core/LogEntry.cs#L126
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core.LogEntry.Scopes
+    commentId: P:Alis.Core.Aspect.Logging.Core.LogEntry.Scopes
+- markdown: Gets the value of the scopes
+- code: public IReadOnlyList<object> Scopes { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: IReadOnlyList
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+    - <
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    - '>'
+- api3: ThreadId
+  id: Alis_Core_Aspect_Logging_Core_LogEntry_ThreadId
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Core/LogEntry.cs#L108
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core.LogEntry.ThreadId
+    commentId: P:Alis.Core.Aspect.Logging.Core.LogEntry.ThreadId
+- markdown: Gets the value of the thread id
+- code: public int ThreadId { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Timestamp
+  id: Alis_Core_Aspect_Logging_Core_LogEntry_Timestamp
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Core/LogEntry.cs#L90
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Core.LogEntry.Timestamp
+    commentId: P:Alis.Core.Aspect.Logging.Core.LogEntry.Timestamp
+- markdown: Gets the value of the timestamp
+- code: public DateTime Timestamp { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DateTime
+      url: https://learn.microsoft.com/dotnet/api/system.datetime
+languageId: csharp
+metadata:
+  description: >-
+    Default implementation of ILogEntry containing all log data.
+
+    Immutable after creation to ensure thread safety.
+
+    AOT-compatible: No reflection, value-based semantics.

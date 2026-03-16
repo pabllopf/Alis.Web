@@ -1,0 +1,46 @@
+### YamlMime:ApiPage
+title: Interface IJsonDeserializer
+body:
+- api1: Interface IJsonDeserializer
+  id: Alis_Core_Aspect_Data_Json_Deserialization_IJsonDeserializer
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Deserialization/IJsonDeserializer.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Deserialization.IJsonDeserializer
+    commentId: T:Alis.Core.Aspect.Data.Json.Deserialization.IJsonDeserializer
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Data.Json.Deserialization
+      url: Alis.Core.Aspect.Data.Json.Deserialization.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Defines a contract for deserializing JSON strings into objects.
+- code: public interface IJsonDeserializer
+- h2: Methods
+- api3: Deserialize<T>(string)
+  id: Alis_Core_Aspect_Data_Json_Deserialization_IJsonDeserializer_Deserialize__1_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Data/src/Json/Deserialization/IJsonDeserializer.cs#L43
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Deserialization.IJsonDeserializer.Deserialize``1(System.String)
+    commentId: M:Alis.Core.Aspect.Data.Json.Deserialization.IJsonDeserializer.Deserialize``1(System.String)
+- markdown: Deserializes a JSON string into an object of the specified type.
+- code: 'T Deserialize<T>(string json) where T : IJsonSerializable, IJsonDesSerializable<T>, new()'
+- h4: Parameters
+- parameters:
+  - name: json
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The JSON string to deserialize.
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: An instance of the specified type populated with data from the JSON.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The target type, which must implement IJsonSerializable and IJsonDesSerializable&lt;T&gt;.
+languageId: csharp
+metadata:
+  description: Defines a contract for deserializing JSON strings into objects.

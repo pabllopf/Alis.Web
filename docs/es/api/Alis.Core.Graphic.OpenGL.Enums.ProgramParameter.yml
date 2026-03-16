@@ -1,0 +1,108 @@
+### YamlMime:ApiPage
+title: Enum ProgramParameter
+body:
+- api1: Enum ProgramParameter
+  id: Alis_Core_Graphic_OpenGL_Enums_ProgramParameter
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/ProgramParameter.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.ProgramParameter
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.ProgramParameter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The program parameter enum
+- code: public enum ProgramParameter
+- h2: Fields
+- parameters:
+  - name: ActiveUniformBlockMaxNameLength
+    default: "35381"
+    description: >+
+      The active uniform block max name length program parameter
+
+  - name: ActiveUniformBlocks
+    default: "35382"
+    description: >+
+      The active uniform blocks program parameter
+
+  - name: DeleteStatus
+    default: "35712"
+    description: >+
+      The delete status program parameter
+
+  - name: LinkStatus
+    default: "35714"
+    description: >+
+      The link status program parameter
+
+  - name: ValidateStatus
+    default: "35715"
+    description: >+
+      The validate status program parameter
+
+  - name: InfoLogLength
+    default: "35716"
+    description: >+
+      The info log length program parameter
+
+  - name: AttachedShaders
+    default: "35717"
+    description: >+
+      The attached shaders program parameter
+
+  - name: ActiveUniforms
+    default: "35718"
+    description: >+
+      The active uniforms program parameter
+
+  - name: ActiveUniformMaxLength
+    default: "35719"
+    description: >+
+      The active uniform max length program parameter
+
+  - name: ActiveAttributes
+    default: "35721"
+    description: >+
+      The active attributes program parameter
+
+  - name: ActiveAttributeMaxLength
+    default: "35722"
+    description: >+
+      The active attribute max length program parameter
+
+  - name: TransformFeedbackVaryingMaxLength
+    default: "35958"
+    description: >+
+      The transform feedback varying max length program parameter
+
+  - name: TransformFeedbackBufferMode
+    default: "35967"
+    description: >+
+      The transform feedback buffer mode program parameter
+
+  - name: TransformFeedbackVaryings
+    default: "35971"
+    description: >+
+      The transform feedback varyings program parameter
+
+  - name: GeometryVerticesOut
+    default: "36314"
+    description: >+
+      The geometry vertices out program parameter
+
+  - name: GeometryInputType
+    default: "36315"
+    description: >+
+      The geometry input type program parameter
+
+  - name: GeometryOutputType
+    default: "36316"
+    description: >+
+      The geometry output type program parameter
+
+languageId: csharp
+metadata:
+  description: The program parameter enum

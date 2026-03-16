@@ -1,0 +1,33 @@
+### YamlMime:ApiPage
+title: Enum ParamType
+body:
+- api1: Enum ParamType
+  id: Alis_Core_Graphic_OpenGL_Constructs_ParamType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/ParamType.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.ParamType
+    commentId: T:Alis.Core.Graphic.OpenGL.Constructs.ParamType
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Constructs
+      url: Alis.Core.Graphic.OpenGL.Constructs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The param type enum
+- code: public enum ParamType
+- h2: Fields
+- parameters:
+  - name: Uniform
+    default: "0"
+    description: >+
+      The uniform param type
+
+  - name: Attribute
+    default: "1"
+    description: >+
+      The attribute param type
+
+languageId: csharp
+metadata:
+  description: The param type enum

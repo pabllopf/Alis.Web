@@ -1,0 +1,133 @@
+### YamlMime:ApiPage
+title: Struct ComponentData
+body:
+- api1: Struct ComponentData
+  id: Alis_Core_Ecs_Kernel_ComponentData
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentData.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentData
+    commentId: T:Alis.Core.Ecs.Kernel.ComponentData
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Component metadata
+- code: 'public record struct ComponentData : IEquatable<ComponentData>'
+- h4: Implements
+- list:
+  - text: IEquatable<ComponentData>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 32 bytes total (four references, 8 bytes each)
+
+    Pack = 8 for optimal alignment with reference types on 64-bit architectures
+- h2: Constructors
+- api3: ComponentData(Type, IdTable, Delegate, Delegate)
+  id: Alis_Core_Ecs_Kernel_ComponentData__ctor_System_Type_Alis_Core_Ecs_Collections_IdTable_System_Delegate_System_Delegate_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentData.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentData.#ctor(System.Type,Alis.Core.Ecs.Collections.IdTable,System.Delegate,System.Delegate)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentData.#ctor(System.Type,Alis.Core.Ecs.Collections.IdTable,System.Delegate,System.Delegate)
+- markdown: Component metadata
+- code: public ComponentData(Type Type, IdTable Storage, Delegate Initer, Delegate Destroyer)
+- h4: Parameters
+- parameters:
+  - name: Type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The component type
+  - name: Storage
+    type:
+    - text: IdTable
+      url: Alis.Core.Ecs.Collections.IdTable.html
+    description: The storage table
+  - name: Initer
+    type:
+    - text: Delegate
+      url: https://learn.microsoft.com/dotnet/api/system.delegate
+    description: The initializer delegate
+  - name: Destroyer
+    type:
+    - text: Delegate
+      url: https://learn.microsoft.com/dotnet/api/system.delegate
+    description: The destroyer delegate
+- h4: Remarks
+- markdown: >-
+    Memory layout optimized: 32 bytes total (four references, 8 bytes each)
+
+    Pack = 8 for optimal alignment with reference types on 64-bit architectures
+- h2: Properties
+- api3: Destroyer
+  id: Alis_Core_Ecs_Kernel_ComponentData_Destroyer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentData.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentData.Destroyer
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentData.Destroyer
+- markdown: The destroyer delegate
+- code: public Delegate Destroyer { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Delegate
+      url: https://learn.microsoft.com/dotnet/api/system.delegate
+- api3: Initer
+  id: Alis_Core_Ecs_Kernel_ComponentData_Initer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentData.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentData.Initer
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentData.Initer
+- markdown: The initializer delegate
+- code: public Delegate Initer { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Delegate
+      url: https://learn.microsoft.com/dotnet/api/system.delegate
+- api3: Storage
+  id: Alis_Core_Ecs_Kernel_ComponentData_Storage
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentData.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentData.Storage
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentData.Storage
+- markdown: The storage table
+- code: public IdTable Storage { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: IdTable
+      url: Alis.Core.Ecs.Collections.IdTable.html
+- api3: Type
+  id: Alis_Core_Ecs_Kernel_ComponentData_Type
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentData.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentData.Type
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentData.Type
+- markdown: The component type
+- code: public Type Type { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+languageId: csharp
+metadata:
+  description: Component metadata

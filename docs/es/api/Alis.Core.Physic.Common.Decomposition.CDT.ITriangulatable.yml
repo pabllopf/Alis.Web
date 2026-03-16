@@ -1,0 +1,127 @@
+### YamlMime:ApiPage
+title: Interface ITriangulatable
+body:
+- api1: Interface ITriangulatable
+  id: Alis_Core_Physic_Common_Decomposition_CDT_ITriangulatable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/ITriangulatable.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable
+    commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Decomposition.CDT
+      url: Alis.Core.Physic.Common.Decomposition.CDT.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The triangulatable interface
+- code: internal interface ITriangulatable
+- h2: Properties
+- api3: GetPoints
+  id: Alis_Core_Physic_Common_Decomposition_CDT_ITriangulatable_GetPoints
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/ITriangulatable.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.GetPoints
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.GetPoints
+- markdown: Gets the value of the points
+- code: IList<TriangulationPoint> GetPoints { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: IList
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+    - <
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    - '>'
+- api3: GetTriangles
+  id: Alis_Core_Physic_Common_Decomposition_CDT_ITriangulatable_GetTriangles
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/ITriangulatable.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.GetTriangles
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.GetTriangles
+- markdown: Gets the value of the triangles
+- code: IList<DelaunayTriangle> GetTriangles { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: IList
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+    - <
+    - text: DelaunayTriangle
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html
+    - '>'
+- api3: TriangulationMode
+  id: Alis_Core_Physic_Common_Decomposition_CDT_ITriangulatable_TriangulationMode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/ITriangulatable.cs#L53
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.TriangulationMode
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.TriangulationMode
+- markdown: Gets the value of the triangulation mode
+- code: TriangulationMode TriangulationMode { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: TriangulationMode
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationMode.html
+- h2: Methods
+- api3: AddTriangle(DelaunayTriangle)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_ITriangulatable_AddTriangle_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/ITriangulatable.cs#L65
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.AddTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.AddTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
+- markdown: Adds the triangle using the specified t
+- code: void AddTriangle(DelaunayTriangle t)
+- h4: Parameters
+- parameters:
+  - name: t
+    type:
+    - text: DelaunayTriangle
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html
+    description: The
+- api3: AddTriangles(IEnumerable<DelaunayTriangle>)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_ITriangulatable_AddTriangles_System_Collections_Generic_IEnumerable_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/ITriangulatable.cs#L71
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.AddTriangles(System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle})
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.AddTriangles(System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle})
+- markdown: Adds the triangles using the specified list
+- code: void AddTriangles(IEnumerable<DelaunayTriangle> list)
+- h4: Parameters
+- parameters:
+  - name: list
+    type:
+    - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - text: DelaunayTriangle
+      url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html
+    - '>'
+    description: The list
+- api3: ClearTriangles()
+  id: Alis_Core_Physic_Common_Decomposition_CDT_ITriangulatable_ClearTriangles
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/ITriangulatable.cs#L76
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.ClearTriangles
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.ClearTriangles
+- markdown: Clears the triangles
+- code: void ClearTriangles()
+- api3: PrepareTriangulation(TriangulationContext)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_ITriangulatable_PrepareTriangulation_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/ITriangulatable.cs#L59
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext)
+- markdown: Prepares the triangulation using the specified tcx
+- code: void PrepareTriangulation(TriangulationContext tcx)
+- h4: Parameters
+- parameters:
+  - name: tcx
+    type:
+    - text: TriangulationContext
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html
+    description: The tcx
+languageId: csharp
+metadata:
+  description: The triangulatable interface

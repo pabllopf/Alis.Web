@@ -9,21 +9,18 @@ body:
 - h3: Namespaces
 - parameters:
   - type:
-      text: Alis.Core.Graphic.Properties
-      url: Alis.Core.Graphic.Properties.html
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
   - type:
-      text: Alis.Core.Graphic.Sdl2
-      url: Alis.Core.Graphic.Sdl2.html
+      text: Alis.Core.Graphic.Platforms
+      url: Alis.Core.Graphic.Platforms.html
+  - type:
+      text: Alis.Core.Graphic.Ui
+      url: Alis.Core.Graphic.Ui.html
 - h3: Classes
 - parameters:
   - type:
-      text: Window
-      url: Alis.Core.Graphic.Window.html
-    description: The window class
-- h3: Interfaces
-- parameters:
-  - type:
-      text: IWindow
-      url: Alis.Core.Graphic.IWindow.html
-    description: The window interface
+      text: Image
+      url: Alis.Core.Graphic.Image.html
+    description: The sprite class
 languageId: csharp

@@ -1,0 +1,450 @@
+### YamlMime:ApiPage
+title: Interface INativePlatform
+body:
+- api1: Interface INativePlatform
+  id: Alis_Core_Graphic_Platforms_INativePlatform
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform
+    commentId: T:Alis.Core.Graphic.Platforms.INativePlatform
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.Platforms
+      url: Alis.Core.Graphic.Platforms.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The native platform interface
+- code: public interface INativePlatform
+- h2: Methods
+- api3: Cleanup()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_Cleanup
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L105
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.Cleanup
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.Cleanup
+- markdown: Cleanups this instance
+- code: void Cleanup()
+- api3: GetMousePositionInView(out float, out float)
+  id: Alis_Core_Graphic_Platforms_INativePlatform_GetMousePositionInView_System_Single__System_Single__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L201
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.GetMousePositionInView(System.Single@,System.Single@)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.GetMousePositionInView(System.Single@,System.Single@)
+- markdown: Gets the mouse position in view using the specified x
+- code: void GetMousePositionInView(out float x, out float y)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+  - name: y
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+- api3: GetMouseState(out int, out int, out bool[])
+  id: Alis_Core_Graphic_Platforms_INativePlatform_GetMouseState_System_Int32__System_Int32__System_Boolean____
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L154
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.GetMouseState(System.Int32@,System.Int32@,System.Boolean[]@)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.GetMouseState(System.Int32@,System.Int32@,System.Boolean[]@)
+- markdown: 'Gets the mouse state: position and button array (left, right, middle, aux1, aux2)'
+- code: void GetMouseState(out int x, out int y, out bool[] buttons)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: out x
+  - name: y
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: out y
+  - name: buttons
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    - '['
+    - ']'
+    description: out buttons array
+- api3: GetMouseWheel()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_GetMouseWheel
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L160
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.GetMouseWheel
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.GetMouseWheel
+- markdown: Gets the mouse wheel delta (vertical)
+- code: float GetMouseWheel()
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: float wheel
+- api3: GetProcAddress(string)
+  id: Alis_Core_Graphic_Platforms_INativePlatform_GetProcAddress_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L126
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.GetProcAddress(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.GetProcAddress(System.String)
+- markdown: Gets the proc address using the specified proc name
+- code: nint GetProcAddress(string procName)
+- h4: Parameters
+- parameters:
+  - name: procName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The proc name
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: GetWindowHeight()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_GetWindowHeight
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L117
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.GetWindowHeight
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.GetWindowHeight
+- markdown: Gets the window height
+- code: int GetWindowHeight()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: GetWindowMetrics(out int, out int, out int, out int, out int, out int)
+  id: Alis_Core_Graphic_Platforms_INativePlatform_GetWindowMetrics_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L191
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.GetWindowMetrics(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.GetWindowMetrics(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+- markdown: Gets the window metrics using the specified win x
+- code: void GetWindowMetrics(out int winX, out int winY, out int winW, out int winH, out int fbW, out int fbH)
+- h4: Parameters
+- parameters:
+  - name: winX
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The win
+  - name: winY
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The win
+  - name: winW
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The win
+  - name: winH
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The win
+  - name: fbW
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The fb
+  - name: fbH
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The fb
+- api3: GetWindowPositionX()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_GetWindowPositionX
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L174
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.GetWindowPositionX
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.GetWindowPositionX
+- markdown: Gets the window position x
+- code: int GetWindowPositionX()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: GetWindowPositionY()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_GetWindowPositionY
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L180
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.GetWindowPositionY
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.GetWindowPositionY
+- markdown: Gets the window position y
+- code: int GetWindowPositionY()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: GetWindowWidth()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_GetWindowWidth
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L111
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.GetWindowWidth
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.GetWindowWidth
+- markdown: Gets the window width
+- code: int GetWindowWidth()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: HideWindow()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_HideWindow
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L65
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.HideWindow
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.HideWindow
+- markdown: Hides the window
+- code: void HideWindow()
+- api3: Initialize(int, int, string)
+  id: Alis_Core_Graphic_Platforms_INativePlatform_Initialize_System_Int32_System_Int32_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L45
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.Initialize(System.Int32,System.Int32,System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.Initialize(System.Int32,System.Int32,System.String)
+- markdown: Initializes the width
+- code: bool Initialize(int width, int height, string title)
+- h4: Parameters
+- parameters:
+  - name: width
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The width
+  - name: height
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The height
+  - name: title
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The title
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Initialize(int, int, string, string)
+  id: Alis_Core_Graphic_Platforms_INativePlatform_Initialize_System_Int32_System_Int32_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L55
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.Initialize(System.Int32,System.Int32,System.String,System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.Initialize(System.Int32,System.Int32,System.String,System.String)
+- markdown: Initializes the width
+- code: bool Initialize(int width, int height, string title, string iconPath)
+- h4: Parameters
+- parameters:
+  - name: width
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The width
+  - name: height
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The height
+  - name: title
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The title
+  - name: iconPath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The icon path
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: IsKeyDown(ConsoleKey)
+  id: Alis_Core_Graphic_Platforms_INativePlatform_IsKeyDown_System_ConsoleKey_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L140
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.IsKeyDown(System.ConsoleKey)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.IsKeyDown(System.ConsoleKey)
+- markdown: Ises the key down using the specified console key
+- code: bool IsKeyDown(ConsoleKey consoleKey)
+- h4: Parameters
+- parameters:
+  - name: consoleKey
+    type:
+    - text: ConsoleKey
+      url: https://learn.microsoft.com/dotnet/api/system.consolekey
+    description: The console key
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: IsWindowVisible()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_IsWindowVisible
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L94
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.IsWindowVisible
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.IsWindowVisible
+- markdown: Ises the window visible
+- code: bool IsWindowVisible()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: MakeContextCurrent()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_MakeContextCurrent
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L83
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.MakeContextCurrent
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.MakeContextCurrent
+- markdown: Makes the context current
+- code: void MakeContextCurrent()
+- api3: PollEvents()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_PollEvents
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L100
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.PollEvents
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.PollEvents
+- markdown: Polls the events
+- code: bool PollEvents()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: SetSize(int, int)
+  id: Alis_Core_Graphic_Platforms_INativePlatform_SetSize_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L78
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.SetSize(System.Int32,System.Int32)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.SetSize(System.Int32,System.Int32)
+- markdown: Sets the size using the specified width
+- code: void SetSize(int width, int height)
+- h4: Parameters
+- parameters:
+  - name: width
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The width
+  - name: height
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The height
+- api3: SetTitle(string)
+  id: Alis_Core_Graphic_Platforms_INativePlatform_SetTitle_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L71
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.SetTitle(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.SetTitle(System.String)
+- markdown: Sets the title using the specified title
+- code: void SetTitle(string title)
+- h4: Parameters
+- parameters:
+  - name: title
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The title
+- api3: SetWindowIcon(string)
+  id: Alis_Core_Graphic_Platforms_INativePlatform_SetWindowIcon_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L146
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.SetWindowIcon(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.SetWindowIcon(System.String)
+- markdown: Sets the window icon from the specified BMP file path
+- code: void SetWindowIcon(string iconPath)
+- h4: Parameters
+- parameters:
+  - name: iconPath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: Full path to the BMP icon file
+- api3: ShowWindow()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_ShowWindow
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L60
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.ShowWindow
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.ShowWindow
+- markdown: Shows the window
+- code: void ShowWindow()
+- api3: SwapBuffers()
+  id: Alis_Core_Graphic_Platforms_INativePlatform_SwapBuffers
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L88
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.SwapBuffers
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.SwapBuffers
+- markdown: Swaps the buffers
+- code: void SwapBuffers()
+- api3: TryGetLastInputCharacters(out string)
+  id: Alis_Core_Graphic_Platforms_INativePlatform_TryGetLastInputCharacters_System_String__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L168
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.TryGetLastInputCharacters(System.String@)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.TryGetLastInputCharacters(System.String@)
+- markdown: >-
+    Devuelve la última cadena de caracteres de entrada (por ejemplo texto) acumulada por el backend de la plataforma.
+
+    Esto permite transportar caracteres imprimibles (WM_CHAR / X11 KeySym) hacia ImGui.
+- code: bool TryGetLastInputCharacters(out string chars)
+- h4: Parameters
+- parameters:
+  - name: chars
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: La cadena de caracteres entrantes (puede contener varios caracteres)
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: true si había caracteres pendientes, false si no
+- api3: TryGetLastKeyPressed(out ConsoleKey)
+  id: Alis_Core_Graphic_Platforms_INativePlatform_TryGetLastKeyPressed_System_ConsoleKey__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/INativePlatform.cs#L133
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.INativePlatform.TryGetLastKeyPressed(System.ConsoleKey@)
+    commentId: M:Alis.Core.Graphic.Platforms.INativePlatform.TryGetLastKeyPressed(System.ConsoleKey@)
+- markdown: Devuelve la última tecla pulsada, si existe
+- code: bool TryGetLastKeyPressed(out ConsoleKey key)
+- h4: Parameters
+- parameters:
+  - name: key
+    type:
+    - text: ConsoleKey
+      url: https://learn.microsoft.com/dotnet/api/system.consolekey
+    description: La tecla pulsada
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: true si hay tecla, false si no
+languageId: csharp
+metadata:
+  description: The native platform interface

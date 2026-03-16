@@ -1,0 +1,100 @@
+### YamlMime:ApiPage
+title: Interface ISetting
+body:
+- api1: Interface ISetting
+  id: Alis_Core_Ecs_Systems_Configuration_ISetting
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/ISetting.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.ISetting
+    commentId: T:Alis.Core.Ecs.Systems.Configuration.ISetting
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Configuration
+      url: Alis.Core.Ecs.Systems.Configuration.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The setting interface
+- code: public interface ISetting
+- h2: Properties
+- api3: Audio
+  id: Alis_Core_Ecs_Systems_Configuration_ISetting_Audio
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/ISetting.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.ISetting.Audio
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.ISetting.Audio
+- markdown: Gets or sets the value of the audio
+- code: AudioSetting Audio { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: AudioSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting.html
+- api3: General
+  id: Alis_Core_Ecs_Systems_Configuration_ISetting_General
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/ISetting.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.ISetting.General
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.ISetting.General
+- markdown: Gets or sets the value of the general
+- code: GeneralSetting General { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GeneralSetting
+      url: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.html
+- api3: Graphic
+  id: Alis_Core_Ecs_Systems_Configuration_ISetting_Graphic
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/ISetting.cs#L59
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.ISetting.Graphic
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.ISetting.Graphic
+- markdown: Gets or sets the value of the graphic
+- code: GraphicSetting Graphic { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GraphicSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.html
+- api3: Input
+  id: Alis_Core_Ecs_Systems_Configuration_ISetting_Input
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/ISetting.cs#L65
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.ISetting.Input
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.ISetting.Input
+- markdown: Gets or sets the value of the input
+- code: InputSetting Input { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: InputSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Input.InputSetting.html
+- api3: Network
+  id: Alis_Core_Ecs_Systems_Configuration_ISetting_Network
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/ISetting.cs#L71
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.ISetting.Network
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.ISetting.Network
+- markdown: Gets or sets the value of the network
+- code: NetworkSetting Network { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: NetworkSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.html
+- api3: Physic
+  id: Alis_Core_Ecs_Systems_Configuration_ISetting_Physic
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/ISetting.cs#L77
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.ISetting.Physic
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.ISetting.Physic
+- markdown: Gets or sets the value of the physic
+- code: PhysicSetting Physic { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: PhysicSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.html
+languageId: csharp
+metadata:
+  description: The setting interface

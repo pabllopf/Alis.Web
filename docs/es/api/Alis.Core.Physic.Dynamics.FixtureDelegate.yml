@@ -15,13 +15,13 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The fixture delegate
-- code: public delegate void FixtureDelegate(World sender, Body body, Fixture fixture)
+- code: public delegate void FixtureDelegate(WorldPhysic sender, Body body, Fixture fixture)
 - h4: Parameters
 - parameters:
   - name: sender
     type:
-    - text: World
-      url: Alis.Core.Physic.Dynamics.World.html
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
   - name: body
     type:
     - text: Body

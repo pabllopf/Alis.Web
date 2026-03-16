@@ -1,0 +1,233 @@
+### YamlMime:ApiPage
+title: Class MemoryLogOutput
+body:
+- api1: Class MemoryLogOutput
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L41
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput
+    commentId: T:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Outputs
+      url: Alis.Core.Aspect.Logging.Outputs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Stores log entries in memory for inspection and debugging.
+
+    Useful for testing and retrieving recent log entries.
+
+    Thread-safe: Uses locks for access to the entries list.
+
+    AOT-compatible: No reflection, pure collection-based storage.
+- code: 'public sealed class MemoryLogOutput : ILogOutput, IDisposable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: MemoryLogOutput
+    url: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.html
+- h4: Implements
+- list:
+  - text: ILogOutput
+    url: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.html
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: MemoryLogOutput(int)
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput__ctor_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L67
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.#ctor(System.Int32)
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.#ctor(System.Int32)
+- markdown: Initializes a new instance of the MemoryLogOutput class.
+- code: public MemoryLogOutput(int maxEntries = 1000)
+- h4: Parameters
+- parameters:
+  - name: maxEntries
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: Maximum number of entries to keep. Oldest entries are removed when exceeded. 0 = unlimited.
+    optional: true
+- h2: Fields
+- api3: _disposed
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput__disposed
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L61
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput._disposed
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput._disposed
+- markdown: The disposed
+- code: private bool _disposed
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _entries
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput__entries
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L46
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput._entries
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput._entries
+- markdown: The entries
+- code: private readonly List<ILogEntry> _entries
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    - '>'
+- api3: _lock
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput__lock
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L51
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput._lock
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput._lock
+- markdown: The lock
+- code: private readonly object _lock
+- h4: Field Value
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+- api3: _maxEntries
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput__maxEntries
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L56
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput._maxEntries
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput._maxEntries
+- markdown: The max entries
+- code: private readonly int _maxEntries
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Properties
+- api3: Count
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput_Count
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L76
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Count
+    commentId: P:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Count
+- markdown: Gets the count of entries currently stored.
+- code: public int Count { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: IsEnabled
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput_IsEnabled
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L97
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.IsEnabled
+    commentId: P:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.IsEnabled
+- markdown: Gets or sets the value of the is enabled
+- code: public bool IsEnabled { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L91
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Name
+    commentId: P:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Name
+- markdown: Gets the value of the name
+- code: public string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: Clear()
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput_Clear
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L166
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Clear
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Clear
+- markdown: Clears all stored entries.
+- code: public void Clear()
+- api3: Dispose()
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L136
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Dispose
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Dispose
+- markdown: Disposes this instance
+- code: public void Dispose()
+- api3: Flush()
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput_Flush
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L127
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Flush
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Flush
+- markdown: Flushes this instance
+- code: public void Flush()
+- api3: GetEntries()
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput_GetEntries
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L155
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.GetEntries
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.GetEntries
+- markdown: Gets a snapshot of all stored entries.
+- code: public IReadOnlyList<ILogEntry> GetEntries()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IReadOnlyList
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+    - <
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    - '>'
+    description: A list copy of all current entries.
+- api3: Write(ILogEntry)
+  id: Alis_Core_Aspect_Logging_Outputs_MemoryLogOutput_Write_Alis_Core_Aspect_Logging_Abstractions_ILogEntry_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/MemoryLogOutput.cs#L104
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Write(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.Write(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+- markdown: Writes the entry
+- code: public void Write(ILogEntry entry)
+- h4: Parameters
+- parameters:
+  - name: entry
+    type:
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: The entry
+languageId: csharp
+metadata:
+  description: >-
+    Stores log entries in memory for inspection and debugging.
+
+    Useful for testing and retrieving recent log entries.
+
+    Thread-safe: Uses locks for access to the entries list.
+
+    AOT-compatible: No reflection, pure collection-based storage.

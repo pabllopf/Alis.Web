@@ -1,0 +1,38 @@
+### YamlMime:ApiPage
+title: Enum MemoryTrimming
+body:
+- api1: Enum MemoryTrimming
+  id: Alis_Core_Ecs_Redifinition_MemoryTrimming
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryTrimming.cs#L35
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryTrimming
+    commentId: T:Alis.Core.Ecs.Redifinition.MemoryTrimming
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Redifinition
+      url: Alis.Core.Ecs.Redifinition.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Specifies the level of memory trimming Alis internal buffers should do
+- code: public enum MemoryTrimming
+- h2: Fields
+- parameters:
+  - name: Always
+    default: "0"
+    description: >+
+      Always trim buffers when there is memory pressure
+
+  - name: Normal
+    default: "1"
+    description: >+
+      Trim buffers a balanced amount
+
+  - name: Never
+    default: "2"
+    description: >+
+      Never trim buffers, even when there is memory pressure
+
+languageId: csharp
+metadata:
+  description: Specifies the level of memory trimming Alis internal buffers should do

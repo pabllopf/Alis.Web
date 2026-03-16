@@ -1,0 +1,118 @@
+### YamlMime:ApiPage
+title: Class FontManager
+body:
+- api1: Class FontManager
+  id: Alis_Core_Graphic_Ui_FontManager
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/FontManager.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.Ui.FontManager
+    commentId: T:Alis.Core.Graphic.Ui.FontManager
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.Ui
+      url: Alis.Core.Graphic.Ui.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The font manager class
+- code: public static class FontManager
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: FontManager
+    url: Alis.Core.Graphic.Ui.FontManager.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Properties
+- api3: DefaultFont
+  id: Alis_Core_Graphic_Ui_FontManager_DefaultFont
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/FontManager.cs#L42
+  metadata:
+    uid: Alis.Core.Graphic.Ui.FontManager.DefaultFont
+    commentId: P:Alis.Core.Graphic.Ui.FontManager.DefaultFont
+- markdown: Gets the value of the default font
+- code: public static Font DefaultFont { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Font
+      url: Alis.Core.Graphic.Ui.Font.html
+- h2: Methods
+- api3: RenderText(string, int, int, Color, Color)
+  id: Alis_Core_Graphic_Ui_FontManager_RenderText_System_String_System_Int32_System_Int32_Alis_Core_Aspect_Math_Definition_Color_Alis_Core_Aspect_Math_Definition_Color_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/FontManager.cs#L52
+  metadata:
+    uid: Alis.Core.Graphic.Ui.FontManager.RenderText(System.String,System.Int32,System.Int32,Alis.Core.Aspect.Math.Definition.Color,Alis.Core.Aspect.Math.Definition.Color)
+    commentId: M:Alis.Core.Graphic.Ui.FontManager.RenderText(System.String,System.Int32,System.Int32,Alis.Core.Aspect.Math.Definition.Color,Alis.Core.Aspect.Math.Definition.Color)
+- markdown: Renders the text using the specified text
+- code: public static void RenderText(string text, int x, int y, Color foreColor, Color backColor)
+- h4: Parameters
+- parameters:
+  - name: text
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The text
+  - name: x
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: y
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: foreColor
+    type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+    description: The fore color
+  - name: backColor
+    type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+    description: The back color
+- api3: RenderText(string, int, int)
+  id: Alis_Core_Graphic_Ui_FontManager_RenderText_System_String_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/FontManager.cs#L63
+  metadata:
+    uid: Alis.Core.Graphic.Ui.FontManager.RenderText(System.String,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Graphic.Ui.FontManager.RenderText(System.String,System.Int32,System.Int32)
+- markdown: Renders the text using the specified text
+- code: public static void RenderText(string text, int x, int y)
+- h4: Parameters
+- parameters:
+  - name: text
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The text
+  - name: x
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: y
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+languageId: csharp
+metadata:
+  description: The font manager class

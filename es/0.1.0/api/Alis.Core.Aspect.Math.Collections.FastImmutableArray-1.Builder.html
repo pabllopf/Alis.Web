@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <title> Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis ">
+      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!">
+      <link rel="icon" href="../resources/logo.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="En este art&#237;culo">
+      <meta name="loc:searchResultsCount" content="{count} resultados para &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="Sin resultados para &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filtrar por t&#237;tulo">
+      <meta name="loc:nextArticle" content="Siguiente">
+      <meta name="loc:prevArticle" content="Anterior">
+      <meta name="loc:themeLight" content="Claro">
+      <meta name="loc:themeDark" content="Oscuro">
+      <meta name="loc:themeAuto" content="Autom&#225;tico">
+      <meta name="loc:changeTheme" content="Cambiar tema">
+      <meta name="loc:copy" content="Copiar">
+      <meta name="loc:downloadPdf" content="Descargar PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+        const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+      
+        // Función para actualizar el contenido del dropdownToggle según el idioma
+        function updateLanguage() {
+          const currentLang = document.documentElement.lang;
+          const isEnglish = currentLang === 'en';
+          const isSpanish = currentLang === 'es';
+      
+          if (isEnglish) {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              English`;
+          } else {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              Español`;
+          }
+        }
+      
+        // Llama a la función para actualizar el idioma al cargar la página
+        updateLanguage();
+      });
+    </script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+
+          // Función para actualizar el texto del botón según la URL actual
+          function updateDropdownVersion() {
+              const path = window.location.pathname;
+              const versionMatch = path.match(/v\d+\.\d+\.\d+/i); // Buscar la versión en cualquier parte del path
+
+              if (versionMatch) {
+                  const currentVersion = versionMatch[0]; // Obtener la versión encontrada
+                  dropdownToggle.textContent = currentVersion;
+              }
+          }
+
+          updateDropdownVersion(); // Llamar la función al cargar la página
+      });
+
+    </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ApiPage">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="../resources/logo_small_v2.png" alt="Alis">
+            Alis
+          </a>
+
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+
+        
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Buscar" autocomplete="off" aria-label="Search">
+              </form>
+
+              
+              <script>
+
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                const dropdownMenu = document.querySelector('.dropdown-menu-versions');
+
+                dropdownToggle.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const isExpanded = dropdownMenu.style.display === 'block';
+                  dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                });
+
+                document.addEventListener('click', function (e) {
+                  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.style.display = 'none';
+                  }
+                });
+
+                // Manejar la selección de versión y actualizar la URL
+                dropdownMenu.addEventListener('click', function (e) {
+                  if (e.target.classList.contains('dropdown-item')) {
+                    e.preventDefault();
+                    
+                    const selectedVersion = e.target.getAttribute('data-version');
+                    const lang = document.documentElement.lang; // Obtener el idioma actual del documento
+                    
+                    let basePath = '';
+                    
+                    // Comprobar si el idioma es español
+                    if (lang === 'es') {
+                      basePath += '/es';
+                    }
+
+                    if (lang === 'en') {
+                      basePath += '/en';
+                    }
+
+                    // Redirigir a la ruta de la versión seleccionada
+                    const newPath = `${basePath}/${selectedVersion}/index.html`;
+                    window.location.href = newPath;
+                  }
+                });
+              });
+ 
+
+              </script>
+
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" data-version="v0.4.0">v0.4.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.3.0">v0.3.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.2.0">v0.2.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.1.0">v0.1.0</a></li>
+                </ul>
+              </div>
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                    const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+
+                    dropdownToggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const isExpanded = dropdownMenu.style.display === 'block';
+                        dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                    });
+
+                    document.addEventListener('click', function (e) {
+                        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    });
+
+                    // Manejar la selección de idioma y actualizar la URL
+                    dropdownMenu.addEventListener('click', function (e) {
+                        if (e.target.classList.contains('dropdown-item')) {
+                            e.preventDefault();
+                            
+                            const selectedLang = e.target.getAttribute('lang');
+                            const currentPath = window.location.pathname;
+                            const pathParts = currentPath.split('/');
+
+                            // Verificar si la URL sigue el formato esperado y reemplazar el idioma
+                            if (pathParts.length >= 3) {
+                                pathParts[1] = selectedLang;  // Reemplaza el idioma en la URL
+                            }
+
+                            // Reconstruir la URL y redirigir
+                            const newPath = pathParts.join('/');
+                            window.location.href = newPath;
+                        }
+                    });
+                });
+                </script>
+
+
+
+              
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-lang" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                  <svg viewbox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                    <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                  </svg>
+                  English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lang" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" lang="es">Español</a></li>
+                </ul>
+            </div>
+
+
+              <a class="hover_custom" style="order: 55;margin: 0 10px;" href="https://github.com/pabllopf/Alis/releases/latest">
+              <button type="button" class="btn btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewbox="0 0 17 17">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+                  </svg>
+                  Descargar
+              </button>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+      
+      
+
+
+
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder' data-commentid='T:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder'>Class FastImmutableArray&lt;T&gt;.Builder    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L66'><i class='bi bi-code-slash'></i></a></h1>
+ <div class="facts text-secondary">
+<dl><dt>Namespace</dt><dd><a href='Alis.Core.Aspect.Math.Collections.html'>Alis.Core.Aspect.Math.Collections</a></dd></dl><dl><dt>Assembly</dt><dd>Alis.dll</dd></dl>
+</div><p>A writable array accessor that can be converted into an <see></see>
+instance without allocating memory.</p>
+<pre><code class='lang-csharp'>[ExcludeFromCodeCoverage]
+public sealed class FastImmutableArray&lt;T&gt;.Builder : IList&lt;T&gt;, ICollection&lt;T&gt;, IReadOnlyList&lt;T&gt;, IReadOnlyCollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre><h4 class='section'>Inheritance</h4><dl class="typelist inheritance"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>
+</div>
+<div>
+<a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.Builder.html'>FastImmutableArray&lt;T&gt;.Builder</a>
+</div>
+
+</dd></dl><h4 class='section'>Implements</h4><dl class="typelist"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1'>IList&lt;T&gt;</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1'>ICollection&lt;T&gt;</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1'>IReadOnlyList&lt;T&gt;</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1'>IReadOnlyCollection&lt;T&gt;</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1'>IEnumerable&lt;T&gt;</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.collections.ienumerable'>IEnumerable</a>
+</div>
+
+</dd></dl><h4 class='section'>Inherited Members</h4><dl class="typelist"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)'>object.Equals(object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)'>object.Equals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gethashcode'>object.GetHashCode()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gettype'>object.GetType()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.referenceequals'>object.ReferenceEquals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
+</div>
+
+</dd></dl><h2 class='section'>Constructors</h2><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.#ctor(System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.#ctor(System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder__ctor_System_Int32_'>Builder(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L83'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Initializes a new instance of the <span class="xref">Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder</span> class.</p>
+<pre><code class='lang-csharp'>internal Builder(int capacity)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>capacity</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The initial capacity of the internal array.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.#ctor' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.#ctor' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder__ctor'>Builder()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L92'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Initializes a new instance of the <span class="xref">Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder</span> class.</p>
+<pre><code class='lang-csharp'>internal Builder()</code></pre><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder._count' data-commentid='F:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder._count' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder__count'>_count    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L72'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The number of initialized elements in the array.</p>
+<pre><code class='lang-csharp'>private int _count</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder._elements' data-commentid='F:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder._elements' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder__elements'>_elements    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L77'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The backing array for the builder.</p>
+<pre><code class='lang-csharp'>private T[] _elements</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> T[]  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Capacity' data-commentid='P:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Capacity' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Capacity'>Capacity    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L101'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get and sets the length of the internal array.  When set the internal array is
+reallocated to the given capacity if it is not already the specified length.</p>
+<pre><code class='lang-csharp'>public int Capacity { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Count' data-commentid='P:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Count' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Count'>Count    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L139'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the length of the builder.</p>
+<pre><code class='lang-csharp'>public int Count { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If the value is decreased, the array contents are truncated.
+If the value is increased, the added elements are initialized to the default value of type
+.</p>
+<h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#Generic#ICollection{T}#IsReadOnly' data-commentid='P:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#Generic#ICollection{T}#IsReadOnly' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_System_Collections_Generic_ICollection_T__IsReadOnly'>ICollection&lt;T&gt;.IsReadOnly    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L210'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets a value indicating whether the <span class="xref">System.Collections.Generic.ICollection`1</span> is read-only.</p>
+<pre><code class='lang-csharp'>bool ICollection&lt;T&gt;.IsReadOnly { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Item(System.Int32)' data-commentid='P:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Item(System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Item_System_Int32_'>this[int]    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L181'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the element at the specified index.</p>
+<pre><code class='lang-csharp'>public T this[int index] { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> T  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception'>IndexOutOfRangeException</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Add(`0)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Add(`0)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Add__0_'>Add(T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L242'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds an item to the <span class="xref">System.Collections.Generic.ICollection`1</span>.</p>
+<pre><code class='lang-csharp'>public void Add(T item)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The object to add to the <span class="xref">System.Collections.Generic.ICollection`1</span>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(`0[])' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(`0[])' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__0___'>AddRange(params T[])    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L424'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds the specified items to the end of the array.</p>
+<pre><code class='lang-csharp'>public void AddRange(params T[] items)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>items</code> T[]  </dt>
+<dd>
+
+
+<p>The items.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(``0[])' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(``0[])' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__1___0___'>AddRange&lt;TDerived&gt;(TDerived[])    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L437'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds the specified items to the end of the array.</p>
+<pre><code class='lang-csharp'>public void AddRange&lt;TDerived&gt;(TDerived[] items) where TDerived : T</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>items</code> TDerived[]  </dt>
+<dd>
+
+
+<p>The items.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>TDerived</code>   </dt>
+<dd>
+
+
+<p>The type that derives from the type of item already in the array.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(`0[],System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(`0[],System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__0___System_Int32_'>AddRange(T[], int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L450'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds the specified items to the end of the array.</p>
+<pre><code class='lang-csharp'>public void AddRange(T[] items, int length)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>items</code> T[]  </dt>
+<dd>
+
+
+<p>The items.</p>
+
+</dd><dt><code>length</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of elements from the source array to add.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange_Alis_Core_Aspect_Math_Collections_FastImmutableArray__0__'>AddRange(FastImmutableArray&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L462'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds the specified items to the end of the array.</p>
+<pre><code class='lang-csharp'>public void AddRange(FastImmutableArray&lt;T&gt; items)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>items</code> <a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html'>FastImmutableArray</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The items.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0},System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0},System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange_Alis_Core_Aspect_Math_Collections_FastImmutableArray__0__System_Int32_'>AddRange(FastImmutableArray&lt;T&gt;, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L472'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds the specified items to the end of the array.</p>
+<pre><code class='lang-csharp'>public void AddRange(FastImmutableArray&lt;T&gt; items, int length)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>items</code> <a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html'>FastImmutableArray</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The items.</p>
+
+</dd><dt><code>length</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of elements from the source array to add.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__1_Alis_Core_Aspect_Math_Collections_FastImmutableArray___0__'>AddRange&lt;TDerived&gt;(FastImmutableArray&lt;TDerived&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L485'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds the specified items to the end of the array.</p>
+<pre><code class='lang-csharp'>public void AddRange&lt;TDerived&gt;(FastImmutableArray&lt;TDerived&gt; items) where TDerived : T</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>items</code> <a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html'>FastImmutableArray</a>&lt;TDerived&gt;  </dt>
+<dd>
+
+
+<p>The items to add at the end of the array.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>TDerived</code>   </dt>
+<dd>
+
+
+<p>The type that derives from the type of item already in the array.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0}.Builder)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange(Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0}.Builder)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange_Alis_Core_Aspect_Math_Collections_FastImmutableArray__0__Builder_'>AddRange(Builder)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L497'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds the specified items to the end of the array.</p>
+<pre><code class='lang-csharp'>public void AddRange(FastImmutableArray&lt;T&gt;.Builder items)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>items</code> <a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html'>FastImmutableArray</a>&lt;T&gt;.<a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.Builder.html'>Builder</a>  </dt>
+<dd>
+
+
+<p>The items to add at the end of the array.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0}.Builder)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0}.Builder)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__1_Alis_Core_Aspect_Math_Collections_FastImmutableArray___0__Builder_'>AddRange&lt;TDerived&gt;(Builder)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L507'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds the specified items to the end of the array.</p>
+<pre><code class='lang-csharp'>public void AddRange&lt;TDerived&gt;(FastImmutableArray&lt;TDerived&gt;.Builder items) where TDerived : T</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>items</code> <a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html'>FastImmutableArray</a>&lt;TDerived&gt;.<a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.Builder.html'>Builder</a>  </dt>
+<dd>
+
+
+<p>The items to add at the end of the array.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>TDerived</code>   </dt>
+<dd>
+
+
+<p>The type that derives from the type of item already in the array.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(``0[],System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AddRange``1(``0[],System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AddRange__1___0___System_Int32_'>AddRange&lt;TDerived&gt;(TDerived[], int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L952'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds items to this collection.</p>
+<pre><code class='lang-csharp'>private void AddRange&lt;TDerived&gt;(TDerived[] items, int length) where TDerived : T</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>items</code> TDerived[]  </dt>
+<dd>
+
+
+<p>The source array.</p>
+
+</dd><dt><code>length</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of elements to add to this array.</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>TDerived</code>   </dt>
+<dd>
+
+
+<p>The type of source elements.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AsMemory' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.AsMemory' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_AsMemory'>AsMemory()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L995'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets a <span class="xref">System.Memory`1</span> for the filled portion of the backing array.</p>
+<pre><code class='lang-csharp'>internal Memory&lt;T&gt; AsMemory()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.memory-1'>Memory</a>&lt;T&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Clear' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Clear' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Clear'>Clear()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L215'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes all items from the <span class="xref">System.Collections.Generic.ICollection`1</span>.</p>
+<pre><code class='lang-csharp'>public void Clear()</code></pre><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Contains(`0)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Contains(`0)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Contains__0_'>Contains(T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L289'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Determines whether the <span class="xref">System.Collections.Generic.ICollection`1</span> contains a specific value.</p>
+<pre><code class='lang-csharp'>public bool Contains(T item)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The object to locate in the <span class="xref">System.Collections.Generic.ICollection`1</span>.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>true if <code class="paramref">item</code> is found in the <span class="xref">System.Collections.Generic.ICollection`1</span>; otherwise, false.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(`0[],System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(`0[],System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_CopyTo__0___System_Int32_'>CopyTo(T[], int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L296'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Copies the current contents to the specified array.</p>
+<pre><code class='lang-csharp'>public void CopyTo(T[] array, int index)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>array</code> T[]  </dt>
+<dd>
+
+
+<p>The array to copy to.</p>
+
+</dd><dt><code>index</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The starting index of the target array.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(`0[])' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(`0[])' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_CopyTo__0___'>CopyTo(T[])    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L667'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Copies the contents of this array to the specified array.</p>
+<pre><code class='lang-csharp'>public void CopyTo(T[] destination)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>destination</code> T[]  </dt>
+<dd>
+
+
+<p>The array to copy to.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(System.Int32,`0[],System.Int32,System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(System.Int32,`0[],System.Int32,System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_CopyTo_System_Int32__0___System_Int32_System_Int32_'>CopyTo(int, T[], int, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L679'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Copies the contents of this array to the specified array.</p>
+<pre><code class='lang-csharp'>public void CopyTo(int sourceIndex, T[] destination, int destinationIndex, int length)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>sourceIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index into this collection of the first element to copy.</p>
+
+</dd><dt><code>destination</code> T[]  </dt>
+<dd>
+
+
+<p>The array to copy to.</p>
+
+</dd><dt><code>destinationIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index into the destination array to which the first copied element is written.</p>
+
+</dd><dt><code>length</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of elements to copy.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(System.Span{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.CopyTo(System.Span{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_CopyTo_System_Span__0__'>CopyTo(Span&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L929'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Copies the current contents to the specified <span class="xref">System.Span`1</span>.</p>
+<pre><code class='lang-csharp'>public void CopyTo(Span&lt;T&gt; destination)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>destination</code> <a href='https://learn.microsoft.com/dotnet/api/system.span-1'>Span</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The <span class="xref">System.Span`1</span> to copy to.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.DrainToImmutable' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.DrainToImmutable' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_DrainToImmutable'>DrainToImmutable()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L381'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Returns the current contents as an <span class="xref">Alis.Core.Aspect.Math.Collections.FastImmutableArray`1</span> and sets the collection to a zero length
+array.</p>
+<pre><code class='lang-csharp'>public FastImmutableArray&lt;T&gt; DrainToImmutable()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html'>FastImmutableArray</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>An immutable array.</p>
+
+</dd></dl><h4 class='section'>Remarks</h4><p>If <span class="xref">Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Capacity</span> equals <span class="xref">Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Count</span>, the internal array will be extracted
+as an <span class="xref">Alis.Core.Aspect.Math.Collections.FastImmutableArray`1</span> without copying the contents. Otherwise, the contents
+will be copied into a new array. The collection will then be set to a zero length array.</p>
+<h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.EnsureCapacity(System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.EnsureCapacity(System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_EnsureCapacity_System_Int32_'>EnsureCapacity(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L688'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Resizes the array to accommodate the specified capacity requirement.</p>
+<pre><code class='lang-csharp'>private void EnsureCapacity(int capacity)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>capacity</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The required capacity.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.GetEnumerator' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.GetEnumerator' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_GetEnumerator'>GetEnumerator()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L938'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Returns an enumerator for the contents of the array.</p>
+<pre><code class='lang-csharp'>public IEnumerator&lt;T&gt; GetEnumerator()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1'>IEnumerator</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>An enumerator.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_IndexOf__0_'>IndexOf(T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L308'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Determines the index of a specific item in the <span class="xref">System.Collections.Generic.IList`1</span>.</p>
+<pre><code class='lang-csharp'>public int IndexOf(T item)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The object to locate in the <span class="xref">System.Collections.Generic.IList`1</span>.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index of <code class="paramref">item</code> if found in the list; otherwise, -1.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_IndexOf__0_System_Int32_'>IndexOf(T, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L703'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Searches the array for the specified item.</p>
+<pre><code class='lang-csharp'>public int IndexOf(T item, int startIndex)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The item to search for.</p>
+
+</dd><dt><code>startIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index at which to begin the search.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_IndexOf__0_System_Int32_System_Int32_'>IndexOf(T, int, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L712'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Searches the array for the specified item.</p>
+<pre><code class='lang-csharp'>public int IndexOf(T item, int startIndex, int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The item to search for.</p>
+
+</dd><dt><code>startIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index at which to begin the search.</p>
+
+</dd><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of elements to search.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_IndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__'>IndexOf(T, int, int, IEqualityComparer&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L725'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Searches the array for the specified item.</p>
+<pre><code class='lang-csharp'>public int IndexOf(T item, int startIndex, int count, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The item to search for.</p>
+
+</dd><dt><code>startIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index at which to begin the search.</p>
+
+</dd><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of elements to search.</p>
+
+</dd><dt><code>equalityComparer</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1'>IEqualityComparer</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The equality comparer to use in the search.
+If <code>null</code>, <span class="xref">System.Collections.Generic.EqualityComparer`1.Default</span> is used.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Collections.Generic.IEqualityComparer{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.IndexOf(`0,System.Int32,System.Collections.Generic.IEqualityComparer{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_IndexOf__0_System_Int32_System_Collections_Generic_IEqualityComparer__0__'>IndexOf(T, int, IEqualityComparer&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L760'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Searches the array for the specified item.</p>
+<pre><code class='lang-csharp'>public int IndexOf(T item, int startIndex, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The item to search for.</p>
+
+</dd><dt><code>startIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index at which to begin the search.</p>
+
+</dd><dt><code>equalityComparer</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1'>IEqualityComparer</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The equality comparer to use in the search.
+If <code>null</code>, <span class="xref">System.Collections.Generic.EqualityComparer`1.Default</span> is used.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Insert(System.Int32,`0)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Insert(System.Int32,`0)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Insert_System_Int32__0_'>Insert(int, T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L225'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Inserts an item to the <span class="xref">System.Collections.Generic.IList`1</span> at the specified index.</p>
+<pre><code class='lang-csharp'>public void Insert(int index, T item)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>index</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The zero-based index at which <code class="paramref">item</code> should be inserted.</p>
+
+</dd><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The object to insert into the <span class="xref">System.Collections.Generic.IList`1</span>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.InsertRange(System.Int32,Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.InsertRange(System.Int32,Alis.Core.Aspect.Math.Collections.FastImmutableArray{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_InsertRange_System_Int32_Alis_Core_Aspect_Math_Collections_FastImmutableArray__0__'>InsertRange(int, FastImmutableArray&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L401'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Inserts the specified values at the specified index.</p>
+<pre><code class='lang-csharp'>public void InsertRange(int index, FastImmutableArray&lt;T&gt; items)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>index</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index at which to insert the value.</p>
+
+</dd><dt><code>items</code> <a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html'>FastImmutableArray</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The elements to insert.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ItemRef(System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ItemRef(System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_ItemRef_System_Int32_'>ItemRef(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L334'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets a read-only reference to the element at the specified index.</p>
+<pre><code class='lang-csharp'>public ref readonly T ItemRef(int index)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>index</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> T  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception'>IndexOutOfRangeException</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_LastIndexOf__0_'>LastIndexOf(T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L767'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Searches the array for the specified item in reverse.</p>
+<pre><code class='lang-csharp'>public int LastIndexOf(T item)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The item to search for.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_LastIndexOf__0_System_Int32_'>LastIndexOf(T, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L783'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Searches the array for the specified item in reverse.</p>
+<pre><code class='lang-csharp'>public int LastIndexOf(T item, int startIndex)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The item to search for.</p>
+
+</dd><dt><code>startIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index at which to begin the search.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32,System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32,System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_LastIndexOf__0_System_Int32_System_Int32_'>LastIndexOf(T, int, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L801'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Searches the array for the specified item in reverse.</p>
+<pre><code class='lang-csharp'>public int LastIndexOf(T item, int startIndex, int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The item to search for.</p>
+
+</dd><dt><code>startIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index at which to begin the search.</p>
+
+</dd><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of elements to search.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_LastIndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__'>LastIndexOf(T, int, int, IEqualityComparer&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L811'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Searches the array for the specified item in reverse.</p>
+<pre><code class='lang-csharp'>public int LastIndexOf(T item, int startIndex, int count, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>item</code> T  </dt>
+<dd>
+
+
+<p>The item to search for.</p>
+
+</dd><dt><code>startIndex</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index at which to begin the search.</p>
+
+</dd><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of elements to search.</p>
+
+</dd><dt><code>equalityComparer</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1'>IEqualityComparer</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The equality comparer to use in the search.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.MoveToImmutable' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.MoveToImmutable' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_MoveToImmutable'>MoveToImmutable()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L358'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Extracts the internal array as an <span class="xref">Alis.Core.Aspect.Math.Collections.FastImmutableArray`1</span> and replaces it
+with a zero length array.</p>
+<pre><code class='lang-csharp'>public FastImmutableArray&lt;T&gt; MoveToImmutable()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html'>FastImmutableArray</a>&lt;T&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>When <span class="xref">Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Count</span> doesn't
+equal <span class="xref">Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Capacity</span>.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Remove(`0)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Remove(`0)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Remove__0_'>Remove(T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L256'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes the first occurrence of the specified element from the builder.
+If no match is found, the builder remains unchanged.</p>
+<pre><code class='lang-csharp'>public bool Remove(T element)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>element</code> T  </dt>
+<dd>
+
+
+<p>The element.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>A value indicating whether the specified element was found and removed from the collection.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Remove(`0,System.Collections.Generic.IEqualityComparer{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Remove(`0,System.Collections.Generic.IEqualityComparer{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Remove__0_System_Collections_Generic_IEqualityComparer__0__'>Remove(T, IEqualityComparer&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L522'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes the first occurrence of the specified element from the builder.
+If no match is found, the builder remains unchanged.</p>
+<pre><code class='lang-csharp'>public bool Remove(T element, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>element</code> T  </dt>
+<dd>
+
+
+<p>The element to remove.</p>
+
+</dd><dt><code>equalityComparer</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1'>IEqualityComparer</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The equality comparer to use in the search.
+If <code>null</code>, <span class="xref">System.Collections.Generic.EqualityComparer`1.Default</span> is used.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>A value indicating whether the specified element was found and removed from the collection.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAll(System.Predicate{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAll(System.Predicate{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveAll_System_Predicate__0__'>RemoveAll(Predicate&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L543'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes all the elements that match the conditions defined by the specified
+predicate.</p>
+<pre><code class='lang-csharp'>public void RemoveAll(Predicate&lt;T&gt; match)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>match</code> <a href='https://learn.microsoft.com/dotnet/api/system.predicate-1'>Predicate</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The <span class="xref">System.Predicate`1</span> delegate that defines the conditions of the elements
+to remove.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAt(System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAt(System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveAt_System_Int32_'>RemoveAt(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L272'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes the <span class="xref">System.Collections.Generic.IList`1</span> item at the specified index.</p>
+<pre><code class='lang-csharp'>public void RemoveAt(int index)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>index</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The zero-based index of the item to remove.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAtRange(System.Collections.Generic.ICollection{System.Int32})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveAtRange(System.Collections.Generic.ICollection{System.Int32})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveAtRange_System_Collections_Generic_ICollection_System_Int32__'>RemoveAtRange(ICollection&lt;int&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L970'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes the at range using the specified indices to remove</p>
+<pre><code class='lang-csharp'>private void RemoveAtRange(ICollection&lt;int&gt; indicesToRemove)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>indicesToRemove</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1'>ICollection</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>&gt;  </dt>
+<dd>
+
+
+<p>The indices to remove</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Int32,System.Int32)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Int32,System.Int32)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveRange_System_Int32_System_Int32_'>RemoveRange(int, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L566'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes the specified values from this list.</p>
+<pre><code class='lang-csharp'>public void RemoveRange(int index, int length)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>index</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The 0-based index into the array for the element to omit from the returned array.</p>
+
+</dd><dt><code>length</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of elements to remove.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Collections.Generic.IEnumerable{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Collections.Generic.IEnumerable{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveRange_System_Collections_Generic_IEnumerable__0__'>RemoveRange(IEnumerable&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L591'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes the specified values from this list.</p>
+<pre><code class='lang-csharp'>public void RemoveRange(IEnumerable&lt;T&gt; items)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>items</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1'>IEnumerable</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The items to remove if matches are found in this list.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_RemoveRange_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEqualityComparer__0__'>RemoveRange(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L604'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes the specified values from this list.</p>
+<pre><code class='lang-csharp'>public void RemoveRange(IEnumerable&lt;T&gt; items, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>items</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1'>IEnumerable</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The items to remove if matches are found in this list.</p>
+
+</dd><dt><code>equalityComparer</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1'>IEqualityComparer</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The equality comparer to use in the search.
+If <code>null</code>, <span class="xref">System.Collections.Generic.EqualityComparer`1.Default</span> is used.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Replace(`0,`0)' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Replace(`0,`0)' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Replace__0__0_'>Replace(T, T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L624'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Replaces the first equal element in the list with the specified element.</p>
+<pre><code class='lang-csharp'>public void Replace(T oldValue, T newValue)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>oldValue</code> T  </dt>
+<dd>
+
+
+<p>The element to replace.</p>
+
+</dd><dt><code>newValue</code> T  </dt>
+<dd>
+
+
+<p>The element to replace the old element with.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Replace__0__0_System_Collections_Generic_IEqualityComparer__0__'>Replace(T, T, IEqualityComparer&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L638'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Replaces the first equal element in the list with the specified element.</p>
+<pre><code class='lang-csharp'>public void Replace(T oldValue, T newValue, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>oldValue</code> T  </dt>
+<dd>
+
+
+<p>The element to replace.</p>
+
+</dd><dt><code>newValue</code> T  </dt>
+<dd>
+
+
+<p>The element to replace the old element with.</p>
+
+</dd><dt><code>equalityComparer</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1'>IEqualityComparer</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The equality comparer to use in the search.
+If <code>null</code>, <span class="xref">System.Collections.Generic.EqualityComparer`1.Default</span> is used.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Reverse' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Reverse' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Reverse'>Reverse()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L839'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Reverses the order of elements in the collection.</p>
+<pre><code class='lang-csharp'>public void Reverse()</code></pre><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Sort'>Sort()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L861'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Sorts the array.</p>
+<pre><code class='lang-csharp'>public void Sort()</code></pre><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Comparison{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Comparison{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Sort_System_Comparison__0__'>Sort(Comparison&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L877'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Sorts the elements in the entire array using
+the specified <span class="xref">System.Comparison`1</span>.</p>
+<pre><code class='lang-csharp'>public void Sort(Comparison&lt;T&gt; comparison)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>comparison</code> <a href='https://learn.microsoft.com/dotnet/api/system.comparison-1'>Comparison</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The <span class="xref">System.Comparison`1</span> to use when comparing elements.</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentnullexception'>ArgumentNullException</a>  </dt>
+<dd>
+
+
+<p><code class="paramref">comparison</code> is null.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Collections.Generic.IComparer{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Collections.Generic.IComparer{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Sort_System_Collections_Generic_IComparer__0__'>Sort(IComparer&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L899'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Sorts the array.</p>
+<pre><code class='lang-csharp'>public void Sort(IComparer&lt;T&gt; comparer)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>comparer</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1'>IComparer</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The comparer to use in sorting. If <code>null</code>, the default comparer is used.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__'>Sort(int, int, IComparer&lt;T&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L913'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Sorts the array.</p>
+<pre><code class='lang-csharp'>public void Sort(int index, int count, IComparer&lt;T&gt; comparer)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>index</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The index of the first element to consider in the sort.</p>
+
+</dd><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of elements to include in the sort.</p>
+
+</dd><dt><code>comparer</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1'>IComparer</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The comparer to use in sorting. If <code>null</code>, the default comparer is used.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#Generic#IEnumerable{T}#GetEnumerator' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#Generic#IEnumerable{T}#GetEnumerator' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_System_Collections_Generic_IEnumerable_T__GetEnumerator'>IEnumerable&lt;T&gt;.GetEnumerator()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L314'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Returns an enumerator for the contents of the array.</p>
+<pre><code class='lang-csharp'>IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1'>IEnumerator</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>An enumerator.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#IEnumerable#GetEnumerator' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.System#Collections#IEnumerable#GetEnumerator' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_System_Collections_IEnumerable_GetEnumerator'>IEnumerable.GetEnumerator()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L320'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Returns an enumerator for the contents of the array.</p>
+<pre><code class='lang-csharp'>IEnumerator IEnumerable.GetEnumerator()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.ienumerator'>IEnumerator</a>  </dt>
+<dd>
+
+
+<p>An enumerator.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ThrowIndexOutOfRangeException' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ThrowIndexOutOfRangeException' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_ThrowIndexOutOfRangeException'>ThrowIndexOutOfRangeException()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L325'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Throws the index out of range exception</p>
+<pre><code class='lang-csharp'>private static void ThrowIndexOutOfRangeException()</code></pre><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ToArray' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ToArray' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_ToArray'>ToArray()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L651'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates a new array with the current contents of this Builder.</p>
+<pre><code class='lang-csharp'>public T[] ToArray()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> T[]  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ToImmutable' data-commentid='M:Alis.Core.Aspect.Math.Collections.FastImmutableArray`1.Builder.ToImmutable' id='Alis_Core_Aspect_Math_Collections_FastImmutableArray_1_Builder_ToImmutable'>ToImmutable()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Collections/FastImmutableArray.cs#L348'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Returns an immutable copy of the current contents of this collection.</p>
+<pre><code class='lang-csharp'>public FastImmutableArray&lt;T&gt; ToImmutable()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html'>FastImmutableArray</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>An immutable array.</p>
+
+</dd></dl>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Alis - Desarrolla los videojuegos de tus sueños 💯 gratis en Windows, MacOS, Linux, Android (próximamente), iOS (próximamente).
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

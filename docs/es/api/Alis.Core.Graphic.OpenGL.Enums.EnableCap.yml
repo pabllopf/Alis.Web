@@ -1,0 +1,563 @@
+### YamlMime:ApiPage
+title: Enum EnableCap
+body:
+- api1: Enum EnableCap
+  id: Alis_Core_Graphic_OpenGL_Enums_EnableCap
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/EnableCap.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.EnableCap
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.EnableCap
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The enable cap enum
+- code: public enum EnableCap
+- h2: Fields
+- parameters:
+  - name: LineSmooth
+    default: "2848"
+    description: >+
+      The line smooth enable cap
+
+  - name: PolygonSmooth
+    default: "2881"
+    description: >+
+      The polygon smooth enable cap
+
+  - name: CullFace
+    default: "2884"
+    description: >+
+      The cull face enable cap
+
+  - name: DepthTest
+    default: "2929"
+    description: >+
+      The depth test enable cap
+
+  - name: StencilTest
+    default: "2960"
+    description: >+
+      The stencil test enable cap
+
+  - name: Dither
+    default: "3024"
+    description: >+
+      The dither enable cap
+
+  - name: Blend
+    default: "3042"
+    description: >+
+      The blend enable cap
+
+  - name: IndexLogicOp
+    default: "3057"
+    description: >+
+      The index logic op enable cap
+
+  - name: ColorLogicOp
+    default: "3058"
+    description: >+
+      The color logic op enable cap
+
+  - name: ScissorTest
+    default: "3089"
+    description: >+
+      The scissor test enable cap
+
+  - name: AutoNormal
+    default: "3456"
+    description: >+
+      The auto normal enable cap
+
+  - name: Map1Color4
+    default: "3472"
+    description: >+
+      The map color enable cap
+
+  - name: Map1Index
+    default: "3473"
+    description: >+
+      The map index enable cap
+
+  - name: Map1Normal
+    default: "3474"
+    description: >+
+      The map normal enable cap
+
+  - name: Map1TextureCoord1
+    default: "3475"
+    description: >+
+      The map texture coord enable cap
+
+  - name: Map1TextureCoord2
+    default: "3476"
+    description: >+
+      The map texture coord enable cap
+
+  - name: Map1TextureCoord3
+    default: "3477"
+    description: >+
+      The map texture coord enable cap
+
+  - name: Map1TextureCoord4
+    default: "3478"
+    description: >+
+      The map texture coord enable cap
+
+  - name: Map1Vertex3
+    default: "3479"
+    description: >+
+      The map vertex enable cap
+
+  - name: Map1Vertex4
+    default: "3480"
+    description: >+
+      The map vertex enable cap
+
+  - name: Map2Color4
+    default: "3504"
+    description: >+
+      The map color enable cap
+
+  - name: Map2Index
+    default: "3505"
+    description: >+
+      The map index enable cap
+
+  - name: Map2Normal
+    default: "3506"
+    description: >+
+      The map normal enable cap
+
+  - name: Map2TextureCoord1
+    default: "3507"
+    description: >+
+      The map texture coord enable cap
+
+  - name: Map2TextureCoord2
+    default: "3508"
+    description: >+
+      The map texture coord enable cap
+
+  - name: Map2TextureCoord3
+    default: "3509"
+    description: >+
+      The map texture coord enable cap
+
+  - name: Map2TextureCoord4
+    default: "3510"
+    description: >+
+      The map texture coord enable cap
+
+  - name: Map2Vertex3
+    default: "3511"
+    description: >+
+      The map vertex enable cap
+
+  - name: Map2Vertex4
+    default: "3512"
+    description: >+
+      The map vertex enable cap
+
+  - name: Texture1D
+    default: "3552"
+    description: >+
+      The texture enable cap
+
+  - name: Texture2D
+    default: "3553"
+    description: >+
+      The texture enable cap
+
+  - name: PolygonOffsetPoint
+    default: "10753"
+    description: >+
+      The polygon offset point enable cap
+
+  - name: PolygonOffsetLine
+    default: "10754"
+    description: >+
+      The polygon offset line enable cap
+
+  - name: ClipPlane0
+    default: "12288"
+    description: >+
+      The clip plane enable cap
+
+  - name: ClipPlane1
+    default: "12289"
+    description: >+
+      The clip plane enable cap
+
+  - name: ClipPlane2
+    default: "12290"
+    description: >+
+      The clip plane enable cap
+
+  - name: ClipPlane3
+    default: "12291"
+    description: >+
+      The clip plane enable cap
+
+  - name: ClipPlane4
+    default: "12292"
+    description: >+
+      The clip plane enable cap
+
+  - name: ClipPlane5
+    default: "12293"
+    description: >+
+      The clip plane enable cap
+
+  - name: Convolution1D
+    default: "32784"
+    description: >+
+      The convolution enable cap
+
+  - name: Convolution1DExt
+    default: "32784"
+    description: >+
+      The convolution ext enable cap
+
+  - name: Convolution2D
+    default: "32785"
+    description: >+
+      The convolution enable cap
+
+  - name: Convolution2DExt
+    default: "32785"
+    description: >+
+      The convolution ext enable cap
+
+  - name: Separable2D
+    default: "32786"
+    description: >+
+      The separable enable cap
+
+  - name: Separable2DExt
+    default: "32786"
+    description: >+
+      The separable ext enable cap
+
+  - name: Histogram
+    default: "32804"
+    description: >+
+      The histogram enable cap
+
+  - name: HistogramExt
+    default: "32804"
+    description: >+
+      The histogram ext enable cap
+
+  - name: MinmaxExt
+    default: "32814"
+    description: >+
+      The minmax ext enable cap
+
+  - name: PolygonOffsetFill
+    default: "32823"
+    description: >+
+      The polygon offset fill enable cap
+
+  - name: RescaleNormalExt
+    default: "32826"
+    description: >+
+      The rescale normal ext enable cap
+
+  - name: Texture3DExt
+    default: "32879"
+    description: >+
+      The texture ext enable cap
+
+  - name: VertexArray
+    default: "32884"
+    description: >+
+      The vertex array enable cap
+
+  - name: NormalArray
+    default: "32885"
+    description: >+
+      The normal array enable cap
+
+  - name: ColorArray
+    default: "32886"
+    description: >+
+      The color array enable cap
+
+  - name: IndexArray
+    default: "32887"
+    description: >+
+      The index array enable cap
+
+  - name: TextureCoordArray
+    default: "32888"
+    description: >+
+      The texture coord array enable cap
+
+  - name: EdgeFlagArray
+    default: "32889"
+    description: >+
+      The edge flag array enable cap
+
+  - name: InterlaceSgix
+    default: "32916"
+    description: >+
+      The interlace sgix enable cap
+
+  - name: Multisample
+    default: "32925"
+    description: >+
+      The multisample enable cap
+
+  - name: SampleAlphaToCoverage
+    default: "32926"
+    description: >+
+      The sample alpha to coverage enable cap
+
+  - name: SampleAlphaToMaskSgis
+    default: "32926"
+    description: >+
+      The sample alpha to mask sgis enable cap
+
+  - name: SampleAlphaToOne
+    default: "32927"
+    description: >+
+      The sample alpha to one enable cap
+
+  - name: SampleAlphaToOneSgis
+    default: "32927"
+    description: >+
+      The sample alpha to one sgis enable cap
+
+  - name: SampleCoverage
+    default: "32928"
+    description: >+
+      The sample coverage enable cap
+
+  - name: SampleMaskSgis
+    default: "32928"
+    description: >+
+      The sample mask sgis enable cap
+
+  - name: TextureColorTableSgi
+    default: "32956"
+    description: >+
+      The texture color table sgi enable cap
+
+  - name: ColorTable
+    default: "32976"
+    description: >+
+      The color table enable cap
+
+  - name: ColorTableSgi
+    default: "32976"
+    description: >+
+      The color table sgi enable cap
+
+  - name: PostConvolutionColorTable
+    default: "32977"
+    description: >+
+      The post convolution color table enable cap
+
+  - name: PostConvolutionColorTableSgi
+    default: "32977"
+    description: >+
+      The post convolution color table sgi enable cap
+
+  - name: PostColorMatrixColorTable
+    default: "32978"
+    description: >+
+      The post color matrix color table enable cap
+
+  - name: PostColorMatrixColorTableSgi
+    default: "32978"
+    description: >+
+      The post color matrix color table sgi enable cap
+
+  - name: Texture4DSgis
+    default: "33076"
+    description: >+
+      The texture sgis enable cap
+
+  - name: TexGenSgix
+    default: "33081"
+    description: >+
+      The pixel tex gen sgix enable cap
+
+  - name: SpriteSgix
+    default: "33096"
+    description: >+
+      The sprite sgix enable cap
+
+  - name: ReferencePlaneSgix
+    default: "33149"
+    description: >+
+      The reference plane sgix enable cap
+
+  - name: IrInstrument1Sgix
+    default: "33151"
+    description: >+
+      The ir instrument sgix enable cap
+
+  - name: CalligraphicFragmentSgix
+    default: "33155"
+    description: >+
+      The calligraphic fragment sgix enable cap
+
+  - name: FramezoomSgix
+    default: "33163"
+    description: >+
+      The framezoom sgix enable cap
+
+  - name: FogOffsetSgix
+    default: "33176"
+    description: >+
+      The fog offset sgix enable cap
+
+  - name: SharedTexturePaletteExt
+    default: "33275"
+    description: >+
+      The shared texture palette ext enable cap
+
+  - name: AsyncHistogramSgix
+    default: "33580"
+    description: >+
+      The async histogram sgix enable cap
+
+  - name: TextureSgis
+    default: "33619"
+    description: >+
+      The pixel texture sgis enable cap
+
+  - name: AsyncTexImageSgix
+    default: "33628"
+    description: >+
+      The async tex image sgix enable cap
+
+  - name: AsyncDrawPixelsSgix
+    default: "33629"
+    description: >+
+      The async draw pixels sgix enable cap
+
+  - name: AsyncReadPixelsSgix
+    default: "33630"
+    description: >+
+      The async read pixels sgix enable cap
+
+  - name: FragmentLightingSgix
+    default: "33792"
+    description: >+
+      The fragment lighting sgix enable cap
+
+  - name: FragmentColorMaterialSgix
+    default: "33793"
+    description: >+
+      The fragment color material sgix enable cap
+
+  - name: FragmentLight0Sgix
+    default: "33804"
+    description: >+
+      The fragment light sgix enable cap
+
+  - name: FragmentLight1Sgix
+    default: "33805"
+    description: >+
+      The fragment light sgix enable cap
+
+  - name: FragmentLight2Sgix
+    default: "33806"
+    description: >+
+      The fragment light sgix enable cap
+
+  - name: FragmentLight3Sgix
+    default: "33807"
+    description: >+
+      The fragment light sgix enable cap
+
+  - name: FragmentLight4Sgix
+    default: "33808"
+    description: >+
+      The fragment light sgix enable cap
+
+  - name: FragmentLight5Sgix
+    default: "33809"
+    description: >+
+      The fragment light sgix enable cap
+
+  - name: FragmentLight6Sgix
+    default: "33810"
+    description: >+
+      The fragment light sgix enable cap
+
+  - name: FragmentLight7Sgix
+    default: "33811"
+    description: >+
+      The fragment light sgix enable cap
+
+  - name: ColorSum
+    default: "33880"
+    description: >+
+      The color sum enable cap
+
+  - name: SecondaryColorArray
+    default: "33886"
+    description: >+
+      The secondary color array enable cap
+
+  - name: TextureCubeMap
+    default: "34067"
+    description: >+
+      The texture cube map enable cap
+
+  - name: ProgramPointSize
+    default: "34370"
+    description: >+
+      The program point size enable cap
+
+  - name: VertexProgramPointSize
+    default: "34370"
+    description: >+
+      The vertex program point size enable cap
+
+  - name: DepthClamp
+    default: "34383"
+    description: >+
+      The depth clamp enable cap
+
+  - name: TextureCubeMapSeamless
+    default: "34895"
+    description: >+
+      The texture cube map seamless enable cap
+
+  - name: PointSprite
+    default: "34913"
+    description: >+
+      The point sprite enable cap
+
+  - name: RasterizerDiscard
+    default: "35977"
+    description: >+
+      The rasterizer discard enable cap
+
+  - name: FramebufferSrgb
+    default: "36281"
+    description: >+
+      The framebuffer srgb enable cap
+
+  - name: SampleMask
+    default: "36433"
+    description: >+
+      The sample mask enable cap
+
+  - name: PrimitiveRestart
+    default: "36765"
+    description: >+
+      The primitive restart enable cap
+
+languageId: csharp
+metadata:
+  description: The enable cap enum

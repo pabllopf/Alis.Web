@@ -3,7 +3,7 @@ title: Class TriangulationUtil
 body:
 - api1: Class TriangulationUtil
   id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationUtil
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L36
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L35
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil
     commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil
@@ -39,14 +39,14 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Fields
-- api3: EPSILON
-  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationUtil_EPSILON
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L41
+- api3: Epsilon
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationUtil_Epsilon
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L40
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.EPSILON
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.EPSILON
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.Epsilon
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.Epsilon
 - markdown: The epsilon
-- code: public static double EPSILON
+- code: public static readonly double Epsilon
 - h4: Field Value
 - parameters:
   - type:
@@ -55,7 +55,7 @@ body:
 - h2: Methods
 - api3: InScanArea(TriangulationPoint, TriangulationPoint, TriangulationPoint, TriangulationPoint)
   id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationUtil_InScanArea_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L146
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L151
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.InScanArea(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.InScanArea(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
@@ -91,7 +91,7 @@ body:
     description: The bool
 - api3: Orient2d(TriangulationPoint, TriangulationPoint, TriangulationPoint)
   id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationUtil_Orient2d_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L169
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L174
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.Orient2d(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.Orient2d(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
@@ -117,7 +117,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.CDT.Orientation.html
 - api3: SmartIncircle(TriangulationPoint, TriangulationPoint, TriangulationPoint, TriangulationPoint)
   id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationUtil_SmartIncircle_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L67
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationUtil.cs#L66
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.SmartIncircle(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationUtil.SmartIncircle(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint,Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
@@ -128,6 +128,7 @@ body:
 
     2. a and d is know to be on opposite side of bc
 
+
     <pre><code class="lang-csharp">      a
           +
          / \
@@ -136,6 +137,7 @@ body:
       +-------+ 
      /    B    \  
     /           \</code></pre>
+
 
     Facts:
 

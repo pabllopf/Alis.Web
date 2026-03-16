@@ -1,0 +1,105 @@
+### YamlMime:ApiPage
+title: Class ZipCacheEntry
+body:
+- api1: Class ZipCacheEntry
+  id: Alis_Core_Aspect_Memory_ZipCacheEntry
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/ZipCacheEntry.cs#L37
+  metadata:
+    uid: Alis.Core.Aspect.Memory.ZipCacheEntry
+    commentId: T:Alis.Core.Aspect.Memory.ZipCacheEntry
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Memory
+      url: Alis.Core.Aspect.Memory.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The zip cache entry class
+- code: internal class ZipCacheEntry
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: ZipCacheEntry
+    url: Alis.Core.Aspect.Memory.ZipCacheEntry.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Properties
+- api3: EntriesByFileNameLower
+  id: Alis_Core_Aspect_Memory_ZipCacheEntry_EntriesByFileNameLower
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/ZipCacheEntry.cs#L54
+  metadata:
+    uid: Alis.Core.Aspect.Memory.ZipCacheEntry.EntriesByFileNameLower
+    commentId: P:Alis.Core.Aspect.Memory.ZipCacheEntry.EntriesByFileNameLower
+- markdown: Gets or sets the value of the entries by file name lower
+- code: internal Dictionary<string, List<ZipEntryInfo>> EntriesByFileNameLower { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: ZipEntryInfo
+      url: Alis.Core.Aspect.Memory.ZipEntryInfo.html
+    - '>'
+    - '>'
+- api3: EntriesByFullNameLower
+  id: Alis_Core_Aspect_Memory_ZipCacheEntry_EntriesByFullNameLower
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/ZipCacheEntry.cs#L49
+  metadata:
+    uid: Alis.Core.Aspect.Memory.ZipCacheEntry.EntriesByFullNameLower
+    commentId: P:Alis.Core.Aspect.Memory.ZipCacheEntry.EntriesByFullNameLower
+- markdown: Gets or sets the value of the entries by full name lower
+- code: internal Dictionary<string, ZipEntryInfo> EntriesByFullNameLower { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: ZipEntryInfo
+      url: Alis.Core.Aspect.Memory.ZipEntryInfo.html
+    - '>'
+- api3: PackBytes
+  id: Alis_Core_Aspect_Memory_ZipCacheEntry_PackBytes
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/ZipCacheEntry.cs#L43
+  metadata:
+    uid: Alis.Core.Aspect.Memory.ZipCacheEntry.PackBytes
+    commentId: P:Alis.Core.Aspect.Memory.ZipCacheEntry.PackBytes
+- markdown: Gets or sets the value of the pack bytes
+- code: internal byte[] PackBytes { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    - '['
+    - ']'
+languageId: csharp
+metadata:
+  description: The zip cache entry class

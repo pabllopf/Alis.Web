@@ -1,0 +1,340 @@
+### YamlMime:ApiPage
+title: Class GlShaderProgram
+body:
+- api1: Class GlShaderProgram
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L44
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram
+    commentId: T:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Constructs
+      url: Alis.Core.Graphic.OpenGL.Constructs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gl shader program class
+- code: 'public sealed class GlShaderProgram : IDisposable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: GlShaderProgram
+    url: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.html
+- h4: Implements
+- list:
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: GlShaderProgram(GlShader, GlShader)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram__ctor_Alis_Core_Graphic_OpenGL_Constructs_GlShader_Alis_Core_Graphic_OpenGL_Constructs_GlShader_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L72
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.#ctor(Alis.Core.Graphic.OpenGL.Constructs.GlShader,Alis.Core.Graphic.OpenGL.Constructs.GlShader)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.#ctor(Alis.Core.Graphic.OpenGL.Constructs.GlShader,Alis.Core.Graphic.OpenGL.Constructs.GlShader)
+- markdown: Links a vertex and fragment shader together to create a shader program.
+- code: public GlShaderProgram(GlShader vertexShader, GlShader fragmentShader)
+- h4: Parameters
+- parameters:
+  - name: vertexShader
+    type:
+    - text: GlShader
+      url: Alis.Core.Graphic.OpenGL.Constructs.GlShader.html
+    description: Specifies the vertex shader.
+  - name: fragmentShader
+    type:
+    - text: GlShader
+      url: Alis.Core.Graphic.OpenGL.Constructs.GlShader.html
+    description: Specifies the fragment shader.
+- api3: GlShaderProgram(string, string)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram__ctor_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L98
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.#ctor(System.String,System.String)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.#ctor(System.String,System.String)
+- markdown: Creates two shaders and then links them together to create a shader program.
+- code: public GlShaderProgram(string vertexShaderSource, string fragmentShaderSource)
+- h4: Parameters
+- parameters:
+  - name: vertexShaderSource
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: Specifies the source code of the vertex shader.
+  - name: fragmentShaderSource
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: Specifies the source code of the fragment shader.
+- h2: Fields
+- api3: DisposeChildren
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_DisposeChildren
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L50
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.DisposeChildren
+    commentId: F:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.DisposeChildren
+- markdown: >-
+    Specifies whether this program will dispose of the child
+
+    vertex/fragment programs when the IDisposable method is called.
+- code: public readonly bool DisposeChildren
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: FragmentShader
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_FragmentShader
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L55
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.FragmentShader
+    commentId: F:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.FragmentShader
+- markdown: Specifies the fragment shader used in this program.
+- code: public readonly GlShader FragmentShader
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GlShader
+      url: Alis.Core.Graphic.OpenGL.Constructs.GlShader.html
+- api3: VertexShader
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_VertexShader
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L60
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.VertexShader
+    commentId: F:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.VertexShader
+- markdown: Specifies the vertex shader used in this program.
+- code: public readonly GlShader VertexShader
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GlShader
+      url: Alis.Core.Graphic.OpenGL.Constructs.GlShader.html
+- api3: shaderParams
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_shaderParams
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L65
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.shaderParams
+    commentId: F:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.shaderParams
+- markdown: The shader params
+- code: private Dictionary<string, GlShaderProgramParam> shaderParams
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: GlShaderProgramParam
+      url: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.html
+    - '>'
+- h2: Properties
+- api3: ProgramId
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_ProgramId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L105
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.ProgramId
+    commentId: P:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.ProgramId
+- markdown: Specifies the OpenGL shader program ID.
+- code: public uint ProgramId { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: ProgramLog
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_ProgramLog
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L117
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.ProgramLog
+    commentId: P:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.ProgramLog
+- markdown: Gets the value of the program log
+- code: public string ProgramLog { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: this[string]
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_Item_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L112
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.Item(System.String)
+    commentId: P:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.Item(System.String)
+- markdown: Queries the shader parameter hashtable to find a matching attribute/uniform.
+- code: public GlShaderProgramParam this[string name] { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GlShaderProgramParam
+      url: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgramParam.html
+- h2: Methods
+- api3: Dispose()
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L122
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.Dispose
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.Dispose
+- markdown: Disposes this instance
+- code: public void Dispose()
+- api3: Dispose(bool)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_Dispose_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L303
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.Dispose(System.Boolean)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.Dispose(System.Boolean)
+- markdown: Disposes the disposing
+- code: private void Dispose(bool disposing)
+- h4: Parameters
+- parameters:
+  - name: disposing
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The disposing
+- api3: ~GlShaderProgram()
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_Finalize
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L297
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.Finalize
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.Finalize
+- code: protected ~GlShaderProgram()
+- api3: GetAttributeLocation(string)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_GetAttributeLocation_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L289
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.GetAttributeLocation(System.String)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.GetAttributeLocation(System.String)
+- markdown: Gets the attribute location using the specified name
+- code: public int GetAttributeLocation(string name)
+- h4: Parameters
+- parameters:
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: GetParams()
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_GetParams
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L132
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.GetParams
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.GetParams
+- markdown: >-
+    Parses all of the parameters (attributes/uniforms) from the two attached shaders
+
+    and then loads their location by passing this shader program into the parameter object.
+- code: private void GetParams()
+- api3: GetUniformLocation(string)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_GetUniformLocation_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L278
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.GetUniformLocation(System.String)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.GetUniformLocation(System.String)
+- markdown: Gets the uniform location using the specified name
+- code: public int GetUniformLocation(string name)
+- h4: Parameters
+- parameters:
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The name
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: TypeFromAttributeType(ActiveAttribType)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_TypeFromAttributeType_Alis_Core_Graphic_OpenGL_Enums_ActiveAttribType_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L179
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.TypeFromAttributeType(Alis.Core.Graphic.OpenGL.Enums.ActiveAttribType)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.TypeFromAttributeType(Alis.Core.Graphic.OpenGL.Enums.ActiveAttribType)
+- markdown: Types the from attribute type using the specified type
+- code: private Type TypeFromAttributeType(ActiveAttribType type)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: ActiveAttribType
+      url: Alis.Core.Graphic.OpenGL.Enums.ActiveAttribType.html
+    description: The type
+- h4: Returns
+- parameters:
+  - type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+- api3: TypeFromUniformType(ActiveUniformType)
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_TypeFromUniformType_Alis_Core_Graphic_OpenGL_Enums_ActiveUniformType_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L200
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.TypeFromUniformType(Alis.Core.Graphic.OpenGL.Enums.ActiveUniformType)
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.TypeFromUniformType(Alis.Core.Graphic.OpenGL.Enums.ActiveUniformType)
+- markdown: Types the from uniform type using the specified type
+- code: private Type TypeFromUniformType(ActiveUniformType type)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: ActiveUniformType
+      url: Alis.Core.Graphic.OpenGL.Enums.ActiveUniformType.html
+    description: The type
+- h4: Returns
+- parameters:
+  - type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+    description: ''
+- api3: Use()
+  id: Alis_Core_Graphic_OpenGL_Constructs_GlShaderProgram_Use
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Constructs/GLShaderProgram.cs#L271
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.Use
+    commentId: M:Alis.Core.Graphic.OpenGL.Constructs.GlShaderProgram.Use
+- markdown: Uses this instance
+- code: public void Use()
+- h2: See Also
+- list:
+  - - text: IDisposable
+      url: https://learn.microsoft.com/dotnet/api/system.idisposable
+languageId: csharp
+metadata:
+  description: The gl shader program class

@@ -1,0 +1,43 @@
+### YamlMime:ApiPage
+title: Enum ArchetypeEdgeType
+body:
+- api1: Enum ArchetypeEdgeType
+  id: Alis_Core_Ecs_Kernel_Archetypes_ArchetypeEdgeType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/ArchetypeEdgeType.cs#L35
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeType
+    commentId: T:Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeType
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Archetypes
+      url: Alis.Core.Ecs.Kernel.Archetypes.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The archetype edge type enum
+- code: 'public enum ArchetypeEdgeType : ushort'
+- h2: Fields
+- parameters:
+  - name: AddComponent
+    default: "49157"
+    description: >+
+      The add component archetype edge type
+
+  - name: RemoveComponent
+    default: "24593"
+    description: >+
+      The remove component archetype edge type
+
+  - name: AddTag
+    default: "12289"
+    description: >+
+      The add tag archetype edge type
+
+  - name: RemoveTag
+    default: "6151"
+    description: >+
+      The remove tag archetype edge type
+
+languageId: csharp
+metadata:
+  description: The archetype edge type enum

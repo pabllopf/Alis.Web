@@ -1,0 +1,65 @@
+### YamlMime:ApiPage
+title: Class NeighborCacheAdd<T1, T2, T3, T4, T5, T6>
+body:
+- api1: Class NeighborCacheAdd<T1, T2, T3, T4, T5, T6>
+  id: Alis_Core_Ecs_NeighborCacheAdd_6
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/NeighborCache.cs#L268
+  metadata:
+    uid: Alis.Core.Ecs.NeighborCacheAdd`6
+    commentId: T:Alis.Core.Ecs.NeighborCacheAdd`6
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs
+      url: Alis.Core.Ecs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Add-edge neighbor cache for arity 6.
+- code: internal static class NeighborCacheAdd<T1, T2, T3, T4, T5, T6>
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: NeighborCacheAdd<T1, T2, T3, T4, T5, T6>
+    url: Alis.Core.Ecs.NeighborCacheAdd-6.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Lookup
+  id: Alis_Core_Ecs_NeighborCacheAdd_6_Lookup
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/NeighborCache.cs#L275
+  metadata:
+    uid: Alis.Core.Ecs.NeighborCacheAdd`6.Lookup
+    commentId: F:Alis.Core.Ecs.NeighborCacheAdd`6.Lookup
+- markdown: The lookup
+- code: internal static ArchetypeNeighborCache Lookup
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ArchetypeNeighborCache
+      url: Alis.Core.Ecs.Collections.ArchetypeNeighborCache.html
+languageId: csharp
+metadata:
+  description: Add-edge neighbor cache for arity 6.

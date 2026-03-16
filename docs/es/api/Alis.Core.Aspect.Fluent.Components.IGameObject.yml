@@ -1,0 +1,96 @@
+### YamlMime:ApiPage
+title: Interface IGameObject
+body:
+- api1: Interface IGameObject
+  id: Alis_Core_Aspect_Fluent_Components_IGameObject
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IGameObject.cs#L37
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IGameObject
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IGameObject
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The game object interface
+- code: public interface IGameObject
+- h2: Methods
+- api3: Get<T>()
+  id: Alis_Core_Aspect_Fluent_Components_IGameObject_Get__1
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IGameObject.cs#L44
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IGameObject.Get``1
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IGameObject.Get``1
+- markdown: Gets this instance
+- code: ref T Get<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The ref
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: Has<T>()
+  id: Alis_Core_Aspect_Fluent_Components_IGameObject_Has__1
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IGameObject.cs#L51
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IGameObject.Has``1
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IGameObject.Has``1
+- markdown: Hases this instance
+- code: bool Has<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: Has(Type)
+  id: Alis_Core_Aspect_Fluent_Components_IGameObject_Has_System_Type_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IGameObject.cs#L58
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IGameObject.Has(System.Type)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IGameObject.Has(System.Type)
+- markdown: Hases the type
+- code: bool Has(Type type)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: TryHas<T>()
+  id: Alis_Core_Aspect_Fluent_Components_IGameObject_TryHas__1
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IGameObject.cs#L65
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IGameObject.TryHas``1
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IGameObject.TryHas``1
+- markdown: Tries the has
+- code: bool TryHas<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+languageId: csharp
+metadata:
+  description: The game object interface

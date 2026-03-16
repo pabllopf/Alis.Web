@@ -1,0 +1,279 @@
+### YamlMime:ApiPage
+title: Struct GeneralSetting
+body:
+- api1: Struct GeneralSetting
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L40
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting
+    commentId: T:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Configuration.General
+      url: Alis.Core.Ecs.Systems.Configuration.General.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The general setting class
+- code: 'public struct GeneralSetting : IGeneralSetting, IJsonSerializable, IJsonDesSerializable<GeneralSetting>'
+- h4: Implements
+- list:
+  - text: IGeneralSetting
+    url: Alis.Core.Ecs.Systems.Configuration.General.IGeneralSetting.html
+  - text: IJsonSerializable
+    url: Alis.Core.Aspect.Data.Json.IJsonSerializable.html
+  - text: IJsonDesSerializable<GeneralSetting>
+    url: Alis.Core.Aspect.Data.Json.IJsonDesSerializable-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: GeneralSetting(bool, string, string, string, string, string, string)
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting__ctor_System_Boolean_System_String_System_String_System_String_System_String_System_String_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L40
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.#ctor(System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String)
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.#ctor(System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String)
+- markdown: The general setting class
+- code: public GeneralSetting(bool debug = false, string name = "Default Name", string description = "Default Description", string version = "0.0.0", string author = "Pablo Perdomo Falcón", string license = "GPL-3.0 license", string icon = "app.ico")
+- h4: Parameters
+- parameters:
+  - name: debug
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    optional: true
+  - name: name
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    optional: true
+  - name: description
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    optional: true
+  - name: version
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    optional: true
+  - name: author
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    optional: true
+  - name: license
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    optional: true
+  - name: icon
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    optional: true
+- h4: See Also
+- list:
+  - - text: IGeneralSetting
+      url: Alis.Core.Ecs.Systems.Configuration.General.IGeneralSetting.html
+- api3: GeneralSetting()
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.#ctor
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting" data-throw-if-not-resolved="false"></xref> class
+- code: public GeneralSetting()
+- h2: Properties
+- api3: Author
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting_Author
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L80
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Author
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Author
+- markdown: Gets or sets the value of the author
+- code: public string Author { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Debug
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting_Debug
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Debug
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Debug
+- markdown: Gets or sets the value of the debug
+- code: public bool Debug { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Description
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting_Description
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L70
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Description
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Description
+- markdown: Gets or sets the value of the description
+- code: public string Description { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Icon
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting_Icon
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L90
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Icon
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Icon
+- markdown: Gets or sets the value of the icon
+- code: public string Icon { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: License
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting_License
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L85
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.License
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.License
+- markdown: Gets or sets the value of the license
+- code: public string License { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Name
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting_Name
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L65
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Name
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Name
+- markdown: Gets or sets the value of the name
+- code: public string Name { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Version
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting_Version
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L75
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Version
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Version
+- markdown: Gets or sets the value of the version
+- code: public string Version { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: IJsonDesSerializable<GeneralSetting>.CreateFromProperties(Dictionary<string, string>)
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting_Alis_Core_Aspect_Data_Json_IJsonDesSerializable_Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting__CreateFromProperties_System_Collections_Generic_Dictionary_System_String_System_String__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L123
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Alis#Core#Aspect#Data#Json#IJsonDesSerializable{Alis#Core#Ecs#Systems#Configuration#General#GeneralSetting}#CreateFromProperties(System.Collections.Generic.Dictionary{System.String,System.String})
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Alis#Core#Aspect#Data#Json#IJsonDesSerializable{Alis#Core#Ecs#Systems#Configuration#General#GeneralSetting}#CreateFromProperties(System.Collections.Generic.Dictionary{System.String,System.String})
+- markdown: Creates the from properties using the specified properties
+- code: GeneralSetting IJsonDesSerializable<GeneralSetting>.CreateFromProperties(Dictionary<string, string> properties)
+- h4: Parameters
+- parameters:
+  - name: properties
+    type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - '>'
+    description: The properties
+- h4: Returns
+- parameters:
+  - type:
+    - text: GeneralSetting
+      url: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.html
+    description: The general setting
+- api3: IJsonSerializable.GetSerializableProperties()
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting_Alis_Core_Aspect_Data_Json_IJsonSerializable_GetSerializableProperties
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L107
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Alis#Core#Aspect#Data#Json#IJsonSerializable#GetSerializableProperties
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.Alis#Core#Aspect#Data#Json#IJsonSerializable#GetSerializableProperties
+- markdown: Gets the serializable properties
+- code: IEnumerable<(string PropertyName, string Value)> IJsonSerializable.GetSerializableProperties()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - (
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - " "
+    - text: PropertyName
+      url: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.propertyname
+    - ','
+    - " "
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - " "
+    - text: Value
+      url: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.value
+    - )
+    - '>'
+    description: An enumerable of string property name and string value
+- api3: OnLoad()
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting_OnLoad
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L101
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.OnLoad
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.OnLoad
+- markdown: Ons the load
+- code: internal GeneralSetting OnLoad()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GeneralSetting
+      url: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.html
+    description: The general setting
+- api3: OnSave()
+  id: Alis_Core_Ecs_Systems_Configuration_General_GeneralSetting_OnSave
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/General/GeneralSetting.cs#L95
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.OnSave
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.OnSave
+- markdown: Ons the save
+- code: internal void OnSave()
+- h2: See Also
+- list:
+  - - text: IGeneralSetting
+      url: Alis.Core.Ecs.Systems.Configuration.General.IGeneralSetting.html
+languageId: csharp
+metadata:
+  description: The general setting class

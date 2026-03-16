@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Systems.Configuration.Network
+body:
+- api1: Namespace Alis.Core.Ecs.Systems.Configuration.Network
+  id: Alis_Core_Ecs_Systems_Configuration_Network
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Network
+    commentId: N:Alis.Core.Ecs.Systems.Configuration.Network
+- h3: Structs
+- parameters:
+  - type:
+      text: NetworkSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Network.NetworkSetting.html
+    description: The network setting
+- h3: Interfaces
+- parameters:
+  - type:
+      text: INetworkSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Network.INetworkSetting.html
+    description: The network setting interface
+languageId: csharp

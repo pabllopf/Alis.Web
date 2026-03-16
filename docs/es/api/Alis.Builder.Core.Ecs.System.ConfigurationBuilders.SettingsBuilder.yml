@@ -1,0 +1,238 @@
+### YamlMime:ApiPage
+title: Class SettingsBuilder
+body:
+- api1: Class SettingsBuilder
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_SettingsBuilder
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/SettingsBuilder.cs#L46
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder
+    commentId: T:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Builder.Core.Ecs.System.ConfigurationBuilders
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Setting builder
+- code: 'public class SettingsBuilder : IBuild<Setting>, IAudio<SettingsBuilder, Action<AudioSettingBuilder>>, IGeneral<SettingsBuilder, Action<GeneralSettingBuilder>>, IGraphic<SettingsBuilder, Action<GraphicSettingBuilder>>, IInput<SettingsBuilder, Action<InputSettingBuilder>>, INetwork<SettingsBuilder, Action<NetworkSettingBuilder>>, IPhysic<SettingsBuilder, Action<PhysicSettingBuilder>>'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: SettingsBuilder
+    url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.html
+- h4: Implements
+- list:
+  - text: IBuild<Setting>
+    url: Alis.Core.Aspect.Fluent.IBuild-1.html
+  - text: IAudio<SettingsBuilder, Action<AudioSettingBuilder>>
+    url: Alis.Core.Aspect.Fluent.Words.IAudio-2.html
+  - text: IGeneral<SettingsBuilder, Action<GeneralSettingBuilder>>
+    url: Alis.Core.Aspect.Fluent.Words.IGeneral-2.html
+  - text: IGraphic<SettingsBuilder, Action<GraphicSettingBuilder>>
+    url: Alis.Core.Aspect.Fluent.Words.IGraphic-2.html
+  - text: IInput<SettingsBuilder, Action<InputSettingBuilder>>
+    url: Alis.Core.Aspect.Fluent.Words.IInput-2.html
+  - text: INetwork<SettingsBuilder, Action<NetworkSettingBuilder>>
+    url: Alis.Core.Aspect.Fluent.Words.INetwork-2.html
+  - text: IPhysic<SettingsBuilder, Action<PhysicSettingBuilder>>
+    url: Alis.Core.Aspect.Fluent.Words.IPhysic-2.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: settingBase
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_SettingsBuilder_settingBase
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/SettingsBuilder.cs#L58
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.settingBase
+    commentId: F:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.settingBase
+- markdown: The setting base
+- code: private readonly Setting settingBase
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Setting
+      url: Alis.Core.Ecs.Systems.Configuration.Setting.html
+- h2: Methods
+- api3: Audio(Action<AudioSettingBuilder>)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_SettingsBuilder_Audio_System_Action_Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Audio_AudioSettingBuilder__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/SettingsBuilder.cs#L65
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Audio(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder})
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Audio(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder})
+- markdown: Audio the value
+- code: public SettingsBuilder Audio(Action<AudioSettingBuilder> value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - text: AudioSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Audio.AudioSettingBuilder.html
+    - '>'
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: SettingsBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.html
+    description: The settings builder
+- api3: Build()
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_SettingsBuilder_Build
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/SettingsBuilder.cs#L77
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Build
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Build
+- markdown: Build setting
+- code: public Setting Build()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Setting
+      url: Alis.Core.Ecs.Systems.Configuration.Setting.html
+    description: ''
+- api3: General(Action<GeneralSettingBuilder>)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_SettingsBuilder_General_System_Action_Alis_Builder_Core_Ecs_System_ConfigurationBuilders_General_GeneralSettingBuilder__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/SettingsBuilder.cs#L84
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.General(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.General.GeneralSettingBuilder})
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.General(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.General.GeneralSettingBuilder})
+- markdown: Generals the value
+- code: public SettingsBuilder General(Action<GeneralSettingBuilder> value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - text: GeneralSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.General.GeneralSettingBuilder.html
+    - '>'
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: SettingsBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.html
+    description: The settings builder
+- api3: Graphic(Action<GraphicSettingBuilder>)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_SettingsBuilder_Graphic_System_Action_Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Graphic_GraphicSettingBuilder__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/SettingsBuilder.cs#L97
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Graphic(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder})
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Graphic(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder})
+- markdown: Graphics the value
+- code: public SettingsBuilder Graphic(Action<GraphicSettingBuilder> value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - text: GraphicSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.html
+    - '>'
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: SettingsBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.html
+    description: The settings builder
+- api3: Input(Action<InputSettingBuilder>)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_SettingsBuilder_Input_System_Action_Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Input_InputSettingBuilder__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/SettingsBuilder.cs#L110
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Input(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Input.InputSettingBuilder})
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Input(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Input.InputSettingBuilder})
+- markdown: Inputs the value
+- code: public SettingsBuilder Input(Action<InputSettingBuilder> value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - text: InputSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Input.InputSettingBuilder.html
+    - '>'
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: SettingsBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.html
+    description: The settings builder
+- api3: Network(Action<NetworkSettingBuilder>)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_SettingsBuilder_Network_System_Action_Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Network_NetworkSettingBuilder__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/SettingsBuilder.cs#L123
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Network(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Network.NetworkSettingBuilder})
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Network(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Network.NetworkSettingBuilder})
+- markdown: Networks the value
+- code: public SettingsBuilder Network(Action<NetworkSettingBuilder> value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - text: NetworkSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Network.NetworkSettingBuilder.html
+    - '>'
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: SettingsBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.html
+    description: The settings builder
+- api3: Physic(Action<PhysicSettingBuilder>)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_SettingsBuilder_Physic_System_Action_Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Physic_PhysicSettingBuilder__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/SettingsBuilder.cs#L136
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Physic(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Physic.PhysicSettingBuilder})
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.Physic(System.Action{Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Physic.PhysicSettingBuilder})
+- markdown: Physics the value
+- code: public SettingsBuilder Physic(Action<PhysicSettingBuilder> value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - text: PhysicSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Physic.PhysicSettingBuilder.html
+    - '>'
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: SettingsBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.SettingsBuilder.html
+    description: The settings builder
+languageId: csharp
+metadata:
+  description: Setting builder

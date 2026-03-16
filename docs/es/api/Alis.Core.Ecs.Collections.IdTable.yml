@@ -1,0 +1,305 @@
+### YamlMime:ApiPage
+title: Class IdTable
+body:
+- api1: Class IdTable
+  id: Alis_Core_Ecs_Collections_IdTable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable
+    commentId: T:Alis.Core.Ecs.Collections.IdTable
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Collections
+      url: Alis.Core.Ecs.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The id table class
+- code: 'public abstract class IdTable : IDisposable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: IdTable
+    url: Alis.Core.Ecs.Collections.IdTable.html
+- h4: Derived
+- list:
+  - text: IdTable<T>
+    url: Alis.Core.Ecs.Collections.IdTable-1.html
+- h4: Implements
+- list:
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: IdTable(Array, bool)
+  id: Alis_Core_Ecs_Collections_IdTable__ctor_System_Array_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L66
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.#ctor(System.Array,System.Boolean)
+    commentId: M:Alis.Core.Ecs.Collections.IdTable.#ctor(System.Array,System.Boolean)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Collections.IdTable" data-throw-if-not-resolved="false"></xref> class
+- code: protected IdTable(Array empty, bool gcRefs)
+- h4: Parameters
+- parameters:
+  - name: empty
+    type:
+    - text: Array
+      url: https://learn.microsoft.com/dotnet/api/system.array
+    description: The empty
+  - name: gcRefs
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The gc refs
+- h2: Fields
+- api3: Buffer
+  id: Alis_Core_Ecs_Collections_IdTable_Buffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.Buffer
+    commentId: F:Alis.Core.Ecs.Collections.IdTable.Buffer
+- markdown: The buffer
+- code: protected Array Buffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Array
+      url: https://learn.microsoft.com/dotnet/api/system.array
+- api3: NextIndex
+  id: Alis_Core_Ecs_Collections_IdTable_NextIndex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L54
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.NextIndex
+    commentId: F:Alis.Core.Ecs.Collections.IdTable.NextIndex
+- markdown: The next index
+- code: protected int NextIndex
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Recycled
+  id: Alis_Core_Ecs_Collections_IdTable_Recycled
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L59
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.Recycled
+    commentId: F:Alis.Core.Ecs.Collections.IdTable.Recycled
+- markdown: The recycled
+- code: protected FastestStack<int> Recycled
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '>'
+- api3: _hasGcReferences
+  id: Alis_Core_Ecs_Collections_IdTable__hasGcReferences
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable._hasGcReferences
+    commentId: F:Alis.Core.Ecs.Collections.IdTable._hasGcReferences
+- markdown: The has gc references
+- code: private readonly bool _hasGcReferences
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h2: Methods
+- api3: ClearValue(int)
+  id: Alis_Core_Ecs_Collections_IdTable_ClearValue_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L154
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.ClearValue(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.IdTable.ClearValue(System.Int32)
+- markdown: Clears the value using the specified index
+- code: protected abstract void ClearValue(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- api3: Consume(int)
+  id: Alis_Core_Ecs_Collections_IdTable_Consume_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L126
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.Consume(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.IdTable.Consume(System.Int32)
+- markdown: Consumes the index
+- code: public void Consume(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- api3: CreateBoxed(object)
+  id: Alis_Core_Ecs_Collections_IdTable_CreateBoxed_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L87
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.CreateBoxed(System.Object)
+    commentId: M:Alis.Core.Ecs.Collections.IdTable.CreateBoxed(System.Object)
+- markdown: Creates the boxed using the specified to store
+- code: public int CreateBoxed(object toStore)
+- h4: Parameters
+- parameters:
+  - name: toStore
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The to store
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- api3: Dispose()
+  id: Alis_Core_Ecs_Collections_IdTable_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L76
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.Dispose
+    commentId: M:Alis.Core.Ecs.Collections.IdTable.Dispose
+- markdown: Disposes this instance
+- code: public void Dispose()
+- api3: Double()
+  id: Alis_Core_Ecs_Collections_IdTable_Double
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L166
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.Double
+    commentId: M:Alis.Core.Ecs.Collections.IdTable.Double
+- markdown: Doubles this instance
+- code: protected abstract void Double()
+- api3: GetValue(int)
+  id: Alis_Core_Ecs_Collections_IdTable_GetValue_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L161
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.GetValue(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.IdTable.GetValue(System.Int32)
+- markdown: Gets the value using the specified index
+- code: protected abstract object GetValue(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- h4: Returns
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object
+- api3: GetValueBoxed(int)
+  id: Alis_Core_Ecs_Collections_IdTable_GetValueBoxed_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L113
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.GetValueBoxed(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.IdTable.GetValueBoxed(System.Int32)
+- markdown: Gets the value boxed using the specified index
+- code: public object GetValueBoxed(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- h4: Returns
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object
+- api3: InvokeEventWithAndConsume(GenericEvent, GameObject, int)
+  id: Alis_Core_Ecs_Collections_IdTable_InvokeEventWithAndConsume_Alis_Core_Ecs_Kernel_Events_GenericEvent_Alis_Core_Ecs_GameObject_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L141
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.InvokeEventWithAndConsume(Alis.Core.Ecs.Kernel.Events.GenericEvent,Alis.Core.Ecs.GameObject,System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.IdTable.InvokeEventWithAndConsume(Alis.Core.Ecs.Kernel.Events.GenericEvent,Alis.Core.Ecs.GameObject,System.Int32)
+- markdown: Invokes the event with and consume using the specified generic event
+- code: public abstract void InvokeEventWithAndConsume(GenericEvent genericEvent, GameObject gameObject, int index)
+- h4: Parameters
+- parameters:
+  - name: genericEvent
+    type:
+    - text: GenericEvent
+      url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+    description: The generic event
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- api3: SetValue(object, int)
+  id: Alis_Core_Ecs_Collections_IdTable_SetValue_System_Object_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L148
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.SetValue(System.Object,System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.IdTable.SetValue(System.Object,System.Int32)
+- markdown: Sets the value using the specified value
+- code: protected abstract void SetValue(object value, int index)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The value
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- api3: TakeBoxed(int)
+  id: Alis_Core_Ecs_Collections_IdTable_TakeBoxed_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/IDTable.cs#L120
+  metadata:
+    uid: Alis.Core.Ecs.Collections.IdTable.TakeBoxed(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.IdTable.TakeBoxed(System.Int32)
+- markdown: Takes the boxed using the specified index
+- code: public object TakeBoxed(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- h4: Returns
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object
+languageId: csharp
+metadata:
+  description: The id table class

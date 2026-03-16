@@ -1,0 +1,395 @@
+### YamlMime:ApiPage
+title: Class ComponentStorageBase
+body:
+- api1: Class ComponentStorageBase
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase
+    commentId: T:Alis.Core.Ecs.Updating.ComponentStorageBase
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Updating
+      url: Alis.Core.Ecs.Updating.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The component storage base class
+- code: public abstract class ComponentStorageBase
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: ComponentStorageBase
+    url: Alis.Core.Ecs.Updating.ComponentStorageBase.html
+- h4: Derived
+- list:
+  - text: ComponentStorage<TComponent>
+    url: Alis.Core.Ecs.Updating.ComponentStorage-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: ComponentStorageBase(Array)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase__ctor_System_Array_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.#ctor(System.Array)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.#ctor(System.Array)
+- markdown: The component storage base class
+- code: protected ComponentStorageBase(Array initalBuffer)
+- h4: Parameters
+- parameters:
+  - name: initalBuffer
+    type:
+    - text: Array
+      url: https://learn.microsoft.com/dotnet/api/system.array
+- h2: Fields
+- api3: Buffer
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_Buffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.Buffer
+    commentId: F:Alis.Core.Ecs.Updating.ComponentStorageBase.Buffer
+- markdown: The inital buffer
+- code: public Array Buffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Array
+      url: https://learn.microsoft.com/dotnet/api/system.array
+- h2: Properties
+- api3: ComponentId
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_ComponentId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L52
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.ComponentId
+    commentId: P:Alis.Core.Ecs.Updating.ComponentStorageBase.ComponentId
+- markdown: Gets the value of the component id
+- code: internal abstract ComponentId ComponentId { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+- h2: Methods
+- api3: Delete(DeleteComponentData)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_Delete_Alis_Core_Ecs_Updating_DeleteComponentData_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L74
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.Delete(Alis.Core.Ecs.Updating.DeleteComponentData)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.Delete(Alis.Core.Ecs.Updating.DeleteComponentData)
+- markdown: Deletes the delete component data
+- code: internal abstract void Delete(DeleteComponentData deleteComponentData)
+- h4: Parameters
+- parameters:
+  - name: deleteComponentData
+    type:
+    - text: DeleteComponentData
+      url: Alis.Core.Ecs.Updating.DeleteComponentData.html
+    description: The delete component data
+- api3: GetAt(int)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_GetAt_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L140
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.GetAt(System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.GetAt(System.Int32)
+- markdown: Gets the at using the specified index
+- code: internal abstract object GetAt(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- h4: Returns
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object
+- api3: GetComponentSize<T>()
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_GetComponentSize__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L158
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.GetComponentSize``1
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.GetComponentSize``1
+- markdown: Gets the component size
+- code: internal static int GetComponentSize<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The size
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: InvokeGenericActionWith(GenericEvent, GameObject, int)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_InvokeGenericActionWith_Alis_Core_Ecs_Kernel_Events_GenericEvent_Alis_Core_Ecs_GameObject_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L112
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.InvokeGenericActionWith(Alis.Core.Ecs.Kernel.Events.GenericEvent,Alis.Core.Ecs.GameObject,System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.InvokeGenericActionWith(Alis.Core.Ecs.Kernel.Events.GenericEvent,Alis.Core.Ecs.GameObject,System.Int32)
+- markdown: Invokes the generic action with using the specified action
+- code: internal abstract void InvokeGenericActionWith(GenericEvent action, GameObject gameObject, int index)
+- h4: Parameters
+- parameters:
+  - name: action
+    type:
+    - text: GenericEvent
+      url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+    description: The action
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- api3: InvokeGenericActionWith(IGenericAction, int)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_InvokeGenericActionWith_Alis_Core_Ecs_Kernel_Events_IGenericAction_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L119
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.InvokeGenericActionWith(Alis.Core.Ecs.Kernel.Events.IGenericAction,System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.InvokeGenericActionWith(Alis.Core.Ecs.Kernel.Events.IGenericAction,System.Int32)
+- markdown: Invokes the generic action with using the specified action
+- code: internal abstract void InvokeGenericActionWith(IGenericAction action, int index)
+- h4: Parameters
+- parameters:
+  - name: action
+    type:
+    - text: IGenericAction
+      url: Alis.Core.Ecs.Kernel.Events.IGenericAction.html
+    description: The action
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- api3: PullComponentFrom(IdTable, int, int)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_PullComponentFrom_Alis_Core_Ecs_Collections_IdTable_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L104
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.PullComponentFrom(Alis.Core.Ecs.Collections.IdTable,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.PullComponentFrom(Alis.Core.Ecs.Collections.IdTable,System.Int32,System.Int32)
+- markdown: Pulls the component from using the specified storage
+- code: internal abstract void PullComponentFrom(IdTable storage, int me, int other)
+- h4: Parameters
+- parameters:
+  - name: storage
+    type:
+    - text: IdTable
+      url: Alis.Core.Ecs.Collections.IdTable.html
+    description: The storage
+  - name: me
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The me
+  - name: other
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The other
+- api3: PullComponentFromAndClear(ComponentStorageBase, int, int, int)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_PullComponentFromAndClear_Alis_Core_Ecs_Updating_ComponentStorageBase_System_Int32_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L95
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.PullComponentFromAndClear(Alis.Core.Ecs.Updating.ComponentStorageBase,System.Int32,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.PullComponentFromAndClear(Alis.Core.Ecs.Updating.ComponentStorageBase,System.Int32,System.Int32,System.Int32)
+- markdown: Pulls the component from and clear using the specified other runner
+- code: internal abstract void PullComponentFromAndClear(ComponentStorageBase otherRunner, int me, int other, int otherRemove)
+- h4: Parameters
+- parameters:
+  - name: otherRunner
+    type:
+    - text: ComponentStorageBase
+      url: Alis.Core.Ecs.Updating.ComponentStorageBase.html
+    description: The other runner
+  - name: me
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The me
+  - name: other
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The other
+  - name: otherRemove
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The other remove
+- api3: PullComponentFromAndClearTryDevirt(ComponentStorageBase, int, int, int)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_PullComponentFromAndClearTryDevirt_Alis_Core_Ecs_Updating_ComponentStorageBase_System_Int32_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L147
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.PullComponentFromAndClearTryDevirt(Alis.Core.Ecs.Updating.ComponentStorageBase,System.Int32,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.PullComponentFromAndClearTryDevirt(Alis.Core.Ecs.Updating.ComponentStorageBase,System.Int32,System.Int32,System.Int32)
+- markdown: >-
+    Implementation should mirror
+
+    <xref href="Alis.Core.Ecs.Updating.ComponentStorage%601.PullComponentFromAndClear(Alis.Core.Ecs.Updating.ComponentStorageBase%2cSystem.Int32%2cSystem.Int32%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref>
+- code: internal void PullComponentFromAndClearTryDevirt(ComponentStorageBase otherRunner, int me, int other, int otherRemove)
+- h4: Parameters
+- parameters:
+  - name: otherRunner
+    type:
+    - text: ComponentStorageBase
+      url: Alis.Core.Ecs.Updating.ComponentStorageBase.html
+  - name: me
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: other
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: otherRemove
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: ResizeBuffer(int)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_ResizeBuffer_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L86
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.ResizeBuffer(System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.ResizeBuffer(System.Int32)
+- markdown: Resizes the buffer using the specified size
+- code: internal abstract void ResizeBuffer(int size)
+- h4: Parameters
+- parameters:
+  - name: size
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The size
+- api3: Run(Scene, Archetype)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_Run_Alis_Core_Ecs_Scene_Alis_Core_Ecs_Kernel_Archetypes_Archetype_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L59
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.Run(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.Run(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+- markdown: Runs the scene
+- code: internal abstract void Run(Scene scene, Archetype b)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: b
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The
+- api3: Run(Scene, Archetype, int, int)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_Run_Alis_Core_Ecs_Scene_Alis_Core_Ecs_Kernel_Archetypes_Archetype_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L68
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.Run(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.Run(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32,System.Int32)
+- markdown: Runs the scene
+- code: internal abstract void Run(Scene scene, Archetype b, int start, int length)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: b
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The
+  - name: start
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The start
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The length
+- api3: SetAt(object, int)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_SetAt_System_Object_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L133
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.SetAt(System.Object,System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.SetAt(System.Object,System.Int32)
+- markdown: Sets the at using the specified component
+- code: internal abstract void SetAt(object component, int index)
+- h4: Parameters
+- parameters:
+  - name: component
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The component
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- api3: Store(int)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_Store_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L126
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.Store(System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.Store(System.Int32)
+- markdown: Stores the index
+- code: internal abstract ComponentHandle Store(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- h4: Returns
+- parameters:
+  - type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    description: The component handle
+- api3: Trim(int)
+  id: Alis_Core_Ecs_Updating_ComponentStorageBase_Trim_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/ComponentStorageBase.cs#L80
+  metadata:
+    uid: Alis.Core.Ecs.Updating.ComponentStorageBase.Trim(System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.ComponentStorageBase.Trim(System.Int32)
+- markdown: Trims the chunk index
+- code: internal abstract void Trim(int chunkIndex)
+- h4: Parameters
+- parameters:
+  - name: chunkIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The chunk index
+languageId: csharp
+metadata:
+  description: The component storage base class

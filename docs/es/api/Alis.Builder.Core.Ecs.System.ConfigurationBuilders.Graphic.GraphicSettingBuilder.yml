@@ -1,0 +1,186 @@
+### YamlMime:ApiPage
+title: Class GraphicSettingBuilder
+body:
+- api1: Class GraphicSettingBuilder
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Graphic_GraphicSettingBuilder
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Graphic/GraphicSettingBuilder.cs#L40
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder
+    commentId: T:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The graphic setting builder class
+- code: 'public class GraphicSettingBuilder : IBuild<GraphicSetting>'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: GraphicSettingBuilder
+    url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.html
+- h4: Implements
+- list:
+  - text: IBuild<GraphicSetting>
+    url: Alis.Core.Aspect.Fluent.IBuild-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: graphicSetting
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Graphic_GraphicSettingBuilder_graphicSetting
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Graphic/GraphicSettingBuilder.cs#L46
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.graphicSetting
+    commentId: F:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.graphicSetting
+- markdown: The graphic setting
+- code: private GraphicSetting graphicSetting
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GraphicSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.html
+- h2: Methods
+- api3: BackgroundColor(Color)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Graphic_GraphicSettingBuilder_BackgroundColor_Alis_Core_Aspect_Math_Definition_Color_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Graphic/GraphicSettingBuilder.cs#L93
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.BackgroundColor(Alis.Core.Aspect.Math.Definition.Color)
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.BackgroundColor(Alis.Core.Aspect.Math.Definition.Color)
+- markdown: Backgrounds the color using the specified color
+- code: public GraphicSettingBuilder BackgroundColor(Color color)
+- h4: Parameters
+- parameters:
+  - name: color
+    type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+    description: The color
+- h4: Returns
+- parameters:
+  - type:
+    - text: GraphicSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.html
+    description: The graphic setting builder
+- api3: Build()
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Graphic_GraphicSettingBuilder_Build
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Graphic/GraphicSettingBuilder.cs#L52
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.Build
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.Build
+- markdown: Builds this instance
+- code: public GraphicSetting Build()
+- h4: Returns
+- parameters:
+  - type:
+    - text: GraphicSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.html
+    description: The graphic setting
+- api3: FrameRate(double)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Graphic_GraphicSettingBuilder_FrameRate_System_Double_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Graphic/GraphicSettingBuilder.cs#L70
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.FrameRate(System.Double)
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.FrameRate(System.Double)
+- markdown: Frames the rate using the specified value
+- code: public GraphicSettingBuilder FrameRate(double value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: GraphicSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.html
+    description: The graphic setting builder
+- api3: IsResizable(bool)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Graphic_GraphicSettingBuilder_IsResizable_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Graphic/GraphicSettingBuilder.cs#L104
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.IsResizable(System.Boolean)
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.IsResizable(System.Boolean)
+- markdown: Ises the resizable using the specified value
+- code: public GraphicSettingBuilder IsResizable(bool value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: GraphicSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.html
+    description: The graphic setting builder
+- api3: Resolution(int, int)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Graphic_GraphicSettingBuilder_Resolution_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Graphic/GraphicSettingBuilder.cs#L82
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.Resolution(System.Int32,System.Int32)
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.Resolution(System.Int32,System.Int32)
+- markdown: Resolutions the x
+- code: public GraphicSettingBuilder Resolution(int x, int y)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: y
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: GraphicSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.html
+    description: The graphic setting builder
+- api3: Target(string)
+  id: Alis_Builder_Core_Ecs_System_ConfigurationBuilders_Graphic_GraphicSettingBuilder_Target_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/System/ConfigurationBuilders/Graphic/GraphicSettingBuilder.cs#L59
+  metadata:
+    uid: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.Target(System.String)
+    commentId: M:Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.Target(System.String)
+- markdown: Targets the value
+- code: public GraphicSettingBuilder Target(string value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: GraphicSettingBuilder
+      url: Alis.Builder.Core.Ecs.System.ConfigurationBuilders.Graphic.GraphicSettingBuilder.html
+    description: The graphic setting builder
+languageId: csharp
+metadata:
+  description: The graphic setting builder class

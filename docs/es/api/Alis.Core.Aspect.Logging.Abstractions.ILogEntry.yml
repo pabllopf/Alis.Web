@@ -1,0 +1,157 @@
+### YamlMime:ApiPage
+title: Interface ILogEntry
+body:
+- api1: Interface ILogEntry
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogEntry
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogEntry.cs#L39
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogEntry
+    commentId: T:Alis.Core.Aspect.Logging.Abstractions.ILogEntry
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Abstractions
+      url: Alis.Core.Aspect.Logging.Abstractions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Represents a single log entry with all relevant contextual information.
+
+    This interface defines the contract for log data passed through the logging system.
+- code: public interface ILogEntry
+- h2: Properties
+- api3: CorrelationId
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogEntry_CorrelationId
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogEntry.cs#L74
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.CorrelationId
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogEntry.CorrelationId
+- markdown: Gets the correlation ID for tracing related log entries.
+- code: string CorrelationId { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Exception
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogEntry_Exception
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogEntry.cs#L64
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Exception
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Exception
+- markdown: Gets the exception associated with this entry, if any.
+- code: Exception Exception { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Exception
+      url: https://learn.microsoft.com/dotnet/api/system.exception
+- api3: Level
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogEntry_Level
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogEntry.cs#L44
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Level
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Level
+- markdown: Gets the log level indicating severity of this entry.
+- code: LogLevel Level { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+- api3: LoggerName
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogEntry_LoggerName
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogEntry.cs#L59
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.LoggerName
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogEntry.LoggerName
+- markdown: Gets the name/category of the logger that created this entry.
+- code: string LoggerName { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Message
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogEntry_Message
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogEntry.cs#L49
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Message
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Message
+- markdown: Gets the primary message of the log entry.
+- code: string Message { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Properties
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogEntry_Properties
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogEntry.cs#L79
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Properties
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Properties
+- markdown: Gets the structured data (key-value pairs) associated with this entry.
+- code: IReadOnlyDictionary<string, object> Properties { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: IReadOnlyDictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+    - <
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - ','
+    - " "
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    - '>'
+- api3: Scopes
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogEntry_Scopes
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogEntry.cs#L84
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Scopes
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Scopes
+- markdown: Gets the scope/context information for this log entry.
+- code: IReadOnlyList<object> Scopes { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: IReadOnlyList
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+    - <
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    - '>'
+- api3: ThreadId
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogEntry_ThreadId
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogEntry.cs#L69
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.ThreadId
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogEntry.ThreadId
+- markdown: Gets the thread ID where the log entry was created.
+- code: int ThreadId { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Timestamp
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogEntry_Timestamp
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogEntry.cs#L54
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Timestamp
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogEntry.Timestamp
+- markdown: Gets the timestamp when the log entry was created.
+- code: DateTime Timestamp { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DateTime
+      url: https://learn.microsoft.com/dotnet/api/system.datetime
+languageId: csharp
+metadata:
+  description: >-
+    Represents a single log entry with all relevant contextual information.
+
+    This interface defines the contract for log data passed through the logging system.

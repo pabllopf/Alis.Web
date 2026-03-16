@@ -15,10 +15,7 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The depth
-- code: >-
-    [Serializable]
-
-    public struct Depth : ISerializable
+- code: 'public struct Depth : ISerializable'
 - h4: Implements
 - list:
   - text: ISerializable

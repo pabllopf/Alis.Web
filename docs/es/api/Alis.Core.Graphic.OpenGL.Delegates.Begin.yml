@@ -1,0 +1,27 @@
+### YamlMime:ApiPage
+title: Delegate Begin
+body:
+- api1: Delegate Begin
+  id: Alis_Core_Graphic_OpenGL_Delegates_Begin
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/Begin.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.Begin
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.Begin
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The begin
+- code: public delegate void Begin(PrimitiveType mode)
+- h4: Parameters
+- parameters:
+  - name: mode
+    type:
+    - text: PrimitiveType
+      url: Alis.Core.Graphic.OpenGL.PrimitiveType.html
+languageId: csharp
+metadata:
+  description: The begin

@@ -1,0 +1,203 @@
+### YamlMime:ApiPage
+title: Struct GraphicSetting
+body:
+- api1: Struct GraphicSetting
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic_GraphicSetting
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Graphic/GraphicSetting.cs#L40
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting
+    commentId: T:Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Configuration.Graphic
+      url: Alis.Core.Ecs.Systems.Configuration.Graphic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The graphic setting class
+- code: 'public struct GraphicSetting : IGraphicSetting'
+- h4: Implements
+- list:
+  - text: IGraphicSetting
+    url: Alis.Core.Ecs.Systems.Configuration.Graphic.IGraphicSetting.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: GraphicSetting(double, string, bool, Color, bool, Color, Vector2F, bool)
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic_GraphicSetting__ctor_System_Double_System_String_System_Boolean_Alis_Core_Aspect_Math_Definition_Color_System_Boolean_Alis_Core_Aspect_Math_Definition_Color_Alis_Core_Aspect_Math_Vector_Vector2F_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Graphic/GraphicSetting.cs#L40
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.#ctor(System.Double,System.String,System.Boolean,Alis.Core.Aspect.Math.Definition.Color,System.Boolean,Alis.Core.Aspect.Math.Definition.Color,Alis.Core.Aspect.Math.Vector.Vector2F,System.Boolean)
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.#ctor(System.Double,System.String,System.Boolean,Alis.Core.Aspect.Math.Definition.Color,System.Boolean,Alis.Core.Aspect.Math.Definition.Color,Alis.Core.Aspect.Math.Vector.Vector2F,System.Boolean)
+- markdown: The graphic setting class
+- code: public GraphicSetting(double targetFrames, string target, bool previewMode, Color gridColor, bool hasGrid, Color backgroundColor, Vector2F windowSize, bool isResizable)
+- h4: Parameters
+- parameters:
+  - name: targetFrames
+    type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+  - name: target
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+  - name: previewMode
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: gridColor
+    type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+  - name: hasGrid
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: backgroundColor
+    type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+  - name: windowSize
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+  - name: isResizable
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- h4: See Also
+- list:
+  - - text: IGraphicSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Graphic.IGraphicSetting.html
+- api3: GraphicSetting()
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic_GraphicSetting__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Graphic/GraphicSetting.cs#L54
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.#ctor
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting" data-throw-if-not-resolved="false"></xref> class
+- code: public GraphicSetting()
+- h2: Properties
+- api3: BackgroundColor
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic_GraphicSetting_BackgroundColor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Graphic/GraphicSetting.cs#L94
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.BackgroundColor
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.BackgroundColor
+- markdown: Gets or sets the value of the background color
+- code: public Color BackgroundColor { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+- api3: GridColor
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic_GraphicSetting_GridColor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Graphic/GraphicSetting.cs#L84
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.GridColor
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.GridColor
+- markdown: Gets or sets the value of the grid color
+- code: public Color GridColor { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+- api3: HasGrid
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic_GraphicSetting_HasGrid
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Graphic/GraphicSetting.cs#L89
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.HasGrid
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.HasGrid
+- markdown: Gets or sets the value of the has grid
+- code: public bool HasGrid { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: IsResizable
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic_GraphicSetting_IsResizable
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Graphic/GraphicSetting.cs#L104
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.IsResizable
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.IsResizable
+- markdown: Gets or sets the value of the is resizable
+- code: public bool IsResizable { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: PreviewMode
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic_GraphicSetting_PreviewMode
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Graphic/GraphicSetting.cs#L79
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.PreviewMode
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.PreviewMode
+- markdown: Gets or sets the value of the preview mode
+- code: public bool PreviewMode { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Target
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic_GraphicSetting_Target
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Graphic/GraphicSetting.cs#L74
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.Target
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.Target
+- markdown: Gets or sets the value of the target
+- code: public string Target { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: TargetFrames
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic_GraphicSetting_TargetFrames
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Graphic/GraphicSetting.cs#L69
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.TargetFrames
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.TargetFrames
+- markdown: Gets or sets the value of the target frames
+- code: public double TargetFrames { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: double
+      url: https://learn.microsoft.com/dotnet/api/system.double
+- api3: WindowSize
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic_GraphicSetting_WindowSize
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Graphic/GraphicSetting.cs#L99
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.WindowSize
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.WindowSize
+- markdown: Gets or sets the value of the window size
+- code: public Vector2F WindowSize { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- h2: See Also
+- list:
+  - - text: IGraphicSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Graphic.IGraphicSetting.html
+languageId: csharp
+metadata:
+  description: The graphic setting class

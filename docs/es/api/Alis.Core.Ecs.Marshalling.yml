@@ -1,0 +1,25 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Marshalling
+body:
+- api1: Namespace Alis.Core.Ecs.Marshalling
+  id: Alis_Core_Ecs_Marshalling
+  metadata:
+    uid: Alis.Core.Ecs.Marshalling
+    commentId: N:Alis.Core.Ecs.Marshalling
+- h3: Classes
+- parameters:
+  - type:
+      text: GameObjectMarshal
+      url: Alis.Core.Ecs.Marshalling.GameObjectMarshal.html
+    description: >-
+      Unsafe methods to write even faster code! Users are expected to know what they are doing and improper usage can
+
+      result in corrupting scene state and segfaults.
+  - type:
+      text: SceneMarshal
+      url: Alis.Core.Ecs.Marshalling.SceneMarshal.html
+    description: >-
+      Unsafe methods to write even faster code! Users are expected to know what they are doing and improper usage can
+
+      result in corrupting scene state and segfaults.
+languageId: csharp

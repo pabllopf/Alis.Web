@@ -1,0 +1,38 @@
+### YamlMime:ApiPage
+title: Enum PolygonModeEnum
+body:
+- api1: Enum PolygonModeEnum
+  id: Alis_Core_Graphic_OpenGL_Enums_PolygonModeEnum
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/PolygonModeEnum.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.PolygonModeEnum
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.PolygonModeEnum
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The polygon mode enum enum
+- code: 'public enum PolygonModeEnum : uint'
+- h2: Fields
+- parameters:
+  - name: Point
+    default: "6912"
+    description: >+
+      The point polygon mode enum
+
+  - name: Line
+    default: "6913"
+    description: >+
+      The line polygon mode enum
+
+  - name: Fill
+    default: "6914"
+    description: >+
+      The fill polygon mode enum
+
+languageId: csharp
+metadata:
+  description: The polygon mode enum enum

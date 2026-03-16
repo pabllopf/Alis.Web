@@ -1,0 +1,48 @@
+### YamlMime:ApiPage
+title: Enum ShaderParameter
+body:
+- api1: Enum ShaderParameter
+  id: Alis_Core_Graphic_OpenGL_Enums_ShaderParameter
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/ShaderParameter.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.ShaderParameter
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.ShaderParameter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The shader parameter enum
+- code: public enum ShaderParameter
+- h2: Fields
+- parameters:
+  - name: ShaderType
+    default: "35663"
+    description: >+
+      The shader type shader parameter
+
+  - name: DeleteStatus
+    default: "35712"
+    description: >+
+      The delete status shader parameter
+
+  - name: CompileStatus
+    default: "35713"
+    description: >+
+      The compile status shader parameter
+
+  - name: InfoLogLength
+    default: "35716"
+    description: >+
+      The info log length shader parameter
+
+  - name: ShaderSourceLength
+    default: "35720"
+    description: >+
+      The shader source length shader parameter
+
+languageId: csharp
+metadata:
+  description: The shader parameter enum

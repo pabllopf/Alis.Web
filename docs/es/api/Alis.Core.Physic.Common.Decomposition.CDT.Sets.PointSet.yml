@@ -15,7 +15,7 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The point set class
-- code: 'internal class PointSet : Triangulatable'
+- code: 'internal class PointSet : ITriangulatable'
 - h4: Inheritance
 - inheritance:
   - text: object
@@ -28,8 +28,8 @@ body:
     url: Alis.Core.Physic.Common.Decomposition.CDT.Sets.ConstrainedPointSet.html
 - h4: Implements
 - list:
-  - text: Triangulatable
-    url: Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable.html
+  - text: ITriangulatable
+    url: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.html
 - h4: Inherited Members
 - list:
   - text: object.Equals(object?)
@@ -67,14 +67,14 @@ body:
     - '>'
     description: The points
 - h2: Properties
-- api3: Points
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_Points
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L52
+- api3: GetPoints
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_GetPoints
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L51
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.Points
-    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.Points
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.GetPoints
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.GetPoints
 - markdown: Gets the value of the points
-- code: public IList<TriangulationPoint> Points { get; }
+- code: public IList<TriangulationPoint> GetPoints { get; }
 - h4: Property Value
 - parameters:
   - type:
@@ -84,14 +84,14 @@ body:
     - text: TriangulationPoint
       url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
     - '>'
-- api3: Triangles
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_Triangles
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L57
+- api3: GetTriangles
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_GetTriangles
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L56
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.Triangles
-    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.Triangles
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.GetTriangles
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.GetTriangles
 - markdown: Gets or sets the value of the triangles
-- code: public IList<DelaunayTriangle> Triangles { get; private set; }
+- code: public IList<DelaunayTriangle> GetTriangles { get; private set; }
 - h4: Property Value
 - parameters:
   - type:
@@ -103,7 +103,7 @@ body:
     - '>'
 - api3: TriangulationMode
   id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_TriangulationMode
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L62
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L61
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.TriangulationMode
     commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.TriangulationMode
@@ -117,7 +117,7 @@ body:
 - h2: Methods
 - api3: AddTriangle(DelaunayTriangle)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_AddTriangle_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L68
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L67
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.AddTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.AddTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
@@ -132,7 +132,7 @@ body:
     description: The
 - api3: AddTriangles(IEnumerable<DelaunayTriangle>)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_AddTriangles_System_Collections_Generic_IEnumerable_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L77
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L76
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.AddTriangles(System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle})
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.AddTriangles(System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle})
@@ -151,7 +151,7 @@ body:
     description: The list
 - api3: ClearTriangles()
   id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_ClearTriangles
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L85
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L87
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.ClearTriangles
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.ClearTriangles
@@ -159,7 +159,7 @@ body:
 - code: public void ClearTriangles()
 - api3: PrepareTriangulation(TriangulationContext)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Sets_PointSet_PrepareTriangulation_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L94
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Sets/PointSet.cs#L96
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Sets.PointSet.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext)
@@ -174,8 +174,8 @@ body:
     description: The tcx
 - h2: See Also
 - list:
-  - - text: Triangulatable
-      url: Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable.html
+  - - text: ITriangulatable
+      url: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.html
 languageId: csharp
 metadata:
   description: The point set class

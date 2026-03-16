@@ -44,27 +44,27 @@ body:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: TOIPositionIterations
-  id: Alis_Core_Physic_Dynamics_SolverIterations_TOIPositionIterations
+- api3: ToiPositionIterations
+  id: Alis_Core_Physic_Dynamics_SolverIterations_ToiPositionIterations
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/SolverIterations.cs#L47
   metadata:
-    uid: Alis.Core.Physic.Dynamics.SolverIterations.TOIPositionIterations
-    commentId: F:Alis.Core.Physic.Dynamics.SolverIterations.TOIPositionIterations
+    uid: Alis.Core.Physic.Dynamics.SolverIterations.ToiPositionIterations
+    commentId: F:Alis.Core.Physic.Dynamics.SolverIterations.ToiPositionIterations
 - markdown: The number of position iterations in the TOI solver
-- code: public int TOIPositionIterations
+- code: public int ToiPositionIterations
 - h4: Field Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: TOIVelocityIterations
-  id: Alis_Core_Physic_Dynamics_SolverIterations_TOIVelocityIterations
+- api3: ToiVelocityIterations
+  id: Alis_Core_Physic_Dynamics_SolverIterations_ToiVelocityIterations
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/SolverIterations.cs#L44
   metadata:
-    uid: Alis.Core.Physic.Dynamics.SolverIterations.TOIVelocityIterations
-    commentId: F:Alis.Core.Physic.Dynamics.SolverIterations.TOIVelocityIterations
+    uid: Alis.Core.Physic.Dynamics.SolverIterations.ToiVelocityIterations
+    commentId: F:Alis.Core.Physic.Dynamics.SolverIterations.ToiVelocityIterations
 - markdown: The number of velocity iterations in the TOI solver
-- code: public int TOIVelocityIterations
+- code: public int ToiVelocityIterations
 - h4: Field Value
 - parameters:
   - type:

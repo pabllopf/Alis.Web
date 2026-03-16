@@ -3,7 +3,7 @@ title: Class SeidelDecomposer
 body:
 - api1: Class SeidelDecomposer
   id: Alis_Core_Physic_Common_Decomposition_SeidelDecomposer
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/SeidelDecomposer.cs#L56
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/SeidelDecomposer.cs#L55
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.SeidelDecomposer
     commentId: T:Alis.Core.Physic.Common.Decomposition.SeidelDecomposer
@@ -70,7 +70,7 @@ body:
 - h2: Methods
 - api3: ConvexPartition(Vertices, float)
   id: Alis_Core_Physic_Common_Decomposition_SeidelDecomposer_ConvexPartition_Alis_Core_Physic_Common_Vertices_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/SeidelDecomposer.cs#L64
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/SeidelDecomposer.cs#L63
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.SeidelDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices,System.Single)
     commentId: M:Alis.Core.Physic.Common.Decomposition.SeidelDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices,System.Single)
@@ -101,7 +101,7 @@ body:
     description: A list of triangles
 - api3: ConvexPartitionTrapezoid(Vertices, float)
   id: Alis_Core_Physic_Common_Decomposition_SeidelDecomposer_ConvexPartitionTrapezoid_Alis_Core_Physic_Common_Vertices_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/SeidelDecomposer.cs#L100
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/SeidelDecomposer.cs#L97
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.SeidelDecomposer.ConvexPartitionTrapezoid(Alis.Core.Physic.Common.Vertices,System.Single)
     commentId: M:Alis.Core.Physic.Common.Decomposition.SeidelDecomposer.ConvexPartitionTrapezoid(Alis.Core.Physic.Common.Vertices,System.Single)

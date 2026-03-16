@@ -1,0 +1,57 @@
+### YamlMime:ApiPage
+title: Interface IOnUpdate<TArg1, TArg2>
+body:
+- api1: Interface IOnUpdate<TArg1, TArg2>
+  id: Alis_Core_Aspect_Fluent_Components_IOnUpdate_2
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnUpdate.2.cs#L37
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnUpdate`2
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnUpdate`2
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gameObject component interface
+- code: 'public interface IOnUpdate<TArg1, TArg2> : IComponentBase'
+- h4: Type Parameters
+- parameters:
+  - name: TArg1
+  - name: TArg2
+- h4: Implements
+- list:
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+- h2: Methods
+- api3: Update(IGameObject, ref TArg1, ref TArg2)
+  id: Alis_Core_Aspect_Fluent_Components_IOnUpdate_2_Update_Alis_Core_Aspect_Fluent_Components_IGameObject__0___1__
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnUpdate.2.cs#L45
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnUpdate`2.Update(Alis.Core.Aspect.Fluent.Components.IGameObject,`0@,`1@)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnUpdate`2.Update(Alis.Core.Aspect.Fluent.Components.IGameObject,`0@,`1@)
+- markdown: Updates the self
+- code: void Update(IGameObject self, ref TArg1 arg1, ref TArg2 arg2)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+  - name: arg1
+    type:
+    - TArg1
+    description: The arg
+  - name: arg2
+    type:
+    - TArg2
+    description: The arg
+- h2: See Also
+- list:
+  - - text: IComponentBase
+      url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+languageId: csharp
+metadata:
+  description: The gameObject component interface

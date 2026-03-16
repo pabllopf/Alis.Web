@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Systems.Configuration.Graphic
+body:
+- api1: Namespace Alis.Core.Ecs.Systems.Configuration.Graphic
+  id: Alis_Core_Ecs_Systems_Configuration_Graphic
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Graphic
+    commentId: N:Alis.Core.Ecs.Systems.Configuration.Graphic
+- h3: Structs
+- parameters:
+  - type:
+      text: GraphicSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Graphic.GraphicSetting.html
+    description: The graphic setting class
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IGraphicSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Graphic.IGraphicSetting.html
+    description: The graphic setting interface
+languageId: csharp

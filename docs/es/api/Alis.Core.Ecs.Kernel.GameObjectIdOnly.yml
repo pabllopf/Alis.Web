@@ -1,0 +1,178 @@
+### YamlMime:ApiPage
+title: Struct GameObjectIdOnly
+body:
+- api1: Struct GameObjectIdOnly
+  id: Alis_Core_Ecs_Kernel_GameObjectIdOnly
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectIdOnly.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectIdOnly
+    commentId: T:Alis.Core.Ecs.Kernel.GameObjectIdOnly
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gameObject id only
+- code: public struct GameObjectIdOnly
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 6 bytes total (int + ushort)
+
+    Pack = 1 for minimal memory footprint
+- h2: Constructors
+- api3: GameObjectIdOnly(int, ushort)
+  id: Alis_Core_Ecs_Kernel_GameObjectIdOnly__ctor_System_Int32_System_UInt16_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectIdOnly.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectIdOnly.#ctor(System.Int32,System.UInt16)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectIdOnly.#ctor(System.Int32,System.UInt16)
+- markdown: The gameObject id only
+- code: public GameObjectIdOnly(int id, ushort version)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: version
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- h4: Remarks
+- markdown: >-
+    Memory layout optimized: 6 bytes total (int + ushort)
+
+    Pack = 1 for minimal memory footprint
+- h2: Fields
+- api3: ID
+  id: Alis_Core_Ecs_Kernel_GameObjectIdOnly_ID
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectIdOnly.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectIdOnly.ID
+    commentId: F:Alis.Core.Ecs.Kernel.GameObjectIdOnly.ID
+- markdown: The id
+- code: internal int ID
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Version
+  id: Alis_Core_Ecs_Kernel_GameObjectIdOnly_Version
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectIdOnly.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectIdOnly.Version
+    commentId: F:Alis.Core.Ecs.Kernel.GameObjectIdOnly.Version
+- markdown: The version
+- code: internal ushort Version
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- h2: Methods
+- api3: Deconstruct(out int, out ushort)
+  id: Alis_Core_Ecs_Kernel_GameObjectIdOnly_Deconstruct_System_Int32__System_UInt16__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectIdOnly.cs#L67
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectIdOnly.Deconstruct(System.Int32@,System.UInt16@)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectIdOnly.Deconstruct(System.Int32@,System.UInt16@)
+- markdown: Deconstructs the id
+- code: internal void Deconstruct(out int id, out ushort version)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The id
+  - name: version
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The version
+- api3: Init(GameObject)
+  id: Alis_Core_Ecs_Kernel_GameObjectIdOnly_Init_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectIdOnly.cs#L88
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectIdOnly.Init(Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectIdOnly.Init(Alis.Core.Ecs.GameObject)
+- markdown: Inits the gameObject
+- code: internal void Init(GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- api3: Init(GameObjectIdOnly)
+  id: Alis_Core_Ecs_Kernel_GameObjectIdOnly_Init_Alis_Core_Ecs_Kernel_GameObjectIdOnly_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectIdOnly.cs#L99
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectIdOnly.Init(Alis.Core.Ecs.Kernel.GameObjectIdOnly)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectIdOnly.Init(Alis.Core.Ecs.Kernel.GameObjectIdOnly)
+- markdown: Inits the gameObject
+- code: internal void Init(GameObjectIdOnly entity)
+- h4: Parameters
+- parameters:
+  - name: entity
+    type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    description: The gameObject
+- api3: SetEntity(ref GameObject)
+  id: Alis_Core_Ecs_Kernel_GameObjectIdOnly_SetEntity_Alis_Core_Ecs_GameObject__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectIdOnly.cs#L77
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectIdOnly.SetEntity(Alis.Core.Ecs.GameObject@)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectIdOnly.SetEntity(Alis.Core.Ecs.GameObject@)
+- markdown: Sets the gameObject using the specified gameObject
+- code: internal void SetEntity(ref GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- api3: ToEntity(Scene)
+  id: Alis_Core_Ecs_Kernel_GameObjectIdOnly_ToEntity_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/GameObjectIdOnly.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.GameObjectIdOnly.ToEntity(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.Kernel.GameObjectIdOnly.ToEntity(Alis.Core.Ecs.Scene)
+- markdown: Returns the gameObject using the specified scene
+- code: internal GameObject ToEntity(Scene scene)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+languageId: csharp
+metadata:
+  description: The gameObject id only

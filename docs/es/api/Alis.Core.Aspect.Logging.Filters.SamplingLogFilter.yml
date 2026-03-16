@@ -1,0 +1,135 @@
+### YamlMime:ApiPage
+title: Class SamplingLogFilter
+body:
+- api1: Class SamplingLogFilter
+  id: Alis_Core_Aspect_Logging_Filters_SamplingLogFilter
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/SamplingLogFilter.cs#L40
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.SamplingLogFilter
+    commentId: T:Alis.Core.Aspect.Logging.Filters.SamplingLogFilter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Filters
+      url: Alis.Core.Aspect.Logging.Filters.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Samples log entries to reduce volume while maintaining representative coverage.
+
+    Useful for high-frequency logging scenarios like render loops.
+
+    AOT-compatible: Uses atomic counters for sampling.
+- code: 'public sealed class SamplingLogFilter : ILogFilter'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: SamplingLogFilter
+    url: Alis.Core.Aspect.Logging.Filters.SamplingLogFilter.html
+- h4: Implements
+- list:
+  - text: ILogFilter
+    url: Alis.Core.Aspect.Logging.Abstractions.ILogFilter.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: SamplingLogFilter(int)
+  id: Alis_Core_Aspect_Logging_Filters_SamplingLogFilter__ctor_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/SamplingLogFilter.cs#L56
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.SamplingLogFilter.#ctor(System.Int32)
+    commentId: M:Alis.Core.Aspect.Logging.Filters.SamplingLogFilter.#ctor(System.Int32)
+- markdown: Initializes a new instance of the SamplingLogFilter class.
+- code: public SamplingLogFilter(int sampleRate = 10)
+- h4: Parameters
+- parameters:
+  - name: sampleRate
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: 1 out of every N entries will pass. Must be &gt;= 1.
+    optional: true
+- h2: Fields
+- api3: _counter
+  id: Alis_Core_Aspect_Logging_Filters_SamplingLogFilter__counter
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/SamplingLogFilter.cs#L50
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.SamplingLogFilter._counter
+    commentId: F:Alis.Core.Aspect.Logging.Filters.SamplingLogFilter._counter
+- markdown: The counter
+- code: private long _counter
+- h4: Field Value
+- parameters:
+  - type:
+    - text: long
+      url: https://learn.microsoft.com/dotnet/api/system.int64
+- api3: _sampleRate
+  id: Alis_Core_Aspect_Logging_Filters_SamplingLogFilter__sampleRate
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/SamplingLogFilter.cs#L45
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.SamplingLogFilter._sampleRate
+    commentId: F:Alis.Core.Aspect.Logging.Filters.SamplingLogFilter._sampleRate
+- markdown: The sample rate
+- code: private readonly int _sampleRate
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Properties
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Filters_SamplingLogFilter_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/SamplingLogFilter.cs#L71
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.SamplingLogFilter.Name
+    commentId: P:Alis.Core.Aspect.Logging.Filters.SamplingLogFilter.Name
+- markdown: Gets the value of the name
+- code: public string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: ShouldLog(ILogEntry)
+  id: Alis_Core_Aspect_Logging_Filters_SamplingLogFilter_ShouldLog_Alis_Core_Aspect_Logging_Abstractions_ILogEntry_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/SamplingLogFilter.cs#L79
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.SamplingLogFilter.ShouldLog(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+    commentId: M:Alis.Core.Aspect.Logging.Filters.SamplingLogFilter.ShouldLog(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+- markdown: Shoulds the log using the specified entry
+- code: public bool ShouldLog(ILogEntry entry)
+- h4: Parameters
+- parameters:
+  - name: entry
+    type:
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: The entry
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+languageId: csharp
+metadata:
+  description: >-
+    Samples log entries to reduce volume while maintaining representative coverage.
+
+    Useful for high-frequency logging scenarios like render loops.
+
+    AOT-compatible: Uses atomic counters for sampling.

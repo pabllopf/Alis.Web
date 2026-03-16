@@ -9,14 +9,17 @@ body:
 - h3: Namespaces
 - parameters:
   - type:
+      text: Alis.Core.Aspect.Math.Collections
+      url: Alis.Core.Aspect.Math.Collections.html
+  - type:
       text: Alis.Core.Aspect.Math.Definition
       url: Alis.Core.Aspect.Math.Definition.html
   - type:
       text: Alis.Core.Aspect.Math.Matrix
       url: Alis.Core.Aspect.Math.Matrix.html
   - type:
-      text: Alis.Core.Aspect.Math.Shape
-      url: Alis.Core.Aspect.Math.Shape.html
+      text: Alis.Core.Aspect.Math.Shapes
+      url: Alis.Core.Aspect.Math.Shapes.html
   - type:
       text: Alis.Core.Aspect.Math.Util
       url: Alis.Core.Aspect.Math.Util.html
@@ -32,20 +35,7 @@ body:
 - h3: Structs
 - parameters:
   - type:
-      text: Rotation
-      url: Alis.Core.Aspect.Math.Rotation.html
-    description: The rotation
-  - type:
-      text: Transform
-      url: Alis.Core.Aspect.Math.Transform.html
-    description: >-
-      A transform contains translation and rotation. It is used to represent the position and orientation of rigid
-
-      frames.
-- h3: Enums
-- parameters:
-  - type:
-      text: Direction
-      url: Alis.Core.Aspect.Math.Direction.html
-    description: Indicate the direction.
+      text: HashCode
+      url: Alis.Core.Aspect.Math.HashCode.html
+    description: The hash code
 languageId: csharp

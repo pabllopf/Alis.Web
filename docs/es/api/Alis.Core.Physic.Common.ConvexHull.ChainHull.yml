@@ -3,7 +3,7 @@ title: Class ChainHull
 body:
 - api1: Class ChainHull
   id: Alis_Core_Physic_Common_ConvexHull_ChainHull
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/ConvexHull/ChainHull.cs#L42
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/ConvexHull/ChainHull.cs#L41
   metadata:
     uid: Alis.Core.Physic.Common.ConvexHull.ChainHull
     commentId: T:Alis.Core.Physic.Common.ConvexHull.ChainHull
@@ -44,26 +44,23 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Fields
-- api3: _pointComparer
-  id: Alis_Core_Physic_Common_ConvexHull_ChainHull__pointComparer
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/ConvexHull/ChainHull.cs#L49
+- api3: PointComparer
+  id: Alis_Core_Physic_Common_ConvexHull_ChainHull_PointComparer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/ConvexHull/ChainHull.cs#L46
   metadata:
-    uid: Alis.Core.Physic.Common.ConvexHull.ChainHull._pointComparer
-    commentId: F:Alis.Core.Physic.Common.ConvexHull.ChainHull._pointComparer
+    uid: Alis.Core.Physic.Common.ConvexHull.ChainHull.PointComparer
+    commentId: F:Alis.Core.Physic.Common.ConvexHull.ChainHull.PointComparer
 - markdown: The point comparer
-- code: private static readonly ChainHull.PointComparer _pointComparer
+- code: private static readonly PointComparer PointComparer
 - h4: Field Value
 - parameters:
   - type:
-    - text: ChainHull
-      url: Alis.Core.Physic.Common.ConvexHull.ChainHull.html
-    - .
     - text: PointComparer
-      url: Alis.Core.Physic.Common.ConvexHull.ChainHull.PointComparer.html
+      url: Alis.Core.Physic.Common.ConvexHull.PointComparer.html
 - h2: Methods
 - api3: GetConvexHull(Vertices)
   id: Alis_Core_Physic_Common_ConvexHull_ChainHull_GetConvexHull_Alis_Core_Physic_Common_Vertices_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/ConvexHull/ChainHull.cs#L54
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/ConvexHull/ChainHull.cs#L51
   metadata:
     uid: Alis.Core.Physic.Common.ConvexHull.ChainHull.GetConvexHull(Alis.Core.Physic.Common.Vertices)
     commentId: M:Alis.Core.Physic.Common.ConvexHull.ChainHull.GetConvexHull(Alis.Core.Physic.Common.Vertices)

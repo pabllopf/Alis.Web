@@ -1,0 +1,216 @@
+### YamlMime:ApiPage
+title: Struct GameObjectLocation
+body:
+- api1: Struct GameObjectLocation
+  id: Alis_Core_Ecs_GameObjectLocation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectLocation.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectLocation
+    commentId: T:Alis.Core.Ecs.GameObjectLocation
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs
+      url: Alis.Core.Ecs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gameObject location
+- code: public struct GameObjectLocation
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: Archetype (reference, 8 bytes) -&gt; Index (4 bytes) -&gt; Flags (4 bytes enum) -&gt; Version (2 bytes)
+
+    Total: 18 bytes + 6 bytes padding = 24 bytes aligned
+
+    Pack = 4 for optimal performance on 64-bit architectures while minimizing padding
+- h2: Constructors
+- api3: GameObjectLocation(Archetype, int)
+  id: Alis_Core_Ecs_GameObjectLocation__ctor_Alis_Core_Ecs_Kernel_Archetypes_Archetype_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectLocation.cs#L78
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectLocation.#ctor(Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32)
+    commentId: M:Alis.Core.Ecs.GameObjectLocation.#ctor(Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.GameObjectLocation" data-throw-if-not-resolved="false"></xref> class
+- code: public GameObjectLocation(Archetype archetype, int index)
+- h4: Parameters
+- parameters:
+  - name: archetype
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- api3: GameObjectLocation(Archetype, int, GameObjectFlags)
+  id: Alis_Core_Ecs_GameObjectLocation__ctor_Alis_Core_Ecs_Kernel_Archetypes_Archetype_System_Int32_Alis_Core_Ecs_GameObjectFlags_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectLocation.cs#L91
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectLocation.#ctor(Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32,Alis.Core.Ecs.GameObjectFlags)
+    commentId: M:Alis.Core.Ecs.GameObjectLocation.#ctor(Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32,Alis.Core.Ecs.GameObjectFlags)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.GameObjectLocation" data-throw-if-not-resolved="false"></xref> class
+- code: public GameObjectLocation(Archetype archetype, int index, GameObjectFlags flags)
+- h4: Parameters
+- parameters:
+  - name: archetype
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+  - name: flags
+    type:
+    - text: GameObjectFlags
+      url: Alis.Core.Ecs.GameObjectFlags.html
+    description: The flags
+- h2: Fields
+- api3: Archetype
+  id: Alis_Core_Ecs_GameObjectLocation_Archetype
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectLocation.cs#L51
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectLocation.Archetype
+    commentId: F:Alis.Core.Ecs.GameObjectLocation.Archetype
+- markdown: The archetype
+- code: internal Archetype Archetype
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+- api3: Flags
+  id: Alis_Core_Ecs_GameObjectLocation_Flags
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectLocation.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectLocation.Flags
+    commentId: F:Alis.Core.Ecs.GameObjectLocation.Flags
+- markdown: The flags
+- code: internal GameObjectFlags Flags
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GameObjectFlags
+      url: Alis.Core.Ecs.GameObjectFlags.html
+- api3: Index
+  id: Alis_Core_Ecs_GameObjectLocation_Index
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectLocation.cs#L56
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectLocation.Index
+    commentId: F:Alis.Core.Ecs.GameObjectLocation.Index
+- markdown: The index
+- code: internal int Index
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Version
+  id: Alis_Core_Ecs_GameObjectLocation_Version
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectLocation.cs#L66
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectLocation.Version
+    commentId: F:Alis.Core.Ecs.GameObjectLocation.Version
+- markdown: The version
+- code: internal ushort Version
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- h2: Properties
+- api3: ArchetypeId
+  id: Alis_Core_Ecs_GameObjectLocation_ArchetypeId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectLocation.cs#L71
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectLocation.ArchetypeId
+    commentId: P:Alis.Core.Ecs.GameObjectLocation.ArchetypeId
+- markdown: Gets the value of the archetype id
+- code: internal readonly GameObjectType ArchetypeId { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+- api3: Default
+  id: Alis_Core_Ecs_GameObjectLocation_Default
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectLocation.cs#L101
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectLocation.Default
+    commentId: P:Alis.Core.Ecs.GameObjectLocation.Default
+- markdown: Gets the value of the default
+- code: public static GameObjectLocation Default { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+- h2: Methods
+- api3: HasEvent(GameObjectFlags)
+  id: Alis_Core_Ecs_GameObjectLocation_HasEvent_Alis_Core_Ecs_GameObjectFlags_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectLocation.cs#L108
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectLocation.HasEvent(Alis.Core.Ecs.GameObjectFlags)
+    commentId: M:Alis.Core.Ecs.GameObjectLocation.HasEvent(Alis.Core.Ecs.GameObjectFlags)
+- markdown: Hases the event using the specified gameObject flags
+- code: public readonly bool HasEvent(GameObjectFlags entityFlags)
+- h4: Parameters
+- parameters:
+  - name: entityFlags
+    type:
+    - text: GameObjectFlags
+      url: Alis.Core.Ecs.GameObjectFlags.html
+    description: The gameObject flags
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The res
+- api3: HasEventFlag(GameObjectFlags, GameObjectFlags)
+  id: Alis_Core_Ecs_GameObjectLocation_HasEventFlag_Alis_Core_Ecs_GameObjectFlags_Alis_Core_Ecs_GameObjectFlags_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectLocation.cs#L121
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectLocation.HasEventFlag(Alis.Core.Ecs.GameObjectFlags,Alis.Core.Ecs.GameObjectFlags)
+    commentId: M:Alis.Core.Ecs.GameObjectLocation.HasEventFlag(Alis.Core.Ecs.GameObjectFlags,Alis.Core.Ecs.GameObjectFlags)
+- markdown: Hases the event flag using the specified gameObject flags
+- code: public static bool HasEventFlag(GameObjectFlags entityFlags, GameObjectFlags target)
+- h4: Parameters
+- parameters:
+  - name: entityFlags
+    type:
+    - text: GameObjectFlags
+      url: Alis.Core.Ecs.GameObjectFlags.html
+    description: The gameObject flags
+  - name: target
+    type:
+    - text: GameObjectFlags
+      url: Alis.Core.Ecs.GameObjectFlags.html
+    description: The target
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The res
+languageId: csharp
+metadata:
+  description: The gameObject location

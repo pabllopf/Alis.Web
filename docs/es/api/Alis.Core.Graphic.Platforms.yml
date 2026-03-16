@@ -1,0 +1,26 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Graphic.Platforms
+body:
+- api1: Namespace Alis.Core.Graphic.Platforms
+  id: Alis_Core_Graphic_Platforms
+  metadata:
+    uid: Alis.Core.Graphic.Platforms
+    commentId: N:Alis.Core.Graphic.Platforms
+- h3: Namespaces
+- parameters:
+  - type:
+      text: Alis.Core.Graphic.Platforms.Android
+      url: Alis.Core.Graphic.Platforms.Android.html
+  - type:
+      text: Alis.Core.Graphic.Platforms.Osx
+      url: Alis.Core.Graphic.Platforms.Osx.html
+  - type:
+      text: Alis.Core.Graphic.Platforms.Web
+      url: Alis.Core.Graphic.Platforms.Web.html
+- h3: Interfaces
+- parameters:
+  - type:
+      text: INativePlatform
+      url: Alis.Core.Graphic.Platforms.INativePlatform.html
+    description: The native platform interface
+languageId: csharp

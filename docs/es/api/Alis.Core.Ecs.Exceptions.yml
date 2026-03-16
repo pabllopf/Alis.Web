@@ -1,0 +1,19 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Exceptions
+body:
+- api1: Namespace Alis.Core.Ecs.Exceptions
+  id: Alis_Core_Ecs_Exceptions
+  metadata:
+    uid: Alis.Core.Ecs.Exceptions
+    commentId: N:Alis.Core.Ecs.Exceptions
+- h3: Classes
+- parameters:
+  - type:
+      text: ComponentAlreadyExistsException
+      url: Alis.Core.Ecs.Exceptions.ComponentAlreadyExistsException.html
+    description: The component already exists exception class
+  - type:
+      text: ComponentNotFoundException
+      url: Alis.Core.Ecs.Exceptions.ComponentNotFoundException.html
+    description: The component not found exception class
+languageId: csharp

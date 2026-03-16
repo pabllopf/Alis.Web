@@ -3,7 +3,7 @@ title: Struct Matrix3X3
 body:
 - api1: Struct Matrix3X3
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X3
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L37
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L39
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3
     commentId: T:Alis.Core.Aspect.Math.Matrix.Matrix3X3
@@ -31,34 +31,34 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Constructors
-- api3: Matrix3X3(Vector3, Vector3, Vector3)
-  id: Alis_Core_Aspect_Math_Matrix_Matrix3X3__ctor_Alis_Core_Aspect_Math_Vector_Vector3_Alis_Core_Aspect_Math_Vector_Vector3_Alis_Core_Aspect_Math_Vector_Vector3_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L55
+- api3: Matrix3X3(Vector3F, Vector3F, Vector3F)
+  id: Alis_Core_Aspect_Math_Matrix_Matrix3X3__ctor_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L58
   metadata:
-    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.#ctor(Alis.Core.Aspect.Math.Vector.Vector3,Alis.Core.Aspect.Math.Vector.Vector3,Alis.Core.Aspect.Math.Vector.Vector3)
-    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.#ctor(Alis.Core.Aspect.Math.Vector.Vector3,Alis.Core.Aspect.Math.Vector.Vector3,Alis.Core.Aspect.Math.Vector.Vector3)
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.#ctor(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.#ctor(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Aspect.Math.Matrix.Matrix3X3" data-throw-if-not-resolved="false"></xref> class
-- code: public Matrix3X3(Vector3 c1, Vector3 c2, Vector3 c3)
+- code: public Matrix3X3(Vector3F c1, Vector3F c2, Vector3F c3)
 - h4: Parameters
 - parameters:
   - name: c1
     type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
     description: The
   - name: c2
     type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
     description: The
   - name: c3
     type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
     description: The
 - api3: Matrix3X3(float, float, float, float, float, float, float, float, float)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X3__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L75
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L78
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
@@ -114,7 +114,7 @@ body:
 - h2: Fields
 - api3: Epsilon
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Epsilon
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L42
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L45
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Epsilon
     commentId: F:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Epsilon
@@ -127,89 +127,89 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: Ex
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Ex
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L47
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L50
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Ex
     commentId: F:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Ex
 - markdown: The ez
-- code: public Vector3 Ex
+- code: public Vector3F Ex
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
 - api3: Ey
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Ey
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L47
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L50
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Ey
     commentId: F:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Ey
 - markdown: The ez
-- code: public Vector3 Ey
+- code: public Vector3F Ey
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
 - api3: Ez
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Ez
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L47
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L50
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Ez
     commentId: F:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Ez
 - markdown: The ez
-- code: public Vector3 Ez
+- code: public Vector3F Ez
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
 - h2: Methods
-- api3: Cross(Vector3, Vector3)
-  id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Cross_Alis_Core_Aspect_Math_Vector_Vector3_Alis_Core_Aspect_Math_Vector_Vector3_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L217
+- api3: Cross(Vector3F, Vector3F)
+  id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Cross_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L223
   metadata:
-    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Cross(Alis.Core.Aspect.Math.Vector.Vector3,Alis.Core.Aspect.Math.Vector.Vector3)
-    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Cross(Alis.Core.Aspect.Math.Vector.Vector3,Alis.Core.Aspect.Math.Vector.Vector3)
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Cross(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Cross(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
 - markdown: Crosses the a
-- code: private static Vector3 Cross(Vector3 a, Vector3 b)
+- code: private static Vector3F Cross(Vector3F a, Vector3F b)
 - h4: Parameters
 - parameters:
   - name: a
     type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
     description: The
   - name: b
     type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
     description: The
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
     description: The vector
-- api3: Dot(Vector3, Vector3)
-  id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Dot_Alis_Core_Aspect_Math_Vector_Vector3_Alis_Core_Aspect_Math_Vector_Vector3_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L208
+- api3: Dot(Vector3F, Vector3F)
+  id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Dot_Alis_Core_Aspect_Math_Vector_Vector3F_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L214
   metadata:
-    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Dot(Alis.Core.Aspect.Math.Vector.Vector3,Alis.Core.Aspect.Math.Vector.Vector3)
-    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Dot(Alis.Core.Aspect.Math.Vector.Vector3,Alis.Core.Aspect.Math.Vector.Vector3)
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Dot(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Dot(Alis.Core.Aspect.Math.Vector.Vector3F,Alis.Core.Aspect.Math.Vector.Vector3F)
 - markdown: Dots the a
-- code: private static float Dot(Vector3 a, Vector3 b)
+- code: private static float Dot(Vector3F a, Vector3F b)
 - h4: Parameters
 - parameters:
   - name: a
     type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
     description: The
   - name: b
     type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
     description: The
 - h4: Returns
 - parameters:
@@ -219,12 +219,15 @@ body:
     description: The float
 - api3: GetInverse22(ref Matrix3X3)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_GetInverse22_Alis_Core_Aspect_Math_Matrix_Matrix3X3__
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L137
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L141
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.GetInverse22(Alis.Core.Aspect.Math.Matrix.Matrix3X3@)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.GetInverse22(Alis.Core.Aspect.Math.Matrix.Matrix3X3@)
 - markdown: Gets the inverse 22 using the specified m
-- code: public void GetInverse22(ref Matrix3X3 m)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public void GetInverse22(ref Matrix3X3 m)
 - h4: Parameters
 - parameters:
   - name: m
@@ -234,12 +237,15 @@ body:
     description: The
 - api3: GetSymInverse33(ref Matrix3X3)
   id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_GetSymInverse33_Alis_Core_Aspect_Math_Matrix_Matrix3X3__
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L170
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L175
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.GetSymInverse33(Alis.Core.Aspect.Math.Matrix.Matrix3X3@)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.GetSymInverse33(Alis.Core.Aspect.Math.Matrix.Matrix3X3@)
 - markdown: Gets the sym inverse 33 using the specified m
-- code: public void GetSymInverse33(ref Matrix3X3 m)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public void GetSymInverse33(ref Matrix3X3 m)
 - h4: Parameters
 - parameters:
   - name: m
@@ -247,47 +253,50 @@ body:
     - text: Matrix3X3
       url: Alis.Core.Aspect.Math.Matrix.Matrix3X3.html
     description: The
-- api3: Solve22(Vector2)
-  id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Solve22_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L119
+- api3: Solve22(Vector2F)
+  id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Solve22_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L123
   metadata:
-    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Solve22(Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Solve22(Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Solve22(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Solve22(Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Solves the 22 using the specified b
-- code: public Vector2 Solve22(Vector2 b)
+- code: public Vector2F Solve22(Vector2F b)
 - h4: Parameters
 - parameters:
   - name: b
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The vector
-- api3: Solve33(Vector3)
-  id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Solve33_Alis_Core_Aspect_Math_Vector_Vector3_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L101
+- api3: Solve33(Vector3F)
+  id: Alis_Core_Aspect_Math_Matrix_Matrix3X3_Solve33_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix3X3.cs#L104
   metadata:
-    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Solve33(Alis.Core.Aspect.Math.Vector.Vector3)
-    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Solve33(Alis.Core.Aspect.Math.Vector.Vector3)
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix3X3.Solve33(Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix3X3.Solve33(Alis.Core.Aspect.Math.Vector.Vector3F)
 - markdown: Solves the 33 using the specified b
-- code: public Vector3 Solve33(Vector3 b)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public Vector3F Solve33(Vector3F b)
 - h4: Parameters
 - parameters:
   - name: b
     type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
     description: The
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector3
-      url: Alis.Core.Aspect.Math.Vector.Vector3.html
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
     description: The vector
 languageId: csharp
 metadata:

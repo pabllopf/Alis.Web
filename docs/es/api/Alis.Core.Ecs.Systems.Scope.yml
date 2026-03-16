@@ -1,0 +1,29 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Systems.Scope
+body:
+- api1: Namespace Alis.Core.Ecs.Systems.Scope
+  id: Alis_Core_Ecs_Systems_Scope
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Scope
+    commentId: N:Alis.Core.Ecs.Systems.Scope
+- h3: Classes
+- parameters:
+  - type:
+      text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    description: The context class
+  - type:
+      text: ContextHandler
+      url: Alis.Core.Ecs.Systems.Scope.ContextHandler.html
+    description: The context handler class
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IContext
+      url: Alis.Core.Ecs.Systems.Scope.IContext.html
+    description: The context interface
+  - type:
+      text: IContextHandler<T>
+      url: Alis.Core.Ecs.Systems.Scope.IContextHandler-1.html
+    description: The runner interface
+languageId: csharp

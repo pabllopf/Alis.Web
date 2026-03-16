@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Components.Audio
+body:
+- api1: Namespace Alis.Core.Ecs.Components.Audio
+  id: Alis_Core_Ecs_Components_Audio
+  metadata:
+    uid: Alis.Core.Ecs.Components.Audio
+    commentId: N:Alis.Core.Ecs.Components.Audio
+- h3: Structs
+- parameters:
+  - type:
+      text: AudioSource
+      url: Alis.Core.Ecs.Components.Audio.AudioSource.html
+    description: The audio clip
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IAudioSource
+      url: Alis.Core.Ecs.Components.Audio.IAudioSource.html
+    description: The audio source interface
+languageId: csharp

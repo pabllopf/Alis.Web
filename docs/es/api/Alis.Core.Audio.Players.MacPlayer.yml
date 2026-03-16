@@ -34,6 +34,10 @@ body:
     url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase_PauseProcessCommand
   - text: UnixPlayerBase.ResumeProcessCommand
     url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase_ResumeProcessCommand
+  - text: UnixPlayerBase._lastExtractedFile
+    url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase__lastExtractedFile
+  - text: UnixPlayerBase._lastPlayedFile
+    url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase__lastPlayedFile
   - text: UnixPlayerBase._process
     url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase__process
   - text: UnixPlayerBase.PlaybackFinished
@@ -44,6 +48,8 @@ body:
     url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase_Paused
   - text: UnixPlayerBase.Play(string)
     url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase_Play_System_String_
+  - text: UnixPlayerBase.PlayLoop(string, bool)
+    url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase_PlayLoop_System_String_System_Boolean_
   - text: UnixPlayerBase.Pause()
     url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase_Pause
   - text: UnixPlayerBase.Resume()
@@ -52,6 +58,10 @@ body:
     url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase_Stop
   - text: UnixPlayerBase.SetVolume(byte)
     url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase_SetVolume_System_Byte_
+  - text: UnixPlayerBase.ExtractWavFromResourcesAsync(string)
+    url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase_ExtractWavFromResourcesAsync_System_String_
+  - text: UnixPlayerBase.GetAudioDuration(string)
+    url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase_GetAudioDuration_System_String_
   - text: UnixPlayerBase.GetBashCommand(string)
     url: Alis.Core.Audio.Players.UnixPlayerBase.html#Alis_Core_Audio_Players_UnixPlayerBase_GetBashCommand_System_String_
   - text: UnixPlayerBase.StartBashProcess(string)

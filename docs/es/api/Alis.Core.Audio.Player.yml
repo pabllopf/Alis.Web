@@ -101,7 +101,7 @@ body:
 - h2: Methods
 - api3: CheckOs()
   id: Alis_Core_Audio_Player_CheckOs
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L127
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L137
   metadata:
     uid: Alis.Core.Audio.Player.CheckOs
     commentId: M:Alis.Core.Audio.Player.CheckOs
@@ -115,7 +115,7 @@ body:
     description: The player
 - api3: OnPlaybackFinished(object, EventArgs)
   id: Alis_Core_Audio_Player_OnPlaybackFinished_System_Object_System_EventArgs_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L134
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L158
   metadata:
     uid: Alis.Core.Audio.Player.OnPlaybackFinished(System.Object,System.EventArgs)
     commentId: M:Alis.Core.Audio.Player.OnPlaybackFinished(System.Object,System.EventArgs)
@@ -135,7 +135,7 @@ body:
     description: The
 - api3: Pause()
   id: Alis_Core_Audio_Player_Pause
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L90
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L100
   metadata:
     uid: Alis.Core.Audio.Player.Pause
     commentId: M:Alis.Core.Audio.Player.Pause
@@ -173,9 +173,34 @@ body:
     - text: Task
       url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
     description: ''
+- api3: PlayLoop(string, bool)
+  id: Alis_Core_Audio_Player_PlayLoop_System_String_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L91
+  metadata:
+    uid: Alis.Core.Audio.Player.PlayLoop(System.String,System.Boolean)
+    commentId: M:Alis.Core.Audio.Player.PlayLoop(System.String,System.Boolean)
+- markdown: Plays the loop using the specified file name
+- code: public Task PlayLoop(string fileName, bool loop)
+- h4: Parameters
+- parameters:
+  - name: fileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The file name
+  - name: loop
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The loop
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
 - api3: Resume()
   id: Alis_Core_Audio_Player_Resume
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L99
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L109
   metadata:
     uid: Alis.Core.Audio.Player.Resume
     commentId: M:Alis.Core.Audio.Player.Resume
@@ -189,7 +214,7 @@ body:
     description: ''
 - api3: SetVolume(byte)
   id: Alis_Core_Audio_Player_SetVolume_System_Byte_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L117
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L127
   metadata:
     uid: Alis.Core.Audio.Player.SetVolume(System.Byte)
     commentId: M:Alis.Core.Audio.Player.SetVolume(System.Byte)
@@ -209,7 +234,7 @@ body:
     description: ''
 - api3: Stop()
   id: Alis_Core_Audio_Player_Stop
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L108
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Player.cs#L118
   metadata:
     uid: Alis.Core.Audio.Player.Stop
     commentId: M:Alis.Core.Audio.Player.Stop

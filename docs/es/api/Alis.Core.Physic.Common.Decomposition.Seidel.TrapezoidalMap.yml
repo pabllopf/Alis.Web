@@ -50,12 +50,12 @@ body:
 - h2: Fields
 - api3: Map
   id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap_Map
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L62
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L50
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Map
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Map
 - markdown: The map
-- code: public HashSet<Trapezoid> Map
+- code: public readonly HashSet<Trapezoid> Map
 - h4: Field Value
 - parameters:
   - type:
@@ -67,7 +67,7 @@ body:
     - '>'
 - api3: _bCross
   id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap__bCross
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L50
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L56
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap._bCross
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap._bCross
@@ -80,7 +80,7 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.Seidel.Edge.html
 - api3: _cross
   id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap__cross
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L56
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L62
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap._cross
     commentId: F:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap._cross
@@ -107,7 +107,7 @@ body:
 - h2: Methods
 - api3: BoundingBox(List<Edge>)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap_BoundingBox_System_Collections_Generic_List_Alis_Core_Physic_Common_Decomposition_Seidel_Edge__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L250
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L266
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.BoundingBox(System.Collections.Generic.List{Alis.Core.Physic.Common.Decomposition.Seidel.Edge})
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.BoundingBox(System.Collections.Generic.List{Alis.Core.Physic.Common.Decomposition.Seidel.Edge})
@@ -188,7 +188,7 @@ body:
     description: The trapezoids
 - api3: Case3(Trapezoid, Edge)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap_Case3_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Alis_Core_Physic_Common_Decomposition_Seidel_Edge_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L149
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L153
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case3(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case3(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
@@ -216,7 +216,7 @@ body:
     description: The trapezoids
 - api3: Case4(Trapezoid, Edge)
   id: Alis_Core_Physic_Common_Decomposition_Seidel_TrapezoidalMap_Case4_Alis_Core_Physic_Common_Decomposition_Seidel_Trapezoid_Alis_Core_Physic_Common_Decomposition_Seidel_Edge_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L206
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/Seidel/TrapezoidalMap.cs#L218
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case4(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)
     commentId: M:Alis.Core.Physic.Common.Decomposition.Seidel.TrapezoidalMap.Case4(Alis.Core.Physic.Common.Decomposition.Seidel.Trapezoid,Alis.Core.Physic.Common.Decomposition.Seidel.Edge)

@@ -1,0 +1,185 @@
+### YamlMime:ApiPage
+title: Struct Chunk<TData>
+body:
+- api1: Struct Chunk<TData>
+  id: Alis_Core_Ecs_Collections_Chunk_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/Chunk.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Collections.Chunk`1
+    commentId: T:Alis.Core.Ecs.Collections.Chunk`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Collections
+      url: Alis.Core.Ecs.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The chunk
+- code: internal struct Chunk<TData>
+- h4: Type Parameters
+- parameters:
+  - name: TData
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 8 bytes total (TData[] reference)
+
+    Pack = 8 for optimal alignment with reference types on 64-bit architectures
+- h2: Constructors
+- api3: Chunk(int)
+  id: Alis_Core_Ecs_Collections_Chunk_1__ctor_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/Chunk.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.Collections.Chunk`1.#ctor(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.Chunk`1.#ctor(System.Int32)
+- markdown: Initializes a new instance of the class
+- code: public Chunk(int len)
+- h4: Parameters
+- parameters:
+  - name: len
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The len
+- h2: Fields
+- api3: Buffer
+  id: Alis_Core_Ecs_Collections_Chunk_1_Buffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/Chunk.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Collections.Chunk`1.Buffer
+    commentId: F:Alis.Core.Ecs.Collections.Chunk`1.Buffer
+- markdown: The buffer
+- code: internal TData[] Buffer
+- h4: Field Value
+- parameters:
+  - type:
+    - TData
+    - '['
+    - ']'
+- h2: Properties
+- api3: Length
+  id: Alis_Core_Ecs_Collections_Chunk_1_Length
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/Chunk.cs#L109
+  metadata:
+    uid: Alis.Core.Ecs.Collections.Chunk`1.Length
+    commentId: P:Alis.Core.Ecs.Collections.Chunk`1.Length
+- markdown: Gets the value of the length
+- code: public int Length { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: this[int]
+  id: Alis_Core_Ecs_Collections_Chunk_1_Item_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/Chunk.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Collections.Chunk`1.Item(System.Int32)
+    commentId: P:Alis.Core.Ecs.Collections.Chunk`1.Item(System.Int32)
+- markdown: The
+- code: public ref TData this[int i] { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - TData
+- h2: Methods
+- api3: AsSpan()
+  id: Alis_Core_Ecs_Collections_Chunk_1_AsSpan
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/Chunk.cs#L76
+  metadata:
+    uid: Alis.Core.Ecs.Collections.Chunk`1.AsSpan
+    commentId: M:Alis.Core.Ecs.Collections.Chunk`1.AsSpan
+- markdown: Converts the span
+- code: public Span<TData> AsSpan()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - TData
+    - '>'
+    description: The buffer
+- api3: AsSpan(int, int)
+  id: Alis_Core_Ecs_Collections_Chunk_1_AsSpan_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/Chunk.cs#L85
+  metadata:
+    uid: Alis.Core.Ecs.Collections.Chunk`1.AsSpan(System.Int32,System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.Chunk`1.AsSpan(System.Int32,System.Int32)
+- markdown: Converts the span using the specified start
+- code: public Span<TData> AsSpan(int start, int length)
+- h4: Parameters
+- parameters:
+  - name: start
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The start
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The length
+- h4: Returns
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - TData
+    - '>'
+    description: A span of t data
+- api3: NextChunk(ref Chunk<TData>[], int, int)
+  id: Alis_Core_Ecs_Collections_Chunk_1_NextChunk_Alis_Core_Ecs_Collections_Chunk__0_____System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/Chunk.cs#L94
+  metadata:
+    uid: Alis.Core.Ecs.Collections.Chunk`1.NextChunk(Alis.Core.Ecs.Collections.Chunk{`0}[]@,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.Chunk`1.NextChunk(Alis.Core.Ecs.Collections.Chunk{`0}[]@,System.Int32,System.Int32)
+- markdown: Nexts the chunk using the specified chunks
+- code: public static void NextChunk(ref Chunk<TData>[] chunks, int size, int newChunkIndex)
+- h4: Parameters
+- parameters:
+  - name: chunks
+    type:
+    - text: Chunk
+      url: Alis.Core.Ecs.Collections.Chunk-1.html
+    - <
+    - TData
+    - '>'
+    - '['
+    - ']'
+    description: The chunks
+  - name: size
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The size
+  - name: newChunkIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The new chunk index
+- api3: Return()
+  id: Alis_Core_Ecs_Collections_Chunk_1_Return
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/Chunk.cs#L66
+  metadata:
+    uid: Alis.Core.Ecs.Collections.Chunk`1.Return
+    commentId: M:Alis.Core.Ecs.Collections.Chunk`1.Return
+- markdown: Returns this instance
+- code: public void Return()
+languageId: csharp
+metadata:
+  description: The chunk

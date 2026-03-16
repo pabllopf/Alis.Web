@@ -35,24 +35,24 @@ body:
     url: Alis.Core.Physic.Dynamics.Joints.WheelJoint.html
 - h4: Inherited Members
 - list:
-  - text: Joint._breakpoint
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpoint
-  - text: Joint._breakpointSquared
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpointSquared
-  - text: Joint._world
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__world
   - text: Joint.EdgeA
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeA
   - text: Joint.EdgeB
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_EdgeB
+  - text: Joint._breakpoint
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpoint
+  - text: Joint._breakpointSquared
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint__breakpointSquared
   - text: Joint.Enabled
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Enabled
   - text: Joint.IslandFlag
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_IslandFlag
   - text: Joint.Tag
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_Tag
-  - text: Joint.World
-    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_World
+  - text: Joint.WorldPhysicInternal
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldPhysicInternal
+  - text: Joint.WorldPhysic
+    url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_WorldPhysic
   - text: Joint.JointType
     url: Alis.Core.Physic.Dynamics.Joints.Joint.html#Alis_Core_Physic_Dynamics_Joints_Joint_JointType
   - text: Joint.BodyA
@@ -135,14 +135,14 @@ body:
     commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.#ctor
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.Joints.WheelJoint" data-throw-if-not-resolved="false"></xref> class
 - code: internal WheelJoint()
-- api3: WheelJoint(Body, Body, Vector2, Vector2, bool)
-  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_System_Boolean_
+- api3: WheelJoint(Body, Body, Vector2F, Vector2F, bool)
+  id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__ctor_Alis_Core_Physic_Dynamics_Body_Alis_Core_Physic_Dynamics_Body_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_System_Boolean_
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L200
   metadata:
-    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
-    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2,System.Boolean)
+    uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Boolean)
+    commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.#ctor(Alis.Core.Physic.Dynamics.Body,Alis.Core.Physic.Dynamics.Body,Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F,System.Boolean)
 - markdown: Constructor for WheelJoint
-- code: public WheelJoint(Body bodyA, Body bodyB, Vector2 anchor, Vector2 axis, bool useWorldCoordinates = false)
+- code: public WheelJoint(Body bodyA, Body bodyB, Vector2F anchor, Vector2F axis, bool useWorldCoordinates = false)
 - h4: Parameters
 - parameters:
   - name: bodyA
@@ -157,13 +157,13 @@ body:
     description: The second body
   - name: anchor
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The anchor point
   - name: axis
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The axis
   - name: useWorldCoordinates
     type:
@@ -179,12 +179,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._ax
     commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._ax
 - markdown: The ay
-- code: private Vector2 _ax
+- code: private Vector2F _ax
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: _axis
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__axis
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L68
@@ -192,12 +192,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._axis
     commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._axis
 - markdown: The axis
-- code: private Vector2 _axis
+- code: private Vector2F _axis
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: _ay
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__ay
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L63
@@ -205,12 +205,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._ay
     commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._ay
 - markdown: The ay
-- code: private Vector2 _ay
+- code: private Vector2F _ay
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: _bias
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__bias
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L73
@@ -322,12 +322,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._localCenterA
     commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._localCenterA
 - markdown: The local center
-- code: private Vector2 _localCenterA
+- code: private Vector2F _localCenterA
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: _localCenterB
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__localCenterB
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L119
@@ -335,12 +335,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._localCenterB
     commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._localCenterB
 - markdown: The local center
-- code: private Vector2 _localCenterB
+- code: private Vector2F _localCenterB
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: _localXAxis
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__localXAxis
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L125
@@ -348,12 +348,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._localXAxis
     commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._localXAxis
 - markdown: The local axis
-- code: private Vector2 _localXAxis
+- code: private Vector2F _localXAxis
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: _localYAxis
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__localYAxis
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L130
@@ -361,12 +361,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint._localYAxis
     commentId: F:Alis.Core.Physic.Dynamics.Joints.WheelJoint._localYAxis
 - markdown: The local axis
-- code: private Vector2 _localYAxis
+- code: private Vector2F _localYAxis
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: _mass
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint__mass
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L135
@@ -544,12 +544,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.Axis
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.Axis
 - markdown: The axis at which the suspension moves.
-- code: public Vector2 Axis { get; set; }
+- code: public Vector2F Axis { get; set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: DampingRatio
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_DampingRatio
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L300
@@ -609,12 +609,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalAnchorA
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalAnchorA
 - markdown: The local anchor point on BodyA
-- code: public Vector2 LocalAnchorA { get; set; }
+- code: public Vector2F LocalAnchorA { get; set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: LocalAnchorB
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_LocalAnchorB
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L227
@@ -622,12 +622,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalAnchorB
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalAnchorB
 - markdown: The local anchor point on BodyB
-- code: public Vector2 LocalAnchorB { get; set; }
+- code: public Vector2F LocalAnchorB { get; set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: LocalXAxis
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_LocalXAxis
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L264
@@ -635,12 +635,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalXAxis
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.LocalXAxis
 - markdown: The axis in local coordinates relative to BodyA
-- code: public Vector2 LocalXAxis { get; }
+- code: public Vector2F LocalXAxis { get; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: MaxMotorTorque
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_MaxMotorTorque
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L282
@@ -687,12 +687,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.WorldAnchorA
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.WorldAnchorA
 - markdown: Gets or sets the value of the world anchor a
-- code: public override Vector2 WorldAnchorA { get; set; }
+- code: public override Vector2F WorldAnchorA { get; set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: WorldAnchorB
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_WorldAnchorB
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Joints/WheelJoint.cs#L241
@@ -700,12 +700,12 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.WorldAnchorB
     commentId: P:Alis.Core.Physic.Dynamics.Joints.WheelJoint.WorldAnchorB
 - markdown: Gets or sets the value of the world anchor b
-- code: public override Vector2 WorldAnchorB { get; set; }
+- code: public override Vector2F WorldAnchorB { get; set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - h2: Methods
 - api3: GetMotorTorque(float)
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_GetMotorTorque_System_Single_
@@ -734,7 +734,7 @@ body:
     uid: Alis.Core.Physic.Dynamics.Joints.WheelJoint.GetReactionForce(System.Single)
     commentId: M:Alis.Core.Physic.Dynamics.Joints.WheelJoint.GetReactionForce(System.Single)
 - markdown: Gets the reaction force using the specified inv dt
-- code: public override Vector2 GetReactionForce(float invDt)
+- code: public override Vector2F GetReactionForce(float invDt)
 - h4: Parameters
 - parameters:
   - name: invDt
@@ -745,8 +745,8 @@ body:
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The vector
 - api3: GetReactionTorque(float)
   id: Alis_Core_Physic_Dynamics_Joints_WheelJoint_GetReactionTorque_System_Single_

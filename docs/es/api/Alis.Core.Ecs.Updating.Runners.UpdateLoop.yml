@@ -1,0 +1,455 @@
+### YamlMime:ApiPage
+title: Class UpdateLoop
+body:
+- api1: Class UpdateLoop
+  id: Alis_Core_Ecs_Updating_Runners_UpdateLoop
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/Runners/Update.cs#L40
+  metadata:
+    uid: Alis.Core.Ecs.Updating.Runners.UpdateLoop
+    commentId: T:Alis.Core.Ecs.Updating.Runners.UpdateLoop
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Updating.Runners
+      url: Alis.Core.Ecs.Updating.Runners.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The update loop class
+- code: internal static class UpdateLoop
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: UpdateLoop
+    url: Alis.Core.Ecs.Updating.Runners.UpdateLoop.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: Run<TComp>(ref GameObjectIdOnly, ref TComp, int, GameObject)
+  id: Alis_Core_Ecs_Updating_Runners_UpdateLoop_Run__1_Alis_Core_Ecs_Kernel_GameObjectIdOnly____0__System_Int32_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/Runners/Update.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``1(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,System.Int32,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``1(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,System.Int32,Alis.Core.Ecs.GameObject)
+- markdown: Runs the entity ids
+- code: 'internal static void Run<TComp>(ref GameObjectIdOnly entityIds, ref TComp comp, int length, GameObject gameObject) where TComp : IOnUpdate'
+- h4: Parameters
+- parameters:
+  - name: entityIds
+    type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    description: The entity ids
+  - name: comp
+    type:
+    - TComp
+    description: The comp
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The length
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The game object
+- h4: Type Parameters
+- parameters:
+  - name: TComp
+    description: The comp
+- api3: Run<TComp, TArg1, TArg2>(ref GameObjectIdOnly, ref TComp, ref TArg1, ref TArg2, int, GameObject)
+  id: Alis_Core_Ecs_Updating_Runners_UpdateLoop_Run__3_Alis_Core_Ecs_Kernel_GameObjectIdOnly____0____1____2__System_Int32_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/Runners/Update.cs#L82
+  metadata:
+    uid: Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``3(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,System.Int32,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``3(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,System.Int32,Alis.Core.Ecs.GameObject)
+- markdown: Runs the entity ids
+- code: 'internal static void Run<TComp, TArg1, TArg2>(ref GameObjectIdOnly entityIds, ref TComp comp, ref TArg1 arg1, ref TArg2 arg2, int length, GameObject gameObject) where TComp : IOnUpdate<TArg1, TArg2>'
+- h4: Parameters
+- parameters:
+  - name: entityIds
+    type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    description: The entity ids
+  - name: comp
+    type:
+    - TComp
+    description: The comp
+  - name: arg1
+    type:
+    - TArg1
+    description: The arg
+  - name: arg2
+    type:
+    - TArg2
+    description: The arg
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The length
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The game object
+- h4: Type Parameters
+- parameters:
+  - name: TComp
+    description: The comp
+  - name: TArg1
+    description: The arg
+  - name: TArg2
+    description: The arg
+- api3: Run<TComp, TArg1, TArg2, TArg3>(ref GameObjectIdOnly, ref TComp, ref TArg1, ref TArg2, ref TArg3, int, GameObject)
+  id: Alis_Core_Ecs_Updating_Runners_UpdateLoop_Run__4_Alis_Core_Ecs_Kernel_GameObjectIdOnly____0____1____2____3__System_Int32_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/Runners/Update.cs#L124
+  metadata:
+    uid: Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``4(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,``3@,System.Int32,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``4(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,``3@,System.Int32,Alis.Core.Ecs.GameObject)
+- markdown: Runs the entity ids
+- code: 'internal static void Run<TComp, TArg1, TArg2, TArg3>(ref GameObjectIdOnly entityIds, ref TComp comp, ref TArg1 arg1, ref TArg2 arg2, ref TArg3 arg3, int length, GameObject gameObject) where TComp : IOnUpdate<TArg1, TArg2, TArg3>'
+- h4: Parameters
+- parameters:
+  - name: entityIds
+    type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    description: The entity ids
+  - name: comp
+    type:
+    - TComp
+    description: The comp
+  - name: arg1
+    type:
+    - TArg1
+    description: The arg
+  - name: arg2
+    type:
+    - TArg2
+    description: The arg
+  - name: arg3
+    type:
+    - TArg3
+    description: The arg
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The length
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The game object
+- h4: Type Parameters
+- parameters:
+  - name: TComp
+    description: The comp
+  - name: TArg1
+    description: The arg
+  - name: TArg2
+    description: The arg
+  - name: TArg3
+    description: The arg
+- api3: Run<TComp, TArg1, TArg2, TArg3, TArg4>(ref GameObjectIdOnly, ref TComp, ref TArg1, ref TArg2, ref TArg3, ref TArg4, int, GameObject)
+  id: Alis_Core_Ecs_Updating_Runners_UpdateLoop_Run__5_Alis_Core_Ecs_Kernel_GameObjectIdOnly____0____1____2____3____4__System_Int32_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/Runners/Update.cs#L170
+  metadata:
+    uid: Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``5(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,``3@,``4@,System.Int32,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``5(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,``3@,``4@,System.Int32,Alis.Core.Ecs.GameObject)
+- markdown: Runs the entity ids
+- code: 'internal static void Run<TComp, TArg1, TArg2, TArg3, TArg4>(ref GameObjectIdOnly entityIds, ref TComp comp, ref TArg1 arg1, ref TArg2 arg2, ref TArg3 arg3, ref TArg4 arg4, int length, GameObject gameObject) where TComp : IOnUpdate<TArg1, TArg2, TArg3, TArg4>'
+- h4: Parameters
+- parameters:
+  - name: entityIds
+    type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    description: The entity ids
+  - name: comp
+    type:
+    - TComp
+    description: The comp
+  - name: arg1
+    type:
+    - TArg1
+    description: The arg
+  - name: arg2
+    type:
+    - TArg2
+    description: The arg
+  - name: arg3
+    type:
+    - TArg3
+    description: The arg
+  - name: arg4
+    type:
+    - TArg4
+    description: The arg
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The length
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The game object
+- h4: Type Parameters
+- parameters:
+  - name: TComp
+    description: The comp
+  - name: TArg1
+    description: The arg
+  - name: TArg2
+    description: The arg
+  - name: TArg3
+    description: The arg
+  - name: TArg4
+    description: The arg
+- api3: Run<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(ref GameObjectIdOnly, ref TComp, ref TArg1, ref TArg2, ref TArg3, ref TArg4, ref TArg5, ref TArg6, int, GameObject)
+  id: Alis_Core_Ecs_Updating_Runners_UpdateLoop_Run__7_Alis_Core_Ecs_Kernel_GameObjectIdOnly____0____1____2____3____4____5____6__System_Int32_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/Runners/Update.cs#L222
+  metadata:
+    uid: Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``7(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,``3@,``4@,``5@,``6@,System.Int32,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``7(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,``3@,``4@,``5@,``6@,System.Int32,Alis.Core.Ecs.GameObject)
+- markdown: Runs the entity ids
+- code: 'internal static void Run<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>(ref GameObjectIdOnly entityIds, ref TComp comp, ref TArg1 arg1, ref TArg2 arg2, ref TArg3 arg3, ref TArg4 arg4, ref TArg5 arg5, ref TArg6 arg6, int length, GameObject gameObject) where TComp : IOnUpdate<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>'
+- h4: Parameters
+- parameters:
+  - name: entityIds
+    type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    description: The entity ids
+  - name: comp
+    type:
+    - TComp
+    description: The comp
+  - name: arg1
+    type:
+    - TArg1
+    description: The arg
+  - name: arg2
+    type:
+    - TArg2
+    description: The arg
+  - name: arg3
+    type:
+    - TArg3
+    description: The arg
+  - name: arg4
+    type:
+    - TArg4
+    description: The arg
+  - name: arg5
+    type:
+    - TArg5
+    description: The arg
+  - name: arg6
+    type:
+    - TArg6
+    description: The arg
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The length
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The game object
+- h4: Type Parameters
+- parameters:
+  - name: TComp
+    description: The comp
+  - name: TArg1
+    description: The arg
+  - name: TArg2
+    description: The arg
+  - name: TArg3
+    description: The arg
+  - name: TArg4
+    description: The arg
+  - name: TArg5
+    description: The arg
+  - name: TArg6
+    description: The arg
+- api3: Run<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(ref GameObjectIdOnly, ref TComp, ref TArg1, ref TArg2, ref TArg3, ref TArg4, ref TArg5, ref TArg6, ref TArg7, int, GameObject)
+  id: Alis_Core_Ecs_Updating_Runners_UpdateLoop_Run__8_Alis_Core_Ecs_Kernel_GameObjectIdOnly____0____1____2____3____4____5____6____7__System_Int32_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/Runners/Update.cs#L280
+  metadata:
+    uid: Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``8(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,System.Int32,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``8(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,System.Int32,Alis.Core.Ecs.GameObject)
+- markdown: Runs the entity ids
+- code: 'internal static void Run<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>(ref GameObjectIdOnly entityIds, ref TComp comp, ref TArg1 arg1, ref TArg2 arg2, ref TArg3 arg3, ref TArg4 arg4, ref TArg5 arg5, ref TArg6 arg6, ref TArg7 arg7, int length, GameObject gameObject) where TComp : IOnUpdate<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>'
+- h4: Parameters
+- parameters:
+  - name: entityIds
+    type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    description: The entity ids
+  - name: comp
+    type:
+    - TComp
+    description: The comp
+  - name: arg1
+    type:
+    - TArg1
+    description: The arg
+  - name: arg2
+    type:
+    - TArg2
+    description: The arg
+  - name: arg3
+    type:
+    - TArg3
+    description: The arg
+  - name: arg4
+    type:
+    - TArg4
+    description: The arg
+  - name: arg5
+    type:
+    - TArg5
+    description: The arg
+  - name: arg6
+    type:
+    - TArg6
+    description: The arg
+  - name: arg7
+    type:
+    - TArg7
+    description: The arg
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The length
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The game object
+- h4: Type Parameters
+- parameters:
+  - name: TComp
+    description: The comp
+  - name: TArg1
+    description: The arg
+  - name: TArg2
+    description: The arg
+  - name: TArg3
+    description: The arg
+  - name: TArg4
+    description: The arg
+  - name: TArg5
+    description: The arg
+  - name: TArg6
+    description: The arg
+  - name: TArg7
+    description: The arg
+- api3: Run<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(ref GameObjectIdOnly, ref TComp, ref TArg1, ref TArg2, ref TArg3, ref TArg4, ref TArg5, ref TArg6, ref TArg7, ref TArg8, int, GameObject)
+  id: Alis_Core_Ecs_Updating_Runners_UpdateLoop_Run__9_Alis_Core_Ecs_Kernel_GameObjectIdOnly____0____1____2____3____4____5____6____7____8__System_Int32_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/Runners/Update.cs#L342
+  metadata:
+    uid: Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``9(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,System.Int32,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.Updating.Runners.UpdateLoop.Run``9(Alis.Core.Ecs.Kernel.GameObjectIdOnly@,``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@,``8@,System.Int32,Alis.Core.Ecs.GameObject)
+- markdown: Runs the entity ids
+- code: 'internal static void Run<TComp, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>(ref GameObjectIdOnly entityIds, ref TComp comp, ref TArg1 arg1, ref TArg2 arg2, ref TArg3 arg3, ref TArg4 arg4, ref TArg5 arg5, ref TArg6 arg6, ref TArg7 arg7, ref TArg8 arg8, int length, GameObject gameObject) where TComp : IOnUpdate<TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>'
+- h4: Parameters
+- parameters:
+  - name: entityIds
+    type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+    description: The entity ids
+  - name: comp
+    type:
+    - TComp
+    description: The comp
+  - name: arg1
+    type:
+    - TArg1
+    description: The arg
+  - name: arg2
+    type:
+    - TArg2
+    description: The arg
+  - name: arg3
+    type:
+    - TArg3
+    description: The arg
+  - name: arg4
+    type:
+    - TArg4
+    description: The arg
+  - name: arg5
+    type:
+    - TArg5
+    description: The arg
+  - name: arg6
+    type:
+    - TArg6
+    description: The arg
+  - name: arg7
+    type:
+    - TArg7
+    description: The arg
+  - name: arg8
+    type:
+    - TArg8
+    description: The arg
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The length
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The game object
+- h4: Type Parameters
+- parameters:
+  - name: TComp
+    description: The comp
+  - name: TArg1
+    description: The arg
+  - name: TArg2
+    description: The arg
+  - name: TArg3
+    description: The arg
+  - name: TArg4
+    description: The arg
+  - name: TArg5
+    description: The arg
+  - name: TArg6
+    description: The arg
+  - name: TArg7
+    description: The arg
+  - name: TArg8
+    description: The arg
+languageId: csharp
+metadata:
+  description: The update loop class

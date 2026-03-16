@@ -1,0 +1,121 @@
+### YamlMime:ApiPage
+title: Class LogLevelFilter
+body:
+- api1: Class LogLevelFilter
+  id: Alis_Core_Aspect_Logging_Filters_LogLevelFilter
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/LogLevelFilter.cs#L39
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.LogLevelFilter
+    commentId: T:Alis.Core.Aspect.Logging.Filters.LogLevelFilter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Filters
+      url: Alis.Core.Aspect.Logging.Filters.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Filters log entries based on their severity level.
+
+    Only entries with level &gt;= minimum level pass through.
+
+    AOT-compatible: Simple value comparison.
+- code: 'public sealed class LogLevelFilter : ILogFilter'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: LogLevelFilter
+    url: Alis.Core.Aspect.Logging.Filters.LogLevelFilter.html
+- h4: Implements
+- list:
+  - text: ILogFilter
+    url: Alis.Core.Aspect.Logging.Abstractions.ILogFilter.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: LogLevelFilter(LogLevel)
+  id: Alis_Core_Aspect_Logging_Filters_LogLevelFilter__ctor_Alis_Core_Aspect_Logging_Abstractions_LogLevel_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/LogLevelFilter.cs#L50
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.LogLevelFilter.#ctor(Alis.Core.Aspect.Logging.Abstractions.LogLevel)
+    commentId: M:Alis.Core.Aspect.Logging.Filters.LogLevelFilter.#ctor(Alis.Core.Aspect.Logging.Abstractions.LogLevel)
+- markdown: Initializes a new instance of the LogLevelFilter class.
+- code: public LogLevelFilter(LogLevel minimumLevel)
+- h4: Parameters
+- parameters:
+  - name: minimumLevel
+    type:
+    - text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+    description: The minimum level to accept.
+- h2: Fields
+- api3: _minimumLevel
+  id: Alis_Core_Aspect_Logging_Filters_LogLevelFilter__minimumLevel
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/LogLevelFilter.cs#L44
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.LogLevelFilter._minimumLevel
+    commentId: F:Alis.Core.Aspect.Logging.Filters.LogLevelFilter._minimumLevel
+- markdown: The minimum level
+- code: private readonly LogLevel _minimumLevel
+- h4: Field Value
+- parameters:
+  - type:
+    - text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+- h2: Properties
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Filters_LogLevelFilter_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/LogLevelFilter.cs#L56
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.LogLevelFilter.Name
+    commentId: P:Alis.Core.Aspect.Logging.Filters.LogLevelFilter.Name
+- markdown: Gets the value of the name
+- code: public string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: ShouldLog(ILogEntry)
+  id: Alis_Core_Aspect_Logging_Filters_LogLevelFilter_ShouldLog_Alis_Core_Aspect_Logging_Abstractions_ILogEntry_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Filters/LogLevelFilter.cs#L64
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters.LogLevelFilter.ShouldLog(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+    commentId: M:Alis.Core.Aspect.Logging.Filters.LogLevelFilter.ShouldLog(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+- markdown: Shoulds the log using the specified entry
+- code: public bool ShouldLog(ILogEntry entry)
+- h4: Parameters
+- parameters:
+  - name: entry
+    type:
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: The entry
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+languageId: csharp
+metadata:
+  description: >-
+    Filters log entries based on their severity level.
+
+    Only entries with level &gt;= minimum level pass through.
+
+    AOT-compatible: Simple value comparison.

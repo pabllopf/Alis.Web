@@ -3,7 +3,7 @@ title: Class CxFastListNode<T>
 body:
 - api1: Class CxFastListNode<T>
   id: Alis_Core_Physic_Common_TextureTools_CxFastListNode_1
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L6
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L35
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.CxFastListNode`1
     commentId: T:Alis.Core.Physic.Common.TextureTools.CxFastListNode`1
@@ -44,7 +44,7 @@ body:
 - h2: Constructors
 - api3: CxFastListNode(T)
   id: Alis_Core_Physic_Common_TextureTools_CxFastListNode_1__ctor__0_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L22
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L51
   metadata:
     uid: Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.#ctor(`0)
     commentId: M:Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.#ctor(`0)
@@ -57,26 +57,26 @@ body:
     - T
     description: The obj
 - h2: Fields
-- api3: _elt
-  id: Alis_Core_Physic_Common_TextureTools_CxFastListNode_1__elt
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L11
+- api3: Elt
+  id: Alis_Core_Physic_Common_TextureTools_CxFastListNode_1_Elt
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L40
   metadata:
-    uid: Alis.Core.Physic.Common.TextureTools.CxFastListNode`1._elt
-    commentId: F:Alis.Core.Physic.Common.TextureTools.CxFastListNode`1._elt
+    uid: Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.Elt
+    commentId: F:Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.Elt
 - markdown: The elt
-- code: internal T _elt
+- code: internal readonly T Elt
 - h4: Field Value
 - parameters:
   - type:
     - T
-- api3: _next
-  id: Alis_Core_Physic_Common_TextureTools_CxFastListNode_1__next
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L16
+- api3: Next
+  id: Alis_Core_Physic_Common_TextureTools_CxFastListNode_1_Next
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L45
   metadata:
-    uid: Alis.Core.Physic.Common.TextureTools.CxFastListNode`1._next
-    commentId: F:Alis.Core.Physic.Common.TextureTools.CxFastListNode`1._next
+    uid: Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.Next
+    commentId: F:Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.Next
 - markdown: The next
-- code: internal CxFastListNode<T> _next
+- code: internal CxFastListNode<T> Next
 - h4: Field Value
 - parameters:
   - type:
@@ -86,27 +86,27 @@ body:
     - T
     - '>'
 - h2: Methods
-- api3: Elem()
-  id: Alis_Core_Physic_Common_TextureTools_CxFastListNode_1_Elem
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L28
+- api3: GetElem()
+  id: Alis_Core_Physic_Common_TextureTools_CxFastListNode_1_GetElem
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L57
   metadata:
-    uid: Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.Elem
-    commentId: M:Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.Elem
+    uid: Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.GetElem
+    commentId: M:Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.GetElem
 - markdown: Elems this instance
-- code: public T Elem()
+- code: public T GetElem()
 - h4: Returns
 - parameters:
   - type:
     - T
     description: The
-- api3: Next()
-  id: Alis_Core_Physic_Common_TextureTools_CxFastListNode_1_Next
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L34
+- api3: NextPos()
+  id: Alis_Core_Physic_Common_TextureTools_CxFastListNode_1_NextPos
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/TextureTools/CxFastListNode.cs#L63
   metadata:
-    uid: Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.Next
-    commentId: M:Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.Next
+    uid: Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.NextPos
+    commentId: M:Alis.Core.Physic.Common.TextureTools.CxFastListNode`1.NextPos
 - markdown: Nexts this instance
-- code: public CxFastListNode<T> Next()
+- code: public CxFastListNode<T> NextPos()
 - h4: Returns
 - parameters:
   - type:

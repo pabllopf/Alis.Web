@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <title> Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis ">
+      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!">
+      <link rel="icon" href="../resources/logo.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="En este art&#237;culo">
+      <meta name="loc:searchResultsCount" content="{count} resultados para &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="Sin resultados para &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filtrar por t&#237;tulo">
+      <meta name="loc:nextArticle" content="Siguiente">
+      <meta name="loc:prevArticle" content="Anterior">
+      <meta name="loc:themeLight" content="Claro">
+      <meta name="loc:themeDark" content="Oscuro">
+      <meta name="loc:themeAuto" content="Autom&#225;tico">
+      <meta name="loc:changeTheme" content="Cambiar tema">
+      <meta name="loc:copy" content="Copiar">
+      <meta name="loc:downloadPdf" content="Descargar PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+        const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+      
+        // Función para actualizar el contenido del dropdownToggle según el idioma
+        function updateLanguage() {
+          const currentLang = document.documentElement.lang;
+          const isEnglish = currentLang === 'en';
+          const isSpanish = currentLang === 'es';
+      
+          if (isEnglish) {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              English`;
+          } else {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              Español`;
+          }
+        }
+      
+        // Llama a la función para actualizar el idioma al cargar la página
+        updateLanguage();
+      });
+    </script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+
+          // Función para actualizar el texto del botón según la URL actual
+          function updateDropdownVersion() {
+              const path = window.location.pathname;
+              const versionMatch = path.match(/v\d+\.\d+\.\d+/i); // Buscar la versión en cualquier parte del path
+
+              if (versionMatch) {
+                  const currentVersion = versionMatch[0]; // Obtener la versión encontrada
+                  dropdownToggle.textContent = currentVersion;
+              }
+          }
+
+          updateDropdownVersion(); // Llamar la función al cargar la página
+      });
+
+    </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ApiPage">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="../resources/logo_small_v2.png" alt="Alis">
+            Alis
+          </a>
+
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+
+        
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Buscar" autocomplete="off" aria-label="Search">
+              </form>
+
+              
+              <script>
+
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                const dropdownMenu = document.querySelector('.dropdown-menu-versions');
+
+                dropdownToggle.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const isExpanded = dropdownMenu.style.display === 'block';
+                  dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                });
+
+                document.addEventListener('click', function (e) {
+                  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.style.display = 'none';
+                  }
+                });
+
+                // Manejar la selección de versión y actualizar la URL
+                dropdownMenu.addEventListener('click', function (e) {
+                  if (e.target.classList.contains('dropdown-item')) {
+                    e.preventDefault();
+                    
+                    const selectedVersion = e.target.getAttribute('data-version');
+                    const lang = document.documentElement.lang; // Obtener el idioma actual del documento
+                    
+                    let basePath = '';
+                    
+                    // Comprobar si el idioma es español
+                    if (lang === 'es') {
+                      basePath += '/es';
+                    }
+
+                    if (lang === 'en') {
+                      basePath += '/en';
+                    }
+
+                    // Redirigir a la ruta de la versión seleccionada
+                    const newPath = `${basePath}/${selectedVersion}/index.html`;
+                    window.location.href = newPath;
+                  }
+                });
+              });
+ 
+
+              </script>
+
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" data-version="v0.4.0">v0.4.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.3.0">v0.3.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.2.0">v0.2.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.1.0">v0.1.0</a></li>
+                </ul>
+              </div>
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                    const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+
+                    dropdownToggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const isExpanded = dropdownMenu.style.display === 'block';
+                        dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                    });
+
+                    document.addEventListener('click', function (e) {
+                        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    });
+
+                    // Manejar la selección de idioma y actualizar la URL
+                    dropdownMenu.addEventListener('click', function (e) {
+                        if (e.target.classList.contains('dropdown-item')) {
+                            e.preventDefault();
+                            
+                            const selectedLang = e.target.getAttribute('lang');
+                            const currentPath = window.location.pathname;
+                            const pathParts = currentPath.split('/');
+
+                            // Verificar si la URL sigue el formato esperado y reemplazar el idioma
+                            if (pathParts.length >= 3) {
+                                pathParts[1] = selectedLang;  // Reemplaza el idioma en la URL
+                            }
+
+                            // Reconstruir la URL y redirigir
+                            const newPath = pathParts.join('/');
+                            window.location.href = newPath;
+                        }
+                    });
+                });
+                </script>
+
+
+
+              
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-lang" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                  <svg viewbox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                    <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                  </svg>
+                  English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lang" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" lang="es">Español</a></li>
+                </ul>
+            </div>
+
+
+              <a class="hover_custom" style="order: 55;margin: 0 10px;" href="https://github.com/pabllopf/Alis/releases/latest">
+              <button type="button" class="btn btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewbox="0 0 17 17">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+                  </svg>
+                  Descargar
+              </button>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+      
+      
+
+
+
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body' data-commentid='T:Alis.Core.Physic.Dynamics.Body' id='Alis_Core_Physic_Dynamics_Body'>Class Body    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L43'><i class='bi bi-code-slash'></i></a></h1>
+ <div class="facts text-secondary">
+<dl><dt>Namespace</dt><dd><a href='Alis.Core.Physic.Dynamics.html'>Alis.Core.Physic.Dynamics</a></dd></dl><dl><dt>Assembly</dt><dd>Alis.dll</dd></dl>
+</div><p>The body class</p>
+<pre><code class='lang-csharp'>public class Body</code></pre><h4 class='section'>Inheritance</h4><dl class="typelist inheritance"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>
+</div>
+<div>
+<a href='Alis.Core.Physic.Dynamics.Body.html'>Body</a>
+</div>
+
+</dd></dl><h4 class='section'>Inherited Members</h4><dl class="typelist"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)'>object.Equals(object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)'>object.Equals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gethashcode'>object.GetHashCode()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gettype'>object.GetType()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone'>object.MemberwiseClone()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.referenceequals'>object.ReferenceEquals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
+</div>
+
+</dd></dl><h2 class='section'>Constructors</h2><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.#ctor' data-commentid='M:Alis.Core.Physic.Dynamics.Body.#ctor' id='Alis_Core_Physic_Dynamics_Body__ctor'>Body()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L171'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Initializes a new instance of the <span class="xref">Alis.Core.Physic.Dynamics.Body</span> class</p>
+<pre><code class='lang-csharp'>public Body()</code></pre><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ControllerFilter' data-commentid='F:Alis.Core.Physic.Dynamics.Body.ControllerFilter' id='Alis_Core_Physic_Dynamics_Body_ControllerFilter'>ControllerFilter    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L105'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The all</p>
+<pre><code class='lang-csharp'>public ControllerFilter ControllerFilter</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Common.Logic.ControllerFilter.html'>ControllerFilter</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.FixtureList' data-commentid='F:Alis.Core.Physic.Dynamics.Body.FixtureList' id='Alis_Core_Physic_Dynamics_Body_FixtureList'>FixtureList    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L50'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets all the fixtures attached to this body.</p>
+<pre><code class='lang-csharp'>internal readonly FixtureCollection FixtureList</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.FixtureCollection.html'>FixtureCollection</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Island' data-commentid='F:Alis.Core.Physic.Dynamics.Body.Island' id='Alis_Core_Physic_Dynamics_Body_Island'>Island    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L110'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The island</p>
+<pre><code class='lang-csharp'>internal bool Island</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.LinearVelocityInternal' data-commentid='F:Alis.Core.Physic.Dynamics.Body.LinearVelocityInternal' id='Alis_Core_Physic_Dynamics_Body_LinearVelocityInternal'>LinearVelocityInternal    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L115'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The linear velocity</p>
+<pre><code class='lang-csharp'>internal Vector2F LinearVelocityInternal</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Lock' data-commentid='F:Alis.Core.Physic.Dynamics.Body.Lock' id='Alis_Core_Physic_Dynamics_Body_Lock'>Lock    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L120'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The lock</p>
+<pre><code class='lang-csharp'>internal int Lock</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.LockOrder' data-commentid='F:Alis.Core.Physic.Dynamics.Body.LockOrder' id='Alis_Core_Physic_Dynamics_Body_LockOrder'>LockOrder    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L125'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The lock order</p>
+<pre><code class='lang-csharp'>internal int LockOrder</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.OnCollisionEventHandler' data-commentid='F:Alis.Core.Physic.Dynamics.Body.OnCollisionEventHandler' id='Alis_Core_Physic_Dynamics_Body_OnCollisionEventHandler'>OnCollisionEventHandler    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L130'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The on collision event handler</p>
+<pre><code class='lang-csharp'>internal OnCollisionEventHandler OnCollisionEventHandler</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.OnCollisionEventHandler.html'>OnCollisionEventHandler</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.OnSeparationEventHandler' data-commentid='F:Alis.Core.Physic.Dynamics.Body.OnSeparationEventHandler' id='Alis_Core_Physic_Dynamics_Body_OnSeparationEventHandler'>OnSeparationEventHandler    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L135'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The on separation event handler</p>
+<pre><code class='lang-csharp'>internal OnSeparationEventHandler OnSeparationEventHandler</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.OnSeparationEventHandler.html'>OnSeparationEventHandler</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SleepTime' data-commentid='F:Alis.Core.Physic.Dynamics.Body.SleepTime' id='Alis_Core_Physic_Dynamics_Body_SleepTime'>SleepTime    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L140'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The sleep time</p>
+<pre><code class='lang-csharp'>internal float SleepTime</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Sweep' data-commentid='F:Alis.Core.Physic.Dynamics.Body.Sweep' id='Alis_Core_Physic_Dynamics_Body_Sweep'>Sweep    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L145'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The sweep</p>
+<pre><code class='lang-csharp'>internal Sweep Sweep</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Common.Sweep.html'>Sweep</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Tag' data-commentid='F:Alis.Core.Physic.Dynamics.Body.Tag' id='Alis_Core_Physic_Dynamics_Body_Tag'>Tag    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L151'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Set the user data. Use this to store your application specific data.</p>
+<pre><code class='lang-csharp'>public object Tag</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Torque' data-commentid='F:Alis.Core.Physic.Dynamics.Body.Torque' id='Alis_Core_Physic_Dynamics_Body_Torque'>Torque    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L156'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The torque</p>
+<pre><code class='lang-csharp'>internal float Torque</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.WorldPhysic' data-commentid='F:Alis.Core.Physic.Dynamics.Body.WorldPhysic' id='Alis_Core_Physic_Dynamics_Body_WorldPhysic'>WorldPhysic    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L161'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The world</p>
+<pre><code class='lang-csharp'>internal WorldPhysic WorldPhysic</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.WorldPhysic.html'>WorldPhysic</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Xf' data-commentid='F:Alis.Core.Physic.Dynamics.Body.Xf' id='Alis_Core_Physic_Dynamics_Body_Xf'>Xf    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L166'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The xf</p>
+<pre><code class='lang-csharp'>internal ControllerTransform Xf</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.ControllerTransform.html'>ControllerTransform</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body._angularDamping' data-commentid='F:Alis.Core.Physic.Dynamics.Body._angularDamping' id='Alis_Core_Physic_Dynamics_Body__angularDamping'>_angularDamping    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L55'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The angular damping</p>
+<pre><code class='lang-csharp'>private float _angularDamping</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body._angularVelocity' data-commentid='F:Alis.Core.Physic.Dynamics.Body._angularVelocity' id='Alis_Core_Physic_Dynamics_Body__angularVelocity'>_angularVelocity    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L60'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The angular velocity</p>
+<pre><code class='lang-csharp'>private float _angularVelocity</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body._awake' data-commentid='F:Alis.Core.Physic.Dynamics.Body._awake' id='Alis_Core_Physic_Dynamics_Body__awake'>_awake    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L65'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The awake</p>
+<pre><code class='lang-csharp'>private bool _awake</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body._bodyType' data-commentid='F:Alis.Core.Physic.Dynamics.Body._bodyType' id='Alis_Core_Physic_Dynamics_Body__bodyType'>_bodyType    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L70'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The body type</p>
+<pre><code class='lang-csharp'>private BodyType _bodyType</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.BodyType.html'>BodyType</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body._enabled' data-commentid='F:Alis.Core.Physic.Dynamics.Body._enabled' id='Alis_Core_Physic_Dynamics_Body__enabled'>_enabled    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L75'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The enabled</p>
+<pre><code class='lang-csharp'>private bool _enabled</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body._fixedRotation' data-commentid='F:Alis.Core.Physic.Dynamics.Body._fixedRotation' id='Alis_Core_Physic_Dynamics_Body__fixedRotation'>_fixedRotation    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L80'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The fixed rotation</p>
+<pre><code class='lang-csharp'>private bool _fixedRotation</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body._inertia' data-commentid='F:Alis.Core.Physic.Dynamics.Body._inertia' id='Alis_Core_Physic_Dynamics_Body__inertia'>_inertia    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L85'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The inertia</p>
+<pre><code class='lang-csharp'>private float _inertia</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body._linearDamping' data-commentid='F:Alis.Core.Physic.Dynamics.Body._linearDamping' id='Alis_Core_Physic_Dynamics_Body__linearDamping'>_linearDamping    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L90'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The linear damping</p>
+<pre><code class='lang-csharp'>private float _linearDamping</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body._mass' data-commentid='F:Alis.Core.Physic.Dynamics.Body._mass' id='Alis_Core_Physic_Dynamics_Body__mass'>_mass    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L95'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The mass</p>
+<pre><code class='lang-csharp'>private float _mass</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body._sleepingAllowed' data-commentid='F:Alis.Core.Physic.Dynamics.Body._sleepingAllowed' id='Alis_Core_Physic_Dynamics_Body__sleepingAllowed'>_sleepingAllowed    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L100'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The sleeping allowed</p>
+<pre><code class='lang-csharp'>private bool _sleepingAllowed</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.AngularDamping' data-commentid='P:Alis.Core.Physic.Dynamics.Body.AngularDamping' id='Alis_Core_Physic_Dynamics_Body_AngularDamping'>AngularDamping    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L336'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the angular damping.</p>
+<pre><code class='lang-csharp'>public float AngularDamping { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.AngularVelocity' data-commentid='P:Alis.Core.Physic.Dynamics.Body.AngularVelocity' id='Alis_Core_Physic_Dynamics_Body_AngularVelocity'>AngularVelocity    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L303'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the angular velocity. Radians/second.</p>
+<pre><code class='lang-csharp'>public float AngularVelocity { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Awake' data-commentid='P:Alis.Core.Physic.Dynamics.Body.Awake' id='Alis_Core_Physic_Dynamics_Body_Awake'>Awake    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L372'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Set the sleep state of the body. A sleeping body has very
+low CPU cost.</p>
+<pre><code class='lang-csharp'>public bool Awake { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ContactList' data-commentid='P:Alis.Core.Physic.Dynamics.Body.ContactList' id='Alis_Core_Physic_Dynamics_Body_ContactList'>ContactList    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L484'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the list of all contacts attached to this body.
+Warning: this list changes during the time step and you may
+miss some collisions if you don't use callback events.</p>
+<pre><code class='lang-csharp'>public ContactEdge ContactList { get; internal set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Contacts.ContactEdge.html'>ContactEdge</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Enabled' data-commentid='P:Alis.Core.Physic.Dynamics.Body.Enabled' id='Alis_Core_Physic_Dynamics_Body_Enabled'>Enabled    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L412'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Set the active state of the body. An inactive body is not
+simulated and cannot be collided with or woken up.
+If you pass a flag of true, all fixtures will be added to the
+broad-phase.
+If you pass a flag of false, all fixtures will be removed from
+the broad-phase and all contacts will be destroyed.
+Fixtures and joints are otherwise unaffected. You may continue
+to create/destroy fixtures and joints on inactive bodies.
+Fixtures on an inactive body are implicitly inactive and will
+not participate in collisions, ray-casts, or queries.
+Joints connected to an inactive body are implicitly inactive.
+An inactive body is still owned by a b2World object and remains
+in the body list.
+Warning: This property is readonly during callbacks.</p>
+<pre><code class='lang-csharp'>public bool Enabled { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>Thrown when the world is Locked/Stepping.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.FixedRotation' data-commentid='P:Alis.Core.Physic.Dynamics.Body.FixedRotation' id='Alis_Core_Physic_Dynamics_Body_FixedRotation'>FixedRotation    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L455'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Set this body to have fixed rotation. This causes the mass
+to be reset.</p>
+<pre><code class='lang-csharp'>public bool FixedRotation { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Force' data-commentid='P:Alis.Core.Physic.Dynamics.Body.Force' id='Alis_Core_Physic_Dynamics_Body_Force'>Force    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L186'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The force</p>
+<pre><code class='lang-csharp'>internal Vector2F Force { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetBodyType' data-commentid='P:Alis.Core.Physic.Dynamics.Body.GetBodyType' id='Alis_Core_Physic_Dynamics_Body_GetBodyType'>GetBodyType    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L219'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the body type.
+Warning: This property is readonly during callbacks.</p>
+<pre><code class='lang-csharp'>public BodyType GetBodyType { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.BodyType.html'>BodyType</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>Thrown when the world is Locked/Stepping.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetIslandIndex' data-commentid='P:Alis.Core.Physic.Dynamics.Body.GetIslandIndex' id='Alis_Core_Physic_Dynamics_Body_GetIslandIndex'>GetIslandIndex    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L205'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public int GetIslandIndex { get; internal set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>Deprecated in version 1.6</p>
+<h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetRevolutions' data-commentid='P:Alis.Core.Physic.Dynamics.Body.GetRevolutions' id='Alis_Core_Physic_Dynamics_Body_GetRevolutions'>GetRevolutions    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L211'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the total number revolutions the body has made.</p>
+<pre><code class='lang-csharp'>public float GetRevolutions { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetWorldPhysic' data-commentid='P:Alis.Core.Physic.Dynamics.Body.GetWorldPhysic' id='Alis_Core_Physic_Dynamics_Body_GetWorldPhysic'>GetWorldPhysic    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L201'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the parent World of this body. This is null if the body is not attached.</p>
+<pre><code class='lang-csharp'>public WorldPhysic GetWorldPhysic { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.WorldPhysic.html'>WorldPhysic</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.IgnoreCcd' data-commentid='P:Alis.Core.Physic.Dynamics.Body.IgnoreCcd' id='Alis_Core_Physic_Dynamics_Body_IgnoreCcd'>IgnoreCcd    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L634'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the value of the ignore ccd</p>
+<pre><code class='lang-csharp'>public bool IgnoreCcd { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.IgnoreGravity' data-commentid='P:Alis.Core.Physic.Dynamics.Body.IgnoreGravity' id='Alis_Core_Physic_Dynamics_Body_IgnoreGravity'>IgnoreGravity    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L530'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets a value indicating whether this body ignores gravity.</p>
+<pre><code class='lang-csharp'>public bool IgnoreGravity { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Inertia' data-commentid='P:Alis.Core.Physic.Dynamics.Body.Inertia' id='Alis_Core_Physic_Dynamics_Body_Inertia'>Inertia    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L608'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get or set the rotational inertia of the body about the local origin. usually in kg-m^2.
+Warning: This property is readonly during callbacks.</p>
+<pre><code class='lang-csharp'>public float Inertia { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>Thrown when the world is Locked/Stepping.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.InvI' data-commentid='P:Alis.Core.Physic.Dynamics.Body.InvI' id='Alis_Core_Physic_Dynamics_Body_InvI'>InvI    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L191'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The inv</p>
+<pre><code class='lang-csharp'>internal float InvI { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.InvMass' data-commentid='P:Alis.Core.Physic.Dynamics.Body.InvMass' id='Alis_Core_Physic_Dynamics_Body_InvMass'>InvMass    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L196'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The inv mass</p>
+<pre><code class='lang-csharp'>internal float InvMass { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.IsBullet' data-commentid='P:Alis.Core.Physic.Dynamics.Body.IsBullet' id='Alis_Core_Physic_Dynamics_Body_IsBullet'>IsBullet    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L346'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets a value indicating whether this body should be included in the CCD solver.</p>
+<pre><code class='lang-csharp'>public bool IsBullet { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.JointList' data-commentid='P:Alis.Core.Physic.Dynamics.Body.JointList' id='Alis_Core_Physic_Dynamics_Body_JointList'>JointList    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L476'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the list of all joints attached to this body.</p>
+<pre><code class='lang-csharp'>public JointEdge JointList { get; internal set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Joints.JointEdge.html'>JointEdge</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.LinearDamping' data-commentid='P:Alis.Core.Physic.Dynamics.Body.LinearDamping' id='Alis_Core_Physic_Dynamics_Body_LinearDamping'>LinearDamping    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L326'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the linear damping.</p>
+<pre><code class='lang-csharp'>public float LinearDamping { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.LinearVelocity' data-commentid='P:Alis.Core.Physic.Dynamics.Body.LinearVelocity' id='Alis_Core_Physic_Dynamics_Body_LinearVelocity'>LinearVelocity    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L280'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get or sets the linear velocity of the center of mass. Property has no effect on <span class="xref">Alis.Core.Physic.Dynamics.BodyType.Static</span>
+bodies.</p>
+<pre><code class='lang-csharp'>public Vector2F LinearVelocity { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.LocalCenter' data-commentid='P:Alis.Core.Physic.Dynamics.Body.LocalCenter' id='Alis_Core_Physic_Dynamics_Body_LocalCenter'>LocalCenter    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L544'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the local position of the center of mass.
+Warning: This property is readonly during callbacks.</p>
+<pre><code class='lang-csharp'>public Vector2F LocalCenter { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>Thrown when the world is Locked/Stepping.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Mass' data-commentid='P:Alis.Core.Physic.Dynamics.Body.Mass' id='Alis_Core_Physic_Dynamics_Body_Mass'>Mass    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L576'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the mass. Usually in kilograms (kg).
+Warning: This property is readonly during callbacks.</p>
+<pre><code class='lang-csharp'>public float Mass { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>Thrown when the world is Locked/Stepping.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Position' data-commentid='P:Alis.Core.Physic.Dynamics.Body.Position' id='Alis_Core_Physic_Dynamics_Body_Position'>Position    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L490'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the world body origin position.</p>
+<pre><code class='lang-csharp'>public Vector2F Position { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Rotation' data-commentid='P:Alis.Core.Physic.Dynamics.Body.Rotation' id='Alis_Core_Physic_Dynamics_Body_Rotation'>Rotation    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L510'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the angle in radians.</p>
+<pre><code class='lang-csharp'>public float Rotation { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SleepingAllowed' data-commentid='P:Alis.Core.Physic.Dynamics.Body.SleepingAllowed' id='Alis_Core_Physic_Dynamics_Body_SleepingAllowed'>SleepingAllowed    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L353'><i class='bi bi-code-slash'></i></a></h3>
+ <p>You can disable sleeping on this body. If you disable sleeping, the
+body will be woken.</p>
+<pre><code class='lang-csharp'>public bool SleepingAllowed { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.WorldCenter' data-commentid='P:Alis.Core.Physic.Dynamics.Body.WorldCenter' id='Alis_Core_Physic_Dynamics_Body_WorldCenter'>WorldCenter    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L536'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the world position of the center of mass.</p>
+<pre><code class='lang-csharp'>public Vector2F WorldCenter { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Add(Alis.Core.Physic.Dynamics.Fixture)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.Add(Alis.Core.Physic.Dynamics.Fixture)' id='Alis_Core_Physic_Dynamics_Body_Add_Alis_Core_Physic_Dynamics_Fixture_'>Add(Fixture)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L693'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Warning: This method is locked during callbacks.</p>
+<pre><code class='lang-csharp'>public void Add(Fixture fixture)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>fixture</code> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>Thrown when the world is Locked/Stepping.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Advance(System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.Advance(System.Single)' id='Alis_Core_Physic_Dynamics_Body_Advance_System_Single_'>Advance(float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1279'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Advances the alpha</p>
+<pre><code class='lang-csharp'>internal void Advance(float alpha)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>alpha</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The alpha</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ApplyAngularImpulse(System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ApplyAngularImpulse(System.Single)' id='Alis_Core_Physic_Dynamics_Body_ApplyAngularImpulse_System_Single_'>ApplyAngularImpulse(float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1036'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Apply an angular impulse.</p>
+<pre><code class='lang-csharp'>public void ApplyAngularImpulse(float impulse)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>impulse</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The angular impulse in units of kg<em>m</em>m/s.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_ApplyForce_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_'>ApplyForce(Vector2F, Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L902'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Apply a force at a world point. If the force is not
+applied at the center of mass, it will generate a torque and
+affect the angular velocity. This wakes up the body.</p>
+<pre><code class='lang-csharp'>public void ApplyForce(Vector2F force, Vector2F point)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>force</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world force vector, usually in Newtons (N).</p>
+
+</dd><dt><code>point</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world position of the point of application.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2F@)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2F@)' id='Alis_Core_Physic_Dynamics_Body_ApplyForce_Alis_Core_Aspect_Math_Vector_Vector2F__'>ApplyForce(ref Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L911'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Applies a force at the center of mass.</p>
+<pre><code class='lang-csharp'>public void ApplyForce(ref Vector2F force)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>force</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The force.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_ApplyForce_Alis_Core_Aspect_Math_Vector_Vector2F_'>ApplyForce(Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L920'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Applies a force at the center of mass.</p>
+<pre><code class='lang-csharp'>public void ApplyForce(Vector2F force)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>force</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The force.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ApplyForce(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)' id='Alis_Core_Physic_Dynamics_Body_ApplyForce_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__'>ApplyForce(ref Vector2F, ref Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L932'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Apply a force at a world point. If the force is not
+applied at the center of mass, it will generate a torque and
+affect the angular velocity. This wakes up the body.</p>
+<pre><code class='lang-csharp'>public void ApplyForce(ref Vector2F force, ref Vector2F point)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>force</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world force vector, usually in Newtons (N).</p>
+
+</dd><dt><code>point</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world position of the point of application.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_ApplyLinearImpulse_Alis_Core_Aspect_Math_Vector_Vector2F_'>ApplyLinearImpulse(Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L970'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Apply an impulse at a point. This immediately modifies the velocity.
+This wakes up the body.</p>
+<pre><code class='lang-csharp'>public void ApplyLinearImpulse(Vector2F impulse)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>impulse</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world impulse vector, usually in N-seconds or kg-m/s.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_ApplyLinearImpulse_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_'>ApplyLinearImpulse(Vector2F, Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L983'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Apply an impulse at a point. This immediately modifies the velocity.
+It also modifies the angular velocity if the point of application
+is not at the center of mass.
+This wakes up the body.</p>
+<pre><code class='lang-csharp'>public void ApplyLinearImpulse(Vector2F impulse, Vector2F point)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>impulse</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world impulse vector, usually in N-seconds or kg-m/s.</p>
+
+</dd><dt><code>point</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world position of the point of application.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2F@)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2F@)' id='Alis_Core_Physic_Dynamics_Body_ApplyLinearImpulse_Alis_Core_Aspect_Math_Vector_Vector2F__'>ApplyLinearImpulse(ref Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L993'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Apply an impulse at a point. This immediately modifies the velocity.
+This wakes up the body.</p>
+<pre><code class='lang-csharp'>public void ApplyLinearImpulse(ref Vector2F impulse)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>impulse</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world impulse vector, usually in N-seconds or kg-m/s.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ApplyLinearImpulse(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)' id='Alis_Core_Physic_Dynamics_Body_ApplyLinearImpulse_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__'>ApplyLinearImpulse(ref Vector2F, ref Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1016'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Apply an impulse at a point. This immediately modifies the velocity.
+It also modifies the angular velocity if the point of application
+is not at the center of mass.
+This wakes up the body.</p>
+<pre><code class='lang-csharp'>public void ApplyLinearImpulse(ref Vector2F impulse, ref Vector2F point)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>impulse</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world impulse vector, usually in N-seconds or kg-m/s.</p>
+
+</dd><dt><code>point</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world position of the point of application.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ApplyTorque(System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ApplyTorque(System.Single)' id='Alis_Core_Physic_Dynamics_Body_ApplyTorque_System_Single_'>ApplyTorque(float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L952'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Apply a torque. This affects the angular velocity
+without affecting the linear velocity of the center of mass.
+This wakes up the body.</p>
+<pre><code class='lang-csharp'>public void ApplyTorque(float torque)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>torque</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The torque about the z-axis (out of the screen), usually in N-m.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Clone(Alis.Core.Physic.Dynamics.WorldPhysic)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.Clone(Alis.Core.Physic.Dynamics.WorldPhysic)' id='Alis_Core_Physic_Dynamics_Body_Clone_Alis_Core_Physic_Dynamics_WorldPhysic_'>Clone(WorldPhysic)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1390'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Makes a clone of the body. Fixtures and therefore shapes are not included.
+Use DeepClone() to clone the body, as well as fixtures and shapes.</p>
+<pre><code class='lang-csharp'>public Body Clone(WorldPhysic worldPhysic = null)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>worldPhysic</code> <a href='Alis.Core.Physic.Dynamics.WorldPhysic.html'>WorldPhysic</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Body.html'>Body</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateChainShape(Alis.Core.Physic.Common.Vertices)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateChainShape(Alis.Core.Physic.Common.Vertices)' id='Alis_Core_Physic_Dynamics_Body_CreateChainShape_Alis_Core_Physic_Common_Vertices_'>CreateChainShape(Vertices)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L73'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the chain shape using the specified vertices</p>
+<pre><code class='lang-csharp'>public Fixture CreateChainShape(Vertices vertices)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>vertices</code> <a href='Alis.Core.Physic.Common.Vertices.html'>Vertices</a>  </dt>
+<dd>
+
+
+<p>The vertices</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+<p>The fixture</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateCircle(System.Single,System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateCircle(System.Single,System.Single)' id='Alis_Core_Physic_Dynamics_Body_CreateCircle_System_Single_System_Single_'>CreateCircle(float, float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L113'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the circle using the specified radius</p>
+<pre><code class='lang-csharp'>public Fixture CreateCircle(float radius, float density)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>radius</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The radius</p>
+
+</dd><dt><code>density</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The density</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+<p>The fixture</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+<p>radius Radius must be more than 0 meters</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateCircle(System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateCircle(System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_CreateCircle_System_Single_System_Single_Alis_Core_Aspect_Math_Vector_Vector2F_'>CreateCircle(float, float, Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L132'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the circle using the specified radius</p>
+<pre><code class='lang-csharp'>public Fixture CreateCircle(float radius, float density, Vector2F offset)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>radius</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The radius</p>
+
+</dd><dt><code>density</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The density</p>
+
+</dd><dt><code>offset</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The offset</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+<p>The fixture</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+<p>radius Radius must be more than 0 meters</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateCompoundPolygon(System.Collections.Generic.List{Alis.Core.Physic.Common.Vertices},System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateCompoundPolygon(System.Collections.Generic.List{Alis.Core.Physic.Common.Vertices},System.Single)' id='Alis_Core_Physic_Dynamics_Body_CreateCompoundPolygon_System_Collections_Generic_List_Alis_Core_Physic_Common_Vertices__System_Single_'>CreateCompoundPolygon(List&lt;Vertices&gt;, float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L195'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the compound polygon using the specified list</p>
+<pre><code class='lang-csharp'>public List&lt;Fixture&gt; CreateCompoundPolygon(List&lt;Vertices&gt; list, float density)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>list</code> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1'>List</a>&lt;<a href='Alis.Core.Physic.Common.Vertices.html'>Vertices</a>&gt;  </dt>
+<dd>
+
+
+<p>The list</p>
+
+</dd><dt><code>density</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The density</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1'>List</a>&lt;<a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>&gt;  </dt>
+<dd>
+
+
+<p>The res</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateEdge(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateEdge(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_CreateEdge_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_'>CreateEdge(Vector2F, Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L62'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the edge using the specified start</p>
+<pre><code class='lang-csharp'>public Fixture CreateEdge(Vector2F start, Vector2F end)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>start</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The start</p>
+
+</dd><dt><code>end</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The end</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+<p>The fixture</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateEllipse(System.Single,System.Single,System.Int32,System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateEllipse(System.Single,System.Single,System.Int32,System.Single)' id='Alis_Core_Physic_Dynamics_Body_CreateEllipse_System_Single_System_Single_System_Int32_System_Single_'>CreateEllipse(float, float, int, float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L172'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the ellipse using the specified x radius</p>
+<pre><code class='lang-csharp'>public Fixture CreateEllipse(float xRadius, float yRadius, int edges, float density)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>xRadius</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The radius</p>
+
+</dd><dt><code>yRadius</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The radius</p>
+
+</dd><dt><code>edges</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The edges</p>
+
+</dd><dt><code>density</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The density</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+<p>The fixture</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+<p>xRadius X-radius must be more than 0</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+<p>yRadius Y-radius must be more than 0</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateFixture(Alis.Core.Physic.Collisions.Shapes.Shape)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateFixture(Alis.Core.Physic.Collisions.Shapes.Shape)' id='Alis_Core_Physic_Dynamics_Body_CreateFixture_Alis_Core_Physic_Collisions_Shapes_Shape_'>CreateFixture(Shape)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L49'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public virtual Fixture CreateFixture(Shape shape)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>shape</code> <a href='Alis.Core.Physic.Collisions.Shapes.Shape.html'>Shape</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateLineArc(System.Single,System.Int32,System.Single,System.Boolean)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateLineArc(System.Single,System.Int32,System.Single,System.Boolean)' id='Alis_Core_Physic_Dynamics_Body_CreateLineArc_System_Single_System_Int32_System_Single_System_Boolean_'>CreateLineArc(float, int, float, bool)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L225'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the line arc using the specified radians</p>
+<pre><code class='lang-csharp'>public Fixture CreateLineArc(float radians, int sides, float radius, bool closed)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>radians</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The radians</p>
+
+</dd><dt><code>sides</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The sides</p>
+
+</dd><dt><code>radius</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The radius</p>
+
+</dd><dt><code>closed</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The closed</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+<p>The fixture</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateLoopShape(Alis.Core.Physic.Common.Vertices)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateLoopShape(Alis.Core.Physic.Common.Vertices)' id='Alis_Core_Physic_Dynamics_Body_CreateLoopShape_Alis_Core_Physic_Common_Vertices_'>CreateLoopShape(Vertices)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L84'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the loop shape using the specified vertices</p>
+<pre><code class='lang-csharp'>public Fixture CreateLoopShape(Vertices vertices)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>vertices</code> <a href='Alis.Core.Physic.Common.Vertices.html'>Vertices</a>  </dt>
+<dd>
+
+
+<p>The vertices</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+<p>The fixture</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreatePolygon(Alis.Core.Physic.Common.Vertices,System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreatePolygon(Alis.Core.Physic.Common.Vertices,System.Single)' id='Alis_Core_Physic_Dynamics_Body_CreatePolygon_Alis_Core_Physic_Common_Vertices_System_Single_'>CreatePolygon(Vertices, float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L151'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the polygon using the specified vertices</p>
+<pre><code class='lang-csharp'>public Fixture CreatePolygon(Vertices vertices, float density)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>vertices</code> <a href='Alis.Core.Physic.Common.Vertices.html'>Vertices</a>  </dt>
+<dd>
+
+
+<p>The vertices</p>
+
+</dd><dt><code>density</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The density</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+<p>The fixture</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+<p>vertices Too few points to be a polygon</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateProxies' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateProxies' id='Alis_Core_Physic_Dynamics_Body_CreateProxies'>CreateProxies()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L639'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Create all proxies.</p>
+<pre><code class='lang-csharp'>internal void CreateProxies()</code></pre><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateRectangle(System.Single,System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateRectangle(System.Single,System.Single,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_CreateRectangle_System_Single_System_Single_System_Single_Alis_Core_Aspect_Math_Vector_Vector2F_'>CreateRectangle(float, float, float, Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L98'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the rectangle using the specified width</p>
+<pre><code class='lang-csharp'>public Fixture CreateRectangle(float width, float height, float density, Vector2F offset)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>width</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The width</p>
+
+</dd><dt><code>height</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The height</p>
+
+</dd><dt><code>density</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The density</p>
+
+</dd><dt><code>offset</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The offset</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+<p>The fixture</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.CreateSolidArc(System.Single,System.Single,System.Int32,System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.CreateSolidArc(System.Single,System.Single,System.Int32,System.Single)' id='Alis_Core_Physic_Dynamics_Body_CreateSolidArc_System_Single_System_Single_System_Int32_System_Single_'>CreateSolidArc(float, float, int, float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.Factory.cs#L240'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the solid arc using the specified density</p>
+<pre><code class='lang-csharp'>public List&lt;Fixture&gt; CreateSolidArc(float density, float radians, int sides, float radius)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>density</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The density</p>
+
+</dd><dt><code>radians</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The radians</p>
+
+</dd><dt><code>sides</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The sides</p>
+
+</dd><dt><code>radius</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The radius</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1'>List</a>&lt;<a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>&gt;  </dt>
+<dd>
+
+
+<p>A list of fixture</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.DeepClone(Alis.Core.Physic.Dynamics.WorldPhysic)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.DeepClone(Alis.Core.Physic.Dynamics.WorldPhysic)' id='Alis_Core_Physic_Dynamics_Body_DeepClone_Alis_Core_Physic_Dynamics_WorldPhysic_'>DeepClone(WorldPhysic)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1417'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Clones the body and all attached fixtures and shapes. Simply said, it makes a complete copy of the body.</p>
+<pre><code class='lang-csharp'>public Body DeepClone(WorldPhysic worldPhysic = null)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>worldPhysic</code> <a href='Alis.Core.Physic.Dynamics.WorldPhysic.html'>WorldPhysic</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.Body.html'>Body</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.DestroyContacts' data-commentid='M:Alis.Core.Physic.Dynamics.Body.DestroyContacts' id='Alis_Core_Physic_Dynamics_Body_DestroyContacts'>DestroyContacts()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L663'><i class='bi bi-code-slash'></i></a></h3>
+ <p>OnDestroy the attached contacts.</p>
+<pre><code class='lang-csharp'>private void DestroyContacts()</code></pre><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.DestroyProxies' data-commentid='M:Alis.Core.Physic.Dynamics.Body.DestroyProxies' id='Alis_Core_Physic_Dynamics_Body_DestroyProxies'>DestroyProxies()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L651'><i class='bi bi-code-slash'></i></a></h3>
+ <p>OnDestroy all proxies.</p>
+<pre><code class='lang-csharp'>internal void DestroyProxies()</code></pre><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_GetLinearVelocityFromLocalPoint_Alis_Core_Aspect_Math_Vector_Vector2F_'>GetLinearVelocityFromLocalPoint(Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1213'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the world velocity of a local point.</p>
+<pre><code class='lang-csharp'>public Vector2F GetLinearVelocityFromLocalPoint(Vector2F localPoint)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>localPoint</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A point in local coordinates.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world velocity of a point.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2F@)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2F@)' id='Alis_Core_Physic_Dynamics_Body_GetLinearVelocityFromLocalPoint_Alis_Core_Aspect_Math_Vector_Vector2F__'>GetLinearVelocityFromLocalPoint(ref Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1220'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the world velocity of a local point.</p>
+<pre><code class='lang-csharp'>public Vector2F GetLinearVelocityFromLocalPoint(ref Vector2F localPoint)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>localPoint</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A point in local coordinates.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world velocity of a point.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_GetLinearVelocityFromWorldPoint_Alis_Core_Aspect_Math_Vector_Vector2F_'>GetLinearVelocityFromWorldPoint(Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1197'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the world linear velocity of a world point attached to this body.</p>
+<pre><code class='lang-csharp'>public Vector2F GetLinearVelocityFromWorldPoint(Vector2F worldPoint)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>worldPoint</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A point in world coordinates.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world velocity of a point.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2F@)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetLinearVelocityFromWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2F@)' id='Alis_Core_Physic_Dynamics_Body_GetLinearVelocityFromWorldPoint_Alis_Core_Aspect_Math_Vector_Vector2F__'>GetLinearVelocityFromWorldPoint(ref Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1204'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the world linear velocity of a world point attached to this body.</p>
+<pre><code class='lang-csharp'>public Vector2F GetLinearVelocityFromWorldPoint(ref Vector2F worldPoint)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>worldPoint</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A point in world coordinates.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world velocity of a point.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2F@)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2F@)' id='Alis_Core_Physic_Dynamics_Body_GetLocalPoint_Alis_Core_Aspect_Math_Vector_Vector2F__'>GetLocalPoint(ref Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1167'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets a local point relative to the body's origin given a world point.
+Note that the vector only takes the rotation into account, not the position.</p>
+<pre><code class='lang-csharp'>public Vector2F GetLocalPoint(ref Vector2F worldPoint)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>worldPoint</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A point in world coordinates.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The corresponding local point relative to the body's origin.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetLocalPoint(Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_GetLocalPoint_Alis_Core_Aspect_Math_Vector_Vector2F_'>GetLocalPoint(Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1174'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets a local point relative to the body's origin given a world point.</p>
+<pre><code class='lang-csharp'>public Vector2F GetLocalPoint(Vector2F worldPoint)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>worldPoint</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A point in world coordinates.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The corresponding local point relative to the body's origin.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetLocalVector(Alis.Core.Aspect.Math.Vector.Vector2F@)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetLocalVector(Alis.Core.Aspect.Math.Vector.Vector2F@)' id='Alis_Core_Physic_Dynamics_Body_GetLocalVector_Alis_Core_Aspect_Math_Vector_Vector2F__'>GetLocalVector(ref Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1182'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets a local vector given a world vector.
+Note that the vector only takes the rotation into account, not the position.</p>
+<pre><code class='lang-csharp'>public Vector2F GetLocalVector(ref Vector2F worldVector)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>worldVector</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A vector in world coordinates.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The corresponding local vector.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetLocalVector(Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetLocalVector(Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_GetLocalVector_Alis_Core_Aspect_Math_Vector_Vector2F_'>GetLocalVector(Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1190'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets a local vector given a world vector.
+Note that the vector only takes the rotation into account, not the position.</p>
+<pre><code class='lang-csharp'>public Vector2F GetLocalVector(Vector2F worldVector)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>worldVector</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A vector in world coordinates.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The corresponding local vector.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetTransform' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetTransform' id='Alis_Core_Physic_Dynamics_Body_GetTransform'>GetTransform()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L884'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public ControllerTransform GetTransform()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.ControllerTransform.html'>ControllerTransform</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetTransform(Alis.Core.Physic.Dynamics.ControllerTransform@)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetTransform(Alis.Core.Physic.Dynamics.ControllerTransform@)' id='Alis_Core_Physic_Dynamics_Body_GetTransform_Alis_Core_Physic_Dynamics_ControllerTransform__'>GetTransform(out ControllerTransform)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L890'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the body transform for the body's origin.</p>
+<pre><code class='lang-csharp'>public void GetTransform(out ControllerTransform controllerTransform)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>controllerTransform</code> <a href='Alis.Core.Physic.Dynamics.ControllerTransform.html'>ControllerTransform</a>  </dt>
+<dd>
+
+
+<p>The transform of the body's origin.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2F@)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2F@)' id='Alis_Core_Physic_Dynamics_Body_GetWorldPoint_Alis_Core_Aspect_Math_Vector_Vector2F__'>GetWorldPoint(ref Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1137'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the world coordinates of a point given the local coordinates.</p>
+<pre><code class='lang-csharp'>public Vector2F GetWorldPoint(ref Vector2F localPoint)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>localPoint</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A point on the body measured relative the the body's origin.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The same point expressed in world coordinates.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetWorldPoint(Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_GetWorldPoint_Alis_Core_Aspect_Math_Vector_Vector2F_'>GetWorldPoint(Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1144'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the world coordinates of a point given the local coordinates.</p>
+<pre><code class='lang-csharp'>public Vector2F GetWorldPoint(Vector2F localPoint)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>localPoint</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A point on the body measured relative the the body's origin.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The same point expressed in world coordinates.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetWorldVector(Alis.Core.Aspect.Math.Vector.Vector2F@)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetWorldVector(Alis.Core.Aspect.Math.Vector.Vector2F@)' id='Alis_Core_Physic_Dynamics_Body_GetWorldVector_Alis_Core_Aspect_Math_Vector_Vector2F__'>GetWorldVector(ref Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1152'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the world coordinates of a vector given the local coordinates.
+Note that the vector only takes the rotation into account, not the position.</p>
+<pre><code class='lang-csharp'>public Vector2F GetWorldVector(ref Vector2F localVector)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>localVector</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A vector fixed in the body.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The same vector expressed in world coordinates.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.GetWorldVector(Alis.Core.Aspect.Math.Vector.Vector2F)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.GetWorldVector(Alis.Core.Aspect.Math.Vector.Vector2F)' id='Alis_Core_Physic_Dynamics_Body_GetWorldVector_Alis_Core_Aspect_Math_Vector_Vector2F_'>GetWorldVector(Vector2F)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1159'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Get the world coordinates of a vector given the local coordinates.</p>
+<pre><code class='lang-csharp'>public Vector2F GetWorldVector(Vector2F localVector)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>localVector</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>A vector fixed in the body.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The same vector expressed in world coordinates.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.Remove(Alis.Core.Physic.Dynamics.Fixture)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.Remove(Alis.Core.Physic.Dynamics.Fixture)' id='Alis_Core_Physic_Dynamics_Body_Remove_Alis_Core_Physic_Dynamics_Fixture_'>Remove(Fixture)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L761'><i class='bi bi-code-slash'></i></a></h3>
+ <p>OnDestroy a fixture. This removes the fixture from the broad-phase and
+destroys all contacts associated with this fixture. This will
+automatically adjust the mass of the body if the body is dynamic and the
+fixture has positive density.
+All fixtures attached to a body are implicitly destroyed when the body is destroyed.
+Warning: This method is locked during callbacks.</p>
+<pre><code class='lang-csharp'>public virtual void Remove(Fixture fixture)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>fixture</code> <a href='Alis.Core.Physic.Dynamics.Fixture.html'>Fixture</a>  </dt>
+<dd>
+
+
+<p>The fixture to be removed.</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>Thrown when the world is Locked/Stepping.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ResetDynamics' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ResetDynamics' id='Alis_Core_Physic_Dynamics_Body_ResetDynamics'>ResetDynamics()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L680'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Resets the dynamics of this body.
+Sets torque, force and linear/angular velocity to 0</p>
+<pre><code class='lang-csharp'>public void ResetDynamics()</code></pre><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ResetMassData' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ResetMassData' id='Alis_Core_Physic_Dynamics_Body_ResetMassData'>ResetMassData()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1056'><i class='bi bi-code-slash'></i></a></h3>
+ <p>This resets the mass properties to the sum of the mass properties of the fixtures.
+This normally does not need to be called unless you called SetMassData to override
+the mass and you later want to reset the mass.</p>
+<pre><code class='lang-csharp'>public void ResetMassData()</code></pre><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SetCollidesWith(Alis.Core.Physic.Dynamics.Category)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.SetCollidesWith(Alis.Core.Physic.Dynamics.Category)' id='Alis_Core_Physic_Dynamics_Body_SetCollidesWith_Alis_Core_Physic_Dynamics_Category_'>SetCollidesWith(Category)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1352'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Warning: This method applies the value on existing Fixtures. It's not a property of Body.</p>
+<pre><code class='lang-csharp'>public void SetCollidesWith(Category category)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>category</code> <a href='Alis.Core.Physic.Dynamics.Category.html'>Category</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>Deprecated in version 1.6</p>
+<h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SetCollisionCategories(Alis.Core.Physic.Dynamics.Category)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.SetCollisionCategories(Alis.Core.Physic.Dynamics.Category)' id='Alis_Core_Physic_Dynamics_Body_SetCollisionCategories_Alis_Core_Physic_Dynamics_Category_'>SetCollisionCategories(Category)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1340'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Warning: This method applies the value on existing Fixtures. It's not a property of Body.</p>
+<pre><code class='lang-csharp'>public void SetCollisionCategories(Category category)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>category</code> <a href='Alis.Core.Physic.Dynamics.Category.html'>Category</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>Deprecated in version 1.6</p>
+<h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SetCollisionGroup(System.Int16)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.SetCollisionGroup(System.Int16)' id='Alis_Core_Physic_Dynamics_Body_SetCollisionGroup_System_Int16_'>SetCollisionGroup(short)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1364'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Warning: This method applies the value on existing Fixtures. It's not a property of Body.</p>
+<pre><code class='lang-csharp'>public void SetCollisionGroup(short collisionGroup)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>collisionGroup</code> <a href='https://learn.microsoft.com/dotnet/api/system.int16'>short</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>Deprecated in version 1.6</p>
+<h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SetFriction(System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.SetFriction(System.Single)' id='Alis_Core_Physic_Dynamics_Body_SetFriction_System_Single_'>SetFriction(float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1328'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Set friction on all fixtures.
+Warning: This method applies the value on existing Fixtures. It's not a property of Body.</p>
+<pre><code class='lang-csharp'>public void SetFriction(float friction)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>friction</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>Deprecated in version 1.6</p>
+<h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SetIsSensor(System.Boolean)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.SetIsSensor(System.Boolean)' id='Alis_Core_Physic_Dynamics_Body_SetIsSensor_System_Boolean_'>SetIsSensor(bool)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1376'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Warning: This method applies the value on existing Fixtures. It's not a property of Body.</p>
+<pre><code class='lang-csharp'>public void SetIsSensor(bool isSensor)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>isSensor</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>Deprecated in version 1.6</p>
+<h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SetRestitution(System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.SetRestitution(System.Single)' id='Alis_Core_Physic_Dynamics_Body_SetRestitution_System_Single_'>SetRestitution(float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1314'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Set restitution on all fixtures.
+Warning: This method applies the value on existing Fixtures. It's not a property of Body.</p>
+<pre><code class='lang-csharp'>public void SetRestitution(float restitution)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>restitution</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Remarks</h4><p>Deprecated in version 1.6</p>
+<h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SetTransform(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.SetTransform(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single)' id='Alis_Core_Physic_Dynamics_Body_SetTransform_Alis_Core_Aspect_Math_Vector_Vector2F__System_Single_'>SetTransform(ref Vector2F, float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L830'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Set the position of the body's origin and rotation.
+This breaks any contacts and wakes the other bodies.
+Manipulating a body's transform may cause non-physical behavior.
+Warning: This method is locked during callbacks.</p>
+<pre><code class='lang-csharp'>public void SetTransform(ref Vector2F position, float rotation)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>position</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world position of the body's local origin.</p>
+
+</dd><dt><code>rotation</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The world rotation in radians.</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>Thrown when the world is Locked/Stepping.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SetTransform(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.SetTransform(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)' id='Alis_Core_Physic_Dynamics_Body_SetTransform_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_'>SetTransform(Vector2F, float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L846'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Set the position of the body's origin and rotation.
+This breaks any contacts and wakes the other bodies.
+Manipulating a body's transform may cause non-physical behavior.
+Warning: This method is locked during callbacks.</p>
+<pre><code class='lang-csharp'>public void SetTransform(Vector2F position, float rotation)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>position</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The world position of the body's local origin.</p>
+
+</dd><dt><code>rotation</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The world rotation in radians.</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>Thrown when the world is Locked/Stepping.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SetTransformIgnoreContacts(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.SetTransformIgnoreContacts(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single)' id='Alis_Core_Physic_Dynamics_Body_SetTransformIgnoreContacts_Alis_Core_Aspect_Math_Vector_Vector2F__System_Single_'>SetTransformIgnoreContacts(ref Vector2F, float)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L858'><i class='bi bi-code-slash'></i></a></h3>
+ <p>For teleporting a body without considering new contacts immediately.
+Warning: This method is locked during callbacks.</p>
+<pre><code class='lang-csharp'>public void SetTransformIgnoreContacts(ref Vector2F position, float angle)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>position</code> <a href='Alis.Core.Aspect.Math.Vector.Vector2F.html'>Vector2F</a>  </dt>
+<dd>
+
+
+<p>The position.</p>
+
+</dd><dt><code>angle</code> <a href='https://learn.microsoft.com/dotnet/api/system.single'>float</a>  </dt>
+<dd>
+
+
+<p>The angle.</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>Thrown when the world is Locked/Stepping.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.ShouldCollide(Alis.Core.Physic.Dynamics.Body)' data-commentid='M:Alis.Core.Physic.Dynamics.Body.ShouldCollide(Alis.Core.Physic.Dynamics.Body)' id='Alis_Core_Physic_Dynamics_Body_ShouldCollide_Alis_Core_Physic_Dynamics_Body_'>ShouldCollide(Body)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1252'><i class='bi bi-code-slash'></i></a></h3>
+ <p>This is used to prevent connected bodies from colliding.
+It may lie, depending on the collideConnected flag.</p>
+<pre><code class='lang-csharp'>internal bool ShouldCollide(Body other)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>other</code> <a href='Alis.Core.Physic.Dynamics.Body.html'>Body</a>  </dt>
+<dd>
+
+
+<p>The other body.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SynchronizeFixtures' data-commentid='M:Alis.Core.Physic.Dynamics.Body.SynchronizeFixtures' id='Alis_Core_Physic_Dynamics_Body_SynchronizeFixtures'>SynchronizeFixtures()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1225'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Synchronizes the fixtures</p>
+<pre><code class='lang-csharp'>internal void SynchronizeFixtures()</code></pre><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.SynchronizeTransform' data-commentid='M:Alis.Core.Physic.Dynamics.Body.SynchronizeTransform' id='Alis_Core_Physic_Dynamics_Body_SynchronizeTransform'>SynchronizeTransform()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1240'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Synchronizes the transform</p>
+<pre><code class='lang-csharp'>internal void SynchronizeTransform()</code></pre><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.OnCollision' data-commentid='E:Alis.Core.Physic.Dynamics.Body.OnCollision' id='Alis_Core_Physic_Dynamics_Body_OnCollision'>OnCollision    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1292'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The on collision</p>
+<pre><code class='lang-csharp'>public event OnCollisionEventHandler OnCollision</code></pre><h4 class='section'>Event Type</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.OnCollisionEventHandler.html'>OnCollisionEventHandler</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Physic.Dynamics.Body.OnSeparation' data-commentid='E:Alis.Core.Physic.Dynamics.Body.OnSeparation' id='Alis_Core_Physic_Dynamics_Body_OnSeparation'>OnSeparation    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/Body.cs#L1301'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The on separation</p>
+<pre><code class='lang-csharp'>public event OnSeparationEventHandler OnSeparation</code></pre><h4 class='section'>Event Type</h4><dl class='parameters'><dt> <a href='Alis.Core.Physic.Dynamics.OnSeparationEventHandler.html'>OnSeparationEventHandler</a>  </dt>
+<dd>
+
+
+
+</dd></dl>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Alis - Desarrolla los videojuegos de tus sueños 💯 gratis en Windows, MacOS, Linux, Android (próximamente), iOS (próximamente).
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -3,7 +3,7 @@ title: Struct Matrix4X4
 body:
 - api1: Struct Matrix4X4
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L39
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L40
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4
     commentId: T:Alis.Core.Aspect.Math.Matrix.Matrix4X4
@@ -37,7 +37,7 @@ body:
 - h2: Constructors
 - api3: Matrix4X4(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L111
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L113
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
@@ -119,16 +119,16 @@ body:
     type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The value to assign to the third element in the fourth row.
+    description: ''
   - name: m44
     type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-    description: The value to assign to the fourth element in the fourth row.
+    description: ''
 - h2: Fields
 - api3: hashCode
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_hashCode
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L44
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L46
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.hashCode
     commentId: F:Alis.Core.Aspect.Math.Matrix.Matrix4X4.hashCode
@@ -142,7 +142,7 @@ body:
 - h2: Properties
 - api3: Identity
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_Identity
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L160
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L162
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.Identity
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.Identity
@@ -155,7 +155,7 @@ body:
       url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
 - api3: M11
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M11
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L47
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L49
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M11
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M11
@@ -168,7 +168,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M12
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M12
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L50
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L52
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M12
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M12
@@ -181,7 +181,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M13
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M13
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L53
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L55
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M13
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M13
@@ -194,7 +194,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M14
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M14
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L56
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L58
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M14
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M14
@@ -207,7 +207,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M21
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M21
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L59
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L61
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M21
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M21
@@ -220,7 +220,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M22
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M22
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L62
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L64
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M22
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M22
@@ -233,7 +233,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M23
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M23
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L65
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L67
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M23
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M23
@@ -246,7 +246,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M24
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M24
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L68
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L70
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M24
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M24
@@ -259,7 +259,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M31
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M31
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L71
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L73
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M31
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M31
@@ -272,7 +272,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M32
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M32
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L74
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L76
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M32
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M32
@@ -285,7 +285,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M33
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M33
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L77
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L79
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M33
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M33
@@ -298,7 +298,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M34
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M34
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L80
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L82
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M34
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M34
@@ -311,7 +311,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M41
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M41
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L83
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L85
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M41
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M41
@@ -324,7 +324,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M42
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M42
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L86
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L88
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M42
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M42
@@ -337,7 +337,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M43
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M43
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L89
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L91
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M43
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M43
@@ -350,7 +350,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.single
 - api3: M44
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_M44
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L92
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L94
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.M44
     commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.M44
@@ -361,10 +361,26 @@ body:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: this[int, int]
+  id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_Item_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L173
+  metadata:
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.Item(System.Int32,System.Int32)
+    commentId: P:Alis.Core.Aspect.Math.Matrix.Matrix4X4.Item(System.Int32,System.Int32)
+- markdown: The index out of range exception
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public float this[int row, int column] { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
 - h2: Methods
 - api3: CreateOrthographicOffCenter(float, float, float, float, float, float)
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_CreateOrthographicOffCenter_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L176
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L232
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.CreateOrthographicOffCenter(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.CreateOrthographicOffCenter(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
@@ -408,9 +424,45 @@ body:
     - text: Matrix4X4
       url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
     description: The orthographic projection matrix.
+- api3: CreatePerspectiveFieldOfView(float, float, float, float)
+  id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_CreatePerspectiveFieldOfView_System_Single_System_Single_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L464
+  metadata:
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.CreatePerspectiveFieldOfView(System.Single,System.Single,System.Single,System.Single)
+    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.CreatePerspectiveFieldOfView(System.Single,System.Single,System.Single,System.Single)
+- markdown: Creates the perspective field of view using the specified pi
+- code: public static Matrix4X4 CreatePerspectiveFieldOfView(float pi, float aspect, float f, float f1)
+- h4: Parameters
+- parameters:
+  - name: pi
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The pi
+  - name: aspect
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The aspect
+  - name: f
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+  - name: f1
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: Matrix4X4
+      url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
+    description: The result
 - api3: CreateRotationX(float)
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_CreateRotationX_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L315
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L396
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.CreateRotationX(System.Single)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.CreateRotationX(System.Single)
@@ -431,7 +483,7 @@ body:
     description: The result
 - api3: CreateRotationZ(float)
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_CreateRotationZ_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L254
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L310
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.CreateRotationZ(System.Single)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.CreateRotationZ(System.Single)
@@ -450,9 +502,30 @@ body:
     - text: Matrix4X4
       url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
     description: The rotation matrix.
+- api3: CreateTranslation(Vector3F)
+  id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_CreateTranslation_Alis_Core_Aspect_Math_Vector_Vector3F_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L445
+  metadata:
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.CreateTranslation(Alis.Core.Aspect.Math.Vector.Vector3F)
+    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.CreateTranslation(Alis.Core.Aspect.Math.Vector.Vector3F)
+- markdown: Creates the translation using the specified vector 3
+- code: public static Matrix4X4 CreateTranslation(Vector3F vector3)
+- h4: Parameters
+- parameters:
+  - name: vector3
+    type:
+    - text: Vector3F
+      url: Alis.Core.Aspect.Math.Vector.Vector3F.html
+    description: The vector
+- h4: Returns
+- parameters:
+  - type:
+    - text: Matrix4X4
+      url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
+    description: The result
 - api3: Equals(object)
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_Equals_System_Object_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L283
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L339
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.Equals(System.Object)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.Equals(System.Object)
@@ -472,8 +545,10 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: >-
       <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current instance and <code class="paramref">obj</code> are equal; otherwise,
-          <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. If <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the method returns
-          <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. If <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the method returns
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - h4: Remarks
 - markdown: >-
     The current instance and <code class="paramref">obj</code> are equal if <code class="paramref">obj</code> is a
@@ -481,7 +556,7 @@ body:
     <xref href="Alis.Core.Aspect.Math.Matrix.Matrix4X4" data-throw-if-not-resolved="false"></xref> object and the corresponding elements of each matrix are equal.
 - api3: Equals(Matrix4X4)
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_Equals_Alis_Core_Aspect_Math_Matrix_Matrix4X4_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L289
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L370
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.Equals(Alis.Core.Aspect.Math.Matrix.Matrix4X4)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.Equals(Alis.Core.Aspect.Math.Matrix.Matrix4X4)
@@ -502,7 +577,7 @@ body:
     description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the two matrices are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - api3: GetHashCode()
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_GetHashCode
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L293
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L374
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.GetHashCode
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.GetHashCode
@@ -516,7 +591,7 @@ body:
     description: The hash code.
 - api3: Multiply(Matrix4X4, Matrix4X4)
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_Multiply_Alis_Core_Aspect_Math_Matrix_Matrix4X4_Alis_Core_Aspect_Math_Matrix_Matrix4X4_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L339
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L420
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.Multiply(Alis.Core.Aspect.Math.Matrix.Matrix4X4,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.Multiply(Alis.Core.Aspect.Math.Matrix.Matrix4X4,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
@@ -542,7 +617,7 @@ body:
     description: The result
 - api3: ToString()
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_ToString
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L307
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L388
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.ToString
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.ToString
@@ -570,7 +645,7 @@ body:
 - h2: Operators
 - api3: operator +(Matrix4X4, Matrix4X4)
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_op_Addition_Alis_Core_Aspect_Math_Matrix_Matrix4X4_Alis_Core_Aspect_Math_Matrix_Matrix4X4_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L202
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L258
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.op_Addition(Alis.Core.Aspect.Math.Matrix.Matrix4X4,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.op_Addition(Alis.Core.Aspect.Math.Matrix.Matrix4X4,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
@@ -601,7 +676,7 @@ body:
     <xref href="Alis.Core.Aspect.Math.Matrix.Matrix4X4" data-throw-if-not-resolved="false"></xref> objects.
 - api3: operator ==(Matrix4X4, Matrix4X4)
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_op_Equality_Alis_Core_Aspect_Math_Matrix_Matrix4X4_Alis_Core_Aspect_Math_Matrix_Matrix4X4_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L233
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L289
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.op_Equality(Alis.Core.Aspect.Math.Matrix.Matrix4X4,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.op_Equality(Alis.Core.Aspect.Math.Matrix.Matrix4X4,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
@@ -626,12 +701,13 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: >-
       <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value1</code> and <code class="paramref">value2</code> are equal; otherwise,
-          <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
 - h4: Remarks
 - markdown: Two matrices are equal if all their corresponding elements are equal.
 - api3: operator !=(Matrix4X4, Matrix4X4)
   id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_op_Inequality_Alis_Core_Aspect_Math_Matrix_Matrix4X4_Alis_Core_Aspect_Math_Matrix_Matrix4X4_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L245
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L301
   metadata:
     uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.op_Inequality(Alis.Core.Aspect.Math.Matrix.Matrix4X4,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
     commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.op_Inequality(Alis.Core.Aspect.Math.Matrix.Matrix4X4,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
@@ -656,7 +732,36 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
     description: >-
       <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">value1</code> and <code class="paramref">value2</code> are not equal; otherwise,
-          <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- api3: operator *(Matrix4X4, Matrix4X4)
+  id: Alis_Core_Aspect_Math_Matrix_Matrix4X4_op_Multiply_Alis_Core_Aspect_Math_Matrix_Matrix4X4_Alis_Core_Aspect_Math_Matrix_Matrix4X4_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Matrix/Matrix4X4.cs#L346
+  metadata:
+    uid: Alis.Core.Aspect.Math.Matrix.Matrix4X4.op_Multiply(Alis.Core.Aspect.Math.Matrix.Matrix4X4,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
+    commentId: M:Alis.Core.Aspect.Math.Matrix.Matrix4X4.op_Multiply(Alis.Core.Aspect.Math.Matrix.Matrix4X4,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static Matrix4X4 operator *(Matrix4X4 a, Matrix4X4 b)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: Matrix4X4
+      url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
+    description: ''
+  - name: b
+    type:
+    - text: Matrix4X4
+      url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: Matrix4X4
+      url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
+    description: ''
 languageId: csharp
 metadata:
   description: The matrix

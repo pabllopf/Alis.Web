@@ -1,0 +1,39 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Components
+body:
+- api1: Namespace Alis.Core.Ecs.Components
+  id: Alis_Core_Ecs_Components
+  metadata:
+    uid: Alis.Core.Ecs.Components
+    commentId: N:Alis.Core.Ecs.Components
+- h3: Namespaces
+- parameters:
+  - type:
+      text: Alis.Core.Ecs.Components.Audio
+      url: Alis.Core.Ecs.Components.Audio.html
+  - type:
+      text: Alis.Core.Ecs.Components.Body
+      url: Alis.Core.Ecs.Components.Body.html
+  - type:
+      text: Alis.Core.Ecs.Components.Collider
+      url: Alis.Core.Ecs.Components.Collider.html
+  - type:
+      text: Alis.Core.Ecs.Components.Light
+      url: Alis.Core.Ecs.Components.Light.html
+  - type:
+      text: Alis.Core.Ecs.Components.Render
+      url: Alis.Core.Ecs.Components.Render.html
+  - type:
+      text: Alis.Core.Ecs.Components.Ui
+      url: Alis.Core.Ecs.Components.Ui.html
+- h3: Structs
+- parameters:
+  - type:
+      text: Info
+      url: Alis.Core.Ecs.Components.Info.html
+    description: Info component
+  - type:
+      text: Transform
+      url: Alis.Core.Ecs.Components.Transform.html
+    description: The transform
+languageId: csharp

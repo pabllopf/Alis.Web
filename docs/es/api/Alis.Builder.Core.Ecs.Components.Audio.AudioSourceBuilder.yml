@@ -1,0 +1,275 @@
+### YamlMime:ApiPage
+title: Class AudioSourceBuilder
+body:
+- api1: Class AudioSourceBuilder
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L41
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder
+    commentId: T:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Builder.Core.Ecs.Components.Audio
+      url: Alis.Builder.Core.Ecs.Components.Audio.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The audio clip builder class
+- code: 'public class AudioSourceBuilder : IBuild<AudioSource>, IFilePath<AudioSourceBuilder, string>, IVolume<AudioSourceBuilder, float>, IMute<AudioSourceBuilder, bool>'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: AudioSourceBuilder
+    url: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.html
+- h4: Implements
+- list:
+  - text: IBuild<AudioSource>
+    url: Alis.Core.Aspect.Fluent.IBuild-1.html
+  - text: IFilePath<AudioSourceBuilder, string>
+    url: Alis.Core.Aspect.Fluent.Words.IFilePath-2.html
+  - text: IVolume<AudioSourceBuilder, float>
+    url: Alis.Core.Aspect.Fluent.Words.IVolume-2.html
+  - text: IMute<AudioSourceBuilder, bool>
+    url: Alis.Core.Aspect.Fluent.Words.IMute-2.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: AudioSourceBuilder(Context)
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder__ctor_Alis_Core_Ecs_Systems_Scope_Context_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L81
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+    commentId: M:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+- markdown: Initializes a new instance of the <xref href="Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder" data-throw-if-not-resolved="false"></xref> class
+- code: public AudioSourceBuilder(Context context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    description: The context
+- h2: Fields
+- api3: context
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L50
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.context
+    commentId: F:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.context
+- markdown: The context
+- code: private readonly Context context
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- api3: isMute
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_isMute
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L55
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.isMute
+    commentId: F:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.isMute
+- markdown: The is mute
+- code: private bool isMute
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: loop
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_loop
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L60
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.loop
+    commentId: F:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.loop
+- markdown: The loop
+- code: private bool loop
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: nameFile
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_nameFile
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L65
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.nameFile
+    commentId: F:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.nameFile
+- markdown: The empty
+- code: private string nameFile
+- h4: Field Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: playOnAwake
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_playOnAwake
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L70
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.playOnAwake
+    commentId: F:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.playOnAwake
+- markdown: The play on awake
+- code: private bool playOnAwake
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: volume
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_volume
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L75
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.volume
+    commentId: F:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.volume
+- markdown: The volume
+- code: private float volume
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Methods
+- api3: Build()
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_Build
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L87
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.Build
+    commentId: M:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.Build
+- markdown: Builds this instance
+- code: public AudioSource Build()
+- h4: Returns
+- parameters:
+  - type:
+    - text: AudioSource
+      url: Alis.Core.Ecs.Components.Audio.AudioSource.html
+    description: The audio clip
+- api3: File(string)
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_File_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L94
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.File(System.String)
+    commentId: M:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.File(System.String)
+- markdown: Files the path using the specified value
+- code: public AudioSourceBuilder File(string value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: AudioSourceBuilder
+      url: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.html
+    description: The audio clip builder
+- api3: Loop(bool)
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_Loop_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L138
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.Loop(System.Boolean)
+    commentId: M:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.Loop(System.Boolean)
+- markdown: Loops the value
+- code: public AudioSourceBuilder Loop(bool value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: AudioSourceBuilder
+      url: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.html
+    description: The audio source builder
+- api3: Mute(bool)
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_Mute_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L105
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.Mute(System.Boolean)
+    commentId: M:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.Mute(System.Boolean)
+- markdown: Mutes the value
+- code: public AudioSourceBuilder Mute(bool value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: AudioSourceBuilder
+      url: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.html
+    description: The audio clip builder
+- api3: PlayOnAwake(bool)
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_PlayOnAwake_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L127
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.PlayOnAwake(System.Boolean)
+    commentId: M:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.PlayOnAwake(System.Boolean)
+- markdown: Plays the on awake using the specified value
+- code: public AudioSourceBuilder PlayOnAwake(bool value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: AudioSourceBuilder
+      url: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.html
+    description: The audio source builder
+- api3: Volume(float)
+  id: Alis_Builder_Core_Ecs_Components_Audio_AudioSourceBuilder_Volume_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Components/Audio/AudioSourceBuilder.cs#L116
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.Volume(System.Single)
+    commentId: M:Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.Volume(System.Single)
+- markdown: Volumes the value
+- code: public AudioSourceBuilder Volume(float value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: AudioSourceBuilder
+      url: Alis.Builder.Core.Ecs.Components.Audio.AudioSourceBuilder.html
+    description: The audio clip builder
+- h2: See Also
+- list:
+  - - text: IBuild
+      url: Alis.Core.Aspect.Fluent.IBuild-1.html
+    - <
+    - TOrigin
+    - '>'
+languageId: csharp
+metadata:
+  description: The audio clip builder class

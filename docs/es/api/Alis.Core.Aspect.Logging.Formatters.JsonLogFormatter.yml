@@ -1,0 +1,112 @@
+### YamlMime:ApiPage
+title: Class JsonLogFormatter
+body:
+- api1: Class JsonLogFormatter
+  id: Alis_Core_Aspect_Logging_Formatters_JsonLogFormatter
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Formatters/JsonLogFormatter.cs#L42
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Formatters.JsonLogFormatter
+    commentId: T:Alis.Core.Aspect.Logging.Formatters.JsonLogFormatter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Formatters
+      url: Alis.Core.Aspect.Logging.Formatters.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Formats log entries as JSON objects for structured logging and analysis.
+
+    Suitable for cloud logging systems and centralized log aggregation.
+
+    AOT-compatible: Uses StringBuilder, no reflection-based JSON serialization.
+- code: 'public sealed class JsonLogFormatter : ILogFormatter'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: JsonLogFormatter
+    url: Alis.Core.Aspect.Logging.Formatters.JsonLogFormatter.html
+- h4: Implements
+- list:
+  - text: ILogFormatter
+    url: Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Properties
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Formatters_JsonLogFormatter_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Formatters/JsonLogFormatter.cs#L47
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Formatters.JsonLogFormatter.Name
+    commentId: P:Alis.Core.Aspect.Logging.Formatters.JsonLogFormatter.Name
+- markdown: Gets the value of the name
+- code: public string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: EscapeJsonString(StringBuilder, string)
+  id: Alis_Core_Aspect_Logging_Formatters_JsonLogFormatter_EscapeJsonString_System_Text_StringBuilder_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Formatters/JsonLogFormatter.cs#L136
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Formatters.JsonLogFormatter.EscapeJsonString(System.Text.StringBuilder,System.String)
+    commentId: M:Alis.Core.Aspect.Logging.Formatters.JsonLogFormatter.EscapeJsonString(System.Text.StringBuilder,System.String)
+- markdown: Escapes special characters for JSON string values.
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    private static void EscapeJsonString(StringBuilder sb, string value)
+- h4: Parameters
+- parameters:
+  - name: sb
+    type:
+    - text: StringBuilder
+      url: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: value
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Format(ILogEntry)
+  id: Alis_Core_Aspect_Logging_Formatters_JsonLogFormatter_Format_Alis_Core_Aspect_Logging_Abstractions_ILogEntry_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Formatters/JsonLogFormatter.cs#L55
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Formatters.JsonLogFormatter.Format(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+    commentId: M:Alis.Core.Aspect.Logging.Formatters.JsonLogFormatter.Format(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+- markdown: Formats the entry
+- code: public string Format(ILogEntry entry)
+- h4: Parameters
+- parameters:
+  - name: entry
+    type:
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: The entry
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+languageId: csharp
+metadata:
+  description: >-
+    Formats log entries as JSON objects for structured logging and analysis.
+
+    Suitable for cloud logging systems and centralized log aggregation.
+
+    AOT-compatible: Uses StringBuilder, no reflection-based JSON serialization.

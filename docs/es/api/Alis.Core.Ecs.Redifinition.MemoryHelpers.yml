@@ -1,0 +1,477 @@
+### YamlMime:ApiPage
+title: Class MemoryHelpers
+body:
+- api1: Class MemoryHelpers
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L46
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers
+    commentId: T:Alis.Core.Ecs.Redifinition.MemoryHelpers
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Redifinition
+      url: Alis.Core.Ecs.Redifinition.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The memory helpers class
+- code: internal static class MemoryHelpers
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: MemoryHelpers
+    url: Alis.Core.Ecs.Redifinition.MemoryHelpers.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: MaxComponentCount
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_MaxComponentCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L51
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.MaxComponentCount
+    commentId: F:Alis.Core.Ecs.Redifinition.MemoryHelpers.MaxComponentCount
+- markdown: The max component count
+- code: public const int MaxComponentCount = 127
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: SharedTempComponentHandleBuffer
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_SharedTempComponentHandleBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L295
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.SharedTempComponentHandleBuffer
+    commentId: F:Alis.Core.Ecs.Redifinition.MemoryHelpers.SharedTempComponentHandleBuffer
+- markdown: The component handle
+- code: >-
+    [ThreadStatic]
+
+    internal static readonly ComponentHandle[] SharedTempComponentHandleBuffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    - '['
+    - ']'
+- api3: SharedTempComponentStorageBuffer
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_SharedTempComponentStorageBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L300
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.SharedTempComponentStorageBuffer
+    commentId: F:Alis.Core.Ecs.Redifinition.MemoryHelpers.SharedTempComponentStorageBuffer
+- markdown: The component storage base
+- code: >-
+    [ThreadStatic]
+
+    internal static readonly ComponentStorageBase[] SharedTempComponentStorageBuffer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ComponentStorageBase
+      url: Alis.Core.Ecs.Updating.ComponentStorageBase.html
+    - '['
+    - ']'
+- h2: Methods
+- api3: BoolToByte(bool)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_BoolToByte_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L79
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.BoolToByte(System.Boolean)
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.BoolToByte(System.Boolean)
+- markdown: Bools the to byte using the specified b
+- code: public static byte BoolToByte(bool b)
+- h4: Parameters
+- parameters:
+  - name: b
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: byte
+      url: https://learn.microsoft.com/dotnet/api/system.byte
+    description: The byte
+- api3: Concat<T>(FastImmutableArray<T>, ReadOnlySpan<T>)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_Concat__1_Alis_Core_Aspect_Math_Collections_FastImmutableArray___0__System_ReadOnlySpan___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L105
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.Concat``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0},System.ReadOnlySpan{``0})
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.Concat``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0},System.ReadOnlySpan{``0})
+- markdown: Concats the start
+- code: 'public static FastImmutableArray<T> Concat<T>(FastImmutableArray<T> start, ReadOnlySpan<T> span) where T : ITypeId'
+- h4: Parameters
+- parameters:
+  - name: start
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: The start
+  - name: span
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - T
+    - '>'
+    description: The span
+- h4: Returns
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: An immutable array of t
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: Concat<T>(FastImmutableArray<T>, T)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_Concat__1_Alis_Core_Aspect_Math_Collections_FastImmutableArray___0____0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L135
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.Concat``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0},``0)
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.Concat``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0},``0)
+- markdown: Concats the types
+- code: 'public static FastImmutableArray<T> Concat<T>(FastImmutableArray<T> types, T type) where T : ITypeId'
+- h4: Parameters
+- parameters:
+  - name: types
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: The types
+  - name: type
+    type:
+    - T
+    description: The type
+- h4: Returns
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: The result
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: GetOrAddNew<TKey, TValue>(Dictionary<TKey, TValue>, TKey)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_GetOrAddNew__2_System_Collections_Generic_Dictionary___0___1____0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L207
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.GetOrAddNew``2(System.Collections.Generic.Dictionary{``0,``1},``0)
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.GetOrAddNew``2(System.Collections.Generic.Dictionary{``0,``1},``0)
+- markdown: Gets the or add new using the specified dictionary
+- code: 'public static TValue GetOrAddNew<TKey, TValue>(this Dictionary<TKey, TValue> dictionary, TKey key) where TKey : notnull where TValue : new()'
+- h4: Parameters
+- parameters:
+  - name: dictionary
+    type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - TKey
+    - ','
+    - " "
+    - TValue
+    - '>'
+    description: The dictionary
+  - name: key
+    type:
+    - TKey
+    description: The key
+- h4: Returns
+- parameters:
+  - type:
+    - TValue
+    description: The value
+- h4: Type Parameters
+- parameters:
+  - name: TKey
+    description: The key
+  - name: TValue
+    description: The value
+- api3: GetValueOrResize<T>(ref T[], int)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_GetValueOrResize__1___0____System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L227
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.GetValueOrResize``1(``0[]@,System.Int32)
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.GetValueOrResize``1(``0[]@,System.Int32)
+- markdown: Gets the value or resize using the specified arr
+- code: public static ref T GetValueOrResize<T>(ref T[] arr, int index)
+- h4: Parameters
+- parameters:
+  - name: arr
+    type:
+    - T
+    - '['
+    - ']'
+    description: The arr
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The ref
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: Poison<T>(ref T)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_Poison__1___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L259
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.Poison``1(``0@)
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.Poison``1(``0@)
+- markdown: Poisons the item
+- code: public static void Poison<T>(ref T item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: NotSupportedException
+      url: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+    description: Cleared anyways
+- api3: ReadOnlySpanToImmutableArray<T>(ReadOnlySpan<T>)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_ReadOnlySpanToImmutableArray__1_System_ReadOnlySpan___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L87
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.ReadOnlySpanToImmutableArray``1(System.ReadOnlySpan{``0})
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.ReadOnlySpanToImmutableArray``1(System.ReadOnlySpan{``0})
+- markdown: Reads the only span to immutable array using the specified span
+- code: public static FastImmutableArray<T> ReadOnlySpanToImmutableArray<T>(ReadOnlySpan<T> span)
+- h4: Parameters
+- parameters:
+  - name: span
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - T
+    - '>'
+    description: The span
+- h4: Returns
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: An immutable array of t
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: Remove<T>(FastImmutableArray<T>, T)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_Remove__1_Alis_Core_Aspect_Math_Collections_FastImmutableArray___0____0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L159
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.Remove``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0},``0)
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.Remove``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0},``0)
+- markdown: Removes the types
+- code: 'public static FastImmutableArray<T> Remove<T>(FastImmutableArray<T> types, T type) where T : ITypeId'
+- h4: Parameters
+- parameters:
+  - name: types
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: The types
+  - name: type
+    type:
+    - T
+    description: The type
+- h4: Returns
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: The result
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: Remove<T>(FastImmutableArray<T>, ReadOnlySpan<T>)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_Remove__1_Alis_Core_Aspect_Math_Collections_FastImmutableArray___0__System_ReadOnlySpan___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L179
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.Remove``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0},System.ReadOnlySpan{``0})
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.Remove``1(Alis.Core.Aspect.Math.Collections.FastImmutableArray{``0},System.ReadOnlySpan{``0})
+- markdown: Removes the types
+- code: 'public static FastImmutableArray<T> Remove<T>(FastImmutableArray<T> types, ReadOnlySpan<T> span) where T : ITypeId'
+- h4: Parameters
+- parameters:
+  - name: types
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: The types
+  - name: span
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - T
+    - '>'
+    description: The span
+- h4: Returns
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - T
+    - '>'
+    description: An immutable array of t
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: ResizeAndGet<T>(ref T[], int)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_ResizeAndGet__1___0____System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L244
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.ResizeAndGet``1(``0[]@,System.Int32)
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.ResizeAndGet``1(``0[]@,System.Int32)
+- markdown: Resizes the and get using the specified arr
+- code: private static ref T ResizeAndGet<T>(ref T[] arr, int index)
+- h4: Parameters
+- parameters:
+  - name: arr
+    type:
+    - T
+    - '['
+    - ']'
+    description: The arr
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The ref
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: RoundDownToNextMultipleOf16(int)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_RoundDownToNextMultipleOf16_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L72
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.RoundDownToNextMultipleOf16(System.Int32)
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.RoundDownToNextMultipleOf16(System.Int32)
+- markdown: Rounds the down to next multiple of 16 using the specified value
+- code: public static int RoundDownToNextMultipleOf16(int value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+- api3: RoundDownToPowerOfTwo(uint)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_RoundDownToPowerOfTwo_System_UInt32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L58
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.RoundDownToPowerOfTwo(System.UInt32)
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.RoundDownToPowerOfTwo(System.UInt32)
+- markdown: Rounds the down to power of two using the specified value
+- code: public static uint RoundDownToPowerOfTwo(uint value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The uint
+- api3: RoundUpToNextMultipleOf16(int)
+  id: Alis_Core_Ecs_Redifinition_MemoryHelpers_RoundUpToNextMultipleOf16_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Redifinition/MemoryHelpers.cs#L65
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition.MemoryHelpers.RoundUpToNextMultipleOf16(System.Int32)
+    commentId: M:Alis.Core.Ecs.Redifinition.MemoryHelpers.RoundUpToNextMultipleOf16(System.Int32)
+- markdown: Rounds the up to next multiple of 16 using the specified value
+- code: public static int RoundUpToNextMultipleOf16(int value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The value
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+languageId: csharp
+metadata:
+  description: The memory helpers class

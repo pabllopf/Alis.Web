@@ -49,43 +49,43 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Constructors
-- api3: BodyCollection(World)
-  id: Alis_Core_Physic_Dynamics_BodyCollection__ctor_Alis_Core_Physic_Dynamics_World_
+- api3: BodyCollection(WorldPhysic)
+  id: Alis_Core_Physic_Dynamics_BodyCollection__ctor_Alis_Core_Physic_Dynamics_WorldPhysic_
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L64
   metadata:
-    uid: Alis.Core.Physic.Dynamics.BodyCollection.#ctor(Alis.Core.Physic.Dynamics.World)
-    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.#ctor(Alis.Core.Physic.Dynamics.World)
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic)
+    commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic)
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Dynamics.BodyCollection" data-throw-if-not-resolved="false"></xref> class
-- code: public BodyCollection(World world)
+- code: public BodyCollection(WorldPhysic worldPhysic)
 - h4: Parameters
 - parameters:
-  - name: world
+  - name: worldPhysic
     type:
-    - text: World
-      url: Alis.Core.Physic.Dynamics.World.html
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
     description: The world
 - h2: Fields
-- api3: _generationStamp
-  id: Alis_Core_Physic_Dynamics_BodyCollection__generationStamp
+- api3: GenerationStamp
+  id: Alis_Core_Physic_Dynamics_BodyCollection_GenerationStamp
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L58
   metadata:
-    uid: Alis.Core.Physic.Dynamics.BodyCollection._generationStamp
-    commentId: F:Alis.Core.Physic.Dynamics.BodyCollection._generationStamp
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.GenerationStamp
+    commentId: F:Alis.Core.Physic.Dynamics.BodyCollection.GenerationStamp
 - markdown: The generation stamp
-- code: internal int _generationStamp
+- code: internal int GenerationStamp
 - h4: Field Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: _list
-  id: Alis_Core_Physic_Dynamics_BodyCollection__list
+- api3: List
+  id: Alis_Core_Physic_Dynamics_BodyCollection_List
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L48
   metadata:
-    uid: Alis.Core.Physic.Dynamics.BodyCollection._list
-    commentId: F:Alis.Core.Physic.Dynamics.BodyCollection._list
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.List
+    commentId: F:Alis.Core.Physic.Dynamics.BodyCollection.List
 - markdown: The body
-- code: internal readonly List<Body> _list
+- code: internal readonly List<Body> List
 - h4: Field Value
 - parameters:
   - type:
@@ -95,23 +95,23 @@ body:
     - text: Body
       url: Alis.Core.Physic.Dynamics.Body.html
     - '>'
-- api3: _world
-  id: Alis_Core_Physic_Dynamics_BodyCollection__world
+- api3: worldPhysic
+  id: Alis_Core_Physic_Dynamics_BodyCollection_worldPhysic
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L53
   metadata:
-    uid: Alis.Core.Physic.Dynamics.BodyCollection._world
-    commentId: F:Alis.Core.Physic.Dynamics.BodyCollection._world
+    uid: Alis.Core.Physic.Dynamics.BodyCollection.worldPhysic
+    commentId: F:Alis.Core.Physic.Dynamics.BodyCollection.worldPhysic
 - markdown: The world
-- code: private readonly World _world
+- code: private readonly WorldPhysic worldPhysic
 - h4: Field Value
 - parameters:
   - type:
-    - text: World
-      url: Alis.Core.Physic.Dynamics.World.html
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
 - h2: Properties
 - api3: Count
   id: Alis_Core_Physic_Dynamics_BodyCollection_Count
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L266
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L75
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.Count
     commentId: P:Alis.Core.Physic.Dynamics.BodyCollection.Count
@@ -124,7 +124,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int32
 - api3: IsReadOnly
   id: Alis_Core_Physic_Dynamics_BodyCollection_IsReadOnly
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L261
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L70
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.IsReadOnly
     commentId: P:Alis.Core.Physic.Dynamics.BodyCollection.IsReadOnly
@@ -137,7 +137,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: this[int]
   id: Alis_Core_Physic_Dynamics_BodyCollection_Item_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L219
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L138
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.Item(System.Int32)
     commentId: P:Alis.Core.Physic.Dynamics.BodyCollection.Item(System.Int32)
@@ -151,7 +151,7 @@ body:
 - h2: Methods
 - api3: Contains(Body)
   id: Alis_Core_Physic_Dynamics_BodyCollection_Contains_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L299
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L108
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.Contains(Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.Contains(Alis.Core.Physic.Dynamics.Body)
@@ -172,7 +172,7 @@ body:
     description: The bool
 - api3: CopyTo(Body[], int)
   id: Alis_Core_Physic_Dynamics_BodyCollection_CopyTo_Alis_Core_Physic_Dynamics_Body___System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L306
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L115
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.CopyTo(Alis.Core.Physic.Dynamics.Body[],System.Int32)
     commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.CopyTo(Alis.Core.Physic.Dynamics.Body[],System.Int32)
@@ -194,7 +194,7 @@ body:
     description: The array index
 - api3: GetEnumerator()
   id: Alis_Core_Physic_Dynamics_BodyCollection_GetEnumerator
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L92
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L177
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.GetEnumerator
     commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.GetEnumerator
@@ -211,7 +211,7 @@ body:
     description: The body enumerator
 - api3: IndexOf(Body)
   id: Alis_Core_Physic_Dynamics_BodyCollection_IndexOf_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L230
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L149
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.IndexOf(Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.IndexOf(Alis.Core.Physic.Dynamics.Body)
@@ -232,7 +232,7 @@ body:
     description: The int
 - api3: ICollection<Body>.Add(Body)
   id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_ICollection_Alis_Core_Physic_Dynamics_Body__Add_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L273
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L82
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Add(Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Add(Alis.Core.Physic.Dynamics.Body)
@@ -253,7 +253,7 @@ body:
     description: ''
 - api3: ICollection<Body>.Clear()
   id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_ICollection_Alis_Core_Physic_Dynamics_Body__Clear
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L289
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L98
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Clear
     commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Clear
@@ -267,7 +267,7 @@ body:
     description: ''
 - api3: ICollection<Body>.Remove(Body)
   id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_ICollection_Alis_Core_Physic_Dynamics_Body__Remove_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L283
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L92
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Remove(Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#ICollection{Alis#Core#Physic#Dynamics#Body}#Remove(Alis.Core.Physic.Dynamics.Body)
@@ -288,7 +288,7 @@ body:
     description: The bool
 - api3: IEnumerable<Body>.GetEnumerator()
   id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_IEnumerable_Alis_Core_Physic_Dynamics_Body__GetEnumerator
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L73
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L125
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IEnumerable{Alis#Core#Physic#Dynamics#Body}#GetEnumerator
     commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IEnumerable{Alis#Core#Physic#Dynamics#Body}#GetEnumerator
@@ -306,7 +306,7 @@ body:
     description: An enumerator of body
 - api3: IList<Body>.Insert(int, Body)
   id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_IList_Alis_Core_Physic_Dynamics_Body__Insert_System_Int32_Alis_Core_Physic_Dynamics_Body_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L238
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L157
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Body}#Insert(System.Int32,Alis.Core.Physic.Dynamics.Body)
     commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Body}#Insert(System.Int32,Alis.Core.Physic.Dynamics.Body)
@@ -332,7 +332,7 @@ body:
     description: ''
 - api3: IList<Body>.RemoveAt(int)
   id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_Generic_IList_Alis_Core_Physic_Dynamics_Body__RemoveAt_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L248
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L167
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Body}#RemoveAt(System.Int32)
     commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#Generic#IList{Alis#Core#Physic#Dynamics#Body}#RemoveAt(System.Int32)
@@ -353,7 +353,7 @@ body:
     description: ''
 - api3: IEnumerable.GetEnumerator()
   id: Alis_Core_Physic_Dynamics_BodyCollection_System_Collections_IEnumerable_GetEnumerator
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L84
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/BodyCollection.cs#L132
   metadata:
     uid: Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#IEnumerable#GetEnumerator
     commentId: M:Alis.Core.Physic.Dynamics.BodyCollection.System#Collections#IEnumerable#GetEnumerator

@@ -1,0 +1,127 @@
+### YamlMime:ApiPage
+title: Class Distance
+body:
+- api1: Class Distance
+  id: Alis_Core_Physic_Collisions_Distance
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Distance.cs#L40
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Distance
+    commentId: T:Alis.Core.Physic.Collisions.Distance
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collisions
+      url: Alis.Core.Physic.Collisions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The Gilbert–Johnson–Keerthi distance algorithm that provides the distance between shapes.
+- code: public static class Distance
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Distance
+    url: Alis.Core.Physic.Collisions.Distance.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: GjkCalls
+  id: Alis_Core_Physic_Collisions_Distance_GjkCalls
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Distance.cs#L46
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Distance.GjkCalls
+    commentId: F:Alis.Core.Physic.Collisions.Distance.GjkCalls
+- markdown: >-
+    The number of calls made to the ComputeDistance() function.
+
+    Note: This is only activated when Settings.EnableDiagnostics = true
+- code: >-
+    [ThreadStatic]
+
+    public static int GjkCalls
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: GjkIters
+  id: Alis_Core_Physic_Collisions_Distance_GjkIters
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Distance.cs#L52
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Distance.GjkIters
+    commentId: F:Alis.Core.Physic.Collisions.Distance.GjkIters
+- markdown: >-
+    The number of iterations that was made on the last call to ComputeDistance().
+
+    Note: This is only activated when Settings.EnableDiagnostics = true
+- code: >-
+    [ThreadStatic]
+
+    public static int GjkIters
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: GjkMaxIters
+  id: Alis_Core_Physic_Collisions_Distance_GjkMaxIters
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Distance.cs#L58
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Distance.GjkMaxIters
+    commentId: F:Alis.Core.Physic.Collisions.Distance.GjkMaxIters
+- markdown: >-
+    The maximum numer of iterations ever mae with calls to the CompteDistance() funtion.
+
+    Note: This is only activated when Settings.EnableDiagnostics = true
+- code: >-
+    [ThreadStatic]
+
+    public static int GjkMaxIters
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: ComputeDistance(out DistanceOutput, out SimplexCache, DistanceInput)
+  id: Alis_Core_Physic_Collisions_Distance_ComputeDistance_Alis_Core_Physic_Collisions_DistanceOutput__Alis_Core_Physic_Collisions_SimplexCache__Alis_Core_Physic_Collisions_DistanceInput_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/Distance.cs#L66
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Distance.ComputeDistance(Alis.Core.Physic.Collisions.DistanceOutput@,Alis.Core.Physic.Collisions.SimplexCache@,Alis.Core.Physic.Collisions.DistanceInput)
+    commentId: M:Alis.Core.Physic.Collisions.Distance.ComputeDistance(Alis.Core.Physic.Collisions.DistanceOutput@,Alis.Core.Physic.Collisions.SimplexCache@,Alis.Core.Physic.Collisions.DistanceInput)
+- markdown: Computes the distance using the specified output
+- code: public static void ComputeDistance(out DistanceOutput output, out SimplexCache cache, DistanceInput input)
+- h4: Parameters
+- parameters:
+  - name: output
+    type:
+    - text: DistanceOutput
+      url: Alis.Core.Physic.Collisions.DistanceOutput.html
+    description: The output
+  - name: cache
+    type:
+    - text: SimplexCache
+      url: Alis.Core.Physic.Collisions.SimplexCache.html
+    description: The cache
+  - name: input
+    type:
+    - text: DistanceInput
+      url: Alis.Core.Physic.Collisions.DistanceInput.html
+    description: The input
+languageId: csharp
+metadata:
+  description: The Gilbert–Johnson–Keerthi distance algorithm that provides the distance between shapes.

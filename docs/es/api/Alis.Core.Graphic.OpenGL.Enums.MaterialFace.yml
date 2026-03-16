@@ -1,0 +1,38 @@
+### YamlMime:ApiPage
+title: Enum MaterialFace
+body:
+- api1: Enum MaterialFace
+  id: Alis_Core_Graphic_OpenGL_Enums_MaterialFace
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/MaterialFace.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.MaterialFace
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.MaterialFace
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The material face enum
+- code: 'public enum MaterialFace : uint'
+- h2: Fields
+- parameters:
+  - name: Front
+    default: "1028"
+    description: >+
+      The front material face
+
+  - name: Back
+    default: "1029"
+    description: >+
+      The back material face
+
+  - name: FrontAndBack
+    default: "1032"
+    description: >+
+      The front and back material face
+
+languageId: csharp
+metadata:
+  description: The material face enum

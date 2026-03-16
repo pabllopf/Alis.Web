@@ -1,0 +1,39 @@
+### YamlMime:ApiPage
+title: Delegate Scissor
+body:
+- api1: Delegate Scissor
+  id: Alis_Core_Graphic_OpenGL_Delegates_Scissor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/Scissor.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.Scissor
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.Scissor
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The scissor
+- code: public delegate void Scissor(int x, int y, int width, int height)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: y
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: width
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: height
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: The scissor

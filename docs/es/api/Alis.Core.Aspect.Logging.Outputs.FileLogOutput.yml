@@ -1,0 +1,223 @@
+### YamlMime:ApiPage
+title: Class FileLogOutput
+body:
+- api1: Class FileLogOutput
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L45
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput
+    commentId: T:Alis.Core.Aspect.Logging.Outputs.FileLogOutput
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Outputs
+      url: Alis.Core.Aspect.Logging.Outputs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Writes log entries to a file on disk.
+
+    Supports appending to existing files and creates directories as needed.
+
+    Thread-safe: Uses a lock for file writes.
+
+    AOT-compatible: Uses standard file I/O, no reflection.
+- code: 'public sealed class FileLogOutput : ILogOutput, IDisposable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: FileLogOutput
+    url: Alis.Core.Aspect.Logging.Outputs.FileLogOutput.html
+- h4: Implements
+- list:
+  - text: ILogOutput
+    url: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.html
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: FileLogOutput(string, ILogFormatter, bool)
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput__ctor_System_String_Alis_Core_Aspect_Logging_Abstractions_ILogFormatter_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L78
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput.#ctor(System.String,Alis.Core.Aspect.Logging.Abstractions.ILogFormatter,System.Boolean)
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.FileLogOutput.#ctor(System.String,Alis.Core.Aspect.Logging.Abstractions.ILogFormatter,System.Boolean)
+- markdown: Initializes a new instance of the FileLogOutput class.
+- code: public FileLogOutput(string filePath, ILogFormatter formatter = null, bool append = true)
+- h4: Parameters
+- parameters:
+  - name: filePath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The path to the log file.
+  - name: formatter
+    type:
+    - text: ILogFormatter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.html
+    description: The formatter to use. If null, uses a simple formatter.
+    optional: true
+  - name: append
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: Whether to append to existing file or overwrite.
+    optional: true
+- h2: Fields
+- api3: _disposed
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput__disposed
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L65
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput._disposed
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.FileLogOutput._disposed
+- markdown: The disposed
+- code: private bool _disposed
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _filePath
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput__filePath
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L50
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput._filePath
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.FileLogOutput._filePath
+- markdown: The file path
+- code: private readonly string _filePath
+- h4: Field Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: _formatter
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput__formatter
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L55
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput._formatter
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.FileLogOutput._formatter
+- markdown: The formatter
+- code: private readonly ILogFormatter _formatter
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ILogFormatter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.html
+- api3: _writeLock
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput__writeLock
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L60
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput._writeLock
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.FileLogOutput._writeLock
+- markdown: The write lock
+- code: private readonly object _writeLock
+- h4: Field Value
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+- api3: _writer
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput__writer
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L70
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput._writer
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.FileLogOutput._writer
+- markdown: The writer
+- code: private StreamWriter _writer
+- h4: Field Value
+- parameters:
+  - type:
+    - text: StreamWriter
+      url: https://learn.microsoft.com/dotnet/api/system.io.streamwriter
+- h2: Properties
+- api3: IsEnabled
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput_IsEnabled
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L119
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput.IsEnabled
+    commentId: P:Alis.Core.Aspect.Logging.Outputs.FileLogOutput.IsEnabled
+- markdown: Gets or sets the value of the is enabled
+- code: public bool IsEnabled { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L113
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput.Name
+    commentId: P:Alis.Core.Aspect.Logging.Outputs.FileLogOutput.Name
+- markdown: Gets the value of the name
+- code: public string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: Dispose()
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L177
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput.Dispose
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.FileLogOutput.Dispose
+- markdown: Disposes this instance
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public void Dispose()
+- api3: Flush()
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput_Flush
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L152
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput.Flush
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.FileLogOutput.Flush
+- markdown: Flushes this instance
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public void Flush()
+- api3: Write(ILogEntry)
+  id: Alis_Core_Aspect_Logging_Outputs_FileLogOutput_Write_Alis_Core_Aspect_Logging_Abstractions_ILogEntry_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/FileLogOutput.cs#L126
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.FileLogOutput.Write(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.FileLogOutput.Write(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+- markdown: Writes the entry
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public void Write(ILogEntry entry)
+- h4: Parameters
+- parameters:
+  - name: entry
+    type:
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: The entry
+languageId: csharp
+metadata:
+  description: >-
+    Writes log entries to a file on disk.
+
+    Supports appending to existing files and creates directories as needed.
+
+    Thread-safe: Uses a lock for file writes.
+
+    AOT-compatible: Uses standard file I/O, no reflection.

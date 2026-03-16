@@ -1,0 +1,31 @@
+### YamlMime:ApiPage
+title: Delegate Vertex2F
+body:
+- api1: Delegate Vertex2F
+  id: Alis_Core_Graphic_OpenGL_Delegates_Vertex2F
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/Vertex2f.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.Vertex2F
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.Vertex2F
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The vertex 2f
+- code: public delegate void Vertex2F(float x, float y)
+- h4: Parameters
+- parameters:
+  - name: x
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+  - name: y
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+languageId: csharp
+metadata:
+  description: The vertex 2f

@@ -1,0 +1,167 @@
+### YamlMime:ApiPage
+title: Class DebugLogOutput
+body:
+- api1: Class DebugLogOutput
+  id: Alis_Core_Aspect_Logging_Outputs_DebugLogOutput
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/DebugLogOutput.cs#L43
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.DebugLogOutput
+    commentId: T:Alis.Core.Aspect.Logging.Outputs.DebugLogOutput
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Outputs
+      url: Alis.Core.Aspect.Logging.Outputs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Writes log entries to the debugger output (Debug.WriteLine).
+
+    Only writes output when debugger is attached.
+
+    Useful for development-time debugging.
+
+    AOT-compatible: Uses Debug.WriteLine, no reflection.
+- code: 'public sealed class DebugLogOutput : ILogOutput, IDisposable'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: DebugLogOutput
+    url: Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.html
+- h4: Implements
+- list:
+  - text: ILogOutput
+    url: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.html
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: DebugLogOutput(ILogFormatter)
+  id: Alis_Core_Aspect_Logging_Outputs_DebugLogOutput__ctor_Alis_Core_Aspect_Logging_Abstractions_ILogFormatter_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/DebugLogOutput.cs#L59
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.#ctor(Alis.Core.Aspect.Logging.Abstractions.ILogFormatter)
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.#ctor(Alis.Core.Aspect.Logging.Abstractions.ILogFormatter)
+- markdown: Initializes a new instance of the DebugLogOutput class.
+- code: public DebugLogOutput(ILogFormatter formatter = null)
+- h4: Parameters
+- parameters:
+  - name: formatter
+    type:
+    - text: ILogFormatter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.html
+    description: The formatter to use. If null, uses a simple formatter.
+    optional: true
+- h2: Fields
+- api3: _disposed
+  id: Alis_Core_Aspect_Logging_Outputs_DebugLogOutput__disposed
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/DebugLogOutput.cs#L53
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.DebugLogOutput._disposed
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.DebugLogOutput._disposed
+- markdown: The disposed
+- code: private bool _disposed
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: _formatter
+  id: Alis_Core_Aspect_Logging_Outputs_DebugLogOutput__formatter
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/DebugLogOutput.cs#L48
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.DebugLogOutput._formatter
+    commentId: F:Alis.Core.Aspect.Logging.Outputs.DebugLogOutput._formatter
+- markdown: The formatter
+- code: private readonly ILogFormatter _formatter
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ILogFormatter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.html
+- h2: Properties
+- api3: IsEnabled
+  id: Alis_Core_Aspect_Logging_Outputs_DebugLogOutput_IsEnabled
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/DebugLogOutput.cs#L71
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.IsEnabled
+    commentId: P:Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.IsEnabled
+- markdown: Gets or sets the value of the is enabled
+- code: public bool IsEnabled { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Outputs_DebugLogOutput_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/DebugLogOutput.cs#L65
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.Name
+    commentId: P:Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.Name
+- markdown: Gets the value of the name
+- code: public string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: Dispose()
+  id: Alis_Core_Aspect_Logging_Outputs_DebugLogOutput_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/DebugLogOutput.cs#L110
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.Dispose
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.Dispose
+- markdown: Disposes this instance
+- code: public void Dispose()
+- api3: Flush()
+  id: Alis_Core_Aspect_Logging_Outputs_DebugLogOutput_Flush
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/DebugLogOutput.cs#L101
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.Flush
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.Flush
+- markdown: Flushes this instance
+- code: public void Flush()
+- api3: Write(ILogEntry)
+  id: Alis_Core_Aspect_Logging_Outputs_DebugLogOutput_Write_Alis_Core_Aspect_Logging_Abstractions_ILogEntry_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Outputs/DebugLogOutput.cs#L78
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.Write(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+    commentId: M:Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.Write(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+- markdown: Writes the entry
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public void Write(ILogEntry entry)
+- h4: Parameters
+- parameters:
+  - name: entry
+    type:
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: The entry
+languageId: csharp
+metadata:
+  description: >-
+    Writes log entries to the debugger output (Debug.WriteLine).
+
+    Only writes output when debugger is attached.
+
+    Useful for development-time debugging.
+
+    AOT-compatible: Uses Debug.WriteLine, no reflection.

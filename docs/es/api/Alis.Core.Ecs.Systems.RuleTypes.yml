@@ -1,0 +1,33 @@
+### YamlMime:ApiPage
+title: Enum RuleTypes
+body:
+- api1: Enum RuleTypes
+  id: Alis_Core_Ecs_Systems_RuleTypes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/RuleTypes.cs#L35
+  metadata:
+    uid: Alis.Core.Ecs.Systems.RuleTypes
+    commentId: T:Alis.Core.Ecs.Systems.RuleTypes
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Types of rules.
+- code: public enum RuleTypes
+- h2: Fields
+- parameters:
+  - name: Have
+    default: "0"
+    description: >+
+      Indicates an gameObject must have a component or tag.
+
+  - name: DoesNotHave
+    default: "1"
+    description: >+
+      Indicates an gameObject must not have a component or tag.
+
+languageId: csharp
+metadata:
+  description: Types of rules.

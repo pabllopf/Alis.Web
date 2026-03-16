@@ -1,0 +1,154 @@
+### YamlMime:ApiPage
+title: Class TimeOfImpact
+body:
+- api1: Class TimeOfImpact
+  id: Alis_Core_Physic_Collisions_TimeOfImpact
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/TimeOfImpact.cs#L39
+  metadata:
+    uid: Alis.Core.Physic.Collisions.TimeOfImpact
+    commentId: T:Alis.Core.Physic.Collisions.TimeOfImpact
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collisions
+      url: Alis.Core.Physic.Collisions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The time of impact class
+- code: public static class TimeOfImpact
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: TimeOfImpact
+    url: Alis.Core.Physic.Collisions.TimeOfImpact.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: ToiCalls
+  id: Alis_Core_Physic_Collisions_TimeOfImpact_ToiCalls
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/TimeOfImpact.cs#L47
+  metadata:
+    uid: Alis.Core.Physic.Collisions.TimeOfImpact.ToiCalls
+    commentId: F:Alis.Core.Physic.Collisions.TimeOfImpact.ToiCalls
+- markdown: The toi max iters
+- code: >-
+    [ThreadStatic]
+
+    public static int ToiCalls
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: ToiIters
+  id: Alis_Core_Physic_Collisions_TimeOfImpact_ToiIters
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/TimeOfImpact.cs#L52
+  metadata:
+    uid: Alis.Core.Physic.Collisions.TimeOfImpact.ToiIters
+    commentId: F:Alis.Core.Physic.Collisions.TimeOfImpact.ToiIters
+- markdown: The toi max iters
+- code: >-
+    [ThreadStatic]
+
+    public static int ToiIters
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: ToiMaxIters
+  id: Alis_Core_Physic_Collisions_TimeOfImpact_ToiMaxIters
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/TimeOfImpact.cs#L57
+  metadata:
+    uid: Alis.Core.Physic.Collisions.TimeOfImpact.ToiMaxIters
+    commentId: F:Alis.Core.Physic.Collisions.TimeOfImpact.ToiMaxIters
+- markdown: The toi max iters
+- code: >-
+    [ThreadStatic]
+
+    public static int ToiMaxIters
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: ToiMaxRootIters
+  id: Alis_Core_Physic_Collisions_TimeOfImpact_ToiMaxRootIters
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/TimeOfImpact.cs#L67
+  metadata:
+    uid: Alis.Core.Physic.Collisions.TimeOfImpact.ToiMaxRootIters
+    commentId: F:Alis.Core.Physic.Collisions.TimeOfImpact.ToiMaxRootIters
+- markdown: The toi max root iters
+- code: >-
+    [ThreadStatic]
+
+    public static int ToiMaxRootIters
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: ToiRootIters
+  id: Alis_Core_Physic_Collisions_TimeOfImpact_ToiRootIters
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/TimeOfImpact.cs#L62
+  metadata:
+    uid: Alis.Core.Physic.Collisions.TimeOfImpact.ToiRootIters
+    commentId: F:Alis.Core.Physic.Collisions.TimeOfImpact.ToiRootIters
+- markdown: The toi max root iters
+- code: >-
+    [ThreadStatic]
+
+    public static int ToiRootIters
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: CalculateTimeOfImpact(out ToiOutput, ref ToiInput)
+  id: Alis_Core_Physic_Collisions_TimeOfImpact_CalculateTimeOfImpact_Alis_Core_Physic_Collisions_ToiOutput__Alis_Core_Physic_Collisions_ToiInput__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/TimeOfImpact.cs#L78
+  metadata:
+    uid: Alis.Core.Physic.Collisions.TimeOfImpact.CalculateTimeOfImpact(Alis.Core.Physic.Collisions.ToiOutput@,Alis.Core.Physic.Collisions.ToiInput@)
+    commentId: M:Alis.Core.Physic.Collisions.TimeOfImpact.CalculateTimeOfImpact(Alis.Core.Physic.Collisions.ToiOutput@,Alis.Core.Physic.Collisions.ToiInput@)
+- markdown: >-
+    Compute the upper bound on time before two shapes penetrate. Time is represented as
+
+    a fraction between [0,tMax]. This uses a swept separating axis and may miss some intermediate,
+
+    non-tunneling collision. If you change the time interval, you should call this function
+
+    again.
+
+    Note: use Distance() to compute the contact point and normal at the time of impact.
+- code: public static void CalculateTimeOfImpact(out ToiOutput output, ref ToiInput input)
+- h4: Parameters
+- parameters:
+  - name: output
+    type:
+    - text: ToiOutput
+      url: Alis.Core.Physic.Collisions.ToiOutput.html
+    description: The output.
+  - name: input
+    type:
+    - text: ToiInput
+      url: Alis.Core.Physic.Collisions.ToiInput.html
+    description: The input.
+languageId: csharp
+metadata:
+  description: The time of impact class

@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Systems.Configuration.Audio
+body:
+- api1: Namespace Alis.Core.Ecs.Systems.Configuration.Audio
+  id: Alis_Core_Ecs_Systems_Configuration_Audio
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Audio
+    commentId: N:Alis.Core.Ecs.Systems.Configuration.Audio
+- h3: Structs
+- parameters:
+  - type:
+      text: AudioSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Audio.AudioSetting.html
+    description: The audio setting
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IAudioSetting
+      url: Alis.Core.Ecs.Systems.Configuration.Audio.IAudioSetting.html
+    description: The audio setting interface
+languageId: csharp

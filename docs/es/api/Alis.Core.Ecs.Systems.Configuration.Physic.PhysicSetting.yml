@@ -1,0 +1,113 @@
+### YamlMime:ApiPage
+title: Struct PhysicSetting
+body:
+- api1: Struct PhysicSetting
+  id: Alis_Core_Ecs_Systems_Configuration_Physic_PhysicSetting
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Physic/PhysicSetting.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting
+    commentId: T:Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Configuration.Physic
+      url: Alis.Core.Ecs.Systems.Configuration.Physic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The physic setting
+- code: 'public struct PhysicSetting : IPhysicSetting'
+- h4: Implements
+- list:
+  - text: IPhysicSetting
+    url: Alis.Core.Ecs.Systems.Configuration.Physic.IPhysicSetting.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: PhysicSetting(Vector2F, bool, Color)
+  id: Alis_Core_Ecs_Systems_Configuration_Physic_PhysicSetting__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_System_Boolean_Alis_Core_Aspect_Math_Definition_Color_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Physic/PhysicSetting.cs#L39
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Boolean,Alis.Core.Aspect.Math.Definition.Color)
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Boolean,Alis.Core.Aspect.Math.Definition.Color)
+- markdown: The physic setting
+- code: public PhysicSetting(Vector2F gravity = default, bool debug = false, Color debugColor = default)
+- h4: Parameters
+- parameters:
+  - name: gravity
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    optional: true
+  - name: debug
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    optional: true
+  - name: debugColor
+    type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+    optional: true
+- api3: PhysicSetting()
+  id: Alis_Core_Ecs_Systems_Configuration_Physic_PhysicSetting__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Physic/PhysicSetting.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.#ctor
+    commentId: M:Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting" data-throw-if-not-resolved="false"></xref> class
+- code: public PhysicSetting()
+- h2: Properties
+- api3: Debug
+  id: Alis_Core_Ecs_Systems_Configuration_Physic_PhysicSetting_Debug
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Physic/PhysicSetting.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.Debug
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.Debug
+- markdown: Gets or sets the value of the debug
+- code: public bool Debug { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: DebugColor
+  id: Alis_Core_Ecs_Systems_Configuration_Physic_PhysicSetting_DebugColor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Physic/PhysicSetting.cs#L66
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.DebugColor
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.DebugColor
+- markdown: Gets or sets the value of the debug color
+- code: public Color DebugColor { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+- api3: Gravity
+  id: Alis_Core_Ecs_Systems_Configuration_Physic_PhysicSetting_Gravity
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Configuration/Physic/PhysicSetting.cs#L56
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.Gravity
+    commentId: P:Alis.Core.Ecs.Systems.Configuration.Physic.PhysicSetting.Gravity
+- markdown: Gets or sets the value of the gravity
+- code: public Vector2F Gravity { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+languageId: csharp
+metadata:
+  description: The physic setting

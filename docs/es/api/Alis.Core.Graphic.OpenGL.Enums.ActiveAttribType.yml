@@ -1,0 +1,58 @@
+### YamlMime:ApiPage
+title: Enum ActiveAttribType
+body:
+- api1: Enum ActiveAttribType
+  id: Alis_Core_Graphic_OpenGL_Enums_ActiveAttribType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/ActiveAttribType.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.ActiveAttribType
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.ActiveAttribType
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The active attrib type enum
+- code: public enum ActiveAttribType
+- h2: Fields
+- parameters:
+  - name: Float
+    default: "5126"
+    description: >+
+      The float active attrib type
+
+  - name: FloatVec2
+    default: "35664"
+    description: >+
+      The float vec active attrib type
+
+  - name: FloatVec3
+    default: "35665"
+    description: >+
+      The float vec active attrib type
+
+  - name: FloatVec4
+    default: "35666"
+    description: >+
+      The float vec active attrib type
+
+  - name: FloatMat2
+    default: "35674"
+    description: >+
+      The float mat active attrib type
+
+  - name: FloatMat3
+    default: "35675"
+    description: >+
+      The float mat active attrib type
+
+  - name: FloatMat4
+    default: "35676"
+    description: >+
+      The float mat active attrib type
+
+languageId: csharp
+metadata:
+  description: The active attrib type enum

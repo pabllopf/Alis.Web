@@ -1,0 +1,408 @@
+### YamlMime:ApiPage
+title: Struct Aabb
+body:
+- api1: Struct Aabb
+  id: Alis_Core_Physic_Collisions_Aabb
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L40
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb
+    commentId: T:Alis.Core.Physic.Collisions.Aabb
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collisions
+      url: Alis.Core.Physic.Collisions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: An axis aligned bounding box.
+- code: public struct Aabb
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Aabb(Vector2F, Vector2F)
+  id: Alis_Core_Physic_Collisions_Aabb__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L57
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Collisions.Aabb.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Collisions.Aabb" data-throw-if-not-resolved="false"></xref> class
+- code: public Aabb(Vector2F min, Vector2F max)
+- h4: Parameters
+- parameters:
+  - name: min
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The min
+  - name: max
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The max
+- api3: Aabb(ref Vector2F, ref Vector2F)
+  id: Alis_Core_Physic_Collisions_Aabb__ctor_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L67
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Collisions.Aabb.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Collisions.Aabb" data-throw-if-not-resolved="false"></xref> class
+- code: public Aabb(ref Vector2F min, ref Vector2F max)
+- h4: Parameters
+- parameters:
+  - name: min
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The min
+  - name: max
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The max
+- api3: Aabb(Vector2F, float, float)
+  id: Alis_Core_Physic_Collisions_Aabb__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L79
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Collisions.Aabb.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,System.Single)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Collisions.Aabb" data-throw-if-not-resolved="false"></xref> class
+- code: public Aabb(Vector2F center, float width, float height)
+- h4: Parameters
+- parameters:
+  - name: center
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The center
+  - name: width
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The width
+  - name: height
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The height
+- h2: Fields
+- api3: LowerBound
+  id: Alis_Core_Physic_Collisions_Aabb_LowerBound
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L45
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.LowerBound
+    commentId: F:Alis.Core.Physic.Collisions.Aabb.LowerBound
+- markdown: The lower vertex
+- code: public Vector2F LowerBound
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: UpperBound
+  id: Alis_Core_Physic_Collisions_Aabb_UpperBound
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L50
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.UpperBound
+    commentId: F:Alis.Core.Physic.Collisions.Aabb.UpperBound
+- markdown: The upper vertex
+- code: public Vector2F UpperBound
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- h2: Properties
+- api3: Center
+  id: Alis_Core_Physic_Collisions_Aabb_Center
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L98
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Center
+    commentId: P:Alis.Core.Physic.Collisions.Aabb.Center
+- markdown: Get the center of the AABB.
+- code: public Vector2F Center { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Extents
+  id: Alis_Core_Physic_Collisions_Aabb_Extents
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L103
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Extents
+    commentId: P:Alis.Core.Physic.Collisions.Aabb.Extents
+- markdown: Get the extents of the AABB (half-widths).
+- code: public Vector2F Extents { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Height
+  id: Alis_Core_Physic_Collisions_Aabb_Height
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L93
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Height
+    commentId: P:Alis.Core.Physic.Collisions.Aabb.Height
+- markdown: Gets the value of the height
+- code: public float Height { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Perimeter
+  id: Alis_Core_Physic_Collisions_Aabb_Perimeter
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L108
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Perimeter
+    commentId: P:Alis.Core.Physic.Collisions.Aabb.Perimeter
+- markdown: Get the perimeter length
+- code: public float Perimeter { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Q1
+  id: Alis_Core_Physic_Collisions_Aabb_Q1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L138
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Q1
+    commentId: P:Alis.Core.Physic.Collisions.Aabb.Q1
+- markdown: First quadrant
+- code: public Aabb Q1 { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+- api3: Q2
+  id: Alis_Core_Physic_Collisions_Aabb_Q2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L143
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Q2
+    commentId: P:Alis.Core.Physic.Collisions.Aabb.Q2
+- markdown: Second quadrant
+- code: public Aabb Q2 { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+- api3: Q3
+  id: Alis_Core_Physic_Collisions_Aabb_Q3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L148
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Q3
+    commentId: P:Alis.Core.Physic.Collisions.Aabb.Q3
+- markdown: Third quadrant
+- code: public Aabb Q3 { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+- api3: Q4
+  id: Alis_Core_Physic_Collisions_Aabb_Q4
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L153
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Q4
+    commentId: P:Alis.Core.Physic.Collisions.Aabb.Q4
+- markdown: Forth quadrant
+- code: public Aabb Q4 { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+- api3: Vertices
+  id: Alis_Core_Physic_Collisions_Aabb_Vertices
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L122
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Vertices
+    commentId: P:Alis.Core.Physic.Collisions.Aabb.Vertices
+- markdown: Gets the vertices of the AABB.
+- code: public Vertices Vertices { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+- api3: Width
+  id: Alis_Core_Physic_Collisions_Aabb_Width
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L88
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Width
+    commentId: P:Alis.Core.Physic.Collisions.Aabb.Width
+- markdown: Gets the value of the width
+- code: public float Width { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Methods
+- api3: Combine(ref Aabb)
+  id: Alis_Core_Physic_Collisions_Aabb_Combine_Alis_Core_Physic_Collisions_Aabb__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L173
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Combine(Alis.Core.Physic.Collisions.Aabb@)
+    commentId: M:Alis.Core.Physic.Collisions.Aabb.Combine(Alis.Core.Physic.Collisions.Aabb@)
+- markdown: Combine an AABB into this one.
+- code: public void Combine(ref Aabb aabb)
+- h4: Parameters
+- parameters:
+  - name: aabb
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The aabb.
+- api3: Combine(ref Aabb, ref Aabb)
+  id: Alis_Core_Physic_Collisions_Aabb_Combine_Alis_Core_Physic_Collisions_Aabb__Alis_Core_Physic_Collisions_Aabb__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L184
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Combine(Alis.Core.Physic.Collisions.Aabb@,Alis.Core.Physic.Collisions.Aabb@)
+    commentId: M:Alis.Core.Physic.Collisions.Aabb.Combine(Alis.Core.Physic.Collisions.Aabb@,Alis.Core.Physic.Collisions.Aabb@)
+- markdown: Combine two AABBs into this one.
+- code: public void Combine(ref Aabb aabb1, ref Aabb aabb2)
+- h4: Parameters
+- parameters:
+  - name: aabb1
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The aabb1.
+  - name: aabb2
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The aabb2.
+- api3: Contains(ref Aabb)
+  id: Alis_Core_Physic_Collisions_Aabb_Contains_Alis_Core_Physic_Collisions_Aabb__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L197
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Contains(Alis.Core.Physic.Collisions.Aabb@)
+    commentId: M:Alis.Core.Physic.Collisions.Aabb.Contains(Alis.Core.Physic.Collisions.Aabb@)
+- markdown: Does this aabb contain the provided AABB.
+- code: public bool Contains(ref Aabb aabb)
+- h4: Parameters
+- parameters:
+  - name: aabb
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The aabb.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <code>true</code> if it contains the specified aabb; otherwise, <code>false</code>.
+- api3: Contains(ref Vector2F)
+  id: Alis_Core_Physic_Collisions_Aabb_Contains_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L214
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.Contains(Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Collisions.Aabb.Contains(Alis.Core.Aspect.Math.Vector.Vector2F@)
+- markdown: Determines whether the AAABB contains the specified point.
+- code: public bool Contains(ref Vector2F point)
+- h4: Parameters
+- parameters:
+  - name: point
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The point.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <code>true</code> if it contains the specified point; otherwise, <code>false</code>.
+- api3: IsValid()
+  id: Alis_Core_Physic_Collisions_Aabb_IsValid
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L161
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.IsValid
+    commentId: M:Alis.Core.Physic.Collisions.Aabb.IsValid
+- markdown: Verify that the bounds are sorted. And the bounds are valid numbers (not NaN).
+- code: public bool IsValid()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <code>true</code> if this instance is valid; otherwise, <code>false</code>.
+- api3: RayCast(out RayCastOutput, ref RayCastInput, bool)
+  id: Alis_Core_Physic_Collisions_Aabb_RayCast_Alis_Core_Physic_Collisions_RayCastOutput__Alis_Core_Physic_Collisions_RayCastInput__System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L246
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.RayCast(Alis.Core.Physic.Collisions.RayCastOutput@,Alis.Core.Physic.Collisions.RayCastInput@,System.Boolean)
+    commentId: M:Alis.Core.Physic.Collisions.Aabb.RayCast(Alis.Core.Physic.Collisions.RayCastOutput@,Alis.Core.Physic.Collisions.RayCastInput@,System.Boolean)
+- code: public bool RayCast(out RayCastOutput output, ref RayCastInput input, bool doInteriorCheck = true)
+- h4: Parameters
+- parameters:
+  - name: output
+    type:
+    - text: RayCastOutput
+      url: Alis.Core.Physic.Collisions.RayCastOutput.html
+    description: ''
+  - name: input
+    type:
+    - text: RayCastInput
+      url: Alis.Core.Physic.Collisions.RayCastInput.html
+    description: ''
+  - name: doInteriorCheck
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
+    optional: true
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: ''
+- api3: TestOverlap(ref Aabb, ref Aabb)
+  id: Alis_Core_Physic_Collisions_Aabb_TestOverlap_Alis_Core_Physic_Collisions_Aabb__Alis_Core_Physic_Collisions_Aabb__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/AABB.cs#L225
+  metadata:
+    uid: Alis.Core.Physic.Collisions.Aabb.TestOverlap(Alis.Core.Physic.Collisions.Aabb@,Alis.Core.Physic.Collisions.Aabb@)
+    commentId: M:Alis.Core.Physic.Collisions.Aabb.TestOverlap(Alis.Core.Physic.Collisions.Aabb@,Alis.Core.Physic.Collisions.Aabb@)
+- markdown: Test if the two AABBs overlap.
+- code: public static bool TestOverlap(ref Aabb a, ref Aabb b)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The first AABB.
+  - name: b
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The second AABB.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: True if they are overlapping.
+languageId: csharp
+metadata:
+  description: An axis aligned bounding box.

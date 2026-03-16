@@ -1,0 +1,115 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Graphic.OpenGL.Enums
+body:
+- api1: Namespace Alis.Core.Graphic.OpenGL.Enums
+  id: Alis_Core_Graphic_OpenGL_Enums
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums
+    commentId: N:Alis.Core.Graphic.OpenGL.Enums
+- h3: Enums
+- parameters:
+  - type:
+      text: ActiveAttribType
+      url: Alis.Core.Graphic.OpenGL.Enums.ActiveAttribType.html
+    description: The active attrib type enum
+  - type:
+      text: ActiveUniformType
+      url: Alis.Core.Graphic.OpenGL.Enums.ActiveUniformType.html
+    description: The active uniform type enum
+  - type:
+      text: BeginMode
+      url: Alis.Core.Graphic.OpenGL.Enums.BeginMode.html
+    description: The begin mode enum
+  - type:
+      text: BlendEquationMode
+      url: Alis.Core.Graphic.OpenGL.Enums.BlendEquationMode.html
+    description: The blend equation mode enum
+  - type:
+      text: BlendingFactorDest
+      url: Alis.Core.Graphic.OpenGL.Enums.BlendingFactorDest.html
+    description: The blending factor dest enum
+  - type:
+      text: BlendingFactorSrc
+      url: Alis.Core.Graphic.OpenGL.Enums.BlendingFactorSrc.html
+    description: The blending factor src enum
+  - type:
+      text: BufferTarget
+      url: Alis.Core.Graphic.OpenGL.Enums.BufferTarget.html
+    description: The buffer target enum
+  - type:
+      text: BufferUsageHint
+      url: Alis.Core.Graphic.OpenGL.Enums.BufferUsageHint.html
+    description: The buffer usage hint enum
+  - type:
+      text: ClearBufferMask
+      url: Alis.Core.Graphic.OpenGL.Enums.ClearBufferMask.html
+    description: The clear buffer mask enum
+  - type:
+      text: DrawElementsType
+      url: Alis.Core.Graphic.OpenGL.Enums.DrawElementsType.html
+    description: The draw elements type enum
+  - type:
+      text: EnableCap
+      url: Alis.Core.Graphic.OpenGL.Enums.EnableCap.html
+    description: The enable cap enum
+  - type:
+      text: MaterialFace
+      url: Alis.Core.Graphic.OpenGL.Enums.MaterialFace.html
+    description: The material face enum
+  - type:
+      text: PixelFormat
+      url: Alis.Core.Graphic.OpenGL.Enums.PixelFormat.html
+    description: The pixel format enum
+  - type:
+      text: PixelInternalFormat
+      url: Alis.Core.Graphic.OpenGL.Enums.PixelInternalFormat.html
+    description: The pixel internal format enum
+  - type:
+      text: PixelType
+      url: Alis.Core.Graphic.OpenGL.Enums.PixelType.html
+    description: The pixel type enum
+  - type:
+      text: PolygonModeEnum
+      url: Alis.Core.Graphic.OpenGL.Enums.PolygonModeEnum.html
+    description: The polygon mode enum enum
+  - type:
+      text: ProgramParameter
+      url: Alis.Core.Graphic.OpenGL.Enums.ProgramParameter.html
+    description: The program parameter enum
+  - type:
+      text: ShaderParameter
+      url: Alis.Core.Graphic.OpenGL.Enums.ShaderParameter.html
+    description: The shader parameter enum
+  - type:
+      text: ShaderType
+      url: Alis.Core.Graphic.OpenGL.Enums.ShaderType.html
+    description: The shader type enum
+  - type:
+      text: StoreParameter
+      url: Alis.Core.Graphic.OpenGL.Enums.StoreParameter.html
+    description: The pixel store parameter enum
+  - type:
+      text: StringName
+      url: Alis.Core.Graphic.OpenGL.Enums.StringName.html
+    description: The string name enum
+  - type:
+      text: TextureParameter
+      url: Alis.Core.Graphic.OpenGL.Enums.TextureParameter.html
+    description: The texture parameter enum
+  - type:
+      text: TextureParameterName
+      url: Alis.Core.Graphic.OpenGL.Enums.TextureParameterName.html
+    description: The texture parameter name enum
+  - type:
+      text: TextureTarget
+      url: Alis.Core.Graphic.OpenGL.Enums.TextureTarget.html
+    description: The texture target enum
+  - type:
+      text: TextureUnit
+      url: Alis.Core.Graphic.OpenGL.Enums.TextureUnit.html
+    description: The texture unit enum
+  - type:
+      text: VertexAttribPointerType
+      url: Alis.Core.Graphic.OpenGL.Enums.VertexAttribPointerType.html
+    description: The vertex attrib pointer type enum
+languageId: csharp

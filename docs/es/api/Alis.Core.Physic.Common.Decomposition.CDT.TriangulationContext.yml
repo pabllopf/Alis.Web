@@ -24,8 +24,8 @@ body:
     url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.html
 - h4: Derived
 - list:
-  - text: DTSweepContext
-    url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DTSweepContext.html
+  - text: DtSweepContext
+    url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.Sweep.DtSweepContext.html
 - h4: Inherited Members
 - list:
   - text: object.Equals(object?)
@@ -120,12 +120,12 @@ body:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Triangulatable
     commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.Triangulatable
 - markdown: Gets or sets the value of the triangulatable
-- code: public Triangulatable Triangulatable { get; private set; }
+- code: public ITriangulatable Triangulatable { get; private set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Triangulatable
-      url: Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable.html
+    - text: ITriangulatable
+      url: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.html
 - api3: TriangulationMode
   id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_TriangulationMode
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L58
@@ -195,20 +195,20 @@ body:
     - text: TriangulationConstraint
       url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationConstraint.html
     description: The triangulation constraint
-- api3: PrepareTriangulation(Triangulatable)
-  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_PrepareTriangulation_Alis_Core_Physic_Common_Decomposition_CDT_Triangulatable_
+- api3: PrepareTriangulation(ITriangulatable)
+  id: Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_PrepareTriangulation_Alis_Core_Physic_Common_Decomposition_CDT_ITriangulatable_
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/TriangulationContext.cs#L92
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable)
-    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable)
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable)
 - markdown: Prepares the triangulation using the specified t
-- code: public virtual void PrepareTriangulation(Triangulatable t)
+- code: public virtual void PrepareTriangulation(ITriangulatable t)
 - h4: Parameters
 - parameters:
   - name: t
     type:
-    - text: Triangulatable
-      url: Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable.html
+    - text: ITriangulatable
+      url: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.html
     description: The
 languageId: csharp
 metadata:

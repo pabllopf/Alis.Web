@@ -1,0 +1,63 @@
+### YamlMime:ApiPage
+title: Enum PrimitiveType
+body:
+- api1: Enum PrimitiveType
+  id: Alis_Core_Graphic_OpenGL_PrimitiveType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/PrimitiveType.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.PrimitiveType
+    commentId: T:Alis.Core.Graphic.OpenGL.PrimitiveType
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The primitive type enum
+- code: public enum PrimitiveType
+- h2: Fields
+- parameters:
+  - name: Points
+    default: "0"
+    description: >+
+      The points primitive type
+
+  - name: Lines
+    default: "1"
+    description: >+
+      The lines primitive type
+
+  - name: LineLoop
+    default: "2"
+    description: >+
+      The line loop primitive type
+
+  - name: LineStrip
+    default: "3"
+    description: >+
+      The line strip primitive type
+
+  - name: Triangles
+    default: "4"
+    description: >+
+      The triangles primitive type
+
+  - name: TriangleStrip
+    default: "5"
+    description: >+
+      The triangle strip primitive type
+
+  - name: TriangleFan
+    default: "6"
+    description: >+
+      The triangle fan primitive type
+
+  - name: Quads
+    default: "7"
+    description: >+
+      The quads primitive type
+
+languageId: csharp
+metadata:
+  description: The primitive type enum

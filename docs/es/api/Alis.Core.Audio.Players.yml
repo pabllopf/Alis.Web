@@ -9,6 +9,10 @@ body:
 - h3: Classes
 - parameters:
   - type:
+      text: BrowserPlayer
+      url: Alis.Core.Audio.Players.BrowserPlayer.html
+    description: The browser player class
+  - type:
       text: LinuxPlayer
       url: Alis.Core.Audio.Players.LinuxPlayer.html
     description: The linux player class
@@ -16,6 +20,10 @@ body:
       text: MacPlayer
       url: Alis.Core.Audio.Players.MacPlayer.html
     description: The mac player class
+  - type:
+      text: OpenAl
+      url: Alis.Core.Audio.Players.OpenAl.html
+    description: The open al class
   - type:
       text: UnixPlayerBase
       url: Alis.Core.Audio.Players.UnixPlayerBase.html

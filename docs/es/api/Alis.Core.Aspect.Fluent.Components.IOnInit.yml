@@ -1,0 +1,45 @@
+### YamlMime:ApiPage
+title: Interface IOnInit
+body:
+- api1: Interface IOnInit
+  id: Alis_Core_Aspect_Fluent_Components_IOnInit
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnInit.cs#L36
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnInit
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnInit
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The initable interface
+- code: 'public interface IOnInit : IComponentBase'
+- h4: Implements
+- list:
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+- h2: Methods
+- api3: OnInit(IGameObject)
+  id: Alis_Core_Aspect_Fluent_Components_IOnInit_OnInit_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnInit.cs#L42
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnInit.OnInit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnInit.OnInit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Inits the self
+- code: void OnInit(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- h2: See Also
+- list:
+  - - text: IComponentBase
+      url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+languageId: csharp
+metadata:
+  description: The initable interface

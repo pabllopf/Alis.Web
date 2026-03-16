@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Data.Json.Serialization
+body:
+- api1: Namespace Alis.Core.Aspect.Data.Json.Serialization
+  id: Alis_Core_Aspect_Data_Json_Serialization
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Serialization
+    commentId: N:Alis.Core.Aspect.Data.Json.Serialization
+- h3: Classes
+- parameters:
+  - type:
+      text: JsonSerializer
+      url: Alis.Core.Aspect.Data.Json.Serialization.JsonSerializer.html
+    description: Serializes objects that implement IJsonSerializable to JSON strings.
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IJsonSerializer
+      url: Alis.Core.Aspect.Data.Json.Serialization.IJsonSerializer.html
+    description: Defines a contract for serializing objects that implement IJsonSerializable to JSON strings.
+languageId: csharp

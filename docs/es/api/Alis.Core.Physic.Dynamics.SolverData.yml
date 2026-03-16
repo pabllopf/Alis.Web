@@ -30,14 +30,14 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Fields
-- api3: locks
-  id: Alis_Core_Physic_Dynamics_SolverData_locks
+- api3: Locks
+  id: Alis_Core_Physic_Dynamics_SolverData_Locks
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/SolverData.cs#L53
   metadata:
-    uid: Alis.Core.Physic.Dynamics.SolverData.locks
-    commentId: F:Alis.Core.Physic.Dynamics.SolverData.locks
+    uid: Alis.Core.Physic.Dynamics.SolverData.Locks
+    commentId: F:Alis.Core.Physic.Dynamics.SolverData.Locks
 - markdown: The locks
-- code: internal int[] locks
+- code: internal int[] Locks
 - h4: Field Value
 - parameters:
   - type:
@@ -45,14 +45,14 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int32
     - '['
     - ']'
-- api3: positions
-  id: Alis_Core_Physic_Dynamics_SolverData_positions
+- api3: Positions
+  id: Alis_Core_Physic_Dynamics_SolverData_Positions
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/SolverData.cs#L43
   metadata:
-    uid: Alis.Core.Physic.Dynamics.SolverData.positions
-    commentId: F:Alis.Core.Physic.Dynamics.SolverData.positions
+    uid: Alis.Core.Physic.Dynamics.SolverData.Positions
+    commentId: F:Alis.Core.Physic.Dynamics.SolverData.Positions
 - markdown: The positions
-- code: internal SolverPosition[] positions
+- code: internal SolverPosition[] Positions
 - h4: Field Value
 - parameters:
   - type:
@@ -60,27 +60,27 @@ body:
       url: Alis.Core.Physic.Dynamics.SolverPosition.html
     - '['
     - ']'
-- api3: step
-  id: Alis_Core_Physic_Dynamics_SolverData_step
+- api3: Step
+  id: Alis_Core_Physic_Dynamics_SolverData_Step
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/SolverData.cs#L38
   metadata:
-    uid: Alis.Core.Physic.Dynamics.SolverData.step
-    commentId: F:Alis.Core.Physic.Dynamics.SolverData.step
+    uid: Alis.Core.Physic.Dynamics.SolverData.Step
+    commentId: F:Alis.Core.Physic.Dynamics.SolverData.Step
 - markdown: The step
-- code: internal TimeStep step
+- code: internal TimeStep Step
 - h4: Field Value
 - parameters:
   - type:
     - text: TimeStep
       url: Alis.Core.Physic.Dynamics.TimeStep.html
-- api3: velocities
-  id: Alis_Core_Physic_Dynamics_SolverData_velocities
+- api3: Velocities
+  id: Alis_Core_Physic_Dynamics_SolverData_Velocities
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/SolverData.cs#L48
   metadata:
-    uid: Alis.Core.Physic.Dynamics.SolverData.velocities
-    commentId: F:Alis.Core.Physic.Dynamics.SolverData.velocities
+    uid: Alis.Core.Physic.Dynamics.SolverData.Velocities
+    commentId: F:Alis.Core.Physic.Dynamics.SolverData.Velocities
 - markdown: The velocities
-- code: internal SolverVelocity[] velocities
+- code: internal SolverVelocity[] Velocities
 - h4: Field Value
 - parameters:
   - type:

@@ -1,0 +1,642 @@
+### YamlMime:ApiPage
+title: Class DynamicTree<TNode>
+body:
+- api1: Class DynamicTree<TNode>
+  id: Alis_Core_Physic_Collisions_DynamicTree_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L45
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1
+    commentId: T:Alis.Core.Physic.Collisions.DynamicTree`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collisions
+      url: Alis.Core.Physic.Collisions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    A dynamic tree arranges data in a binary tree to accelerate
+
+    queries such as volume queries and ray casts. Leafs are proxies
+
+    with an AABB. In the tree we expand the proxy AABB by Settings.b2_fatAABBFactor
+
+    so that the proxy AABB is bigger than the client object. This allows the client
+
+    object to move by small amounts without triggering a tree update.
+
+    Nodes are pooled and relocatable, so we use node indices rather than pointers.
+- code: public class DynamicTree<TNode>
+- h4: Type Parameters
+- parameters:
+  - name: TNode
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: DynamicTree<TNode>
+    url: Alis.Core.Physic.Collisions.DynamicTree-1.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: DynamicTree()
+  id: Alis_Core_Physic_Collisions_DynamicTree_1__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L90
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.#ctor
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.#ctor
+- markdown: Constructing the tree initializes the node pool.
+- code: public DynamicTree()
+- h2: Fields
+- api3: NullNode
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_NullNode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L50
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.NullNode
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTree`1.NullNode
+- markdown: The null node
+- code: internal const int NullNode = -1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _freeList
+  id: Alis_Core_Physic_Collisions_DynamicTree_1__freeList
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L65
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1._freeList
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTree`1._freeList
+- markdown: The free list
+- code: private int _freeList
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _nodeCapacity
+  id: Alis_Core_Physic_Collisions_DynamicTree_1__nodeCapacity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L70
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1._nodeCapacity
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTree`1._nodeCapacity
+- markdown: The node capacity
+- code: private int _nodeCapacity
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _nodeCount
+  id: Alis_Core_Physic_Collisions_DynamicTree_1__nodeCount
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L75
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1._nodeCount
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTree`1._nodeCount
+- markdown: The node count
+- code: private int _nodeCount
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _nodes
+  id: Alis_Core_Physic_Collisions_DynamicTree_1__nodes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L80
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1._nodes
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTree`1._nodes
+- markdown: The nodes
+- code: private TreeNode<TNode>[] _nodes
+- h4: Field Value
+- parameters:
+  - type:
+    - text: TreeNode
+      url: Alis.Core.Physic.Collisions.TreeNode-1.html
+    - <
+    - TNode
+    - '>'
+    - '['
+    - ']'
+- api3: _queryStack
+  id: Alis_Core_Physic_Collisions_DynamicTree_1__queryStack
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L55
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1._queryStack
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTree`1._queryStack
+- markdown: The stack
+- code: private readonly Stack<int> _queryStack
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Stack
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+    - <
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '>'
+- api3: _raycastStack
+  id: Alis_Core_Physic_Collisions_DynamicTree_1__raycastStack
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L60
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1._raycastStack
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTree`1._raycastStack
+- markdown: The stack
+- code: private readonly Stack<int> _raycastStack
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Stack
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+    - <
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '>'
+- api3: _root
+  id: Alis_Core_Physic_Collisions_DynamicTree_1__root
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L85
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1._root
+    commentId: F:Alis.Core.Physic.Collisions.DynamicTree`1._root
+- markdown: The root
+- code: private int _root
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Properties
+- api3: AreaRatio
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_AreaRatio
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L130
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.AreaRatio
+    commentId: P:Alis.Core.Physic.Collisions.DynamicTree`1.AreaRatio
+- markdown: Get the ratio of the sum of the node areas to the root area.
+- code: public float AreaRatio { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: Height
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_Height
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L114
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.Height
+    commentId: P:Alis.Core.Physic.Collisions.DynamicTree`1.Height
+- markdown: Compute the height of the binary tree in O(N) time. Should not be called often.
+- code: public int Height { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxBalance
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_MaxBalance
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L163
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.MaxBalance
+    commentId: P:Alis.Core.Physic.Collisions.DynamicTree`1.MaxBalance
+- markdown: >-
+    Get the maximum balance of an node in the tree. The balance is the difference
+
+    in height of the two children of a node.
+- code: public int MaxBalance { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: AddProxy(ref Aabb)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_AddProxy_Alis_Core_Physic_Collisions_Aabb__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L190
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.AddProxy(Alis.Core.Physic.Collisions.Aabb@)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.AddProxy(Alis.Core.Physic.Collisions.Aabb@)
+- code: public int AddProxy(ref Aabb aabb)
+- h4: Parameters
+- parameters:
+  - name: aabb
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+- api3: AllocateNode()
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_AllocateNode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L442
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.AllocateNode
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.AllocateNode
+- markdown: Allocates the node
+- code: private int AllocateNode()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The node id
+- api3: Balance(int)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_Balance_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L699
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.Balance(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.Balance(System.Int32)
+- markdown: Perform a left or right rotation if node N is imbalanced.
+- code: private int Balance(int iN)
+- h4: Parameters
+- parameters:
+  - name: iN
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: the new root index.
+- api3: ComputeHeight(int)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_ComputeHeight_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L838
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.ComputeHeight(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.ComputeHeight(System.Int32)
+- markdown: Compute the height of a sub-tree.
+- code: public int ComputeHeight(int nodeId)
+- h4: Parameters
+- parameters:
+  - name: nodeId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The node id to use as parent.
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The height of the tree.
+- api3: ComputeHeight()
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_ComputeHeight
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L856
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.ComputeHeight
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.ComputeHeight
+- markdown: Compute the height of the entire tree.
+- code: public int ComputeHeight()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The height of the tree.
+- api3: FreeNode(int)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_FreeNode_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L483
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.FreeNode(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.FreeNode(System.Int32)
+- markdown: Frees the node using the specified node id
+- code: private void FreeNode(int nodeId)
+- h4: Parameters
+- parameters:
+  - name: nodeId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The node id
+- api3: GetFatAabb(int, out Aabb)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_GetFatAabb_System_Int32_Alis_Core_Physic_Collisions_Aabb__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L287
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.GetFatAabb(System.Int32,Alis.Core.Physic.Collisions.Aabb@)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.GetFatAabb(System.Int32,Alis.Core.Physic.Collisions.Aabb@)
+- markdown: Get the fat AABB for a proxy.
+- code: public void GetFatAabb(int proxyId, out Aabb fatAabb)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id.
+  - name: fatAabb
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The fat AABB.
+- api3: GetFatAabb(int)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_GetFatAabb_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L297
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.GetFatAabb(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.GetFatAabb(System.Int32)
+- markdown: Get the fat AABB for a proxy.
+- code: public Aabb GetFatAabb(int proxyId)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id.
+- h4: Returns
+- parameters:
+  - type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The fat AABB.
+- api3: GetUserData(int)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_GetUserData_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L280
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.GetUserData(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.GetUserData(System.Int32)
+- markdown: Get proxy user data.
+- code: public TNode GetUserData(int proxyId)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id.
+- h4: Returns
+- parameters:
+  - type:
+    - TNode
+    description: the proxy user data or 0 if the id is invalid.
+- api3: InsertLeaf(int)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_InsertLeaf_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L495
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.InsertLeaf(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.InsertLeaf(System.Int32)
+- markdown: Inserts the leaf using the specified leaf
+- code: private void InsertLeaf(int leaf)
+- h4: Parameters
+- parameters:
+  - name: leaf
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The leaf
+- api3: MoveProxy(int, ref Aabb, Vector2F)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_MoveProxy_System_Int32_Alis_Core_Physic_Collisions_Aabb__Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L224
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.MoveProxy(System.Int32,Alis.Core.Physic.Collisions.Aabb@,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.MoveProxy(System.Int32,Alis.Core.Physic.Collisions.Aabb@,Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: >-
+    Move a proxy with a swepted AABB. If the proxy has moved outside of its fattened AABB,
+
+    then the proxy is removed from the tree and re-inserted. Otherwise
+
+    the function returns immediately.
+- code: public bool MoveProxy(int proxyId, ref Aabb aabb, Vector2F displacement)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id.
+  - name: aabb
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The aabb.
+  - name: displacement
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The displacement.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: true if the proxy was re-inserted.
+- api3: Query(BroadPhaseQueryCallback, ref Aabb)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_Query_Alis_Core_Physic_Collisions_BroadPhaseQueryCallback_Alis_Core_Physic_Collisions_Aabb__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L312
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.Query(Alis.Core.Physic.Collisions.BroadPhaseQueryCallback,Alis.Core.Physic.Collisions.Aabb@)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.Query(Alis.Core.Physic.Collisions.BroadPhaseQueryCallback,Alis.Core.Physic.Collisions.Aabb@)
+- markdown: >-
+    Query an AABB for overlapping proxies. The callback class
+
+    is called for each proxy that overlaps the supplied AABB.
+- code: public void Query(BroadPhaseQueryCallback callback, ref Aabb aabb)
+- h4: Parameters
+- parameters:
+  - name: callback
+    type:
+    - text: BroadPhaseQueryCallback
+      url: Alis.Core.Physic.Collisions.BroadPhaseQueryCallback.html
+    description: The callback.
+  - name: aabb
+    type:
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
+    description: The aabb.
+- api3: RayCast(BroadPhaseRayCastCallback, ref RayCastInput)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_RayCast_Alis_Core_Physic_Collisions_BroadPhaseRayCastCallback_Alis_Core_Physic_Collisions_RayCastInput__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L355
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.RayCast(Alis.Core.Physic.Collisions.BroadPhaseRayCastCallback,Alis.Core.Physic.Collisions.RayCastInput@)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.RayCast(Alis.Core.Physic.Collisions.BroadPhaseRayCastCallback,Alis.Core.Physic.Collisions.RayCastInput@)
+- markdown: >-
+    Ray-cast against the proxies in the tree. This relies on the callback
+
+    to perform a exact ray-cast in the case were the proxy contains a Shape.
+
+    The callback also performs the any collision filtering. This has performance
+
+    roughly equal to k * log(n), where k is the number of collisions and n is the
+
+    number of proxies in the tree.
+- code: public void RayCast(BroadPhaseRayCastCallback callback, ref RayCastInput input)
+- h4: Parameters
+- parameters:
+  - name: callback
+    type:
+    - text: BroadPhaseRayCastCallback
+      url: Alis.Core.Physic.Collisions.BroadPhaseRayCastCallback.html
+    description: A callback class that is called for each proxy that is hit by the ray.
+  - name: input
+    type:
+    - text: RayCastInput
+      url: Alis.Core.Physic.Collisions.RayCastInput.html
+    description: The ray-cast input data. The ray extends from p1 to p1 + maxFraction * (p2 - p1).
+- api3: RebuildBottomUp()
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_RebuildBottomUp
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L942
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.RebuildBottomUp
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.RebuildBottomUp
+- markdown: Build an optimal tree. Very expensive. For testing.
+- code: public void RebuildBottomUp()
+- api3: RemoveLeaf(int)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_RemoveLeaf_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L634
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.RemoveLeaf(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.RemoveLeaf(System.Int32)
+- markdown: Removes the leaf using the specified leaf
+- code: private void RemoveLeaf(int leaf)
+- h4: Parameters
+- parameters:
+  - name: leaf
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The leaf
+- api3: RemoveProxy(int)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_RemoveProxy_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L209
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.RemoveProxy(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.RemoveProxy(System.Int32)
+- markdown: OnDestroy a proxy. This asserts if the id is invalid.
+- code: public void RemoveProxy(int proxyId)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id.
+- api3: SetUserData(int, TNode)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_SetUserData_System_Int32__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L270
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.SetUserData(System.Int32,`0)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.SetUserData(System.Int32,`0)
+- code: public void SetUserData(int proxyId, TNode userData)
+- h4: Parameters
+- parameters:
+  - name: proxyId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: ''
+  - name: userData
+    type:
+    - TNode
+    description: ''
+- api3: ShiftOrigin(Vector2F)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_ShiftOrigin_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L1021
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.ShiftOrigin(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.ShiftOrigin(Alis.Core.Aspect.Math.Vector.Vector2F)
+- markdown: Shift the origin of the nodes
+- code: public void ShiftOrigin(Vector2F newOrigin)
+- h4: Parameters
+- parameters:
+  - name: newOrigin
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The displacement to use.
+- api3: TestFatAabbOverlap(int, int)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_TestFatAabbOverlap_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L304
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.TestFatAabbOverlap(System.Int32,System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.TestFatAabbOverlap(System.Int32,System.Int32)
+- markdown: Test overlap of fat AABBs.
+- code: public bool TestFatAabbOverlap(int proxyIdA, int proxyIdB)
+- h4: Parameters
+- parameters:
+  - name: proxyIdA
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id A.
+  - name: proxyIdB
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The proxy id B.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Validate()
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_Validate
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L925
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.Validate
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.Validate
+- markdown: Validate this tree. For testing.
+- code: public void Validate()
+- api3: ValidateMetrics(int)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_ValidateMetrics_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L895
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.ValidateMetrics(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.ValidateMetrics(System.Int32)
+- markdown: Validates the metrics using the specified index
+- code: public void ValidateMetrics(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- api3: ValidateStructure(int)
+  id: Alis_Core_Physic_Collisions_DynamicTree_1_ValidateStructure_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/DynamicTree.cs#L866
+  metadata:
+    uid: Alis.Core.Physic.Collisions.DynamicTree`1.ValidateStructure(System.Int32)
+    commentId: M:Alis.Core.Physic.Collisions.DynamicTree`1.ValidateStructure(System.Int32)
+- markdown: Validates the structure using the specified index
+- code: public void ValidateStructure(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+languageId: csharp
+metadata:
+  description: >-
+    A dynamic tree arranges data in a binary tree to accelerate
+
+    queries such as volume queries and ray casts. Leafs are proxies
+
+    with an AABB. In the tree we expand the proxy AABB by Settings.b2_fatAABBFactor
+
+    so that the proxy AABB is bigger than the client object. This allows the client
+
+    object to move by small amounts without triggering a tree update.
+
+    Nodes are pooled and relocatable, so we use node indices rather than pointers.

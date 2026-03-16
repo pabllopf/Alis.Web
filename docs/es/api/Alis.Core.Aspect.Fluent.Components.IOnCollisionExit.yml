@@ -1,0 +1,37 @@
+### YamlMime:ApiPage
+title: Interface IOnCollisionExit
+body:
+- api1: Interface IOnCollisionExit
+  id: Alis_Core_Aspect_Fluent_Components_IOnCollisionExit
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnCollisionExit.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnCollisionExit
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnCollisionExit
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The on collision exit interface
+- code: public interface IOnCollisionExit
+- h2: Methods
+- api3: OnCollisionExit(IGameObject)
+  id: Alis_Core_Aspect_Fluent_Components_IOnCollisionExit_OnCollisionExit_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnCollisionExit.cs#L41
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnCollisionExit.OnCollisionExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnCollisionExit.OnCollisionExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Ons the collision exit using the specified other
+- code: void OnCollisionExit(IGameObject other)
+- h4: Parameters
+- parameters:
+  - name: other
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The other
+languageId: csharp
+metadata:
+  description: The on collision exit interface

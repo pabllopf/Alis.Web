@@ -1,0 +1,328 @@
+### YamlMime:ApiPage
+title: Class BreakableBody
+body:
+- api1: Class BreakableBody
+  id: Alis_Core_Physic_Common_Logic_BreakableBody
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody
+    commentId: T:Alis.Core.Physic.Common.Logic.BreakableBody
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Logic
+      url: Alis.Core.Physic.Common.Logic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: A type of body that supports multiple fixtures that can break apart.
+- code: public class BreakableBody
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: BreakableBody
+    url: Alis.Core.Physic.Common.Logic.BreakableBody.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: BreakableBody(WorldPhysic)
+  id: Alis_Core_Physic_Common_Logic_BreakableBody__ctor_Alis_Core_Physic_Dynamics_WorldPhysic_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L70
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic)
+    commentId: M:Alis.Core.Physic.Common.Logic.BreakableBody.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Logic.BreakableBody" data-throw-if-not-resolved="false"></xref> class
+- code: private BreakableBody(WorldPhysic worldPhysic)
+- h4: Parameters
+- parameters:
+  - name: worldPhysic
+    type:
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
+    description: The world
+- api3: BreakableBody(WorldPhysic, IEnumerable<Vertices>, float, Vector2F, float)
+  id: Alis_Core_Physic_Common_Logic_BreakableBody__ctor_Alis_Core_Physic_Dynamics_WorldPhysic_System_Collections_Generic_IEnumerable_Alis_Core_Physic_Common_Vertices__System_Single_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L86
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic,System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Vertices},System.Single,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Physic.Common.Logic.BreakableBody.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic,System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Vertices},System.Single,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Logic.BreakableBody" data-throw-if-not-resolved="false"></xref> class
+- code: public BreakableBody(WorldPhysic worldPhysic, IEnumerable<Vertices> vertices, float density, Vector2F position = default, float rotation = 0)
+- h4: Parameters
+- parameters:
+  - name: worldPhysic
+    type:
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
+    description: The world
+  - name: vertices
+    type:
+    - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    - '>'
+    description: The vertices
+  - name: density
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The density
+  - name: position
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The position
+    optional: true
+  - name: rotation
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The rotation
+    optional: true
+- api3: BreakableBody(WorldPhysic, IEnumerable<Shape>, Vector2F, float)
+  id: Alis_Core_Physic_Common_Logic_BreakableBody__ctor_Alis_Core_Physic_Dynamics_WorldPhysic_System_Collections_Generic_IEnumerable_Alis_Core_Physic_Collisions_Shapes_Shape__Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L105
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic,System.Collections.Generic.IEnumerable{Alis.Core.Physic.Collisions.Shapes.Shape},Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Physic.Common.Logic.BreakableBody.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic,System.Collections.Generic.IEnumerable{Alis.Core.Physic.Collisions.Shapes.Shape},Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Logic.BreakableBody" data-throw-if-not-resolved="false"></xref> class
+- code: public BreakableBody(WorldPhysic worldPhysic, IEnumerable<Shape> shapes, Vector2F position = default, float rotation = 0)
+- h4: Parameters
+- parameters:
+  - name: worldPhysic
+    type:
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
+    description: The world
+  - name: shapes
+    type:
+    - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - text: Shape
+      url: Alis.Core.Physic.Collisions.Shapes.Shape.html
+    - '>'
+    description: The shapes
+  - name: position
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The position
+    optional: true
+  - name: rotation
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The rotation
+    optional: true
+- api3: BreakableBody(WorldPhysic, Vertices, float, Vector2F, float)
+  id: Alis_Core_Physic_Common_Logic_BreakableBody__ctor_Alis_Core_Physic_Dynamics_WorldPhysic_Alis_Core_Physic_Common_Vertices_System_Single_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L124
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic,Alis.Core.Physic.Common.Vertices,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+    commentId: M:Alis.Core.Physic.Common.Logic.BreakableBody.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic,Alis.Core.Physic.Common.Vertices,System.Single,Alis.Core.Aspect.Math.Vector.Vector2F,System.Single)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Logic.BreakableBody" data-throw-if-not-resolved="false"></xref> class
+- code: public BreakableBody(WorldPhysic worldPhysic, Vertices vertices, float density, Vector2F position = default, float rotation = 0)
+- h4: Parameters
+- parameters:
+  - name: worldPhysic
+    type:
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
+    description: The world
+  - name: vertices
+    type:
+    - text: Vertices
+      url: Alis.Core.Physic.Common.Vertices.html
+    description: The vertices
+  - name: density
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The density
+  - name: position
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The position
+    optional: true
+  - name: rotation
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The rotation
+    optional: true
+- h2: Fields
+- api3: Parts
+  id: Alis_Core_Physic_Common_Logic_BreakableBody_Parts
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.Parts
+    commentId: F:Alis.Core.Physic.Common.Logic.BreakableBody.Parts
+- markdown: The fixture
+- code: public readonly List<Fixture> Parts
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    - '>'
+- api3: Strength
+  id: Alis_Core_Physic_Common_Logic_BreakableBody_Strength
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L54
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.Strength
+    commentId: F:Alis.Core.Physic.Common.Logic.BreakableBody.Strength
+- markdown: >-
+    The force needed to break the body apart.
+
+    Default: 500
+- code: public readonly float Strength
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: _angularVelocitiesCache
+  id: Alis_Core_Physic_Common_Logic_BreakableBody__angularVelocitiesCache
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L59
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody._angularVelocitiesCache
+    commentId: F:Alis.Core.Physic.Common.Logic.BreakableBody._angularVelocitiesCache
+- markdown: The angular velocities cache
+- code: private float[] _angularVelocitiesCache
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    - '['
+    - ']'
+- api3: _velocitiesCache
+  id: Alis_Core_Physic_Common_Logic_BreakableBody__velocitiesCache
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L64
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody._velocitiesCache
+    commentId: F:Alis.Core.Physic.Common.Logic.BreakableBody._velocitiesCache
+- markdown: The vector
+- code: private Vector2F[] _velocitiesCache
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    - '['
+    - ']'
+- h2: Properties
+- api3: MainBody
+  id: Alis_Core_Physic_Common_Logic_BreakableBody_MainBody
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L147
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.MainBody
+    commentId: P:Alis.Core.Physic.Common.Logic.BreakableBody.MainBody
+- markdown: Gets the value of the main body
+- code: public Body MainBody { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Body
+      url: Alis.Core.Physic.Dynamics.Body.html
+- api3: State
+  id: Alis_Core_Physic_Common_Logic_BreakableBody_State
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L152
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.State
+    commentId: P:Alis.Core.Physic.Common.Logic.BreakableBody.State
+- markdown: Gets or sets the value of the state
+- code: public BreakableBodyState State { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: BreakableBodyState
+      url: Alis.Core.Physic.Common.Logic.BreakableBodyState.html
+- api3: WorldPhysic
+  id: Alis_Core_Physic_Common_Logic_BreakableBody_WorldPhysic
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L142
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.WorldPhysic
+    commentId: P:Alis.Core.Physic.Common.Logic.BreakableBody.WorldPhysic
+- markdown: Gets the value of the world
+- code: public WorldPhysic WorldPhysic { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
+- h2: Methods
+- api3: CacheVelocities()
+  id: Alis_Core_Physic_Common_Logic_BreakableBody_CacheVelocities
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L202
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.CacheVelocities
+    commentId: M:Alis.Core.Physic.Common.Logic.BreakableBody.CacheVelocities
+- markdown: Caches the velocities
+- code: private void CacheVelocities()
+- api3: Decompose()
+  id: Alis_Core_Physic_Common_Logic_BreakableBody_Decompose
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L223
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.Decompose
+    commentId: M:Alis.Core.Physic.Common.Logic.BreakableBody.Decompose
+- markdown: Decomposes this instance
+- code: private void Decompose()
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: BreakableBody is allready broken
+- api3: PostSolve(Contact, ContactVelocityConstraint)
+  id: Alis_Core_Physic_Common_Logic_BreakableBody_PostSolve_Alis_Core_Physic_Dynamics_Contacts_Contact_Alis_Core_Physic_Dynamics_Contacts_ContactVelocityConstraint_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L159
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.PostSolve(Alis.Core.Physic.Dynamics.Contacts.Contact,Alis.Core.Physic.Dynamics.Contacts.ContactVelocityConstraint)
+    commentId: M:Alis.Core.Physic.Common.Logic.BreakableBody.PostSolve(Alis.Core.Physic.Dynamics.Contacts.Contact,Alis.Core.Physic.Dynamics.Contacts.ContactVelocityConstraint)
+- markdown: Posts the solve using the specified contact
+- code: private void PostSolve(Contact contact, ContactVelocityConstraint impulse)
+- h4: Parameters
+- parameters:
+  - name: contact
+    type:
+    - text: Contact
+      url: Alis.Core.Physic.Dynamics.Contacts.Contact.html
+    description: The contact
+  - name: impulse
+    type:
+    - text: ContactVelocityConstraint
+      url: Alis.Core.Physic.Dynamics.Contacts.ContactVelocityConstraint.html
+    description: The impulse
+- api3: Update()
+  id: Alis_Core_Physic_Common_Logic_BreakableBody_Update
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/BreakableBody.cs#L185
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.BreakableBody.Update
+    commentId: M:Alis.Core.Physic.Common.Logic.BreakableBody.Update
+- markdown: Updates this instance
+- code: public void Update()
+languageId: csharp
+metadata:
+  description: A type of body that supports multiple fixtures that can break apart.

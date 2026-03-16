@@ -1,0 +1,62 @@
+### YamlMime:ApiPage
+title: Struct ToiOutput
+body:
+- api1: Struct ToiOutput
+  id: Alis_Core_Physic_Collisions_ToiOutput
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/TOIOutput.cs#L35
+  metadata:
+    uid: Alis.Core.Physic.Collisions.ToiOutput
+    commentId: T:Alis.Core.Physic.Collisions.ToiOutput
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Collisions
+      url: Alis.Core.Physic.Collisions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The toi output
+- code: public struct ToiOutput
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: State
+  id: Alis_Core_Physic_Collisions_ToiOutput_State
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/TOIOutput.cs#L40
+  metadata:
+    uid: Alis.Core.Physic.Collisions.ToiOutput.State
+    commentId: F:Alis.Core.Physic.Collisions.ToiOutput.State
+- markdown: The state
+- code: public ToiOutputState State
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ToiOutputState
+      url: Alis.Core.Physic.Collisions.ToiOutputState.html
+- api3: T
+  id: Alis_Core_Physic_Collisions_ToiOutput_T
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Collisions/TOIOutput.cs#L45
+  metadata:
+    uid: Alis.Core.Physic.Collisions.ToiOutput.T
+    commentId: F:Alis.Core.Physic.Collisions.ToiOutput.T
+- markdown: The
+- code: public float T
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+languageId: csharp
+metadata:
+  description: The toi output

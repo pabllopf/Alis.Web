@@ -1,0 +1,61 @@
+### YamlMime:ApiPage
+title: Struct Not<T>
+body:
+- api1: Struct Not<T>
+  id: Alis_Core_Ecs_Systems_Not_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Not.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Not`1
+    commentId: T:Alis.Core.Ecs.Systems.Not`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Specifies a query should not have a component of <see paramref="T"></see>
+- code: 'public struct Not<T> : IRuleProvider'
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Implements
+- list:
+  - text: IRuleProvider
+    url: Alis.Core.Ecs.Systems.IRuleProvider.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: Empty struct, 1 byte (C# minimum)
+
+    Pack = 1 for minimal memory footprint
+- h2: Properties
+- api3: Rule
+  id: Alis_Core_Ecs_Systems_Not_1_Rule
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Not.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Not`1.Rule
+    commentId: P:Alis.Core.Ecs.Systems.Not`1.Rule
+- markdown: The rule.
+- code: public Rule Rule { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Rule
+      url: Alis.Core.Ecs.Systems.Rule.html
+languageId: csharp
+metadata:
+  description: 'Specifies a query should not have a component of '

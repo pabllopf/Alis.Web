@@ -1,0 +1,118 @@
+### YamlMime:ApiPage
+title: Enum TextureParameterName
+body:
+- api1: Enum TextureParameterName
+  id: Alis_Core_Graphic_OpenGL_Enums_TextureParameterName
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/TextureParameterName.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.TextureParameterName
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.TextureParameterName
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The texture parameter name enum
+- code: public enum TextureParameterName
+- h2: Fields
+- parameters:
+  - name: TextureBaseLevel
+    default: "33084"
+    description: >+
+      The texture base level texture parameter name
+
+  - name: TextureBorderColor
+    default: "4100"
+    description: >+
+      The texture border color texture parameter name
+
+  - name: TextureCompareMode
+    default: "34892"
+    description: >+
+      The texture compare mode texture parameter name
+
+  - name: TextureCompareFunc
+    default: "34893"
+    description: >+
+      The texture compare func texture parameter name
+
+  - name: TextureLodBias
+    default: "34049"
+    description: >+
+      The texture lod bias texture parameter name
+
+  - name: TextureMagFilter
+    default: "10240"
+    description: >+
+      The texture mag filter texture parameter name
+
+  - name: TextureMaxLevel
+    default: "33085"
+    description: >+
+      The texture max level texture parameter name
+
+  - name: TextureMaxLod
+    default: "33083"
+    description: >+
+      The texture max lod texture parameter name
+
+  - name: TextureMinFilter
+    default: "10241"
+    description: >+
+      The texture min filter texture parameter name
+
+  - name: TextureMinLod
+    default: "33082"
+    description: >+
+      The texture min lod texture parameter name
+
+  - name: TextureSwizzleR
+    default: "36418"
+    description: >+
+      The texture swizzle texture parameter name
+
+  - name: TextureSwizzleG
+    default: "36419"
+    description: >+
+      The texture swizzle texture parameter name
+
+  - name: TextureSwizzleB
+    default: "36420"
+    description: >+
+      The texture swizzle texture parameter name
+
+  - name: TextureSwizzleA
+    default: "36421"
+    description: >+
+      The texture swizzle texture parameter name
+
+  - name: TextureSwizzleRgba
+    default: "36422"
+    description: >+
+      The texture swizzle rgba texture parameter name
+
+  - name: TextureWrapS
+    default: "10242"
+    description: >+
+      The texture wrap texture parameter name
+
+  - name: TextureWrapT
+    default: "10243"
+    description: >+
+      The texture wrap texture parameter name
+
+  - name: TextureWrapR
+    default: "32882"
+    description: >+
+      The texture wrap texture parameter name
+
+  - name: MaxAnisotropyExt
+    default: "34046"
+    description: >+
+      The max anisotropy ext texture parameter name
+
+languageId: csharp
+metadata:
+  description: The texture parameter name enum

@@ -1,0 +1,43 @@
+### YamlMime:ApiPage
+title: Delegate Gl.UniformMatrix2x3FvDel
+body:
+- api1: Delegate Gl.UniformMatrix2x3FvDel
+  id: Alis_Core_Graphic_OpenGL_Gl_UniformMatrix2x3FvDel
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L92
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.UniformMatrix2x3FvDel
+    commentId: T:Alis.Core.Graphic.OpenGL.Gl.UniformMatrix2x3FvDel
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The uniform matrix 2x fv del
+- code: public delegate void Gl.UniformMatrix2x3FvDel(int location, int count, bool transpose, Span<float> value)
+- h4: Parameters
+- parameters:
+  - name: location
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: transpose
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: value
+    type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    - '>'
+languageId: csharp
+metadata:
+  description: The uniform matrix 2x fv del

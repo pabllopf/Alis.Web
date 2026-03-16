@@ -1,0 +1,43 @@
+### YamlMime:ApiPage
+title: Class QueryDelegates
+body:
+- api1: Class QueryDelegates
+  id: Alis_Core_Ecs_Systems_QueryDelegates
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryDelegates.cs#L35
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryDelegates
+    commentId: T:Alis.Core.Ecs.Systems.QueryDelegates
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Delegates for executing a functions on a <xref href="Alis.Core.Ecs.Systems.Query" data-throw-if-not-resolved="false"></xref>
+- code: public static class QueryDelegates
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: QueryDelegates
+    url: Alis.Core.Ecs.Systems.QueryDelegates.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+languageId: csharp
+metadata:
+  description: 'Delegates for executing a functions on a '

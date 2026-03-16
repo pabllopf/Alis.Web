@@ -3,7 +3,7 @@ title: Class Helper
 body:
 - api1: Class Helper
   id: Alis_Core_Aspect_Math_Util_Helper
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L33
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L35
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper
     commentId: T:Alis.Core.Aspect.Math.Util.Helper
@@ -41,7 +41,7 @@ body:
 - h2: Methods
 - api3: Barycentric(float, float, float, float, float)
   id: Alis_Core_Aspect_Math_Util_Helper_Barycentric_System_Single_System_Single_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L51
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L53
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.Barycentric(System.Single,System.Single,System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.Barycentric(System.Single,System.Single,System.Single,System.Single,System.Single)
@@ -91,7 +91,7 @@ body:
     description: Cartesian coordinate of the specified point with respect to the axis being used.
 - api3: CatmullRom(float, float, float, float, float)
   id: Alis_Core_Aspect_Math_Util_Helper_CatmullRom_System_Single_System_Single_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L61
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L63
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.CatmullRom(System.Single,System.Single,System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.CatmullRom(System.Single,System.Single,System.Single,System.Single,System.Single)
@@ -132,7 +132,7 @@ body:
     description: A position that is the result of the Catmull-Rom interpolation.
 - api3: Clamp(float, float, float)
   id: Alis_Core_Aspect_Math_Util_Helper_Clamp_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L78
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L80
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.Clamp(System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.Clamp(System.Single,System.Single,System.Single)
@@ -163,7 +163,7 @@ body:
     description: The clamped value.
 - api3: Distance(float, float)
   id: Alis_Core_Aspect_Math_Util_Helper_Distance_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L94
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L96
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.Distance(System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.Distance(System.Single,System.Single)
@@ -189,7 +189,7 @@ body:
     description: Distance between the two values.
 - api3: Hermite(float, float, float, float, float)
   id: Alis_Core_Aspect_Math_Util_Helper_Hermite_System_Single_System_Single_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L103
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L105
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.Hermite(System.Single,System.Single,System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.Hermite(System.Single,System.Single,System.Single,System.Single,System.Single)
@@ -230,7 +230,7 @@ body:
     description: The result of the Hermite spline interpolation.
 - api3: IsPowerOfTwo(int)
   id: Alis_Core_Aspect_Math_Util_Helper_IsPowerOfTwo_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L198
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L201
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.IsPowerOfTwo(System.Int32)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.IsPowerOfTwo(System.Int32)
@@ -251,7 +251,7 @@ body:
     description: <code>true</code> if <code>value</code> is powered by two; otherwise <code>false</code>.
 - api3: Lerp(float, float, float)
   id: Alis_Core_Aspect_Math_Util_Helper_Lerp_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L129
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L131
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.Lerp(System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.Lerp(System.Single,System.Single,System.Single)
@@ -282,7 +282,7 @@ body:
     description: The float
 - api3: Max(float, float)
   id: Alis_Core_Aspect_Math_Util_Helper_Max_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L135
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L137
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.Max(System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.Max(System.Single,System.Single)
@@ -308,7 +308,7 @@ body:
     description: The greater value.
 - api3: Min(float, float)
   id: Alis_Core_Aspect_Math_Util_Helper_Min_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L141
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L143
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.Min(System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.Min(System.Single,System.Single)
@@ -334,7 +334,7 @@ body:
     description: The lesser value.
 - api3: SmoothStep(float, float, float)
   id: Alis_Core_Aspect_Math_Util_Helper_SmoothStep_System_Single_System_Single_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L148
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L150
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.SmoothStep(System.Single,System.Single,System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.SmoothStep(System.Single,System.Single,System.Single)
@@ -365,7 +365,7 @@ body:
     description: Interpolated value.
 - api3: ToDegrees(float)
   id: Alis_Core_Aspect_Math_Util_Helper_ToDegrees_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L163
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L165
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.ToDegrees(System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.ToDegrees(System.Single)
@@ -388,7 +388,7 @@ body:
 - markdown: This method uses double precission internally, though it returns single float Factor = 180 / pi
 - api3: ToRadians(float)
   id: Alis_Core_Aspect_Math_Util_Helper_ToRadians_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L169
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L171
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.ToRadians(System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.ToRadians(System.Single)
@@ -411,12 +411,15 @@ body:
 - markdown: This method uses double precission internally, though it returns single float Factor = pi / 180
 - api3: WrapAngle(float)
   id: Alis_Core_Aspect_Math_Util_Helper_WrapAngle_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L174
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Math/src/Util/Helper.cs#L176
   metadata:
     uid: Alis.Core.Aspect.Math.Util.Helper.WrapAngle(System.Single)
     commentId: M:Alis.Core.Aspect.Math.Util.Helper.WrapAngle(System.Single)
 - markdown: Reduces a given angle to a value between π and -π.
-- code: public static float WrapAngle(float angle)
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static float WrapAngle(float angle)
 - h4: Parameters
 - parameters:
   - name: angle

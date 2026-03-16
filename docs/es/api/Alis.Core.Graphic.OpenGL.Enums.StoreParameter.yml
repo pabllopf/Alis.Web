@@ -1,0 +1,193 @@
+### YamlMime:ApiPage
+title: Enum StoreParameter
+body:
+- api1: Enum StoreParameter
+  id: Alis_Core_Graphic_OpenGL_Enums_StoreParameter
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/StoreParameter.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.StoreParameter
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.StoreParameter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The pixel store parameter enum
+- code: public enum StoreParameter
+- h2: Fields
+- parameters:
+  - name: UnpackSwapBytes
+    default: "3312"
+    description: >+
+      The unpack swap bytes pixel store parameter
+
+  - name: UnpackLsbFirst
+    default: "3313"
+    description: >+
+      The unpack lsb first pixel store parameter
+
+  - name: UnpackRowLength
+    default: "3314"
+    description: >+
+      The unpack row length pixel store parameter
+
+  - name: UnpackSkipRows
+    default: "3315"
+    description: >+
+      The unpack skip rows pixel store parameter
+
+  - name: UnpackSkipPixels
+    default: "3316"
+    description: >+
+      The unpack skip pixels pixel store parameter
+
+  - name: UnpackAlignment
+    default: "3317"
+    description: >+
+      The unpack alignment pixel store parameter
+
+  - name: PackSwapBytes
+    default: "3328"
+    description: >+
+      The pack swap bytes pixel store parameter
+
+  - name: PackLsbFirst
+    default: "3329"
+    description: >+
+      The pack lsb first pixel store parameter
+
+  - name: PackRowLength
+    default: "3330"
+    description: >+
+      The pack row length pixel store parameter
+
+  - name: PackSkipRows
+    default: "3331"
+    description: >+
+      The pack skip rows pixel store parameter
+
+  - name: PackSkipPixels
+    default: "3332"
+    description: >+
+      The pack skip pixels pixel store parameter
+
+  - name: PackAlignment
+    default: "3333"
+    description: >+
+      The pack alignment pixel store parameter
+
+  - name: PackSkipImages
+    default: "32875"
+    description: >+
+      The pack skip images pixel store parameter
+
+  - name: PackSkipImagesExt
+    default: "32875"
+    description: >+
+      The pack skip images ext pixel store parameter
+
+  - name: PackImageHeight
+    default: "32876"
+    description: >+
+      The pack image height pixel store parameter
+
+  - name: PackImageHeightExt
+    default: "32876"
+    description: >+
+      The pack image height ext pixel store parameter
+
+  - name: UnpackSkipImages
+    default: "32877"
+    description: >+
+      The unpack skip images pixel store parameter
+
+  - name: UnpackSkipImagesExt
+    default: "32877"
+    description: >+
+      The unpack skip images ext pixel store parameter
+
+  - name: UnpackImageHeight
+    default: "32878"
+    description: >+
+      The unpack image height pixel store parameter
+
+  - name: UnpackImageHeightExt
+    default: "32878"
+    description: >+
+      The unpack image height ext pixel store parameter
+
+  - name: PackSkipVolumesSgis
+    default: "33072"
+    description: >+
+      The pack skip volumes sgis pixel store parameter
+
+  - name: PackImageDepthSgis
+    default: "33073"
+    description: >+
+      The pack image depth sgis pixel store parameter
+
+  - name: UnpackSkipVolumesSgis
+    default: "33074"
+    description: >+
+      The unpack skip volumes sgis pixel store parameter
+
+  - name: UnpackImageDepthSgis
+    default: "33075"
+    description: >+
+      The unpack image depth sgis pixel store parameter
+
+  - name: TileWidthSgix
+    default: "33088"
+    description: >+
+      The pixel tile width sgix pixel store parameter
+
+  - name: TileHeightSgix
+    default: "33089"
+    description: >+
+      The pixel tile height sgix pixel store parameter
+
+  - name: TileGridWidthSgix
+    default: "33090"
+    description: >+
+      The pixel tile grid width sgix pixel store parameter
+
+  - name: TileGridHeightSgix
+    default: "33091"
+    description: >+
+      The pixel tile grid height sgix pixel store parameter
+
+  - name: TileGridDepthSgix
+    default: "33092"
+    description: >+
+      The pixel tile grid depth sgix pixel store parameter
+
+  - name: TileCacheSizeSgix
+    default: "33093"
+    description: >+
+      The pixel tile cache size sgix pixel store parameter
+
+  - name: PackResampleSgix
+    default: "33836"
+    description: >+
+      The pack resample sgix pixel store parameter
+
+  - name: UnpackResampleSgix
+    default: "33837"
+    description: >+
+      The unpack resample sgix pixel store parameter
+
+  - name: PackSubsampleRateSgix
+    default: "34208"
+    description: >+
+      The pack subsample rate sgix pixel store parameter
+
+  - name: UnpackSubsampleRateSgix
+    default: "34209"
+    description: >+
+      The unpack subsample rate sgix pixel store parameter
+
+languageId: csharp
+metadata:
+  description: The pixel store parameter enum

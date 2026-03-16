@@ -1,0 +1,354 @@
+### YamlMime:ApiPage
+title: Class OpenAl
+body:
+- api1: Class OpenAl
+  id: Alis_Core_Audio_Players_OpenAl
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Players/OpenAL.cs#L39
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl
+    commentId: T:Alis.Core.Audio.Players.OpenAl
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Audio.Players
+      url: Alis.Core.Audio.Players.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The open al class
+- code: internal static class OpenAl
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: OpenAl
+    url: Alis.Core.Audio.Players.OpenAl.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Methods
+- api3: alBufferData(uint, int, nint, int, int)
+  id: Alis_Core_Audio_Players_OpenAl_alBufferData_System_UInt32_System_Int32_System_IntPtr_System_Int32_System_Int32_
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alBufferData(System.UInt32,System.Int32,System.IntPtr,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alBufferData(System.UInt32,System.Int32,System.IntPtr,System.Int32,System.Int32)
+- markdown: Als the buffer data using the specified buffer
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void alBufferData(uint buffer, int format, nint data, int size, int freq)
+- h4: Parameters
+- parameters:
+  - name: buffer
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The buffer
+  - name: format
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The format
+  - name: data
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The data
+  - name: size
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The size
+  - name: freq
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The freq
+- api3: alDeleteBuffers(int, ref uint)
+  id: Alis_Core_Audio_Players_OpenAl_alDeleteBuffers_System_Int32_System_UInt32__
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alDeleteBuffers(System.Int32,System.UInt32@)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alDeleteBuffers(System.Int32,System.UInt32@)
+- markdown: Als the delete buffers using the specified n
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void alDeleteBuffers(int n, ref uint buffers)
+- h4: Parameters
+- parameters:
+  - name: n
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: buffers
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The buffers
+- api3: alDeleteSources(int, ref uint)
+  id: Alis_Core_Audio_Players_OpenAl_alDeleteSources_System_Int32_System_UInt32__
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alDeleteSources(System.Int32,System.UInt32@)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alDeleteSources(System.Int32,System.UInt32@)
+- markdown: Als the delete sources using the specified n
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void alDeleteSources(int n, ref uint sources)
+- h4: Parameters
+- parameters:
+  - name: n
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: sources
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The sources
+- api3: alGenBuffers(int, out uint)
+  id: Alis_Core_Audio_Players_OpenAl_alGenBuffers_System_Int32_System_UInt32__
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alGenBuffers(System.Int32,System.UInt32@)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alGenBuffers(System.Int32,System.UInt32@)
+- markdown: Als the gen buffers using the specified n
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void alGenBuffers(int n, out uint buffers)
+- h4: Parameters
+- parameters:
+  - name: n
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: buffers
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The buffers
+- api3: alGenSources(int, out uint)
+  id: Alis_Core_Audio_Players_OpenAl_alGenSources_System_Int32_System_UInt32__
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alGenSources(System.Int32,System.UInt32@)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alGenSources(System.Int32,System.UInt32@)
+- markdown: Als the gen sources using the specified n
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void alGenSources(int n, out uint sources)
+- h4: Parameters
+- parameters:
+  - name: n
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: sources
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The sources
+- api3: alSourcePlay(uint)
+  id: Alis_Core_Audio_Players_OpenAl_alSourcePlay_System_UInt32_
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alSourcePlay(System.UInt32)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alSourcePlay(System.UInt32)
+- markdown: Als the source play using the specified source
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void alSourcePlay(uint source)
+- h4: Parameters
+- parameters:
+  - name: source
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The source
+- api3: alSourceQueueBuffers(uint, int, ref uint)
+  id: Alis_Core_Audio_Players_OpenAl_alSourceQueueBuffers_System_UInt32_System_Int32_System_UInt32__
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alSourceQueueBuffers(System.UInt32,System.Int32,System.UInt32@)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alSourceQueueBuffers(System.UInt32,System.Int32,System.UInt32@)
+- markdown: Als the source queue buffers using the specified source
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void alSourceQueueBuffers(uint source, int nb, ref uint buffers)
+- h4: Parameters
+- parameters:
+  - name: source
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The source
+  - name: nb
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The nb
+  - name: buffers
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The buffers
+- api3: alSourceStop(uint)
+  id: Alis_Core_Audio_Players_OpenAl_alSourceStop_System_UInt32_
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alSourceStop(System.UInt32)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alSourceStop(System.UInt32)
+- markdown: Als the source stop using the specified source
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void alSourceStop(uint source)
+- h4: Parameters
+- parameters:
+  - name: source
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The source
+- api3: alSourcei(uint, int, int)
+  id: Alis_Core_Audio_Players_OpenAl_alSourcei_System_UInt32_System_Int32_System_Int32_
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alSourcei(System.UInt32,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alSourcei(System.UInt32,System.Int32,System.Int32)
+- markdown: Als the sourcei using the specified source
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern void alSourcei(uint source, int param, int value)
+- h4: Parameters
+- parameters:
+  - name: source
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The source
+  - name: param
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The param
+  - name: value
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The value
+- api3: alcCloseDevice(nint)
+  id: Alis_Core_Audio_Players_OpenAl_alcCloseDevice_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alcCloseDevice(System.IntPtr)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alcCloseDevice(System.IntPtr)
+- markdown: Alcs the close device using the specified device
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern bool alcCloseDevice(nint device)
+- h4: Parameters
+- parameters:
+  - name: device
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The device
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: alcCreateContext(nint, nint)
+  id: Alis_Core_Audio_Players_OpenAl_alcCreateContext_System_IntPtr_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alcCreateContext(System.IntPtr,System.IntPtr)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alcCreateContext(System.IntPtr,System.IntPtr)
+- markdown: Alcs the create context using the specified device
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint alcCreateContext(nint device, nint attrlist)
+- h4: Parameters
+- parameters:
+  - name: device
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The device
+  - name: attrlist
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The attrlist
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+- api3: alcMakeContextCurrent(nint)
+  id: Alis_Core_Audio_Players_OpenAl_alcMakeContextCurrent_System_IntPtr_
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alcMakeContextCurrent(System.IntPtr)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alcMakeContextCurrent(System.IntPtr)
+- markdown: Alcs the make context current using the specified context
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern bool alcMakeContextCurrent(nint context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The context
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: alcOpenDevice(string)
+  id: Alis_Core_Audio_Players_OpenAl_alcOpenDevice_System_String_
+  metadata:
+    uid: Alis.Core.Audio.Players.OpenAl.alcOpenDevice(System.String)
+    commentId: M:Alis.Core.Audio.Players.OpenAl.alcOpenDevice(System.String)
+- markdown: Alcs the open device using the specified devicename
+- code: >-
+    [ExcludeFromCodeCoverage]
+
+    public static extern nint alcOpenDevice(string devicename)
+- h4: Parameters
+- parameters:
+  - name: devicename
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The devicename
+- h4: Returns
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The int ptr
+languageId: csharp
+metadata:
+  description: The open al class

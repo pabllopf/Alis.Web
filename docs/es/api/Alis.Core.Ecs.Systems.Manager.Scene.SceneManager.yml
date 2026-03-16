@@ -1,0 +1,367 @@
+### YamlMime:ApiPage
+title: Class SceneManager
+body:
+- api1: Class SceneManager
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L44
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager
+    commentId: T:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems.Manager.Scene
+      url: Alis.Core.Ecs.Systems.Manager.Scene.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The scene manager base class
+- code: 'public class SceneManager : AManager, IManager, IRuntime'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: AManager
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html
+  - text: SceneManager
+    url: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.html
+- h4: Implements
+- list:
+  - text: IManager
+    url: Alis.Core.Ecs.Systems.Manager.IManager.html
+  - text: IRuntime
+    url: Alis.Core.Ecs.Systems.Execution.IRuntime.html
+- h4: Inherited Members
+- list:
+  - text: AManager._context
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager__context
+  - text: AManager.Context
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Context
+  - text: AManager.IsEnable
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_IsEnable
+  - text: AManager.Name
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Name
+  - text: AManager.Id
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Id
+  - text: AManager.Tag
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_Tag
+  - text: AManager.OnEnable()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnEnable
+  - text: AManager.OnInit()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnInit
+  - text: AManager.OnAwake()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAwake
+  - text: AManager.OnStart()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnStart
+  - text: AManager.OnBeforeUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeUpdate
+  - text: AManager.OnUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnUpdate
+  - text: AManager.OnAfterUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterUpdate
+  - text: AManager.OnProcessPendingChanges()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnProcessPendingChanges
+  - text: AManager.OnBeforeFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeFixedUpdate
+  - text: AManager.OnFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnFixedUpdate
+  - text: AManager.OnAfterFixedUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterFixedUpdate
+  - text: AManager.OnDispatchEvents()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDispatchEvents
+  - text: AManager.OnCalculate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnCalculate
+  - text: AManager.OnBeforeDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnBeforeDraw
+  - text: AManager.OnDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDraw
+  - text: AManager.OnAfterDraw()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnAfterDraw
+  - text: AManager.OnGui()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnGui
+  - text: AManager.OnRenderPresent()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnRenderPresent
+  - text: AManager.OnDisable()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDisable
+  - text: AManager.OnReset()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnReset
+  - text: AManager.OnStop()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnStop
+  - text: AManager.OnExit()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnExit
+  - text: AManager.OnDestroy()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnDestroy
+  - text: AManager.OnSave()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnSave
+  - text: AManager.OnLoad()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnLoad
+  - text: AManager.OnSave(string)
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnSave_System_String_
+  - text: AManager.OnLoad(string)
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnLoad_System_String_
+  - text: AManager.OnPhysicUpdate()
+    url: Alis.Core.Ecs.Systems.Manager.AManager.html#Alis_Core_Ecs_Systems_Manager_AManager_OnPhysicUpdate
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: SceneManager(Context)
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager__ctor_Alis_Core_Ecs_Systems_Scope_Context_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Manager.Scene.SceneManager" data-throw-if-not-resolved="false"></xref> class
+- code: public SceneManager(Context context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    description: The context
+- api3: SceneManager(Context, params Scene[])
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager__ctor_Alis_Core_Ecs_Systems_Scope_Context_Alis_Core_Ecs_Scene___
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L66
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.#ctor(Alis.Core.Ecs.Systems.Scope.Context,Alis.Core.Ecs.Scene[])
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.#ctor(Alis.Core.Ecs.Systems.Scope.Context,Alis.Core.Ecs.Scene[])
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.Manager.Scene.SceneManager" data-throw-if-not-resolved="false"></xref> class
+- code: public SceneManager(Context context, params Scene[] scenes)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    description: The context
+  - name: scenes
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    - '['
+    - ']'
+    description: The scenes
+- h2: Fields
+- api3: LoadedScenes
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_LoadedScenes
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L49
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.LoadedScenes
+    commentId: F:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.LoadedScenes
+- markdown: The loaded scenes
+- code: public List<Scene> LoadedScenes
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    - '>'
+- h2: Properties
+- api3: CurrentWorld
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_CurrentWorld
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L76
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.CurrentWorld
+    commentId: P:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.CurrentWorld
+- markdown: Gets or sets the value of the scene
+- code: public Scene CurrentWorld { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h2: Methods
+- api3: AddScene(Scene)
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_AddScene_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L438
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.AddScene(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.AddScene(Alis.Core.Ecs.Scene)
+- markdown: Adds the scene using the specified scene
+- code: public void AddScene(Scene scene)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+- api3: LoadScene(string)
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_LoadScene_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L403
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.LoadScene(System.String)
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.LoadScene(System.String)
+- markdown: Loads the scene using the specified game scene
+- code: public void LoadScene(string gameScene)
+- h4: Parameters
+- parameters:
+  - name: gameScene
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The game scene
+- api3: LoadScene(int)
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_LoadScene_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L411
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.LoadScene(System.Int32)
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.LoadScene(System.Int32)
+- markdown: Loads the scene using the specified id
+- code: public void LoadScene(int id)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The id
+- api3: OnAfterDraw()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnAfterDraw
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L360
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnAfterDraw
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnAfterDraw
+- markdown: Ons the after draw
+- code: public override void OnAfterDraw()
+- api3: OnAfterFixedUpdate()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnAfterFixedUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L280
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnAfterFixedUpdate
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnAfterFixedUpdate
+- markdown: Ons the after fixed update
+- code: public override void OnAfterFixedUpdate()
+- api3: OnAfterUpdate()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnAfterUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L220
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnAfterUpdate
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnAfterUpdate
+- markdown: Ons the after update
+- code: public override void OnAfterUpdate()
+- api3: OnAwake()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnAwake
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L107
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnAwake
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnAwake
+- markdown: Ons the awake
+- code: public override void OnAwake()
+- api3: OnBeforeDraw()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnBeforeDraw
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L320
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnBeforeDraw
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnBeforeDraw
+- markdown: Ons the before draw
+- code: public override void OnBeforeDraw()
+- api3: OnBeforeFixedUpdate()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnBeforeFixedUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L240
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnBeforeFixedUpdate
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnBeforeFixedUpdate
+- markdown: Ons the before fixed update
+- code: public override void OnBeforeFixedUpdate()
+- api3: OnBeforeUpdate()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnBeforeUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L192
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnBeforeUpdate
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnBeforeUpdate
+- markdown: Ons the before update
+- code: public override void OnBeforeUpdate()
+- api3: OnDraw()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnDraw
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L340
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnDraw
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnDraw
+- markdown: Ons the draw
+- code: public override void OnDraw()
+- api3: OnExit()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnExit
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L381
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnExit
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnExit
+- markdown: Ons the exit
+- code: public override void OnExit()
+- api3: OnFixedUpdate()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnFixedUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L260
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnFixedUpdate
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnFixedUpdate
+- markdown: Ons the fixed update
+- code: public override void OnFixedUpdate()
+- api3: OnInit()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnInit
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L81
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnInit
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnInit
+- markdown: Ons the init
+- code: public override void OnInit()
+- api3: OnPhysicUpdate()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnPhysicUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L147
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnPhysicUpdate
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnPhysicUpdate
+- markdown: Ons the physic update
+- code: public override void OnPhysicUpdate()
+- api3: OnProcessPendingChanges()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnProcessPendingChanges
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L300
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnProcessPendingChanges
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnProcessPendingChanges
+- markdown: Ons the process pending changes
+- code: public override void OnProcessPendingChanges()
+- api3: OnSave()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnSave
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L167
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnSave
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnSave
+- markdown: Ons the save
+- code: public override void OnSave()
+- api3: OnStart()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnStart
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L127
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnStart
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnStart
+- markdown: Ons the start
+- code: public override void OnStart()
+- api3: OnUpdate()
+  id: Alis_Core_Ecs_Systems_Manager_Scene_SceneManager_OnUpdate
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/Manager/Scene/SceneManager.cs#L212
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnUpdate
+    commentId: M:Alis.Core.Ecs.Systems.Manager.Scene.SceneManager.OnUpdate
+- markdown: Ons the update
+- code: public override void OnUpdate()
+- h2: See Also
+- list:
+  - - text: AManager
+      url: Alis.Core.Ecs.Systems.Manager.AManager.html
+languageId: csharp
+metadata:
+  description: The scene manager base class

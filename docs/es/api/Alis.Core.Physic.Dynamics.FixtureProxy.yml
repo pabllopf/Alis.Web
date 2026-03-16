@@ -3,7 +3,7 @@ title: Struct FixtureProxy
 body:
 - api1: Struct FixtureProxy
   id: Alis_Core_Physic_Dynamics_FixtureProxy
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureProxy.cs#L37
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureProxy.cs#L38
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureProxy
     commentId: T:Alis.Core.Physic.Dynamics.FixtureProxy
@@ -31,22 +31,22 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Fields
-- api3: AABB
-  id: Alis_Core_Physic_Dynamics_FixtureProxy_AABB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureProxy.cs#L42
+- api3: Aabb
+  id: Alis_Core_Physic_Dynamics_FixtureProxy_Aabb
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureProxy.cs#L44
   metadata:
-    uid: Alis.Core.Physic.Dynamics.FixtureProxy.AABB
-    commentId: F:Alis.Core.Physic.Dynamics.FixtureProxy.AABB
+    uid: Alis.Core.Physic.Dynamics.FixtureProxy.Aabb
+    commentId: F:Alis.Core.Physic.Dynamics.FixtureProxy.Aabb
 - markdown: The aabb
-- code: public AABB AABB
+- code: public Aabb Aabb
 - h4: Field Value
 - parameters:
   - type:
-    - text: AABB
-      url: Alis.Core.Physic.Collision.AABB.html
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
 - api3: ChildIndex
   id: Alis_Core_Physic_Dynamics_FixtureProxy_ChildIndex
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureProxy.cs#L47
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureProxy.cs#L49
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureProxy.ChildIndex
     commentId: F:Alis.Core.Physic.Dynamics.FixtureProxy.ChildIndex
@@ -59,7 +59,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int32
 - api3: Fixture
   id: Alis_Core_Physic_Dynamics_FixtureProxy_Fixture
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureProxy.cs#L52
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureProxy.cs#L54
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureProxy.Fixture
     commentId: F:Alis.Core.Physic.Dynamics.FixtureProxy.Fixture
@@ -72,7 +72,7 @@ body:
       url: Alis.Core.Physic.Dynamics.Fixture.html
 - api3: ProxyId
   id: Alis_Core_Physic_Dynamics_FixtureProxy_ProxyId
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureProxy.cs#L57
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/FixtureProxy.cs#L59
   metadata:
     uid: Alis.Core.Physic.Dynamics.FixtureProxy.ProxyId
     commentId: F:Alis.Core.Physic.Dynamics.FixtureProxy.ProxyId

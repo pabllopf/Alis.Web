@@ -1,0 +1,451 @@
+### YamlMime:ApiPage
+title: Class Font
+body:
+- api1: Class Font
+  id: Alis_Core_Graphic_Ui_Font
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L45
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font
+    commentId: T:Alis.Core.Graphic.Ui.Font
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.Ui
+      url: Alis.Core.Graphic.Ui.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The sprite
+- code: public class Font
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Font
+    url: Alis.Core.Graphic.Ui.Font.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Font(string, int, int, string)
+  id: Alis_Core_Graphic_Ui_Font__ctor_System_String_System_Int32_System_Int32_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L45
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.#ctor(System.String,System.Int32,System.Int32,System.String)
+    commentId: M:Alis.Core.Graphic.Ui.Font.#ctor(System.String,System.Int32,System.Int32,System.String)
+- markdown: The sprite
+- code: public Font(string NameFile, int Depth, int size, string fullPath)
+- h4: Parameters
+- parameters:
+  - name: NameFile
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+  - name: Depth
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: size
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: fullPath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Fields
+- api3: CharacterRects
+  id: Alis_Core_Graphic_Ui_Font_CharacterRects
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L57
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.CharacterRects
+    commentId: F:Alis.Core.Graphic.Ui.Font.CharacterRects
+- markdown: The character rects
+- code: private Dictionary<char, RectangleI> CharacterRects
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: char
+      url: https://learn.microsoft.com/dotnet/api/system.char
+    - ','
+    - " "
+    - text: RectangleI
+      url: Alis.Core.Aspect.Math.Shapes.Rectangle.RectangleI.html
+    - '>'
+- api3: fullPathFont
+  id: Alis_Core_Graphic_Ui_Font_fullPathFont
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L62
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.fullPathFont
+    commentId: F:Alis.Core.Graphic.Ui.Font.fullPathFont
+- markdown: The full path
+- code: private string fullPathFont
+- h4: Field Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: imageHandle
+  id: Alis_Core_Graphic_Ui_Font_imageHandle
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L67
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.imageHandle
+    commentId: F:Alis.Core.Graphic.Ui.Font.imageHandle
+- markdown: The image handle
+- code: private GCHandle imageHandle
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GCHandle
+      url: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.gchandle
+- api3: indicesHandle
+  id: Alis_Core_Graphic_Ui_Font_indicesHandle
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L72
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.indicesHandle
+    commentId: F:Alis.Core.Graphic.Ui.Font.indicesHandle
+- markdown: The indices handle
+- code: private GCHandle indicesHandle
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GCHandle
+      url: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.gchandle
+- api3: sizeFont
+  id: Alis_Core_Graphic_Ui_Font_sizeFont
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L50
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.sizeFont
+    commentId: F:Alis.Core.Graphic.Ui.Font.sizeFont
+- markdown: The size
+- code: private readonly int sizeFont
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: verticesHandle
+  id: Alis_Core_Graphic_Ui_Font_verticesHandle
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L77
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.verticesHandle
+    commentId: F:Alis.Core.Graphic.Ui.Font.verticesHandle
+- markdown: The vertices handle
+- code: private GCHandle verticesHandle
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GCHandle
+      url: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.gchandle
+- h2: Properties
+- api3: Depth
+  id: Alis_Core_Graphic_Ui_Font_Depth
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L83
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.Depth
+    commentId: P:Alis.Core.Graphic.Ui.Font.Depth
+- markdown: Gets or sets the value of the depth
+- code: public int Depth { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Ebo
+  id: Alis_Core_Graphic_Ui_Font_Ebo
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L121
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.Ebo
+    commentId: P:Alis.Core.Graphic.Ui.Font.Ebo
+- markdown: Gets or sets the value of the ebo
+- code: private uint Ebo { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: Flip
+  id: Alis_Core_Graphic_Ui_Font_Flip
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L132
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.Flip
+    commentId: P:Alis.Core.Graphic.Ui.Font.Flip
+- markdown: Gets or sets the value of the flip
+- code: private bool Flip { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: NameFile
+  id: Alis_Core_Graphic_Ui_Font_NameFile
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L95
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.NameFile
+    commentId: P:Alis.Core.Graphic.Ui.Font.NameFile
+- markdown: Gets or sets the value of the name file
+- code: public string NameFile { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Path
+  id: Alis_Core_Graphic_Ui_Font_Path
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L89
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.Path
+    commentId: P:Alis.Core.Graphic.Ui.Font.Path
+- markdown: Gets or sets the value of the path
+- code: private string Path { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: ShaderProgram
+  id: Alis_Core_Graphic_Ui_Font_ShaderProgram
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L106
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.ShaderProgram
+    commentId: P:Alis.Core.Graphic.Ui.Font.ShaderProgram
+- markdown: Gets or sets the value of the shader program
+- code: private uint ShaderProgram { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: Size
+  id: Alis_Core_Graphic_Ui_Font_Size
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L101
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.Size
+    commentId: P:Alis.Core.Graphic.Ui.Font.Size
+- markdown: Gets or sets the value of the size
+- code: private Vector2F Size { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: Texture
+  id: Alis_Core_Graphic_Ui_Font_Texture
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L126
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.Texture
+    commentId: P:Alis.Core.Graphic.Ui.Font.Texture
+- markdown: Gets or sets the value of the texture
+- code: private uint Texture { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: Vao
+  id: Alis_Core_Graphic_Ui_Font_Vao
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L111
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.Vao
+    commentId: P:Alis.Core.Graphic.Ui.Font.Vao
+- markdown: Gets or sets the value of the vao
+- code: private uint Vao { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- api3: Vbo
+  id: Alis_Core_Graphic_Ui_Font_Vbo
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L116
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.Vbo
+    commentId: P:Alis.Core.Graphic.Ui.Font.Vbo
+- markdown: Gets or sets the value of the vbo
+- code: private uint Vbo { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+- h2: Methods
+- api3: InitializeCharacterRects(int, int)
+  id: Alis_Core_Graphic_Ui_Font_InitializeCharacterRects_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L289
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.InitializeCharacterRects(System.Int32,System.Int32)
+    commentId: M:Alis.Core.Graphic.Ui.Font.InitializeCharacterRects(System.Int32,System.Int32)
+- markdown: Initializes the character rects using the specified char width
+- code: private void InitializeCharacterRects(int charWidth, int charHeight)
+- h4: Parameters
+- parameters:
+  - name: charWidth
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The char width
+  - name: charHeight
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The char height
+- api3: InitializeCharacterRectsCustom(int, int, int, int, int)
+  id: Alis_Core_Graphic_Ui_Font_InitializeCharacterRectsCustom_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L316
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.InitializeCharacterRectsCustom(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Graphic.Ui.Font.InitializeCharacterRectsCustom(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+- markdown: Initializes the character rects custom using the specified char width
+- code: private void InitializeCharacterRectsCustom(int charWidth, int charHeight, int charsPerRow, int xSpacing, int ySpacing)
+- h4: Parameters
+- parameters:
+  - name: charWidth
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The char width
+  - name: charHeight
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The char height
+  - name: charsPerRow
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The chars per row
+  - name: xSpacing
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The spacing
+  - name: ySpacing
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The spacing
+- api3: InitializeCharacterRectsFromAtlas(int, int, int, int, int)
+  id: Alis_Core_Graphic_Ui_Font_InitializeCharacterRectsFromAtlas_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L360
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.InitializeCharacterRectsFromAtlas(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+    commentId: M:Alis.Core.Graphic.Ui.Font.InitializeCharacterRectsFromAtlas(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+- markdown: Initializes the character rects from atlas using the specified char width
+- code: private void InitializeCharacterRectsFromAtlas(int charWidth, int charHeight, int charsPerRow, int xSpacing, int ySpacing)
+- h4: Parameters
+- parameters:
+  - name: charWidth
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The char width
+  - name: charHeight
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The char height
+  - name: charsPerRow
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The chars per row
+  - name: xSpacing
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The spacing
+  - name: ySpacing
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The spacing
+- api3: InitializeShaders()
+  id: Alis_Core_Graphic_Ui_Font_InitializeShaders
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L137
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.InitializeShaders
+    commentId: M:Alis.Core.Graphic.Ui.Font.InitializeShaders
+- markdown: Initializes the shaders
+- code: private void InitializeShaders()
+- api3: LoadTexture(string)
+  id: Alis_Core_Graphic_Ui_Font_LoadTexture_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L207
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.LoadTexture(System.String)
+    commentId: M:Alis.Core.Graphic.Ui.Font.LoadTexture(System.String)
+- markdown: Loads the texture using the specified image path
+- code: internal void LoadTexture(string imagePath)
+- h4: Parameters
+- parameters:
+  - name: imagePath
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The image path
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: FileNotFoundException
+      url: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+    description: Texture file not found
+- api3: RenderText(string, int, int, Color, Color)
+  id: Alis_Core_Graphic_Ui_Font_RenderText_System_String_System_Int32_System_Int32_Alis_Core_Aspect_Math_Definition_Color_Alis_Core_Aspect_Math_Definition_Color_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L412
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.RenderText(System.String,System.Int32,System.Int32,Alis.Core.Aspect.Math.Definition.Color,Alis.Core.Aspect.Math.Definition.Color)
+    commentId: M:Alis.Core.Graphic.Ui.Font.RenderText(System.String,System.Int32,System.Int32,Alis.Core.Aspect.Math.Definition.Color,Alis.Core.Aspect.Math.Definition.Color)
+- markdown: Renders the text using the specified text
+- code: public void RenderText(string text, int xPos, int yPos, Color colorFont, Color colorBackgroundFont)
+- h4: Parameters
+- parameters:
+  - name: text
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The text
+  - name: xPos
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The pos
+  - name: yPos
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The pos
+  - name: colorFont
+    type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+    description: The color font
+  - name: colorBackgroundFont
+    type:
+    - text: Color
+      url: Alis.Core.Aspect.Math.Definition.Color.html
+    description: The color background font
+- api3: SetupBuffers()
+  id: Alis_Core_Graphic_Ui_Font_SetupBuffers
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Ui/Font.cs#L242
+  metadata:
+    uid: Alis.Core.Graphic.Ui.Font.SetupBuffers
+    commentId: M:Alis.Core.Graphic.Ui.Font.SetupBuffers
+- markdown: Setup the buffers
+- code: private void SetupBuffers()
+languageId: csharp
+metadata:
+  description: The sprite

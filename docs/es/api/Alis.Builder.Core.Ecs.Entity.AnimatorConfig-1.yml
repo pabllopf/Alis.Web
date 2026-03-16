@@ -1,0 +1,30 @@
+### YamlMime:ApiPage
+title: Delegate AnimatorConfig<T>
+body:
+- api1: Delegate AnimatorConfig<T>
+  id: Alis_Builder_Core_Ecs_Entity_AnimatorConfig_1
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Builder/Core/Ecs/Entity/AnimatorConfig.cs#L38
+  metadata:
+    uid: Alis.Builder.Core.Ecs.Entity.AnimatorConfig`1
+    commentId: T:Alis.Builder.Core.Ecs.Entity.AnimatorConfig`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Builder.Core.Ecs.Entity
+      url: Alis.Builder.Core.Ecs.Entity.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The animator config
+- code: 'public delegate void AnimatorConfig<T>(AnimatorBuilder builder) where T : IAnimator'
+- h4: Parameters
+- parameters:
+  - name: builder
+    type:
+    - text: AnimatorBuilder
+      url: Alis.Builder.Core.Ecs.Components.Render.AnimatorBuilder.html
+- h4: Type Parameters
+- parameters:
+  - name: T
+languageId: csharp
+metadata:
+  description: The animator config

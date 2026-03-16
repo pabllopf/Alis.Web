@@ -1,0 +1,39 @@
+### YamlMime:ApiPage
+title: Delegate BufferData
+body:
+- api1: Delegate BufferData
+  id: Alis_Core_Graphic_OpenGL_Delegates_BufferData
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/BufferData.cs#L39
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.BufferData
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.BufferData
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The buffer data
+- code: public delegate void BufferData(BufferTarget target, nint size, nint data, BufferUsageHint usage)
+- h4: Parameters
+- parameters:
+  - name: target
+    type:
+    - text: BufferTarget
+      url: Alis.Core.Graphic.OpenGL.Enums.BufferTarget.html
+  - name: size
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: data
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: usage
+    type:
+    - text: BufferUsageHint
+      url: Alis.Core.Graphic.OpenGL.Enums.BufferUsageHint.html
+languageId: csharp
+metadata:
+  description: The buffer data

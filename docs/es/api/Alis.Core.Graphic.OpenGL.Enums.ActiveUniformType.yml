@@ -1,0 +1,323 @@
+### YamlMime:ApiPage
+title: Enum ActiveUniformType
+body:
+- api1: Enum ActiveUniformType
+  id: Alis_Core_Graphic_OpenGL_Enums_ActiveUniformType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/ActiveUniformType.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.ActiveUniformType
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.ActiveUniformType
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The active uniform type enum
+- code: public enum ActiveUniformType
+- h2: Fields
+- parameters:
+  - name: Int
+    default: "5124"
+    description: >+
+      The int active uniform type
+
+  - name: Float
+    default: "5126"
+    description: >+
+      The float active uniform type
+
+  - name: FloatVec2
+    default: "35664"
+    description: >+
+      The float vec active uniform type
+
+  - name: FloatVec3
+    default: "35665"
+    description: >+
+      The float vec active uniform type
+
+  - name: FloatVec4
+    default: "35666"
+    description: >+
+      The float vec active uniform type
+
+  - name: IntVec2
+    default: "35667"
+    description: >+
+      The int vec active uniform type
+
+  - name: IntVec3
+    default: "35668"
+    description: >+
+      The int vec active uniform type
+
+  - name: IntVec4
+    default: "35669"
+    description: >+
+      The int vec active uniform type
+
+  - name: Bool
+    default: "35670"
+    description: >+
+      The bool active uniform type
+
+  - name: BoolVec2
+    default: "35671"
+    description: >+
+      The bool vec active uniform type
+
+  - name: BoolVec3
+    default: "35672"
+    description: >+
+      The bool vec active uniform type
+
+  - name: BoolVec4
+    default: "35673"
+    description: >+
+      The bool vec active uniform type
+
+  - name: FloatMat2
+    default: "35674"
+    description: >+
+      The float mat active uniform type
+
+  - name: FloatMat3
+    default: "35675"
+    description: >+
+      The float mat active uniform type
+
+  - name: FloatMat4
+    default: "35676"
+    description: >+
+      The float mat active uniform type
+
+  - name: Sampler1D
+    default: "35677"
+    description: >+
+      The sampler active uniform type
+
+  - name: Sampler2D
+    default: "35678"
+    description: >+
+      The sampler active uniform type
+
+  - name: Sampler3D
+    default: "35679"
+    description: >+
+      The sampler active uniform type
+
+  - name: SamplerCube
+    default: "35680"
+    description: >+
+      The sampler cube active uniform type
+
+  - name: Sampler1DShadow
+    default: "35681"
+    description: >+
+      The sampler shadow active uniform type
+
+  - name: Sampler2DShadow
+    default: "35682"
+    description: >+
+      The sampler shadow active uniform type
+
+  - name: Sampler2DRect
+    default: "35683"
+    description: >+
+      The sampler rect active uniform type
+
+  - name: Sampler2DRectShadow
+    default: "35684"
+    description: >+
+      The sampler rect shadow active uniform type
+
+  - name: FloatMat2X3
+    default: "35685"
+    description: >+
+      The float mat 2x active uniform type
+
+  - name: FloatMat2X4
+    default: "35686"
+    description: >+
+      The float mat 2x active uniform type
+
+  - name: FloatMat3X2
+    default: "35687"
+    description: >+
+      The float mat 3x active uniform type
+
+  - name: FloatMat3X4
+    default: "35688"
+    description: >+
+      The float mat 3x active uniform type
+
+  - name: FloatMat4X2
+    default: "35689"
+    description: >+
+      The float mat 4x active uniform type
+
+  - name: FloatMat4X3
+    default: "35690"
+    description: >+
+      The float mat 4x active uniform type
+
+  - name: Sampler1DArray
+    default: "36288"
+    description: >+
+      The sampler array active uniform type
+
+  - name: Sampler2DArray
+    default: "36289"
+    description: >+
+      The sampler array active uniform type
+
+  - name: SamplerBuffer
+    default: "36290"
+    description: >+
+      The sampler buffer active uniform type
+
+  - name: Sampler1DArrayShadow
+    default: "36291"
+    description: >+
+      The sampler array shadow active uniform type
+
+  - name: Sampler2DArrayShadow
+    default: "36292"
+    description: >+
+      The sampler array shadow active uniform type
+
+  - name: SamplerCubeShadow
+    default: "36293"
+    description: >+
+      The sampler cube shadow active uniform type
+
+  - name: UnsignedIntVec2
+    default: "36294"
+    description: >+
+      The unsigned int vec active uniform type
+
+  - name: UnsignedIntVec3
+    default: "36295"
+    description: >+
+      The unsigned int vec active uniform type
+
+  - name: UnsignedIntVec4
+    default: "36296"
+    description: >+
+      The unsigned int vec active uniform type
+
+  - name: IntSampler1D
+    default: "36297"
+    description: >+
+      The int sampler active uniform type
+
+  - name: IntSampler2D
+    default: "36298"
+    description: >+
+      The int sampler active uniform type
+
+  - name: IntSampler3D
+    default: "36299"
+    description: >+
+      The int sampler active uniform type
+
+  - name: IntSamplerCube
+    default: "36300"
+    description: >+
+      The int sampler cube active uniform type
+
+  - name: IntSampler2DRect
+    default: "36301"
+    description: >+
+      The int sampler rect active uniform type
+
+  - name: IntSampler1DArray
+    default: "36302"
+    description: >+
+      The int sampler array active uniform type
+
+  - name: IntSampler2DArray
+    default: "36303"
+    description: >+
+      The int sampler array active uniform type
+
+  - name: IntSamplerBuffer
+    default: "36304"
+    description: >+
+      The int sampler buffer active uniform type
+
+  - name: UnsignedIntSampler1D
+    default: "36305"
+    description: >+
+      The unsigned int sampler active uniform type
+
+  - name: UnsignedIntSampler2D
+    default: "36306"
+    description: >+
+      The unsigned int sampler active uniform type
+
+  - name: UnsignedIntSampler3D
+    default: "36307"
+    description: >+
+      The unsigned int sampler active uniform type
+
+  - name: UnsignedIntSamplerCube
+    default: "36308"
+    description: >+
+      The unsigned int sampler cube active uniform type
+
+  - name: UnsignedIntSampler2DRect
+    default: "36309"
+    description: >+
+      The unsigned int sampler rect active uniform type
+
+  - name: UnsignedIntSampler1DArray
+    default: "36310"
+    description: >+
+      The unsigned int sampler array active uniform type
+
+  - name: UnsignedIntSampler2DArray
+    default: "36311"
+    description: >+
+      The unsigned int sampler array active uniform type
+
+  - name: UnsignedIntSamplerBuffer
+    default: "36312"
+    description: >+
+      The unsigned int sampler buffer active uniform type
+
+  - name: Sampler2DMultisample
+    default: "37128"
+    description: >+
+      The sampler multisample active uniform type
+
+  - name: IntSampler2DMultisample
+    default: "37129"
+    description: >+
+      The int sampler multisample active uniform type
+
+  - name: UnsignedIntSampler2DMultisample
+    default: "37130"
+    description: >+
+      The unsigned int sampler multisample active uniform type
+
+  - name: Sampler2DMultisampleArray
+    default: "37131"
+    description: >+
+      The sampler multisample array active uniform type
+
+  - name: IntSampler2DMultisampleArray
+    default: "37132"
+    description: >+
+      The int sampler multisample array active uniform type
+
+  - name: UnsignedIntSampler2DMultisampleArray
+    default: "37133"
+    description: >+
+      The unsigned int sampler multisample array active uniform type
+
+languageId: csharp
+metadata:
+  description: The active uniform type enum

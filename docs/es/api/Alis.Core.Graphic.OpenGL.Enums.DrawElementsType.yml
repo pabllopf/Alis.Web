@@ -1,0 +1,38 @@
+### YamlMime:ApiPage
+title: Enum DrawElementsType
+body:
+- api1: Enum DrawElementsType
+  id: Alis_Core_Graphic_OpenGL_Enums_DrawElementsType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/DrawElementsType.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.DrawElementsType
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.DrawElementsType
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The draw elements type enum
+- code: public enum DrawElementsType
+- h2: Fields
+- parameters:
+  - name: UnsignedByte
+    default: "5121"
+    description: >+
+      The unsigned byte draw elements type
+
+  - name: UnsignedShort
+    default: "5123"
+    description: >+
+      The unsigned short draw elements type
+
+  - name: UnsignedInt
+    default: "5125"
+    description: >+
+      The unsigned int draw elements type
+
+languageId: csharp
+metadata:
+  description: The draw elements type enum

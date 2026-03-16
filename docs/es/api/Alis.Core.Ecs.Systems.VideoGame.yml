@@ -1,0 +1,199 @@
+### YamlMime:ApiPage
+title: Class VideoGame
+body:
+- api1: Class VideoGame
+  id: Alis_Core_Ecs_Systems_VideoGame
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame
+    commentId: T:Alis.Core.Ecs.Systems.VideoGame
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Represents a video game with context handling capabilities.
+- code: 'public sealed class VideoGame : IGame'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: VideoGame
+    url: Alis.Core.Ecs.Systems.VideoGame.html
+- h4: Implements
+- list:
+  - text: IGame
+    url: Alis.Core.Ecs.Systems.IGame.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: VideoGame()
+  id: Alis_Core_Ecs_Systems_VideoGame__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L52
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame.#ctor
+    commentId: M:Alis.Core.Ecs.Systems.VideoGame.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.VideoGame" data-throw-if-not-resolved="false"></xref> class
+- code: public VideoGame()
+- api3: VideoGame(Setting)
+  id: Alis_Core_Ecs_Systems_VideoGame__ctor_Alis_Core_Ecs_Systems_Configuration_Setting_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame.#ctor(Alis.Core.Ecs.Systems.Configuration.Setting)
+    commentId: M:Alis.Core.Ecs.Systems.VideoGame.#ctor(Alis.Core.Ecs.Systems.Configuration.Setting)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.VideoGame" data-throw-if-not-resolved="false"></xref> class
+- code: public VideoGame(Setting setting)
+- h4: Parameters
+- parameters:
+  - name: setting
+    type:
+    - text: Setting
+      url: Alis.Core.Ecs.Systems.Configuration.Setting.html
+    description: The setting
+- api3: VideoGame(Context)
+  id: Alis_Core_Ecs_Systems_VideoGame__ctor_Alis_Core_Ecs_Systems_Scope_Context_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L68
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+    commentId: M:Alis.Core.Ecs.Systems.VideoGame.#ctor(Alis.Core.Ecs.Systems.Scope.Context)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.VideoGame" data-throw-if-not-resolved="false"></xref> class
+- code: public VideoGame(Context context)
+- h4: Parameters
+- parameters:
+  - name: context
+    type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    description: The context
+- api3: VideoGame(IContextHandler<Context>)
+  id: Alis_Core_Ecs_Systems_VideoGame__ctor_Alis_Core_Ecs_Systems_Scope_IContextHandler_Alis_Core_Ecs_Systems_Scope_Context__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L76
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame.#ctor(Alis.Core.Ecs.Systems.Scope.IContextHandler{Alis.Core.Ecs.Systems.Scope.Context})
+    commentId: M:Alis.Core.Ecs.Systems.VideoGame.#ctor(Alis.Core.Ecs.Systems.Scope.IContextHandler{Alis.Core.Ecs.Systems.Scope.Context})
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.VideoGame" data-throw-if-not-resolved="false"></xref> class.
+- code: public VideoGame(IContextHandler<Context> contextHandler)
+- h4: Parameters
+- parameters:
+  - name: contextHandler
+    type:
+    - text: IContextHandler
+      url: Alis.Core.Ecs.Systems.Scope.IContextHandler-1.html
+    - <
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    - '>'
+    description: The context handler.
+- h2: Fields
+- api3: _contextHandler
+  id: Alis_Core_Ecs_Systems_VideoGame__contextHandler
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame._contextHandler
+    commentId: F:Alis.Core.Ecs.Systems.VideoGame._contextHandler
+- markdown: The context handler
+- code: private readonly IContextHandler<Context> _contextHandler
+- h4: Field Value
+- parameters:
+  - type:
+    - text: IContextHandler
+      url: Alis.Core.Ecs.Systems.Scope.IContextHandler-1.html
+    - <
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+    - '>'
+- h2: Properties
+- api3: Context
+  id: Alis_Core_Ecs_Systems_VideoGame_Context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L82
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame.Context
+    commentId: P:Alis.Core.Ecs.Systems.VideoGame.Context
+- markdown: Gets the current context.
+- code: public Context Context { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- h2: Methods
+- api3: Create()
+  id: Alis_Core_Ecs_Systems_VideoGame_Create
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L98
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame.Create
+    commentId: M:Alis.Core.Ecs.Systems.VideoGame.Create
+- markdown: Creates
+- code: public static VideoGameBuilder Create()
+- h4: Returns
+- parameters:
+  - type:
+    - text: VideoGameBuilder
+      url: Alis.Builder.Core.Ecs.System.VideoGameBuilder.html
+    description: The video game builder
+- api3: Exit()
+  id: Alis_Core_Ecs_Systems_VideoGame_Exit
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L92
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame.Exit
+    commentId: M:Alis.Core.Ecs.Systems.VideoGame.Exit
+- markdown: Exits the game.
+- code: public void Exit()
+- api3: InitPreview()
+  id: Alis_Core_Ecs_Systems_VideoGame_InitPreview
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L108
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame.InitPreview
+    commentId: M:Alis.Core.Ecs.Systems.VideoGame.InitPreview
+- markdown: Inits the preview
+- code: public void InitPreview()
+- api3: Preview()
+  id: Alis_Core_Ecs_Systems_VideoGame_Preview
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L113
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame.Preview
+    commentId: M:Alis.Core.Ecs.Systems.VideoGame.Preview
+- markdown: Previews this instance
+- code: public void Preview()
+- api3: Run()
+  id: Alis_Core_Ecs_Systems_VideoGame_Run
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L87
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame.Run
+    commentId: M:Alis.Core.Ecs.Systems.VideoGame.Run
+- markdown: Runs the game.
+- code: public void Run()
+- api3: Save()
+  id: Alis_Core_Ecs_Systems_VideoGame_Save
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Systems/VideoGame.cs#L103
+  metadata:
+    uid: Alis.Core.Ecs.Systems.VideoGame.Save
+    commentId: M:Alis.Core.Ecs.Systems.VideoGame.Save
+- markdown: Saves this instance
+- code: public void Save()
+- h2: See Also
+- list:
+  - - text: IGame
+      url: Alis.Core.Ecs.Systems.IGame.html
+  - - text: IHasBuilder
+      url: Alis.Core.Aspect.Fluent.IHasBuilder-1.html
+    - <
+    - TOut
+    - '>'
+languageId: csharp
+metadata:
+  description: Represents a video game with context handling capabilities.

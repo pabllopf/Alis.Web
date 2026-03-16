@@ -1,0 +1,48 @@
+### YamlMime:ApiPage
+title: Interface ITypeId
+body:
+- api1: Interface ITypeId
+  id: Alis_Core_Ecs_Kernel_ITypeId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ITypeID.cs#L37
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ITypeId
+    commentId: T:Alis.Core.Ecs.Kernel.ITypeId
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The type id interface
+- code: public interface ITypeId
+- h2: Properties
+- api3: Type
+  id: Alis_Core_Ecs_Kernel_ITypeId_Type
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ITypeID.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ITypeId.Type
+    commentId: P:Alis.Core.Ecs.Kernel.ITypeId.Type
+- markdown: Gets the value of the type
+- code: Type Type { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+- api3: Value
+  id: Alis_Core_Ecs_Kernel_ITypeId_Value
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ITypeID.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ITypeId.Value
+    commentId: P:Alis.Core.Ecs.Kernel.ITypeId.Value
+- markdown: Gets the value of the value
+- code: ushort Value { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+languageId: csharp
+metadata:
+  description: The type id interface

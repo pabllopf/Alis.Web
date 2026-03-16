@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <title> Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis ">
+      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!">
+      <link rel="icon" href="../resources/logo.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="En este art&#237;culo">
+      <meta name="loc:searchResultsCount" content="{count} resultados para &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="Sin resultados para &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filtrar por t&#237;tulo">
+      <meta name="loc:nextArticle" content="Siguiente">
+      <meta name="loc:prevArticle" content="Anterior">
+      <meta name="loc:themeLight" content="Claro">
+      <meta name="loc:themeDark" content="Oscuro">
+      <meta name="loc:themeAuto" content="Autom&#225;tico">
+      <meta name="loc:changeTheme" content="Cambiar tema">
+      <meta name="loc:copy" content="Copiar">
+      <meta name="loc:downloadPdf" content="Descargar PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+        const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+      
+        // Función para actualizar el contenido del dropdownToggle según el idioma
+        function updateLanguage() {
+          const currentLang = document.documentElement.lang;
+          const isEnglish = currentLang === 'en';
+          const isSpanish = currentLang === 'es';
+      
+          if (isEnglish) {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              English`;
+          } else {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              Español`;
+          }
+        }
+      
+        // Llama a la función para actualizar el idioma al cargar la página
+        updateLanguage();
+      });
+    </script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+
+          // Función para actualizar el texto del botón según la URL actual
+          function updateDropdownVersion() {
+              const path = window.location.pathname;
+              const versionMatch = path.match(/v\d+\.\d+\.\d+/i); // Buscar la versión en cualquier parte del path
+
+              if (versionMatch) {
+                  const currentVersion = versionMatch[0]; // Obtener la versión encontrada
+                  dropdownToggle.textContent = currentVersion;
+              }
+          }
+
+          updateDropdownVersion(); // Llamar la función al cargar la página
+      });
+
+    </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ApiPage">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="../resources/logo_small_v2.png" alt="Alis">
+            Alis
+          </a>
+
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+
+        
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Buscar" autocomplete="off" aria-label="Search">
+              </form>
+
+              
+              <script>
+
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                const dropdownMenu = document.querySelector('.dropdown-menu-versions');
+
+                dropdownToggle.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const isExpanded = dropdownMenu.style.display === 'block';
+                  dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                });
+
+                document.addEventListener('click', function (e) {
+                  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.style.display = 'none';
+                  }
+                });
+
+                // Manejar la selección de versión y actualizar la URL
+                dropdownMenu.addEventListener('click', function (e) {
+                  if (e.target.classList.contains('dropdown-item')) {
+                    e.preventDefault();
+                    
+                    const selectedVersion = e.target.getAttribute('data-version');
+                    const lang = document.documentElement.lang; // Obtener el idioma actual del documento
+                    
+                    let basePath = '';
+                    
+                    // Comprobar si el idioma es español
+                    if (lang === 'es') {
+                      basePath += '/es';
+                    }
+
+                    if (lang === 'en') {
+                      basePath += '/en';
+                    }
+
+                    // Redirigir a la ruta de la versión seleccionada
+                    const newPath = `${basePath}/${selectedVersion}/index.html`;
+                    window.location.href = newPath;
+                  }
+                });
+              });
+ 
+
+              </script>
+
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" data-version="v0.4.0">v0.4.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.3.0">v0.3.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.2.0">v0.2.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.1.0">v0.1.0</a></li>
+                </ul>
+              </div>
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                    const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+
+                    dropdownToggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const isExpanded = dropdownMenu.style.display === 'block';
+                        dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                    });
+
+                    document.addEventListener('click', function (e) {
+                        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    });
+
+                    // Manejar la selección de idioma y actualizar la URL
+                    dropdownMenu.addEventListener('click', function (e) {
+                        if (e.target.classList.contains('dropdown-item')) {
+                            e.preventDefault();
+                            
+                            const selectedLang = e.target.getAttribute('lang');
+                            const currentPath = window.location.pathname;
+                            const pathParts = currentPath.split('/');
+
+                            // Verificar si la URL sigue el formato esperado y reemplazar el idioma
+                            if (pathParts.length >= 3) {
+                                pathParts[1] = selectedLang;  // Reemplaza el idioma en la URL
+                            }
+
+                            // Reconstruir la URL y redirigir
+                            const newPath = pathParts.join('/');
+                            window.location.href = newPath;
+                        }
+                    });
+                });
+                </script>
+
+
+
+              
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-lang" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                  <svg viewbox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                    <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                  </svg>
+                  English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lang" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" lang="es">Español</a></li>
+                </ul>
+            </div>
+
+
+              <a class="hover_custom" style="order: 55;margin: 0 10px;" href="https://github.com/pabllopf/Alis/releases/latest">
+              <button type="button" class="btn btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewbox="0 0 17 17">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+                  </svg>
+                  Descargar
+              </button>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+      
+      
+
+
+
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry' data-commentid='T:Alis.Core.Aspect.Memory.AssetRegistry' id='Alis_Core_Aspect_Memory_AssetRegistry'>Class AssetRegistry    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L46'><i class='bi bi-code-slash'></i></a></h1>
+ <div class="facts text-secondary">
+<dl><dt>Namespace</dt><dd><a href='Alis.Core.Aspect.Memory.html'>Alis.Core.Aspect.Memory</a></dd></dl><dl><dt>Assembly</dt><dd>Alis.dll</dd></dl>
+</div><p>The asset registry class</p>
+<pre><code class='lang-csharp'>public static class AssetRegistry</code></pre><h4 class='section'>Inheritance</h4><dl class="typelist inheritance"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>
+</div>
+<div>
+<a href='Alis.Core.Aspect.Memory.AssetRegistry.html'>AssetRegistry</a>
+</div>
+
+</dd></dl><h4 class='section'>Inherited Members</h4><dl class="typelist"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)'>object.Equals(object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)'>object.Equals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gethashcode'>object.GetHashCode()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gettype'>object.GetType()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone'>object.MemberwiseClone()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.referenceequals'>object.ReferenceEquals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
+</div>
+
+</dd></dl><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry.RegisteredAssetLoaders' data-commentid='F:Alis.Core.Aspect.Memory.AssetRegistry.RegisteredAssetLoaders' id='Alis_Core_Aspect_Memory_AssetRegistry_RegisteredAssetLoaders'>RegisteredAssetLoaders    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L51'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The registered asset loaders</p>
+<pre><code class='lang-csharp'>private static readonly Dictionary&lt;string, Func&lt;Stream&gt;&gt; RegisteredAssetLoaders</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2'>Dictionary</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>, <a href='https://learn.microsoft.com/dotnet/api/system.func-1'>Func</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.io.stream'>Stream</a>&gt;&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry._assemblyLocks' data-commentid='F:Alis.Core.Aspect.Memory.AssetRegistry._assemblyLocks' id='Alis_Core_Aspect_Memory_AssetRegistry__assemblyLocks'>_assemblyLocks    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L57'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The assembly locks</p>
+<pre><code class='lang-csharp'>private static readonly ConcurrentDictionary&lt;string, object&gt; _assemblyLocks</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2'>ConcurrentDictionary</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>, <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry._extractedPathCache' data-commentid='F:Alis.Core.Aspect.Memory.AssetRegistry._extractedPathCache' id='Alis_Core_Aspect_Memory_AssetRegistry__extractedPathCache'>_extractedPathCache    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L73'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The extracted path cache</p>
+<pre><code class='lang-csharp'>private static readonly Dictionary&lt;string, string&gt; _extractedPathCache</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2'>Dictionary</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>, <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry._globalLock' data-commentid='F:Alis.Core.Aspect.Memory.AssetRegistry._globalLock' id='Alis_Core_Aspect_Memory_AssetRegistry__globalLock'>_globalLock    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L62'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The global lock</p>
+<pre><code class='lang-csharp'>private static readonly object _globalLock</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry._zipCache' data-commentid='F:Alis.Core.Aspect.Memory.AssetRegistry._zipCache' id='Alis_Core_Aspect_Memory_AssetRegistry__zipCache'>_zipCache    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L67'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The zip cache</p>
+<pre><code class='lang-csharp'>private static readonly Dictionary&lt;string, ZipCacheEntry&gt; _zipCache</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2'>Dictionary</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>, <a href='Alis.Core.Aspect.Memory.ZipCacheEntry.html'>ZipCacheEntry</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry.ActiveAssemblyName' data-commentid='P:Alis.Core.Aspect.Memory.AssetRegistry.ActiveAssemblyName' id='Alis_Core_Aspect_Memory_AssetRegistry_ActiveAssemblyName'>ActiveAssemblyName    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L78'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets or sets the value of the active assembly name</p>
+<pre><code class='lang-csharp'>private static string ActiveAssemblyName { get; set; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry.EnsureZipCachedForActiveAssembly' data-commentid='M:Alis.Core.Aspect.Memory.AssetRegistry.EnsureZipCachedForActiveAssembly' id='Alis_Core_Aspect_Memory_AssetRegistry_EnsureZipCachedForActiveAssembly'>EnsureZipCachedForActiveAssembly()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L390'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Ensures the zip cached for active assembly</p>
+<pre><code class='lang-csharp'>[ExcludeFromCodeCoverage]
+private static void EnsureZipCachedForActiveAssembly()</code></pre><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>La asamblea activa '{ActiveAssemblyName}' no tiene un assets.pack
+registrado.</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception'>FileNotFoundException</a>  </dt>
+<dd>
+
+
+<p>Resource file <code>assets.pack</code> not found in embedded resources.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry.FindZipEntryInfo(Alis.Core.Aspect.Memory.ZipCacheEntry,System.String)' data-commentid='M:Alis.Core.Aspect.Memory.AssetRegistry.FindZipEntryInfo(Alis.Core.Aspect.Memory.ZipCacheEntry,System.String)' id='Alis_Core_Aspect_Memory_AssetRegistry_FindZipEntryInfo_Alis_Core_Aspect_Memory_ZipCacheEntry_System_String_'>FindZipEntryInfo(ZipCacheEntry, string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L452'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Finds the zip entry info using the specified cache entry</p>
+<pre><code class='lang-csharp'>[ExcludeFromCodeCoverage]
+private static ZipEntryInfo FindZipEntryInfo(ZipCacheEntry cacheEntry, string resourceName)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>cacheEntry</code> <a href='Alis.Core.Aspect.Memory.ZipCacheEntry.html'>ZipCacheEntry</a>  </dt>
+<dd>
+
+
+<p>The cache entry</p>
+
+</dd><dt><code>resourceName</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The resource name</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Aspect.Memory.ZipEntryInfo.html'>ZipEntryInfo</a>  </dt>
+<dd>
+
+
+<p>The match</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry.GetAssemblyLock(System.String)' data-commentid='M:Alis.Core.Aspect.Memory.AssetRegistry.GetAssemblyLock(System.String)' id='Alis_Core_Aspect_Memory_AssetRegistry_GetAssemblyLock_System_String_'>GetAssemblyLock(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L108'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the assembly lock using the specified assembly name</p>
+<pre><code class='lang-csharp'>private static object GetAssemblyLock(string assemblyName)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>assemblyName</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The assembly name</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>  </dt>
+<dd>
+
+
+<p>The object</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry.GetResourceMemoryStreamByName(System.String)' data-commentid='M:Alis.Core.Aspect.Memory.AssetRegistry.GetResourceMemoryStreamByName(System.String)' id='Alis_Core_Aspect_Memory_AssetRegistry_GetResourceMemoryStreamByName_System_String_'>GetResourceMemoryStreamByName(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L127'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the resource memory stream by name using the specified resource name</p>
+<pre><code class='lang-csharp'>[ExcludeFromCodeCoverage]
+public static MemoryStream GetResourceMemoryStreamByName(string resourceName)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>resourceName</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The resource name</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.io.memorystream'>MemoryStream</a>  </dt>
+<dd>
+
+
+<p>The memory stream</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception'>FileNotFoundException</a>  </dt>
+<dd>
+
+
+<p>Cache del assets.pack no disponible.</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>La asamblea activa '{ActiveAssemblyName}' no tiene un assets.pack
+registrado.</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>No hay una asamblea activa configurada.</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception'>FileNotFoundException</a>  </dt>
+<dd>
+
+
+<p>Resource '{resourceName}' not found in <code>assets.pack</code> (race).</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception'>FileNotFoundException</a>  </dt>
+<dd>
+
+
+<p>Resource '{resourceName}' not found in <code>assets.pack</code>.</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentexception'>ArgumentException</a>  </dt>
+<dd>
+
+
+<p>resourceName no puede estar vacío.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry.GetResourcePathByName(System.String)' data-commentid='M:Alis.Core.Aspect.Memory.AssetRegistry.GetResourcePathByName(System.String)' id='Alis_Core_Aspect_Memory_AssetRegistry_GetResourcePathByName_System_String_'>GetResourcePathByName(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L209'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the resource path by name using the specified resource name</p>
+<pre><code class='lang-csharp'>[ExcludeFromCodeCoverage]
+public static string GetResourcePathByName(string resourceName)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>resourceName</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The resource name</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The string</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception'>FileNotFoundException</a>  </dt>
+<dd>
+
+
+<p>Cache del assets.pack no disponible.</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>La asamblea activa '{ActiveAssemblyName}' no tiene un assets.pack
+registrado.</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.invalidoperationexception'>InvalidOperationException</a>  </dt>
+<dd>
+
+
+<p>No hay una asamblea activa configurada.</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception'>FileNotFoundException</a>  </dt>
+<dd>
+
+
+<p>Resource '{resourceName}' not found in <code>assets.pack</code> (race).</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception'>FileNotFoundException</a>  </dt>
+<dd>
+
+
+<p>Resource '{resourceName}' not found in <code>assets.pack</code>.</p>
+
+</dd><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentexception'>ArgumentException</a>  </dt>
+<dd>
+
+
+<p>resourceName no puede estar vacío.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry.MakeSafeTempName(System.String,System.String)' data-commentid='M:Alis.Core.Aspect.Memory.AssetRegistry.MakeSafeTempName(System.String,System.String)' id='Alis_Core_Aspect_Memory_AssetRegistry_MakeSafeTempName_System_String_System_String_'>MakeSafeTempName(string, string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L339'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Makes the safe temp name using the specified assembly name</p>
+<pre><code class='lang-csharp'>[ExcludeFromCodeCoverage]
+private static string MakeSafeTempName(string assemblyName, string normalizedResourceKey)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>assemblyName</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The assembly name</p>
+
+</dd><dt><code>normalizedResourceKey</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The normalized resource key</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The string</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry.NormalizeResourceKey(System.String)' data-commentid='M:Alis.Core.Aspect.Memory.AssetRegistry.NormalizeResourceKey(System.String)' id='Alis_Core_Aspect_Memory_AssetRegistry_NormalizeResourceKey_System_String_'>NormalizeResourceKey(string)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L331'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Normalizes the resource key using the specified resource name</p>
+<pre><code class='lang-csharp'>private static string NormalizeResourceKey(string resourceName)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>resourceName</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The resource name</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The string</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry.RegisterAssembly(System.String,System.Func{System.IO.Stream})' data-commentid='M:Alis.Core.Aspect.Memory.AssetRegistry.RegisterAssembly(System.String,System.Func{System.IO.Stream})' id='Alis_Core_Aspect_Memory_AssetRegistry_RegisterAssembly_System_String_System_Func_System_IO_Stream__'>RegisterAssembly(string, Func&lt;Stream&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L85'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Registers the assembly using the specified assembly name</p>
+<pre><code class='lang-csharp'>[ExcludeFromCodeCoverage]
+public static void RegisterAssembly(string assemblyName, Func&lt;Stream&gt; assetLoader)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>assemblyName</code> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The assembly name</p>
+
+</dd><dt><code>assetLoader</code> <a href='https://learn.microsoft.com/dotnet/api/system.func-1'>Func</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.io.stream'>Stream</a>&gt;  </dt>
+<dd>
+
+
+<p>The asset loader</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Aspect.Memory.AssetRegistry.ToLowerHex(System.Byte[])' data-commentid='M:Alis.Core.Aspect.Memory.AssetRegistry.ToLowerHex(System.Byte[])' id='Alis_Core_Aspect_Memory_AssetRegistry_ToLowerHex_System_Byte___'>ToLowerHex(byte[])    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/6_Ideation/Memory/src/AssetRegistry.cs#L365'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Returns the lower hex using the specified bytes</p>
+<pre><code class='lang-csharp'>[ExcludeFromCodeCoverage]
+private static string ToLowerHex(byte[] bytes)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>bytes</code> <a href='https://learn.microsoft.com/dotnet/api/system.byte'>byte</a>[]  </dt>
+<dd>
+
+
+<p>The bytes</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.string'>string</a>  </dt>
+<dd>
+
+
+<p>The string</p>
+
+</dd></dl>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Alis - Desarrolla los videojuegos de tus sueños 💯 gratis en Windows, MacOS, Linux, Android (próximamente), iOS (próximamente).
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

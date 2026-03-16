@@ -1,0 +1,58 @@
+### YamlMime:ApiPage
+title: Enum Rule.RuleState
+body:
+- api1: Enum Rule.RuleState
+  id: Alis_Core_Ecs_Systems_Rule_RuleState
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/Rule.cs#L158
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Rule.RuleState
+    commentId: T:Alis.Core.Ecs.Systems.Rule.RuleState
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The rule state enum
+- code: private enum Rule.RuleState
+- h2: Fields
+- parameters:
+  - name: None
+    default: "0"
+    description: >+
+      The none rule state
+
+  - name: CustomDelegate
+    default: "1"
+    description: >+
+      The custom delegate rule state
+
+  - name: HasComponent
+    default: "2"
+    description: >+
+      The has component rule state
+
+  - name: NotComponent
+    default: "3"
+    description: >+
+      The not component rule state
+
+  - name: HasTag
+    default: "4"
+    description: >+
+      The has tag rule state
+
+  - name: NotTag
+    default: "5"
+    description: >+
+      The not tag rule state
+
+  - name: IncludeDisabled
+    default: "6"
+    description: >+
+      The include disabled rule state
+
+languageId: csharp
+metadata:
+  description: The rule state enum

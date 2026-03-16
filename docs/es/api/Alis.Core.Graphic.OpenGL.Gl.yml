@@ -1,0 +1,1552 @@
+### YamlMime:ApiPage
+title: Class Gl
+body:
+- api1: Class Gl
+  id: Alis_Core_Graphic_OpenGL_Gl
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L42
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl
+    commentId: T:Alis.Core.Graphic.OpenGL.Gl
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL
+      url: Alis.Core.Graphic.OpenGL.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gl class
+- code: public static class Gl
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Gl
+    url: Alis.Core.Graphic.OpenGL.Gl.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Int1
+  id: Alis_Core_Graphic_OpenGL_Gl_Int1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L107
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.Int1
+    commentId: F:Alis.Core.Graphic.OpenGL.Gl.Int1
+- markdown: The int
+- code: public static int[] Int1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '['
+    - ']'
+- api3: Matrix4Float
+  id: Alis_Core_Graphic_OpenGL_Gl_Matrix4Float
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L112
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.Matrix4Float
+    commentId: F:Alis.Core.Graphic.OpenGL.Gl.Matrix4Float
+- markdown: The matrix float
+- code: public static float[] Matrix4Float
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    - '['
+    - ']'
+- api3: Uint1
+  id: Alis_Core_Graphic_OpenGL_Gl_Uint1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L102
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.Uint1
+    commentId: F:Alis.Core.Graphic.OpenGL.Gl.Uint1
+- markdown: The uint
+- code: public static uint[] Uint1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    - '['
+    - ']'
+- api3: _getProcAddress
+  id: Alis_Core_Graphic_OpenGL_Gl__getProcAddress
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L97
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl._getProcAddress
+    commentId: F:Alis.Core.Graphic.OpenGL.Gl._getProcAddress
+- markdown: The get proc address
+- code: private static Gl.GetProcAddressDelegate _getProcAddress
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Gl
+      url: Alis.Core.Graphic.OpenGL.Gl.html
+    - .
+    - text: GetProcAddressDelegate
+      url: Alis.Core.Graphic.OpenGL.Gl.GetProcAddressDelegate.html
+- h2: Properties
+- api3: GetString
+  id: Alis_Core_Graphic_OpenGL_Gl_GetString
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L117
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GetString
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GetString
+- markdown: The get string
+- code: public static GetString GetString { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GetString
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetString.html
+- api3: GlActiveTextureDelegate
+  id: Alis_Core_Graphic_OpenGL_Gl_GlActiveTextureDelegate
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L464
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlActiveTextureDelegate
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlActiveTextureDelegate
+- markdown: Gets the value of the gl active texture delegate
+- code: public static Gl.ActiveTexture GlActiveTextureDelegate { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Gl
+      url: Alis.Core.Graphic.OpenGL.Gl.html
+    - .
+    - text: ActiveTexture
+      url: Alis.Core.Graphic.OpenGL.Gl.ActiveTexture.html
+- api3: GlAttachShader
+  id: Alis_Core_Graphic_OpenGL_Gl_GlAttachShader
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L238
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlAttachShader
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlAttachShader
+- markdown: The attach shader
+- code: public static AttachShader GlAttachShader { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: AttachShader
+      url: Alis.Core.Graphic.OpenGL.Delegates.AttachShader.html
+- api3: GlBegin
+  id: Alis_Core_Graphic_OpenGL_Gl_GlBegin
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L203
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlBegin
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlBegin
+- markdown: The begin
+- code: public static Begin GlBegin { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Begin
+      url: Alis.Core.Graphic.OpenGL.Delegates.Begin.html
+- api3: GlBindBuffer
+  id: Alis_Core_Graphic_OpenGL_Gl_GlBindBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L349
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlBindBuffer
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlBindBuffer
+- markdown: The bind buffer
+- code: public static BindBuffer GlBindBuffer { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: BindBuffer
+      url: Alis.Core.Graphic.OpenGL.Delegates.BindBuffer.html
+- api3: GlBindFramebuffer
+  id: Alis_Core_Graphic_OpenGL_Gl_GlBindFramebuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L379
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlBindFramebuffer
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlBindFramebuffer
+- markdown: Gets the value of the gl bind framebuffer
+- code: public static Gl.BindFramebuffer GlBindFramebuffer { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Gl
+      url: Alis.Core.Graphic.OpenGL.Gl.html
+    - .
+    - text: BindFramebuffer
+      url: Alis.Core.Graphic.OpenGL.Gl.BindFramebuffer.html
+- api3: GlBindSampler
+  id: Alis_Core_Graphic_OpenGL_Gl_GlBindSampler
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L339
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlBindSampler
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlBindSampler
+- markdown: The bind sampler
+- code: public static BindSampler GlBindSampler { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: BindSampler
+      url: Alis.Core.Graphic.OpenGL.Delegates.BindSampler.html
+- api3: GlBindTexture
+  id: Alis_Core_Graphic_OpenGL_Gl_GlBindTexture
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L384
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlBindTexture
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlBindTexture
+- markdown: The bind texture
+- code: public static BindTexture GlBindTexture { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: BindTexture
+      url: Alis.Core.Graphic.OpenGL.Delegates.BindTexture.html
+- api3: GlBindVertexArray
+  id: Alis_Core_Graphic_OpenGL_Gl_GlBindVertexArray
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L344
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlBindVertexArray
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlBindVertexArray
+- markdown: The bind vertex array
+- code: public static BindVertexArray GlBindVertexArray { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: BindVertexArray
+      url: Alis.Core.Graphic.OpenGL.Delegates.BindVertexArray.html
+- api3: GlBlendEquation
+  id: Alis_Core_Graphic_OpenGL_Gl_GlBlendEquation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L173
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlBlendEquation
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlBlendEquation
+- markdown: The blend equation
+- code: public static BlendEquation GlBlendEquation { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: BlendEquation
+      url: Alis.Core.Graphic.OpenGL.Delegates.BlendEquation.html
+- api3: GlBlendFunc
+  id: Alis_Core_Graphic_OpenGL_Gl_GlBlendFunc
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L178
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlBlendFunc
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlBlendFunc
+- markdown: The blend func
+- code: public static BlendFunc GlBlendFunc { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: BlendFunc
+      url: Alis.Core.Graphic.OpenGL.Delegates.BlendFunc.html
+- api3: GlBufferData
+  id: Alis_Core_Graphic_OpenGL_Gl_GlBufferData
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L389
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlBufferData
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlBufferData
+- markdown: The buffer data
+- code: public static BufferData GlBufferData { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: BufferData
+      url: Alis.Core.Graphic.OpenGL.Delegates.BufferData.html
+- api3: GlClear
+  id: Alis_Core_Graphic_OpenGL_Gl_GlClear
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L158
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlClear
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlClear
+- markdown: The clear
+- code: public static Clear GlClear { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Clear
+      url: Alis.Core.Graphic.OpenGL.Delegates.Clear.html
+- api3: GlClearColor
+  id: Alis_Core_Graphic_OpenGL_Gl_GlClearColor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L142
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlClearColor
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlClearColor
+- markdown: The clear color
+- code: public static ClearColor GlClearColor { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ClearColor
+      url: Alis.Core.Graphic.OpenGL.Delegates.ClearColor.html
+- api3: GlColor4F
+  id: Alis_Core_Graphic_OpenGL_Gl_GlColor4F
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L147
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlColor4F
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlColor4F
+- markdown: The color 4f
+- code: public static Color4F GlColor4F { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Color4F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Color4F.html
+- api3: GlCompileShader
+  id: Alis_Core_Graphic_OpenGL_Gl_GlCompileShader
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L213
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlCompileShader
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlCompileShader
+- markdown: The compile shader
+- code: public static CompileShader GlCompileShader { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: CompileShader
+      url: Alis.Core.Graphic.OpenGL.Delegates.CompileShader.html
+- api3: GlCreateProgram
+  id: Alis_Core_Graphic_OpenGL_Gl_GlCreateProgram
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L233
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlCreateProgram
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlCreateProgram
+- markdown: The create program
+- code: public static CreateProgram GlCreateProgram { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: CreateProgram
+      url: Alis.Core.Graphic.OpenGL.Delegates.CreateProgram.html
+- api3: GlCreateShader
+  id: Alis_Core_Graphic_OpenGL_Gl_GlCreateShader
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L198
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlCreateShader
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlCreateShader
+- markdown: The create shader
+- code: public static CreateShader GlCreateShader { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: CreateShader
+      url: Alis.Core.Graphic.OpenGL.Delegates.CreateShader.html
+- api3: GlDeleteBuffers
+  id: Alis_Core_Graphic_OpenGL_Gl_GlDeleteBuffers
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L127
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlDeleteBuffers
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlDeleteBuffers
+- markdown: The delete buffers
+- code: public static DeleteBuffers GlDeleteBuffers { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DeleteBuffers
+      url: Alis.Core.Graphic.OpenGL.Delegates.DeleteBuffers.html
+- api3: GlDeleteProgram
+  id: Alis_Core_Graphic_OpenGL_Gl_GlDeleteProgram
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L263
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlDeleteProgram
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlDeleteProgram
+- markdown: The delete program
+- code: public static DeleteProgram GlDeleteProgram { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DeleteProgram
+      url: Alis.Core.Graphic.OpenGL.Delegates.DeleteProgram.html
+- api3: GlDeleteShader
+  id: Alis_Core_Graphic_OpenGL_Gl_GlDeleteShader
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L218
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlDeleteShader
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlDeleteShader
+- markdown: The delete shader
+- code: public static DeleteShader GlDeleteShader { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DeleteShader
+      url: Alis.Core.Graphic.OpenGL.Delegates.DeleteShader.html
+- api3: GlDeleteTextures
+  id: Alis_Core_Graphic_OpenGL_Gl_GlDeleteTextures
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L434
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlDeleteTextures
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlDeleteTextures
+- markdown: The delete textures
+- code: public static DeleteTextures GlDeleteTextures { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DeleteTextures
+      url: Alis.Core.Graphic.OpenGL.Delegates.DeleteTextures.html
+- api3: GlDeleteVertexArrays
+  id: Alis_Core_Graphic_OpenGL_Gl_GlDeleteVertexArrays
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L404
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlDeleteVertexArrays
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlDeleteVertexArrays
+- markdown: The delete vertex arrays
+- code: public static DeleteVertexArrays GlDeleteVertexArrays { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DeleteVertexArrays
+      url: Alis.Core.Graphic.OpenGL.Delegates.DeleteVertexArrays.html
+- api3: GlDetachShader
+  id: Alis_Core_Graphic_OpenGL_Gl_GlDetachShader
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L258
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlDetachShader
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlDetachShader
+- markdown: The detach shader
+- code: public static DetachShader GlDetachShader { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DetachShader
+      url: Alis.Core.Graphic.OpenGL.Delegates.DetachShader.html
+- api3: GlDisable
+  id: Alis_Core_Graphic_OpenGL_Gl_GlDisable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L168
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlDisable
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlDisable
+- markdown: The disable
+- code: public static Disable GlDisable { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Disable
+      url: Alis.Core.Graphic.OpenGL.Delegates.Disable.html
+- api3: GlDisableVertexAttribArray
+  id: Alis_Core_Graphic_OpenGL_Gl_GlDisableVertexAttribArray
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L369
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlDisableVertexAttribArray
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlDisableVertexAttribArray
+- markdown: The disable vertex attrib array
+- code: public static DisableVertexAttribArray GlDisableVertexAttribArray { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DisableVertexAttribArray
+      url: Alis.Core.Graphic.OpenGL.Delegates.DisableVertexAttribArray.html
+- api3: GlDrawArrays
+  id: Alis_Core_Graphic_OpenGL_Gl_GlDrawArrays
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L439
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlDrawArrays
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlDrawArrays
+- markdown: The draw arrays
+- code: public static DrawArrays GlDrawArrays { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DrawArrays
+      url: Alis.Core.Graphic.OpenGL.DrawArrays.html
+- api3: GlDrawElements
+  id: Alis_Core_Graphic_OpenGL_Gl_GlDrawElements
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L444
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlDrawElements
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlDrawElements
+- markdown: The draw elements
+- code: public static DrawElements GlDrawElements { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DrawElements
+      url: Alis.Core.Graphic.OpenGL.DrawElements.html
+- api3: GlDrawElementsBaseVertex
+  id: Alis_Core_Graphic_OpenGL_Gl_GlDrawElementsBaseVertex
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L399
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlDrawElementsBaseVertex
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlDrawElementsBaseVertex
+- markdown: The draw elements base vertex
+- code: public static DrawElementsBaseVertex GlDrawElementsBaseVertex { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: DrawElementsBaseVertex
+      url: Alis.Core.Graphic.OpenGL.Delegates.DrawElementsBaseVertex.html
+- api3: GlEnable
+  id: Alis_Core_Graphic_OpenGL_Gl_GlEnable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L163
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlEnable
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlEnable
+- markdown: The enable
+- code: public static Enable GlEnable { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Enable
+      url: Alis.Core.Graphic.OpenGL.Delegates.Enable.html
+- api3: GlEnableVertexAttribArray
+  id: Alis_Core_Graphic_OpenGL_Gl_GlEnableVertexAttribArray
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L364
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlEnableVertexAttribArray
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlEnableVertexAttribArray
+- markdown: The enable vertex attrib array del
+- code: public static EnableVertexAttribArrayDel GlEnableVertexAttribArray { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: EnableVertexAttribArrayDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.EnableVertexAttribArrayDel.html
+- api3: GlEnd
+  id: Alis_Core_Graphic_OpenGL_Gl_GlEnd
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L153
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlEnd
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlEnd
+- markdown: The end
+- code: public static End GlEnd { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: End
+      url: Alis.Core.Graphic.OpenGL.Delegates.End.html
+- api3: GlFramebufferTexture2D
+  id: Alis_Core_Graphic_OpenGL_Gl_GlFramebufferTexture2D
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L319
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlFramebufferTexture2D
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlFramebufferTexture2D
+- markdown: Gets the value of the gl framebuffer texture 2 d
+- code: public static Gl.FramebufferTexture2D GlFramebufferTexture2D { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Gl
+      url: Alis.Core.Graphic.OpenGL.Gl.html
+    - .
+    - text: FramebufferTexture2D
+      url: Alis.Core.Graphic.OpenGL.Gl.FramebufferTexture2D.html
+- api3: GlGenBuffers
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGenBuffers
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L122
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGenBuffers
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGenBuffers
+- markdown: The gen buffers
+- code: public static GenBuffers GlGenBuffers { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GenBuffers
+      url: Alis.Core.Graphic.OpenGL.Delegates.GenBuffers.html
+- api3: GlGenFramebuffer
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGenFramebuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L314
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGenFramebuffer
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGenFramebuffer
+- markdown: Gets the value of the gl gen framebuffer
+- code: public static Gl.GenFramebuffer GlGenFramebuffer { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Gl
+      url: Alis.Core.Graphic.OpenGL.Gl.html
+    - .
+    - text: GenFramebuffer
+      url: Alis.Core.Graphic.OpenGL.Gl.GenFramebuffer.html
+- api3: GlGenTextures
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGenTextures
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L414
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGenTextures
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGenTextures
+- markdown: The gen textures
+- code: public static GenTextures GlGenTextures { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GenTextures
+      url: Alis.Core.Graphic.OpenGL.Delegates.GenTextures.html
+- api3: GlGenVertexArrays
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGenVertexArrays
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L409
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGenVertexArrays
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGenVertexArrays
+- markdown: The gen vertex arrays
+- code: public static GenVertexArrays GlGenVertexArrays { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GenVertexArrays
+      url: Alis.Core.Graphic.OpenGL.Delegates.GenVertexArrays.html
+- api3: GlGetActiveAttrib
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetActiveAttrib
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L268
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetActiveAttrib
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGetActiveAttrib
+- markdown: The get active attrib
+- code: public static GetActiveAttrib GlGetActiveAttrib { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GetActiveAttrib
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetActiveAttrib.html
+- api3: GlGetActiveUniform
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetActiveUniform
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L273
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetActiveUniform
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGetActiveUniform
+- markdown: The get active uniform
+- code: public static GetActiveUniform GlGetActiveUniform { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GetActiveUniform
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetActiveUniform.html
+- api3: GlGetAttribLocation
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetAttribLocation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L253
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetAttribLocation
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGetAttribLocation
+- markdown: The get attrib location
+- code: public static GetAttribLocation GlGetAttribLocation { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GetAttribLocation
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetAttribLocation.html
+- api3: GlGetErrorDelegate
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetErrorDelegate
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L454
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetErrorDelegate
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGetErrorDelegate
+- markdown: Gets the value of glGetError
+- code: internal static Gl.GetError GlGetErrorDelegate { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Gl
+      url: Alis.Core.Graphic.OpenGL.Gl.html
+    - .
+    - text: GetError
+      url: Alis.Core.Graphic.OpenGL.Gl.GetError.html
+- api3: GlGetIntegerV
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetIntegerV
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L132
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetIntegerV
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGetIntegerV
+- markdown: Gets the value of the gl get integer v
+- code: public static Gl.GetIntegerv GlGetIntegerV { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Gl
+      url: Alis.Core.Graphic.OpenGL.Gl.html
+    - .
+    - text: GetIntegerv
+      url: Alis.Core.Graphic.OpenGL.Gl.GetIntegerv.html
+- api3: GlGetProgramInfoLog
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetProgramInfoLog
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L228
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetProgramInfoLog
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGetProgramInfoLog
+- markdown: The get program info log del
+- code: public static GetProgramInfoLogDel GlGetProgramInfoLog { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GetProgramInfoLogDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetProgramInfoLogDel.html
+- api3: GlGetProgramiv
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetProgramiv
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L223
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetProgramiv
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGetProgramiv
+- markdown: The get programiv
+- code: public static GetProgramiv GlGetProgramiv { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GetProgramiv
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetProgramiv.html
+- api3: GlGetShaderInfoLog
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetShaderInfoLog
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L193
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetShaderInfoLog
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGetShaderInfoLog
+- markdown: The get shader info log del
+- code: public static GetShaderInfoLogDel GlGetShaderInfoLog { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GetShaderInfoLogDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetShaderInfoLogDel.html
+- api3: GlGetShaderIv
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetShaderIv
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L188
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetShaderIv
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGetShaderIv
+- markdown: The get shader
+- code: public static GetShaderiv GlGetShaderIv { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GetShaderiv
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetShaderiv.html
+- api3: GlGetUniformLocation
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetUniformLocation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L248
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetUniformLocation
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlGetUniformLocation
+- markdown: The get uniform location
+- code: public static GetUniformLocation GlGetUniformLocation { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GetUniformLocation
+      url: Alis.Core.Graphic.OpenGL.Delegates.GetUniformLocation.html
+- api3: GlLineWidthDelegate
+  id: Alis_Core_Graphic_OpenGL_Gl_GlLineWidthDelegate
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L459
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlLineWidthDelegate
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlLineWidthDelegate
+- markdown: Gets the value of the gl line width delegate
+- code: public static Gl.LineWidth GlLineWidthDelegate { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Gl
+      url: Alis.Core.Graphic.OpenGL.Gl.html
+    - .
+    - text: LineWidth
+      url: Alis.Core.Graphic.OpenGL.Gl.LineWidth.html
+- api3: GlLinkProgram
+  id: Alis_Core_Graphic_OpenGL_Gl_GlLinkProgram
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L243
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlLinkProgram
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlLinkProgram
+- markdown: The link program
+- code: public static LinkProgram GlLinkProgram { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: LinkProgram
+      url: Alis.Core.Graphic.OpenGL.Delegates.LinkProgram.html
+- api3: GlPixelStorei
+  id: Alis_Core_Graphic_OpenGL_Gl_GlPixelStorei
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L419
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlPixelStorei
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlPixelStorei
+- markdown: The pixel storei
+- code: public static Storei GlPixelStorei { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Storei
+      url: Alis.Core.Graphic.OpenGL.Delegates.Storei.html
+- api3: GlPolygonMode
+  id: Alis_Core_Graphic_OpenGL_Gl_GlPolygonMode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L449
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlPolygonMode
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlPolygonMode
+- markdown: The polygon mode
+- code: public static PolygonMode GlPolygonMode { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: PolygonMode
+      url: Alis.Core.Graphic.OpenGL.Delegates.PolygonMode.html
+- api3: GlReadPixels
+  id: Alis_Core_Graphic_OpenGL_Gl_GlReadPixels
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L308
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlReadPixels
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlReadPixels
+- markdown: Gets the value of the gl read pixels
+- code: public static Gl.ReadPixels GlReadPixels { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Gl
+      url: Alis.Core.Graphic.OpenGL.Gl.html
+    - .
+    - text: ReadPixels
+      url: Alis.Core.Graphic.OpenGL.Gl.ReadPixels.html
+- api3: GlScissor
+  id: Alis_Core_Graphic_OpenGL_Gl_GlScissor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L394
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlScissor
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlScissor
+- markdown: The scissor
+- code: public static Scissor GlScissor { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Scissor
+      url: Alis.Core.Graphic.OpenGL.Delegates.Scissor.html
+- api3: GlShaderSource
+  id: Alis_Core_Graphic_OpenGL_Gl_GlShaderSource
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L208
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlShaderSource
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlShaderSource
+- markdown: The shader source del
+- code: public static ShaderSourceDel GlShaderSource { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ShaderSourceDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.ShaderSourceDel.html
+- api3: GlTexCoord2F
+  id: Alis_Core_Graphic_OpenGL_Gl_GlTexCoord2F
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L359
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlTexCoord2F
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlTexCoord2F
+- markdown: Gets the value of the gl tex coord 2 f
+- code: public static TexCoord2F GlTexCoord2F { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: TexCoord2F
+      url: Alis.Core.Graphic.OpenGL.Delegates.TexCoord2F.html
+- api3: GlTexImage2D
+  id: Alis_Core_Graphic_OpenGL_Gl_GlTexImage2D
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L424
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlTexImage2D
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlTexImage2D
+- markdown: The tex image
+- code: public static TexImage2D GlTexImage2D { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: TexImage2D
+      url: Alis.Core.Graphic.OpenGL.Delegates.TexImage2D.html
+- api3: GlTexParameteri
+  id: Alis_Core_Graphic_OpenGL_Gl_GlTexParameteri
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L429
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlTexParameteri
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlTexParameteri
+- markdown: The tex parameteri
+- code: public static TexParameteri GlTexParameteri { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: TexParameteri
+      url: Alis.Core.Graphic.OpenGL.Delegates.TexParameteri.html
+- api3: GlUniform1F
+  id: Alis_Core_Graphic_OpenGL_Gl_GlUniform1F
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L278
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlUniform1F
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlUniform1F
+- markdown: The uniform 1f
+- code: public static Uniform1F GlUniform1F { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Uniform1F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform1F.html
+- api3: GlUniform1I
+  id: Alis_Core_Graphic_OpenGL_Gl_GlUniform1I
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L298
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlUniform1I
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlUniform1I
+- markdown: The uniform 1i
+- code: public static Uniform1I GlUniform1I { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Uniform1I
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform1I.html
+- api3: GlUniform2F
+  id: Alis_Core_Graphic_OpenGL_Gl_GlUniform2F
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L283
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlUniform2F
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlUniform2F
+- markdown: The uniform 2f
+- code: public static Uniform2F GlUniform2F { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Uniform2F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform2F.html
+- api3: GlUniform3F
+  id: Alis_Core_Graphic_OpenGL_Gl_GlUniform3F
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L288
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlUniform3F
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlUniform3F
+- markdown: The uniform 3f
+- code: public static Uniform3F GlUniform3F { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Uniform3F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform3F.html
+- api3: GlUniform3Fv
+  id: Alis_Core_Graphic_OpenGL_Gl_GlUniform3Fv
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L303
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlUniform3Fv
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlUniform3Fv
+- markdown: The uniform 3fv
+- code: private static Uniform3Fv GlUniform3Fv { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Uniform3Fv
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform3Fv.html
+- api3: GlUniform4F
+  id: Alis_Core_Graphic_OpenGL_Gl_GlUniform4F
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L293
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlUniform4F
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlUniform4F
+- markdown: The uniform 4f
+- code: public static Uniform4F GlUniform4F { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Uniform4F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform4F.html
+- api3: GlUniform4Fv
+  id: Alis_Core_Graphic_OpenGL_Gl_GlUniform4Fv
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L324
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlUniform4Fv
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlUniform4Fv
+- markdown: The uniform 4fv
+- code: private static Uniform4Fv GlUniform4Fv { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Uniform4Fv
+      url: Alis.Core.Graphic.OpenGL.Delegates.Uniform4Fv.html
+- api3: GlUniformMatrix3Fv
+  id: Alis_Core_Graphic_OpenGL_Gl_GlUniformMatrix3Fv
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L329
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlUniformMatrix3Fv
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlUniformMatrix3Fv
+- markdown: The uniform matrix 3fv del
+- code: public static UniformMatrix3FvDel GlUniformMatrix3Fv { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: UniformMatrix3FvDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.UniformMatrix3FvDel.html
+- api3: GlUniformMatrix4Fv
+  id: Alis_Core_Graphic_OpenGL_Gl_GlUniformMatrix4Fv
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L334
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlUniformMatrix4Fv
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlUniformMatrix4Fv
+- markdown: The uniform matrix 4fv del
+- code: public static UniformMatrix4FvDel GlUniformMatrix4Fv { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: UniformMatrix4FvDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.UniformMatrix4FvDel.html
+- api3: GlUseProgram
+  id: Alis_Core_Graphic_OpenGL_Gl_GlUseProgram
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L183
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlUseProgram
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlUseProgram
+- markdown: The use program
+- code: public static UseProgram GlUseProgram { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: UseProgram
+      url: Alis.Core.Graphic.OpenGL.Delegates.UseProgram.html
+- api3: GlVertex2F
+  id: Alis_Core_Graphic_OpenGL_Gl_GlVertex2F
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L354
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlVertex2F
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlVertex2F
+- markdown: The vertex 2f
+- code: public static Vertex2F GlVertex2F { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Vertex2F
+      url: Alis.Core.Graphic.OpenGL.Delegates.Vertex2F.html
+- api3: GlVertexAttribPointer
+  id: Alis_Core_Graphic_OpenGL_Gl_GlVertexAttribPointer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L374
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlVertexAttribPointer
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlVertexAttribPointer
+- markdown: The vertex attrib pointer del
+- code: public static VertexAttribPointerDel GlVertexAttribPointer { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: VertexAttribPointerDel
+      url: Alis.Core.Graphic.OpenGL.Delegates.VertexAttribPointerDel.html
+- api3: GlViewport
+  id: Alis_Core_Graphic_OpenGL_Gl_GlViewport
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L137
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlViewport
+    commentId: P:Alis.Core.Graphic.OpenGL.Gl.GlViewport
+- markdown: The viewport
+- code: public static Viewport GlViewport { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Viewport
+      url: Alis.Core.Graphic.OpenGL.Delegates.Viewport.html
+- h2: Methods
+- api3: DeleteBuffer(uint)
+  id: Alis_Core_Graphic_OpenGL_Gl_DeleteBuffer_System_UInt32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L539
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.DeleteBuffer(System.UInt32)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.DeleteBuffer(System.UInt32)
+- markdown: Deletes the buffer using the specified buffer
+- code: public static void DeleteBuffer(uint buffer)
+- h4: Parameters
+- parameters:
+  - name: buffer
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The buffer
+- api3: DeleteTexture(uint)
+  id: Alis_Core_Graphic_OpenGL_Gl_DeleteTexture_System_UInt32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L713
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.DeleteTexture(System.UInt32)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.DeleteTexture(System.UInt32)
+- markdown: Deletes the texture using the specified texture
+- code: public static void DeleteTexture(uint texture)
+- h4: Parameters
+- parameters:
+  - name: texture
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The texture
+- api3: DeleteVertexArray(uint)
+  id: Alis_Core_Graphic_OpenGL_Gl_DeleteVertexArray_System_UInt32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L692
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.DeleteVertexArray(System.UInt32)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.DeleteVertexArray(System.UInt32)
+- markdown: Deletes the vertex array using the specified vao
+- code: public static void DeleteVertexArray(uint vao)
+- h4: Parameters
+- parameters:
+  - name: vao
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The vao
+- api3: EnableVertexAttribArray(int)
+  id: Alis_Core_Graphic_OpenGL_Gl_EnableVertexAttribArray_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L667
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.EnableVertexAttribArray(System.Int32)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.EnableVertexAttribArray(System.Int32)
+- markdown: Enables the vertex attrib array using the specified index
+- code: public static void EnableVertexAttribArray(int index)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: ''
+- api3: GenBuffer()
+  id: Alis_Core_Graphic_OpenGL_Gl_GenBuffer
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L528
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GenBuffer
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GenBuffer
+- markdown: Gens the buffer
+- code: public static uint GenBuffer()
+- h4: Returns
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The uint
+- api3: GenTexture()
+  id: Alis_Core_Graphic_OpenGL_Gl_GenTexture
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L702
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GenTexture
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GenTexture
+- markdown: Gens the texture
+- code: public static uint GenTexture()
+- h4: Returns
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The uint
+- api3: GenVertexArray()
+  id: Alis_Core_Graphic_OpenGL_Gl_GenVertexArray
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L681
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GenVertexArray
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GenVertexArray
+- markdown: Gens the vertex array
+- code: public static uint GenVertexArray()
+- h4: Returns
+- parameters:
+  - type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The uint
+- api3: GenerateMipmap(TextureTarget)
+  id: Alis_Core_Graphic_OpenGL_Gl_GenerateMipmap_Alis_Core_Graphic_OpenGL_Enums_TextureTarget_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L723
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GenerateMipmap(Alis.Core.Graphic.OpenGL.Enums.TextureTarget)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GenerateMipmap(Alis.Core.Graphic.OpenGL.Enums.TextureTarget)
+- markdown: Generates the mipmap using the specified texture 2 d
+- code: public static void GenerateMipmap(TextureTarget texture2D)
+- h4: Parameters
+- parameters:
+  - name: texture2D
+    type:
+    - text: TextureTarget
+      url: Alis.Core.Graphic.OpenGL.Enums.TextureTarget.html
+    description: The texture
+- api3: GetCommand<T>(string)
+  id: Alis_Core_Graphic_OpenGL_Gl_GetCommand__1_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L483
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GetCommand``1(System.String)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GetCommand``1(System.String)
+- markdown: Gets the command using the specified command
+- code: 'private static T GetCommand<T>(string command) where T : class'
+- h4: Parameters
+- parameters:
+  - name: command
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The command
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: Inicialize called before Initialize
+  - type:
+    - text: ExternalException
+      url: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.externalexception
+    description: '{command} from {typeof(T).Name}'
+- api3: GetProgramInfoLog(uint)
+  id: Alis_Core_Graphic_OpenGL_Gl_GetProgramInfoLog_System_UInt32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L591
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GetProgramInfoLog(System.UInt32)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GetProgramInfoLog(System.UInt32)
+- markdown: Gets the program info log using the specified program
+- code: public static string GetProgramInfoLog(uint program)
+- h4: Parameters
+- parameters:
+  - name: program
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The program
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+- api3: GetProgramLinkStatus(uint)
+  id: Alis_Core_Graphic_OpenGL_Gl_GetProgramLinkStatus_System_UInt32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L609
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GetProgramLinkStatus(System.UInt32)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GetProgramLinkStatus(System.UInt32)
+- markdown: Describes whether get program link status
+- code: public static bool GetProgramLinkStatus(uint program)
+- h4: Parameters
+- parameters:
+  - name: program
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The program
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: GetShaderCompileStatus(uint)
+  id: Alis_Core_Graphic_OpenGL_Gl_GetShaderCompileStatus_System_UInt32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L580
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GetShaderCompileStatus(System.UInt32)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GetShaderCompileStatus(System.UInt32)
+- markdown: Describes whether get shader compile status
+- code: public static bool GetShaderCompileStatus(uint shader)
+- h4: Parameters
+- parameters:
+  - name: shader
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The shader
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: GetShaderInfoLog(uint)
+  id: Alis_Core_Graphic_OpenGL_Gl_GetShaderInfoLog_System_UInt32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L551
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GetShaderInfoLog(System.UInt32)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GetShaderInfoLog(System.UInt32)
+- markdown: Gets the shader info log using the specified shader
+- code: public static string GetShaderInfoLog(uint shader)
+- h4: Parameters
+- parameters:
+  - name: shader
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The shader
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+- api3: GlActiveTexture(TextureUnit)
+  id: Alis_Core_Graphic_OpenGL_Gl_GlActiveTexture_Alis_Core_Graphic_OpenGL_Enums_TextureUnit_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L744
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlActiveTexture(Alis.Core.Graphic.OpenGL.Enums.TextureUnit)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GlActiveTexture(Alis.Core.Graphic.OpenGL.Enums.TextureUnit)
+- markdown: Gls the active texture using the specified texture
+- code: public static void GlActiveTexture(TextureUnit texture)
+- h4: Parameters
+- parameters:
+  - name: texture
+    type:
+    - text: TextureUnit
+      url: Alis.Core.Graphic.OpenGL.Enums.TextureUnit.html
+    description: The texture
+- api3: GlGetError()
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetError
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L729
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetError
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GlGetError
+- markdown: Gets the last error from OpenGL
+- code: public static int GlGetError()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: Error code
+- api3: GlGetIntegerv(int, int[])
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetIntegerv_System_Int32_System_Int32___
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L754
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetIntegerv(System.Int32,System.Int32[])
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GlGetIntegerv(System.Int32,System.Int32[])
+- markdown: Gls the get integerv using the specified i
+- code: public static void GlGetIntegerv(int i, int[] viewport)
+- h4: Parameters
+- parameters:
+  - name: i
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+  - name: viewport
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '['
+    - ']'
+    description: The viewport
+- api3: GlGetProgram(uint, object, out int)
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetProgram_System_UInt32_System_Object_System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L778
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetProgram(System.UInt32,System.Object,System.Int32@)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GlGetProgram(System.UInt32,System.Object,System.Int32@)
+- markdown: Gls the get program using the specified shader program
+- code: public static void GlGetProgram(uint shaderProgram, object linkStatus, out int res)
+- h4: Parameters
+- parameters:
+  - name: shaderProgram
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The shader program
+  - name: linkStatus
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The link status
+  - name: res
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The res
+- api3: GlGetShader(uint, object, out int)
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetShader_System_UInt32_System_Object_System_Int32__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L766
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetShader(System.UInt32,System.Object,System.Int32@)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GlGetShader(System.UInt32,System.Object,System.Int32@)
+- markdown: Gls the get shader using the specified vertex shader
+- code: public static void GlGetShader(uint vertexShader, object compileStatus, out int i)
+- h4: Parameters
+- parameters:
+  - name: vertexShader
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The vertex shader
+  - name: compileStatus
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The compile status
+  - name: i
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+- api3: GlGetString(StringName)
+  id: Alis_Core_Graphic_OpenGL_Gl_GlGetString_Alis_Core_Graphic_OpenGL_Enums_StringName_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L504
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlGetString(Alis.Core.Graphic.OpenGL.Enums.StringName)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GlGetString(Alis.Core.Graphic.OpenGL.Enums.StringName)
+- markdown: Gls the get string using the specified pname
+- code: public static string GlGetString(StringName pname)
+- h4: Parameters
+- parameters:
+  - name: pname
+    type:
+    - text: StringName
+      url: Alis.Core.Graphic.OpenGL.Enums.StringName.html
+    description: The pname
+- h4: Returns
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The string
+- api3: GlLineWidth(float)
+  id: Alis_Core_Graphic_OpenGL_Gl_GlLineWidth_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L735
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlLineWidth(System.Single)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GlLineWidth(System.Single)
+- markdown: Gls the line width using the specified width
+- code: public static void GlLineWidth(float width)
+- h4: Parameters
+- parameters:
+  - name: width
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The width
+- api3: GlUniformMatrix2x3(int, bool, Span<float>)
+  id: Alis_Core_Graphic_OpenGL_Gl_GlUniformMatrix2x3_System_Int32_System_Boolean_System_Span_System_Single__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L790
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.GlUniformMatrix2x3(System.Int32,System.Boolean,System.Span{System.Single})
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.GlUniformMatrix2x3(System.Int32,System.Boolean,System.Span{System.Single})
+- markdown: Gls the uniform matrix 2x 3 using the specified view projection location
+- code: public static void GlUniformMatrix2x3(int viewProjectionLocation, bool b, Span<float> matrix)
+- h4: Parameters
+- parameters:
+  - name: viewProjectionLocation
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The view projection location
+  - name: b
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The
+  - name: matrix
+    type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    - '>'
+    description: The matrix
+- api3: Initialize(GetProcAddressDelegate)
+  id: Alis_Core_Graphic_OpenGL_Gl_Initialize_Alis_Core_Graphic_OpenGL_Gl_GetProcAddressDelegate_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L470
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.Initialize(Alis.Core.Graphic.OpenGL.Gl.GetProcAddressDelegate)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.Initialize(Alis.Core.Graphic.OpenGL.Gl.GetProcAddressDelegate)
+- markdown: Initializes the get proc address
+- code: public static void Initialize(Gl.GetProcAddressDelegate getProcAddress)
+- h4: Parameters
+- parameters:
+  - name: getProcAddress
+    type:
+    - text: Gl
+      url: Alis.Core.Graphic.OpenGL.Gl.html
+    - .
+    - text: GetProcAddressDelegate
+      url: Alis.Core.Graphic.OpenGL.Gl.GetProcAddressDelegate.html
+    description: The get proc address
+- api3: ShaderSource(uint, string)
+  id: Alis_Core_Graphic_OpenGL_Gl_ShaderSource_System_UInt32_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L569
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.ShaderSource(System.UInt32,System.String)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.ShaderSource(System.UInt32,System.String)
+- markdown: Shaders the source using the specified shader
+- code: public static void ShaderSource(uint shader, string source)
+- h4: Parameters
+- parameters:
+  - name: shader
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+    description: The shader
+  - name: source
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The source
+- api3: UniformMatrix4Fv(int, Matrix4X4)
+  id: Alis_Core_Graphic_OpenGL_Gl_UniformMatrix4Fv_System_Int32_Alis_Core_Aspect_Math_Matrix_Matrix4X4_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L620
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.UniformMatrix4Fv(System.Int32,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.UniformMatrix4Fv(System.Int32,Alis.Core.Aspect.Math.Matrix.Matrix4X4)
+- markdown: Uniforms the matrix 4fv using the specified location
+- code: public static void UniformMatrix4Fv(int location, Matrix4X4 param)
+- h4: Parameters
+- parameters:
+  - name: location
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The location
+  - name: param
+    type:
+    - text: Matrix4X4
+      url: Alis.Core.Aspect.Math.Matrix.Matrix4X4.html
+    description: The param
+- api3: VertexAttribPointer(int, int, VertexAttribPointerType, bool, int, nint)
+  id: Alis_Core_Graphic_OpenGL_Gl_VertexAttribPointer_System_Int32_System_Int32_Alis_Core_Graphic_OpenGL_Enums_VertexAttribPointerType_System_Boolean_System_Int32_System_IntPtr_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Gl.cs#L652
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Gl.VertexAttribPointer(System.Int32,System.Int32,Alis.Core.Graphic.OpenGL.Enums.VertexAttribPointerType,System.Boolean,System.Int32,System.IntPtr)
+    commentId: M:Alis.Core.Graphic.OpenGL.Gl.VertexAttribPointer(System.Int32,System.Int32,Alis.Core.Graphic.OpenGL.Enums.VertexAttribPointerType,System.Boolean,System.Int32,System.IntPtr)
+- markdown: Vertexes the attrib pointer using the specified index
+- code: public static void VertexAttribPointer(int index, int size, VertexAttribPointerType type, bool normalized, int stride, nint pointer)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+  - name: size
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The size
+  - name: type
+    type:
+    - text: VertexAttribPointerType
+      url: Alis.Core.Graphic.OpenGL.Enums.VertexAttribPointerType.html
+    description: The type
+  - name: normalized
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The normalized
+  - name: stride
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The stride
+  - name: pointer
+    type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+    description: The pointer
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: ''
+languageId: csharp
+metadata:
+  description: The gl class

@@ -1,0 +1,418 @@
+### YamlMime:ApiPage
+title: Struct ComponentHandle
+body:
+- api1: Struct ComponentHandle
+  id: Alis_Core_Ecs_Kernel_ComponentHandle
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle
+    commentId: T:Alis.Core.Ecs.Kernel.ComponentHandle
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel
+      url: Alis.Core.Ecs.Kernel.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: A handle to a component of any type. Useful to avoid boxing.
+- code: 'public readonly struct ComponentHandle : IEquatable<ComponentHandle>, IDisposable'
+- h4: Implements
+- list:
+  - text: IEquatable<ComponentHandle>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Must be disposed. The handle must also not be used afterwards.
+
+    Memory layout optimized: 6 bytes total (int 4 bytes + ComponentId 2 bytes)
+
+    Pack = 1 for minimal memory footprint
+
+    Readonly struct for immutability and potential compiler optimizations
+- h2: Constructors
+- api3: ComponentHandle(int, ComponentId)
+  id: Alis_Core_Ecs_Kernel_ComponentHandle__ctor_System_Int32_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L71
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.#ctor(System.Int32,Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.#ctor(System.Int32,Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref> class
+- code: internal ComponentHandle(int index, ComponentId componentId)
+- h4: Parameters
+- parameters:
+  - name: index
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The index
+  - name: componentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The component id
+- h2: Fields
+- api3: _componentType
+  id: Alis_Core_Ecs_Kernel_ComponentHandle__componentType
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L63
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle._componentType
+    commentId: F:Alis.Core.Ecs.Kernel.ComponentHandle._componentType
+- markdown: The component type
+- code: private readonly ComponentId _componentType
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+- api3: _index
+  id: Alis_Core_Ecs_Kernel_ComponentHandle__index
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L58
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle._index
+    commentId: F:Alis.Core.Ecs.Kernel.ComponentHandle._index
+- markdown: The index
+- code: private readonly int _index
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Properties
+- api3: ComponentId
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_ComponentId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L193
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.ComponentId
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentHandle.ComponentId
+- markdown: The <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref> of the component represented by this <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref>.
+- code: public ComponentId ComponentId { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+- api3: DebuggerDisplayString
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_DebuggerDisplayString
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.DebuggerDisplayString
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentHandle.DebuggerDisplayString
+- markdown: Gets the value of the debugger display string
+- code: internal string DebuggerDisplayString { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Index
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_Index
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L204
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.Index
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentHandle.Index
+- markdown: Gets the value of the index
+- code: internal int Index { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: ParentTable
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_ParentTable
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L209
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.ParentTable
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentHandle.ParentTable
+- markdown: Gets the value of the parent table
+- code: internal IdTable ParentTable { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: IdTable
+      url: Alis.Core.Ecs.Collections.IdTable.html
+- api3: Type
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_Type
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L188
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.Type
+    commentId: P:Alis.Core.Ecs.Kernel.ComponentHandle.Type
+- markdown: The type of component represented by this <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref>.
+- code: public Type Type { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+- h2: Methods
+- api3: Create<T>(in T)
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_Create__1___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L83
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.Create``1(``0@)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.Create``1(``0@)
+- markdown: Creates a new <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref> from a component.
+- code: public static ComponentHandle Create<T>(in T comp)
+- h4: Parameters
+- parameters:
+  - name: comp
+    type:
+    - T
+    description: The component to store.
+- h4: Returns
+- parameters:
+  - type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    description: A <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref> instance that can be used to retrieve <code class="paramref">comp</code>.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of component to store.
+- api3: CreateFromBoxed(ComponentId, object)
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_CreateFromBoxed_Alis_Core_Ecs_Kernel_ComponentId_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L96
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.CreateFromBoxed(Alis.Core.Ecs.Kernel.ComponentId,System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.CreateFromBoxed(Alis.Core.Ecs.Kernel.ComponentId,System.Object)
+- markdown: Creates a new <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref> from a potentially boxed component.
+- code: public static ComponentHandle CreateFromBoxed(ComponentId typeAs, object @object)
+- h4: Parameters
+- parameters:
+  - name: typeAs
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The type to store the component as.
+  - name: object
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The potentially boxed component to store.
+- h4: Returns
+- parameters:
+  - type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    description: A <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref> instance that can be used to retrieve <code class="paramref">object</code>.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidCastException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+    description: <code class="paramref">object</code> is not of <code class="paramref">typeAs.Type.Type</code>
+- api3: CreateFromBoxed(object)
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_CreateFromBoxed_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L107
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.CreateFromBoxed(System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.CreateFromBoxed(System.Object)
+- markdown: Creates a new <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref> from a potentially boxed component.
+- code: public static ComponentHandle CreateFromBoxed(object @object)
+- h4: Parameters
+- parameters:
+  - name: object
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The potentially boxed component to store.
+- h4: Returns
+- parameters:
+  - type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    description: A <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref> instance that can be used to retrieve <code class="paramref">object</code>.
+- api3: Dispose()
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L150
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.Dispose
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.Dispose
+- markdown: Frees the memory associated with this component handle and marks it for reuse.
+- code: public void Dispose()
+- h4: Remarks
+- markdown: >-
+    It is very easy to leak memory by improperly disposing of <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref> instances. The handle
+
+    does not check for double disposes.
+- api3: Equals(ComponentHandle)
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_Equals_Alis_Core_Ecs_Kernel_ComponentHandle_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L160
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.Equals(Alis.Core.Ecs.Kernel.ComponentHandle)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.Equals(Alis.Core.Ecs.Kernel.ComponentHandle)
+- markdown: Checks if a <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref> is equal to this handle and so points to the same component.
+- code: public bool Equals(ComponentHandle other)
+- h4: Parameters
+- parameters:
+  - name: other
+    type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    description: The <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref> to compare to.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when they are equal, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+- api3: Equals(object)
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_Equals_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L167
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.Equals(System.Object)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.Equals(System.Object)
+- markdown: Checks if an object is equal to this component handle and points to the same component.
+- code: public override bool Equals(object obj)
+- h4: Parameters
+- parameters:
+  - name: obj
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object to check.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when they are equal, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+- api3: GetHashCode()
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_GetHashCode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L199
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.GetHashCode
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.GetHashCode
+- markdown: The hashcode.
+- code: public override int GetHashCode()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The hashcode -_-.
+- api3: InvokeComponentEventAndConsume(GameObject, GenericEvent)
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_InvokeComponentEventAndConsume_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Events_GenericEvent_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L138
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.InvokeComponentEventAndConsume(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.Kernel.Events.GenericEvent)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.InvokeComponentEventAndConsume(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.Kernel.Events.GenericEvent)
+- markdown: Invokes the component event and consume using the specified gameObject
+- code: internal void InvokeComponentEventAndConsume(GameObject gameObject, GenericEvent e)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: e
+    type:
+    - text: GenericEvent
+      url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+    description: The event
+- api3: Retrieve<T>()
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_Retrieve__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L117
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.Retrieve``1
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.Retrieve``1
+- markdown: Gets the value of this component strongly typed.
+- code: public T Retrieve<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The component value.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: >-
+      The type of the component. <xref href="Alis.Core.Ecs.Kernel.Component%601.Id" data-throw-if-not-resolved="false"></xref> should be equal to
+
+      <xref href="Alis.Core.Ecs.Kernel.ComponentHandle.ComponentId" data-throw-if-not-resolved="false"></xref>
+- api3: RetrieveBoxed()
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_RetrieveBoxed
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L131
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.RetrieveBoxed
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.RetrieveBoxed
+- markdown: Gets the value of the component represented bu this <xref href="Alis.Core.Ecs.Kernel.ComponentHandle" data-throw-if-not-resolved="false"></xref>, boxing if needed.
+- code: public object RetrieveBoxed()
+- h4: Returns
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The component value.
+- h2: Operators
+- api3: operator ==(ComponentHandle, ComponentHandle)
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_op_Equality_Alis_Core_Ecs_Kernel_ComponentHandle_Alis_Core_Ecs_Kernel_ComponentHandle_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L175
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.op_Equality(Alis.Core.Ecs.Kernel.ComponentHandle,Alis.Core.Ecs.Kernel.ComponentHandle)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.op_Equality(Alis.Core.Ecs.Kernel.ComponentHandle,Alis.Core.Ecs.Kernel.ComponentHandle)
+- markdown: Checks if two component handles point to the same component.
+- code: public static bool operator ==(ComponentHandle left, ComponentHandle right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    description: The first component handle.
+  - name: right
+    type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    description: The second component handle.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when they are equal, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+- api3: operator !=(ComponentHandle, ComponentHandle)
+  id: Alis_Core_Ecs_Kernel_ComponentHandle_op_Inequality_Alis_Core_Ecs_Kernel_ComponentHandle_Alis_Core_Ecs_Kernel_ComponentHandle_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/ComponentHandle.cs#L183
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.ComponentHandle.op_Inequality(Alis.Core.Ecs.Kernel.ComponentHandle,Alis.Core.Ecs.Kernel.ComponentHandle)
+    commentId: M:Alis.Core.Ecs.Kernel.ComponentHandle.op_Inequality(Alis.Core.Ecs.Kernel.ComponentHandle,Alis.Core.Ecs.Kernel.ComponentHandle)
+- markdown: Checks if two component handles do not point to the same component.
+- code: public static bool operator !=(ComponentHandle left, ComponentHandle right)
+- h4: Parameters
+- parameters:
+  - name: left
+    type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    description: The first component handle.
+  - name: right
+    type:
+    - text: ComponentHandle
+      url: Alis.Core.Ecs.Kernel.ComponentHandle.html
+    description: The second component handle.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when they are not equal, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+languageId: csharp
+metadata:
+  description: A handle to a component of any type. Useful to avoid boxing.

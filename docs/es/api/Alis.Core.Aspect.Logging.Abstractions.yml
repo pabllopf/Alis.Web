@@ -1,0 +1,63 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Logging.Abstractions
+body:
+- api1: Namespace Alis.Core.Aspect.Logging.Abstractions
+  id: Alis_Core_Aspect_Logging_Abstractions
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions
+    commentId: N:Alis.Core.Aspect.Logging.Abstractions
+- h3: Interfaces
+- parameters:
+  - type:
+      text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: >-
+      Represents a single log entry with all relevant contextual information.
+
+      This interface defines the contract for log data passed through the logging system.
+  - type:
+      text: ILogFilter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFilter.html
+    description: >-
+      Determines whether a log entry should be processed and written.
+
+      Filters allow fine-grained control over which logs are captured.
+
+      AOT-compatible: No reflection, pure functional filtering.
+  - type:
+      text: ILogFormatter
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogFormatter.html
+    description: >-
+      Formats log entries into a string representation suitable for output.
+
+      Different formatters can produce different output styles (JSON, plain text, etc.).
+
+      AOT-compatible: Uses StringBuilder, no reflection.
+  - type:
+      text: ILogOutput
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogOutput.html
+    description: >-
+      Represents a destination where log entries are written.
+
+      Implementations define how and where logs are persisted or displayed.
+
+      AOT-compatible: No reflection, no dynamic dispatch beyond virtuals.
+  - type:
+      text: ILogger
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogger.html
+    description: >-
+      Core logger interface for logging structured messages with various severity levels.
+
+      Implementations must be thread-safe and support dependency injection.
+
+      AOT-compatible: Uses interfaces and virtual dispatch only.
+- h3: Enums
+- parameters:
+  - type:
+      text: LogLevel
+      url: Alis.Core.Aspect.Logging.Abstractions.LogLevel.html
+    description: >-
+      Enumeration of log levels for categorizing log entries.
+
+      Follows standard logging severity levels from lowest to highest.
+languageId: csharp

@@ -1,0 +1,45 @@
+### YamlMime:ApiPage
+title: Delegate QueryDelegates.Query<T1, T2, T3, T4, T5>
+body:
+- api1: Delegate QueryDelegates.Query<T1, T2, T3, T4, T5>
+  id: Alis_Core_Ecs_Systems_QueryDelegates_Query_5
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryDelegates.cs#L62
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryDelegates.Query`5
+    commentId: T:Alis.Core.Ecs.Systems.QueryDelegates.Query`5
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The query
+- code: public delegate void QueryDelegates.Query<T1, T2, T3, T4, T5>(ref T1 comp1, ref T2 comp2, ref T3 comp3, ref T4 comp4, ref T5 comp5)
+- h4: Parameters
+- parameters:
+  - name: comp1
+    type:
+    - T1
+  - name: comp2
+    type:
+    - T2
+  - name: comp3
+    type:
+    - T3
+  - name: comp4
+    type:
+    - T4
+  - name: comp5
+    type:
+    - T5
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+languageId: csharp
+metadata:
+  description: The query

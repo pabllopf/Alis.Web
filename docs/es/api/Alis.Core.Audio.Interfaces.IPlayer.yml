@@ -46,7 +46,7 @@ body:
 - h2: Methods
 - api3: Pause()
   id: Alis_Core_Audio_Interfaces_IPlayer_Pause
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Interfaces/IPlayer.cs#L64
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Interfaces/IPlayer.cs#L71
   metadata:
     uid: Alis.Core.Audio.Interfaces.IPlayer.Pause
     commentId: M:Alis.Core.Audio.Interfaces.IPlayer.Pause
@@ -77,9 +77,34 @@ body:
   - type:
     - text: Task
       url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+- api3: PlayLoop(string, bool)
+  id: Alis_Core_Audio_Interfaces_IPlayer_PlayLoop_System_String_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Interfaces/IPlayer.cs#L66
+  metadata:
+    uid: Alis.Core.Audio.Interfaces.IPlayer.PlayLoop(System.String,System.Boolean)
+    commentId: M:Alis.Core.Audio.Interfaces.IPlayer.PlayLoop(System.String,System.Boolean)
+- markdown: Plays the loop using the specified file name
+- code: Task PlayLoop(string fileName, bool loop)
+- h4: Parameters
+- parameters:
+  - name: fileName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The file name
+  - name: loop
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The loop
+- h4: Returns
+- parameters:
+  - type:
+    - text: Task
+      url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
 - api3: Resume()
   id: Alis_Core_Audio_Interfaces_IPlayer_Resume
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Interfaces/IPlayer.cs#L69
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Interfaces/IPlayer.cs#L76
   metadata:
     uid: Alis.Core.Audio.Interfaces.IPlayer.Resume
     commentId: M:Alis.Core.Audio.Interfaces.IPlayer.Resume
@@ -92,7 +117,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
 - api3: SetVolume(byte)
   id: Alis_Core_Audio_Interfaces_IPlayer_SetVolume_System_Byte_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Interfaces/IPlayer.cs#L80
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Interfaces/IPlayer.cs#L87
   metadata:
     uid: Alis.Core.Audio.Interfaces.IPlayer.SetVolume(System.Byte)
     commentId: M:Alis.Core.Audio.Interfaces.IPlayer.SetVolume(System.Byte)
@@ -112,7 +137,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
 - api3: Stop()
   id: Alis_Core_Audio_Interfaces_IPlayer_Stop
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Interfaces/IPlayer.cs#L74
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Audio/src/Interfaces/IPlayer.cs#L81
   metadata:
     uid: Alis.Core.Audio.Interfaces.IPlayer.Stop
     commentId: M:Alis.Core.Audio.Interfaces.IPlayer.Stop

@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Systems.Configuration.General
+body:
+- api1: Namespace Alis.Core.Ecs.Systems.Configuration.General
+  id: Alis_Core_Ecs_Systems_Configuration_General
+  metadata:
+    uid: Alis.Core.Ecs.Systems.Configuration.General
+    commentId: N:Alis.Core.Ecs.Systems.Configuration.General
+- h3: Structs
+- parameters:
+  - type:
+      text: GeneralSetting
+      url: Alis.Core.Ecs.Systems.Configuration.General.GeneralSetting.html
+    description: The general setting class
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IGeneralSetting
+      url: Alis.Core.Ecs.Systems.Configuration.General.IGeneralSetting.html
+    description: The general setting interface
+languageId: csharp

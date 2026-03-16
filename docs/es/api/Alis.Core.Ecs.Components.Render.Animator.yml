@@ -1,0 +1,287 @@
+### YamlMime:ApiPage
+title: Struct Animator
+body:
+- api1: Struct Animator
+  id: Alis_Core_Ecs_Components_Render_Animator
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L40
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator
+    commentId: T:Alis.Core.Ecs.Components.Render.Animator
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Components.Render
+      url: Alis.Core.Ecs.Components.Render.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The animator
+- code: 'public struct Animator : IAnimator, IOnStart, IOnUpdate, IComponentBase, IHasContext<Context>, IOnExit'
+- h4: Implements
+- list:
+  - text: IAnimator
+    url: Alis.Core.Ecs.Components.Render.IAnimator.html
+  - text: IOnStart
+    url: Alis.Core.Aspect.Fluent.Components.IOnStart.html
+  - text: IOnUpdate
+    url: Alis.Core.Aspect.Fluent.Components.IOnUpdate.html
+  - text: IComponentBase
+    url: Alis.Core.Aspect.Fluent.Components.IComponentBase.html
+  - text: IHasContext<Context>
+    url: Alis.Core.Aspect.Fluent.Words.IHasContext-1.html
+  - text: IOnExit
+    url: Alis.Core.Aspect.Fluent.Components.IOnExit.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: Animator()
+  id: Alis_Core_Ecs_Components_Render_Animator__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L70
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.#ctor
+    commentId: M:Alis.Core.Ecs.Components.Render.Animator.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Components.Render.Animator" data-throw-if-not-resolved="false"></xref> class
+- code: public Animator()
+- api3: Animator(List<Animation>)
+  id: Alis_Core_Ecs_Components_Render_Animator__ctor_System_Collections_Generic_List_Alis_Core_Ecs_Components_Render_Animation__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L82
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.#ctor(System.Collections.Generic.List{Alis.Core.Ecs.Components.Render.Animation})
+    commentId: M:Alis.Core.Ecs.Components.Render.Animator.#ctor(System.Collections.Generic.List{Alis.Core.Ecs.Components.Render.Animation})
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Components.Render.Animator" data-throw-if-not-resolved="false"></xref> class
+- code: public Animator(List<Animation> animations)
+- h4: Parameters
+- parameters:
+  - name: animations
+    type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Animation
+      url: Alis.Core.Ecs.Components.Render.Animation.html
+    - '>'
+    description: The animations
+- h2: Fields
+- api3: _clock
+  id: Alis_Core_Ecs_Components_Render_Animator__clock
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator._clock
+    commentId: F:Alis.Core.Ecs.Components.Render.Animator._clock
+- markdown: The clock
+- code: private readonly Clock _clock
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Clock
+      url: Alis.Core.Aspect.Time.Clock.html
+- api3: _elapsedTime
+  id: Alis_Core_Ecs_Components_Render_Animator__elapsedTime
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L65
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator._elapsedTime
+    commentId: F:Alis.Core.Ecs.Components.Render.Animator._elapsedTime
+- markdown: The elapsed time
+- code: private float _elapsedTime
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Properties
+- api3: Animations
+  id: Alis_Core_Ecs_Components_Render_Animator_Animations
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L45
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.Animations
+    commentId: P:Alis.Core.Ecs.Components.Render.Animator.Animations
+- markdown: Gets or sets the value of the animations
+- code: public List<Animation> Animations { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: Animation
+      url: Alis.Core.Ecs.Components.Render.Animation.html
+    - '>'
+- api3: Context
+  id: Alis_Core_Ecs_Components_Render_Animator_Context
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L199
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.Context
+    commentId: P:Alis.Core.Ecs.Components.Render.Animator.Context
+- markdown: Gets or sets the value of the context
+- code: public Context Context { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Context
+      url: Alis.Core.Ecs.Systems.Scope.Context.html
+- api3: CurrentAnimation
+  id: Alis_Core_Ecs_Components_Render_Animator_CurrentAnimation
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L92
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.CurrentAnimation
+    commentId: P:Alis.Core.Ecs.Components.Render.Animator.CurrentAnimation
+- markdown: Gets the value of the current animation
+- code: public Animation CurrentAnimation { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Animation
+      url: Alis.Core.Ecs.Components.Render.Animation.html
+- api3: CurrentAnimationIndex
+  id: Alis_Core_Ecs_Components_Render_Animator_CurrentAnimationIndex
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.CurrentAnimationIndex
+    commentId: P:Alis.Core.Ecs.Components.Render.Animator.CurrentAnimationIndex
+- markdown: Gets or sets the value of the current animation index
+- code: public int CurrentAnimationIndex { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: CurrentFrameIndex
+  id: Alis_Core_Ecs_Components_Render_Animator_CurrentFrameIndex
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.CurrentFrameIndex
+    commentId: P:Alis.Core.Ecs.Components.Render.Animator.CurrentFrameIndex
+- markdown: Gets or sets the value of the current frame index
+- code: public int CurrentFrameIndex { readonly get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: AddAnimation(Animation)
+  id: Alis_Core_Ecs_Components_Render_Animator_AddAnimation_Alis_Core_Ecs_Components_Render_Animation_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L99
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.AddAnimation(Alis.Core.Ecs.Components.Render.Animation)
+    commentId: M:Alis.Core.Ecs.Components.Render.Animator.AddAnimation(Alis.Core.Ecs.Components.Render.Animation)
+- markdown: Adds the animation using the specified animation
+- code: public void AddAnimation(Animation animation)
+- h4: Parameters
+- parameters:
+  - name: animation
+    type:
+    - text: Animation
+      url: Alis.Core.Ecs.Components.Render.Animation.html
+    description: The animation
+- api3: DrawAnimation(ref Sprite)
+  id: Alis_Core_Ecs_Components_Render_Animator_DrawAnimation_Alis_Core_Ecs_Components_Render_Sprite__
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L186
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.DrawAnimation(Alis.Core.Ecs.Components.Render.Sprite@)
+    commentId: M:Alis.Core.Ecs.Components.Render.Animator.DrawAnimation(Alis.Core.Ecs.Components.Render.Sprite@)
+- markdown: Draws the animation using the specified sprite
+- code: public void DrawAnimation(ref Sprite sprite)
+- h4: Parameters
+- parameters:
+  - name: sprite
+    type:
+    - text: Sprite
+      url: Alis.Core.Ecs.Components.Render.Sprite.html
+    description: The sprite
+- api3: GetCurrentFrame()
+  id: Alis_Core_Ecs_Components_Render_Animator_GetCurrentFrame
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L134
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.GetCurrentFrame
+    commentId: M:Alis.Core.Ecs.Components.Render.Animator.GetCurrentFrame
+- markdown: Gets the current frame
+- code: public Frame GetCurrentFrame()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Frame
+      url: Alis.Core.Ecs.Components.Render.Frame.html
+    description: The frame
+- api3: NextFrame()
+  id: Alis_Core_Ecs_Components_Render_Animator_NextFrame
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L121
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.NextFrame
+    commentId: M:Alis.Core.Ecs.Components.Render.Animator.NextFrame
+- markdown: Nexts the frame
+- code: public void NextFrame()
+- api3: OnExit(IGameObject)
+  id: Alis_Core_Ecs_Components_Render_Animator_OnExit_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L205
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.OnExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Render.Animator.OnExit(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Ons the exit using the specified self
+- code: public void OnExit(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: OnStart(IGameObject)
+  id: Alis_Core_Ecs_Components_Render_Animator_OnStart_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L149
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.OnStart(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Render.Animator.OnStart(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Inits the self
+- code: public void OnStart(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: OnUpdate(IGameObject)
+  id: Alis_Core_Ecs_Components_Render_Animator_OnUpdate_Alis_Core_Aspect_Fluent_Components_IGameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L159
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.OnUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+    commentId: M:Alis.Core.Ecs.Components.Render.Animator.OnUpdate(Alis.Core.Aspect.Fluent.Components.IGameObject)
+- markdown: Updates the self
+- code: public void OnUpdate(IGameObject self)
+- h4: Parameters
+- parameters:
+  - name: self
+    type:
+    - text: IGameObject
+      url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+    description: The self
+- api3: Play(string)
+  id: Alis_Core_Ecs_Components_Render_Animator_Play_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/2_Application/Alis/src/Core/Ecs/Components/Render/Animator.cs#L108
+  metadata:
+    uid: Alis.Core.Ecs.Components.Render.Animator.Play(System.String)
+    commentId: M:Alis.Core.Ecs.Components.Render.Animator.Play(System.String)
+- markdown: Plays the animation name
+- code: public void Play(string animationName)
+- h4: Parameters
+- parameters:
+  - name: animationName
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The animation name
+languageId: csharp
+metadata:
+  description: The animator

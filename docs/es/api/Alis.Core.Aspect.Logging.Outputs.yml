@@ -1,0 +1,64 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Logging.Outputs
+body:
+- api1: Namespace Alis.Core.Aspect.Logging.Outputs
+  id: Alis_Core_Aspect_Logging_Outputs
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Outputs
+    commentId: N:Alis.Core.Aspect.Logging.Outputs
+- h3: Classes
+- parameters:
+  - type:
+      text: AsyncLogOutput
+      url: Alis.Core.Aspect.Logging.Outputs.AsyncLogOutput.html
+    description: >-
+      Wraps an output and queues writes to process them asynchronously.
+
+      Useful for file and network I/O to avoid blocking the main thread.
+
+      AOT-compatible: Uses queuing and thread management, no reflection.
+  - type:
+      text: ConsoleLogOutput
+      url: Alis.Core.Aspect.Logging.Outputs.ConsoleLogOutput.html
+    description: >-
+      Writes log entries to the standard console output.
+
+      Uses colored output when available based on log level.
+
+      Thread-safe: Console.WriteLine is thread-safe in .NET.
+
+      AOT-compatible: No reflection, simple console I/O.
+  - type:
+      text: DebugLogOutput
+      url: Alis.Core.Aspect.Logging.Outputs.DebugLogOutput.html
+    description: >-
+      Writes log entries to the debugger output (Debug.WriteLine).
+
+      Only writes output when debugger is attached.
+
+      Useful for development-time debugging.
+
+      AOT-compatible: Uses Debug.WriteLine, no reflection.
+  - type:
+      text: FileLogOutput
+      url: Alis.Core.Aspect.Logging.Outputs.FileLogOutput.html
+    description: >-
+      Writes log entries to a file on disk.
+
+      Supports appending to existing files and creates directories as needed.
+
+      Thread-safe: Uses a lock for file writes.
+
+      AOT-compatible: Uses standard file I/O, no reflection.
+  - type:
+      text: MemoryLogOutput
+      url: Alis.Core.Aspect.Logging.Outputs.MemoryLogOutput.html
+    description: >-
+      Stores log entries in memory for inspection and debugging.
+
+      Useful for testing and retrieving recent log entries.
+
+      Thread-safe: Uses locks for access to the entries list.
+
+      AOT-compatible: No reflection, pure collection-based storage.
+languageId: csharp

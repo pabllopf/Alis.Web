@@ -1,0 +1,234 @@
+### YamlMime:ApiPage
+title: Struct GameObjectRefTuple<T1, T2, T3, T4, T5, T6, T7>
+body:
+- api1: Struct GameObjectRefTuple<T1, T2, T3, T4, T5, T6, T7>
+  id: Alis_Core_Ecs_GameObjectRefTuple_7
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectRefTuple.cs#L287
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectRefTuple`7
+    commentId: T:Alis.Core.Ecs.GameObjectRefTuple`7
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs
+      url: Alis.Core.Ecs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gameObject ref tuple
+- code: public ref struct GameObjectRefTuple<T1, T2, T3, T4, T5, T6, T7>
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: GameObject
+  id: Alis_Core_Ecs_GameObjectRefTuple_7_GameObject
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectRefTuple.cs#L292
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectRefTuple`7.GameObject
+    commentId: F:Alis.Core.Ecs.GameObjectRefTuple`7.GameObject
+- markdown: The current <xref href="Alis.Core.Ecs.GameObjectRefTuple%607.GameObject" data-throw-if-not-resolved="false"></xref>; the components in this tuple belong to this <xref href="Alis.Core.Ecs.GameObjectRefTuple%607.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public GameObject GameObject
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+- api3: Item1
+  id: Alis_Core_Ecs_GameObjectRefTuple_7_Item1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectRefTuple.cs#L297
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectRefTuple`7.Item1
+    commentId: F:Alis.Core.Ecs.GameObjectRefTuple`7.Item1
+- markdown: The item
+- code: public Ref<T1> Item1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T1
+    - '>'
+- api3: Item2
+  id: Alis_Core_Ecs_GameObjectRefTuple_7_Item2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectRefTuple.cs#L302
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectRefTuple`7.Item2
+    commentId: F:Alis.Core.Ecs.GameObjectRefTuple`7.Item2
+- markdown: The item
+- code: public Ref<T2> Item2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T2
+    - '>'
+- api3: Item3
+  id: Alis_Core_Ecs_GameObjectRefTuple_7_Item3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectRefTuple.cs#L307
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectRefTuple`7.Item3
+    commentId: F:Alis.Core.Ecs.GameObjectRefTuple`7.Item3
+- markdown: The item
+- code: public Ref<T3> Item3
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T3
+    - '>'
+- api3: Item4
+  id: Alis_Core_Ecs_GameObjectRefTuple_7_Item4
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectRefTuple.cs#L312
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectRefTuple`7.Item4
+    commentId: F:Alis.Core.Ecs.GameObjectRefTuple`7.Item4
+- markdown: The item
+- code: public Ref<T4> Item4
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T4
+    - '>'
+- api3: Item5
+  id: Alis_Core_Ecs_GameObjectRefTuple_7_Item5
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectRefTuple.cs#L317
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectRefTuple`7.Item5
+    commentId: F:Alis.Core.Ecs.GameObjectRefTuple`7.Item5
+- markdown: The item
+- code: public Ref<T5> Item5
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T5
+    - '>'
+- api3: Item6
+  id: Alis_Core_Ecs_GameObjectRefTuple_7_Item6
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectRefTuple.cs#L322
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectRefTuple`7.Item6
+    commentId: F:Alis.Core.Ecs.GameObjectRefTuple`7.Item6
+- markdown: The item
+- code: public Ref<T6> Item6
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T6
+    - '>'
+- api3: Item7
+  id: Alis_Core_Ecs_GameObjectRefTuple_7_Item7
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectRefTuple.cs#L327
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectRefTuple`7.Item7
+    commentId: F:Alis.Core.Ecs.GameObjectRefTuple`7.Item7
+- markdown: The item
+- code: public Ref<T7> Item7
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T7
+    - '>'
+- h2: Methods
+- api3: Deconstruct(out GameObject, out Ref<T1>, out Ref<T2>, out Ref<T3>, out Ref<T4>, out Ref<T5>, out Ref<T6>, out Ref<T7>)
+  id: Alis_Core_Ecs_GameObjectRefTuple_7_Deconstruct_Alis_Core_Ecs_GameObject__Alis_Core_Ecs_Kernel_Ref__0___Alis_Core_Ecs_Kernel_Ref__1___Alis_Core_Ecs_Kernel_Ref__2___Alis_Core_Ecs_Kernel_Ref__3___Alis_Core_Ecs_Kernel_Ref__4___Alis_Core_Ecs_Kernel_Ref__5___Alis_Core_Ecs_Kernel_Ref__6___
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectRefTuple.cs#L333
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectRefTuple`7.Deconstruct(Alis.Core.Ecs.GameObject@,Alis.Core.Ecs.Kernel.Ref{`0}@,Alis.Core.Ecs.Kernel.Ref{`1}@,Alis.Core.Ecs.Kernel.Ref{`2}@,Alis.Core.Ecs.Kernel.Ref{`3}@,Alis.Core.Ecs.Kernel.Ref{`4}@,Alis.Core.Ecs.Kernel.Ref{`5}@,Alis.Core.Ecs.Kernel.Ref{`6}@)
+    commentId: M:Alis.Core.Ecs.GameObjectRefTuple`7.Deconstruct(Alis.Core.Ecs.GameObject@,Alis.Core.Ecs.Kernel.Ref{`0}@,Alis.Core.Ecs.Kernel.Ref{`1}@,Alis.Core.Ecs.Kernel.Ref{`2}@,Alis.Core.Ecs.Kernel.Ref{`3}@,Alis.Core.Ecs.Kernel.Ref{`4}@,Alis.Core.Ecs.Kernel.Ref{`5}@,Alis.Core.Ecs.Kernel.Ref{`6}@)
+- markdown: Allows tuple deconstruction syntax to be used.
+- code: public void Deconstruct(out GameObject gameObject, out Ref<T1> ref1, out Ref<T2> ref2, out Ref<T3> ref3, out Ref<T4> ref4, out Ref<T5> ref5, out Ref<T6> ref6, out Ref<T7> ref7)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+  - name: ref1
+    type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T1
+    - '>'
+  - name: ref2
+    type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T2
+    - '>'
+  - name: ref3
+    type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T3
+    - '>'
+  - name: ref4
+    type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T4
+    - '>'
+  - name: ref5
+    type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T5
+    - '>'
+  - name: ref6
+    type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T6
+    - '>'
+  - name: ref7
+    type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T7
+    - '>'
+languageId: csharp
+metadata:
+  description: The gameObject ref tuple

@@ -1,0 +1,31 @@
+### YamlMime:ApiPage
+title: Delegate Uniform1I
+body:
+- api1: Delegate Uniform1I
+  id: Alis_Core_Graphic_OpenGL_Delegates_Uniform1I
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/Uniform1I.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.Uniform1I
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.Uniform1I
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The uniform 1i
+- code: public delegate void Uniform1I(int location, int v0)
+- h4: Parameters
+- parameters:
+  - name: location
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: v0
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+languageId: csharp
+metadata:
+  description: The uniform 1i

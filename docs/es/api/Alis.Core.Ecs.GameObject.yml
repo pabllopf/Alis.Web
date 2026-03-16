@@ -1,0 +1,2315 @@
+### YamlMime:ApiPage
+title: Struct GameObject
+body:
+- api1: Struct GameObject
+  id: Alis_Core_Ecs_GameObject
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L53
+  metadata:
+    uid: Alis.Core.Ecs.GameObject
+    commentId: T:Alis.Core.Ecs.GameObject
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs
+      url: Alis.Core.Ecs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: An GameObject reference; refers to a collection of components of unqiue types.
+- code: 'public struct GameObject : IEquatable<GameObject>, IGameObject'
+- h4: Implements
+- list:
+  - text: IEquatable<GameObject>
+    url: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - text: IGameObject
+    url: Alis.Core.Aspect.Fluent.Components.IGameObject.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h4: Extension Methods
+- list:
+  - text: GameObjectExtensions.Deconstruct<T>(GameObject, out Ref<T>)
+    url: Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__1_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___
+  - text: GameObjectExtensions.Deconstruct<T1, T2>(GameObject, out Ref<T1>, out Ref<T2>)
+    url: Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__2_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___
+  - text: GameObjectExtensions.Deconstruct<T1, T2, T3>(GameObject, out Ref<T1>, out Ref<T2>, out Ref<T3>)
+    url: Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__3_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___
+  - text: GameObjectExtensions.Deconstruct<T1, T2, T3, T4>(GameObject, out Ref<T1>, out Ref<T2>, out Ref<T3>, out Ref<T4>)
+    url: Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__4_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___Alis_Core_Ecs_Kernel_Ref___3___
+  - text: GameObjectExtensions.Deconstruct<T1, T2, T3, T4, T5>(GameObject, out Ref<T1>, out Ref<T2>, out Ref<T3>, out Ref<T4>, out Ref<T5>)
+    url: Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__5_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___Alis_Core_Ecs_Kernel_Ref___3___Alis_Core_Ecs_Kernel_Ref___4___
+  - text: GameObjectExtensions.Deconstruct<T1, T2, T3, T4, T5, T6>(GameObject, out Ref<T1>, out Ref<T2>, out Ref<T3>, out Ref<T4>, out Ref<T5>, out Ref<T6>)
+    url: Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__6_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___Alis_Core_Ecs_Kernel_Ref___3___Alis_Core_Ecs_Kernel_Ref___4___Alis_Core_Ecs_Kernel_Ref___5___
+  - text: GameObjectExtensions.Deconstruct<T1, T2, T3, T4, T5, T6, T7>(GameObject, out Ref<T1>, out Ref<T2>, out Ref<T3>, out Ref<T4>, out Ref<T5>, out Ref<T6>, out Ref<T7>)
+    url: Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__7_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___Alis_Core_Ecs_Kernel_Ref___3___Alis_Core_Ecs_Kernel_Ref___4___Alis_Core_Ecs_Kernel_Ref___5___Alis_Core_Ecs_Kernel_Ref___6___
+  - text: GameObjectExtensions.Deconstruct<T1, T2, T3, T4, T5, T6, T7, T8>(GameObject, out Ref<T1>, out Ref<T2>, out Ref<T3>, out Ref<T4>, out Ref<T5>, out Ref<T6>, out Ref<T7>, out Ref<T8>)
+    url: Alis.Core.Ecs.GameObjectExtensions.html#Alis_Core_Ecs_GameObjectExtensions_Deconstruct__8_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_Kernel_Ref___0___Alis_Core_Ecs_Kernel_Ref___1___Alis_Core_Ecs_Kernel_Ref___2___Alis_Core_Ecs_Kernel_Ref___3___Alis_Core_Ecs_Kernel_Ref___4___Alis_Core_Ecs_Kernel_Ref___5___Alis_Core_Ecs_Kernel_Ref___6___Alis_Core_Ecs_Kernel_Ref___7___
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 8 bytes total (int + ushort + ushort)
+
+    Field order: int (4 bytes) -&gt; ushort (2 bytes) -&gt; ushort (2 bytes)
+
+    Pack = 1 for minimal memory footprint, no padding between fields
+- h2: Constructors
+- api3: GameObject()
+  id: Alis_Core_Ecs_GameObject__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.#ctor
+    commentId: M:Alis.Core.Ecs.GameObject.#ctor
+- markdown: Creates an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> identical to <xref href="Alis.Core.Ecs.GameObject.Null" data-throw-if-not-resolved="false"></xref>
+- code: public GameObject()
+- h4: Remarks
+- markdown: <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> generally shouldn't manually constructed
+- api3: GameObject(ushort, ushort, int)
+  id: Alis_Core_Ecs_GameObject__ctor_System_UInt16_System_UInt16_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L70
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.#ctor(System.UInt16,System.UInt16,System.Int32)
+    commentId: M:Alis.Core.Ecs.GameObject.#ctor(System.UInt16,System.UInt16,System.Int32)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> class
+- code: internal GameObject(ushort worldId, ushort version, int entityId)
+- h4: Parameters
+- parameters:
+  - name: worldId
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The scene id
+  - name: version
+    type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+    description: The version
+  - name: entityId
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The gameObject id
+- h2: Fields
+- api3: DoesNotHaveTagMessage
+  id: Alis_Core_Ecs_GameObject_DoesNotHaveTagMessage
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L192
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.DoesNotHaveTagMessage
+    commentId: F:Alis.Core.Ecs.GameObject.DoesNotHaveTagMessage
+- markdown: The does not have tag message
+- code: internal const string DoesNotHaveTagMessage = "This gameObject does not have this tag"
+- h4: Field Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: EntityID
+  id: Alis_Core_Ecs_GameObject_EntityID
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L82
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.EntityID
+    commentId: F:Alis.Core.Ecs.GameObject.EntityID
+- markdown: The gameObject id
+- code: internal int EntityID
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: EntityIsDeadMessage
+  id: Alis_Core_Ecs_GameObject_EntityIsDeadMessage
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L187
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.EntityIsDeadMessage
+    commentId: F:Alis.Core.Ecs.GameObject.EntityIsDeadMessage
+- markdown: The gameObject is dead message
+- code: internal const string EntityIsDeadMessage = "GameObject is dead."
+- h4: Field Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: EntityVersion
+  id: Alis_Core_Ecs_GameObject_EntityVersion
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L87
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.EntityVersion
+    commentId: F:Alis.Core.Ecs.GameObject.EntityVersion
+- markdown: The gameObject version
+- code: internal ushort EntityVersion
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- api3: WorldID
+  id: Alis_Core_Ecs_GameObject_WorldID
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L92
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.WorldID
+    commentId: F:Alis.Core.Ecs.GameObject.WorldID
+- markdown: The scene id
+- code: internal ushort WorldID
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ushort
+      url: https://learn.microsoft.com/dotnet/api/system.uint16
+- h2: Properties
+- api3: ComponentTypes
+  id: Alis_Core_Ecs_GameObject_ComponentTypes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2031
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.ComponentTypes
+    commentId: P:Alis.Core.Ecs.GameObject.ComponentTypes
+- markdown: Gets the component types for this gameObject, ordered in update order
+- code: public FastImmutableArray<ComponentId> ComponentTypes { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> is dead.
+- api3: EntityIdOnly
+  id: Alis_Core_Ecs_GameObject_EntityIdOnly
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L98
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.EntityIdOnly
+    commentId: P:Alis.Core.Ecs.GameObject.EntityIdOnly
+- markdown: Gets the value of the gameObject id only
+- code: internal GameObjectIdOnly EntityIdOnly { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GameObjectIdOnly
+      url: Alis.Core.Ecs.Kernel.GameObjectIdOnly.html
+- api3: EntityLow
+  id: Alis_Core_Ecs_GameObject_EntityLow
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L108
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.EntityLow
+    commentId: P:Alis.Core.Ecs.GameObject.EntityLow
+- markdown: Gets the value of the gameObject low
+- code: internal int EntityLow { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: IsAlive
+  id: Alis_Core_Ecs_GameObject_IsAlive
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2012
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.IsAlive
+    commentId: P:Alis.Core.Ecs.GameObject.IsAlive
+- markdown: Checks to see if this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> is still alive
+- code: public bool IsAlive { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: IsNull
+  id: Alis_Core_Ecs_GameObject_IsNull
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2018
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.IsNull
+    commentId: P:Alis.Core.Ecs.GameObject.IsNull
+- markdown: >-
+    Checks to see if this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> instance is the null gameObject: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/default">default</a>(
+
+    <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>)
+- code: public bool IsNull { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: "Null"
+  id: Alis_Core_Ecs_GameObject_Null
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2069
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Null
+    commentId: P:Alis.Core.Ecs.GameObject.Null
+- markdown: The null gameObject
+- code: public static GameObject Null { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+- api3: OnComponentAddedGeneric
+  id: Alis_Core_Ecs_GameObject_OnComponentAddedGeneric
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1851
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.OnComponentAddedGeneric
+    commentId: P:Alis.Core.Ecs.GameObject.OnComponentAddedGeneric
+- markdown: Raised when a component is added to an gameObject, with the generic parameter
+- code: public GenericEvent OnComponentAddedGeneric { get; readonly set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GenericEvent
+      url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+- api3: OnComponentRemovedGeneric
+  id: Alis_Core_Ecs_GameObject_OnComponentRemovedGeneric
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1872
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.OnComponentRemovedGeneric
+    commentId: P:Alis.Core.Ecs.GameObject.OnComponentRemovedGeneric
+- markdown: Raised when a component is removed to an gameObject, with the generic parameter
+- code: public GenericEvent OnComponentRemovedGeneric { get; readonly set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GenericEvent
+      url: Alis.Core.Ecs.Kernel.Events.GenericEvent.html
+- api3: PackedValue
+  id: Alis_Core_Ecs_GameObject_PackedValue
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L103
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.PackedValue
+    commentId: P:Alis.Core.Ecs.GameObject.PackedValue
+- markdown: Gets the value of the packed value
+- code: internal long PackedValue { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: long
+      url: https://learn.microsoft.com/dotnet/api/system.int64
+- api3: Scene
+  id: Alis_Core_Ecs_GameObject_Scene
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2024
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Scene
+    commentId: P:Alis.Core.Ecs.GameObject.Scene
+- markdown: Gets the scene this gameObject belongs to
+- code: public Scene Scene { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> is dead.
+- api3: Type
+  id: Alis_Core_Ecs_GameObject_Type
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2043
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Type
+    commentId: P:Alis.Core.Ecs.GameObject.Type
+- markdown: The <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref> of this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public GameObjectType Type { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+- h2: Methods
+- api3: Add<T>(in T)
+  id: Alis_Core_Ecs_GameObject_Add__1___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L246
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Add``1(``0@)
+    commentId: M:Alis.Core.Ecs.GameObject.Add``1(``0@)
+- markdown: Adds a component to this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public void Add<T>(in T c1)
+- h4: Parameters
+- parameters:
+  - name: c1
+    type:
+    - T
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Add<T1, T2>(in T1, in T2)
+  id: Alis_Core_Ecs_GameObject_Add__2___0____1__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L398
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Add``2(``0@,``1@)
+    commentId: M:Alis.Core.Ecs.GameObject.Add``2(``0@,``1@)
+- markdown: Adds a component to this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public void Add<T1, T2>(in T1 c1, in T2 c2)
+- h4: Parameters
+- parameters:
+  - name: c1
+    type:
+    - T1
+  - name: c2
+    type:
+    - T2
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Add<T1, T2, T3>(in T1, in T2, in T3)
+  id: Alis_Core_Ecs_GameObject_Add__3___0____1____2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L524
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Add``3(``0@,``1@,``2@)
+    commentId: M:Alis.Core.Ecs.GameObject.Add``3(``0@,``1@,``2@)
+- markdown: Adds a component to this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public void Add<T1, T2, T3>(in T1 c1, in T2 c2, in T3 c3)
+- h4: Parameters
+- parameters:
+  - name: c1
+    type:
+    - T1
+  - name: c2
+    type:
+    - T2
+  - name: c3
+    type:
+    - T3
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Add<T1, T2, T3, T4>(in T1, in T2, in T3, in T4)
+  id: Alis_Core_Ecs_GameObject_Add__4___0____1____2____3__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L658
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Add``4(``0@,``1@,``2@,``3@)
+    commentId: M:Alis.Core.Ecs.GameObject.Add``4(``0@,``1@,``2@,``3@)
+- markdown: Adds a component to this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public void Add<T1, T2, T3, T4>(in T1 c1, in T2 c2, in T3 c3, in T4 c4)
+- h4: Parameters
+- parameters:
+  - name: c1
+    type:
+    - T1
+  - name: c2
+    type:
+    - T2
+  - name: c3
+    type:
+    - T3
+  - name: c4
+    type:
+    - T4
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Add<T1, T2, T3, T4, T5>(in T1, in T2, in T3, in T4, in T5)
+  id: Alis_Core_Ecs_GameObject_Add__5___0____1____2____3____4__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L807
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Add``5(``0@,``1@,``2@,``3@,``4@)
+    commentId: M:Alis.Core.Ecs.GameObject.Add``5(``0@,``1@,``2@,``3@,``4@)
+- markdown: Adds a component to this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public void Add<T1, T2, T3, T4, T5>(in T1 c1, in T2 c2, in T3 c3, in T4 c4, in T5 c5)
+- h4: Parameters
+- parameters:
+  - name: c1
+    type:
+    - T1
+  - name: c2
+    type:
+    - T2
+  - name: c3
+    type:
+    - T3
+  - name: c4
+    type:
+    - T4
+  - name: c5
+    type:
+    - T5
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Add<T1, T2, T3, T4, T5, T6>(in T1, in T2, in T3, in T4, in T5, in T6)
+  id: Alis_Core_Ecs_GameObject_Add__6___0____1____2____3____4____5__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L968
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Add``6(``0@,``1@,``2@,``3@,``4@,``5@)
+    commentId: M:Alis.Core.Ecs.GameObject.Add``6(``0@,``1@,``2@,``3@,``4@,``5@)
+- markdown: Adds a component to this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public void Add<T1, T2, T3, T4, T5, T6>(in T1 c1, in T2 c2, in T3 c3, in T4 c4, in T5 c5, in T6 c6)
+- h4: Parameters
+- parameters:
+  - name: c1
+    type:
+    - T1
+  - name: c2
+    type:
+    - T2
+  - name: c3
+    type:
+    - T3
+  - name: c4
+    type:
+    - T4
+  - name: c5
+    type:
+    - T5
+  - name: c6
+    type:
+    - T6
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Add<T1, T2, T3, T4, T5, T6, T7>(in T1, in T2, in T3, in T4, in T5, in T6, in T7)
+  id: Alis_Core_Ecs_GameObject_Add__7___0____1____2____3____4____5____6__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1141
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Add``7(``0@,``1@,``2@,``3@,``4@,``5@,``6@)
+    commentId: M:Alis.Core.Ecs.GameObject.Add``7(``0@,``1@,``2@,``3@,``4@,``5@,``6@)
+- markdown: Adds a component to this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public void Add<T1, T2, T3, T4, T5, T6, T7>(in T1 c1, in T2 c2, in T3 c3, in T4 c4, in T5 c5, in T6 c6, in T7 c7)
+- h4: Parameters
+- parameters:
+  - name: c1
+    type:
+    - T1
+  - name: c2
+    type:
+    - T2
+  - name: c3
+    type:
+    - T3
+  - name: c4
+    type:
+    - T4
+  - name: c5
+    type:
+    - T5
+  - name: c6
+    type:
+    - T6
+  - name: c7
+    type:
+    - T7
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Add<T1, T2, T3, T4, T5, T6, T7, T8>(in T1, in T2, in T3, in T4, in T5, in T6, in T7, in T8)
+  id: Alis_Core_Ecs_GameObject_Add__8___0____1____2____3____4____5____6____7__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1325
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Add``8(``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)
+    commentId: M:Alis.Core.Ecs.GameObject.Add``8(``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)
+- markdown: Adds a component to this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public void Add<T1, T2, T3, T4, T5, T6, T7, T8>(in T1 c1, in T2 c2, in T3 c3, in T4 c4, in T5 c5, in T6 c6, in T7 c7, in T8 c8)
+- h4: Parameters
+- parameters:
+  - name: c1
+    type:
+    - T1
+  - name: c2
+    type:
+    - T2
+  - name: c3
+    type:
+    - T3
+  - name: c4
+    type:
+    - T4
+  - name: c5
+    type:
+    - T5
+  - name: c6
+    type:
+    - T6
+  - name: c7
+    type:
+    - T7
+  - name: c8
+    type:
+    - T8
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+  - name: T8
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: AddAs(Type, object)
+  id: Alis_Core_Ecs_GameObject_AddAs_System_Type_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1760
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.AddAs(System.Type,System.Object)
+    commentId: M:Alis.Core.Ecs.GameObject.AddAs(System.Type,System.Object)
+- markdown: Add a component to an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>
+- code: public void AddAs(Type type, object component)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: >-
+      The type to add the component as. Note that a component of type DerivedClass and BaseClass are
+
+      different component types.
+  - name: component
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The component to add
+- api3: AddAs(ComponentId, object)
+  id: Alis_Core_Ecs_GameObject_AddAs_Alis_Core_Ecs_Kernel_ComponentId_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1774
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.AddAs(Alis.Core.Ecs.Kernel.ComponentId,System.Object)
+    commentId: M:Alis.Core.Ecs.GameObject.AddAs(Alis.Core.Ecs.Kernel.ComponentId,System.Object)
+- markdown: Adds a component to this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>, as a specific component type.
+- code: public void AddAs(ComponentId componentId, object component)
+- h4: Parameters
+- parameters:
+  - name: componentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The component type to add as.
+  - name: component
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The component to add.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidCastException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+    description: >-
+      <code class="paramref">component</code> is not assignable to the type represented by
+
+      <code class="paramref">componentId</code>.
+- api3: AddBoxed(object)
+  id: Alis_Core_Ecs_GameObject_AddBoxed_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1747
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.AddBoxed(System.Object)
+    commentId: M:Alis.Core.Ecs.GameObject.AddBoxed(System.Object)
+- markdown: Adds a component to this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> as its own type
+- code: public void AddBoxed(object component)
+- h4: Parameters
+- parameters:
+  - name: component
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The component, which could be boxed
+- api3: AssertIsAlive(out Scene)
+  id: Alis_Core_Ecs_GameObject_AssertIsAlive_Alis_Core_Ecs_Scene__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L131
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.AssertIsAlive(Alis.Core.Ecs.Scene@)
+    commentId: M:Alis.Core.Ecs.GameObject.AssertIsAlive(Alis.Core.Ecs.Scene@)
+- code: internal ref GameObjectLocation AssertIsAlive(out Scene scene)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: This <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> has been deleted.
+- api3: Delete()
+  id: Alis_Core_Ecs_GameObject_Delete
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1985
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Delete
+    commentId: M:Alis.Core.Ecs.GameObject.Delete
+- markdown: Deletes this gameObject
+- code: public void Delete()
+- api3: EntityTypeOf(ReadOnlySpan<ComponentId>)
+  id: Alis_Core_Ecs_GameObject_EntityTypeOf_System_ReadOnlySpan_Alis_Core_Ecs_Kernel_ComponentId__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2075
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.EntityTypeOf(System.ReadOnlySpan{Alis.Core.Ecs.Kernel.ComponentId})
+    commentId: M:Alis.Core.Ecs.GameObject.EntityTypeOf(System.ReadOnlySpan{Alis.Core.Ecs.Kernel.ComponentId})
+- markdown: Gets an <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref> without needing an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> of the specific type.
+- code: public static GameObjectType EntityTypeOf(ReadOnlySpan<ComponentId> components)
+- h4: Parameters
+- parameters:
+  - name: components
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The components the <xref href="Alis.Core.Ecs.Kernel.GameObjectType" data-throw-if-not-resolved="false"></xref> should have.
+- h4: Returns
+- parameters:
+  - type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+- api3: EnumerateComponents(IGenericAction)
+  id: Alis_Core_Ecs_GameObject_EnumerateComponents_Alis_Core_Ecs_Kernel_Events_IGenericAction_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L2056
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.EnumerateComponents(Alis.Core.Ecs.Kernel.Events.IGenericAction)
+    commentId: M:Alis.Core.Ecs.GameObject.EnumerateComponents(Alis.Core.Ecs.Kernel.Events.IGenericAction)
+- markdown: Enumerates all components one by one
+- code: public void EnumerateComponents(IGenericAction onEach)
+- h4: Parameters
+- parameters:
+  - name: onEach
+    type:
+    - text: IGenericAction
+      url: Alis.Core.Ecs.Kernel.Events.IGenericAction.html
+    description: The unbound generic function called on each item
+- api3: Equals(object)
+  id: Alis_Core_Ecs_GameObject_Equals_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L222
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Equals(System.Object)
+    commentId: M:Alis.Core.Ecs.GameObject.Equals(System.Object)
+- markdown: Determines whether the specified object is equal to the current <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public override bool Equals(object obj)
+- h4: Parameters
+- parameters:
+  - name: obj
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The object to compare with the current gameObject.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object is an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> and is equal to the current
+
+      gameObject; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- api3: Equals(GameObject)
+  id: Alis_Core_Ecs_GameObject_Equals_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L232
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Equals(Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.GameObject.Equals(Alis.Core.Ecs.GameObject)
+- markdown: Determines whether the specified <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> is equal to the current <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public bool Equals(GameObject other)
+- h4: Parameters
+- parameters:
+  - name: other
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject to compare with the current gameObject.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified gameObject is equal to the current gameObject; otherwise,
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- api3: Get<T>()
+  id: Alis_Core_Ecs_GameObject_Get__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1602
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Get``1
+    commentId: M:Alis.Core.Ecs.GameObject.Get``1
+- markdown: Gets this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>'s component of type <code class="typeparamref">T</code>.
+- code: public ref T Get<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: A reference to the component in memory.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of component.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> is dead.
+  - type:
+    - text: NullReferenceException
+      url: https://learn.microsoft.com/dotnet/api/system.nullreferenceexception
+    description: >-
+      <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> does not have component of type
+
+      <code class="typeparamref">T</code>.
+- api3: Get(ComponentId)
+  id: Alis_Core_Ecs_GameObject_Get_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1632
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Get(Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.GameObject.Get(Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Gets this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>'s component of type <code class="paramref">id</code>.
+- code: public object Get(ComponentId id)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The ID of the type of component to get
+- h4: Returns
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The boxed component.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> is dead.
+  - type:
+    - text: ComponentNotFoundException
+      url: Alis.Core.Ecs.Exceptions.ComponentNotFoundException.html
+    description: >-
+      <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> does not have component of type
+
+      <code class="paramref">id</code>.
+- api3: Get(Type)
+  id: Alis_Core_Ecs_GameObject_Get_System_Type_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1656
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Get(System.Type)
+    commentId: M:Alis.Core.Ecs.GameObject.Get(System.Type)
+- markdown: Gets this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>'s component of type <code class="paramref">type</code>.
+- code: public object Get(Type type)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type of component to get
+- h4: Returns
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The component of type <code class="paramref">type</code>
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> is dead.
+  - type:
+    - text: ComponentNotFoundException
+      url: Alis.Core.Ecs.Exceptions.ComponentNotFoundException.html
+    description: >-
+      <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> does not have component of type
+
+      <code class="paramref">type</code>.
+- api3: GetHashCode()
+  id: Alis_Core_Ecs_GameObject_GetHashCode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L238
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.GetHashCode
+    commentId: M:Alis.Core.Ecs.GameObject.GetHashCode
+- markdown: Serves as the default hash function.
+- code: public override int GetHashCode()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: A hash code for the current <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- api3: Has(ComponentId)
+  id: Alis_Core_Ecs_GameObject_Has_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1528
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Has(Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.GameObject.Has(Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Checks of this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> has a component specified by <code class="paramref">componentId</code>.
+- code: public bool Has(ComponentId componentId)
+- h4: Parameters
+- parameters:
+  - name: componentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The component ID of the component type to check.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject has a component of <code class="paramref">componentId</code>, otherwise
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- api3: Has<T>()
+  id: Alis_Core_Ecs_GameObject_Has__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1542
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Has``1
+    commentId: M:Alis.Core.Ecs.GameObject.Has``1
+- markdown: Checks to see if this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> has a component of Type <code class="typeparamref">T</code>.
+- code: public bool Has<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject has a component of <code class="typeparamref">T</code>, otherwise
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of component to check.
+- api3: Has(Type)
+  id: Alis_Core_Ecs_GameObject_Has_System_Type_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1552
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Has(System.Type)
+    commentId: M:Alis.Core.Ecs.GameObject.Has(System.Type)
+- markdown: Checks to see if this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> has a component of Type <code class="paramref">type</code>.
+- code: public bool Has(Type type)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The component type to check if this gameObject has.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject has a component of <code class="paramref">type</code>, otherwise
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- api3: InitalizeEventRecord(object, GameObjectFlags, bool)
+  id: Alis_Core_Ecs_GameObject_InitalizeEventRecord_System_Object_Alis_Core_Ecs_GameObjectFlags_System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1938
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InitalizeEventRecord(System.Object,Alis.Core.Ecs.GameObjectFlags,System.Boolean)
+    commentId: M:Alis.Core.Ecs.GameObject.InitalizeEventRecord(System.Object,Alis.Core.Ecs.GameObjectFlags,System.Boolean)
+- markdown: Initalizes the event record using the specified delegate
+- code: public void InitalizeEventRecord(object d, GameObjectFlags flag, bool isGenericEvent = false)
+- h4: Parameters
+- parameters:
+  - name: d
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The delegate
+  - name: flag
+    type:
+    - text: GameObjectFlags
+      url: Alis.Core.Ecs.GameObjectFlags.html
+    description: The flag
+  - name: isGenericEvent
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The is generic event
+    optional: true
+- api3: InternalIsAlive(out Scene, out GameObjectLocation)
+  id: Alis_Core_Ecs_GameObject_InternalIsAlive_Alis_Core_Ecs_Scene__Alis_Core_Ecs_GameObjectLocation__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L117
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InternalIsAlive(Alis.Core.Ecs.Scene@,Alis.Core.Ecs.GameObjectLocation@)
+    commentId: M:Alis.Core.Ecs.GameObject.InternalIsAlive(Alis.Core.Ecs.Scene@,Alis.Core.Ecs.GameObjectLocation@)
+- markdown: Internals the is alive using the specified scene
+- code: internal bool InternalIsAlive(out Scene scene, out GameObjectLocation gameObjectLocation)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: gameObjectLocation
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The gameObject location
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: InvokeComponentWorldEvents<T>(ref Event<ComponentId>, GameObject)
+  id: Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__1_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L319
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``1(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``1(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+- markdown: Invokes the component scene events using the specified event
+- code: public static void InvokeComponentWorldEvents<T>(ref Event<ComponentId> e, GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The event
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: InvokeComponentWorldEvents<T1, T2>(ref Event<ComponentId>, GameObject)
+  id: Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__2_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L487
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``2(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``2(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+- markdown: Invokes the component scene events using the specified event
+- code: public static void InvokeComponentWorldEvents<T1, T2>(ref Event<ComponentId> e, GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The event
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+- api3: InvokeComponentWorldEvents<T1, T2, T3>(ref Event<ComponentId>, GameObject)
+  id: Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__3_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L617
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``3(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``3(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+- markdown: Invokes the component scene events using the specified event
+- code: public static void InvokeComponentWorldEvents<T1, T2, T3>(ref Event<ComponentId> e, GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The event
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+- api3: InvokeComponentWorldEvents<T1, T2, T3, T4>(ref Event<ComponentId>, GameObject)
+  id: Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__4_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L760
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``4(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``4(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+- markdown: Invokes the component scene events using the specified event
+- code: public static void InvokeComponentWorldEvents<T1, T2, T3, T4>(ref Event<ComponentId> e, GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The event
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+- api3: InvokeComponentWorldEvents<T1, T2, T3, T4, T5>(ref Event<ComponentId>, GameObject)
+  id: Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__5_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L914
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``5(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``5(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+- markdown: Invokes the component scene events using the specified event
+- code: public static void InvokeComponentWorldEvents<T1, T2, T3, T4, T5>(ref Event<ComponentId> e, GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The event
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+- api3: InvokeComponentWorldEvents<T1, T2, T3, T4, T5, T6>(ref Event<ComponentId>, GameObject)
+  id: Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__6_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1082
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``6(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``6(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+- markdown: Invokes the component scene events using the specified event
+- code: public static void InvokeComponentWorldEvents<T1, T2, T3, T4, T5, T6>(ref Event<ComponentId> e, GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The event
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+  - name: T6
+    description: The
+- api3: InvokeComponentWorldEvents<T1, T2, T3, T4, T5, T6, T7>(ref Event<ComponentId>, GameObject)
+  id: Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__7_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1261
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``7(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``7(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+- markdown: Invokes the component scene events using the specified event
+- code: public static void InvokeComponentWorldEvents<T1, T2, T3, T4, T5, T6, T7>(ref Event<ComponentId> e, GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The event
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+  - name: T6
+    description: The
+  - name: T7
+    description: The
+- api3: InvokeComponentWorldEvents<T1, T2, T3, T4, T5, T6, T7, T8>(ref Event<ComponentId>, GameObject)
+  id: Alis_Core_Ecs_GameObject_InvokeComponentWorldEvents__8_Alis_Core_Ecs_Kernel_Events_Event_Alis_Core_Ecs_Kernel_ComponentId___Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1454
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``8(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokeComponentWorldEvents``8(Alis.Core.Ecs.Kernel.Events.Event{Alis.Core.Ecs.Kernel.ComponentId}@,Alis.Core.Ecs.GameObject)
+- markdown: Invokes the component scene events using the specified event
+- code: public static void InvokeComponentWorldEvents<T1, T2, T3, T4, T5, T6, T7, T8>(ref Event<ComponentId> e, GameObject gameObject)
+- h4: Parameters
+- parameters:
+  - name: e
+    type:
+    - text: Event
+      url: Alis.Core.Ecs.Kernel.Events.Event-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+    description: The event
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+  - name: T6
+    description: The
+  - name: T7
+    description: The
+  - name: T8
+    description: The
+- api3: InvokePerEntityEvents<T>(GameObject, bool, ref ComponentEvent, ref T)
+  id: Alis_Core_Ecs_GameObject_InvokePerEntityEvents__1_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L332
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokePerEntityEvents``1(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``1(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@)
+- markdown: Invokes the per gameObject events using the specified gameObject
+- code: public static void InvokePerEntityEvents<T>(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T component)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: hasGenericEvent
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The has generic event
+  - name: events
+    type:
+    - text: ComponentEvent
+      url: Alis.Core.Ecs.Kernel.Events.ComponentEvent.html
+    description: The events
+  - name: component
+    type:
+    - T
+    description: The component
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: InvokePerEntityEvents<T1, T2>(GameObject, bool, ref ComponentEvent, ref T1, ref T2)
+  id: Alis_Core_Ecs_GameObject_InvokePerEntityEvents__2_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L503
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokePerEntityEvents``2(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``2(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@)
+- markdown: Invokes the per gameObject events using the specified gameObject
+- code: public static void InvokePerEntityEvents<T1, T2>(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: hasGenericEvent
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The has generic event
+  - name: events
+    type:
+    - text: ComponentEvent
+      url: Alis.Core.Ecs.Kernel.Events.ComponentEvent.html
+    description: The events
+  - name: component1
+    type:
+    - T1
+    description: The component
+  - name: component2
+    type:
+    - T2
+    description: The component
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+- api3: InvokePerEntityEvents<T1, T2, T3>(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3)
+  id: Alis_Core_Ecs_GameObject_InvokePerEntityEvents__3_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L636
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokePerEntityEvents``3(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``3(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@)
+- markdown: Invokes the per gameObject events using the specified gameObject
+- code: public static void InvokePerEntityEvents<T1, T2, T3>(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: hasGenericEvent
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The has generic event
+  - name: events
+    type:
+    - text: ComponentEvent
+      url: Alis.Core.Ecs.Kernel.Events.ComponentEvent.html
+    description: The events
+  - name: component1
+    type:
+    - T1
+    description: The component
+  - name: component2
+    type:
+    - T2
+    description: The component
+  - name: component3
+    type:
+    - T3
+    description: The component
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+- api3: InvokePerEntityEvents<T1, T2, T3, T4>(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3, ref T4)
+  id: Alis_Core_Ecs_GameObject_InvokePerEntityEvents__4_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2____3__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L782
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokePerEntityEvents``4(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``4(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@)
+- markdown: Invokes the per gameObject events using the specified gameObject
+- code: public static void InvokePerEntityEvents<T1, T2, T3, T4>(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3, ref T4 component4)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: hasGenericEvent
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The has generic event
+  - name: events
+    type:
+    - text: ComponentEvent
+      url: Alis.Core.Ecs.Kernel.Events.ComponentEvent.html
+    description: The events
+  - name: component1
+    type:
+    - T1
+    description: The component
+  - name: component2
+    type:
+    - T2
+    description: The component
+  - name: component3
+    type:
+    - T3
+    description: The component
+  - name: component4
+    type:
+    - T4
+    description: The component
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+- api3: InvokePerEntityEvents<T1, T2, T3, T4, T5>(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3, ref T4, ref T5)
+  id: Alis_Core_Ecs_GameObject_InvokePerEntityEvents__5_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2____3____4__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L939
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokePerEntityEvents``5(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``5(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@)
+- markdown: Invokes the per gameObject events using the specified gameObject
+- code: public static void InvokePerEntityEvents<T1, T2, T3, T4, T5>(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3, ref T4 component4, ref T5 component5)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: hasGenericEvent
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The has generic event
+  - name: events
+    type:
+    - text: ComponentEvent
+      url: Alis.Core.Ecs.Kernel.Events.ComponentEvent.html
+    description: The events
+  - name: component1
+    type:
+    - T1
+    description: The component
+  - name: component2
+    type:
+    - T2
+    description: The component
+  - name: component3
+    type:
+    - T3
+    description: The component
+  - name: component4
+    type:
+    - T4
+    description: The component
+  - name: component5
+    type:
+    - T5
+    description: The component
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+- api3: InvokePerEntityEvents<T1, T2, T3, T4, T5, T6>(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3, ref T4, ref T5, ref T6)
+  id: Alis_Core_Ecs_GameObject_InvokePerEntityEvents__6_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2____3____4____5__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1110
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokePerEntityEvents``6(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``6(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@)
+- markdown: Invokes the per gameObject events using the specified gameObject
+- code: public static void InvokePerEntityEvents<T1, T2, T3, T4, T5, T6>(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3, ref T4 component4, ref T5 component5, ref T6 component6)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: hasGenericEvent
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The has generic event
+  - name: events
+    type:
+    - text: ComponentEvent
+      url: Alis.Core.Ecs.Kernel.Events.ComponentEvent.html
+    description: The events
+  - name: component1
+    type:
+    - T1
+    description: The component
+  - name: component2
+    type:
+    - T2
+    description: The component
+  - name: component3
+    type:
+    - T3
+    description: The component
+  - name: component4
+    type:
+    - T4
+    description: The component
+  - name: component5
+    type:
+    - T5
+    description: The component
+  - name: component6
+    type:
+    - T6
+    description: The component
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+  - name: T6
+    description: The
+- api3: InvokePerEntityEvents<T1, T2, T3, T4, T5, T6, T7>(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3, ref T4, ref T5, ref T6, ref T7)
+  id: Alis_Core_Ecs_GameObject_InvokePerEntityEvents__7_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2____3____4____5____6__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1293
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokePerEntityEvents``7(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@,``6@)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``7(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@,``6@)
+- markdown: Invokes the per gameObject events using the specified gameObject
+- code: public static void InvokePerEntityEvents<T1, T2, T3, T4, T5, T6, T7>(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3, ref T4 component4, ref T5 component5, ref T6 component6, ref T7 component7)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: hasGenericEvent
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The has generic event
+  - name: events
+    type:
+    - text: ComponentEvent
+      url: Alis.Core.Ecs.Kernel.Events.ComponentEvent.html
+    description: The events
+  - name: component1
+    type:
+    - T1
+    description: The component
+  - name: component2
+    type:
+    - T2
+    description: The component
+  - name: component3
+    type:
+    - T3
+    description: The component
+  - name: component4
+    type:
+    - T4
+    description: The component
+  - name: component5
+    type:
+    - T5
+    description: The component
+  - name: component6
+    type:
+    - T6
+    description: The component
+  - name: component7
+    type:
+    - T7
+    description: The component
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+  - name: T6
+    description: The
+  - name: T7
+    description: The
+- api3: InvokePerEntityEvents<T1, T2, T3, T4, T5, T6, T7, T8>(GameObject, bool, ref ComponentEvent, ref T1, ref T2, ref T3, ref T4, ref T5, ref T6, ref T7, ref T8)
+  id: Alis_Core_Ecs_GameObject_InvokePerEntityEvents__8_Alis_Core_Ecs_GameObject_System_Boolean_Alis_Core_Ecs_Kernel_Events_ComponentEvent____0____1____2____3____4____5____6____7__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1489
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.InvokePerEntityEvents``8(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)
+    commentId: M:Alis.Core.Ecs.GameObject.InvokePerEntityEvents``8(Alis.Core.Ecs.GameObject,System.Boolean,Alis.Core.Ecs.Kernel.Events.ComponentEvent@,``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)
+- markdown: Invokes the per gameObject events using the specified gameObject
+- code: public static void InvokePerEntityEvents<T1, T2, T3, T4, T5, T6, T7, T8>(GameObject gameObject, bool hasGenericEvent, ref ComponentEvent events, ref T1 component1, ref T2 component2, ref T3 component3, ref T4 component4, ref T5 component5, ref T6 component6, ref T7 component7, ref T8 component8)
+- h4: Parameters
+- parameters:
+  - name: gameObject
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The gameObject
+  - name: hasGenericEvent
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The has generic event
+  - name: events
+    type:
+    - text: ComponentEvent
+      url: Alis.Core.Ecs.Kernel.Events.ComponentEvent.html
+    description: The events
+  - name: component1
+    type:
+    - T1
+    description: The component
+  - name: component2
+    type:
+    - T2
+    description: The component
+  - name: component3
+    type:
+    - T3
+    description: The component
+  - name: component4
+    type:
+    - T4
+    description: The component
+  - name: component5
+    type:
+    - T5
+    description: The component
+  - name: component6
+    type:
+    - T6
+    description: The component
+  - name: component7
+    type:
+    - T7
+    description: The component
+  - name: component8
+    type:
+    - T8
+    description: The component
+- h4: Type Parameters
+- parameters:
+  - name: T1
+    description: The
+  - name: T2
+    description: The
+  - name: T3
+    description: The
+  - name: T4
+    description: The
+  - name: T5
+    description: The
+  - name: T6
+    description: The
+  - name: T7
+    description: The
+  - name: T8
+    description: The
+- api3: Remove<T>()
+  id: Alis_Core_Ecs_GameObject_Remove__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L293
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Remove``1
+    commentId: M:Alis.Core.Ecs.GameObject.Remove``1
+- markdown: Removes a component from this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>
+- code: public void Remove<T>()
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Remove<T1, T2>()
+  id: Alis_Core_Ecs_GameObject_Remove__2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L455
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Remove``2
+    commentId: M:Alis.Core.Ecs.GameObject.Remove``2
+- markdown: Removes a component from this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>
+- code: public void Remove<T1, T2>()
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Remove<T1, T2, T3>()
+  id: Alis_Core_Ecs_GameObject_Remove__3
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L585
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Remove``3
+    commentId: M:Alis.Core.Ecs.GameObject.Remove``3
+- markdown: Removes a component from this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>
+- code: public void Remove<T1, T2, T3>()
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Remove<T1, T2, T3, T4>()
+  id: Alis_Core_Ecs_GameObject_Remove__4
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L724
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Remove``4
+    commentId: M:Alis.Core.Ecs.GameObject.Remove``4
+- markdown: Removes a component from this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>
+- code: public void Remove<T1, T2, T3, T4>()
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Remove<T1, T2, T3, T4, T5>()
+  id: Alis_Core_Ecs_GameObject_Remove__5
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L877
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Remove``5
+    commentId: M:Alis.Core.Ecs.GameObject.Remove``5
+- markdown: Removes a component from this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>
+- code: public void Remove<T1, T2, T3, T4, T5>()
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Remove<T1, T2, T3, T4, T5, T6>()
+  id: Alis_Core_Ecs_GameObject_Remove__6
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1043
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Remove``6
+    commentId: M:Alis.Core.Ecs.GameObject.Remove``6
+- markdown: Removes a component from this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>
+- code: public void Remove<T1, T2, T3, T4, T5, T6>()
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Remove<T1, T2, T3, T4, T5, T6, T7>()
+  id: Alis_Core_Ecs_GameObject_Remove__7
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1221
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Remove``7
+    commentId: M:Alis.Core.Ecs.GameObject.Remove``7
+- markdown: Removes a component from this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>
+- code: public void Remove<T1, T2, T3, T4, T5, T6, T7>()
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Remove<T1, T2, T3, T4, T5, T6, T7, T8>()
+  id: Alis_Core_Ecs_GameObject_Remove__8
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1411
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Remove``8
+    commentId: M:Alis.Core.Ecs.GameObject.Remove``8
+- markdown: Removes a component from this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>
+- code: public void Remove<T1, T2, T3, T4, T5, T6, T7, T8>()
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+  - name: T3
+  - name: T4
+  - name: T5
+  - name: T6
+  - name: T7
+  - name: T8
+- h4: Remarks
+- markdown: If the scene is being updated, changed are deffered to the end of the scene update.
+- api3: Remove(ComponentId)
+  id: Alis_Core_Ecs_GameObject_Remove_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1794
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Remove(Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.GameObject.Remove(Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Removes a component from this gameObject
+- code: public void Remove(ComponentId componentId)
+- h4: Parameters
+- parameters:
+  - name: componentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The <xref href="Alis.Core.Ecs.Kernel.ComponentId" data-throw-if-not-resolved="false"></xref> of the component to be removed
+- api3: Remove(Type)
+  id: Alis_Core_Ecs_GameObject_Remove_System_Type_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1816
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Remove(System.Type)
+    commentId: M:Alis.Core.Ecs.GameObject.Remove(System.Type)
+- markdown: Removes a component from an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>
+- code: public void Remove(Type type)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type of component to remove
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> is dead.
+  - type:
+    - text: ComponentNotFoundException
+      url: Alis.Core.Ecs.Exceptions.ComponentNotFoundException.html
+    description: >-
+      <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> does not have component of type
+
+      <code class="paramref">type</code>.
+- api3: Set(ComponentId, object)
+  id: Alis_Core_Ecs_GameObject_Set_Alis_Core_Ecs_Kernel_ComponentId_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1668
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Set(Alis.Core.Ecs.Kernel.ComponentId,System.Object)
+    commentId: M:Alis.Core.Ecs.GameObject.Set(Alis.Core.Ecs.Kernel.ComponentId,System.Object)
+- markdown: Gets this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>'s component of type <code class="paramref">id</code>.
+- code: public void Set(ComponentId id, object obj)
+- h4: Parameters
+- parameters:
+  - name: id
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The ID of the type of component to get
+  - name: obj
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The component to set
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> is dead.
+  - type:
+    - text: ComponentNotFoundException
+      url: Alis.Core.Ecs.Exceptions.ComponentNotFoundException.html
+    description: >-
+      <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> does not have component of type
+
+      <code class="paramref">id</code>.
+- api3: Set(Type, object)
+  id: Alis_Core_Ecs_GameObject_Set_System_Type_System_Object_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1695
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Set(System.Type,System.Object)
+    commentId: M:Alis.Core.Ecs.GameObject.Set(System.Type,System.Object)
+- markdown: Gets this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>'s component of type <code class="paramref">type</code>.
+- code: public void Set(Type type, object obj)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type of component to get
+  - name: obj
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The component to set
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> is dead.
+  - type:
+    - text: ComponentNotFoundException
+      url: Alis.Core.Ecs.Exceptions.ComponentNotFoundException.html
+    description: >-
+      <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> does not have component of type
+
+      <code class="paramref">type</code>.
+- api3: Throw_EntityIsDead()
+  id: Alis_Core_Ecs_GameObject_Throw_EntityIsDead
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L179
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.Throw_EntityIsDead
+    commentId: M:Alis.Core.Ecs.GameObject.Throw_EntityIsDead
+- markdown: Throws the gameObject is dead
+- code: public static void Throw_EntityIsDead()
+- api3: TraverseThroughCacheOrCreate<TEdge>(Scene, ref ArchetypeNeighborCache, ref GameObjectLocation, bool)
+  id: Alis_Core_Ecs_GameObject_TraverseThroughCacheOrCreate__1_Alis_Core_Ecs_Scene_Alis_Core_Ecs_Collections_ArchetypeNeighborCache__Alis_Core_Ecs_GameObjectLocation__System_Boolean_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L357
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.TraverseThroughCacheOrCreate``1(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Collections.ArchetypeNeighborCache@,Alis.Core.Ecs.GameObjectLocation@,System.Boolean)
+    commentId: M:Alis.Core.Ecs.GameObject.TraverseThroughCacheOrCreate``1(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Collections.ArchetypeNeighborCache@,Alis.Core.Ecs.GameObjectLocation@,System.Boolean)
+- markdown: Traverses the through cache or create using the specified scene
+- code: 'internal static Archetype TraverseThroughCacheOrCreate<TEdge>(Scene scene, ref ArchetypeNeighborCache cache, ref GameObjectLocation currentLookup, bool add) where TEdge : struct, IArchetypeGraphEdge'
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: cache
+    type:
+    - text: ArchetypeNeighborCache
+      url: Alis.Core.Ecs.Collections.ArchetypeNeighborCache.html
+    description: The cache
+  - name: currentLookup
+    type:
+    - text: GameObjectLocation
+      url: Alis.Core.Ecs.GameObjectLocation.html
+    description: The current lookup
+  - name: add
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The add
+- h4: Returns
+- parameters:
+  - type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+- h4: Type Parameters
+- parameters:
+  - name: TEdge
+    description: The edge
+- api3: TryGet<T>(out Ref<T>)
+  id: Alis_Core_Ecs_GameObject_TryGet__1_Alis_Core_Ecs_Kernel_Ref___0___
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1710
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.TryGet``1(Alis.Core.Ecs.Kernel.Ref{``0}@)
+    commentId: M:Alis.Core.Ecs.GameObject.TryGet``1(Alis.Core.Ecs.Kernel.Ref{``0}@)
+- markdown: Attempts to get a component from an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public bool TryGet<T>(out Ref<T> value)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T
+    - '>'
+    description: A wrapper over a reference to the component when <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this gameObject has a component of type <code class="typeparamref">T</code>, otherwise
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of component.
+- api3: TryGet(Type, out object)
+  id: Alis_Core_Ecs_GameObject_TryGet_System_Type_System_Object__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1725
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.TryGet(System.Type,System.Object@)
+    commentId: M:Alis.Core.Ecs.GameObject.TryGet(System.Type,System.Object@)
+- markdown: Attempts to get a component from an <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref>.
+- code: public bool TryGet(Type type, out object value)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type of component to try and get
+  - name: value
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: A wrapper over a reference to the component when <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this gameObject has a component of type <code class="paramref">type</code>, otherwise
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- api3: TryGetCore<T>(out bool)
+  id: Alis_Core_Ecs_GameObject_TryGetCore__1_System_Boolean__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L151
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.TryGetCore``1(System.Boolean@)
+    commentId: M:Alis.Core.Ecs.GameObject.TryGetCore``1(System.Boolean@)
+- markdown: Tries the get core using the specified exists
+- code: public Ref<T> TryGetCore<T>(out bool exists)
+- h4: Parameters
+- parameters:
+  - name: exists
+    type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The exists
+- h4: Returns
+- parameters:
+  - type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T
+    - '>'
+    description: A ref of t
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: TryHas(ComponentId)
+  id: Alis_Core_Ecs_GameObject_TryHas_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1564
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.TryHas(Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.GameObject.TryHas(Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: >-
+    Checks of this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> has a component specified by <code class="paramref">componentId</code> without
+
+    throwing
+
+    when dead.
+- code: public bool TryHas(ComponentId componentId)
+- h4: Parameters
+- parameters:
+  - name: componentId
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The component ID of the component type to check.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject is alive and has a component of <code class="paramref">componentId</code>,
+
+      otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- api3: TryHas<T>()
+  id: Alis_Core_Ecs_GameObject_TryHas__1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1577
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.TryHas``1
+    commentId: M:Alis.Core.Ecs.GameObject.TryHas``1
+- markdown: >-
+    Checks of this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> has a component specified by <code class="typeparamref">T</code> without throwing
+
+    when
+
+    dead.
+- code: public bool TryHas<T>()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject is alive and has a component of <code class="typeparamref">T</code>, otherwise
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The type of component to check.
+- api3: TryHas(Type)
+  id: Alis_Core_Ecs_GameObject_TryHas_System_Type_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1589
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.TryHas(System.Type)
+    commentId: M:Alis.Core.Ecs.GameObject.TryHas(System.Type)
+- markdown: >-
+    Checks of this <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> has a component specified by <code class="paramref">type</code> without throwing
+
+    when
+
+    dead.
+- code: public bool TryHas(Type type)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - text: Type
+      url: https://learn.microsoft.com/dotnet/api/system.type
+    description: The type of the component type to check.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the gameObject is alive and has a component of <code class="paramref">type</code>, otherwise
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- api3: UnsubscribeEvent(object, GameObjectFlags)
+  id: Alis_Core_Ecs_GameObject_UnsubscribeEvent_System_Object_Alis_Core_Ecs_GameObjectFlags_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1895
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.UnsubscribeEvent(System.Object,Alis.Core.Ecs.GameObjectFlags)
+    commentId: M:Alis.Core.Ecs.GameObject.UnsubscribeEvent(System.Object,Alis.Core.Ecs.GameObjectFlags)
+- markdown: Unsubscribes the event using the specified value
+- code: public void UnsubscribeEvent(object value, GameObjectFlags flag)
+- h4: Parameters
+- parameters:
+  - name: value
+    type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+    description: The value
+  - name: flag
+    type:
+    - text: GameObjectFlags
+      url: Alis.Core.Ecs.GameObjectFlags.html
+    description: The flag
+- api3: OnComponentAdded
+  id: Alis_Core_Ecs_GameObject_OnComponentAdded
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1833
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.OnComponentAdded
+    commentId: E:Alis.Core.Ecs.GameObject.OnComponentAdded
+- markdown: Raised when a component is added to an gameObject
+- code: public event Action<GameObject, ComponentId> OnComponentAdded
+- h4: Event Type
+- parameters:
+  - type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-2
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - ','
+    - " "
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- api3: OnComponentRemoved
+  id: Alis_Core_Ecs_GameObject_OnComponentRemoved
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1842
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.OnComponentRemoved
+    commentId: E:Alis.Core.Ecs.GameObject.OnComponentRemoved
+- markdown: Raised when a component is removed from an gameObject
+- code: public event Action<GameObject, ComponentId> OnComponentRemoved
+- h4: Event Type
+- parameters:
+  - type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-2
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - ','
+    - " "
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- api3: OnDelete
+  id: Alis_Core_Ecs_GameObject_OnDelete
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L1824
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.OnDelete
+    commentId: E:Alis.Core.Ecs.GameObject.OnDelete
+- markdown: Raised when the gameObject is deleted
+- code: public event Action<GameObject> OnDelete
+- h4: Event Type
+- parameters:
+  - type:
+    - text: Action
+      url: https://learn.microsoft.com/dotnet/api/system.action-1
+    - <
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    - '>'
+- h2: Operators
+- api3: operator ==(GameObject, GameObject)
+  id: Alis_Core_Ecs_GameObject_op_Equality_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L201
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.op_Equality(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.GameObject.op_Equality(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObject)
+- markdown: Checks if two <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> structs refer to the same gameObject.
+- code: public static bool operator ==(GameObject a, GameObject b)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The first gameObject to compare.
+  - name: b
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The second gameObject to compare.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entities refer to the same gameObject; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+- api3: operator !=(GameObject, GameObject)
+  id: Alis_Core_Ecs_GameObject_op_Inequality_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObject_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObject.cs#L212
+  metadata:
+    uid: Alis.Core.Ecs.GameObject.op_Inequality(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObject)
+    commentId: M:Alis.Core.Ecs.GameObject.op_Inequality(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObject)
+- markdown: Checks if two <xref href="Alis.Core.Ecs.GameObject" data-throw-if-not-resolved="false"></xref> structs do not refer to the same gameObject.
+- code: public static bool operator !=(GameObject a, GameObject b)
+- h4: Parameters
+- parameters:
+  - name: a
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The first gameObject to compare.
+  - name: b
+    type:
+    - text: GameObject
+      url: Alis.Core.Ecs.GameObject.html
+    description: The second gameObject to compare.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: >-
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entities do not refer to the same gameObject; otherwise,
+
+      <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+languageId: csharp
+metadata:
+  description: An GameObject reference; refers to a collection of components of unqiue types.

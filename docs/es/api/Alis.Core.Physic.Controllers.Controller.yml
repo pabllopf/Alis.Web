@@ -21,7 +21,7 @@ body:
   - text: object
     url: https://learn.microsoft.com/dotnet/api/system.object
   - text: FilterData
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html
+    url: Alis.Core.Physic.Common.Logic.FilterData.html
   - text: Controller
     url: Alis.Core.Physic.Controllers.Controller.html
 - h4: Derived
@@ -35,27 +35,27 @@ body:
 - h4: Inherited Members
 - list:
   - text: FilterData.DisabledOnCategories
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_DisabledOnCategories
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_DisabledOnCategories
   - text: FilterData.DisabledOnGroup
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_DisabledOnGroup
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_DisabledOnGroup
   - text: FilterData.EnabledOnCategories
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_EnabledOnCategories
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_EnabledOnCategories
   - text: FilterData.EnabledOnGroup
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_EnabledOnGroup
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_EnabledOnGroup
   - text: FilterData.IsActiveOn(Body)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_IsActiveOn_Alis_Core_Physic_Dynamics_Body_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_IsActiveOn_Alis_Core_Physic_Dynamics_Body_
   - text: FilterData.AddDisabledCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_AddDisabledCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_AddDisabledCategory_Alis_Core_Physic_Dynamics_Category_
   - text: FilterData.RemoveDisabledCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_RemoveDisabledCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_RemoveDisabledCategory_Alis_Core_Physic_Dynamics_Category_
   - text: FilterData.IsInDisabledCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_IsInDisabledCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_IsInDisabledCategory_Alis_Core_Physic_Dynamics_Category_
   - text: FilterData.AddEnabledCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_AddEnabledCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_AddEnabledCategory_Alis_Core_Physic_Dynamics_Category_
   - text: FilterData.RemoveEnabledCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_RemoveEnabledCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_RemoveEnabledCategory_Alis_Core_Physic_Dynamics_Category_
   - text: FilterData.IsInEnabledInCategory(Category)
-    url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html#Alis_Core_Physic_Common_PhysicsLogic_FilterData_IsInEnabledInCategory_Alis_Core_Physic_Dynamics_Category_
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_IsInEnabledInCategory_Alis_Core_Physic_Dynamics_Category_
   - text: object.Equals(object?)
     url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - text: object.Equals(object?, object?)
@@ -78,12 +78,12 @@ body:
     uid: Alis.Core.Physic.Controllers.Controller.ControllerCategory
     commentId: F:Alis.Core.Physic.Controllers.Controller.ControllerCategory
 - markdown: The cat 01
-- code: public ControllerCategory ControllerCategory
+- code: public readonly ControllerCategory ControllerCategory
 - h4: Field Value
 - parameters:
   - type:
     - text: ControllerCategory
-      url: Alis.Core.Physic.Common.PhysicsLogic.ControllerCategory.html
+      url: Alis.Core.Physic.Common.Logic.ControllerCategory.html
 - api3: Enabled
   id: Alis_Core_Physic_Controllers_Controller_Enabled
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/Controller.cs#L49
@@ -98,19 +98,19 @@ body:
     - text: bool
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - h2: Properties
-- api3: World
-  id: Alis_Core_Physic_Controllers_Controller_World
+- api3: WorldPhysic
+  id: Alis_Core_Physic_Controllers_Controller_WorldPhysic
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/Controller.cs#L54
   metadata:
-    uid: Alis.Core.Physic.Controllers.Controller.World
-    commentId: P:Alis.Core.Physic.Controllers.Controller.World
+    uid: Alis.Core.Physic.Controllers.Controller.WorldPhysic
+    commentId: P:Alis.Core.Physic.Controllers.Controller.WorldPhysic
 - markdown: Gets or sets the value of the world
-- code: public World World { get; internal set; }
+- code: public WorldPhysic WorldPhysic { get; internal set; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: World
-      url: Alis.Core.Physic.Dynamics.World.html
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
 - h2: Methods
 - api3: IsActiveOn(Body)
   id: Alis_Core_Physic_Controllers_Controller_IsActiveOn_Alis_Core_Physic_Dynamics_Body_
@@ -135,7 +135,7 @@ body:
     description: The bool
 - api3: Update(float)
   id: Alis_Core_Physic_Controllers_Controller_Update_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/Controller.cs#L73
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Controllers/Controller.cs#L75
   metadata:
     uid: Alis.Core.Physic.Controllers.Controller.Update(System.Single)
     commentId: M:Alis.Core.Physic.Controllers.Controller.Update(System.Single)
@@ -151,7 +151,7 @@ body:
 - h2: See Also
 - list:
   - - text: FilterData
-      url: Alis.Core.Physic.Common.PhysicsLogic.FilterData.html
+      url: Alis.Core.Physic.Common.Logic.FilterData.html
 languageId: csharp
 metadata:
   description: The controller class

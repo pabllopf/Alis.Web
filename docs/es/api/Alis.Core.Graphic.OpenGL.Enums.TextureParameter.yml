@@ -1,0 +1,133 @@
+### YamlMime:ApiPage
+title: Enum TextureParameter
+body:
+- api1: Enum TextureParameter
+  id: Alis_Core_Graphic_OpenGL_Enums_TextureParameter
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Enums/TextureParameter.cs#L35
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Enums.TextureParameter
+    commentId: T:Alis.Core.Graphic.OpenGL.Enums.TextureParameter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Enums
+      url: Alis.Core.Graphic.OpenGL.Enums.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The texture parameter enum
+- code: public enum TextureParameter
+- h2: Fields
+- parameters:
+  - name: Nearest
+    default: "9728"
+    description: >+
+      The nearest texture parameter
+
+  - name: Linear
+    default: "9729"
+    description: >+
+      The linear texture parameter
+
+  - name: NearestMipMapNearest
+    default: "9984"
+    description: >+
+      The nearest mip map nearest texture parameter
+
+  - name: LinearMipMapNearest
+    default: "9985"
+    description: >+
+      The linear mip map nearest texture parameter
+
+  - name: NearestMipMapLinear
+    default: "9986"
+    description: >+
+      The nearest mip map linear texture parameter
+
+  - name: LinearMipMapLinear
+    default: "9987"
+    description: >+
+      The linear mip map linear texture parameter
+
+  - name: ClampToEdge
+    default: "33071"
+    description: >+
+      The clamp to edge texture parameter
+
+  - name: ClampToBorder
+    default: "33069"
+    description: >+
+      The clamp to border texture parameter
+
+  - name: MirrorClampToEdge
+    default: "34627"
+    description: >+
+      The mirror clamp to edge texture parameter
+
+  - name: MirroredRepeat
+    default: "33648"
+    description: >+
+      The mirrored repeat texture parameter
+
+  - name: Repeat
+    default: "10497"
+    description: >+
+      The repeat texture parameter
+
+  - name: Red
+    default: "6403"
+    description: >+
+      The red texture parameter
+
+  - name: Green
+    default: "6404"
+    description: >+
+      The green texture parameter
+
+  - name: Blue
+    default: "6405"
+    description: >+
+      The blue texture parameter
+
+  - name: Alpha
+    default: "6406"
+    description: >+
+      The alpha texture parameter
+
+  - name: Zero
+    default: "0"
+    description: >+
+      The zero texture parameter
+
+  - name: One
+    default: "1"
+    description: >+
+      The one texture parameter
+
+  - name: CompareRefToTexture
+    default: "34894"
+    description: >+
+      The compare ref to texture texture parameter
+
+  - name: None
+    default: "0"
+    description: >+
+      The none texture parameter
+
+  - name: StencilIndex
+    default: "6401"
+    description: >+
+      The stencil index texture parameter
+
+  - name: DepthComponent
+    default: "6402"
+    description: >+
+      The depth component texture parameter
+
+  - name: MaxAnisotropyExt
+    default: "34046"
+    description: >+
+      The max anisotropy ext texture parameter
+
+languageId: csharp
+metadata:
+  description: The texture parameter enum

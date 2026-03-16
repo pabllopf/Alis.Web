@@ -31,79 +31,79 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Fields
-- api3: dt
-  id: Alis_Core_Physic_Dynamics_TimeStep_dt
+- api3: Dt
+  id: Alis_Core_Physic_Dynamics_TimeStep_Dt
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/TimeStep.cs#L59
   metadata:
-    uid: Alis.Core.Physic.Dynamics.TimeStep.dt
-    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.dt
+    uid: Alis.Core.Physic.Dynamics.TimeStep.Dt
+    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.Dt
 - markdown: Time step (Delta time)
-- code: public float dt
+- code: public float Dt
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: dtRatio
-  id: Alis_Core_Physic_Dynamics_TimeStep_dtRatio
+- api3: DtRatio
+  id: Alis_Core_Physic_Dynamics_TimeStep_DtRatio
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/TimeStep.cs#L64
   metadata:
-    uid: Alis.Core.Physic.Dynamics.TimeStep.dtRatio
-    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.dtRatio
+    uid: Alis.Core.Physic.Dynamics.TimeStep.DtRatio
+    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.DtRatio
 - markdown: dt * inv_dt0
-- code: public float dtRatio
+- code: public float DtRatio
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: inv_dt
-  id: Alis_Core_Physic_Dynamics_TimeStep_inv_dt
+- api3: InvDt
+  id: Alis_Core_Physic_Dynamics_TimeStep_InvDt
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/TimeStep.cs#L69
   metadata:
-    uid: Alis.Core.Physic.Dynamics.TimeStep.inv_dt
-    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.inv_dt
+    uid: Alis.Core.Physic.Dynamics.TimeStep.InvDt
+    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.InvDt
 - markdown: Inverse time step (0 if dt == 0).
-- code: public float inv_dt
+- code: public float InvDt
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: positionIterations
-  id: Alis_Core_Physic_Dynamics_TimeStep_positionIterations
+- api3: PositionIterations
+  id: Alis_Core_Physic_Dynamics_TimeStep_PositionIterations
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/TimeStep.cs#L74
   metadata:
-    uid: Alis.Core.Physic.Dynamics.TimeStep.positionIterations
-    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.positionIterations
+    uid: Alis.Core.Physic.Dynamics.TimeStep.PositionIterations
+    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.PositionIterations
 - markdown: The position iterations
-- code: public int positionIterations
+- code: public int PositionIterations
 - h4: Field Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: velocityIterations
-  id: Alis_Core_Physic_Dynamics_TimeStep_velocityIterations
+- api3: VelocityIterations
+  id: Alis_Core_Physic_Dynamics_TimeStep_VelocityIterations
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/TimeStep.cs#L79
   metadata:
-    uid: Alis.Core.Physic.Dynamics.TimeStep.velocityIterations
-    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.velocityIterations
+    uid: Alis.Core.Physic.Dynamics.TimeStep.VelocityIterations
+    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.VelocityIterations
 - markdown: The velocity iterations
-- code: public int velocityIterations
+- code: public int VelocityIterations
 - h4: Field Value
 - parameters:
   - type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
-- api3: warmStarting
-  id: Alis_Core_Physic_Dynamics_TimeStep_warmStarting
+- api3: WarmStarting
+  id: Alis_Core_Physic_Dynamics_TimeStep_WarmStarting
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/TimeStep.cs#L84
   metadata:
-    uid: Alis.Core.Physic.Dynamics.TimeStep.warmStarting
-    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.warmStarting
+    uid: Alis.Core.Physic.Dynamics.TimeStep.WarmStarting
+    commentId: F:Alis.Core.Physic.Dynamics.TimeStep.WarmStarting
 - markdown: The warm starting
-- code: public bool warmStarting
+- code: public bool WarmStarting
 - h4: Field Value
 - parameters:
   - type:

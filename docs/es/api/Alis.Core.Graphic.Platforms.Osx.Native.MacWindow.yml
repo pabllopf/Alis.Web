@@ -1,0 +1,210 @@
+### YamlMime:ApiPage
+title: Class MacWindow
+body:
+- api1: Class MacWindow
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L39
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow
+    commentId: T:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.Platforms.Osx.Native
+      url: Alis.Core.Graphic.Platforms.Osx.Native.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Representa una ventana nativa de macOS
+- code: internal class MacWindow
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: MacWindow
+    url: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: MacWindow(int, int, string)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow__ctor_System_Int32_System_Int32_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L47
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.#ctor(System.Int32,System.Int32,System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.#ctor(System.Int32,System.Int32,System.String)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Graphic.Platforms.Osx.Native.MacWindow" data-throw-if-not-resolved="false"></xref> class
+- code: public MacWindow(int width, int height, string title)
+- h4: Parameters
+- parameters:
+  - name: width
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The width
+  - name: height
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The height
+  - name: title
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The title
+- h2: Properties
+- api3: Handle
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_Handle
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L58
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Handle
+    commentId: P:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Handle
+- markdown: Gets or sets the value of the handle
+- code: public nint Handle { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: nint
+      url: https://learn.microsoft.com/dotnet/api/system.intptr
+- api3: Height
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_Height
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L68
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Height
+    commentId: P:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Height
+- markdown: Gets or sets the value of the height
+- code: public int Height { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Title
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_Title
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L73
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Title
+    commentId: P:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Title
+- markdown: Gets or sets the value of the title
+- code: public string Title { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- api3: Width
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_Width
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L63
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Width
+    commentId: P:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Width
+- markdown: Gets or sets the value of the width
+- code: public int Width { get; private set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: CrearVentana()
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_CrearVentana
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L78
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.CrearVentana
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.CrearVentana
+- markdown: Crears the ventana
+- code: private void CrearVentana()
+- api3: GetFrame()
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_GetFrame
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L134
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.GetFrame
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.GetFrame
+- markdown: Gets the frame
+- code: public NsRect GetFrame()
+- h4: Returns
+- parameters:
+  - type:
+    - text: NsRect
+      url: Alis.Core.Graphic.Platforms.Osx.Native.NsRect.html
+    description: The ns rect
+- api3: Hide()
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_Hide
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L98
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Hide
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Hide
+- markdown: Hides this instance
+- code: public void Hide()
+- api3: IsVisible()
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_IsVisible
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L127
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.IsVisible
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.IsVisible
+- markdown: Ises the visible
+- code: public bool IsVisible()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: SetSize(int, int)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_SetSize_System_Int32_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L115
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.SetSize(System.Int32,System.Int32)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.SetSize(System.Int32,System.Int32)
+- markdown: Sets the size using the specified width
+- code: public void SetSize(int width, int height)
+- h4: Parameters
+- parameters:
+  - name: width
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The width
+  - name: height
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The height
+- api3: SetTitle(string)
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_SetTitle_System_String_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L104
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.SetTitle(System.String)
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.SetTitle(System.String)
+- markdown: Sets the title using the specified title
+- code: public void SetTitle(string title)
+- h4: Parameters
+- parameters:
+  - name: title
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    description: The title
+- api3: Show()
+  id: Alis_Core_Graphic_Platforms_Osx_Native_MacWindow_Show
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/Platforms/Osx/Native/MacWindow.cs#L93
+  metadata:
+    uid: Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Show
+    commentId: M:Alis.Core.Graphic.Platforms.Osx.Native.MacWindow.Show
+- markdown: Shows this instance
+- code: public void Show()
+languageId: csharp
+metadata:
+  description: Representa una ventana nativa de macOS

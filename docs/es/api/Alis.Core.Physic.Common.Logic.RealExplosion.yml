@@ -1,0 +1,352 @@
+### YamlMime:ApiPage
+title: Class RealExplosion
+body:
+- api1: Class RealExplosion
+  id: Alis_Core_Physic_Common_Logic_RealExplosion
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L62
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion
+    commentId: T:Alis.Core.Physic.Common.Logic.RealExplosion
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic.Common.Logic
+      url: Alis.Core.Physic.Common.Logic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Creates a realistic explosion based on raycasting. Objects in the open will be affected, but objects behind
+
+    static bodies will not. A body that is half in cover, half in the open will get half the force applied to the end
+
+    in
+
+    the open.
+- code: 'public sealed class RealExplosion : PhysicsLogic'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: FilterData
+    url: Alis.Core.Physic.Common.Logic.FilterData.html
+  - text: PhysicsLogic
+    url: Alis.Core.Physic.Common.Logic.PhysicsLogic.html
+  - text: RealExplosion
+    url: Alis.Core.Physic.Common.Logic.RealExplosion.html
+- h4: Inherited Members
+- list:
+  - text: PhysicsLogic.ControllerCategory
+    url: Alis.Core.Physic.Common.Logic.PhysicsLogic.html#Alis_Core_Physic_Common_Logic_PhysicsLogic_ControllerCategory
+  - text: PhysicsLogic.WorldPhysic
+    url: Alis.Core.Physic.Common.Logic.PhysicsLogic.html#Alis_Core_Physic_Common_Logic_PhysicsLogic_WorldPhysic
+  - text: PhysicsLogic.IsActiveOn(Body)
+    url: Alis.Core.Physic.Common.Logic.PhysicsLogic.html#Alis_Core_Physic_Common_Logic_PhysicsLogic_IsActiveOn_Alis_Core_Physic_Dynamics_Body_
+  - text: FilterData.DisabledOnCategories
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_DisabledOnCategories
+  - text: FilterData.DisabledOnGroup
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_DisabledOnGroup
+  - text: FilterData.EnabledOnCategories
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_EnabledOnCategories
+  - text: FilterData.EnabledOnGroup
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_EnabledOnGroup
+  - text: FilterData.IsActiveOn(Body)
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_IsActiveOn_Alis_Core_Physic_Dynamics_Body_
+  - text: FilterData.AddDisabledCategory(Category)
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_AddDisabledCategory_Alis_Core_Physic_Dynamics_Category_
+  - text: FilterData.RemoveDisabledCategory(Category)
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_RemoveDisabledCategory_Alis_Core_Physic_Dynamics_Category_
+  - text: FilterData.IsInDisabledCategory(Category)
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_IsInDisabledCategory_Alis_Core_Physic_Dynamics_Category_
+  - text: FilterData.AddEnabledCategory(Category)
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_AddEnabledCategory_Alis_Core_Physic_Dynamics_Category_
+  - text: FilterData.RemoveEnabledCategory(Category)
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_RemoveEnabledCategory_Alis_Core_Physic_Dynamics_Category_
+  - text: FilterData.IsInEnabledInCategory(Category)
+    url: Alis.Core.Physic.Common.Logic.FilterData.html#Alis_Core_Physic_Common_Logic_FilterData_IsInEnabledInCategory_Alis_Core_Physic_Dynamics_Category_
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: RealExplosion(WorldPhysic)
+  id: Alis_Core_Physic_Common_Logic_RealExplosion__ctor_Alis_Core_Physic_Dynamics_WorldPhysic_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L113
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic)
+    commentId: M:Alis.Core.Physic.Common.Logic.RealExplosion.#ctor(Alis.Core.Physic.Dynamics.WorldPhysic)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Logic.RealExplosion" data-throw-if-not-resolved="false"></xref> class
+- code: public RealExplosion(WorldPhysic worldPhysic)
+- h4: Parameters
+- parameters:
+  - name: worldPhysic
+    type:
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
+    description: The world
+- h2: Fields
+- api3: EdgeRatio
+  id: Alis_Core_Physic_Common_Logic_RealExplosion_EdgeRatio
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L83
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion.EdgeRatio
+    commentId: F:Alis.Core.Physic.Common.Logic.RealExplosion.EdgeRatio
+- markdown: >-
+    Ratio of arc length to angle from edges to first ray tested.
+
+    Defaults to 1/40.
+- code: public readonly float EdgeRatio
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: IgnoreWhenInsideShape
+  id: Alis_Core_Physic_Common_Logic_RealExplosion_IgnoreWhenInsideShape
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L89
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion.IgnoreWhenInsideShape
+    commentId: F:Alis.Core.Physic.Common.Logic.RealExplosion.IgnoreWhenInsideShape
+- markdown: >-
+    Ignore Explosion if it happens inside a shape.
+
+    Default value is false.
+- code: public readonly bool IgnoreWhenInsideShape
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: MaxAngle
+  id: Alis_Core_Physic_Common_Logic_RealExplosion_MaxAngle
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L95
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion.MaxAngle
+    commentId: F:Alis.Core.Physic.Common.Logic.RealExplosion.MaxAngle
+- markdown: >-
+    Max angle between rays (used when segment is large).
+
+    Defaults to 15 degrees
+- code: public readonly float MaxAngle
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxEdgeOffset
+  id: Alis_Core_Physic_Common_Logic_RealExplosion_MaxEdgeOffset
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L67
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion.MaxEdgeOffset
+    commentId: F:Alis.Core.Physic.Common.Logic.RealExplosion.MaxEdgeOffset
+- markdown: 'Two degrees: maximum angle from edges to first ray tested'
+- code: private const float MaxEdgeOffset = 0.034906585
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxShapes
+  id: Alis_Core_Physic_Common_Logic_RealExplosion_MaxShapes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L101
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion.MaxShapes
+    commentId: F:Alis.Core.Physic.Common.Logic.RealExplosion.MaxShapes
+- markdown: >-
+    Maximum number of shapes involved in the explosion.
+
+    Defaults to 100
+- code: public readonly int MaxShapes
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MinRays
+  id: Alis_Core_Physic_Common_Logic_RealExplosion_MinRays
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L107
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion.MinRays
+    commentId: F:Alis.Core.Physic.Common.Logic.RealExplosion.MinRays
+- markdown: >-
+    How many rays per shape/body/segment.
+
+    Defaults to 5
+- code: public readonly int MinRays
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _data
+  id: Alis_Core_Physic_Common_Logic_RealExplosion__data
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L72
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion._data
+    commentId: F:Alis.Core.Physic.Common.Logic.RealExplosion._data
+- markdown: The shape data
+- code: private readonly List<ShapeData> _data
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: ShapeData
+      url: Alis.Core.Physic.Common.Logic.ShapeData.html
+    - '>'
+- api3: _rdc
+  id: Alis_Core_Physic_Common_Logic_RealExplosion__rdc
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L77
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion._rdc
+    commentId: F:Alis.Core.Physic.Common.Logic.RealExplosion._rdc
+- markdown: The rdc
+- code: private readonly RayDataComparer _rdc
+- h4: Field Value
+- parameters:
+  - type:
+    - text: RayDataComparer
+      url: Alis.Core.Physic.Common.Logic.RayDataComparer.html
+- h2: Methods
+- api3: Activate(Vector2F, float, float)
+  id: Alis_Core_Physic_Common_Logic_RealExplosion_Activate_Alis_Core_Aspect_Math_Vector_Vector2F_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L129
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion.Activate(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.Common.Logic.RealExplosion.Activate(Alis.Core.Aspect.Math.Vector.Vector2F,System.Single,System.Single)
+- markdown: Activate the explosion at the specified position.
+- code: public Dictionary<Fixture, Vector2F> Activate(Vector2F pos, float radius, float maxForce)
+- h4: Parameters
+- parameters:
+  - name: pos
+    type:
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    description: The position where the explosion happens
+  - name: radius
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The explosion radius
+  - name: maxForce
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: >-
+      The explosion force at the explosion point (then is inversely proportional to the square of the
+
+      distance)
+- h4: Returns
+- parameters:
+  - type:
+    - text: Dictionary
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    - <
+    - text: Fixture
+      url: Alis.Core.Physic.Dynamics.Fixture.html
+    - ','
+    - " "
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+    - '>'
+    description: A list of bodies and the amount of force that was applied to them.
+- api3: ListAny<T>(List<T>)
+  id: Alis_Core_Physic_Common_Logic_RealExplosion_ListAny__1_System_Collections_Generic_List___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L462
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion.ListAny``1(System.Collections.Generic.List{``0})
+    commentId: M:Alis.Core.Physic.Common.Logic.RealExplosion.ListAny``1(System.Collections.Generic.List{``0})
+- markdown: Lists the any using the specified list
+- code: private bool ListAny<T>(List<T> list)
+- h4: Parameters
+- parameters:
+  - name: list
+    type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - T
+    - '>'
+    description: The list
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: ListFirst<T>(List<T>)
+  id: Alis_Core_Physic_Common_Logic_RealExplosion_ListFirst__1_System_Collections_Generic_List___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L470
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion.ListFirst``1(System.Collections.Generic.List{``0})
+    commentId: M:Alis.Core.Physic.Common.Logic.RealExplosion.ListFirst``1(System.Collections.Generic.List{``0})
+- markdown: Lists the first using the specified list
+- code: private T ListFirst<T>(List<T> list)
+- h4: Parameters
+- parameters:
+  - name: list
+    type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - T
+    - '>'
+    description: The list
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+- api3: ListLast<T>(List<T>)
+  id: Alis_Core_Physic_Common_Logic_RealExplosion_ListLast__1_System_Collections_Generic_List___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Logic/RealExplosion.cs#L478
+  metadata:
+    uid: Alis.Core.Physic.Common.Logic.RealExplosion.ListLast``1(System.Collections.Generic.List{``0})
+    commentId: M:Alis.Core.Physic.Common.Logic.RealExplosion.ListLast``1(System.Collections.Generic.List{``0})
+- markdown: Lists the last using the specified list
+- code: private T ListLast<T>(List<T> list)
+- h4: Parameters
+- parameters:
+  - name: list
+    type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - T
+    - '>'
+    description: The list
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The
+languageId: csharp
+metadata:
+  description: >-
+    Creates a realistic explosion based on raycasting. Objects in the open will be affected, but objects behind
+
+    static bodies will not. A body that is half in cover, half in the open will get half the force applied to the end
+
+    in
+
+    the open.

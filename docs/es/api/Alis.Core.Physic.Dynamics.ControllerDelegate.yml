@@ -15,13 +15,13 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The controller delegate
-- code: public delegate void ControllerDelegate(World sender, Controller controller)
+- code: public delegate void ControllerDelegate(WorldPhysic sender, Controller controller)
 - h4: Parameters
 - parameters:
   - name: sender
     type:
-    - text: World
-      url: Alis.Core.Physic.Dynamics.World.html
+    - text: WorldPhysic
+      url: Alis.Core.Physic.Dynamics.WorldPhysic.html
   - name: controller
     type:
     - text: Controller

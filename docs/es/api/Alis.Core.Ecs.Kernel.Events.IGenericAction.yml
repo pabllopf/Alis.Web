@@ -1,0 +1,42 @@
+### YamlMime:ApiPage
+title: Interface IGenericAction
+body:
+- api1: Interface IGenericAction
+  id: Alis_Core_Ecs_Kernel_Events_IGenericAction
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/IGenericAction.cs#L52
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.IGenericAction
+    commentId: T:Alis.Core.Ecs.Kernel.Events.IGenericAction
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Events
+      url: Alis.Core.Ecs.Kernel.Events.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: An generic action with known parameter
+- code: public interface IGenericAction
+- h2: Remarks
+- markdown: Since delegates cannot be unbound generics, we use an interface instead
+- h2: Methods
+- api3: Invoke<T>(ref T)
+  id: Alis_Core_Ecs_Kernel_Events_IGenericAction_Invoke__1___0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Events/IGenericAction.cs#L59
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Events.IGenericAction.Invoke``1(``0@)
+    commentId: M:Alis.Core.Ecs.Kernel.Events.IGenericAction.Invoke``1(``0@)
+- markdown: Runs the arbitrary generic method that this <xref href="Alis.Core.Ecs.Kernel.Events.IGenericAction" data-throw-if-not-resolved="false"></xref> represents
+- code: void Invoke<T>(ref T type)
+- h4: Parameters
+- parameters:
+  - name: type
+    type:
+    - T
+    description: The generic parameter
+- h4: Type Parameters
+- parameters:
+  - name: T
+    description: The unbound generic parameter
+languageId: csharp
+metadata:
+  description: An generic action with known parameter

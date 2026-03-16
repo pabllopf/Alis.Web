@@ -1,0 +1,69 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Collections
+body:
+- api1: Namespace Alis.Core.Ecs.Collections
+  id: Alis_Core_Ecs_Collections
+  metadata:
+    uid: Alis.Core.Ecs.Collections
+    commentId: N:Alis.Core.Ecs.Collections
+- h3: Classes
+- parameters:
+  - type:
+      text: EnumerableHelpers
+      url: Alis.Core.Ecs.Collections.EnumerableHelpers.html
+    description: Internal helper functions for working with enumerables.
+  - type:
+      text: FastestArrayPool<T>
+      url: Alis.Core.Ecs.Collections.FastestArrayPool-1.html
+    description: The fastest array pool class
+  - type:
+      text: IdTable
+      url: Alis.Core.Ecs.Collections.IdTable.html
+    description: The id table class
+  - type:
+      text: IdTable<T>
+      url: Alis.Core.Ecs.Collections.IdTable-1.html
+    description: The id table class
+  - type:
+      text: ShortSparseSet<T>
+      url: Alis.Core.Ecs.Collections.ShortSparseSet-1.html
+    description: The short sparse set class
+  - type:
+      text: SparseSet<T>
+      url: Alis.Core.Ecs.Collections.SparseSet-1.html
+    description: The sparse set class
+- h3: Structs
+- parameters:
+  - type:
+      text: ArchetypeNeighborCache
+      url: Alis.Core.Ecs.Collections.ArchetypeNeighborCache.html
+    description: A 4-way set-associative cache mapping source archetype IDs to destination archetypes.
+  - type:
+      text: Chunk<TData>
+      url: Alis.Core.Ecs.Collections.Chunk-1.html
+    description: The chunk
+  - type:
+      text: FastestStack<T>.Enumerator
+      url: Alis.Core.Ecs.Collections.FastestStack-1.Enumerator.html
+    description: The enumerator
+  - type:
+      text: FastLookup
+      url: Alis.Core.Ecs.Collections.FastLookup.html
+    description: The fast lookup
+  - type:
+      text: FastestStack<T>
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    description: The fastest stack class
+  - type:
+      text: FastestTable<T>
+      url: Alis.Core.Ecs.Collections.FastestTable-1.html
+    description: The fastest table combining optimal performance traits, safe version.
+  - type:
+      text: FrugalStack<T>
+      url: Alis.Core.Ecs.Collections.FrugalStack-1.html
+    description: The frugal stack
+  - type:
+      text: InlineArray8<T>
+      url: Alis.Core.Ecs.Collections.InlineArray8-1.html
+    description: The inline array
+languageId: csharp

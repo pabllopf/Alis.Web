@@ -1,0 +1,73 @@
+### YamlMime:ApiPage
+title: Struct RefTuple<T>
+body:
+- api1: Struct RefTuple<T>
+  id: Alis_Core_Ecs_Systems_RefTuple_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/RefTuple.cs#L41
+  metadata:
+    uid: Alis.Core.Ecs.Systems.RefTuple`1
+    commentId: T:Alis.Core.Ecs.Systems.RefTuple`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: A tuple of multiple references.
+- code: public ref struct RefTuple<T>
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: Item1
+  id: Alis_Core_Ecs_Systems_RefTuple_1_Item1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/RefTuple.cs#L47
+  metadata:
+    uid: Alis.Core.Ecs.Systems.RefTuple`1.Item1
+    commentId: F:Alis.Core.Ecs.Systems.RefTuple`1.Item1
+- markdown: The item
+- code: public Ref<T> Item1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T
+    - '>'
+- h2: Methods
+- api3: Deconstruct(out Ref<T>)
+  id: Alis_Core_Ecs_Systems_RefTuple_1_Deconstruct_Alis_Core_Ecs_Kernel_Ref__0___
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/RefTuple.cs#L52
+  metadata:
+    uid: Alis.Core.Ecs.Systems.RefTuple`1.Deconstruct(Alis.Core.Ecs.Kernel.Ref{`0}@)
+    commentId: M:Alis.Core.Ecs.Systems.RefTuple`1.Deconstruct(Alis.Core.Ecs.Kernel.Ref{`0}@)
+- markdown: Allows tuple deconstruction syntax to be used.
+- code: public void Deconstruct(out Ref<T> @ref)
+- h4: Parameters
+- parameters:
+  - name: ref
+    type:
+    - text: Ref
+      url: Alis.Core.Ecs.Kernel.Ref-1.html
+    - <
+    - T
+    - '>'
+languageId: csharp
+metadata:
+  description: A tuple of multiple references.

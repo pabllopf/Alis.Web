@@ -3,7 +3,7 @@ title: Class EarclipDecomposer
 body:
 - api1: Class EarclipDecomposer
   id: Alis_Core_Physic_Common_Decomposition_EarclipDecomposer
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L46
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L45
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer
     commentId: T:Alis.Core.Physic.Common.Decomposition.EarclipDecomposer
@@ -52,7 +52,7 @@ body:
 - h2: Methods
 - api3: ConvexPartition(Vertices, float)
   id: Alis_Core_Physic_Common_Decomposition_EarclipDecomposer_ConvexPartition_Alis_Core_Physic_Common_Vertices_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L56
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L55
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices,System.Single)
     commentId: M:Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices,System.Single)
@@ -85,7 +85,7 @@ body:
     - '>'
 - api3: IsEar(int, float[], float[], int)
   id: Alis_Core_Physic_Common_Decomposition_EarclipDecomposer_IsEar_System_Int32_System_Single___System_Single___System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L303
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L311
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.IsEar(System.Int32,System.Single[],System.Single[],System.Int32)
     commentId: M:Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.IsEar(System.Int32,System.Single[],System.Single[],System.Int32)
@@ -127,7 +127,7 @@ body:
 - markdown: Assumes clockwise orientation of polygon.
 - api3: Remainder(int, int)
   id: Alis_Core_Physic_Common_Decomposition_EarclipDecomposer_Remainder_System_Int32_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L279
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L287
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Remainder(System.Int32,System.Int32)
     commentId: M:Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Remainder(System.Int32,System.Int32)
@@ -153,7 +153,7 @@ body:
     description: ''
 - api3: ResolvePinchPoint(Vertices, out Vertices, out Vertices, float)
   id: Alis_Core_Physic_Common_Decomposition_EarclipDecomposer_ResolvePinchPoint_Alis_Core_Physic_Common_Vertices_Alis_Core_Physic_Common_Vertices__Alis_Core_Physic_Common_Vertices__System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L223
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L222
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.ResolvePinchPoint(Alis.Core.Physic.Common.Vertices,Alis.Core.Physic.Common.Vertices@,Alis.Core.Physic.Common.Vertices@,System.Single)
     commentId: M:Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.ResolvePinchPoint(Alis.Core.Physic.Common.Vertices,Alis.Core.Physic.Common.Vertices@,Alis.Core.Physic.Common.Vertices@,System.Single)
@@ -199,7 +199,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: TriangulatePolygon(Vertices, float)
   id: Alis_Core_Physic_Common_Decomposition_EarclipDecomposer_TriangulatePolygon_Alis_Core_Physic_Common_Vertices_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L80
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/EarclipDecomposer.cs#L73
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.TriangulatePolygon(Alis.Core.Physic.Common.Vertices,System.Single)
     commentId: M:Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.TriangulatePolygon(Alis.Core.Physic.Common.Vertices,System.Single)

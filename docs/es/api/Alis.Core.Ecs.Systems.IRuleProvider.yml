@@ -1,0 +1,35 @@
+### YamlMime:ApiPage
+title: Interface IRuleProvider
+body:
+- api1: Interface IRuleProvider
+  id: Alis_Core_Ecs_Systems_IRuleProvider
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/IRuleProvider.cs#L35
+  metadata:
+    uid: Alis.Core.Ecs.Systems.IRuleProvider
+    commentId: T:Alis.Core.Ecs.Systems.IRuleProvider
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: API Consumers should not implement this interface. Use existing implementations.
+- code: public interface IRuleProvider
+- h2: Properties
+- api3: Rule
+  id: Alis_Core_Ecs_Systems_IRuleProvider_Rule
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/IRuleProvider.cs#L40
+  metadata:
+    uid: Alis.Core.Ecs.Systems.IRuleProvider.Rule
+    commentId: P:Alis.Core.Ecs.Systems.IRuleProvider.Rule
+- markdown: API Consumers should not manually implement this interface
+- code: Rule Rule { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: Rule
+      url: Alis.Core.Ecs.Systems.Rule.html
+languageId: csharp
+metadata:
+  description: API Consumers should not implement this interface. Use existing implementations.

@@ -1,0 +1,21 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Data.Json.Parsing
+body:
+- api1: Namespace Alis.Core.Aspect.Data.Json.Parsing
+  id: Alis_Core_Aspect_Data_Json_Parsing
+  metadata:
+    uid: Alis.Core.Aspect.Data.Json.Parsing
+    commentId: N:Alis.Core.Aspect.Data.Json.Parsing
+- h3: Classes
+- parameters:
+  - type:
+      text: JsonParser
+      url: Alis.Core.Aspect.Data.Json.Parsing.JsonParser.html
+    description: Parses JSON strings into dictionaries of properties.
+- h3: Interfaces
+- parameters:
+  - type:
+      text: IJsonParser
+      url: Alis.Core.Aspect.Data.Json.Parsing.IJsonParser.html
+    description: Defines a contract for parsing JSON strings into a dictionary of properties.
+languageId: csharp

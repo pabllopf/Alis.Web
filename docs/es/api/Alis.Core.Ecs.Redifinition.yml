@@ -1,0 +1,50 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Ecs.Redifinition
+body:
+- api1: Namespace Alis.Core.Ecs.Redifinition
+  id: Alis_Core_Ecs_Redifinition
+  metadata:
+    uid: Alis.Core.Ecs.Redifinition
+    commentId: N:Alis.Core.Ecs.Redifinition
+- h3: Classes
+- parameters:
+  - type:
+      text: Gen2GcCallback
+      url: Alis.Core.Ecs.Redifinition.Gen2GcCallback.html
+    description: >-
+      Schedules a callback roughly every gen 2 GC (you may see a Gen 0 an Gen 1 but only once)
+
+      (We can fix this by capturing the Gen 2 count at startup and testing, but I mostly don't care)
+  - type:
+      text: MemoryHelpers
+      url: Alis.Core.Ecs.Redifinition.MemoryHelpers.html
+    description: The memory helpers class
+  - type:
+      text: MemoryHelpers<T>
+      url: Alis.Core.Ecs.Redifinition.MemoryHelpers-1.html
+    description: The memory helpers class
+- h3: Structs
+- parameters:
+  - type:
+      text: MemoryHelpers.Block16
+      url: Alis.Core.Ecs.Redifinition.MemoryHelpers.Block16.html
+    description: The block 16
+  - type:
+      text: MemoryHelpers.Block2
+      url: Alis.Core.Ecs.Redifinition.MemoryHelpers.Block2.html
+    description: The block
+  - type:
+      text: MemoryHelpers.Block4
+      url: Alis.Core.Ecs.Redifinition.MemoryHelpers.Block4.html
+    description: The block
+  - type:
+      text: MemoryHelpers.Block8
+      url: Alis.Core.Ecs.Redifinition.MemoryHelpers.Block8.html
+    description: The block
+- h3: Enums
+- parameters:
+  - type:
+      text: MemoryTrimming
+      url: Alis.Core.Ecs.Redifinition.MemoryTrimming.html
+    description: Specifies the level of memory trimming Alis internal buffers should do
+languageId: csharp

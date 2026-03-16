@@ -3,7 +3,7 @@ title: Class Polygon
 body:
 - api1: Class Polygon
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L50
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L40
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon
     commentId: T:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon
@@ -15,7 +15,7 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The polygon class
-- code: 'internal class Polygon : Triangulatable'
+- code: 'internal class Polygon : ITriangulatable'
 - h4: Inheritance
 - inheritance:
   - text: object
@@ -24,8 +24,8 @@ body:
     url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.html
 - h4: Implements
 - list:
-  - text: Triangulatable
-    url: Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable.html
+  - text: ITriangulatable
+    url: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.html
 - h4: Inherited Members
 - list:
   - text: object.Equals(object?)
@@ -45,7 +45,7 @@ body:
 - h2: Constructors
 - api3: Polygon(IList<PolygonPoint>)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon__ctor_System_Collections_Generic_IList_Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonPoint__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L81
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L71
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.#ctor(System.Collections.Generic.IList{Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint})
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.#ctor(System.Collections.Generic.IList{Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint})
@@ -64,7 +64,7 @@ body:
     description: A list of unique points
 - api3: Polygon(IEnumerable<PolygonPoint>)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon__ctor_System_Collections_Generic_IEnumerable_Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonPoint__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L96
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L92
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.#ctor(System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint})
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.#ctor(System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint})
@@ -83,21 +83,21 @@ body:
     description: A list of unique points.
 - api3: Polygon()
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon__ctor
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L103
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L99
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.#ctor
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.#ctor
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon" data-throw-if-not-resolved="false"></xref> class
 - code: public Polygon()
 - h2: Fields
-- api3: _holes
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon__holes
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L55
+- api3: Holes
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_Holes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L50
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon._holes
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon._holes
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Holes
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Holes
 - markdown: The holes
-- code: protected List<Polygon> _holes
+- code: protected List<Polygon> Holes
 - h4: Field Value
 - parameters:
   - type:
@@ -107,61 +107,61 @@ body:
     - text: Polygon
       url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.html
     - '>'
-- api3: _last
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon__last
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L60
+- api3: Last
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_Last
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L55
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon._last
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon._last
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Last
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Last
 - markdown: The last
-- code: protected PolygonPoint _last
+- code: protected PolygonPoint Last
 - h4: Field Value
 - parameters:
   - type:
     - text: PolygonPoint
       url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint.html
-- api3: _points
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon__points
+- api3: Points
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_Points
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L45
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Points
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Points
+- markdown: The triangulation point
+- code: protected readonly List<TriangulationPoint> Points
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    - '>'
+- api3: SteinerPoints
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_SteinerPoints
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L60
+  metadata:
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.SteinerPoints
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.SteinerPoints
+- markdown: The steiner points
+- code: protected List<TriangulationPoint> SteinerPoints
+- h4: Field Value
+- parameters:
+  - type:
+    - text: List
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    - <
+    - text: TriangulationPoint
+      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
+    - '>'
+- api3: Triangles
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_Triangles
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L65
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon._points
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon._points
-- markdown: The triangulation point
-- code: protected List<TriangulationPoint> _points
-- h4: Field Value
-- parameters:
-  - type:
-    - text: List
-      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-    - <
-    - text: TriangulationPoint
-      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
-    - '>'
-- api3: _steinerPoints
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon__steinerPoints
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L70
-  metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon._steinerPoints
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon._steinerPoints
-- markdown: The steiner points
-- code: protected List<TriangulationPoint> _steinerPoints
-- h4: Field Value
-- parameters:
-  - type:
-    - text: List
-      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-    - <
-    - text: TriangulationPoint
-      url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
-    - '>'
-- api3: _triangles
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon__triangles
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L75
-  metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon._triangles
-    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon._triangles
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Triangles
+    commentId: F:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Triangles
 - markdown: The triangles
-- code: protected List<DelaunayTriangle> _triangles
+- code: protected List<DelaunayTriangle> Triangles
 - h4: Field Value
 - parameters:
   - type:
@@ -172,14 +172,14 @@ body:
       url: Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle.html
     - '>'
 - h2: Properties
-- api3: Holes
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_Holes
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L110
+- api3: GetHoles
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_GetHoles
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L106
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Holes
-    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Holes
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.GetHoles
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.GetHoles
 - markdown: Gets the value of the holes
-- code: public IList<Polygon> Holes { get; }
+- code: public IList<Polygon> GetHoles { get; }
 - h4: Property Value
 - parameters:
   - type:
@@ -189,14 +189,14 @@ body:
     - text: Polygon
       url: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.html
     - '>'
-- api3: Points
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_Points
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L244
+- api3: GetPoints
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_GetPoints
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L117
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Points
-    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Points
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.GetPoints
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.GetPoints
 - markdown: Gets the value of the points
-- code: public IList<TriangulationPoint> Points { get; }
+- code: public IList<TriangulationPoint> GetPoints { get; }
 - h4: Property Value
 - parameters:
   - type:
@@ -206,14 +206,14 @@ body:
     - text: TriangulationPoint
       url: Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint.html
     - '>'
-- api3: Triangles
-  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_Triangles
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L249
+- api3: GetTriangles
+  id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_GetTriangles
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L122
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Triangles
-    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.Triangles
+    uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.GetTriangles
+    commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.GetTriangles
 - markdown: Gets the value of the triangles
-- code: public IList<DelaunayTriangle> Triangles { get; }
+- code: public IList<DelaunayTriangle> GetTriangles { get; }
 - h4: Property Value
 - parameters:
   - type:
@@ -225,7 +225,7 @@ body:
     - '>'
 - api3: TriangulationMode
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_TriangulationMode
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L239
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L112
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.TriangulationMode
     commentId: P:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.TriangulationMode
@@ -239,7 +239,7 @@ body:
 - h2: Methods
 - api3: AddHole(Polygon)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_AddHole_Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L155
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L241
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddHole(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddHole(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon)
@@ -254,7 +254,7 @@ body:
     description: A subtraction polygon fully contained inside this polygon.
 - api3: AddPoint(PolygonPoint)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_AddPoint_Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonPoint_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L211
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L304
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddPoint(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddPoint(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint)
@@ -269,7 +269,7 @@ body:
     description: The point to add
 - api3: AddPoints(IEnumerable<PolygonPoint>)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_AddPoints_System_Collections_Generic_IEnumerable_Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonPoint__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L186
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L279
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddPoints(System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint})
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddPoints(System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint})
@@ -288,7 +288,7 @@ body:
     description: ''
 - api3: AddSteinerPoint(TriangulationPoint)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_AddSteinerPoint_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L116
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L202
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddSteinerPoint(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddSteinerPoint(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint)
@@ -303,7 +303,7 @@ body:
     description: The point
 - api3: AddSteinerPoints(List<TriangulationPoint>)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_AddSteinerPoints_System_Collections_Generic_List_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationPoint__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L130
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L216
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddSteinerPoints(System.Collections.Generic.List{Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint})
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddSteinerPoints(System.Collections.Generic.List{Alis.Core.Physic.Common.Decomposition.CDT.TriangulationPoint})
@@ -322,7 +322,7 @@ body:
     description: The points
 - api3: AddTriangle(DelaunayTriangle)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_AddTriangle_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L255
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L128
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddTriangle(Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle)
@@ -337,7 +337,7 @@ body:
     description: The
 - api3: AddTriangles(IEnumerable<DelaunayTriangle>)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_AddTriangles_System_Collections_Generic_IEnumerable_Alis_Core_Physic_Common_Decomposition_CDT_Delaunay_DelaunayTriangle__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L264
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L137
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddTriangles(System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle})
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.AddTriangles(System.Collections.Generic.IEnumerable{Alis.Core.Physic.Common.Decomposition.CDT.Delaunay.DelaunayTriangle})
@@ -356,7 +356,7 @@ body:
     description: The list
 - api3: ClearSteinerPoints()
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_ClearSteinerPoints
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L143
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L229
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.ClearSteinerPoints
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.ClearSteinerPoints
@@ -364,7 +364,7 @@ body:
 - code: public void ClearSteinerPoints()
 - api3: ClearTriangles()
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_ClearTriangles
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L272
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L145
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.ClearTriangles
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.ClearTriangles
@@ -372,7 +372,7 @@ body:
 - code: public void ClearTriangles()
 - api3: InsertPointAfter(PolygonPoint, PolygonPoint)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_InsertPointAfter_Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonPoint_Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonPoint_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L168
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L258
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.InsertPointAfter(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint,Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.InsertPointAfter(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint,Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint)
@@ -392,7 +392,7 @@ body:
     description: The point to insert into the polygon
 - api3: PrepareTriangulation(TriangulationContext)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_PrepareTriangulation_Alis_Core_Physic_Common_Decomposition_CDT_TriangulationContext_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L281
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L157
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.PrepareTriangulation(Alis.Core.Physic.Common.Decomposition.CDT.TriangulationContext)
@@ -407,7 +407,7 @@ body:
     description: The context
 - api3: RemovePoint(PolygonPoint)
   id: Alis_Core_Physic_Common_Decomposition_CDT_Polygon_Polygon_RemovePoint_Alis_Core_Physic_Common_Decomposition_CDT_Polygon_PolygonPoint_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L223
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/CDT/Polygon/Polygon.cs#L316
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.RemovePoint(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint)
     commentId: M:Alis.Core.Physic.Common.Decomposition.CDT.Polygon.Polygon.RemovePoint(Alis.Core.Physic.Common.Decomposition.CDT.Polygon.PolygonPoint)
@@ -422,8 +422,8 @@ body:
     description: ''
 - h2: See Also
 - list:
-  - - text: Triangulatable
-      url: Alis.Core.Physic.Common.Decomposition.CDT.Triangulatable.html
+  - - text: ITriangulatable
+      url: Alis.Core.Physic.Common.Decomposition.CDT.ITriangulatable.html
 languageId: csharp
 metadata:
   description: The polygon class

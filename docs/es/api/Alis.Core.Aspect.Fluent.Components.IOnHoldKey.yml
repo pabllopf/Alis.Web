@@ -1,0 +1,37 @@
+### YamlMime:ApiPage
+title: Interface IOnHoldKey
+body:
+- api1: Interface IOnHoldKey
+  id: Alis_Core_Aspect_Fluent_Components_IOnHoldKey
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnHoldKey.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnHoldKey
+    commentId: T:Alis.Core.Aspect.Fluent.Components.IOnHoldKey
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Components
+      url: Alis.Core.Aspect.Fluent.Components.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Interfaz para gestionar el evento de mantener pulsada una tecla
+- code: public interface IOnHoldKey
+- h2: Methods
+- api3: OnHoldKey(KeyEventInfo)
+  id: Alis_Core_Aspect_Fluent_Components_IOnHoldKey_OnHoldKey_Alis_Core_Aspect_Fluent_KeyEventInfo_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Components/IOnHoldKey.cs#L41
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Components.IOnHoldKey.OnHoldKey(Alis.Core.Aspect.Fluent.KeyEventInfo)
+    commentId: M:Alis.Core.Aspect.Fluent.Components.IOnHoldKey.OnHoldKey(Alis.Core.Aspect.Fluent.KeyEventInfo)
+- markdown: Ons the hold key using the specified info
+- code: void OnHoldKey(KeyEventInfo info)
+- h4: Parameters
+- parameters:
+  - name: info
+    type:
+    - text: KeyEventInfo
+      url: Alis.Core.Aspect.Fluent.KeyEventInfo.html
+    description: The info
+languageId: csharp
+metadata:
+  description: Interfaz para gestionar el evento de mantener pulsada una tecla

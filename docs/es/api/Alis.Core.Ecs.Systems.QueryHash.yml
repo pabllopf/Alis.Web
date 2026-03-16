@@ -1,0 +1,138 @@
+### YamlMime:ApiPage
+title: Struct QueryHash
+body:
+- api1: Struct QueryHash
+  id: Alis_Core_Ecs_Systems_QueryHash
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryHash.cs#L42
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryHash
+    commentId: T:Alis.Core.Ecs.Systems.QueryHash
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Systems
+      url: Alis.Core.Ecs.Systems.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The query hash
+- code: public struct QueryHash
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Remarks
+- markdown: >-
+    Memory layout optimized: 4 bytes total (single int)
+
+    Pack = 1 for minimal memory footprint
+- h2: Constructors
+- api3: QueryHash()
+  id: Alis_Core_Ecs_Systems_QueryHash__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryHash.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryHash.#ctor
+    commentId: M:Alis.Core.Ecs.Systems.QueryHash.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Systems.QueryHash" data-throw-if-not-resolved="false"></xref> class
+- code: public QueryHash()
+- h2: Fields
+- api3: _state
+  id: Alis_Core_Ecs_Systems_QueryHash__state
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryHash.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryHash._state
+    commentId: F:Alis.Core.Ecs.Systems.QueryHash._state
+- markdown: The state
+- code: private int _state
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Methods
+- api3: AddRule(Rule)
+  id: Alis_Core_Ecs_Systems_QueryHash_AddRule_Alis_Core_Ecs_Systems_Rule_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryHash.cs#L84
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryHash.AddRule(Alis.Core.Ecs.Systems.Rule)
+    commentId: M:Alis.Core.Ecs.Systems.QueryHash.AddRule(Alis.Core.Ecs.Systems.Rule)
+- markdown: Adds the rule using the specified rule
+- code: public QueryHash AddRule(Rule rule)
+- h4: Parameters
+- parameters:
+  - name: rule
+    type:
+    - text: Rule
+      url: Alis.Core.Ecs.Systems.Rule.html
+    description: The rule
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryHash
+      url: Alis.Core.Ecs.Systems.QueryHash.html
+    description: The query hash
+- api3: New()
+  id: Alis_Core_Ecs_Systems_QueryHash_New
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryHash.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryHash.New
+    commentId: M:Alis.Core.Ecs.Systems.QueryHash.New
+- markdown: News
+- code: public static QueryHash New()
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryHash
+      url: Alis.Core.Ecs.Systems.QueryHash.html
+    description: The query hash
+- api3: New(FastImmutableArray<Rule>)
+  id: Alis_Core_Ecs_Systems_QueryHash_New_Alis_Core_Aspect_Math_Collections_FastImmutableArray_Alis_Core_Ecs_Systems_Rule__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryHash.cs#L68
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryHash.New(Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Systems.Rule})
+    commentId: M:Alis.Core.Ecs.Systems.QueryHash.New(Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Systems.Rule})
+- markdown: News the rules
+- code: public static QueryHash New(FastImmutableArray<Rule> rules)
+- h4: Parameters
+- parameters:
+  - name: rules
+    type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: Rule
+      url: Alis.Core.Ecs.Systems.Rule.html
+    - '>'
+    description: The rules
+- h4: Returns
+- parameters:
+  - type:
+    - text: QueryHash
+      url: Alis.Core.Ecs.Systems.QueryHash.html
+    description: The hash
+- api3: ToHashCode()
+  id: Alis_Core_Ecs_Systems_QueryHash_ToHashCode
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Systems/QueryHash.cs#L94
+  metadata:
+    uid: Alis.Core.Ecs.Systems.QueryHash.ToHashCode
+    commentId: M:Alis.Core.Ecs.Systems.QueryHash.ToHashCode
+- markdown: Returns the hash code
+- code: public int ToHashCode()
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The int
+languageId: csharp
+metadata:
+  description: The query hash

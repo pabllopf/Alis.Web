@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <title> Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" Alis - Desarrolla los videojuegos de tus sue&#241;os &#128175; gratis ">
+      <meta property="og:description" content="Alis - Develop the video games of your dreams \uD83D\uDCAF free!!">
+      <link rel="icon" href="../resources/logo.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="En este art&#237;culo">
+      <meta name="loc:searchResultsCount" content="{count} resultados para &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="Sin resultados para &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filtrar por t&#237;tulo">
+      <meta name="loc:nextArticle" content="Siguiente">
+      <meta name="loc:prevArticle" content="Anterior">
+      <meta name="loc:themeLight" content="Claro">
+      <meta name="loc:themeDark" content="Oscuro">
+      <meta name="loc:themeAuto" content="Autom&#225;tico">
+      <meta name="loc:changeTheme" content="Cambiar tema">
+      <meta name="loc:copy" content="Copiar">
+      <meta name="loc:downloadPdf" content="Descargar PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+        const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+      
+        // Función para actualizar el contenido del dropdownToggle según el idioma
+        function updateLanguage() {
+          const currentLang = document.documentElement.lang;
+          const isEnglish = currentLang === 'en';
+          const isSpanish = currentLang === 'es';
+      
+          if (isEnglish) {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              English`;
+          } else {
+            dropdownToggle.innerHTML = `
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+              </svg>
+              Español`;
+          }
+        }
+      
+        // Llama a la función para actualizar el idioma al cargar la página
+        updateLanguage();
+      });
+    </script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+
+          // Función para actualizar el texto del botón según la URL actual
+          function updateDropdownVersion() {
+              const path = window.location.pathname;
+              const versionMatch = path.match(/v\d+\.\d+\.\d+/i); // Buscar la versión en cualquier parte del path
+
+              if (versionMatch) {
+                  const currentVersion = versionMatch[0]; // Obtener la versión encontrada
+                  dropdownToggle.textContent = currentVersion;
+              }
+          }
+
+          updateDropdownVersion(); // Llamar la función al cargar la página
+      });
+
+    </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ApiPage">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" style="width: 50px; height: 50px;margin-right: 5px;" class="svg" src="../resources/logo_small_v2.png" alt="Alis">
+            Alis
+          </a>
+
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+
+        
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Buscar" autocomplete="off" aria-label="Search">
+              </form>
+
+              
+              <script>
+
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdownToggle = document.querySelector('.dropdown-toggle-versions');
+                const dropdownMenu = document.querySelector('.dropdown-menu-versions');
+
+                dropdownToggle.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const isExpanded = dropdownMenu.style.display === 'block';
+                  dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                });
+
+                document.addEventListener('click', function (e) {
+                  if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.style.display = 'none';
+                  }
+                });
+
+                // Manejar la selección de versión y actualizar la URL
+                dropdownMenu.addEventListener('click', function (e) {
+                  if (e.target.classList.contains('dropdown-item')) {
+                    e.preventDefault();
+                    
+                    const selectedVersion = e.target.getAttribute('data-version');
+                    const lang = document.documentElement.lang; // Obtener el idioma actual del documento
+                    
+                    let basePath = '';
+                    
+                    // Comprobar si el idioma es español
+                    if (lang === 'es') {
+                      basePath += '/es';
+                    }
+
+                    if (lang === 'en') {
+                      basePath += '/en';
+                    }
+
+                    // Redirigir a la ruta de la versión seleccionada
+                    const newPath = `${basePath}/${selectedVersion}/index.html`;
+                    window.location.href = newPath;
+                  }
+                });
+              });
+ 
+
+              </script>
+
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-versions" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-versions" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" data-version="v0.4.0">v0.4.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.3.0">v0.3.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.2.0">v0.2.0</a></li>
+                  <li><a class="dropdown-item" href="#" data-version="v0.1.0">v0.1.0</a></li>
+                </ul>
+              </div>
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const dropdownToggle = document.querySelector('.dropdown-toggle-lang');
+                    const dropdownMenu = document.querySelector('.dropdown-menu-lang');
+
+                    dropdownToggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const isExpanded = dropdownMenu.style.display === 'block';
+                        dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+                    });
+
+                    document.addEventListener('click', function (e) {
+                        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    });
+
+                    // Manejar la selección de idioma y actualizar la URL
+                    dropdownMenu.addEventListener('click', function (e) {
+                        if (e.target.classList.contains('dropdown-item')) {
+                            e.preventDefault();
+                            
+                            const selectedLang = e.target.getAttribute('lang');
+                            const currentPath = window.location.pathname;
+                            const pathParts = currentPath.split('/');
+
+                            // Verificar si la URL sigue el formato esperado y reemplazar el idioma
+                            if (pathParts.length >= 3) {
+                                pathParts[1] = selectedLang;  // Reemplaza el idioma en la URL
+                            }
+
+                            // Reconstruir la URL y redirigir
+                            const newPath = pathParts.join('/');
+                            window.location.href = newPath;
+                        }
+                    });
+                });
+                </script>
+
+
+
+              
+              <div class="dropdown" style="order: 40; position: relative;">
+                <a class="btn border-0 dropdown-toggle dropdown-toggle-lang" data-bs-toggle="dropdown" aria-expanded="false" title="Select Language" style="
+                  display: flex; 
+                  align-items: center; 
+                  padding: 0.5rem 0rem; 
+                  background: transparent; 
+                  border: none; 
+                  box-shadow: none;
+                  text-decoration: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                ">
+                  <svg viewbox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 8px;">
+                    <path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                  </svg>
+                  English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lang" style="
+                  display: none; 
+                  position: absolute; 
+                  top: 100%; 
+                  right: 0; 
+                  background: #212529;
+                  border: 1px solid rgb(75, 80, 86);
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+                  z-index: 1000; 
+                  margin: 0; 
+                  padding: 0;
+                ">
+                  <li><a class="dropdown-item" href="#" lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" lang="es">Español</a></li>
+                </ul>
+            </div>
+
+
+              <a class="hover_custom" style="order: 55;margin: 0 10px;" href="https://github.com/pabllopf/Alis/releases/latest">
+              <button type="button" class="btn btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewbox="0 0 17 17">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+                  </svg>
+                  Descargar
+              </button>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+      
+      
+
+
+
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 class='section api' data-uid='Alis.Core.Ecs.Scene' data-commentid='T:Alis.Core.Ecs.Scene' id='Alis_Core_Ecs_Scene'>Class Scene    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L49'><i class='bi bi-code-slash'></i></a></h1>
+ <div class="facts text-secondary">
+<dl><dt>Namespace</dt><dd><a href='Alis.Core.Ecs.html'>Alis.Core.Ecs</a></dd></dl><dl><dt>Assembly</dt><dd>Alis.dll</dd></dl>
+</div><p>A collection of entities that can be updated and queried.</p>
+<pre><code class='lang-csharp'>public class Scene : IDisposable</code></pre><h4 class='section'>Inheritance</h4><dl class="typelist inheritance"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.Scene.html'>Scene</a>
+</div>
+
+</dd></dl><h4 class='section'>Implements</h4><dl class="typelist"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.idisposable'>IDisposable</a>
+</div>
+
+</dd></dl><h4 class='section'>Inherited Members</h4><dl class="typelist"><dd>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)'>object.Equals(object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)'>object.Equals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gethashcode'>object.GetHashCode()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.gettype'>object.GetType()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone'>object.MemberwiseClone()</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.referenceequals'>object.ReferenceEquals(object?, object?)</a>
+</div>
+<div>
+<a href='https://learn.microsoft.com/dotnet/api/system.object.tostring'>object.ToString()</a>
+</div>
+
+</dd></dl><h4 class='section'>Extension Methods</h4><dl class="typelist"><dd>
+<div>
+<a href='Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__1_Alis_Core_Ecs_Scene_'>SceneQueryExtensions.Query&lt;T&gt;(Scene)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__2_Alis_Core_Ecs_Scene_'>SceneQueryExtensions.Query&lt;T1, T2&gt;(Scene)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__3_Alis_Core_Ecs_Scene_'>SceneQueryExtensions.Query&lt;T1, T2, T3&gt;(Scene)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__4_Alis_Core_Ecs_Scene_'>SceneQueryExtensions.Query&lt;T1, T2, T3, T4&gt;(Scene)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__5_Alis_Core_Ecs_Scene_'>SceneQueryExtensions.Query&lt;T1, T2, T3, T4, T5&gt;(Scene)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__6_Alis_Core_Ecs_Scene_'>SceneQueryExtensions.Query&lt;T1, T2, T3, T4, T5, T6&gt;(Scene)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__7_Alis_Core_Ecs_Scene_'>SceneQueryExtensions.Query&lt;T1, T2, T3, T4, T5, T6, T7&gt;(Scene)</a>
+</div>
+<div>
+<a href='Alis.Core.Ecs.SceneQueryExtensions.html#Alis_Core_Ecs_SceneQueryExtensions_Query__8_Alis_Core_Ecs_Scene_'>SceneQueryExtensions.Query&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(Scene)</a>
+</div>
+
+</dd></dl><h2 class='section'>Constructors</h2><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.#ctor' data-commentid='M:Alis.Core.Ecs.Scene.#ctor' id='Alis_Core_Ecs_Scene__ctor'>Scene()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L209'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Initializes a new instance of the <span class="xref">Alis.Core.Ecs.Scene</span> class</p>
+<pre><code class='lang-csharp'>public Scene()</code></pre><h2 class='section'>Fields</h2><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.AddComponentLookup' data-commentid='F:Alis.Core.Ecs.Scene.AddComponentLookup' id='Alis_Core_Ecs_Scene_AddComponentLookup'>AddComponentLookup    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L110'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The add component lookup</p>
+<pre><code class='lang-csharp'>public FastLookup AddComponentLookup</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Collections.FastLookup.html'>FastLookup</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.AddTagLookup' data-commentid='F:Alis.Core.Ecs.Scene.AddTagLookup' id='Alis_Core_Ecs_Scene_AddTagLookup'>AddTagLookup    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L115'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The add tag lookup</p>
+<pre><code class='lang-csharp'>public FastLookup AddTagLookup</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Collections.FastLookup.html'>FastLookup</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.ArchetypeGraphEdges' data-commentid='F:Alis.Core.Ecs.Scene.ArchetypeGraphEdges' id='Alis_Core_Ecs_Scene_ArchetypeGraphEdges'>ArchetypeGraphEdges    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L120'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The archetype graph edges</p>
+<pre><code class='lang-csharp'>public Dictionary&lt;ArchetypeEdgeKey, Archetype&gt; ArchetypeGraphEdges</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2'>Dictionary</a>&lt;<a href='Alis.Core.Ecs.Kernel.Archetypes.ArchetypeEdgeKey.html'>ArchetypeEdgeKey</a>, <a href='Alis.Core.Ecs.Kernel.Archetypes.Archetype.html'>Archetype</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.ComponentAddedEvent' data-commentid='F:Alis.Core.Ecs.Scene.ComponentAddedEvent' id='Alis_Core_Ecs_Scene_ComponentAddedEvent'>ComponentAddedEvent    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L125'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The component id</p>
+<pre><code class='lang-csharp'>public Event&lt;ComponentId&gt; ComponentAddedEvent</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.ComponentRemovedEvent' data-commentid='F:Alis.Core.Ecs.Scene.ComponentRemovedEvent' id='Alis_Core_Ecs_Scene_ComponentRemovedEvent'>ComponentRemovedEvent    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L130'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The component id</p>
+<pre><code class='lang-csharp'>public Event&lt;ComponentId&gt; ComponentRemovedEvent</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.DefaultArchetype' data-commentid='F:Alis.Core.Ecs.Scene.DefaultArchetype' id='Alis_Core_Ecs_Scene_DefaultArchetype'>DefaultArchetype    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L79'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The default archetype</p>
+<pre><code class='lang-csharp'>public readonly Archetype DefaultArchetype</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.Archetypes.Archetype.html'>Archetype</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.DefaultWorldGameObject' data-commentid='F:Alis.Core.Ecs.Scene.DefaultWorldGameObject' id='Alis_Core_Ecs_Scene_DefaultWorldGameObject'>DefaultWorldGameObject    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L84'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The default scene gameObject</p>
+<pre><code class='lang-csharp'>public readonly GameObject DefaultWorldGameObject</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.DeferredCreationArchetypes' data-commentid='F:Alis.Core.Ecs.Scene.DeferredCreationArchetypes' id='Alis_Core_Ecs_Scene_DeferredCreationArchetypes'>DeferredCreationArchetypes    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L135'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The create</p>
+<pre><code class='lang-csharp'>public FastestStack&lt;ArchetypeDeferredUpdateRecord&gt; DeferredCreationArchetypes</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Collections.FastestStack-1.html'>FastestStack</a>&lt;<a href='Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.html'>ArchetypeDeferredUpdateRecord</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.DeferredEntityOperationRecursionLimit' data-commentid='F:Alis.Core.Ecs.Scene.DeferredEntityOperationRecursionLimit' id='Alis_Core_Ecs_Scene_DeferredEntityOperationRecursionLimit'>DeferredEntityOperationRecursionLimit    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L54'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The deferred gameObject operation recursion limit</p>
+<pre><code class='lang-csharp'>internal const int DeferredEntityOperationRecursionLimit = 200</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.EnabledArchetypes' data-commentid='F:Alis.Core.Ecs.Scene.EnabledArchetypes' id='Alis_Core_Ecs_Scene_EnabledArchetypes'>EnabledArchetypes    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L141'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The create</p>
+<pre><code class='lang-csharp'>public FastestStack&lt;GameObjectType&gt; EnabledArchetypes</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Collections.FastestStack-1.html'>FastestStack</a>&lt;<a href='Alis.Core.Ecs.Kernel.GameObjectType.html'>GameObjectType</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.EntityCreatedEvent' data-commentid='F:Alis.Core.Ecs.Scene.EntityCreatedEvent' id='Alis_Core_Ecs_Scene_EntityCreatedEvent'>EntityCreatedEvent    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L146'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The gameObject only event</p>
+<pre><code class='lang-csharp'>public GameObjectOnlyEvent EntityCreatedEvent</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.Events.GameObjectOnlyEvent.html'>GameObjectOnlyEvent</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.EntityDeletedEvent' data-commentid='F:Alis.Core.Ecs.Scene.EntityDeletedEvent' id='Alis_Core_Ecs_Scene_EntityDeletedEvent'>EntityDeletedEvent    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L151'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The gameObject only event</p>
+<pre><code class='lang-csharp'>public GameObjectOnlyEvent EntityDeletedEvent</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.Events.GameObjectOnlyEvent.html'>GameObjectOnlyEvent</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.EntityTable' data-commentid='F:Alis.Core.Ecs.Scene.EntityTable' id='Alis_Core_Ecs_Scene_EntityTable'>EntityTable    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L157'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The gameObject location</p>
+<pre><code class='lang-csharp'>public FastestTable&lt;GameObjectLocation&gt; EntityTable</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Collections.FastestTable-1.html'>FastestTable</a>&lt;<a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.EventLookup' data-commentid='F:Alis.Core.Ecs.Scene.EventLookup' id='Alis_Core_Ecs_Scene_EventLookup'>EventLookup    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L162'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The event lookup</p>
+<pre><code class='lang-csharp'>public Dictionary&lt;GameObjectIdOnly, EventRecord&gt; EventLookup</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2'>Dictionary</a>&lt;<a href='Alis.Core.Ecs.Kernel.GameObjectIdOnly.html'>GameObjectIdOnly</a>, <a href='Alis.Core.Ecs.Kernel.Events.EventRecord.html'>EventRecord</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Id' data-commentid='F:Alis.Core.Ecs.Scene.Id' id='Alis_Core_Ecs_Scene_Id'>Id    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L89'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The id</p>
+<pre><code class='lang-csharp'>public readonly ushort Id</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.uint16'>ushort</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.NextEntityId' data-commentid='F:Alis.Core.Ecs.Scene.NextEntityId' id='Alis_Core_Ecs_Scene_NextEntityId'>NextEntityId    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L167'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The next gameObject id</p>
+<pre><code class='lang-csharp'>public int NextEntityId</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.QueryCache' data-commentid='F:Alis.Core.Ecs.Scene.QueryCache' id='Alis_Core_Ecs_Scene_QueryCache'>QueryCache    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L172'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The query cache</p>
+<pre><code class='lang-csharp'>public Dictionary&lt;int, Query&gt; QueryCache</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2'>Dictionary</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>, <a href='Alis.Core.Ecs.Systems.Query.html'>Query</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.RecycledEntityIds' data-commentid='F:Alis.Core.Ecs.Scene.RecycledEntityIds' id='Alis_Core_Ecs_Scene_RecycledEntityIds'>RecycledEntityIds    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L177'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The gameObject id only</p>
+<pre><code class='lang-csharp'>public FastestStack&lt;GameObjectIdOnly&gt; RecycledEntityIds</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Collections.FastestStack-1.html'>FastestStack</a>&lt;<a href='Alis.Core.Ecs.Kernel.GameObjectIdOnly.html'>GameObjectIdOnly</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.RemoveComponentLookup' data-commentid='F:Alis.Core.Ecs.Scene.RemoveComponentLookup' id='Alis_Core_Ecs_Scene_RemoveComponentLookup'>RemoveComponentLookup    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L182'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The remove component lookup</p>
+<pre><code class='lang-csharp'>public FastLookup RemoveComponentLookup</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Collections.FastLookup.html'>FastLookup</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.RemoveTagLookup' data-commentid='F:Alis.Core.Ecs.Scene.RemoveTagLookup' id='Alis_Core_Ecs_Scene_RemoveTagLookup'>RemoveTagLookup    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L187'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The remove tag lookup</p>
+<pre><code class='lang-csharp'>public FastLookup RemoveTagLookup</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Collections.FastLookup.html'>FastLookup</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.WorldArchetypeTable' data-commentid='F:Alis.Core.Ecs.Scene.WorldArchetypeTable' id='Alis_Core_Ecs_Scene_WorldArchetypeTable'>WorldArchetypeTable    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L193'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The scene archetype table</p>
+<pre><code class='lang-csharp'>public WorldArchetypeTableItem[] WorldArchetypeTable</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.WorldArchetypeTableItem.html'>WorldArchetypeTableItem</a>[]  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.WorldEventFlags' data-commentid='F:Alis.Core.Ecs.Scene.WorldEventFlags' id='Alis_Core_Ecs_Scene_WorldEventFlags'>WorldEventFlags    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L199'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The scene event flags</p>
+<pre><code class='lang-csharp'>public GameObjectFlags WorldEventFlags</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObjectFlags.html'>GameObjectFlags</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.WorldUpdateCommandBuffer' data-commentid='F:Alis.Core.Ecs.Scene.WorldUpdateCommandBuffer' id='Alis_Core_Ecs_Scene_WorldUpdateCommandBuffer'>WorldUpdateCommandBuffer    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L204'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The scene update command buffer</p>
+<pre><code class='lang-csharp'>public CommandBuffer WorldUpdateCommandBuffer</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Kernel.CommandBuffer.html'>CommandBuffer</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene._allowStructuralChanges' data-commentid='F:Alis.Core.Ecs.Scene._allowStructuralChanges' id='Alis_Core_Ecs_Scene__allowStructuralChanges'>_allowStructuralChanges    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L97'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The allow structural changes</p>
+<pre><code class='lang-csharp'>internal int _allowStructuralChanges</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene._altDeferredCreationArchetypes' data-commentid='F:Alis.Core.Ecs.Scene._altDeferredCreationArchetypes' id='Alis_Core_Ecs_Scene__altDeferredCreationArchetypes'>_altDeferredCreationArchetypes    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L102'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The create</p>
+<pre><code class='lang-csharp'>internal FastestStack&lt;ArchetypeDeferredUpdateRecord&gt; _altDeferredCreationArchetypes</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Collections.FastestStack-1.html'>FastestStack</a>&lt;<a href='Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.html'>ArchetypeDeferredUpdateRecord</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene._nextWorldId' data-commentid='F:Alis.Core.Ecs.Scene._nextWorldId' id='Alis_Core_Ecs_Scene__nextWorldId'>_nextWorldId    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L59'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The next scene id</p>
+<pre><code class='lang-csharp'>internal static ushort _nextWorldId</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.uint16'>ushort</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene._sharedCountdown' data-commentid='F:Alis.Core.Ecs.Scene._sharedCountdown' id='Alis_Core_Ecs_Scene__sharedCountdown'>_sharedCountdown    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L64'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The shared countdown</p>
+<pre><code class='lang-csharp'>internal readonly CountdownEvent _sharedCountdown</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.threading.countdownevent'>CountdownEvent</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene._singleComponentUpdates' data-commentid='F:Alis.Core.Ecs.Scene._singleComponentUpdates' id='Alis_Core_Ecs_Scene__singleComponentUpdates'>_singleComponentUpdates    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L69'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The single component updates</p>
+<pre><code class='lang-csharp'>internal readonly Dictionary&lt;ComponentId, SingleComponentUpdateFilter&gt; _singleComponentUpdates</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2'>Dictionary</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>, <a href='Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.html'>SingleComponentUpdateFilter</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene._updatesByAttributes' data-commentid='F:Alis.Core.Ecs.Scene._updatesByAttributes' id='Alis_Core_Ecs_Scene__updatesByAttributes'>_updatesByAttributes    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L74'><i class='bi bi-code-slash'></i></a></h3>
+ <p>The updates by attributes</p>
+<pre><code class='lang-csharp'>internal readonly Dictionary&lt;Type, SceneUpdateFilter&gt; _updatesByAttributes</code></pre><h4 class='section'>Field Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2'>Dictionary</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.type'>Type</a>, <a href='Alis.Core.Ecs.Updating.SceneUpdateFilter.html'>SceneUpdateFilter</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Properties</h2><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.AllowStructualChanges' data-commentid='P:Alis.Core.Ecs.Scene.AllowStructualChanges' id='Alis_Core_Ecs_Scene_AllowStructualChanges'>AllowStructualChanges    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L236'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the value of the allow structual changes</p>
+<pre><code class='lang-csharp'>public bool AllowStructualChanges { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.EntityCount' data-commentid='P:Alis.Core.Ecs.Scene.EntityCount' id='Alis_Core_Ecs_Scene_EntityCount'>EntityCount    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L231'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the current number of entities managed by the scene.</p>
+<pre><code class='lang-csharp'>public int EntityCount { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.SharedCountdown' data-commentid='P:Alis.Core.Ecs.Scene.SharedCountdown' id='Alis_Core_Ecs_Scene_SharedCountdown'>SharedCountdown    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L226'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Gets the value of the shared countdown</p>
+<pre><code class='lang-csharp'>public CountdownEvent SharedCountdown { get; }</code></pre><h4 class='section'>Property Value</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.threading.countdownevent'>CountdownEvent</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h2 class='section'>Methods</h2><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.AddComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.ComponentId,Alis.Core.Ecs.Updating.ComponentStorageBase@,Alis.Core.Ecs.GameObjectLocation@)' data-commentid='M:Alis.Core.Ecs.Scene.AddComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.ComponentId,Alis.Core.Ecs.Updating.ComponentStorageBase@,Alis.Core.Ecs.GameObjectLocation@)' id='Alis_Core_Ecs_Scene_AddComponent_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_Kernel_ComponentId_Alis_Core_Ecs_Updating_ComponentStorageBase__Alis_Core_Ecs_GameObjectLocation__'>AddComponent(GameObject, ref GameObjectLocation, ComponentId, ref ComponentStorageBase, out GameObjectLocation)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1664'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds the component using the specified gameObject</p>
+<pre><code class='lang-csharp'>internal void AddComponent(GameObject gameObject, ref GameObjectLocation lookup, ComponentId componentId, ref ComponentStorageBase runner, out GameObjectLocation gameObjectLocation)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>lookup</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The lookup</p>
+
+</dd><dt><code>componentId</code> <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>  </dt>
+<dd>
+
+
+<p>The component id</p>
+
+</dd><dt><code>runner</code> <a href='Alis.Core.Ecs.Updating.ComponentStorageBase.html'>ComponentStorageBase</a>  </dt>
+<dd>
+
+
+<p>The runner</p>
+
+</dd><dt><code>gameObjectLocation</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The gameObject location</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.AddEvent``1(Alis.Core.Ecs.Kernel.Events.Event{``0}@,System.Action{Alis.Core.Ecs.GameObject,``0},Alis.Core.Ecs.GameObjectFlags)' data-commentid='M:Alis.Core.Ecs.Scene.AddEvent``1(Alis.Core.Ecs.Kernel.Events.Event{``0}@,System.Action{Alis.Core.Ecs.GameObject,``0},Alis.Core.Ecs.GameObjectFlags)' id='Alis_Core_Ecs_Scene_AddEvent__1_Alis_Core_Ecs_Kernel_Events_Event___0___System_Action_Alis_Core_Ecs_GameObject___0__Alis_Core_Ecs_GameObjectFlags_'>AddEvent&lt;T&gt;(ref Event&lt;T&gt;, Action&lt;GameObject, T&gt;, GameObjectFlags)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L327'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Adds the event using the specified event</p>
+<pre><code class='lang-csharp'>internal void AddEvent&lt;T&gt;(ref Event&lt;T&gt; e, Action&lt;GameObject, T&gt; action, GameObjectFlags flag)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>e</code> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The event</p>
+
+</dd><dt><code>action</code> <a href='https://learn.microsoft.com/dotnet/api/system.action-2'>Action</a>&lt;<a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>, T&gt;  </dt>
+<dd>
+
+
+<p>The action</p>
+
+</dd><dt><code>flag</code> <a href='Alis.Core.Ecs.GameObjectFlags.html'>GameObjectFlags</a>  </dt>
+<dd>
+
+
+<p>The flag</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.ArchetypeAdded(Alis.Core.Ecs.Kernel.Archetypes.Archetype,Alis.Core.Ecs.Kernel.Archetypes.Archetype)' data-commentid='M:Alis.Core.Ecs.Scene.ArchetypeAdded(Alis.Core.Ecs.Kernel.Archetypes.Archetype,Alis.Core.Ecs.Kernel.Archetypes.Archetype)' id='Alis_Core_Ecs_Scene_ArchetypeAdded_Alis_Core_Ecs_Kernel_Archetypes_Archetype_Alis_Core_Ecs_Kernel_Archetypes_Archetype_'>ArchetypeAdded(Archetype, Archetype)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L468'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Archetypes the added using the specified archetype</p>
+<pre><code class='lang-csharp'>public void ArchetypeAdded(Archetype archetype, Archetype temporaryCreationArchetype)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>archetype</code> <a href='Alis.Core.Ecs.Kernel.Archetypes.Archetype.html'>Archetype</a>  </dt>
+<dd>
+
+
+<p>The archetype</p>
+
+</dd><dt><code>temporaryCreationArchetype</code> <a href='Alis.Core.Ecs.Kernel.Archetypes.Archetype.html'>Archetype</a>  </dt>
+<dd>
+
+
+<p>The temporary creation archetype</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Create' data-commentid='M:Alis.Core.Ecs.Scene.Create' id='Alis_Core_Ecs_Scene_Create'>Create()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L663'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates an <span class="xref">Alis.Core.Ecs.GameObject</span> with zero components.</p>
+<pre><code class='lang-csharp'>public GameObject Create()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject that was created.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Create``2(``0@,``1@)' data-commentid='M:Alis.Core.Ecs.Scene.Create``2(``0@,``1@)' id='Alis_Core_Ecs_Scene_Create__2___0____1__'>Create&lt;T1, T2&gt;(in T1, in T2)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L734'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates an <span class="xref">Alis.Core.Ecs.GameObject</span> with the given component(s)</p>
+<pre><code class='lang-csharp'>public GameObject Create&lt;T1, T2&gt;(in T1 comp1, in T2 comp2)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>comp1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp2</code> T2  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>An <span class="xref">Alis.Core.Ecs.GameObject</span> that can be used to acsess the component data</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Create``3(``0@,``1@,``2@)' data-commentid='M:Alis.Core.Ecs.Scene.Create``3(``0@,``1@,``2@)' id='Alis_Core_Ecs_Scene_Create__3___0____1____2__'>Create&lt;T1, T2, T3&gt;(in T1, in T2, in T3)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L831'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates an <span class="xref">Alis.Core.Ecs.GameObject</span> with the given component(s)</p>
+<pre><code class='lang-csharp'>public GameObject Create&lt;T1, T2, T3&gt;(in T1 comp1, in T2 comp2, in T3 comp3)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>comp1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp3</code> T3  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>An <span class="xref">Alis.Core.Ecs.GameObject</span> that can be used to acsess the component data</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Create``4(``0@,``1@,``2@,``3@)' data-commentid='M:Alis.Core.Ecs.Scene.Create``4(``0@,``1@,``2@,``3@)' id='Alis_Core_Ecs_Scene_Create__4___0____1____2____3__'>Create&lt;T1, T2, T3, T4&gt;(in T1, in T2, in T3, in T4)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L929'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates an <span class="xref">Alis.Core.Ecs.GameObject</span> with the given component(s)</p>
+<pre><code class='lang-csharp'>public GameObject Create&lt;T1, T2, T3, T4&gt;(in T1 comp1, in T2 comp2, in T3 comp3, in T4 comp4)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>comp1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp3</code> T3  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp4</code> T4  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>An <span class="xref">Alis.Core.Ecs.GameObject</span> that can be used to acsess the component data</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Create``5(``0@,``1@,``2@,``3@,``4@)' data-commentid='M:Alis.Core.Ecs.Scene.Create``5(``0@,``1@,``2@,``3@,``4@)' id='Alis_Core_Ecs_Scene_Create__5___0____1____2____3____4__'>Create&lt;T1, T2, T3, T4, T5&gt;(in T1, in T2, in T3, in T4, in T5)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1034'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates an <span class="xref">Alis.Core.Ecs.GameObject</span> with the given component(s)</p>
+<pre><code class='lang-csharp'>public GameObject Create&lt;T1, T2, T3, T4, T5&gt;(in T1 comp1, in T2 comp2, in T3 comp3, in T4 comp4, in T5 comp5)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>comp1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp3</code> T3  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp4</code> T4  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp5</code> T5  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>An <span class="xref">Alis.Core.Ecs.GameObject</span> that can be used to acsess the component data</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Create``6(``0@,``1@,``2@,``3@,``4@,``5@)' data-commentid='M:Alis.Core.Ecs.Scene.Create``6(``0@,``1@,``2@,``3@,``4@,``5@)' id='Alis_Core_Ecs_Scene_Create__6___0____1____2____3____4____5__'>Create&lt;T1, T2, T3, T4, T5, T6&gt;(in T1, in T2, in T3, in T4, in T5, in T6)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1151'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates an <span class="xref">Alis.Core.Ecs.GameObject</span> with the given component(s)</p>
+<pre><code class='lang-csharp'>public GameObject Create&lt;T1, T2, T3, T4, T5, T6&gt;(in T1 comp1, in T2 comp2, in T3 comp3, in T4 comp4, in T5 comp5, in T6 comp6)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>comp1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp3</code> T3  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp4</code> T4  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp5</code> T5  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp6</code> T6  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>An <span class="xref">Alis.Core.Ecs.GameObject</span> that can be used to acsess the component data</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Create``7(``0@,``1@,``2@,``3@,``4@,``5@,``6@)' data-commentid='M:Alis.Core.Ecs.Scene.Create``7(``0@,``1@,``2@,``3@,``4@,``5@,``6@)' id='Alis_Core_Ecs_Scene_Create__7___0____1____2____3____4____5____6__'>Create&lt;T1, T2, T3, T4, T5, T6, T7&gt;(in T1, in T2, in T3, in T4, in T5, in T6, in T7)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1276'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates an <span class="xref">Alis.Core.Ecs.GameObject</span> with the given component(s)</p>
+<pre><code class='lang-csharp'>public GameObject Create&lt;T1, T2, T3, T4, T5, T6, T7&gt;(in T1 comp1, in T2 comp2, in T3 comp3, in T4 comp4, in T5 comp5, in T6 comp6, in T7 comp7)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>comp1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp3</code> T3  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp4</code> T4  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp5</code> T5  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp6</code> T6  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp7</code> T7  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>An <span class="xref">Alis.Core.Ecs.GameObject</span> that can be used to acsess the component data</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Create``8(``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)' data-commentid='M:Alis.Core.Ecs.Scene.Create``8(``0@,``1@,``2@,``3@,``4@,``5@,``6@,``7@)' id='Alis_Core_Ecs_Scene_Create__8___0____1____2____3____4____5____6____7__'>Create&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(in T1, in T2, in T3, in T4, in T5, in T6, in T7, in T8)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1410'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates an <span class="xref">Alis.Core.Ecs.GameObject</span> with the given component(s)</p>
+<pre><code class='lang-csharp'>public GameObject Create&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(in T1 comp1, in T2 comp2, in T3 comp3, in T4 comp4, in T5 comp5, in T6 comp6, in T7 comp7, in T8 comp8)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>comp1</code> T1  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp2</code> T2  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp3</code> T3  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp4</code> T4  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp5</code> T5  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp6</code> T6  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp7</code> T7  </dt>
+<dd>
+
+
+
+</dd><dt><code>comp8</code> T8  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>An <span class="xref">Alis.Core.Ecs.GameObject</span> that can be used to acsess the component data</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T8</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Create``1(``0@)' data-commentid='M:Alis.Core.Ecs.Scene.Create``1(``0@)' id='Alis_Core_Ecs_Scene_Create__1___0__'>Create&lt;T&gt;(in T)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1559'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates an <span class="xref">Alis.Core.Ecs.GameObject</span> with the given component(s)</p>
+<pre><code class='lang-csharp'>public GameObject Create&lt;T&gt;(in T comp)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>comp</code> T  </dt>
+<dd>
+
+
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>An <span class="xref">Alis.Core.Ecs.GameObject</span> that can be used to acsess the component data</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateEntityFromLocation(Alis.Core.Ecs.GameObjectLocation)' data-commentid='M:Alis.Core.Ecs.Scene.CreateEntityFromLocation(Alis.Core.Ecs.GameObjectLocation)' id='Alis_Core_Ecs_Scene_CreateEntityFromLocation_Alis_Core_Ecs_GameObjectLocation_'>CreateEntityFromLocation(GameObjectLocation)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L354'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the gameObject from location using the specified gameObject location</p>
+<pre><code class='lang-csharp'>public GameObject CreateEntityFromLocation(GameObjectLocation gameObjectLocation)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObjectLocation</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The gameObject location</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateEntityWithoutEvent' data-commentid='M:Alis.Core.Ecs.Scene.CreateEntityWithoutEvent' id='Alis_Core_Ecs_Scene_CreateEntityWithoutEvent'>CreateEntityWithoutEvent()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L674'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the gameObject without event</p>
+<pre><code class='lang-csharp'>public GameObject CreateEntityWithoutEvent()</code></pre><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateFromObjects(System.ReadOnlySpan{System.Object})' data-commentid='M:Alis.Core.Ecs.Scene.CreateFromObjects(System.ReadOnlySpan{System.Object})' id='Alis_Core_Ecs_Scene_CreateFromObjects_System_ReadOnlySpan_System_Object__'>CreateFromObjects(ReadOnlySpan&lt;object&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L628'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates an <span class="xref">Alis.Core.Ecs.GameObject</span></p>
+<pre><code class='lang-csharp'>public GameObject CreateFromObjects(ReadOnlySpan&lt;object&gt; components)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>components</code> <a href='https://learn.microsoft.com/dotnet/api/system.readonlyspan-1'>ReadOnlySpan</a>&lt;<a href='https://learn.microsoft.com/dotnet/api/system.object'>object</a>&gt;  </dt>
+<dd>
+
+
+<p>The components to use</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The created gameObject</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateMany``2(System.Int32)' data-commentid='M:Alis.Core.Ecs.Scene.CreateMany``2(System.Int32)' id='Alis_Core_Ecs_Scene_CreateMany__2_System_Int32_'>CreateMany&lt;T1, T2&gt;(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L793'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the many using the specified count</p>
+<pre><code class='lang-csharp'>public ChunkTuple&lt;T1, T2&gt; CreateMany&lt;T1, T2&gt;(int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The count</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Systems.ChunkTuple-2.html'>ChunkTuple</a>&lt;T1, T2&gt;  </dt>
+<dd>
+
+
+<p>A chunk tuple of t 1 and t 2</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateMany``3(System.Int32)' data-commentid='M:Alis.Core.Ecs.Scene.CreateMany``3(System.Int32)' id='Alis_Core_Ecs_Scene_CreateMany__3_System_Int32_'>CreateMany&lt;T1, T2, T3&gt;(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L891'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates a large amount of entities quickly</p>
+<pre><code class='lang-csharp'>public ChunkTuple&lt;T1, T2, T3&gt; CreateMany&lt;T1, T2, T3&gt;(int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of entities to create</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Systems.ChunkTuple-3.html'>ChunkTuple</a>&lt;T1, T2, T3&gt;  </dt>
+<dd>
+
+
+<p>The entities created and their component spans</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateMany``4(System.Int32)' data-commentid='M:Alis.Core.Ecs.Scene.CreateMany``4(System.Int32)' id='Alis_Core_Ecs_Scene_CreateMany__4_System_Int32_'>CreateMany&lt;T1, T2, T3, T4&gt;(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L994'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates a large amount of entities quickly</p>
+<pre><code class='lang-csharp'>public ChunkTuple&lt;T1, T2, T3, T4&gt; CreateMany&lt;T1, T2, T3, T4&gt;(int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The number of entities to create</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Systems.ChunkTuple-4.html'>ChunkTuple</a>&lt;T1, T2, T3, T4&gt;  </dt>
+<dd>
+
+
+<p>The entities created and their component spans</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateMany``5(System.Int32)' data-commentid='M:Alis.Core.Ecs.Scene.CreateMany``5(System.Int32)' id='Alis_Core_Ecs_Scene_CreateMany__5_System_Int32_'>CreateMany&lt;T1, T2, T3, T4, T5&gt;(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1111'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the many using the specified count</p>
+<pre><code class='lang-csharp'>public ChunkTuple&lt;T1, T2, T3, T4, T5&gt; CreateMany&lt;T1, T2, T3, T4, T5&gt;(int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The count</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Systems.ChunkTuple-5.html'>ChunkTuple</a>&lt;T1, T2, T3, T4, T5&gt;  </dt>
+<dd>
+
+
+<p>A chunk tuple of t 1 and t 2 and t 3 and t 4 and t 5</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateMany``6(System.Int32)' data-commentid='M:Alis.Core.Ecs.Scene.CreateMany``6(System.Int32)' id='Alis_Core_Ecs_Scene_CreateMany__6_System_Int32_'>CreateMany&lt;T1, T2, T3, T4, T5, T6&gt;(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1235'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the many using the specified count</p>
+<pre><code class='lang-csharp'>public ChunkTuple&lt;T1, T2, T3, T4, T5, T6&gt; CreateMany&lt;T1, T2, T3, T4, T5, T6&gt;(int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The count</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Systems.ChunkTuple-6.html'>ChunkTuple</a>&lt;T1, T2, T3, T4, T5, T6&gt;  </dt>
+<dd>
+
+
+<p>A chunk tuple of t 1 and t 2 and t 3 and t 4 and t 5 and t 6</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateMany``7(System.Int32)' data-commentid='M:Alis.Core.Ecs.Scene.CreateMany``7(System.Int32)' id='Alis_Core_Ecs_Scene_CreateMany__7_System_Int32_'>CreateMany&lt;T1, T2, T3, T4, T5, T6, T7&gt;(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1367'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the many using the specified count</p>
+<pre><code class='lang-csharp'>public ChunkTuple&lt;T1, T2, T3, T4, T5, T6, T7&gt; CreateMany&lt;T1, T2, T3, T4, T5, T6, T7&gt;(int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The count</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Systems.ChunkTuple-7.html'>ChunkTuple</a>&lt;T1, T2, T3, T4, T5, T6, T7&gt;  </dt>
+<dd>
+
+
+<p>A chunk tuple of t 1 and t 2 and t 3 and t 4 and t 5 and t 6 and t 7</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateMany``8(System.Int32)' data-commentid='M:Alis.Core.Ecs.Scene.CreateMany``8(System.Int32)' id='Alis_Core_Ecs_Scene_CreateMany__8_System_Int32_'>CreateMany&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1515'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the many using the specified count</p>
+<pre><code class='lang-csharp'>public ChunkTuple&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt; CreateMany&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The count</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Systems.ChunkTuple-8.html'>ChunkTuple</a>&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;  </dt>
+<dd>
+
+
+<p>A chunk tuple of t 1 and t 2 and t 3 and t 4 and t 5 and t 6 and t 7 and t 8</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T1</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T2</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T3</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T4</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T5</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T6</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T7</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd><dt><code>T8</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateMany``1(System.Int32)' data-commentid='M:Alis.Core.Ecs.Scene.CreateMany``1(System.Int32)' id='Alis_Core_Ecs_Scene_CreateMany__1_System_Int32_'>CreateMany&lt;T&gt;(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1609'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the many using the specified count</p>
+<pre><code class='lang-csharp'>public ChunkTuple&lt;T&gt; CreateMany&lt;T&gt;(int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The count</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Systems.ChunkTuple-1.html'>ChunkTuple</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>A chunk tuple of t</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateQuery(Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Systems.Rule})' data-commentid='M:Alis.Core.Ecs.Scene.CreateQuery(Alis.Core.Aspect.Math.Collections.FastImmutableArray{Alis.Core.Ecs.Systems.Rule})' id='Alis_Core_Ecs_Scene_CreateQuery_Alis_Core_Aspect_Math_Collections_FastImmutableArray_Alis_Core_Ecs_Systems_Rule__'>CreateQuery(FastImmutableArray&lt;Rule&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L496'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the query using the specified rules</p>
+<pre><code class='lang-csharp'>public Query CreateQuery(FastImmutableArray&lt;Rule&gt; rules)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>rules</code> <a href='Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html'>FastImmutableArray</a>&lt;<a href='Alis.Core.Ecs.Systems.Rule.html'>Rule</a>&gt;  </dt>
+<dd>
+
+
+<p>The rules</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Systems.Query.html'>Query</a>  </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CreateQueryFromSpan(System.ReadOnlySpan{Alis.Core.Ecs.Systems.Rule})' data-commentid='M:Alis.Core.Ecs.Scene.CreateQueryFromSpan(System.ReadOnlySpan{Alis.Core.Ecs.Systems.Rule})' id='Alis_Core_Ecs_Scene_CreateQueryFromSpan_System_ReadOnlySpan_Alis_Core_Ecs_Systems_Rule__'>CreateQueryFromSpan(ReadOnlySpan&lt;Rule&gt;)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L515'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates the query from span using the specified rules</p>
+<pre><code class='lang-csharp'>public Query CreateQueryFromSpan(ReadOnlySpan&lt;Rule&gt; rules)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>rules</code> <a href='https://learn.microsoft.com/dotnet/api/system.readonlyspan-1'>ReadOnlySpan</a>&lt;<a href='Alis.Core.Ecs.Systems.Rule.html'>Rule</a>&gt;  </dt>
+<dd>
+
+
+<p>The rules</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Systems.Query.html'>Query</a>  </dt>
+<dd>
+
+
+<p>The query</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.CustomQuery(Alis.Core.Ecs.Systems.Rule[])' data-commentid='M:Alis.Core.Ecs.Scene.CustomQuery(Alis.Core.Ecs.Systems.Rule[])' id='Alis_Core_Ecs_Scene_CustomQuery_Alis_Core_Ecs_Systems_Rule___'>CustomQuery(params Rule[])    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L445'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Creates a custom query from the given set of rules. For an gameObject to be queried, all rules must apply.</p>
+<pre><code class='lang-csharp'>public Query CustomQuery(params Rule[] rules)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>rules</code> <a href='Alis.Core.Ecs.Systems.Rule.html'>Rule</a>[]  </dt>
+<dd>
+
+
+<p>The rules governing which entities are queried.</p>
+
+</dd></dl><h4 class='section'>Returns</h4><dl class='parameters'><dt> <a href='Alis.Core.Ecs.Systems.Query.html'>Query</a>  </dt>
+<dd>
+
+
+<p>A query object representing all the entities that satisfy all the rules.</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.DeleteEntity(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@)' data-commentid='M:Alis.Core.Ecs.Scene.DeleteEntity(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@)' id='Alis_Core_Ecs_Scene_DeleteEntity_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__'>DeleteEntity(GameObject, ref GameObjectLocation)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1877'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Deletes the gameObject using the specified gameObject</p>
+<pre><code class='lang-csharp'>internal void DeleteEntity(GameObject gameObject, ref GameObjectLocation gameObjectLocation)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>gameObjectLocation</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The gameObject location</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.DeleteEntityWithoutEvents(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@)' data-commentid='M:Alis.Core.Ecs.Scene.DeleteEntityWithoutEvents(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@)' id='Alis_Core_Ecs_Scene_DeleteEntityWithoutEvents_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__'>DeleteEntityWithoutEvents(GameObject, ref GameObjectLocation)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1914'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Deletes the gameObject without events using the specified gameObject</p>
+<pre><code class='lang-csharp'>internal void DeleteEntityWithoutEvents(GameObject gameObject, ref GameObjectLocation currentLookup)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>currentLookup</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The current lookup</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Dispose' data-commentid='M:Alis.Core.Ecs.Scene.Dispose' id='Alis_Core_Ecs_Scene_Dispose'>Dispose()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L241'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Disposes of the <span class="xref">Alis.Core.Ecs.Scene</span>.</p>
+<pre><code class='lang-csharp'>public void Dispose()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.EnsureCapacity(Alis.Core.Ecs.Kernel.GameObjectType,System.Int32)' data-commentid='M:Alis.Core.Ecs.Scene.EnsureCapacity(Alis.Core.Ecs.Kernel.GameObjectType,System.Int32)' id='Alis_Core_Ecs_Scene_EnsureCapacity_Alis_Core_Ecs_Kernel_GameObjectType_System_Int32_'>EnsureCapacity(GameObjectType, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L701'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Allocates memory sufficient to store <code class="paramref">count</code> entities of a type</p>
+<pre><code class='lang-csharp'>public void EnsureCapacity(GameObjectType entityType, int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>entityType</code> <a href='Alis.Core.Ecs.Kernel.GameObjectType.html'>GameObjectType</a>  </dt>
+<dd>
+
+
+<p>The types of the gameObject to allocate for</p>
+
+</dd><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>Number of gameObject spaces to allocate</p>
+
+</dd></dl><h4 class='section'>Remarks</h4><p>Use this method when creating a large number of entities</p>
+<h3 class='section api' data-uid='Alis.Core.Ecs.Scene.EnsureCapacityCore(Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32)' data-commentid='M:Alis.Core.Ecs.Scene.EnsureCapacityCore(Alis.Core.Ecs.Kernel.Archetypes.Archetype,System.Int32)' id='Alis_Core_Ecs_Scene_EnsureCapacityCore_Alis_Core_Ecs_Kernel_Archetypes_Archetype_System_Int32_'>EnsureCapacityCore(Archetype, int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L718'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Ensures the capacity core using the specified archetype</p>
+<pre><code class='lang-csharp'>public void EnsureCapacityCore(Archetype archetype, int count)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>archetype</code> <a href='Alis.Core.Ecs.Kernel.Archetypes.Archetype.html'>Archetype</a>  </dt>
+<dd>
+
+
+<p>The archetype</p>
+
+</dd><dt><code>count</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The count</p>
+
+</dd></dl><h4 class='section'>Exceptions</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception'>ArgumentOutOfRangeException</a>  </dt>
+<dd>
+
+
+<p>Count must be positive</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.EnterDisallowState' data-commentid='M:Alis.Core.Ecs.Scene.EnterDisallowState' id='Alis_Core_Ecs_Scene_EnterDisallowState'>EnterDisallowState()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L529'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Enters the disallow state</p>
+<pre><code class='lang-csharp'>public void EnterDisallowState()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.ExitDisallowState(Alis.Core.Ecs.Updating.IComponentUpdateFilter,System.Boolean)' data-commentid='M:Alis.Core.Ecs.Scene.ExitDisallowState(Alis.Core.Ecs.Updating.IComponentUpdateFilter,System.Boolean)' id='Alis_Core_Ecs_Scene_ExitDisallowState_Alis_Core_Ecs_Updating_IComponentUpdateFilter_System_Boolean_'>ExitDisallowState(IComponentUpdateFilter, bool)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L542'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Exits the disallow state using the specified filter used</p>
+<pre><code class='lang-csharp'>public void ExitDisallowState(IComponentUpdateFilter filterUsed, bool updateDeferredEntities = false)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>filterUsed</code> <a href='Alis.Core.Ecs.Updating.IComponentUpdateFilter.html'>IComponentUpdateFilter</a>  </dt>
+<dd>
+
+
+<p>The filter used</p>
+
+</dd><dt><code>updateDeferredEntities</code> <a href='https://learn.microsoft.com/dotnet/api/system.boolean'>bool</a>  </dt>
+<dd>
+
+
+<p>The update deferred entities</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.InvokeDeleteEvents(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation)' data-commentid='M:Alis.Core.Ecs.Scene.InvokeDeleteEvents(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation)' id='Alis_Core_Ecs_Scene_InvokeDeleteEvents_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation_'>InvokeDeleteEvents(GameObject, GameObjectLocation)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1895'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the delete events using the specified gameObject</p>
+<pre><code class='lang-csharp'>internal void InvokeDeleteEvents(GameObject gameObject, GameObjectLocation gameObjectLocation)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>gameObjectLocation</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The gameObject location</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.InvokeEntityCreated(Alis.Core.Ecs.GameObject)' data-commentid='M:Alis.Core.Ecs.Scene.InvokeEntityCreated(Alis.Core.Ecs.GameObject)' id='Alis_Core_Ecs_Scene_InvokeEntityCreated_Alis_Core_Ecs_GameObject_'>InvokeEntityCreated(GameObject)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L690'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invokes the gameObject created using the specified gameObject</p>
+<pre><code class='lang-csharp'>public void InvokeEntityCreated(GameObject gameObject)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.MoveEntityToArchetypeAdd(System.Span{Alis.Core.Ecs.Updating.ComponentStorageBase},Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)' data-commentid='M:Alis.Core.Ecs.Scene.MoveEntityToArchetypeAdd(System.Span{Alis.Core.Ecs.Updating.ComponentStorageBase},Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)' id='Alis_Core_Ecs_Scene_MoveEntityToArchetypeAdd_System_Span_Alis_Core_Ecs_Updating_ComponentStorageBase__Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_Kernel_Archetypes_Archetype_'>MoveEntityToArchetypeAdd(Span&lt;ComponentStorageBase&gt;, GameObject, ref GameObjectLocation, out GameObjectLocation, Archetype)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1683'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Moves the gameObject to archetype add using the specified write to</p>
+<pre><code class='lang-csharp'>internal void MoveEntityToArchetypeAdd(Span&lt;ComponentStorageBase&gt; writeTo, GameObject gameObject, ref GameObjectLocation currentLookup, out GameObjectLocation nextLocation, Archetype destination)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>writeTo</code> <a href='https://learn.microsoft.com/dotnet/api/system.span-1'>Span</a>&lt;<a href='Alis.Core.Ecs.Updating.ComponentStorageBase.html'>ComponentStorageBase</a>&gt;  </dt>
+<dd>
+
+
+<p>The write to</p>
+
+</dd><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>currentLookup</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The current lookup</p>
+
+</dd><dt><code>nextLocation</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The next location</p>
+
+</dd><dt><code>destination</code> <a href='Alis.Core.Ecs.Kernel.Archetypes.Archetype.html'>Archetype</a>  </dt>
+<dd>
+
+
+<p>The destination</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.MoveEntityToArchetypeIso(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)' data-commentid='M:Alis.Core.Ecs.Scene.MoveEntityToArchetypeIso(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)' id='Alis_Core_Ecs_Scene_MoveEntityToArchetypeIso_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_Kernel_Archetypes_Archetype_'>MoveEntityToArchetypeIso(GameObject, ref GameObjectLocation, Archetype)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1836'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Moves the gameObject to archetype iso using the specified gameObject</p>
+<pre><code class='lang-csharp'>internal void MoveEntityToArchetypeIso(GameObject gameObject, ref GameObjectLocation currentLookup, Archetype destination)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>currentLookup</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The current lookup</p>
+
+</dd><dt><code>destination</code> <a href='Alis.Core.Ecs.Kernel.Archetypes.Archetype.html'>Archetype</a>  </dt>
+<dd>
+
+
+<p>The destination</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.MoveEntityToArchetypeRemove(System.Span{Alis.Core.Ecs.Kernel.ComponentHandle},Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)' data-commentid='M:Alis.Core.Ecs.Scene.MoveEntityToArchetypeRemove(System.Span{Alis.Core.Ecs.Kernel.ComponentHandle},Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.Archetypes.Archetype)' id='Alis_Core_Ecs_Scene_MoveEntityToArchetypeRemove_System_Span_Alis_Core_Ecs_Kernel_ComponentHandle__Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_Kernel_Archetypes_Archetype_'>MoveEntityToArchetypeRemove(Span&lt;ComponentHandle&gt;, GameObject, ref GameObjectLocation, Archetype)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1734'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Moves the gameObject to archetype remove using the specified component handles</p>
+<pre><code class='lang-csharp'>internal void MoveEntityToArchetypeRemove(Span&lt;ComponentHandle&gt; componentHandles, GameObject gameObject, ref GameObjectLocation currentLookup, Archetype destination)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>componentHandles</code> <a href='https://learn.microsoft.com/dotnet/api/system.span-1'>Span</a>&lt;<a href='Alis.Core.Ecs.Kernel.ComponentHandle.html'>ComponentHandle</a>&gt;  </dt>
+<dd>
+
+
+<p>The component handles</p>
+
+</dd><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>currentLookup</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The current lookup</p>
+
+</dd><dt><code>destination</code> <a href='Alis.Core.Ecs.Kernel.Archetypes.Archetype.html'>Archetype</a>  </dt>
+<dd>
+
+
+<p>The destination</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.RemoveComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.ComponentId)' data-commentid='M:Alis.Core.Ecs.Scene.RemoveComponent(Alis.Core.Ecs.GameObject,Alis.Core.Ecs.GameObjectLocation@,Alis.Core.Ecs.Kernel.ComponentId)' id='Alis_Core_Ecs_Scene_RemoveComponent_Alis_Core_Ecs_GameObject_Alis_Core_Ecs_GameObjectLocation__Alis_Core_Ecs_Kernel_ComponentId_'>RemoveComponent(GameObject, ref GameObjectLocation, ComponentId)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L1647'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes the component using the specified gameObject</p>
+<pre><code class='lang-csharp'>internal void RemoveComponent(GameObject gameObject, ref GameObjectLocation lookup, ComponentId componentId)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>gameObject</code> <a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>  </dt>
+<dd>
+
+
+<p>The gameObject</p>
+
+</dd><dt><code>lookup</code> <a href='Alis.Core.Ecs.GameObjectLocation.html'>GameObjectLocation</a>  </dt>
+<dd>
+
+
+<p>The lookup</p>
+
+</dd><dt><code>componentId</code> <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>  </dt>
+<dd>
+
+
+<p>The component id</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.RemoveEvent``1(Alis.Core.Ecs.Kernel.Events.Event{``0}@,System.Action{Alis.Core.Ecs.GameObject,``0},Alis.Core.Ecs.GameObjectFlags)' data-commentid='M:Alis.Core.Ecs.Scene.RemoveEvent``1(Alis.Core.Ecs.Kernel.Events.Event{``0}@,System.Action{Alis.Core.Ecs.GameObject,``0},Alis.Core.Ecs.GameObjectFlags)' id='Alis_Core_Ecs_Scene_RemoveEvent__1_Alis_Core_Ecs_Kernel_Events_Event___0___System_Action_Alis_Core_Ecs_GameObject___0__Alis_Core_Ecs_GameObjectFlags_'>RemoveEvent&lt;T&gt;(ref Event&lt;T&gt;, Action&lt;GameObject, T&gt;, GameObjectFlags)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L340'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Removes the event using the specified event</p>
+<pre><code class='lang-csharp'>internal void RemoveEvent&lt;T&gt;(ref Event&lt;T&gt; e, Action&lt;GameObject, T&gt; action, GameObjectFlags flag)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>e</code> <a href='Alis.Core.Ecs.Kernel.Events.Event-1.html'>Event</a>&lt;T&gt;  </dt>
+<dd>
+
+
+<p>The event</p>
+
+</dd><dt><code>action</code> <a href='https://learn.microsoft.com/dotnet/api/system.action-2'>Action</a>&lt;<a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>, T&gt;  </dt>
+<dd>
+
+
+<p>The action</p>
+
+</dd><dt><code>flag</code> <a href='Alis.Core.Ecs.GameObjectFlags.html'>GameObjectFlags</a>  </dt>
+<dd>
+
+
+<p>The flag</p>
+
+</dd></dl><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.ResolveUpdateDeferredCreationEntities(Alis.Core.Ecs.Updating.IComponentUpdateFilter)' data-commentid='M:Alis.Core.Ecs.Scene.ResolveUpdateDeferredCreationEntities(Alis.Core.Ecs.Updating.IComponentUpdateFilter)' id='Alis_Core_Ecs_Scene_ResolveUpdateDeferredCreationEntities_Alis_Core_Ecs_Updating_IComponentUpdateFilter_'>ResolveUpdateDeferredCreationEntities(IComponentUpdateFilter)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L580'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Resolves the update deferred creation entities using the specified filter used</p>
+<pre><code class='lang-csharp'>internal void ResolveUpdateDeferredCreationEntities(IComponentUpdateFilter filterUsed)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>filterUsed</code> <a href='Alis.Core.Ecs.Updating.IComponentUpdateFilter.html'>IComponentUpdateFilter</a>  </dt>
+<dd>
+
+
+<p>The filter used</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Update' data-commentid='M:Alis.Core.Ecs.Scene.Update' id='Alis_Core_Ecs_Scene_Update'>Update()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L365'><i class='bi bi-code-slash'></i></a></h3>
+ <pre><code class='lang-csharp'>public void Update()</code></pre><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Update``1' data-commentid='M:Alis.Core.Ecs.Scene.Update``1' id='Alis_Core_Ecs_Scene_Update__1'>Update&lt;T&gt;()    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L386'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Updates all component instances in the scene that implement a component interface and have update methods with the
+<code class="typeparamref">T</code> attribute</p>
+<pre><code class='lang-csharp'>public void Update&lt;T&gt;() where T : UpdateTypeAttribute</code></pre><h4 class='section'>Type Parameters</h4><dl class='parameters'><dt><code>T</code>   </dt>
+<dd>
+
+
+<p>The type of attribute to filter</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.Update(System.Type)' data-commentid='M:Alis.Core.Ecs.Scene.Update(System.Type)' id='Alis_Core_Ecs_Scene_Update_System_Type_'>Update(Type)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L396'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Updates all component instances in the scene that implement a component interface and have update methods with an
+attribute of type <code class="paramref">attributeType</code></p>
+<pre><code class='lang-csharp'>public void Update(Type attributeType)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>attributeType</code> <a href='https://learn.microsoft.com/dotnet/api/system.type'>Type</a>  </dt>
+<dd>
+
+
+<p>The attribute type to filter</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.UpdateArchetypeTable(System.Int32)' data-commentid='M:Alis.Core.Ecs.Scene.UpdateArchetypeTable(System.Int32)' id='Alis_Core_Ecs_Scene_UpdateArchetypeTable_System_Int32_'>UpdateArchetypeTable(int)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L521'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Updates the archetype table using the specified new size</p>
+<pre><code class='lang-csharp'>public void UpdateArchetypeTable(int newSize)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>newSize</code> <a href='https://learn.microsoft.com/dotnet/api/system.int32'>int</a>  </dt>
+<dd>
+
+
+<p>The new size</p>
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.UpdateComponent(Alis.Core.Ecs.Kernel.ComponentId)' data-commentid='M:Alis.Core.Ecs.Scene.UpdateComponent(Alis.Core.Ecs.Kernel.ComponentId)' id='Alis_Core_Ecs_Scene_UpdateComponent_Alis_Core_Ecs_Kernel_ComponentId_'>UpdateComponent(ComponentId)    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L419'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Updates all instances of a specific component type.</p>
+<pre><code class='lang-csharp'>public void UpdateComponent(ComponentId componentType)</code></pre><h4 class='section'>Parameters</h4><dl class='parameters'><dt><code>componentType</code> <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.ComponentAdded' data-commentid='E:Alis.Core.Ecs.Scene.ComponentAdded' id='Alis_Core_Ecs_Scene_ComponentAdded'>ComponentAdded    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L303'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invoked whenever a component is added to an gameObject.</p>
+<pre><code class='lang-csharp'>public event Action&lt;GameObject, ComponentId&gt; ComponentAdded</code></pre><h4 class='section'>Event Type</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.action-2'>Action</a>&lt;<a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>, <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.ComponentRemoved' data-commentid='E:Alis.Core.Ecs.Scene.ComponentRemoved' id='Alis_Core_Ecs_Scene_ComponentRemoved'>ComponentRemoved    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L312'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invoked whenever a component is removed from an gameObject.</p>
+<pre><code class='lang-csharp'>public event Action&lt;GameObject, ComponentId&gt; ComponentRemoved</code></pre><h4 class='section'>Event Type</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.action-2'>Action</a>&lt;<a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>, <a href='Alis.Core.Ecs.Kernel.ComponentId.html'>ComponentId</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.EntityCreated' data-commentid='E:Alis.Core.Ecs.Scene.EntityCreated' id='Alis_Core_Ecs_Scene_EntityCreated'>EntityCreated    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L263'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invoked whenever an gameObject is created on this scene.</p>
+<pre><code class='lang-csharp'>public event Action&lt;GameObject&gt; EntityCreated</code></pre><h4 class='section'>Event Type</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.action-1'>Action</a>&lt;<a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl><h3 class='section api' data-uid='Alis.Core.Ecs.Scene.EntityDeleted' data-commentid='E:Alis.Core.Ecs.Scene.EntityDeleted' id='Alis_Core_Ecs_Scene_EntityDeleted'>EntityDeleted    <a class='header-action link-secondary' title='View source' href='https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Scene.cs#L283'><i class='bi bi-code-slash'></i></a></h3>
+ <p>Invoked whenever an gameObject belonging to this scene is deleted.</p>
+<pre><code class='lang-csharp'>public event Action&lt;GameObject&gt; EntityDeleted</code></pre><h4 class='section'>Event Type</h4><dl class='parameters'><dt> <a href='https://learn.microsoft.com/dotnet/api/system.action-1'>Action</a>&lt;<a href='Alis.Core.Ecs.GameObject.html'>GameObject</a>&gt;  </dt>
+<dd>
+
+
+
+</dd></dl>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Alis - Desarrolla los videojuegos de tus sueños 💯 gratis en Windows, MacOS, Linux, Android (próximamente), iOS (próximamente).
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

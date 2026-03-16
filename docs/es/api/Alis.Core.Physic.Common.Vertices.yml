@@ -3,7 +3,7 @@ title: Class Vertices
 body:
 - api1: Class Vertices
   id: Alis_Core_Physic_Common_Vertices
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L44
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L43
   metadata:
     uid: Alis.Core.Physic.Common.Vertices
     commentId: T:Alis.Core.Physic.Common.Vertices
@@ -15,12 +15,12 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The vertices class
-- code: 'public class Vertices : List<Vector2>, IList<Vector2>, ICollection<Vector2>, IReadOnlyList<Vector2>, IReadOnlyCollection<Vector2>, IEnumerable<Vector2>, IList, ICollection, IEnumerable'
+- code: 'public class Vertices : List<Vector2F>, IList<Vector2F>, ICollection<Vector2F>, IReadOnlyList<Vector2F>, IReadOnlyCollection<Vector2F>, IEnumerable<Vector2F>, IList, ICollection, IEnumerable'
 - h4: Inheritance
 - inheritance:
   - text: object
     url: https://learn.microsoft.com/dotnet/api/system.object
-  - text: List<Vector2>
+  - text: List<Vector2F>
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - text: Vertices
     url: Alis.Core.Physic.Common.Vertices.html
@@ -30,15 +30,15 @@ body:
     url: Alis.Core.Physic.Common.Decomposition.EarclipDecomposer.Triangle.html
 - h4: Implements
 - list:
-  - text: IList<Vector2>
+  - text: IList<Vector2F>
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
-  - text: ICollection<Vector2>
+  - text: ICollection<Vector2F>
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
-  - text: IReadOnlyList<Vector2>
+  - text: IReadOnlyList<Vector2F>
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
-  - text: IReadOnlyCollection<Vector2>
+  - text: IReadOnlyCollection<Vector2F>
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
-  - text: IEnumerable<Vector2>
+  - text: IEnumerable<Vector2F>
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
   - text: IList
     url: https://learn.microsoft.com/dotnet/api/system.collections.ilist
@@ -48,135 +48,139 @@ body:
     url: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
 - h4: Inherited Members
 - list:
-  - text: List<Vector2>.IList.get_Item(int)
+  - text: List<Vector2F>.IList.get_Item(int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-get_item
-  - text: List<Vector2>.IList.set_Item(int, object)
+  - text: List<Vector2F>.IList.set_Item(int, object)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-set_item
-  - text: List<Vector2>.Add(Vector2)
+  - text: List<Vector2F>.Add(Vector2F)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.add
-  - text: List<Vector2>.AddRange(IEnumerable<Vector2>)
+  - text: List<Vector2F>.AddRange(IEnumerable<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.addrange
-  - text: List<Vector2>.AsReadOnly()
+  - text: List<Vector2F>.AsReadOnly()
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.asreadonly
-  - text: List<Vector2>.BinarySearch(int, int, Vector2, IComparer<Vector2>?)
+  - text: List<Vector2F>.BinarySearch(int, int, Vector2F, IComparer<Vector2F>?)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(system-int32-system-int32-0-system-collections-generic-icomparer((-0)))
-  - text: List<Vector2>.BinarySearch(Vector2)
+  - text: List<Vector2F>.BinarySearch(Vector2F)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(-0)
-  - text: List<Vector2>.BinarySearch(Vector2, IComparer<Vector2>?)
+  - text: List<Vector2F>.BinarySearch(Vector2F, IComparer<Vector2F>?)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(-0-system-collections-generic-icomparer((-0)))
-  - text: List<Vector2>.Clear()
+  - text: List<Vector2F>.Clear()
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.clear
-  - text: List<Vector2>.Contains(Vector2)
+  - text: List<Vector2F>.Contains(Vector2F)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.contains
-  - text: List<Vector2>.ConvertAll<TOutput>(Converter<Vector2, TOutput>)
+  - text: List<Vector2F>.ConvertAll<TOutput>(Converter<Vector2F, TOutput>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.convertall
-  - text: List<Vector2>.CopyTo(int, Vector2[], int, int)
+  - text: List<Vector2F>.CopyTo(int, Vector2F[], int, int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(system-int32-0()-system-int32-system-int32)
-  - text: List<Vector2>.CopyTo(Vector2[])
+  - text: List<Vector2F>.CopyTo(Vector2F[])
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(-0())
-  - text: List<Vector2>.CopyTo(Vector2[], int)
+  - text: List<Vector2F>.CopyTo(Vector2F[], int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(-0()-system-int32)
-  - text: List<Vector2>.Exists(Predicate<Vector2>)
+  - text: List<Vector2F>.EnsureCapacity(int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.ensurecapacity
+  - text: List<Vector2F>.Exists(Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.exists
-  - text: List<Vector2>.Find(Predicate<Vector2>)
+  - text: List<Vector2F>.Find(Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.find
-  - text: List<Vector2>.FindAll(Predicate<Vector2>)
+  - text: List<Vector2F>.FindAll(Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findall
-  - text: List<Vector2>.FindIndex(int, int, Predicate<Vector2>)
+  - text: List<Vector2F>.FindIndex(int, int, Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-int32-system-int32-system-predicate((-0)))
-  - text: List<Vector2>.FindIndex(int, Predicate<Vector2>)
+  - text: List<Vector2F>.FindIndex(int, Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-int32-system-predicate((-0)))
-  - text: List<Vector2>.FindIndex(Predicate<Vector2>)
+  - text: List<Vector2F>.FindIndex(Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-predicate((-0)))
-  - text: List<Vector2>.FindLast(Predicate<Vector2>)
+  - text: List<Vector2F>.FindLast(Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlast
-  - text: List<Vector2>.FindLastIndex(int, int, Predicate<Vector2>)
+  - text: List<Vector2F>.FindLastIndex(int, int, Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-int32-system-int32-system-predicate((-0)))
-  - text: List<Vector2>.FindLastIndex(int, Predicate<Vector2>)
+  - text: List<Vector2F>.FindLastIndex(int, Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-int32-system-predicate((-0)))
-  - text: List<Vector2>.FindLastIndex(Predicate<Vector2>)
+  - text: List<Vector2F>.FindLastIndex(Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-predicate((-0)))
-  - text: List<Vector2>.ForEach(Action<Vector2>)
+  - text: List<Vector2F>.ForEach(Action<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.foreach
-  - text: List<Vector2>.GetEnumerator()
+  - text: List<Vector2F>.GetEnumerator()
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.getenumerator
-  - text: List<Vector2>.GetRange(int, int)
+  - text: List<Vector2F>.GetRange(int, int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.getrange
-  - text: List<Vector2>.IndexOf(Vector2)
+  - text: List<Vector2F>.IndexOf(Vector2F)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0)
-  - text: List<Vector2>.IndexOf(Vector2, int)
+  - text: List<Vector2F>.IndexOf(Vector2F, int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0-system-int32)
-  - text: List<Vector2>.IndexOf(Vector2, int, int)
+  - text: List<Vector2F>.IndexOf(Vector2F, int, int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0-system-int32-system-int32)
-  - text: List<Vector2>.Insert(int, Vector2)
+  - text: List<Vector2F>.Insert(int, Vector2F)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.insert
-  - text: List<Vector2>.InsertRange(int, IEnumerable<Vector2>)
+  - text: List<Vector2F>.InsertRange(int, IEnumerable<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.insertrange
-  - text: List<Vector2>.LastIndexOf(Vector2)
+  - text: List<Vector2F>.LastIndexOf(Vector2F)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0)
-  - text: List<Vector2>.LastIndexOf(Vector2, int)
+  - text: List<Vector2F>.LastIndexOf(Vector2F, int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0-system-int32)
-  - text: List<Vector2>.LastIndexOf(Vector2, int, int)
+  - text: List<Vector2F>.LastIndexOf(Vector2F, int, int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0-system-int32-system-int32)
-  - text: List<Vector2>.Remove(Vector2)
+  - text: List<Vector2F>.Remove(Vector2F)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.remove
-  - text: List<Vector2>.RemoveAll(Predicate<Vector2>)
+  - text: List<Vector2F>.RemoveAll(Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removeall
-  - text: List<Vector2>.RemoveAt(int)
+  - text: List<Vector2F>.RemoveAt(int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removeat
-  - text: List<Vector2>.RemoveRange(int, int)
+  - text: List<Vector2F>.RemoveRange(int, int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removerange
-  - text: List<Vector2>.Reverse()
+  - text: List<Vector2F>.Reverse()
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#system-collections-generic-list-1-reverse
-  - text: List<Vector2>.Reverse(int, int)
+  - text: List<Vector2F>.Reverse(int, int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#system-collections-generic-list-1-reverse(system-int32-system-int32)
-  - text: List<Vector2>.Sort()
+  - text: List<Vector2F>.Slice(int, int)
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.slice
+  - text: List<Vector2F>.Sort()
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort
-  - text: List<Vector2>.Sort(IComparer<Vector2>?)
+  - text: List<Vector2F>.Sort(IComparer<Vector2F>?)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-collections-generic-icomparer((-0)))
-  - text: List<Vector2>.Sort(Comparison<Vector2>)
+  - text: List<Vector2F>.Sort(Comparison<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-comparison((-0)))
-  - text: List<Vector2>.Sort(int, int, IComparer<Vector2>?)
+  - text: List<Vector2F>.Sort(int, int, IComparer<Vector2F>?)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-int32-system-int32-system-collections-generic-icomparer((-0)))
-  - text: List<Vector2>.IEnumerable<Vector2>.GetEnumerator()
+  - text: List<Vector2F>.IEnumerable<Vector2F>.GetEnumerator()
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-ienumerable-t--getenumerator
-  - text: List<Vector2>.ICollection.CopyTo(Array, int)
+  - text: List<Vector2F>.ICollection.CopyTo(Array, int)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-copyto
-  - text: List<Vector2>.IEnumerable.GetEnumerator()
+  - text: List<Vector2F>.IEnumerable.GetEnumerator()
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ienumerable-getenumerator
-  - text: List<Vector2>.IList.Add(object)
+  - text: List<Vector2F>.IList.Add(object)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-add
-  - text: List<Vector2>.IList.Contains(object)
+  - text: List<Vector2F>.IList.Contains(object)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-contains
-  - text: List<Vector2>.IList.IndexOf(object)
+  - text: List<Vector2F>.IList.IndexOf(object)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-indexof
-  - text: List<Vector2>.IList.Insert(int, object)
+  - text: List<Vector2F>.IList.Insert(int, object)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-insert
-  - text: List<Vector2>.IList.Remove(object)
+  - text: List<Vector2F>.IList.Remove(object)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-remove
-  - text: List<Vector2>.ToArray()
+  - text: List<Vector2F>.ToArray()
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.toarray
-  - text: List<Vector2>.TrimExcess()
+  - text: List<Vector2F>.TrimExcess()
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.trimexcess
-  - text: List<Vector2>.TrueForAll(Predicate<Vector2>)
+  - text: List<Vector2F>.TrueForAll(Predicate<Vector2F>)
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.trueforall
-  - text: List<Vector2>.Capacity
+  - text: List<Vector2F>.Capacity
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.capacity
-  - text: List<Vector2>.Count
+  - text: List<Vector2F>.Count
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.count
-  - text: List<Vector2>.this[int]
+  - text: List<Vector2F>.this[int]
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.item
-  - text: List<Vector2>.ICollection<Vector2>.IsReadOnly
+  - text: List<Vector2F>.ICollection<Vector2F>.IsReadOnly
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-generic-icollection-t--isreadonly
-  - text: List<Vector2>.ICollection.IsSynchronized
+  - text: List<Vector2F>.ICollection.IsSynchronized
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-issynchronized
-  - text: List<Vector2>.ICollection.SyncRoot
+  - text: List<Vector2F>.ICollection.SyncRoot
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-icollection-syncroot
-  - text: List<Vector2>.IList.IsFixedSize
+  - text: List<Vector2F>.IList.IsFixedSize
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isfixedsize
-  - text: List<Vector2>.IList.IsReadOnly
+  - text: List<Vector2F>.IList.IsReadOnly
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-isreadonly
-  - text: List<Vector2>.IList.Item[int]
+  - text: List<Vector2F>.IList.Item[int]
     url: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.system-collections-ilist-item
   - text: object.Equals(object?)
     url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
@@ -195,7 +199,7 @@ body:
 - h2: Constructors
 - api3: Vertices()
   id: Alis_Core_Physic_Common_Vertices__ctor
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L50
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L48
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.#ctor
     commentId: M:Alis.Core.Physic.Common.Vertices.#ctor
@@ -203,7 +207,7 @@ body:
 - code: public Vertices()
 - api3: Vertices(int)
   id: Alis_Core_Physic_Common_Vertices__ctor_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L58
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L56
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.#ctor(System.Int32)
     commentId: M:Alis.Core.Physic.Common.Vertices.#ctor(System.Int32)
@@ -216,14 +220,14 @@ body:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
     description: The capacity
-- api3: Vertices(IEnumerable<Vector2>)
-  id: Alis_Core_Physic_Common_Vertices__ctor_System_Collections_Generic_IEnumerable_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L66
+- api3: Vertices(IEnumerable<Vector2F>)
+  id: Alis_Core_Physic_Common_Vertices__ctor_System_Collections_Generic_IEnumerable_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L64
   metadata:
-    uid: Alis.Core.Physic.Common.Vertices.#ctor(System.Collections.Generic.IEnumerable{Alis.Core.Aspect.Math.Vector.Vector2})
-    commentId: M:Alis.Core.Physic.Common.Vertices.#ctor(System.Collections.Generic.IEnumerable{Alis.Core.Aspect.Math.Vector.Vector2})
+    uid: Alis.Core.Physic.Common.Vertices.#ctor(System.Collections.Generic.IEnumerable{Alis.Core.Aspect.Math.Vector.Vector2F})
+    commentId: M:Alis.Core.Physic.Common.Vertices.#ctor(System.Collections.Generic.IEnumerable{Alis.Core.Aspect.Math.Vector.Vector2F})
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.Vertices" data-throw-if-not-resolved="false"></xref> class
-- code: public Vertices(IEnumerable<Vector2> vertices)
+- code: public Vertices(IEnumerable<Vector2F> vertices)
 - h4: Parameters
 - parameters:
   - name: vertices
@@ -231,14 +235,14 @@ body:
     - text: IEnumerable
       url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
     - <
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     - '>'
     description: The vertices
 - h2: Properties
 - api3: AttachedToBody
   id: Alis_Core_Physic_Common_Vertices_AttachedToBody
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L74
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L72
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.AttachedToBody
     commentId: P:Alis.Core.Physic.Common.Vertices.AttachedToBody
@@ -251,7 +255,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: Holes
   id: Alis_Core_Physic_Common_Vertices_Holes
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L80
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L78
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.Holes
     commentId: P:Alis.Core.Physic.Common.Vertices.Holes
@@ -272,7 +276,7 @@ body:
 - h2: Methods
 - api3: CheckPolygon()
   id: Alis_Core_Physic_Common_Vertices_CheckPolygon
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L407
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L423
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.CheckPolygon
     commentId: M:Alis.Core.Physic.Common.Vertices.CheckPolygon
@@ -293,25 +297,25 @@ body:
     description: PolygonError.NoError if there were no error.
 - api3: ForceCounterClockWise()
   id: Alis_Core_Physic_Common_Vertices_ForceCounterClockWise
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L362
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L372
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.ForceCounterClockWise
     commentId: M:Alis.Core.Physic.Common.Vertices.ForceCounterClockWise
 - markdown: Forces the vertices to be counter clock wise order.
 - code: public void ForceCounterClockWise()
-- api3: GetAABB()
-  id: Alis_Core_Physic_Common_Vertices_GetAABB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L181
+- api3: GetAabb()
+  id: Alis_Core_Physic_Common_Vertices_GetAabb
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L183
   metadata:
-    uid: Alis.Core.Physic.Common.Vertices.GetAABB
-    commentId: M:Alis.Core.Physic.Common.Vertices.GetAABB
+    uid: Alis.Core.Physic.Common.Vertices.GetAabb
+    commentId: M:Alis.Core.Physic.Common.Vertices.GetAabb
 - markdown: Returns an AABB that fully contains this polygon.
-- code: public AABB GetAABB()
+- code: public Aabb GetAabb()
 - h4: Returns
 - parameters:
   - type:
-    - text: AABB
-      url: Alis.Core.Physic.Collision.AABB.html
+    - text: Aabb
+      url: Alis.Core.Physic.Collisions.Aabb.html
 - api3: GetArea()
   id: Alis_Core_Physic_Common_Vertices_GetArea
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L139
@@ -333,16 +337,16 @@ body:
     uid: Alis.Core.Physic.Common.Vertices.GetCentroid
     commentId: M:Alis.Core.Physic.Common.Vertices.GetCentroid
 - markdown: Gets the centroid.
-- code: public Vector2 GetCentroid()
+- code: public Vector2F GetCentroid()
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: ''
 - api3: GetSignedArea()
   id: Alis_Core_Physic_Common_Vertices_GetSignedArea
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L111
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L109
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.GetSignedArea
     commentId: M:Alis.Core.Physic.Common.Vertices.GetSignedArea
@@ -382,7 +386,7 @@ body:
     description: <code>true</code> if it is convex; otherwise, <code>false</code>.
 - api3: IsCounterClockWise()
   id: Alis_Core_Physic_Common_Vertices_IsCounterClockWise
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L350
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L358
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.IsCounterClockWise
     commentId: M:Alis.Core.Physic.Common.Vertices.IsCounterClockWise
@@ -398,7 +402,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: IsSimple()
   id: Alis_Core_Physic_Common_Vertices_IsSimple
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L375
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L389
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.IsSimple
     commentId: M:Alis.Core.Physic.Common.Vertices.IsSimple
@@ -411,7 +415,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: NextIndex(int)
   id: Alis_Core_Physic_Common_Vertices_NextIndex_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L86
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L84
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.NextIndex(System.Int32)
     commentId: M:Alis.Core.Physic.Common.Vertices.NextIndex(System.Int32)
@@ -431,12 +435,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int32
 - api3: NextVertex(int)
   id: Alis_Core_Physic_Common_Vertices_NextVertex_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L92
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L90
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.NextVertex(System.Int32)
     commentId: M:Alis.Core.Physic.Common.Vertices.NextVertex(System.Int32)
 - markdown: Gets the next vertex. Used for iterating all the edges with wrap-around.
-- code: public Vector2 NextVertex(int index)
+- code: public Vector2F NextVertex(int index)
 - h4: Parameters
 - parameters:
   - name: index
@@ -447,22 +451,22 @@ body:
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: PointInPolygon(ref Vector2)
-  id: Alis_Core_Physic_Common_Vertices_PointInPolygon_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L478
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: PointInPolygon(ref Vector2F)
+  id: Alis_Core_Physic_Common_Vertices_PointInPolygon_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L504
   metadata:
-    uid: Alis.Core.Physic.Common.Vertices.PointInPolygon(Alis.Core.Aspect.Math.Vector.Vector2@)
-    commentId: M:Alis.Core.Physic.Common.Vertices.PointInPolygon(Alis.Core.Aspect.Math.Vector.Vector2@)
+    uid: Alis.Core.Physic.Common.Vertices.PointInPolygon(Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Common.Vertices.PointInPolygon(Alis.Core.Aspect.Math.Vector.Vector2F@)
 - markdown: Winding number test for a point in a polygon.
-- code: public int PointInPolygon(ref Vector2 point)
+- code: public int PointInPolygon(ref Vector2F point)
 - h4: Parameters
 - parameters:
   - name: point
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The point to be tested.
 - h4: Returns
 - parameters:
@@ -475,25 +479,25 @@ body:
       the polygon, 1 if the point is inside the polygon, and 0 if the point
 
       is on the polygons edge.
-- api3: PointInPolygonAngle(ref Vector2)
-  id: Alis_Core_Physic_Common_Vertices_PointInPolygonAngle_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L523
+- api3: PointInPolygonAngle(ref Vector2F)
+  id: Alis_Core_Physic_Common_Vertices_PointInPolygonAngle_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L549
   metadata:
-    uid: Alis.Core.Physic.Common.Vertices.PointInPolygonAngle(Alis.Core.Aspect.Math.Vector.Vector2@)
-    commentId: M:Alis.Core.Physic.Common.Vertices.PointInPolygonAngle(Alis.Core.Aspect.Math.Vector.Vector2@)
+    uid: Alis.Core.Physic.Common.Vertices.PointInPolygonAngle(Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Common.Vertices.PointInPolygonAngle(Alis.Core.Aspect.Math.Vector.Vector2F@)
 - markdown: >-
     Compute the sum of the angles made between the test point and each pair of points making up the polygon.
 
     If this sum is 2pi then the point is an interior point, if 0 then the point is an exterior point.
 
     ref: http://ozviz.wasp.uwa.edu.au/~pbourke/geometry/insidepoly/  - Solution 2
-- code: public bool PointInPolygonAngle(ref Vector2 point)
+- code: public bool PointInPolygonAngle(ref Vector2F point)
 - h4: Parameters
 - parameters:
   - name: point
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - h4: Returns
 - parameters:
   - type:
@@ -501,7 +505,7 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.boolean
 - api3: PreviousIndex(int)
   id: Alis_Core_Physic_Common_Vertices_PreviousIndex_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L98
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L96
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.PreviousIndex(System.Int32)
     commentId: M:Alis.Core.Physic.Common.Vertices.PreviousIndex(System.Int32)
@@ -521,12 +525,12 @@ body:
       url: https://learn.microsoft.com/dotnet/api/system.int32
 - api3: PreviousVertex(int)
   id: Alis_Core_Physic_Common_Vertices_PreviousVertex_System_Int32_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L104
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L102
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.PreviousVertex(System.Int32)
     commentId: M:Alis.Core.Physic.Common.Vertices.PreviousVertex(System.Int32)
 - markdown: Gets the previous vertex. Used for iterating all the edges with wrap-around.
-- code: public Vector2 PreviousVertex(int index)
+- code: public Vector2F PreviousVertex(int index)
 - h4: Parameters
 - parameters:
   - name: index
@@ -537,22 +541,22 @@ body:
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
-- api3: ProjectToAxis(ref Vector2, out float, out float)
-  id: Alis_Core_Physic_Common_Vertices_ProjectToAxis_Alis_Core_Aspect_Math_Vector_Vector2__System_Single__System_Single__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L444
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
+- api3: ProjectToAxis(ref Vector2F, out float, out float)
+  id: Alis_Core_Physic_Common_Vertices_ProjectToAxis_Alis_Core_Aspect_Math_Vector_Vector2F__System_Single__System_Single__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L470
   metadata:
-    uid: Alis.Core.Physic.Common.Vertices.ProjectToAxis(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single@,System.Single@)
-    commentId: M:Alis.Core.Physic.Common.Vertices.ProjectToAxis(Alis.Core.Aspect.Math.Vector.Vector2@,System.Single@,System.Single@)
+    uid: Alis.Core.Physic.Common.Vertices.ProjectToAxis(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single@,System.Single@)
+    commentId: M:Alis.Core.Physic.Common.Vertices.ProjectToAxis(Alis.Core.Aspect.Math.Vector.Vector2F@,System.Single@,System.Single@)
 - markdown: Projects to axis.
-- code: public void ProjectToAxis(ref Vector2 axis, out float min, out float max)
+- code: public void ProjectToAxis(ref Vector2F axis, out float min, out float max)
 - h4: Parameters
 - parameters:
   - name: axis
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The axis.
   - name: min
     type:
@@ -566,7 +570,7 @@ body:
     description: The max.
 - api3: Rotate(float)
   id: Alis_Core_Physic_Common_Vertices_Rotate_System_Single_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L280
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L282
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.Rotate(System.Single)
     commentId: M:Alis.Core.Physic.Common.Vertices.Rotate(System.Single)
@@ -584,39 +588,39 @@ body:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
     description: The amount to rotate by in radians.
-- api3: Scale(Vector2)
-  id: Alis_Core_Physic_Common_Vertices_Scale_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L249
+- api3: Scale(Vector2F)
+  id: Alis_Core_Physic_Common_Vertices_Scale_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L251
   metadata:
-    uid: Alis.Core.Physic.Common.Vertices.Scale(Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.Vertices.Scale(Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.Vertices.Scale(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.Vertices.Scale(Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Scales the vertices with the specified vector.
-- code: public void Scale(Vector2 value)
+- code: public void Scale(Vector2F value)
 - h4: Parameters
 - parameters:
   - name: value
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The Value.
-- api3: Scale(ref Vector2)
-  id: Alis_Core_Physic_Common_Vertices_Scale_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L258
+- api3: Scale(ref Vector2F)
+  id: Alis_Core_Physic_Common_Vertices_Scale_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L260
   metadata:
-    uid: Alis.Core.Physic.Common.Vertices.Scale(Alis.Core.Aspect.Math.Vector.Vector2@)
-    commentId: M:Alis.Core.Physic.Common.Vertices.Scale(Alis.Core.Aspect.Math.Vector.Vector2@)
+    uid: Alis.Core.Physic.Common.Vertices.Scale(Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Common.Vertices.Scale(Alis.Core.Aspect.Math.Vector.Vector2F@)
 - markdown: Scales the vertices with the specified vector.
-- code: public void Scale(ref Vector2 value)
+- code: public void Scale(ref Vector2F value)
 - h4: Parameters
 - parameters:
   - name: value
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The Value.
 - api3: ToString()
   id: Alis_Core_Physic_Common_Vertices_ToString
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L550
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L576
   metadata:
     uid: Alis.Core.Physic.Common.Vertices.ToString
     commentId: M:Alis.Core.Physic.Common.Vertices.ToString
@@ -628,35 +632,35 @@ body:
     - text: string
       url: https://learn.microsoft.com/dotnet/api/system.string
     description: The string
-- api3: Translate(Vector2)
-  id: Alis_Core_Physic_Common_Vertices_Translate_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L220
+- api3: Translate(Vector2F)
+  id: Alis_Core_Physic_Common_Vertices_Translate_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L222
   metadata:
-    uid: Alis.Core.Physic.Common.Vertices.Translate(Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.Vertices.Translate(Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.Vertices.Translate(Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.Vertices.Translate(Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Translates the vertices with the specified vector.
-- code: public void Translate(Vector2 value)
+- code: public void Translate(Vector2F value)
 - h4: Parameters
 - parameters:
   - name: value
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The value.
-- api3: Translate(ref Vector2)
-  id: Alis_Core_Physic_Common_Vertices_Translate_Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L229
+- api3: Translate(ref Vector2F)
+  id: Alis_Core_Physic_Common_Vertices_Translate_Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Vertices.cs#L231
   metadata:
-    uid: Alis.Core.Physic.Common.Vertices.Translate(Alis.Core.Aspect.Math.Vector.Vector2@)
-    commentId: M:Alis.Core.Physic.Common.Vertices.Translate(Alis.Core.Aspect.Math.Vector.Vector2@)
+    uid: Alis.Core.Physic.Common.Vertices.Translate(Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Common.Vertices.Translate(Alis.Core.Aspect.Math.Vector.Vector2F@)
 - markdown: Translates the vertices with the specified vector.
-- code: public void Translate(ref Vector2 value)
+- code: public void Translate(ref Vector2F value)
 - h4: Parameters
 - parameters:
   - name: value
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The vector.
 - h2: See Also
 - list:

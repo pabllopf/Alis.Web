@@ -1,0 +1,671 @@
+### YamlMime:ApiPage
+title: Struct FastestStack<T>
+body:
+- api1: Struct FastestStack<T>
+  id: Alis_Core_Ecs_Collections_FastestStack_1
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1
+    commentId: T:Alis.Core.Ecs.Collections.FastestStack`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Collections
+      url: Alis.Core.Ecs.Collections.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The fastest stack class
+- code: 'public struct FastestStack<T> : ICollection, IReadOnlyCollection<T>, IEnumerable<T>, IEnumerable, IDisposable'
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h4: Implements
+- list:
+  - text: ICollection
+    url: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - text: IReadOnlyCollection<T>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - text: IEnumerable<T>
+    url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - text: IEnumerable
+    url: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  - text: IDisposable
+    url: https://learn.microsoft.com/dotnet/api/system.idisposable
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: FastestStack()
+  id: Alis_Core_Ecs_Collections_FastestStack_1__ctor
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L75
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.#ctor
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.#ctor
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Collections.FastestStack%601" data-throw-if-not-resolved="false"></xref> class
+- code: public FastestStack()
+- api3: FastestStack(int)
+  id: Alis_Core_Ecs_Collections_FastestStack_1__ctor_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L83
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.#ctor(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.#ctor(System.Int32)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Collections.FastestStack%601" data-throw-if-not-resolved="false"></xref> class
+- code: public FastestStack(int capacity)
+- h4: Parameters
+- parameters:
+  - name: capacity
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The capacity
+- api3: FastestStack(IEnumerable<T>)
+  id: Alis_Core_Ecs_Collections_FastestStack_1__ctor_System_Collections_Generic_IEnumerable__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L105
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Collections.FastestStack%601" data-throw-if-not-resolved="false"></xref> class
+- code: public FastestStack(IEnumerable<T> collection)
+- h4: Parameters
+- parameters:
+  - name: collection
+    type:
+    - text: IEnumerable
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    - <
+    - T
+    - '>'
+    description: The collection
+- h2: Fields
+- api3: DefaultCapacity
+  id: Alis_Core_Ecs_Collections_FastestStack_1_DefaultCapacity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L65
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.DefaultCapacity
+    commentId: F:Alis.Core.Ecs.Collections.FastestStack`1.DefaultCapacity
+- markdown: The default capacity
+- code: private const int DefaultCapacity = 32
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxArrayLength
+  id: Alis_Core_Ecs_Collections_FastestStack_1_MaxArrayLength
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L70
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.MaxArrayLength
+    commentId: F:Alis.Core.Ecs.Collections.FastestStack`1.MaxArrayLength
+- markdown: The max array length
+- code: private const int MaxArrayLength = 2146435071
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _array
+  id: Alis_Core_Ecs_Collections_FastestStack_1__array
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L50
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1._array
+    commentId: F:Alis.Core.Ecs.Collections.FastestStack`1._array
+- markdown: The array
+- code: private T[] _array
+- h4: Field Value
+- parameters:
+  - type:
+    - T
+    - '['
+    - ']'
+- api3: _size
+  id: Alis_Core_Ecs_Collections_FastestStack_1__size
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L55
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1._size
+    commentId: F:Alis.Core.Ecs.Collections.FastestStack`1._size
+- markdown: The size
+- code: private int _size
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _version
+  id: Alis_Core_Ecs_Collections_FastestStack_1__version
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L60
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1._version
+    commentId: F:Alis.Core.Ecs.Collections.FastestStack`1._version
+- markdown: The version
+- code: private int _version
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h2: Properties
+- api3: Any
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Any
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L137
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Any
+    commentId: P:Alis.Core.Ecs.Collections.FastestStack`1.Any
+- markdown: Gets the value of the any
+- code: public bool Any { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Capacity
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Capacity
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L124
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Capacity
+    commentId: P:Alis.Core.Ecs.Collections.FastestStack`1.Capacity
+- markdown: Gets the total numbers of elements the internal data structure can hold without resizing.
+- code: public int Capacity { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: Count
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Count
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L118
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Count
+    commentId: P:Alis.Core.Ecs.Collections.FastestStack`1.Count
+- markdown: Gets the value of the count
+- code: public int Count { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: ICollection.IsSynchronized
+  id: Alis_Core_Ecs_Collections_FastestStack_1_System_Collections_ICollection_IsSynchronized
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L127
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.System#Collections#ICollection#IsSynchronized
+    commentId: P:Alis.Core.Ecs.Collections.FastestStack`1.System#Collections#ICollection#IsSynchronized
+- markdown: Defines methods to manipulate generic collections.
+- code: bool ICollection.IsSynchronized { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: ICollection.SyncRoot
+  id: Alis_Core_Ecs_Collections_FastestStack_1_System_Collections_ICollection_SyncRoot
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L132
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.System#Collections#ICollection#SyncRoot
+    commentId: P:Alis.Core.Ecs.Collections.FastestStack`1.System#Collections#ICollection#SyncRoot
+- markdown: Gets the value of the sync root
+- code: object ICollection.SyncRoot { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: object
+      url: https://learn.microsoft.com/dotnet/api/system.object
+- api3: this[int]
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Item_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L677
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Item(System.Int32)
+    commentId: P:Alis.Core.Ecs.Collections.FastestStack`1.Item(System.Int32)
+- markdown: The value
+- code: public T this[int i] { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - T
+- h2: Methods
+- api3: AsSpan()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_AsSpan
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L704
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.AsSpan
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.AsSpan
+- markdown: Converts the span
+- code: public Span<T> AsSpan()
+- h4: Returns
+- parameters:
+  - type:
+    - text: Span
+      url: https://learn.microsoft.com/dotnet/api/system.span-1
+    - <
+    - T
+    - '>'
+    description: A span of t
+- api3: CanPop()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_CanPop
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L710
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.CanPop
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.CanPop
+- markdown: Cans the pop
+- code: public bool CanPop()
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: Clear()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Clear
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L143
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Clear
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.Clear
+- markdown: Clears this instance
+- code: public void Clear()
+- api3: Contains(T)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Contains__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L160
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Contains(`0)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.Contains(`0)
+- markdown: Containses the item
+- code: public bool Contains(T item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: CopyTo(T[], int)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_CopyTo__0___System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L170
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.CopyTo(`0[],System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.CopyTo(`0[],System.Int32)
+- markdown: Copies the to using the specified array
+- code: public void CopyTo(T[] array, int arrayIndex)
+- h4: Parameters
+- parameters:
+  - name: array
+    type:
+    - T
+    - '['
+    - ']'
+    description: The array
+  - name: arrayIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The array index
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: ArgumentOutOfRange_NeedNonNegNum
+  - type:
+    - text: ArgumentException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentexception
+    description: Argument_InvalidOffLen
+- api3: Create(int)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Create_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L698
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Create(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.Create(System.Int32)
+- markdown: Creates the i
+- code: public static FastestStack<T> Create(int i)
+- h4: Parameters
+- parameters:
+  - name: i
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The
+- h4: Returns
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - T
+    - '>'
+    description: A fast stack of t
+- api3: Dispose()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Dispose
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L686
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Dispose
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.Dispose
+- markdown: Disposes this instance
+- code: public void Dispose()
+- api3: EnsureCapacity(int)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_EnsureCapacity_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L458
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.EnsureCapacity(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.EnsureCapacity(System.Int32)
+- markdown: >-
+    Ensures that the capacity of this Stack is at least the specified <code class="paramref">capacity</code>.
+
+    If the current capacity of the Stack is less than specified <code class="paramref">capacity</code>,
+
+    the capacity is increased by continuously twice current capacity until it is at least the specified
+
+    <code class="paramref">capacity</code>.
+- code: public int EnsureCapacity(int capacity)
+- h4: Parameters
+- parameters:
+  - name: capacity
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The minimum capacity to ensure.
+- h4: Returns
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The new capacity of this stack.
+- api3: GetEnumerator()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L248
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.GetEnumerator
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.GetEnumerator
+- markdown: Gets the enumerator
+- code: public FastestStack<T>.Enumerator GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: FastestStack
+      url: Alis.Core.Ecs.Collections.FastestStack-1.html
+    - <
+    - T
+    - '>'
+    - .
+    - text: Enumerator
+      url: Alis.Core.Ecs.Collections.FastestStack-1.Enumerator.html
+    description: The enumerator
+- api3: Grow(int)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Grow_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L477
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Grow(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.Grow(System.Int32)
+- markdown: Grows the capacity
+- code: private void Grow(int capacity)
+- h4: Parameters
+- parameters:
+  - name: capacity
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The capacity
+- api3: Peek()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Peek
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L306
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Peek
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.Peek
+- markdown: Peeks this instance
+- code: public T Peek()
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The
+- api3: Pop()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Pop
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L345
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Pop
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.Pop
+- markdown: Pops this instance
+- code: public T Pop()
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    description: The item
+- api3: Push(T)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Push__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L401
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Push(`0)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.Push(`0)
+- markdown: Pushes the item
+- code: public void Push(T item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item
+- api3: PushWithResize(T)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_PushWithResize__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L423
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.PushWithResize(`0)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.PushWithResize(`0)
+- markdown: Pushes the with resize using the specified item
+- code: private void PushWithResize(T item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item
+- api3: Remove(T)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_Remove__0_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L436
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.Remove(`0)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.Remove(`0)
+- markdown: Removes the item
+- code: public void Remove(T item)
+- h4: Parameters
+- parameters:
+  - name: item
+    type:
+    - T
+    description: The item
+- api3: IEnumerable<T>.GetEnumerator()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_System_Collections_Generic_IEnumerable_T__GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L255
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+- markdown: Gets the enumerator
+- code: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+    - <
+    - T
+    - '>'
+    description: An enumerator of t
+- api3: ICollection.CopyTo(Array, int)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_System_Collections_ICollection_CopyTo_System_Array_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L205
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+- markdown: Copies the to using the specified array
+- code: void ICollection.CopyTo(Array array, int arrayIndex)
+- h4: Parameters
+- parameters:
+  - name: array
+    type:
+    - text: Array
+      url: https://learn.microsoft.com/dotnet/api/system.array
+    description: The array
+  - name: arrayIndex
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The array index
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentexception
+    description: Arg_NonZeroLowerBound
+  - type:
+    - text: ArgumentException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentexception
+    description: Arg_RankMultiDimNotSupported
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: ArgumentOutOfRange_NeedNonNegNum
+  - type:
+    - text: ArgumentException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentexception
+    description: Argument_InvalidOffLen
+  - type:
+    - text: ArgumentException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentexception
+    description: Invalid array type
+- api3: IEnumerable.GetEnumerator()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_System_Collections_IEnumerable_GetEnumerator
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L261
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.System#Collections#IEnumerable#GetEnumerator
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.System#Collections#IEnumerable#GetEnumerator
+- markdown: Gets the enumerator
+- code: IEnumerator IEnumerable.GetEnumerator()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IEnumerator
+      url: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+    description: The enumerator
+- api3: ThrowForEmptyStack()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_ThrowForEmptyStack
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L525
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.ThrowForEmptyStack
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.ThrowForEmptyStack
+- markdown: Throws the for empty stack
+- code: private void ThrowForEmptyStack()
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: InvalidOperationException
+      url: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+    description: InvalidOperation_EmptyStack
+- api3: ToArray()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_ToArray
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L503
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.ToArray
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.ToArray
+- markdown: Returns the array
+- code: public T[] ToArray()
+- h4: Returns
+- parameters:
+  - type:
+    - T
+    - '['
+    - ']'
+    description: The obj array
+- api3: TrimExcess()
+  id: Alis_Core_Ecs_Collections_FastestStack_1_TrimExcess
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L266
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.TrimExcess
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.TrimExcess
+- markdown: Trims the excess
+- code: public void TrimExcess()
+- api3: TrimExcess(int)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_TrimExcess_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L280
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.TrimExcess(System.Int32)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.TrimExcess(System.Int32)
+- markdown: Sets the capacity of a <xref href="Alis.Core.Ecs.Collections.FastestStack%601" data-throw-if-not-resolved="false"></xref> object to a specified number of entries.
+- code: public void TrimExcess(int capacity)
+- h4: Parameters
+- parameters:
+  - name: capacity
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    description: The new capacity.
+- h4: Exceptions
+- parameters:
+  - type:
+    - text: ArgumentOutOfRangeException
+      url: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+    description: Passed capacity is lower than 0 or entries count.
+- api3: TryPeek(out T)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_TryPeek__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L324
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.TryPeek(`0@)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.TryPeek(`0@)
+- markdown: Tries the peek using the specified result
+- code: public bool TryPeek(out T result)
+- h4: Parameters
+- parameters:
+  - name: result
+    type:
+    - T
+    description: The result
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- api3: TryPop(out T)
+  id: Alis_Core_Ecs_Collections_FastestStack_1_TryPop__0__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Collections/FastestStack.cs#L374
+  metadata:
+    uid: Alis.Core.Ecs.Collections.FastestStack`1.TryPop(`0@)
+    commentId: M:Alis.Core.Ecs.Collections.FastestStack`1.TryPop(`0@)
+- markdown: Tries the pop using the specified result
+- code: public bool TryPop(out T result)
+- h4: Parameters
+- parameters:
+  - name: result
+    type:
+    - T
+    description: The result
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: The bool
+- h2: See Also
+- list:
+  - - text: ICollection
+      url: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  - - text: IReadOnlyCollection
+      url: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+    - <
+    - T
+    - '>'
+languageId: csharp
+metadata:
+  description: The fastest stack class

@@ -1,0 +1,37 @@
+### YamlMime:ApiPage
+title: Interface IHasContext<T>
+body:
+- api1: Interface IHasContext<T>
+  id: Alis_Core_Aspect_Fluent_Words_IHasContext_1
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Words/IHasContext.cs#L35
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Words.IHasContext`1
+    commentId: T:Alis.Core.Aspect.Fluent.Words.IHasContext`1
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Fluent.Words
+      url: Alis.Core.Aspect.Fluent.Words.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The has context interface
+- code: public interface IHasContext<T>
+- h4: Type Parameters
+- parameters:
+  - name: T
+- h2: Properties
+- api3: Context
+  id: Alis_Core_Aspect_Fluent_Words_IHasContext_1_Context
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Fluent/src/Words/IHasContext.cs#L40
+  metadata:
+    uid: Alis.Core.Aspect.Fluent.Words.IHasContext`1.Context
+    commentId: P:Alis.Core.Aspect.Fluent.Words.IHasContext`1.Context
+- markdown: Gets the value of the context
+- code: T Context { get; set; }
+- h4: Property Value
+- parameters:
+  - type:
+    - T
+languageId: csharp
+metadata:
+  description: The has context interface

@@ -1,0 +1,584 @@
+### YamlMime:ApiPage
+title: Class SettingEnv
+body:
+- api1: Class SettingEnv
+  id: Alis_Core_Physic_SettingEnv
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L38
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv
+    commentId: T:Alis.Core.Physic.SettingEnv
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Physic
+      url: Alis.Core.Physic.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The settings class
+- code: public static class SettingEnv
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: SettingEnv
+    url: Alis.Core.Physic.SettingEnv.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: AabbExtension
+  id: Alis_Core_Physic_SettingEnv_AabbExtension
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L77
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.AabbExtension
+    commentId: F:Alis.Core.Physic.SettingEnv.AabbExtension
+- markdown: >-
+    This is used to fatten AABBs in the dynamic tree. This allows proxies
+
+    to move by a small amount without triggering a tree adjustment.
+
+    This is in meters.
+- code: public const float AabbExtension = 0.1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: AabbMultiplier
+  id: Alis_Core_Physic_SettingEnv_AabbMultiplier
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L84
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.AabbMultiplier
+    commentId: F:Alis.Core.Physic.SettingEnv.AabbMultiplier
+- markdown: >-
+    This is used to fatten AABBs in the dynamic tree. This is used to predict
+
+    the future position based on the current displacement.
+
+    This is a dimensionless multiplier.
+- code: public const float AabbMultiplier = 2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: AllowSleep
+  id: Alis_Core_Physic_SettingEnv_AllowSleep
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L226
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.AllowSleep
+    commentId: F:Alis.Core.Physic.SettingEnv.AllowSleep
+- markdown: Enable/Disable sleeping
+- code: public static readonly bool AllowSleep
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: AngularSleepTolerance
+  id: Alis_Core_Physic_SettingEnv_AngularSleepTolerance
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L151
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.AngularSleepTolerance
+    commentId: F:Alis.Core.Physic.SettingEnv.AngularSleepTolerance
+- markdown: A body cannot sleep if its angular velocity is above this tolerance.
+- code: public const float AngularSleepTolerance = 0.03490659
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: AngularSlop
+  id: Alis_Core_Physic_SettingEnv_AngularSlop
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L96
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.AngularSlop
+    commentId: F:Alis.Core.Physic.SettingEnv.AngularSlop
+- markdown: >-
+    A small angle used as a collision and constraint tolerance. Usually it is
+
+    chosen to be numerically significant, but visually insignificant.
+- code: public const float AngularSlop = 0.03490659
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: AutoClearForces
+  id: Alis_Core_Physic_SettingEnv_AutoClearForces
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L188
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.AutoClearForces
+    commentId: F:Alis.Core.Physic.SettingEnv.AutoClearForces
+- markdown: >-
+    By default, forces are cleared automatically after each call to Step.
+
+    The default behavior is modified with this setting.
+
+    The purpose of this setting is to support sub-stepping. Sub-stepping is often used to maintain
+
+    a fixed sized time step under a variable frame-rate.
+
+    When you perform sub-stepping you should disable auto clearing of forces and instead call
+
+    ClearForces after all sub-steps are complete in one pass of your game loop.
+- code: public const bool AutoClearForces = true
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Baumgarte
+  id: Alis_Core_Physic_SettingEnv_Baumgarte
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L135
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.Baumgarte
+    commentId: F:Alis.Core.Physic.SettingEnv.Baumgarte
+- markdown: >-
+    This scale factor controls how fast overlap is resolved. Ideally this would be 1 so
+
+    that overlap is removed in one time step. However using values close to 1 often lead
+
+    to overshoot.
+- code: public const float Baumgarte = 0.2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: ContinuousPhysics
+  id: Alis_Core_Physic_SettingEnv_ContinuousPhysics
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L203
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.ContinuousPhysics
+    commentId: F:Alis.Core.Physic.SettingEnv.ContinuousPhysics
+- markdown: Enable/Disable Continuous Collision Detection (CCD)
+- code: public static readonly bool ContinuousPhysics
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: EnableDiagnostics
+  id: Alis_Core_Physic_SettingEnv_EnableDiagnostics
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L59
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.EnableDiagnostics
+    commentId: F:Alis.Core.Physic.SettingEnv.EnableDiagnostics
+- markdown: >-
+    Enabling diagnistics causes the engine to gather timing information.
+
+    You can see how much time it took to solve the contacts, solve CCD
+
+    and update the controllers.
+
+    NOTE: If you are using a debug view that shows performance counters,
+
+    you might want to enable this.
+- code: public const bool EnableDiagnostics = true
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: Epsilon
+  id: Alis_Core_Physic_SettingEnv_Epsilon
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L48
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.Epsilon
+    commentId: F:Alis.Core.Physic.SettingEnv.Epsilon
+- markdown: The epsilon
+- code: public const float Epsilon = 1.1920929E-07
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: LinearSleepTolerance
+  id: Alis_Core_Physic_SettingEnv_LinearSleepTolerance
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L146
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.LinearSleepTolerance
+    commentId: F:Alis.Core.Physic.SettingEnv.LinearSleepTolerance
+- markdown: A body cannot sleep if its linear velocity is above this tolerance.
+- code: public const float LinearSleepTolerance = 0.01
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: LinearSlop
+  id: Alis_Core_Physic_SettingEnv_LinearSlop
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L90
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.LinearSlop
+    commentId: F:Alis.Core.Physic.SettingEnv.LinearSlop
+- markdown: >-
+    A small length used as a collision and constraint tolerance. Usually it is
+
+    chosen to be numerically significant, but visually insignificant.
+- code: public const float LinearSlop = 0.005
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxAngularCorrection
+  id: Alis_Core_Physic_SettingEnv_MaxAngularCorrection
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L128
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxAngularCorrection
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxAngularCorrection
+- markdown: >-
+    The maximum angular position correction used when solving constraints. This helps to
+
+    prevent overshoot.
+- code: public const float MaxAngularCorrection = 0.13962635
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxFloat
+  id: Alis_Core_Physic_SettingEnv_MaxFloat
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L43
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxFloat
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxFloat
+- markdown: The max float
+- code: public const float MaxFloat = 3.4028235E+38
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxGjkIterations
+  id: Alis_Core_Physic_SettingEnv_MaxGjkIterations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L178
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxGjkIterations
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxGjkIterations
+- markdown: Defines the maximum number of iterations made by the GJK algorithm.
+- code: public const int MaxGjkIterations = 20
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxLinearCorrection
+  id: Alis_Core_Physic_SettingEnv_MaxLinearCorrection
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L122
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxLinearCorrection
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxLinearCorrection
+- markdown: >-
+    The maximum linear position correction used when solving constraints. This helps to
+
+    prevent overshoot.
+- code: public const float MaxLinearCorrection = 0.2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxManifoldPoints
+  id: Alis_Core_Physic_SettingEnv_MaxManifoldPoints
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L70
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxManifoldPoints
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxManifoldPoints
+- markdown: >-
+    The maximum number of contact points between two convex shapes.
+
+    DO NOT CHANGE THIS VALUE!
+- code: public const int MaxManifoldPoints = 2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxPolygonVertices
+  id: Alis_Core_Physic_SettingEnv_MaxPolygonVertices
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L231
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxPolygonVertices
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxPolygonVertices
+- markdown: The maximum number of vertices on a convex polygon.
+- code: public static readonly int MaxPolygonVertices
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxRotation
+  id: Alis_Core_Physic_SettingEnv_MaxRotation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L168
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxRotation
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxRotation
+- markdown: >-
+    The maximum angular velocity of a body. This limit is very large and is used
+
+    to prevent numerical problems. You shouldn't need to adjust this.
+- code: public const float MaxRotation = 1.5707964
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxRotationSquared
+  id: Alis_Core_Physic_SettingEnv_MaxRotationSquared
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L173
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxRotationSquared
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxRotationSquared
+- markdown: The max rotation
+- code: public const float MaxRotationSquared = 2.4674013
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxSubSteps
+  id: Alis_Core_Physic_SettingEnv_MaxSubSteps
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L64
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxSubSteps
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxSubSteps
+- markdown: Maximum number of sub-steps per contact in continuous physics simulation.
+- code: public const int MaxSubSteps = 8
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxToiContacts
+  id: Alis_Core_Physic_SettingEnv_MaxToiContacts
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L110
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxToiContacts
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxToiContacts
+- markdown: Maximum number of contacts to be handled to solve a TOI impact.
+- code: public const int MaxToiContacts = 32
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: MaxTranslation
+  id: Alis_Core_Physic_SettingEnv_MaxTranslation
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L157
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxTranslation
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxTranslation
+- markdown: >-
+    The maximum linear velocity of a body. This limit is very large and is used
+
+    to prevent numerical problems. You shouldn't need to adjust this.
+- code: public const float MaxTranslation = 2
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: MaxTranslationSquared
+  id: Alis_Core_Physic_SettingEnv_MaxTranslationSquared
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L162
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MaxTranslationSquared
+    commentId: F:Alis.Core.Physic.SettingEnv.MaxTranslationSquared
+- markdown: The max translation
+- code: public const float MaxTranslationSquared = 4
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: PolygonRadius
+  id: Alis_Core_Physic_SettingEnv_PolygonRadius
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L103
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.PolygonRadius
+    commentId: F:Alis.Core.Physic.SettingEnv.PolygonRadius
+- markdown: >-
+    The radius of the polygon/edge shape skin. This should not be modified. Making
+
+    this smaller means polygons will have an insufficient buffer for continuous collision.
+
+    Making it larger may create artifacts for vertex collision.
+- code: public const float PolygonRadius = 0.01
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: PositionIterations
+  id: Alis_Core_Physic_SettingEnv_PositionIterations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L198
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.PositionIterations
+    commentId: F:Alis.Core.Physic.SettingEnv.PositionIterations
+- markdown: The number of position iterations used in the solver.
+- code: public static readonly int PositionIterations
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: TimeToSleep
+  id: Alis_Core_Physic_SettingEnv_TimeToSleep
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L141
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.TimeToSleep
+    commentId: F:Alis.Core.Physic.SettingEnv.TimeToSleep
+- markdown: The time that a body must be still before it will go to sleep.
+- code: public const float TimeToSleep = 0.5
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- api3: ToiPositionIterations
+  id: Alis_Core_Physic_SettingEnv_ToiPositionIterations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L221
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.ToiPositionIterations
+    commentId: F:Alis.Core.Physic.SettingEnv.ToiPositionIterations
+- markdown: The number of position iterations in the TOI solver
+- code: public static readonly int ToiPositionIterations
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: ToiVelocityIterations
+  id: Alis_Core_Physic_SettingEnv_ToiVelocityIterations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L216
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.ToiVelocityIterations
+    commentId: F:Alis.Core.Physic.SettingEnv.ToiVelocityIterations
+- markdown: The number of velocity iterations in the TOI solver
+- code: public static readonly int ToiVelocityIterations
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: UseConvexHullPolygons
+  id: Alis_Core_Physic_SettingEnv_UseConvexHullPolygons
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L211
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.UseConvexHullPolygons
+    commentId: F:Alis.Core.Physic.SettingEnv.UseConvexHullPolygons
+- markdown: >-
+    If true, it will run a GiftWrap convex hull on all polygon inputs.
+
+    This makes for a more stable engine when given random input,
+
+    but if speed of the creation of polygons are more important,
+
+    you might want to set this to false.
+- code: public static readonly bool UseConvexHullPolygons
+- h4: Field Value
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+- api3: VelocityIterations
+  id: Alis_Core_Physic_SettingEnv_VelocityIterations
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L193
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.VelocityIterations
+    commentId: F:Alis.Core.Physic.SettingEnv.VelocityIterations
+- markdown: The number of velocity iterations used in the solver.
+- code: public static readonly int VelocityIterations
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: VelocityThreshold
+  id: Alis_Core_Physic_SettingEnv_VelocityThreshold
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L116
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.VelocityThreshold
+    commentId: F:Alis.Core.Physic.SettingEnv.VelocityThreshold
+- markdown: >-
+    A velocity threshold for elastic collisions. Any collision with a relative linear
+
+    velocity below this threshold will be treated as inelastic.
+- code: public const float VelocityThreshold = 1
+- h4: Field Value
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+- h2: Methods
+- api3: MixFriction(float, float)
+  id: Alis_Core_Physic_SettingEnv_MixFriction_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L239
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MixFriction(System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.SettingEnv.MixFriction(System.Single,System.Single)
+- markdown: Friction mixing law. Feel free to customize this.
+- code: public static float MixFriction(float friction1, float friction2)
+- h4: Parameters
+- parameters:
+  - name: friction1
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The friction1.
+  - name: friction2
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The friction2.
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: ''
+- api3: MixRestitution(float, float)
+  id: Alis_Core_Physic_SettingEnv_MixRestitution_System_Single_System_Single_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/SettingEnv.cs#L247
+  metadata:
+    uid: Alis.Core.Physic.SettingEnv.MixRestitution(System.Single,System.Single)
+    commentId: M:Alis.Core.Physic.SettingEnv.MixRestitution(System.Single,System.Single)
+- markdown: Restitution mixing law. Feel free to customize this.
+- code: public static float MixRestitution(float restitution1, float restitution2)
+- h4: Parameters
+- parameters:
+  - name: restitution1
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The restitution1.
+  - name: restitution2
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: The restitution2.
+- h4: Returns
+- parameters:
+  - type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    description: ''
+languageId: csharp
+metadata:
+  description: The settings class

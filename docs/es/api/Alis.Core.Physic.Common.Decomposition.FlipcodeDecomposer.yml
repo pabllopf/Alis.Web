@@ -3,7 +3,7 @@ title: Class FlipcodeDecomposer
 body:
 - api1: Class FlipcodeDecomposer
   id: Alis_Core_Physic_Common_Decomposition_FlipcodeDecomposer
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L46
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L45
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer
     commentId: T:Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer
@@ -54,47 +54,47 @@ body:
 - h2: Fields
 - api3: _tmpA
   id: Alis_Core_Physic_Common_Decomposition_FlipcodeDecomposer__tmpA
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L51
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L50
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer._tmpA
     commentId: F:Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer._tmpA
 - markdown: The tmp
-- code: private static Vector2 _tmpA
+- code: private static Vector2F _tmpA
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: _tmpB
   id: Alis_Core_Physic_Common_Decomposition_FlipcodeDecomposer__tmpB
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L56
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L55
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer._tmpB
     commentId: F:Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer._tmpB
 - markdown: The tmp
-- code: private static Vector2 _tmpB
+- code: private static Vector2F _tmpB
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: _tmpC
   id: Alis_Core_Physic_Common_Decomposition_FlipcodeDecomposer__tmpC
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L61
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L60
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer._tmpC
     commentId: F:Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer._tmpC
 - markdown: The tmp
-- code: private static Vector2 _tmpC
+- code: private static Vector2F _tmpC
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - h2: Methods
 - api3: ConvexPartition(Vertices)
   id: Alis_Core_Physic_Common_Decomposition_FlipcodeDecomposer_ConvexPartition_Alis_Core_Physic_Common_Vertices_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L69
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L68
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices)
     commentId: M:Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer.ConvexPartition(Alis.Core.Physic.Common.Vertices)
@@ -121,38 +121,38 @@ body:
     - text: Vertices
       url: Alis.Core.Physic.Common.Vertices.html
     - '>'
-- api3: InsideTriangle(ref Vector2, ref Vector2, ref Vector2, ref Vector2)
-  id: Alis_Core_Physic_Common_Decomposition_FlipcodeDecomposer_InsideTriangle_Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__Alis_Core_Aspect_Math_Vector_Vector2__
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L146
+- api3: InsideTriangle(ref Vector2F, ref Vector2F, ref Vector2F, ref Vector2F)
+  id: Alis_Core_Physic_Common_Decomposition_FlipcodeDecomposer_InsideTriangle_Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__Alis_Core_Aspect_Math_Vector_Vector2F__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L152
   metadata:
-    uid: Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer.InsideTriangle(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
-    commentId: M:Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer.InsideTriangle(Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@,Alis.Core.Aspect.Math.Vector.Vector2@)
+    uid: Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer.InsideTriangle(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
+    commentId: M:Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer.InsideTriangle(Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@,Alis.Core.Aspect.Math.Vector.Vector2F@)
 - markdown: >-
     Check if the point P is inside the triangle defined by
 
     the points A, B, C
-- code: private static bool InsideTriangle(ref Vector2 a, ref Vector2 b, ref Vector2 c, ref Vector2 p)
+- code: private static bool InsideTriangle(ref Vector2F a, ref Vector2F b, ref Vector2F c, ref Vector2F p)
 - h4: Parameters
 - parameters:
   - name: a
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The A point.
   - name: b
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The B point.
   - name: c
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The C point.
   - name: p
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The point to be tested.
 - h4: Returns
 - parameters:
@@ -162,7 +162,7 @@ body:
     description: True if the point is inside the triangle
 - api3: Snip(Vertices, int, int, int, int, int[])
   id: Alis_Core_Physic_Common_Decomposition_FlipcodeDecomposer_Snip_Alis_Core_Physic_Common_Vertices_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L171
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/Decomposition/FlipcodeDecomposer.cs#L177
   metadata:
     uid: Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer.Snip(Alis.Core.Physic.Common.Vertices,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[])
     commentId: M:Alis.Core.Physic.Common.Decomposition.FlipcodeDecomposer.Snip(Alis.Core.Physic.Common.Vertices,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[])
@@ -170,7 +170,7 @@ body:
     Cut a the contour and add a triangle into V to describe the
 
     location of the cut
-- code: private static bool Snip(Vertices contour, int u, int v, int w, int n, int[] V)
+- code: private static bool Snip(Vertices contour, int u, int v, int w, int n, int[] vertices)
 - h4: Parameters
 - parameters:
   - name: contour
@@ -198,13 +198,13 @@ body:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
     description: The number of elements in the array.
-  - name: V
+  - name: vertices
     type:
     - text: int
       url: https://learn.microsoft.com/dotnet/api/system.int32
     - '['
     - ']'
-    description: The array to populate with indicies of triangles.
+    description: ''
 - h4: Returns
 - parameters:
   - type:

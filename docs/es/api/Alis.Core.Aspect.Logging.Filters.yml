@@ -1,0 +1,56 @@
+### YamlMime:ApiPage
+title: Namespace Alis.Core.Aspect.Logging.Filters
+body:
+- api1: Namespace Alis.Core.Aspect.Logging.Filters
+  id: Alis_Core_Aspect_Logging_Filters
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Filters
+    commentId: N:Alis.Core.Aspect.Logging.Filters
+- h3: Classes
+- parameters:
+  - type:
+      text: CompositeLogFilter
+      url: Alis.Core.Aspect.Logging.Filters.CompositeLogFilter.html
+    description: >-
+      Combines multiple filters with AND/OR logic.
+
+      Useful for complex filtering scenarios.
+
+      AOT-compatible: Uses interface composition.
+  - type:
+      text: ConditionalLogFilter
+      url: Alis.Core.Aspect.Logging.Filters.ConditionalLogFilter.html
+    description: >-
+      Filters log entries based on a custom predicate function.
+
+      Allows flexible, application-specific filtering logic.
+
+      AOT-compatible: Uses delegate-based logic.
+  - type:
+      text: LogLevelFilter
+      url: Alis.Core.Aspect.Logging.Filters.LogLevelFilter.html
+    description: >-
+      Filters log entries based on their severity level.
+
+      Only entries with level &gt;= minimum level pass through.
+
+      AOT-compatible: Simple value comparison.
+  - type:
+      text: LoggerNameFilter
+      url: Alis.Core.Aspect.Logging.Filters.LoggerNameFilter.html
+    description: >-
+      Filters log entries based on logger name (category).
+
+      Supports filtering by exact match or prefix.
+
+      AOT-compatible: String comparison only.
+  - type:
+      text: SamplingLogFilter
+      url: Alis.Core.Aspect.Logging.Filters.SamplingLogFilter.html
+    description: >-
+      Samples log entries to reduce volume while maintaining representative coverage.
+
+      Useful for high-frequency logging scenarios like render loops.
+
+      AOT-compatible: Uses atomic counters for sampling.
+languageId: csharp

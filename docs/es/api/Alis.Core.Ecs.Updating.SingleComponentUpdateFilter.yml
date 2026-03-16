@@ -1,0 +1,182 @@
+### YamlMime:ApiPage
+title: Class SingleComponentUpdateFilter
+body:
+- api1: Class SingleComponentUpdateFilter
+  id: Alis_Core_Ecs_Updating_SingleComponentUpdateFilter
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/SingleComponentUpdateFilter.cs#L41
+  metadata:
+    uid: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter
+    commentId: T:Alis.Core.Ecs.Updating.SingleComponentUpdateFilter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Updating
+      url: Alis.Core.Ecs.Updating.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The single component update filter class
+- code: 'public class SingleComponentUpdateFilter : IComponentUpdateFilter'
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: SingleComponentUpdateFilter
+    url: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.html
+- h4: Implements
+- list:
+  - text: IComponentUpdateFilter
+    url: Alis.Core.Ecs.Updating.IComponentUpdateFilter.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Constructors
+- api3: SingleComponentUpdateFilter(Scene, ComponentId)
+  id: Alis_Core_Ecs_Updating_SingleComponentUpdateFilter__ctor_Alis_Core_Ecs_Scene_Alis_Core_Ecs_Kernel_ComponentId_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/SingleComponentUpdateFilter.cs#L68
+  metadata:
+    uid: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.#ctor(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.ComponentId)
+    commentId: M:Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.#ctor(Alis.Core.Ecs.Scene,Alis.Core.Ecs.Kernel.ComponentId)
+- markdown: Initializes a new instance of the <xref href="Alis.Core.Ecs.Updating.SingleComponentUpdateFilter" data-throw-if-not-resolved="false"></xref> class
+- code: public SingleComponentUpdateFilter(Scene scene, ComponentId component)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+  - name: component
+    type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    description: The component
+- h2: Fields
+- api3: _archetypes
+  id: Alis_Core_Ecs_Updating_SingleComponentUpdateFilter__archetypes
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/SingleComponentUpdateFilter.cs#L56
+  metadata:
+    uid: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter._archetypes
+    commentId: F:Alis.Core.Ecs.Updating.SingleComponentUpdateFilter._archetypes
+- markdown: The archetypes
+- code: private (Archetype Archetype, ComponentStorageBase Storage)[] _archetypes
+- h4: Field Value
+- parameters:
+  - type:
+    - (
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    - " "
+    - text: Archetype
+      url: https://learn.microsoft.com/dotnet/api/system.valuetuple-alis.core.ecs.kernel.archetypes.archetype,alis.core.ecs.updating.componentstoragebase-.archetype
+    - ','
+    - " "
+    - text: ComponentStorageBase
+      url: Alis.Core.Ecs.Updating.ComponentStorageBase.html
+    - " "
+    - text: Storage
+      url: https://learn.microsoft.com/dotnet/api/system.valuetuple-alis.core.ecs.kernel.archetypes.archetype,alis.core.ecs.updating.componentstoragebase-.storage
+    - )
+    - '['
+    - ']'
+- api3: _componentId
+  id: Alis_Core_Ecs_Updating_SingleComponentUpdateFilter__componentId
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/SingleComponentUpdateFilter.cs#L46
+  metadata:
+    uid: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter._componentId
+    commentId: F:Alis.Core.Ecs.Updating.SingleComponentUpdateFilter._componentId
+- markdown: The component id
+- code: private readonly ComponentId _componentId
+- h4: Field Value
+- parameters:
+  - type:
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+- api3: _count
+  id: Alis_Core_Ecs_Updating_SingleComponentUpdateFilter__count
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/SingleComponentUpdateFilter.cs#L61
+  metadata:
+    uid: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter._count
+    commentId: F:Alis.Core.Ecs.Updating.SingleComponentUpdateFilter._count
+- markdown: The count
+- code: private int _count
+- h4: Field Value
+- parameters:
+  - type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- api3: _scene
+  id: Alis_Core_Ecs_Updating_SingleComponentUpdateFilter__scene
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/SingleComponentUpdateFilter.cs#L51
+  metadata:
+    uid: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter._scene
+    commentId: F:Alis.Core.Ecs.Updating.SingleComponentUpdateFilter._scene
+- markdown: The scene
+- code: private readonly Scene _scene
+- h4: Field Value
+- parameters:
+  - type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+- h2: Methods
+- api3: ArchetypeAdded(Archetype)
+  id: Alis_Core_Ecs_Updating_SingleComponentUpdateFilter_ArchetypeAdded_Alis_Core_Ecs_Kernel_Archetypes_Archetype_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/SingleComponentUpdateFilter.cs#L115
+  metadata:
+    uid: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.ArchetypeAdded(Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+    commentId: M:Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.ArchetypeAdded(Alis.Core.Ecs.Kernel.Archetypes.Archetype)
+- markdown: Archetypes the added using the specified archetype
+- code: public void ArchetypeAdded(Archetype archetype)
+- h4: Parameters
+- parameters:
+  - name: archetype
+    type:
+    - text: Archetype
+      url: Alis.Core.Ecs.Kernel.Archetypes.Archetype.html
+    description: The archetype
+- api3: Update()
+  id: Alis_Core_Ecs_Updating_SingleComponentUpdateFilter_Update
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/SingleComponentUpdateFilter.cs#L102
+  metadata:
+    uid: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.Update
+    commentId: M:Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.Update
+- markdown: Updates this instance
+- code: public void Update()
+- api3: UpdateSubset(ReadOnlySpan<ArchetypeDeferredUpdateRecord>)
+  id: Alis_Core_Ecs_Updating_SingleComponentUpdateFilter_UpdateSubset_System_ReadOnlySpan_Alis_Core_Ecs_Updating_ArchetypeDeferredUpdateRecord__
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/SingleComponentUpdateFilter.cs#L83
+  metadata:
+    uid: Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.UpdateSubset(System.ReadOnlySpan{Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord})
+    commentId: M:Alis.Core.Ecs.Updating.SingleComponentUpdateFilter.UpdateSubset(System.ReadOnlySpan{Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord})
+- markdown: Updates the subset using the specified archetypes
+- code: public void UpdateSubset(ReadOnlySpan<ArchetypeDeferredUpdateRecord> archetypes)
+- h4: Parameters
+- parameters:
+  - name: archetypes
+    type:
+    - text: ReadOnlySpan
+      url: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+    - <
+    - text: ArchetypeDeferredUpdateRecord
+      url: Alis.Core.Ecs.Updating.ArchetypeDeferredUpdateRecord.html
+    - '>'
+    description: The archetypes
+- h2: See Also
+- list:
+  - - text: IComponentUpdateFilter
+      url: Alis.Core.Ecs.Updating.IComponentUpdateFilter.html
+languageId: csharp
+metadata:
+  description: The single component update filter class

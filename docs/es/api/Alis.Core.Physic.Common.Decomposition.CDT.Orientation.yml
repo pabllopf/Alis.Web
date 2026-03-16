@@ -18,12 +18,12 @@ body:
 - code: internal enum Orientation
 - h2: Fields
 - parameters:
-  - name: CW
+  - name: Cw
     default: "0"
     description: >+
       The cw orientation
 
-  - name: CCW
+  - name: Ccw
     default: "1"
     description: >+
       The ccw orientation

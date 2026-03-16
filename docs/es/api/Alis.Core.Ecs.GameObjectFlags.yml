@@ -1,0 +1,86 @@
+### YamlMime:ApiPage
+title: Enum GameObjectFlags
+body:
+- api1: Enum GameObjectFlags
+  id: Alis_Core_Ecs_GameObjectFlags
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/GameObjectFlags.cs#L37
+  metadata:
+    uid: Alis.Core.Ecs.GameObjectFlags
+    commentId: T:Alis.Core.Ecs.GameObjectFlags
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs
+      url: Alis.Core.Ecs.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The gameObject flags enum
+- code: >-
+    [Flags]
+
+    public enum GameObjectFlags
+- h2: Fields
+- parameters:
+  - name: None
+    default: "0"
+    description: >+
+      The none gameObject flags
+
+  - name: AddComp
+    default: "4"
+    description: >+
+      The add comp gameObject flags
+
+  - name: AddGenericComp
+    default: "8"
+    description: >+
+      The add generic comp gameObject flags
+
+  - name: RemoveComp
+    default: "16"
+    description: >+
+      The remove comp gameObject flags
+
+  - name: RemoveGenericComp
+    default: "32"
+    description: >+
+      The remove generic comp gameObject flags
+
+  - name: OnDelete
+    default: "64"
+    description: >+
+      The on delete gameObject flags
+
+  - name: Events
+    default: "212"
+    description: >+
+      The events gameObject flags
+
+  - name: WorldCreate
+    default: "128"
+    description: >+
+      The scene create gameObject flags
+
+  - name: HasWorldCommandBufferRemove
+    default: "256"
+    description: >+
+      The has scene command buffer remove gameObject flags
+
+  - name: HasWorldCommandBufferAdd
+    default: "512"
+    description: >+
+      The has scene command buffer add gameObject flags
+
+  - name: HasWorldCommandBufferDelete
+    default: "1024"
+    description: >+
+      The has scene command buffer delete gameObject flags
+
+  - name: IsUnmergedEntity
+    default: "2048"
+    description: >+
+      The is unmerged gameObject gameObject flags
+
+languageId: csharp
+metadata:
+  description: The gameObject flags enum

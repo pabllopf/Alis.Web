@@ -1,0 +1,43 @@
+### YamlMime:ApiPage
+title: Delegate ShaderSourceDel
+body:
+- api1: Delegate ShaderSourceDel
+  id: Alis_Core_Graphic_OpenGL_Delegates_ShaderSourceDel
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/ShaderSourceDel.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.ShaderSourceDel
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.ShaderSourceDel
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The shader source del
+- code: public delegate void ShaderSourceDel(uint shader, int count, string[] @string, int[] length)
+- h4: Parameters
+- parameters:
+  - name: shader
+    type:
+    - text: uint
+      url: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: string
+    type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+    - '['
+    - ']'
+  - name: length
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+    - '['
+    - ']'
+languageId: csharp
+metadata:
+  description: The shader source del

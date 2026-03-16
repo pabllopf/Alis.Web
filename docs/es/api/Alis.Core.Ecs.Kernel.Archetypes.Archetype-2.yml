@@ -1,0 +1,100 @@
+### YamlMime:ApiPage
+title: Class Archetype<T1, T2>
+body:
+- api1: Class Archetype<T1, T2>
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_2
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L1037
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`2
+    commentId: T:Alis.Core.Ecs.Kernel.Archetypes.Archetype`2
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Kernel.Archetypes
+      url: Alis.Core.Ecs.Kernel.Archetypes.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The archetype class
+- code: public static class Archetype<T1, T2>
+- h4: Type Parameters
+- parameters:
+  - name: T1
+  - name: T2
+- h4: Inheritance
+- inheritance:
+  - text: object
+    url: https://learn.microsoft.com/dotnet/api/system.object
+  - text: Archetype<T1, T2>
+    url: Alis.Core.Ecs.Kernel.Archetypes.Archetype-2.html
+- h4: Inherited Members
+- list:
+  - text: object.Equals(object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - text: object.Equals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - text: object.GetHashCode()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - text: object.GetType()
+    url: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - text: object.MemberwiseClone()
+    url: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - text: object.ReferenceEquals(object?, object?)
+    url: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - text: object.ToString()
+    url: https://learn.microsoft.com/dotnet/api/system.object.tostring
+- h2: Fields
+- api3: ArchetypeComponentIDs
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_2_ArchetypeComponentIDs
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L1042
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`2.ArchetypeComponentIDs
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.Archetype`2.ArchetypeComponentIDs
+- markdown: The to immutable array
+- code: public static readonly FastImmutableArray<ComponentId> ArchetypeComponentIDs
+- h4: Field Value
+- parameters:
+  - type:
+    - text: FastImmutableArray
+      url: Alis.Core.Aspect.Math.Collections.FastImmutableArray-1.html
+    - <
+    - text: ComponentId
+      url: Alis.Core.Ecs.Kernel.ComponentId.html
+    - '>'
+- api3: Id
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_2_Id
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L1049
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`2.Id
+    commentId: F:Alis.Core.Ecs.Kernel.Archetypes.Archetype`2.Id
+- markdown: The empty
+- code: public static readonly GameObjectType Id
+- h4: Field Value
+- parameters:
+  - type:
+    - text: GameObjectType
+      url: Alis.Core.Ecs.Kernel.GameObjectType.html
+- h2: Methods
+- api3: CreateNewOrGetExistingArchetypes(Scene)
+  id: Alis_Core_Ecs_Kernel_Archetypes_Archetype_2_CreateNewOrGetExistingArchetypes_Alis_Core_Ecs_Scene_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Kernel/Archetypes/Archetype.cs#L1056
+  metadata:
+    uid: Alis.Core.Ecs.Kernel.Archetypes.Archetype`2.CreateNewOrGetExistingArchetypes(Alis.Core.Ecs.Scene)
+    commentId: M:Alis.Core.Ecs.Kernel.Archetypes.Archetype`2.CreateNewOrGetExistingArchetypes(Alis.Core.Ecs.Scene)
+- markdown: Creates the new or get existing archetypes using the specified scene
+- code: internal static WorldArchetypeTableItem CreateNewOrGetExistingArchetypes(Scene scene)
+- h4: Parameters
+- parameters:
+  - name: scene
+    type:
+    - text: Scene
+      url: Alis.Core.Ecs.Scene.html
+    description: The scene
+- h4: Returns
+- parameters:
+  - type:
+    - text: WorldArchetypeTableItem
+      url: Alis.Core.Ecs.WorldArchetypeTableItem.html
+    description: The archetypes
+languageId: csharp
+metadata:
+  description: The archetype class

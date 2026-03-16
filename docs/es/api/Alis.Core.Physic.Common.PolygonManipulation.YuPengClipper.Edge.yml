@@ -3,7 +3,7 @@ title: Class YuPengClipper.Edge
 body:
 - api1: Class YuPengClipper.Edge
   id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L508
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L505
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge
     commentId: T:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge
@@ -37,57 +37,57 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Constructors
-- api3: Edge(Vector2, Vector2)
-  id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge__ctor_Alis_Core_Aspect_Math_Vector_Vector2_Alis_Core_Aspect_Math_Vector_Vector2_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L515
+- api3: Edge(Vector2F, Vector2F)
+  id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge__ctor_Alis_Core_Aspect_Math_Vector_Vector2F_Alis_Core_Aspect_Math_Vector_Vector2F_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L512
   metadata:
-    uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
-    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.#ctor(Alis.Core.Aspect.Math.Vector.Vector2,Alis.Core.Aspect.Math.Vector.Vector2)
+    uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
+    commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.#ctor(Alis.Core.Aspect.Math.Vector.Vector2F,Alis.Core.Aspect.Math.Vector.Vector2F)
 - markdown: Initializes a new instance of the <xref href="Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge" data-throw-if-not-resolved="false"></xref> class
-- code: public Edge(Vector2 edgeStart, Vector2 edgeEnd)
+- code: public Edge(Vector2F edgeStart, Vector2F edgeEnd)
 - h4: Parameters
 - parameters:
   - name: edgeStart
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The edge start
   - name: edgeEnd
     type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The edge end
 - h2: Properties
 - api3: EdgeEnd
   id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_EdgeEnd
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L529
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L526
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.EdgeEnd
     commentId: P:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.EdgeEnd
 - markdown: Gets the value of the edge end
-- code: public Vector2 EdgeEnd { get; }
+- code: public Vector2F EdgeEnd { get; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - api3: EdgeStart
   id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_EdgeStart
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L524
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L521
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.EdgeStart
     commentId: P:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.EdgeStart
 - markdown: Gets the value of the edge start
-- code: public Vector2 EdgeStart { get; }
+- code: public Vector2F EdgeStart { get; }
 - h4: Property Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 - h2: Methods
 - api3: Equals(object)
   id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_Equals_System_Object_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L544
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L541
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.Equals(System.Object)
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.Equals(System.Object)
@@ -108,7 +108,7 @@ body:
     description: The bool
 - api3: Equals(Edge)
   id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_Equals_Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L561
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L558
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.Equals(Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge)
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.Equals(Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge)
@@ -132,21 +132,21 @@ body:
     description: The bool
 - api3: GetCenter()
   id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_GetCenter
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L535
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L532
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.GetCenter
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.GetCenter
 - markdown: Gets the center
-- code: public Vector2 GetCenter()
+- code: public Vector2F GetCenter()
 - h4: Returns
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
     description: The vector
 - api3: GetHashCode()
   id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_GetHashCode
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L577
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L574
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.GetHashCode
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.GetHashCode
@@ -161,7 +161,7 @@ body:
 - h2: Operators
 - api3: operator -(Edge)
   id: Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_op_UnaryNegation_Alis_Core_Physic_Common_PolygonManipulation_YuPengClipper_Edge_
-  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L537
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Common/PolygonManipulation/YuPengClipper.cs#L534
   metadata:
     uid: Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.op_UnaryNegation(Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge)
     commentId: M:Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge.op_UnaryNegation(Alis.Core.Physic.Common.PolygonManipulation.YuPengClipper.Edge)

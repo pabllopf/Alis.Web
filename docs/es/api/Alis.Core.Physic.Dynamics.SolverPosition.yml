@@ -30,30 +30,30 @@ body:
   - text: object.ToString()
     url: https://learn.microsoft.com/dotnet/api/system.object.tostring
 - h2: Fields
-- api3: a
-  id: Alis_Core_Physic_Dynamics_SolverPosition_a
+- api3: A
+  id: Alis_Core_Physic_Dynamics_SolverPosition_A
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/SolverPosition.cs#L45
   metadata:
-    uid: Alis.Core.Physic.Dynamics.SolverPosition.a
-    commentId: F:Alis.Core.Physic.Dynamics.SolverPosition.a
+    uid: Alis.Core.Physic.Dynamics.SolverPosition.A
+    commentId: F:Alis.Core.Physic.Dynamics.SolverPosition.A
 - markdown: The
-- code: public float a
+- code: public float A
 - h4: Field Value
 - parameters:
   - type:
     - text: float
       url: https://learn.microsoft.com/dotnet/api/system.single
-- api3: c
-  id: Alis_Core_Physic_Dynamics_SolverPosition_c
+- api3: C
+  id: Alis_Core_Physic_Dynamics_SolverPosition_C
   src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Physic/src/Dynamics/SolverPosition.cs#L40
   metadata:
-    uid: Alis.Core.Physic.Dynamics.SolverPosition.c
-    commentId: F:Alis.Core.Physic.Dynamics.SolverPosition.c
+    uid: Alis.Core.Physic.Dynamics.SolverPosition.C
+    commentId: F:Alis.Core.Physic.Dynamics.SolverPosition.C
 - markdown: The
-- code: public Vector2 c
+- code: public Vector2F C
 - h4: Field Value
 - parameters:
   - type:
-    - text: Vector2
-      url: Alis.Core.Aspect.Math.Vector.Vector2.html
+    - text: Vector2F
+      url: Alis.Core.Aspect.Math.Vector.Vector2F.html
 languageId: csharp

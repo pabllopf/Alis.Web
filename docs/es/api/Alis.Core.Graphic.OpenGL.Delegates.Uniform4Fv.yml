@@ -1,0 +1,37 @@
+### YamlMime:ApiPage
+title: Delegate Uniform4Fv
+body:
+- api1: Delegate Uniform4Fv
+  id: Alis_Core_Graphic_OpenGL_Delegates_Uniform4Fv
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Graphic/src/OpenGL/Delegates/Uniform4Fv.cs#L37
+  metadata:
+    uid: Alis.Core.Graphic.OpenGL.Delegates.Uniform4Fv
+    commentId: T:Alis.Core.Graphic.OpenGL.Delegates.Uniform4Fv
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Graphic.OpenGL.Delegates
+      url: Alis.Core.Graphic.OpenGL.Delegates.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: The uniform 4fv
+- code: public delegate void Uniform4Fv(int location, int count, float[] value)
+- h4: Parameters
+- parameters:
+  - name: location
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: count
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: value
+    type:
+    - text: float
+      url: https://learn.microsoft.com/dotnet/api/system.single
+    - '['
+    - ']'
+languageId: csharp
+metadata:
+  description: The uniform 4fv

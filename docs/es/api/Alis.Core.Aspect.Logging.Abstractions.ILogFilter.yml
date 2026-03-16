@@ -1,0 +1,70 @@
+### YamlMime:ApiPage
+title: Interface ILogFilter
+body:
+- api1: Interface ILogFilter
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogFilter
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogFilter.cs#L37
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogFilter
+    commentId: T:Alis.Core.Aspect.Logging.Abstractions.ILogFilter
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Aspect.Logging.Abstractions
+      url: Alis.Core.Aspect.Logging.Abstractions.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: >-
+    Determines whether a log entry should be processed and written.
+
+    Filters allow fine-grained control over which logs are captured.
+
+    AOT-compatible: No reflection, pure functional filtering.
+- code: public interface ILogFilter
+- h2: Properties
+- api3: Name
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogFilter_Name
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogFilter.cs#L42
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogFilter.Name
+    commentId: P:Alis.Core.Aspect.Logging.Abstractions.ILogFilter.Name
+- markdown: Gets a human-readable name for this filter.
+- code: string Name { get; }
+- h4: Property Value
+- parameters:
+  - type:
+    - text: string
+      url: https://learn.microsoft.com/dotnet/api/system.string
+- h2: Methods
+- api3: ShouldLog(ILogEntry)
+  id: Alis_Core_Aspect_Logging_Abstractions_ILogFilter_ShouldLog_Alis_Core_Aspect_Logging_Abstractions_ILogEntry_
+  src: https://github.com/pabllopf/Alis/blob/master/6_Ideation/Logging/src/Abstractions/ILogFilter.cs#L50
+  metadata:
+    uid: Alis.Core.Aspect.Logging.Abstractions.ILogFilter.ShouldLog(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+    commentId: M:Alis.Core.Aspect.Logging.Abstractions.ILogFilter.ShouldLog(Alis.Core.Aspect.Logging.Abstractions.ILogEntry)
+- markdown: >-
+    Evaluates whether the given log entry should be processed.
+
+    Returning false prevents the entry from being written to outputs.
+- code: bool ShouldLog(ILogEntry entry)
+- h4: Parameters
+- parameters:
+  - name: entry
+    type:
+    - text: ILogEntry
+      url: Alis.Core.Aspect.Logging.Abstractions.ILogEntry.html
+    description: The log entry to filter.
+- h4: Returns
+- parameters:
+  - type:
+    - text: bool
+      url: https://learn.microsoft.com/dotnet/api/system.boolean
+    description: True if the entry should be logged; false if it should be skipped.
+languageId: csharp
+metadata:
+  description: >-
+    Determines whether a log entry should be processed and written.
+
+    Filters allow fine-grained control over which logs are captured.
+
+    AOT-compatible: No reflection, pure functional filtering.

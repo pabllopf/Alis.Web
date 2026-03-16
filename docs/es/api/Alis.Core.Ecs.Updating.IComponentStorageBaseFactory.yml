@@ -1,0 +1,56 @@
+### YamlMime:ApiPage
+title: Interface IComponentStorageBaseFactory
+body:
+- api1: Interface IComponentStorageBaseFactory
+  id: Alis_Core_Ecs_Updating_IComponentStorageBaseFactory
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/IComponentStorageBaseFactory.cs#L38
+  metadata:
+    uid: Alis.Core.Ecs.Updating.IComponentStorageBaseFactory
+    commentId: T:Alis.Core.Ecs.Updating.IComponentStorageBaseFactory
+- facts:
+  - name: Namespace
+    value:
+      text: Alis.Core.Ecs.Updating
+      url: Alis.Core.Ecs.Updating.html
+  - name: Assembly
+    value: Alis.dll
+- markdown: Defines an object for creating component runners
+- code: internal interface IComponentStorageBaseFactory
+- h2: Remarks
+- markdown: Used only in source generation
+- h2: Methods
+- api3: Create(int)
+  id: Alis_Core_Ecs_Updating_IComponentStorageBaseFactory_Create_System_Int32_
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/IComponentStorageBaseFactory.cs#L43
+  metadata:
+    uid: Alis.Core.Ecs.Updating.IComponentStorageBaseFactory.Create(System.Int32)
+    commentId: M:Alis.Core.Ecs.Updating.IComponentStorageBaseFactory.Create(System.Int32)
+- markdown: Used only in source generation
+- code: ComponentStorageBase Create(int capacity)
+- h4: Parameters
+- parameters:
+  - name: capacity
+    type:
+    - text: int
+      url: https://learn.microsoft.com/dotnet/api/system.int32
+- h4: Returns
+- parameters:
+  - type:
+    - text: ComponentStorageBase
+      url: Alis.Core.Ecs.Updating.ComponentStorageBase.html
+- api3: CreateStack()
+  id: Alis_Core_Ecs_Updating_IComponentStorageBaseFactory_CreateStack
+  src: https://github.com/pabllopf/Alis/blob/master/4_Operation/Ecs/src/Updating/IComponentStorageBaseFactory.cs#L48
+  metadata:
+    uid: Alis.Core.Ecs.Updating.IComponentStorageBaseFactory.CreateStack
+    commentId: M:Alis.Core.Ecs.Updating.IComponentStorageBaseFactory.CreateStack
+- markdown: Used only in source generation
+- code: IdTable CreateStack()
+- h4: Returns
+- parameters:
+  - type:
+    - text: IdTable
+      url: Alis.Core.Ecs.Collections.IdTable.html
+languageId: csharp
+metadata:
+  description: Defines an object for creating component runners

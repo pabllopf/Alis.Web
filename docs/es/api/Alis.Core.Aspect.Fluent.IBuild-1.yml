@@ -15,7 +15,7 @@ body:
   - name: Assembly
     value: Alis.dll
 - markdown: The build interface
-- code: public interface IBuild<out TOrigin>
+- code: public interface IBuild<TOrigin>
 - h4: Type Parameters
 - parameters:
   - name: TOrigin
